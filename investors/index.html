@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" class="lenis lenis-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base.Tube - Revolutionary Web3 Video Sharing | Interactive Pitch Deck</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.14/build/player/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+</head>
+<body>
+    <div id="loader">
+        <div class="loader-content">
+            <img src="../img/basetube-logo.png" alt="Base.Tube Logo" class="loader-logo">
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <!-- Progress Bar -->
+    <div id="progress-bar"></div>
+
+    <header>
+      <div class="header-container">
+        <div id="menu-icon" class="menu-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="logo-container">
+          <img src="../img/basetube-logo.png" alt="Base.Tube Logo" class="logo">
+        </div>
+      </div>
+    </header>
+
+    <div id="mega-menu" class="mega-menu">
+      <nav>
+        <ul>
+          <li style="--i:1;"><a href="https://base.tube">Home</a></li>
+          <li style="--i:2;"><a href="https://base-tube.gitbook.io">Learn More</a></li>
+          <li style="--i:3;"><a href="https://base-tube.gitbook.io/base.tube-documentation/tokenomics">Tokenomics</a></li>
+          <li style="--i:4;"><a href="#investors">Investors</a></li>
+          <li style="--i:5;"><a href="https://base.tube/blog.html">Blog</a></li>
+          <li style="--i:6;"><a href="https://base.tube/roadmap.html">Roadmap</a></li>
+        </ul>
+      </nav>
+    </div>
+
+   <!-- <div class="floating-3d-element parallax-element" data-value="2" style="top: 10%; left: 5%;">
+        <img src="../img/basetube-logo.png" alt="Floating NFT">
+    </div>
+    <div class="floating-3d-element parallax-element" data-value="3" style="top: 60%; right: 10%;">
+        <img src="../img/basetube-logo.png" alt="Floating Lifestyle Icon">
+    </div>-->
+
+    <main>
+        <section id="intro" class="pitch-section">
+            <div class="content">
+                <div class="intro-container">
+                    <img src="../img/basetube-logo.png" alt="Base.Tube Logo" class="logo">
+                    <h1 class="intro-text">
+                        Beyond <span class="highlight">Viewing</span>, Beyond <span class="highlight">Sharing</span>.
+                    </h1>
+                    <h2 class="intro-subtext">
+                        Welcome to <span class="highlight">Base.Tube</span>, the Future of Video.
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="problem" class="pitch-section">
+            <div class="content">
+                <h2 class="title">This is about to change</h2>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number" data-value="2">2</div>
+                        <div class="stat-label">million users get rewarded</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-value="2476">2,476</div>
+                        <div class="stat-label">million YouTube users worldwide</div>
+                    </div>
+                </div>
+                <h3 class="subtitle">The Broken Promise of Video Sharing Platforms</h3>
+                <div class="problem-list">
+                    <div class="problem-item">
+                        <h4>Creator Exploitation</h4>
+                        <p>94% of YouTube creators earn below the poverty line</p>
+                    </div>
+                    <div class="problem-item">
+                        <h4>Centralized Control</h4>
+                        <p>Platforms take up to 45% of ad revenue</p>
+                    </div>
+                    <div class="problem-item">
+                        <h4>Viewer Disengagement</h4>
+                        <p>70% of viewers feel disconnected from creators</p>
+                    </div>
+                </div>
+                <p class="highlight">54% of Millennials and Gen Z are eager to become content creators, the world needs a video platform built for the creator generation.</p>
+                <p class="cta">We're making it happen.</p>
+            </div>
+        </section>
+
+        <section id="solution" class="pitch-section">
+            <div class="content">
+                <h2 class="title">Base.Tube: Redefining Video Sharing</h2>
+                <h3 class="subtitle">Where innovation empowers, rewards, and unites.</h3>
+                <div class="solution-grid">
+                    <div class="solution-item">
+                        <h4>Direct Earnings & NFT Content Pass</h4>
+                    </div>
+                    <div class="solution-item">
+                        <h4>Token Rewards for Engagement</h4>
+                    </div>
+                    <div class="solution-item">
+                        <h4>Decentralized Governance & Storage</h4>
+                    </div>
+                </div>
+                <p class="highlight">Empowering creators, rewarding viewers, and democratizing content</p>
+            </div>
+        </section>
+
+        <section id="features" class="pitch-section">
+            <div id="lottie-container"></div>
+            <div class="content">
+                <h2 class="title">Discover the Difference</h2>
+                <h3 class="subtitle">Where next-generation technology meets unparalleled creativity.</h3>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h4>Decentralization Redefined</h4>
+                        <p>Beyond content storage—Base.Tube ensures absolute freedom from censorship with pioneering decentralization.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>AI-Enhanced Creativity</h4>
+                        <p>Base.Tube's AI tools transform content creation, offering tailored suggestions for unmatched creativity and viewer engagement.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Power to the People</h4>
+                        <p>Democratizing digital governance, Base.Tube hands decision-making back to creators and viewers. Real influence, real change.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Earning Revolutionized</h4>
+                        <p>Every action rewards. Base.Tube's token ecosystem turns views into value, directly compensating creators and engaging viewers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nft-pass" class="pitch-section">
+            <div class="content">
+                <h2 class="title">NFT Content Pass</h2>
+                <h3 class="subtitle">Revolutionizing Creator-Fan Relationships</h3>
+                <div class="nft-grid">
+                    <div class="nft-features">
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Buy, sell, trade NFT passes</li>
+                            <li>Transparent pricing</li>
+                            <li>Secure blockchain transactions</li>
+                        </ul>
+                    </div>
+                    <div class="nft-benefits">
+                        <div class="benefit-column">
+                            <h4>Creator Benefits</h4>
+                            <ul>
+                                <li>90% revenue from initial sale</li>
+                                <li>Ongoing earnings from resale</li>
+                                <li>Direct connection with top fans</li>
+                            </ul>
+                        </div>
+                        <div class="benefit-column">
+                            <h4>Fan Benefits</h4>
+                            <ul>
+                                <li>Exclusive content access</li>
+                                <li>Tradeable digital asset</li>
+                                <li>Direct support to favorite creators</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="market" class="pitch-section">
+            <div id="globe-container"></div>
+            <div class="content">
+                <h2 class="title">Total Addressable Market</h2>
+                <div class="market-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-value="241.4">$241.4B</div>
+                        <div class="stat-label">Forecasted Ad spending in video advertising (2024)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-value="600">$600.0B</div>
+                        <div class="stat-label">Digital video advertising market size expected by 2028</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-value="191.3">$191.3B</div>
+                        <div class="stat-label">Creator Economy Market size Expected by end of 2036</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-value="28.8">$28.8B</div>
+                        <div class="stat-label">YouTube Revenue (2022)</div>
+                    </div>
+                </div>
+                <p class="highlight">Base.Tube incentive system is a unique and effective way to capture a large share of the market.</p>
+            </div>
+        </section>
+
+        <section id="growth" class="pitch-section">
+            <div class="content">
+                <h2 class="title">Base.Tube Growth Projections</h2>
+                <div id="growthChart" class="growth-chart"></div>
+                <div class="growth-target">
+                    <h3>Base.Tube Target</h3>
+                    <p>Aiming for 1% of TAM by 2030, representing $5.3B</p>
+                    <p>$530.0B Total Addressable Market (TAM) Expected by end of 2030</p>
+                </div>
+                <div class="growth-factors">
+                    <h3>Key Factors Influencing Growth</h3>
+                    <ul>
+                        <li>Network effects from NFT Content Pass and token ecosystem</li>
+                        <li>Partnerships with established creators and brands</li>
+                        <li>Mainstream adoption of Web3 technologies</li>
+                        <li>Expansion of the creator economy</li>
+                        <li>Effective marketing and user acquisition strategies</li>
+                        <li>Platform innovation and feature development</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="tokenomics" class="pitch-section">
+            <div class="content">
+                <h2 class="title">Tokenomics: Fueling the Base.Tube Ecosystem</h2>
+                <div class="tokenomics-chart">
+                    <canvas id="tokenomicsChart"></canvas>
+                </div>
+                <div class="tokenomics-info">
+                    <p>Base.Tube tokens are the cornerstone of our ecosystem, designed to reward creators, engage viewers, and facilitate transactions on the NFT marketplace.</p>
+                    <ul>
+                        <li>Earn tokens for creating and engaging with content</li>
+                        <li>Spend tokens on exclusive NFT content, premium access, and more</li>
+                        <li>Use tokens for governance votes, influencing future platform developments</li>
+                        <li>A portion of tokens from transaction fees is burned, ensuring a deflationary pressure to support token value</li>
+                    </ul>
+                    <p class="highlight">Total Supply: 1 Billion Tokens</p>
+                </div>
+                <div id="tokenomics-info-0" class="tokenomics-detail">Staking rewards: 18%</div>
+                <div id="tokenomics-info-1" class="tokenomics-detail">User rewards: 25%</div>
+                <div id="tokenomics-info-2" class="tokenomics-detail">Public sale: 3.5%</div>
+                <div id="tokenomics-info-3" class="tokenomics-detail">Creator funds: 7.5%</div>
+                <div id="tokenomics-info-4" class="tokenomics-detail">Strategic Sale: 18.5%</div>
+                <div id="tokenomics-info-5" class="tokenomics-detail">Marketing: 2.5%</div>
+                <div id="tokenomics-info-6" class="tokenomics-detail">Base.Tube foundation: 18%</div>
+                <div id="tokenomics-info-7" class="tokenomics-detail">Base.Tube team: 5.5%</div>
+                <div id="tokenomics-info-8" class="tokenomics-detail">Private Sale: 2%</div>
+                <div id="tokenomics-info-9" class="tokenomics-detail">Advisors: 2.5%</div>
+            </div>
+        </section>
+
+        <section id="roadmap" class="pitch-section">
+            <div class="content">
+                <h2 class="title">Roadmap: A Strategic Overview</h2>
+                <div class="roadmap-timeline">
+                    <div class="roadmap-item">
+                        <h3>Q2 2024</h3>
+                        <h4>Foundation & Financial Launchpad</h4>
+                        <ul>
+                            <li>Public Token Sale</li>
+                            <li>Token Generation Event (TGE)</li>
+                        </ul>
+                    </div>
+                    <div class="roadmap-item">
+                        <h3>Q3 2024</h3>
+                        <h4>Platform Evolution & Market Introduction</h4>
+                        <ul>
+                            <li>Closed Beta Launch</li>
+                        </ul>
+                    </div>
+                    <div class="roadmap-item">
+                        <h3>Q4 2024</h3>
+                        <h4>Technological Milestone & Community Engagement</h4>
+                        <ul>
+                            <li>Live Platform Launch</li>
+                            <li>NFT Marketplace Rollout</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="pitch-section">
+            <div class="content">
+                <h2 class="title">Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <h3>Damien Larquey</h3>
+                        <h4>Founder</h4>
+                        <p>Experience in developing scalable digital platforms and integrating Web3 technologies. Expertise in enhancing user experience and growing user bases.</p>
+                    </div>
+                    <div class="team-member">
+                        <h3>Anton Adamansky</h3>
+                        <h4>CTO</h4>
+                        <p>20+ years of IT experience (CTO Huawei) with focus on fintech and blockchain technologies. Led significant projects in full-stack development and privacy-centric platforms.</p>
+                    </div>
+                    <div class="team-member">
+                        <h3>Pradeep Chandra</h3>
+                        <h4>Advisor</h4>
+                        <p>Extensive experience in financial strategy from roles at HSBC, Credit Suisse, and Emirates NBD. Expertise in both traditional finance and emerging technologies.</p>
+                    </div>
+                    <div class="team-member">
+                        <h3>Priyank Goel</h3>
+                        <h4>Advisor</h4>
+                        <p>Wealth of experience in ethical marketing. Known for customer-centric approach and sustainable growth strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="expansion-strategy" class="pitch-section">
+            <div class="content">
+                <h2 class="title">Expansion Strategy</h2>
+                <ul class="strategy-list">
+                    <li>Allocate 30% of raised funds for team expansion</li>
+                    <li>Grow from current 4-person core team to 25+ in next 18 months</li>
+                    <li>Focus on building robust engineering, product, and marketing teams</li>
+                    <li>Implement competitive compensation packages including equity to attract top talent</li>
+                </ul>
+                <h3 class="subtitle">Key Hires (Next 12 Months)</h3>
+                <div class="key-hires-grid">
+                    <div class="key-hire-item">
+                        <h4>Chief Product Officer (CPO)</h4>
+                        <p>Focus: User experience optimization and feature development</p>
+                        <p>Target: 10+ years experience in successful Web3 or social media platforms</p>
+                    </div>
+                    <div class="key-hire-item">
+                        <h4>Head of Community & Creator Relations</h4>
+                        <p>Focus: Building and nurturing creator ecosystem</p>
+                        <p>Target: 7+ years experience in influencer partnerships and community management</p>
+                    </div>
+                    <div class="key-hire-item">
+                        <h4>Chief Marketing Officer (CMO)</h4>
+                        <p>Focus: Global brand strategy and user acquisition</p>
+                        <p>Target: Proven track record in scaling Web3 or tech startups</p>
+                    </div>
+                    <div class="key-hire-item">
+                        <h4>Head of Legal & Compliance</h4>
+                        <p>Focus: Navigating regulatory landscape for global expansion</p>
+                        <p>Target: 5+ years experience in blockchain and digital content law</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="investment" class="pitch-section">
+            <div class="content">
+                <h2 class="title">The Ask: Use Of Funds</h2>
+                <h3 class="subtitle">Fundraising Goal: $6 Million</h3>
+                <p>We want to offer you the opportunity to be a part of this great venture and to assist us in building something that will change the course of how people create and consume video contents.</p>
+                <div class="investment-grid">
+                    <div class="investment-item">
+                        <h4>1. Tech Development: (31%)</h4>
+                        <ul>
+                            <li>Core Platform Development</li>
+                            <li>Blockchain Integration</li>
+                            <li>Mobile app development</li>
+                        </ul>
+                    </div>
+                    <div class="investment-item">
+                        <h4>2. Growth Marketing: (40%)</h4>
+                        <ul>
+                            <li>User Acquisition</li>
+                            <li>Creator Onboarding and Retention</li>
+                            <li>Brand Awareness</li>
+                        </ul>
+                    </div>
+                    <div class="investment-item">
+                        <h4>3. Token Liquidity: (15%)</h4>
+                        <ul>
+                            <li>Exchange Listings</li>
+                            <li>Liquidity Pools</li>
+                        </ul>
+                    </div>
+                    <div class="investment-item">
+                        <h4>4. Reserve: (14%)</h4>
+                        <ul>
+                            <li>Operational Runway</li>
+                            <li>Contingency Fund</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="strategic-sale-terms">
+                    <h3>Strategic Sale Terms</h3>
+                    <ul>
+                        <li>Token Price: $0.03 per TUBE</li>
+                        <li>Allocation: 200,000,000 TUBE (20% of total supply)</li>
+                        <li>Vesting: 10% TGE - 2 Months cliff, then monthly over the next 16 months</li>
+                        <li>Round Valuation: $30 Million</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="app-preview" class="pitch-section">
+            <div class="content">
+                <h2 class="title">Base.Tube App</h2>
+                <h3 class="subtitle">The only mobile app that rewards users for watching videos</h3>
+                <div class="app-features-grid">
+                    <div class="app-feature-item">
+                        <h4>Empower Your Watchtime:</h4>
+                        <p>Earn Tokens for your Engagement!</p>
+                    </div>
+                    <div class="app-feature-item">
+                        <h4>Create, Share, & Monetize</h4>
+                        <p>Your Content Seamlessly.</p>
+                    </div>
+                    <div class="app-feature-item">
+                        <h4>Your Audience, Your Earnings</h4>
+                    </div>
+                    <div class="app-feature-item">
+                        <h4>Exclusive Access with NFT Content Passes</h4>
+                    </div>
+                </div>
+                <div class="app-preview-image">
+                    <img src="../img/app-preview.png" alt="Base.Tube App Preview">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="pitch-section">
+            <div class="content">
+                <h2 class="title">Thank you!</h2>
+                <p class="contact-info">Contact: <a href="mailto:Investors@Base.Tube">Investors@Base.Tube</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Base.Tube. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
