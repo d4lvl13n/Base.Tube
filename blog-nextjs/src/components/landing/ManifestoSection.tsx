@@ -1,15 +1,62 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { NarrativeState } from '@/hooks/useNarrativeScroll';
 
-export default function ManifestoSection() {
+interface ManifestoSectionProps {
+  narrativeState?: NarrativeState;
+  animationState?: {
+    isActive: boolean;
+    isCompleted: boolean;
+    isVisible: boolean;
+    shouldAnimate: boolean;
+  };
+  animationChain?: {
+    isAnimationActive: (id: string) => boolean;
+    hasAnimationCompleted: (id: string) => boolean;
+    playAnimation: (id: string, skipChain?: boolean) => void;
+  };
+}
+
+export default function ManifestoSection({ narrativeState, animationState, animationChain }: ManifestoSectionProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [activeCard, setActiveCard] = useState<number | null>(null);
   const [isFlipped, setIsFlipped] = useState(false);
   const [hoveredTransform, setHoveredTransform] = useState(false);
+  const [showStrikes, setShowStrikes] = useState(false);
 
+  // Integrate with animation state
   useEffect(() => {
+    if (animationState?.isVisible || !animationState) {
+      setIsVisible(true);
+    }
+    
+    // Handle animation chain events
+    if (animationChain) {
+      if (animationChain.isAnimationActive('cardStrikes')) {
+        setShowStrikes(true);
+        // Automatically strike through cards in sequence
+        const strikeSequence = [
+          setTimeout(() => setActiveCard(0), 0),
+          setTimeout(() => setActiveCard(1), 500),
+          setTimeout(() => setActiveCard(2), 1000),
+          setTimeout(() => setActiveCard(null), 1500)
+        ];
+        return () => strikeSequence.forEach(clearTimeout);
+      }
+      
+      if (animationChain.isAnimationActive('passFlip')) {
+        setTimeout(() => setIsFlipped(true), 200);
+        setTimeout(() => setIsFlipped(false), 600);
+      }
+    }
+  }, [animationState, animationChain]);
+
+  // Fallback intersection observer for when not using narrative system
+  useEffect(() => {
+    if (animationState) return; // Skip if using narrative system
+    
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -24,12 +71,12 @@ export default function ManifestoSection() {
     }
 
     return () => observer.disconnect();
-  }, []);
+  }, [animationState]);
 
   return (
     <section ref={sectionRef} className="manifesto-section">
       {/* Animated Background Elements */}
-      <div className="manifesto-bg-effects">
+      <div className={`manifesto-bg-effects ${narrativeState?.particlePhase === 'trapped' ? 'particles-trapped' : ''}`}>
         <div className="floating-orb orb-1"></div>
         <div className="floating-orb orb-2"></div>
         <div className="floating-orb orb-3"></div>
@@ -68,7 +115,7 @@ export default function ManifestoSection() {
               </div>
               <h3>Ads</h3>
               <p>That annoy your audience</p>
-              <div className="card-strike">
+              <div className={`card-strike ${showStrikes && activeCard === 0 ? 'struck' : ''}`}>
                 <svg viewBox="0 0 100 2" className="strike-svg">
                   <line x1="0" y1="1" x2="100" y2="1" stroke="currentColor" strokeWidth="2"/>
                 </svg>
@@ -89,7 +136,7 @@ export default function ManifestoSection() {
               </div>
               <h3>Sponsors</h3>
               <p>Who compromise your vision</p>
-              <div className="card-strike">
+              <div className={`card-strike ${showStrikes && activeCard === 1 ? 'struck' : ''}`}>
                 <svg viewBox="0 0 100 2" className="strike-svg">
                   <line x1="0" y1="1" x2="100" y2="1" stroke="currentColor" strokeWidth="2"/>
                 </svg>
@@ -111,7 +158,7 @@ export default function ManifestoSection() {
               </div>
               <h3>Subscriptions</h3>
               <p>That lock fans into monthly payments they resent</p>
-              <div className="card-strike">
+              <div className={`card-strike ${showStrikes && activeCard === 2 ? 'struck' : ''}`}>
                 <svg viewBox="0 0 100 2" className="strike-svg">
                   <line x1="0" y1="1" x2="100" y2="1" stroke="currentColor" strokeWidth="2"/>
                 </svg>

@@ -1,13 +1,5 @@
 import { Metadata } from 'next';
-import LandingLayout from '@/components/LandingLayout';
-import HeroSection from '@/components/landing/HeroSection';
-import ManifestoSection from '@/components/landing/ManifestoSection';
-import HowItWorksSection from '@/components/landing/HowItWorksSection';
-import PerksSection from '@/components/landing/PerksSection';
-import TransformationSection from '@/components/landing/TransformationSection';
-import USPSection2 from '@/components/landing/USPSection2';
-import VideoSection from '@/components/landing/VideoSection';
-import CTASection from '@/components/landing/CTASection';
+import LandingPageClient from '@/components/landing/LandingPageClient';
 import '../usp2.css';
 import '../hero.css';
 import '../video.css';
@@ -15,6 +7,7 @@ import '../manifesto.css';
 import '../howto.css';
 import '../perks.css';
 import '../transformation.css';
+import '../narrative.css';
 
 // SEO metadata
 export const metadata: Metadata = {
@@ -49,48 +42,5 @@ export const metadata: Metadata = {
 };
 
 export default function LandingPage() {
-  return (
-    <LandingLayout>
-      {/* Progress Bar */}
-      <div id="progress-bar"></div>
-      
-      {/* Three.js Background Container */}
-      <div id="three-container" style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        zIndex: -1
-      }}></div>
-
-      <div id="page">
-        <main>
-          {/* Hero Section with Glitch Effect */}
-          <HeroSection />
-          
-          {/* NEW: Manifesto Section - Visual Storytelling */}
-          <ManifestoSection />
-          
-          {/* NEW: How It Works Section - The Value Flow System */}
-          <HowItWorksSection />
-          
-          {/* NEW: Transformation Section - From Old to New Paradigms */}
-          <TransformationSection />
-          
-          {/* NEW: USP Section 4 - 3D Carousel Galaxy */}
-          <USPSection2 />
-          
-          {/* NEW: Perks Section - Genesis Pass */}
-          <PerksSection />
-          
-          {/* Video Section */}
-          <VideoSection />
-          
-          {/* CTA Section */}
-          <CTASection />
-        </main>
-      </div>
-    </LandingLayout>
-  );
+  return <LandingPageClient />;
 } 

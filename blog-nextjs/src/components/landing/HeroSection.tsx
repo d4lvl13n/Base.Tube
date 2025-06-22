@@ -2,8 +2,24 @@
 
 import { useEffect, useRef, useState } from 'react';
 import EnhancedButton from '../ui/EnhancedButton';
+import { NarrativeState } from '@/hooks/useNarrativeScroll';
 
-export default function HeroSection() {
+interface HeroSectionProps {
+  narrativeState?: NarrativeState;
+  animationState?: {
+    isActive: boolean;
+    isCompleted: boolean;
+    isVisible: boolean;
+    shouldAnimate: boolean;
+  };
+  animationChain?: {
+    isAnimationActive: (id: string) => boolean;
+    hasAnimationCompleted: (id: string) => boolean;
+    playAnimation: (id: string, skipChain?: boolean) => void;
+  };
+}
+
+export default function HeroSection({ narrativeState, animationChain }: HeroSectionProps) {
   const heroRef = useRef<HTMLElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -11,21 +27,39 @@ export default function HeroSection() {
   const [loaderComplete, setLoaderComplete] = useState(false);
   const [revenuePhase, setRevenuePhase] = useState<'escaping' | 'returning'>('escaping');
 
-  // Initialize animations with narrative loader
+  // Integrate with animation chain
   useEffect(() => {
-    // Start loader sequence
-    const loaderTimer = setTimeout(() => {
+    if (!animationChain) {
+      // Fallback for when not using narrative system
+      const loaderTimer = setTimeout(() => {
+        setLoaderComplete(true);
+        setIsLoaded(true);
+        setTimeout(() => {
+          setRevenuePhase('returning');
+        }, 3000);
+      }, 5000);
+      return () => clearTimeout(loaderTimer);
+    }
+
+    // Use animation chain states
+    if (animationChain.hasAnimationCompleted('heroLoader')) {
       setLoaderComplete(true);
+    }
+    if (animationChain.hasAnimationCompleted('heroReveal')) {
       setIsLoaded(true);
-      
-      // Start the revenue return phase after showing the problem
-      setTimeout(() => {
-        setRevenuePhase('returning');
-      }, 3000);
-    }, 5000); // Loader duration - extended for slower text reveal
-    
-    return () => clearTimeout(loaderTimer);
-  }, []);
+    }
+    if (animationChain.isAnimationActive('heroGlitch')) {
+      setIsGlitching(true);
+    } else if (animationChain.hasAnimationCompleted('heroGlitch')) {
+      setIsGlitching(false);
+    }
+    if (animationChain.isAnimationActive('revenueEscape')) {
+      setRevenuePhase('escaping');
+    }
+    if (animationChain.isAnimationActive('revenueReturn')) {
+      setRevenuePhase('returning');
+    }
+  }, [animationChain]);
 
   // Purposeful glitch that reveals the problem
   useEffect(() => {
@@ -49,9 +83,14 @@ export default function HeroSection() {
     };
   }, [loaderComplete]);
 
-  // Create revenue particles that tell the story
+  // Create local revenue particles (complement global particle system)
   useEffect(() => {
     if (!isLoaded || !heroRef.current) return;
+    
+    // Only create local particles if global narrative system isn't active
+    if (narrativeState && narrativeState.particlePhase === 'escaping') {
+      return; // Let global particle system handle it
+    }
 
     const createRevenueParticle = (phase: 'escaping' | 'returning') => {
       const particle = document.createElement('div');
@@ -95,23 +134,23 @@ export default function HeroSection() {
       setTimeout(() => particle.remove(), phase === 'escaping' ? 2000 : 3000);
     };
 
-    // Initial explosion of escaping revenue
-    if (revenuePhase === 'escaping') {
+    // Initial explosion only if not using narrative system
+    if (revenuePhase === 'escaping' && !narrativeState) {
       for (let i = 0; i < 30; i++) {
         setTimeout(() => createRevenueParticle('escaping'), i * 50);
       }
     }
     
-    // Continuous flow based on phase
+    // Continuous flow based on phase (reduced when narrative system is active)
     const particleInterval = setInterval(() => {
-      if (revenuePhase === 'returning') {
+      if (revenuePhase === 'returning' && !narrativeState) {
         // Create returning particles
         createRevenueParticle('returning');
       }
     }, 300);
 
     return () => clearInterval(particleInterval);
-  }, [isLoaded, revenuePhase]);
+  }, [isLoaded, revenuePhase, narrativeState]);
 
 
 

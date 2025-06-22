@@ -2,14 +2,66 @@
 
 import { useEffect, useRef, useState } from 'react';
 import EnhancedButton from '../ui/EnhancedButton';
+import { NarrativeState } from '@/hooks/useNarrativeScroll';
 
-export default function HowItWorksSection() {
+interface HowItWorksSectionProps {
+  narrativeState?: NarrativeState;
+  animationState?: {
+    isActive: boolean;
+    isCompleted: boolean;
+    isVisible: boolean;
+    shouldAnimate: boolean;
+  };
+  animationChain?: {
+    isAnimationActive: (id: string) => boolean;
+    hasAnimationCompleted: (id: string) => boolean;
+    playAnimation: (id: string, skipChain?: boolean) => void;
+  };
+}
+
+export default function HowItWorksSection({ narrativeState, animationState, animationChain }: HowItWorksSectionProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [activePanel, setActivePanel] = useState<'creator' | 'fan' | null>(null);
   const [hoveredStep, setHoveredStep] = useState<number | null>(null);
+  const [wheelActive, setWheelActive] = useState(false);
 
+  // Integrate with animation state
   useEffect(() => {
+    if (animationState?.isVisible || !animationState) {
+      setIsVisible(true);
+    }
+    
+    // Handle animation chain events
+    if (animationChain) {
+      if (animationChain.isAnimationActive('wheelSpin')) {
+        setWheelActive(true);
+        // Auto-highlight panels during wheel spin
+        setTimeout(() => setActivePanel('creator'), 0);
+        setTimeout(() => setActivePanel('fan'), 800);
+        setTimeout(() => setActivePanel(null), 1600);
+      }
+      
+      if (animationChain.isAnimationActive('stepsReveal')) {
+        // Reveal steps in sequence
+        const stepSequence = [
+          setTimeout(() => setHoveredStep(1), 0),
+          setTimeout(() => setHoveredStep(2), 250),
+          setTimeout(() => setHoveredStep(3), 500),
+          setTimeout(() => setHoveredStep(4), 750),
+          setTimeout(() => setHoveredStep(5), 1000),
+          setTimeout(() => setHoveredStep(6), 1250),
+          setTimeout(() => setHoveredStep(null), 1500)
+        ];
+        return () => stepSequence.forEach(clearTimeout);
+      }
+    }
+  }, [animationState, animationChain]);
+
+  // Fallback intersection observer
+  useEffect(() => {
+    if (animationState) return; // Skip if using narrative system
+    
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -24,12 +76,12 @@ export default function HowItWorksSection() {
     }
 
     return () => observer.disconnect();
-  }, []);
+  }, [animationState]);
 
   return (
     <section ref={sectionRef} className="howto-section">
       {/* Background Effects */}
-      <div className="howto-bg-effects">
+      <div className={`howto-bg-effects ${narrativeState?.particlePhase === 'flowing' ? 'particles-flowing' : ''}`}>
         <div className="value-grid"></div>
         <div className="flow-particles"></div>
       </div>
@@ -256,7 +308,7 @@ export default function HowItWorksSection() {
         </div>
 
         {/* Perpetual Value Section */}
-        <div className={`perpetual-value ${isVisible ? 'visible' : ''}`}>
+        <div className={`perpetual-value ${isVisible ? 'visible' : ''} ${wheelActive ? 'spinning' : ''}`}>
           <div className="value-header">
             <h3>Everyone Wins. <span className="forever">Forever<span className="infinity-symbol">∞</span></span></h3>
           </div>
