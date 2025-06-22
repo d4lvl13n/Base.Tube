@@ -8,95 +8,141 @@ export default function HeroSection() {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [isGlitching, setIsGlitching] = useState(false);
+  const [loaderComplete, setLoaderComplete] = useState(false);
+  const [revenuePhase, setRevenuePhase] = useState<'escaping' | 'returning'>('escaping');
 
-  // Initialize animations on mount
+  // Initialize animations with narrative loader
   useEffect(() => {
-    setIsLoaded(true);
+    // Start loader sequence
+    const loaderTimer = setTimeout(() => {
+      setLoaderComplete(true);
+      setIsLoaded(true);
+      
+      // Start the revenue return phase after showing the problem
+      setTimeout(() => {
+        setRevenuePhase('returning');
+      }, 3000);
+    }, 5000); // Loader duration - extended for slower text reveal
     
-    // Trigger glitch effect periodically
+    return () => clearTimeout(loaderTimer);
+  }, []);
+
+  // Purposeful glitch that reveals the problem
+  useEffect(() => {
+    if (!loaderComplete) return;
+    
+    // First glitch happens right after load to grab attention
+    const firstGlitch = setTimeout(() => {
+      setIsGlitching(true);
+      setTimeout(() => setIsGlitching(false), 300);
+    }, 500);
+    
+    // Periodic glitches that hint at system breaking
     const glitchInterval = setInterval(() => {
       setIsGlitching(true);
       setTimeout(() => setIsGlitching(false), 200);
-    }, 8000);
+    }, 12000);
 
-    return () => clearInterval(glitchInterval);
-  }, []);
+    return () => {
+      clearTimeout(firstGlitch);
+      clearInterval(glitchInterval);
+    };
+  }, [loaderComplete]);
 
-  // Create explosion particles on load
+  // Create revenue particles that tell the story
   useEffect(() => {
     if (!isLoaded || !heroRef.current) return;
 
-    const createExplosionParticle = () => {
+    const createRevenueParticle = (phase: 'escaping' | 'returning') => {
       const particle = document.createElement('div');
-      particle.className = 'hero-explosion-particle';
-      particle.style.left = '50%';
-      particle.style.top = '50%';
-      const angle = Math.random() * Math.PI * 2;
-      const velocity = 50 + Math.random() * 100;
-      particle.style.setProperty('--dx', `${Math.cos(angle) * velocity}vw`);
-      particle.style.setProperty('--dy', `${Math.sin(angle) * velocity}vh`);
-      particle.style.setProperty('--rotation', `${Math.random() * 720}deg`);
+      particle.className = `hero-revenue-particle ${phase}`;
+      particle.innerHTML = '$';
+      
+      if (phase === 'escaping') {
+        // Money escaping from creator (center) to platforms (edges)
+        particle.style.left = '50%';
+        particle.style.top = '50%';
+        const angle = Math.random() * Math.PI * 2;
+        const velocity = 50 + Math.random() * 100;
+        particle.style.setProperty('--dx', `${Math.cos(angle) * velocity}vw`);
+        particle.style.setProperty('--dy', `${Math.sin(angle) * velocity}vh`);
+        particle.style.setProperty('--rotation', `${Math.random() * 360}deg`);
+      } else {
+        // Money returning from edges to creator
+        const edge = Math.floor(Math.random() * 4);
+        switch(edge) {
+          case 0: // top
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.top = '-20px';
+            break;
+          case 1: // right
+            particle.style.left = 'calc(100% + 20px)';
+            particle.style.top = `${Math.random() * 100}%`;
+            break;
+          case 2: // bottom
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.top = 'calc(100% + 20px)';
+            break;
+          case 3: // left
+            particle.style.left = '-20px';
+            particle.style.top = `${Math.random() * 100}%`;
+            break;
+        }
+        particle.style.setProperty('--return-delay', `${Math.random() * 2}s`);
+      }
       
       heroRef.current?.appendChild(particle);
-      setTimeout(() => particle.remove(), 2000);
+      setTimeout(() => particle.remove(), phase === 'escaping' ? 2000 : 3000);
     };
 
-    // Create initial explosion
-    for (let i = 0; i < 30; i++) {
-      setTimeout(() => createExplosionParticle(), i * 30);
+    // Initial explosion of escaping revenue
+    if (revenuePhase === 'escaping') {
+      for (let i = 0; i < 30; i++) {
+        setTimeout(() => createRevenueParticle('escaping'), i * 50);
+      }
     }
-  }, [isLoaded]);
+    
+    // Continuous flow based on phase
+    const particleInterval = setInterval(() => {
+      if (revenuePhase === 'returning') {
+        // Create returning particles
+        createRevenueParticle('returning');
+      }
+    }, 300);
 
-  // Animate number counters
-  useEffect(() => {
-    if (!isLoaded) return;
+    return () => clearInterval(particleInterval);
+  }, [isLoaded, revenuePhase]);
 
-    const animateNumber = (element: HTMLElement, target: string) => {
-      const isPrice = target.includes('$');
-      let numericTarget = parseFloat(target.replace(/[$KM]/g, ''));
-      
-      if (target.includes('M')) numericTarget *= 1000000;
-      else if (target.includes('K')) numericTarget *= 1000;
-      
-      let current = 0;
-      const increment = numericTarget / 50;
-      const timer = setInterval(() => {
-        current += increment;
-        if (current >= numericTarget) {
-          current = numericTarget;
-          clearInterval(timer);
-        }
-        
-        let display = current;
-        let suffix = '';
-        
-        if (target.includes('M') && current >= 1000000) {
-          display = current / 1000000;
-          suffix = 'M';
-        } else if (target.includes('K') && current >= 1000) {
-          display = current / 1000;
-          suffix = 'K';
-        }
-        
-        const formatted = isPrice ? `$${display.toFixed(0)}${suffix}` : `${Math.floor(display)}${suffix}`;
-        element.textContent = formatted;
-      }, 30);
-    };
 
-    // Start number animations after a delay
-    setTimeout(() => {
-      const numbers = document.querySelectorAll('.hero-stat-number');
-      numbers.forEach((num) => {
-        const target = num.getAttribute('data-value') || '0';
-        animateNumber(num as HTMLElement, target);
-      });
-    }, 1000);
-  }, [isLoaded]);
 
   return (
     <>
+      {/* Narrative Loader - Sets the tone */}
+      {!loaderComplete && (
+        <div className="hero-loader">
+          <div className="loader-content">
+            <div className="loader-statement">
+              <div>
+                <span className="loader-text fade-1">Your Content.</span>
+                <span className="loader-text fade-2">Your Terms.</span>
+                <span className="loader-text fade-3">Your Time.</span>
+              </div>
+              <span className="loader-amount fade-4">Base.Tube</span>
+            </div>
+            <div className="loader-progress">
+              <div className="loader-bar"></div>
+            </div>
+          </div>
+          <div className="loader-particles">
+            {[...Array(20)].map((_, i) => (
+              <div key={i} className={`loader-money money-${i + 1}`}></div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Hero Header Section */}
-      <section ref={heroRef} className="hero-section slide slide-header">
+      <section ref={heroRef} className={`hero-section slide slide-header ${loaderComplete ? 'loaded' : ''}`}>
         
         {/* Dark Background - Matching VideoSection style */}
         <div className="hero-dark-background">
@@ -105,6 +151,11 @@ export default function HeroSection() {
           
           {/* Animated scan lines */}
           <div className="hero-scan-lines"></div>
+          
+          {/* Revenue state indicator */}
+          {revenuePhase === 'returning' && (
+            <div className="revenue-return-glow"></div>
+          )}
         </div>
 
         <div className="hero-content section__content slide-header-content">
@@ -115,13 +166,16 @@ export default function HeroSection() {
               ref={titleRef}
               className={`hero-title ${isLoaded ? 'visible' : ''} ${isGlitching ? 'glitching' : ''}`}
               data-text="Your Content. Their Pass. Endless Earnings."
+              data-alt-text="Your Content. Their Profit. Endless Losses."
             >
               <span className="hero-title-line">
                 <span className="hero-gradient-text">Your Content.</span>
                 <span className="hero-outline-text" data-text=" Their Pass."> Their Pass.</span>
               </span>
               <span className="hero-title-line">
-                <span className="hero-gradient-text hero-text-emphasis">Endless Earnings.</span>
+                <span className={`hero-gradient-text hero-text-emphasis ${revenuePhase === 'returning' ? 'returning' : ''}`}>
+                  {isGlitching && revenuePhase === 'escaping' ? 'Endless Losses.' : 'Endless Earnings.'}
+                </span>
               </span>
             </h1>
           </div>
@@ -143,8 +197,8 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* CTA with magnetic effect */}
-          <div className={`hero-cta-wrapper ${isLoaded ? 'visible' : ''}`}>
+          {/* CTA with magnetic effect - appears when solution is revealed */}
+          <div className={`hero-cta-wrapper ${revenuePhase === 'returning' ? 'visible' : ''}`}>
             <EnhancedButton
               size="large"
               className="hero-cta-primary"
@@ -161,12 +215,14 @@ export default function HeroSection() {
 
         </div>
 
-        {/* Floating particles - matching VideoSection style */}
+        {/* Floating particles - purposeful for visual atmosphere */}
         <div className="hero-particles">
-          {[...Array(15)].map((_, i) => (
+          {[...Array(10)].map((_, i) => (
             <div key={i} className={`hero-particle hero-particle-${i + 1}`} />
           ))}
         </div>
+
+
 
       </section>
     </>
