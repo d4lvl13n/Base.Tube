@@ -129,15 +129,8 @@ splitInfoTypes.forEach((word, i) => {
   });
 });
 
-/////////////////////////////////////////////
-const lenis = new Lenis();
-
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-
-requestAnimationFrame(raf);
+// Replace with this simple smooth scroll behavior
+document.documentElement.style.scrollBehavior = 'smooth';
 
 // Scroll Progress Bar
 window.addEventListener('scroll', function() {
@@ -282,26 +275,148 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function initCTAAnimation() {
   const ctaSection = document.querySelector('.section--CTA');
-  if (!ctaSection) return; // Exit if CTA section doesn't exist
+  if (!ctaSection) return;
 
   const ctaElements = ctaSection.querySelectorAll('.cta-title, .cta-description, .cta-button');
 
   gsap.from(ctaElements, {
     opacity: 0,
     y: 20,
-    duration: 0.8,
-    stagger: 0.2,
+    duration: 0.5,
+    stagger: 0,
     scrollTrigger: {
       trigger: ctaSection,
-      start: 'top 80%',
-      end: 'bottom 20%',
-      toggleActions: 'play none none reverse',
-      once: false,
+      start: 'top bottom',
+      end: 'top center',
+      toggleActions: 'play none none none',
+      once: true,
     }
   });
 }
 
-// Ensure GSAP is fully loaded before running the animation
+// Replace this:
+/*
 gsap.onLoad(() => {
   initCTAAnimation();
 });
+*/
+
+// With this:
+document.addEventListener('DOMContentLoaded', () => {
+  initCTAAnimation();
+});
+
+// Holographic card effects
+document.addEventListener('DOMContentLoaded', () => {
+  if (typeof VanillaTilt === 'undefined') {
+    console.error('VanillaTilt is not loaded');
+    return;
+  }
+
+  document.querySelectorAll('.holo-card').forEach(card => {
+    try {
+      // Initialize vanilla-tilt
+      VanillaTilt.init(card, {
+        max: 10,
+        speed: 400,
+        glare: true,
+        'max-glare': 0.3,
+        scale: 1.05
+      });
+
+      // Custom mouse tracking for radial gradient
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        
+        card.style.setProperty('--mouse-x', `${x}%`);
+        card.style.setProperty('--mouse-y', `${y}%`);
+      });
+
+      // Glitch effect on hover
+      card.addEventListener('mouseenter', () => {
+        const glitchElements = card.querySelectorAll('.glitch-effect');
+        glitchElements.forEach((el, i) => {
+          el.style.opacity = '0.1';
+          el.style.animationDelay = `${i * 0.1}s`;
+        });
+      });
+
+      card.addEventListener('mouseleave', () => {
+        const glitchElements = card.querySelectorAll('.glitch-effect');
+        glitchElements.forEach(el => {
+          el.style.opacity = '0';
+        });
+      });
+    } catch (error) {
+      console.error('Error initializing card:', error);
+    }
+  });
+});
+
+// Intersection Observer for card reveal animations
+const observerOptions = {
+  threshold: 0.2,
+  rootMargin: '0px'
+};
+
+const cardObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0) rotate(0)';
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.holo-card').forEach(card => {
+  card.style.opacity = '0';
+  card.style.transform = 'translateY(50px) rotate(2deg)';
+  card.style.transition = 'all 0.8s cubic-bezier(0.23, 1, 0.32, 1)';
+  cardObserver.observe(card);
+});
+
+// Add mouse tracking for halo effect
+document.querySelectorAll('.holo-card').forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / card.clientWidth) * 100;
+    const y = ((e.clientY - rect.top) / card.clientHeight) * 100;
+    
+    card.style.setProperty('--mouse-x', `${x}%`);
+    card.style.setProperty('--mouse-y', `${y}%`);
+  });
+});
+
+/* Add this to your JavaScript */
+const createParticles = () => {
+  // Create floating particles effect
+};
+
+function initGlitchEffect() {
+  const glitchText = document.querySelector('.glitch');
+  
+  // Random intense glitch effect
+  function triggerIntenseGlitch() {
+    glitchText.style.animation = 'none';
+    void glitchText.offsetWidth; // Trigger reflow
+    glitchText.style.animation = null;
+    
+    // Add intense glitch class temporarily
+    glitchText.classList.add('intense-glitch');
+    setTimeout(() => {
+      glitchText.classList.remove('intense-glitch');
+    }, 200);
+  }
+  
+  // Trigger random intense glitches
+  setInterval(() => {
+    if (Math.random() > 0.7) { // 30% chance of intense glitch
+      triggerIntenseGlitch();
+    }
+  }, 2000);
+}
+
+// Call this after DOM is loaded
+document.addEventListener('DOMContentLoaded', initGlitchEffect);

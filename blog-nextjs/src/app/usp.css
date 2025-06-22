@@ -1,0 +1,935 @@
+/* ============================
+   USP SECTION - FRESH START
+   ============================ */
+
+.usp-section {
+  position: relative;
+  width: 100%;
+  background: var(--background-color); /* Use the same deep dark background */
+  overflow: hidden;
+  padding: 4rem 0;
+}
+
+.usp-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* ============================
+   SECTION HEADER
+   ============================ */
+
+.usp-header {
+  position: relative;
+  text-align: center;
+  z-index: 10;
+  opacity: 0;
+  transition: all 1s ease;
+  margin-bottom: 4rem;
+}
+
+.usp-header.visible {
+  opacity: 1;
+}
+
+.usp-title {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900;
+  line-height: 0.9;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.usp-gradient-text {
+  background: linear-gradient(135deg, #ff6b35, #f7931e, #ff6b35);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: uspGradientShift 3s ease-in-out infinite;
+}
+
+.usp-outline-text {
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.3);
+  text-stroke: 2px rgba(255, 255, 255, 0.3);
+}
+
+.usp-outline-text::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgba(255, 255, 255, 0.1);
+  -webkit-text-stroke: none;
+  text-stroke: none;
+  z-index: -1;
+  animation: uspFloat 6s ease-in-out infinite;
+}
+
+.usp-subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  font-weight: 300;
+}
+
+/* Progress Indicator */
+.usp-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.usp-progress-bar {
+  width: 200px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.usp-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff6b35, #f7931e);
+  border-radius: 1px;
+  transition: width 0.3s ease;
+}
+
+.usp-progress-text {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ============================
+   CARDS GRID - PERFECT LAYOUT
+   ============================ */
+
+.usp-cards-grid {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 60vh; /* Changed to min-height for better flexibility */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 2rem auto 0 auto; /* Center the grid with auto margins */
+  padding: 2rem;
+  perspective: 2000px;
+  transform-style: preserve-3d;
+}
+
+/* ============================
+   INDIVIDUAL CARDS
+   ============================ */
+
+.usp-card {
+  position: relative;
+  /* Removed height: 100% to prevent overflow issues */
+  min-height: 400px;
+  perspective: 1000px;
+  opacity: 0;
+  transform: translateY(50px) scale(0.9);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  animation-delay: var(--card-delay);
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.usp-card.revealed {
+  opacity: 0.6;
+  transform: translateY(0) scale(0.95);
+}
+
+.usp-card.active {
+  opacity: 1 !important;
+  transform: translateY(-10px) scale(1.02);
+  z-index: 10;
+}
+
+/* Card Container */
+.usp-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(15px);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.usp-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  border-color: rgba(255, 107, 53, 0.4);
+  box-shadow: 
+    0 15px 30px rgba(255, 107, 53, 0.15),
+    0 0 20px rgba(255, 107, 53, 0.08);
+}
+
+.usp-card.active {
+  border-color: rgba(255, 107, 53, 0.6) !important;
+  box-shadow: 
+    0 20px 40px rgba(255, 107, 53, 0.2),
+    0 0 30px rgba(255, 107, 53, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+/* ============================
+   CARD NUMBER BADGE
+   ============================ */
+
+.usp-card-number {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 107, 53, 0.1);
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff6b35;
+  font-weight: 600;
+  font-size: 0.9rem;
+  font-family: 'JetBrains Mono', monospace;
+  backdrop-filter: blur(10px);
+  z-index: 5;
+  transition: all 0.3s ease;
+  animation: floatBadge 3s ease-in-out infinite;
+}
+
+.usp-card.active .usp-card-number {
+  background: rgba(255, 107, 53, 0.2);
+  border-color: rgba(255, 107, 53, 0.6);
+  transform: scale(1.1);
+}
+
+/* ============================
+   IMAGE SECTION
+   ============================ */
+
+.usp-card-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+
+.usp-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.usp-card.active .usp-image {
+  transform: scale(1.05);
+}
+
+.usp-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    transparent 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+/* ============================
+   CONTENT SECTION
+   ============================ */
+
+.usp-card-content {
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.usp-card-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffffff, #ff6b35);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+}
+
+.usp-card.revealed .usp-card-title {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+
+.usp-card-subtitle {
+  font-size: 0.85rem;
+  color: rgba(255, 107, 53, 0.7);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.8rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.usp-card.revealed .usp-card-subtitle {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.usp-card-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 300;
+  margin-bottom: 1rem;
+  flex: 1;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.usp-card.revealed .usp-card-description {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+/* ============================
+   CARD PROGRESS
+   ============================ */
+
+.usp-card-progress {
+  margin: 1rem 0;
+}
+
+.usp-card-progress-fill {
+  height: 2px;
+  background: linear-gradient(90deg, #ff6b35, #f7931e);
+  border-radius: 1px;
+  transition: width 0.5s ease;
+  width: 0%;
+  position: relative;
+  overflow: hidden;
+}
+
+.usp-card-progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: progressShine 2s linear infinite;
+}
+
+@keyframes progressShine {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* ============================
+   EXPLORE BUTTON
+   ============================ */
+
+.usp-explore-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #ff6b35, #f7931e);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.usp-explore-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 107, 53, 0.3);
+}
+
+.usp-explore-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.usp-explore-btn:hover svg {
+  transform: translateX(3px);
+}
+
+/* ============================
+   PARTICLES
+   ============================ */
+
+.usp-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.usp-particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: var(--card-gradient);
+  border-radius: 50%;
+  opacity: 0;
+  filter: blur(0.5px);
+  box-shadow: 0 0 10px currentColor;
+}
+
+.usp-card.active .usp-particle {
+  animation: uspParticleFloat 3s ease-in-out infinite;
+}
+
+.usp-particle-1 { top: 20%; left: 20%; animation-delay: 0s; }
+.usp-particle-2 { top: 60%; left: 80%; animation-delay: 1s; }
+.usp-particle-3 { top: 40%; left: 10%; animation-delay: 2s; }
+
+/* ============================
+   NAVIGATION
+   ============================ */
+
+.usp-navigation {
+  position: fixed;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 1rem 0.75rem;
+  opacity: 0;
+  transform: translateY(-50%) translateX(-100%);
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+.usp-navigation.visible {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+  pointer-events: auto;
+}
+
+.usp-navigation.hidden {
+  opacity: 0;
+  transform: translateY(-50%) translateX(-100%);
+  pointer-events: none;
+}
+
+.usp-nav-dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.25rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem 0.5rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  min-width: 50px;
+}
+
+.usp-nav-dot:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.usp-nav-dot.active {
+  background: rgba(255, 107, 53, 0.1);
+}
+
+.usp-dot {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.usp-nav-dot.active .usp-dot {
+  background: #ff6b35;
+  transform: scale(1.3);
+  box-shadow: 0 0 15px rgba(255, 107, 53, 0.6);
+}
+
+.usp-nav-label {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: 'JetBrains Mono', monospace;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-align: center;
+}
+
+.usp-nav-dot.active .usp-nav-label {
+  color: #ff6b35;
+  font-weight: 600;
+}
+
+/* ============================
+   ANIMATIONS
+   ============================ */
+
+@keyframes uspGradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes uspFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+@keyframes uspParticleFloat {
+  0%, 100% { 
+    opacity: 0; 
+    transform: translateY(0) scale(1); 
+  }
+  50% { 
+    opacity: 0.6; 
+    transform: translateY(-15px) scale(1.2); 
+  }
+}
+
+/* ============================
+   RESPONSIVE DESIGN
+   ============================ */
+
+@media (max-width: 1200px) {
+  .usp-cards-grid {
+    max-width: 1000px;
+    gap: 1.5rem;
+  }
+  
+  .usp-card {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .usp-section {
+    padding: 2rem 0;
+  }
+  
+  .usp-container {
+    padding: 1rem;
+    min-height: auto;
+  }
+  
+  .usp-header {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .usp-title {
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+  
+  .usp-cards-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+    height: auto;
+    padding: 1rem;
+  }
+  
+  .usp-card {
+    min-height: 300px;
+  }
+  
+  .usp-card-content {
+    padding: 1rem;
+  }
+  
+  .usp-card-title {
+    font-size: 1.4rem;
+  }
+  
+  .usp-card-description {
+    font-size: 0.85rem;
+  }
+  
+  .usp-navigation {
+    display: none; /* Hide navigation on mobile */
+  }
+}
+
+/* ============================
+   KILLER ANIMATIONS & EFFECTS
+   ============================ */
+
+/* Enhanced Card with 3D */
+.usp-card {
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* Holographic Shimmer Effect */
+.usp-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(
+    45deg,
+    transparent 0%,
+    rgba(255, 107, 53, 0.1) 10%,
+    rgba(255, 255, 255, 0.1) 20%,
+    rgba(138, 43, 226, 0.1) 30%,
+    rgba(0, 255, 255, 0.1) 40%,
+    transparent 50%,
+    transparent 100%
+  );
+  background-size: 200% 200%;
+  animation: holoShimmer 3s linear infinite;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.usp-card:hover::before {
+  opacity: 1;
+}
+
+@keyframes holoShimmer {
+  0% { background-position: 200% 200%; }
+  100% { background-position: -200% -200%; }
+}
+
+/* Prismatic Light Refraction */
+.usp-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    transparent 0deg,
+    rgba(255, 0, 255, 0.1) 60deg,
+    rgba(0, 255, 255, 0.1) 120deg,
+    rgba(255, 255, 0, 0.1) 180deg,
+    rgba(255, 0, 255, 0.1) 240deg,
+    rgba(0, 255, 255, 0.1) 300deg,
+    transparent 360deg
+  );
+  border-radius: 20px;
+  opacity: 0;
+  filter: blur(20px);
+  transition: all 0.5s ease;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.usp-card.active::after {
+  opacity: 0.6;
+  filter: blur(40px);
+  transform: scale(1.2) rotate(45deg);
+}
+
+/* Glitch Effect for Active Transition */
+.usp-card.glitch-transition {
+  animation: glitchTransition 0.3s ease-out;
+}
+
+@keyframes glitchTransition {
+  0%, 100% { 
+    transform: translate(0);
+    filter: hue-rotate(0deg);
+  }
+  20% { 
+    transform: translate(-2px, 2px);
+    filter: hue-rotate(90deg);
+  }
+  40% { 
+    transform: translate(-2px, -2px);
+    filter: hue-rotate(180deg);
+  }
+  60% { 
+    transform: translate(2px, 2px);
+    filter: hue-rotate(270deg);
+  }
+  80% { 
+    transform: translate(2px, -2px);
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* Magnetic Pull Effect */
+.usp-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.usp-card.magnetic-hover {
+  transform: scale(1.05) translateZ(50px);
+}
+
+/* Enhanced Particle System */
+.usp-particle {
+  filter: blur(0.5px);
+  box-shadow: 0 0 10px currentColor;
+}
+
+.usp-particle.interactive {
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.8) 0%, transparent 70%);
+}
+
+@keyframes interactiveParticle {
+  0% {
+    opacity: 0;
+    transform: scale(0) translate(var(--mouse-x), var(--mouse-y));
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translate(calc(var(--mouse-x) * 0.5), calc(var(--mouse-y) * 0.5));
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0) translate(0, -100px);
+  }
+}
+
+/* Liquid Morph Effect */
+.usp-card-image {
+  overflow: hidden;
+  position: relative;
+}
+
+.usp-card-image::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(255, 255, 255, 0.2) 0%,
+    transparent 50%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.usp-card:hover .usp-card-image::before {
+  opacity: 1;
+}
+
+/* Neon Glow Pulse */
+@keyframes neonPulse {
+  0%, 100% {
+    box-shadow: 
+      0 0 5px rgba(255, 107, 53, 0.5),
+      0 0 10px rgba(255, 107, 53, 0.3),
+      0 0 15px rgba(255, 107, 53, 0.2),
+      0 0 20px rgba(255, 107, 53, 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 0 10px rgba(255, 107, 53, 0.8),
+      0 0 20px rgba(255, 107, 53, 0.6),
+      0 0 30px rgba(255, 107, 53, 0.4),
+      0 0 40px rgba(255, 107, 53, 0.2);
+  }
+}
+
+.usp-card.active {
+  animation: neonPulse 2s ease-in-out infinite;
+}
+
+/* Reveal Animation with Stagger */
+@keyframes revealCard {
+  0% {
+    opacity: 0;
+    transform: translateY(100px) rotateX(-90deg) scale(0.5);
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotateX(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.usp-card.reveal-animation {
+  animation: revealCard 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Floating Elements */
+@keyframes floatBadge {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33% { transform: translateY(-5px) rotate(5deg); }
+  66% { transform: translateY(-3px) rotate(-5deg); }
+}
+
+/* Text Reveal Effect */
+.usp-card-title,
+.usp-card-subtitle,
+.usp-card-description {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.usp-card.revealed .usp-card-title {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+
+.usp-card.revealed .usp-card-subtitle {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.usp-card.revealed .usp-card-description {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+/* Ambient Background Animation - Subtle */
+.usp-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at 20% 50%,
+    rgba(255, 107, 53, 0.02) 0%,  /* Much more subtle for dark background */
+    transparent 50%
+  );
+  animation: ambientMove 20s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes ambientMove {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(50px, -50px) scale(1.1); }
+  66% { transform: translate(-50px, 50px) scale(0.9); }
+}
+
+/* Glitch Flash Animation */
+@keyframes glitchFlash {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Ultra Enhanced Active Card */
+.usp-card.active {
+  z-index: 20 !important;
+}
+
+.usp-card.active .usp-card-number {
+  animation: floatBadge 3s ease-in-out infinite, neonPulse 2s ease-in-out infinite;
+}
+
+/* Enhanced Brand Title Effect on Hover */
+.usp-card:hover .usp-card-title {
+  filter: brightness(1.2);
+  text-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
+}
+
+/* Cyberpunk Grid Background - Subtle */
+.usp-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 107, 53, 0.01) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 107, 53, 0.01) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.3;
+  animation: gridMove 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes gridMove {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
+}
+
+/* Extreme Hover State */
+.usp-card:hover {
+  animation: hoverPulse 0.5s ease-out;
+}
+
+@keyframes hoverPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+/* Lightning Effect for Active Cards */
+.usp-card.active::before {
+  animation: lightning 3s ease-in-out infinite;
+}
+
+@keyframes lightning {
+  0%, 90%, 100% { opacity: 0; }
+  95% { opacity: 1; }
+} 

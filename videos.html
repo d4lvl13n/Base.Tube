@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="lenis lenis-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base.Tube - Videos</title>
+    <meta name="description" content="Base.Tube video content">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+      /* Enhanced page-specific styles */
+      .video-page {
+        min-height: 100vh;
+        padding: 120px 20px 80px;
+        background: linear-gradient(to bottom, #1a1a1a, #000);
+      }
+
+      .page-title {
+        text-align: center;
+        margin-bottom: 3rem;
+        color: var(--text-color);
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        font-weight: 700;
+      }
+
+      .page-description {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 4rem;
+        color: var(--footer-text-color);
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      .video-grid {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 2.5rem;
+        padding: 2rem;
+      }
+
+      .video-item {
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 16px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .video-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 48px rgba(250, 117, 23, 0.2);
+        border-color: rgba(250, 117, 23, 0.3);
+      }
+
+      .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+      }
+
+      .video-info {
+        padding: 1.5rem;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.8));
+      }
+
+      .video-title {
+        color: var(--text-color);
+        margin: 0 0 1rem 0;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 1.4;
+      }
+
+      .video-description {
+        color: var(--footer-text-color);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin: 0;
+        opacity: 0.8;
+      }
+
+      .video-placeholder {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+      }
+
+      .loading-spinner {
+        width: 40px;
+        height: 40px;
+        border: 3px solid rgba(255,255,255,0.1);
+        border-radius: 50%;
+        border-top-color: var(--primary-color);
+        animation: spin 1s ease-in-out infinite;
+        margin-bottom: 1rem;
+      }
+
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+
+      @media (max-width: 768px) {
+        .video-grid {
+          grid-template-columns: 1fr;
+          padding: 1rem;
+        }
+        
+        .video-item {
+          margin: 0 auto;
+          max-width: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <div id="menu-icon" class="menu-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="logo-container">
+          <a href="/">
+            <img src="img/basetube-logo.png" alt="Base.Tube Logo" class="logo">
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="video-page">
+      <h1 class="page-title">Featured Videos</h1>
+      <p class="page-description">Discover exclusive content from our community of creators. From gaming guides to tech reviews, explore what Base.Tube has to offer.</p>
+      
+      <div class="video-grid">
+        <!-- First Video Item -->
+        <div class="video-item">
+          <div class="video-wrapper">
+            <div class="video-placeholder">
+              <div class="loading-spinner"></div>
+              <p>Loading video...</p>
+            </div>
+            <iframe 
+              src="https://beta.base.tube/embed/176" 
+              width="560" 
+              height="315" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+              loading="lazy"
+              title="Top 12 Must-Play Nintendo Switch Games! | Ultimate Switch Game Guide 🎮"
+              sandbox="allow-scripts allow-same-origin allow-presentation"
+              onload="this.previousElementSibling.style.display='none'; updateVideoInfo(this);"
+              onerror="handleVideoError(this)"
+            ></iframe>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Loading...</h3>
+            <p class="video-description">Loading...</p>
+          </div>
+        </div>
+
+        <!-- Second Video Item -->
+        <div class="video-item">
+          <div class="video-wrapper">
+            <div class="video-placeholder">
+              <div class="loading-spinner"></div>
+              <p>Loading video...</p>
+            </div>
+            <iframe 
+              src="https://beta.base.tube/embed/180" 
+              width="560" 
+              height="315" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+              loading="lazy"
+              title="Base.Tube video player"
+              sandbox="allow-scripts allow-same-origin allow-presentation"
+              onload="this.previousElementSibling.style.display='none'; updateVideoInfo(this);"
+              onerror="handleVideoError(this)"
+            ></iframe>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Loading...</h3>
+            <p class="video-description">Loading...</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <!-- ... footer content ... -->
+    </footer>
+
+    <script>
+      function handleVideoError(iframe) {
+        console.error('Failed to load video iframe');
+        iframe.style.display = 'none';
+        const placeholder = iframe.previousElementSibling;
+        placeholder.style.display = 'flex';
+        const errorDetails = placeholder.querySelector('#video-error-details');
+        if (errorDetails) {
+          errorDetails.textContent = 'Error loading video: ' + new Date().toISOString();
+        }
+      }
+
+      function updateVideoInfo(iframe) {
+        try {
+          const metadata = iframe.contentDocument.getElementById('video-metadata');
+          if (metadata) {
+            const videoData = JSON.parse(metadata.textContent);
+            const container = iframe.closest('.video-item');
+            container.querySelector('.video-title').textContent = videoData.title;
+            container.querySelector('.video-description').textContent = videoData.description;
+          }
+        } catch (e) {
+          console.error('Error accessing video metadata:', e);
+        }
+      }
+
+      // Debug logging
+      document.addEventListener('DOMContentLoaded', () => {
+        const iframes = document.querySelectorAll('.video-wrapper iframe');
+        iframes.forEach((iframe, index) => {
+          console.log(`Video ${index + 1} initial src:`, iframe.src);
+          
+          iframe.addEventListener('load', () => {
+            console.log(`Video ${index + 1} loaded successfully`);
+            updateVideoInfo(iframe);
+          });
+          
+          try {
+            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+            console.log(`Video ${index + 1} document accessible`);
+          } catch (e) {
+            console.error(`Video ${index + 1} access error:`, e);
+          }
+        });
+      });
+    </script>
+  </body>
+</html> 

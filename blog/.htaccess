@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Handle blog post URLs like /blog/post-slug
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?$ ../blog-post.html?slug=$1 [L,QSA]
+
+# Handle blog root - redirect to index.html if needed
+DirectoryIndex index.html 
