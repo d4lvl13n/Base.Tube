@@ -79,8 +79,9 @@ export default function NarrativeParticleSystem({ narrativeState, intensity = 1 
           y: canvas.height / 2 + Math.sin(angle) * radius,
           vx: Math.cos(angle + Math.PI / 2) * 2,
           vy: Math.sin(angle + Math.PI / 2) * 2,
-          color: '#dc2626',
-          type: 'money'
+          color: '#ff6b35', // Changed to brand orange
+          type: 'money',
+          size: 2 + Math.random() * 1.5 // Smaller to show trapped state
         };
 
       case 'flowing':
@@ -91,7 +92,7 @@ export default function NarrativeParticleSystem({ narrativeState, intensity = 1 
           y: 0,
           vx: (Math.random() - 0.5) * 2,
           vy: 2 + Math.random() * 2,
-          color: '#fa7517',
+          color: '#fa7517', // Keeping secondary orange
           type: 'value'
         };
 
@@ -103,8 +104,9 @@ export default function NarrativeParticleSystem({ narrativeState, intensity = 1 
           y: Math.random() * canvas.height,
           vx: 0,
           vy: 0,
-          color: '#10b981',
-          type: 'feature'
+          color: '#ff6b35', // Changed to brand orange
+          type: 'feature',
+          size: 4 + Math.random() * 3 // Larger to show forming state
         };
 
       case 'converging':
@@ -115,8 +117,9 @@ export default function NarrativeParticleSystem({ narrativeState, intensity = 1 
           y: Math.random() * canvas.height,
           vx: Math.random() < 0.5 ? 2 : -2,
           vy: (Math.random() - 0.5) * 2,
-          color: '#fbbf24',
-          type: 'pass'
+          color: '#fa7517', // Changed to secondary orange
+          type: 'pass',
+          size: 5 + Math.random() * 2 // Largest for importance
         };
     }
   }, []);
@@ -194,10 +197,20 @@ export default function NarrativeParticleSystem({ narrativeState, intensity = 1 
 
       updateParticle(particle, narrativeState.particlePhase);
 
-      // Render particle
-      const alpha = 1 - (particle.life / particle.maxLife);
+      // Render particle with phase-based opacity
+      const lifeAlpha = 1 - (particle.life / particle.maxLife);
+      
+      // Vary opacity based on phase for visual differentiation
+      let phaseOpacity = 0.8;
+      switch (particle.phase) {
+        case 'trapped': phaseOpacity = 0.4; break; // Dimmer when trapped
+        case 'flowing': phaseOpacity = 0.6; break;
+        case 'forming': phaseOpacity = 0.7; break;
+        case 'converging': phaseOpacity = 0.9; break; // Brightest when converging
+      }
+      
       ctx.save();
-      ctx.globalAlpha = alpha * 0.8;
+      ctx.globalAlpha = lifeAlpha * phaseOpacity;
       
       // Glow effect
       const gradient = ctx.createRadialGradient(

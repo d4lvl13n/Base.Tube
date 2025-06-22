@@ -19,8 +19,10 @@ export default function LandingPageClient() {
 
   // Start animation chain when page loads
   useEffect(() => {
-    animationChain.startChain('heroLoader')
-  }, [])
+    if (animationChain?.startChain) {
+      animationChain.startChain('heroLoader')
+    }
+  }, [animationChain?.startChain])
 
   // Trigger section animations based on scroll
   useEffect(() => {
@@ -49,7 +51,11 @@ export default function LandingPageClient() {
         }
         break
     }
-  }, [narrativeScroll.currentChapter, animationChain])
+  }, [
+    narrativeScroll.currentChapter,
+    animationChain?.hasAnimationCompleted,
+    animationChain?.playAnimation
+  ])
 
   return (
     <LandingLayout>

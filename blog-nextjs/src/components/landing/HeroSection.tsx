@@ -13,6 +13,8 @@ interface HeroSectionProps {
     shouldAnimate: boolean;
   };
   animationChain?: {
+    currentAnimation?: string | null;
+    completedAnimations?: string[];
     isAnimationActive: (id: string) => boolean;
     hasAnimationCompleted: (id: string) => boolean;
     playAnimation: (id: string, skipChain?: boolean) => void;
@@ -27,10 +29,10 @@ export default function HeroSection({ narrativeState, animationChain }: HeroSect
   const [loaderComplete, setLoaderComplete] = useState(false);
   const [revenuePhase, setRevenuePhase] = useState<'escaping' | 'returning'>('escaping');
 
-  // Integrate with animation chain
+  // Initialize animations with narrative loader
   useEffect(() => {
+    // Fallback for when not using narrative system
     if (!animationChain) {
-      // Fallback for when not using narrative system
       const loaderTimer = setTimeout(() => {
         setLoaderComplete(true);
         setIsLoaded(true);
@@ -40,26 +42,31 @@ export default function HeroSection({ narrativeState, animationChain }: HeroSect
       }, 5000);
       return () => clearTimeout(loaderTimer);
     }
+  }, [animationChain]);
 
-    // Use animation chain states
-    if (animationChain.hasAnimationCompleted('heroLoader')) {
-      setLoaderComplete(true);
-    }
-    if (animationChain.hasAnimationCompleted('heroReveal')) {
-      setIsLoaded(true);
-    }
+  // Ensure loader completes even if animation chain fails
+  useEffect(() => {
+    const fallbackTimer = setTimeout(() => {
+      if (!loaderComplete) {
+        console.warn('Loader stuck - forcing completion');
+        setLoaderComplete(true);
+        setIsLoaded(true);
+      }
+    }, 6000); // Fallback after 6 seconds
+    
+    return () => clearTimeout(fallbackTimer);
+  }, [loaderComplete]);
+  
+  // Handle glitch animation separately
+  useEffect(() => {
+    if (!animationChain) return;
+    
     if (animationChain.isAnimationActive('heroGlitch')) {
       setIsGlitching(true);
-    } else if (animationChain.hasAnimationCompleted('heroGlitch')) {
-      setIsGlitching(false);
+      const timer = setTimeout(() => setIsGlitching(false), 200);
+      return () => clearTimeout(timer);
     }
-    if (animationChain.isAnimationActive('revenueEscape')) {
-      setRevenuePhase('escaping');
-    }
-    if (animationChain.isAnimationActive('revenueReturn')) {
-      setRevenuePhase('returning');
-    }
-  }, [animationChain]);
+  }, [animationChain?.isAnimationActive]);
 
   // Purposeful glitch that reveals the problem
   useEffect(() => {

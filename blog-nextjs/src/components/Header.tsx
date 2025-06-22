@@ -80,7 +80,7 @@ export default function Header() {
     }
   };
 
-  // AI-powered gradient generation
+  // AI-powered gradient generation - throttled
   useEffect(() => {
     const generateAIGradient = () => {
       const time = Date.now() * 0.001;
@@ -93,7 +93,11 @@ export default function Header() {
       setAiGradient(gradient);
     };
 
-    const interval = setInterval(generateAIGradient, 50);
+    // Run once immediately
+    generateAIGradient();
+    
+    // Then update less frequently
+    const interval = setInterval(generateAIGradient, 200); // Changed from 50ms to 200ms
     return () => clearInterval(interval);
   }, [gradientAngle]);
 

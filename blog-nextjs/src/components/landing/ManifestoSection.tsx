@@ -31,27 +31,35 @@ export default function ManifestoSection({ narrativeState, animationState, anima
     if (animationState?.isVisible || !animationState) {
       setIsVisible(true);
     }
+  }, [animationState?.isVisible]);
+  
+  // Handle animation chain events
+  useEffect(() => {
+    if (!animationChain) return;
     
-    // Handle animation chain events
-    if (animationChain) {
-      if (animationChain.isAnimationActive('cardStrikes')) {
-        setShowStrikes(true);
-        // Automatically strike through cards in sequence
-        const strikeSequence = [
-          setTimeout(() => setActiveCard(0), 0),
-          setTimeout(() => setActiveCard(1), 500),
-          setTimeout(() => setActiveCard(2), 1000),
-          setTimeout(() => setActiveCard(null), 1500)
-        ];
-        return () => strikeSequence.forEach(clearTimeout);
-      }
-      
-      if (animationChain.isAnimationActive('passFlip')) {
-        setTimeout(() => setIsFlipped(true), 200);
-        setTimeout(() => setIsFlipped(false), 600);
-      }
+    const isCardStrikesActive = animationChain.isAnimationActive('cardStrikes');
+    const isPassFlipActive = animationChain.isAnimationActive('passFlip');
+    
+    if (isCardStrikesActive && !showStrikes) {
+      setShowStrikes(true);
+      // Automatically strike through cards in sequence
+      const strikeSequence = [
+        setTimeout(() => setActiveCard(0), 0),
+        setTimeout(() => setActiveCard(1), 500),
+        setTimeout(() => setActiveCard(2), 1000),
+        setTimeout(() => setActiveCard(null), 1500)
+      ];
+      return () => strikeSequence.forEach(clearTimeout);
     }
-  }, [animationState, animationChain]);
+    
+    if (isPassFlipActive && !isFlipped) {
+      const flipTimeout = setTimeout(() => {
+        setIsFlipped(true);
+        setTimeout(() => setIsFlipped(false), 400);
+      }, 200);
+      return () => clearTimeout(flipTimeout);
+    }
+  }, [animationChain, showStrikes, isFlipped]);
 
   // Fallback intersection observer for when not using narrative system
   useEffect(() => {
