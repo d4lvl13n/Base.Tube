@@ -148,7 +148,7 @@ html {
   right: -600px;
   width: 480px;
   height: calc(100vh - 140px);
-  z-index: 999;
+  z-index: 1001;
   transition: right 0.4s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
@@ -387,12 +387,14 @@ html {
   z-index: 998;
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   transition: all 0.3s ease;
 }
 
 .menu-overlay-glass.active {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 /* Mobile Menu Adjustments */

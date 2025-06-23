@@ -26,15 +26,27 @@ export default function MegaMenu({ isMenuOpen, onToggleMenu }: MegaMenuProps) {
                   <span className="menu-link-underline"></span>
                 </Link>
                 
-                <Link href="https://base-tube.gitbook.io" className="mega-menu-link" onClick={onToggleMenu}>
+                <a 
+                  href="https://base-tube.gitbook.io" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mega-menu-link" 
+                  onClick={onToggleMenu}
+                >
                   <span className="menu-link-text">Learn More</span>
                   <span className="menu-link-underline"></span>
-                </Link>
+                </a>
                 
-                <Link href="https://base-tube.gitbook.io/base.tube-documentation/tokenomics" className="mega-menu-link" onClick={onToggleMenu}>
+                <a 
+                  href="https://base-tube.gitbook.io/base.tube-documentation/tokenomics" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mega-menu-link" 
+                  onClick={onToggleMenu}
+                >
                   <span className="menu-link-text">Tokenomics</span>
                   <span className="menu-link-underline"></span>
-                </Link>
+                </a>
                 
                 <Link href="/blog" className="mega-menu-link" onClick={onToggleMenu}>
                   <span className="menu-link-text">Blog</span>

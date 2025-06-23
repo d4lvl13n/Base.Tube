@@ -18,12 +18,19 @@ export default function LandingPageClient() {
   const narrativeScroll = useNarrativeScroll()
   const animationChain = useAnimationChain()
 
-  // Start animation chain when page loads
+  // Start animation chain when page loads - only once
   useEffect(() => {
-    if (animationChain?.startChain) {
-      animationChain.startChain('heroLoader')
-    }
-  }, [animationChain])
+    // Use a timeout to ensure it only runs once after initial render
+    const timer = setTimeout(() => {
+      if (animationChain && 
+          !animationChain.isPlaying && 
+          animationChain.completedAnimations.length === 0) {
+        animationChain.startChain('heroLoader')
+      }
+    }, 100)
+    
+    return () => clearTimeout(timer)
+  }, []) // Empty dependency array - only run once on mount
 
   // Trigger section animations based on scroll
   useEffect(() => {
@@ -54,7 +61,7 @@ export default function LandingPageClient() {
         }
         break
     }
-  }, [narrativeScroll, animationChain])
+  }, [narrativeScroll.currentChapter, animationChain?.playAnimation, animationChain?.hasAnimationCompleted])
 
   return (
     <LandingLayout>

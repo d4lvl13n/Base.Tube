@@ -40,9 +40,16 @@ export default function ManifestoSection({ narrativeState, animationState, anima
     if (isPassFlipActive && !isFlipped) {
       const flipTimeout = setTimeout(() => {
         setIsFlipped(true);
-        setTimeout(() => setIsFlipped(false), 400);
       }, 200);
-      return () => clearTimeout(flipTimeout);
+      
+      const resetTimeout = setTimeout(() => {
+        setIsFlipped(false);
+      }, 600);
+      
+      return () => {
+        clearTimeout(flipTimeout);
+        clearTimeout(resetTimeout);
+      };
     }
   }, [animationChain, isFlipped]);
 

@@ -46,9 +46,12 @@ export default function Footer() {
                     <span className="link-text">How It Works</span>
                     <span className="link-underline"></span>
                   </Link>
-                  
                   <Link href="/blog" className="footer-nav-link">
                     <span className="link-text">Blog</span>
+                    <span className="link-underline"></span>
+                  </Link>
+                  <Link href="/roadmap" className="footer-nav-link">
+                    <span className="link-text">Roadmap</span>
                     <span className="link-underline"></span>
                   </Link>
                 </nav>

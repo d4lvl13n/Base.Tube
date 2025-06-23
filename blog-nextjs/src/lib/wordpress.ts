@@ -1,5 +1,6 @@
 // WordPress API configuration
-const WP_API_URL = 'https://base.tube/wp/wp-json/wp/v2';
+// TODO: Update this when WordPress is properly configured
+const WP_API_URL = process.env.NEXT_PUBLIC_WP_API_URL || 'https://base.tube/wp/wp-json/wp/v2';
 
 // Types for WordPress API response
 export interface WordPressPost {
@@ -56,7 +57,9 @@ export async function getAllPosts(page: number = 1, perPage: number = 100): Prom
     );
 
     if (!response.ok) {
-      throw new Error(`Failed to fetch posts: ${response.status}`);
+      console.error(`Failed to fetch posts: ${response.status} - ${response.statusText}`);
+      // Return empty array instead of throwing
+      return [];
     }
 
     const posts: WordPressPost[] = await response.json();
@@ -78,7 +81,8 @@ export async function getPostBySlug(slug: string): Promise<WordPressPost | null>
     );
 
     if (!response.ok) {
-      throw new Error(`Failed to fetch post: ${response.status}`);
+      console.error(`Failed to fetch post: ${response.status} - ${response.statusText}`);
+      return null;
     }
 
     const posts: WordPressPost[] = await response.json();
