@@ -29,7 +29,7 @@ export default function ManifestoSection({ narrativeState, animationState, anima
     if (animationState?.isVisible || !animationState) {
       setIsVisible(true);
     }
-  }, [animationState?.isVisible]);
+  }, [animationState]);
   
   // Handle animation chain events - only keep pass flip for potential future use
   useEffect(() => {

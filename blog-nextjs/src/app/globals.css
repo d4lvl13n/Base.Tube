@@ -63,16 +63,16 @@ html {
   width: 100%;
   z-index: 999;
   background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 }
 
 .header-legacy.scrolled {
   background: rgba(0, 0, 0, 0.95);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
@@ -172,8 +172,8 @@ html {
     rgba(10, 10, 10, 0.8) 50%,
     rgba(15, 15, 15, 0.7) 100%
   );
-  backdrop-filter: blur(80px) saturate(300%) brightness(1.1);
-  -webkit-backdrop-filter: blur(80px) saturate(300%) brightness(1.1);
+  backdrop-filter: blur(20px) saturate(300%) brightness(1.1);
+  -webkit-backdrop-filter: blur(20px) saturate(300%) brightness(1.1);
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 32px;
   box-shadow: 0 50px 100px rgba(0, 0, 0, 0.9), 0 30px 60px rgba(0, 0, 0, 0.8),
@@ -190,7 +190,7 @@ html {
 .menu-morph-gradient {
   position: absolute;
   border-radius: 50%;
-  filter: blur(30px);
+  filter: blur(15px);
   opacity: 0.8;
   animation: menuMorph 20s ease-in-out infinite;
   mix-blend-mode: screen;
@@ -382,8 +382,8 @@ html {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   z-index: 998;
   opacity: 0;
   visibility: hidden;
@@ -432,7 +432,7 @@ html {
   }
 
   .menu-morph-gradient {
-    filter: blur(30px);
+    filter: blur(15px);
   }
 
   .menu-morph-gradient.morph-1 {
@@ -569,7 +569,7 @@ html {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(250, 117, 23, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
@@ -617,8 +617,8 @@ html {
 .floating-bubble-enhanced {
   position: relative;
   background: rgba(250, 117, 23, 0.9);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1330,8 +1330,8 @@ tr:nth-child(even) {
   justify-content: center;
   gap: 1rem;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   padding: 1.5rem 2rem;
@@ -1763,8 +1763,8 @@ tr:nth-child(even) {
 .footer-glass-card {
   position: relative;
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.3),
@@ -1793,7 +1793,7 @@ tr:nth-child(even) {
 .morph-gradient {
   position: absolute;
   border-radius: 50%;
-  filter: blur(80px);
+  filter: blur(20px);
   opacity: 0;
   animation: morphFadeIn 1.5s ease-out forwards, morph 20s ease-in-out infinite;
 }
@@ -2235,7 +2235,7 @@ tr:nth-child(even) {
   }
 
   .morph-gradient {
-    filter: blur(60px);
+    filter: blur(20px);
   }
 
   .morph-1 {
@@ -2329,8 +2329,8 @@ tr:nth-child(even) {
   align-items: center;
   gap: 0.5rem;
   background: rgba(250, 117, 23, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(250, 117, 23, 0.3);
   border-radius: 50px;
   padding: 0.75rem 1.5rem;
@@ -2544,8 +2544,8 @@ tr:nth-child(even) {
   overflow: hidden;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -2560,8 +2560,8 @@ tr:nth-child(even) {
   overflow: hidden;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -2655,8 +2655,8 @@ tr:nth-child(even) {
   gap: 0.5rem;
   padding: 1rem 2rem;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50px;
   color: white;
@@ -2748,8 +2748,8 @@ tr:nth-child(even) {
 .email-capture {
   display: flex;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50px;
   padding: 0.5rem;
@@ -2906,8 +2906,8 @@ tr:nth-child(even) {
 
 .cta-btn-secondary {
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
 }
@@ -2997,5 +2997,73 @@ tr:nth-child(even) {
     width: 100%;
     max-width: 300px;
     justify-content: center;
+  }
+}
+
+/* Lazy Loading Styles */
+.lazy-section {
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+}
+
+.lazy-section.loaded {
+  opacity: 1;
+}
+
+/* Section Skeleton */
+.section-skeleton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background);
+  padding: 4rem 2rem;
+}
+
+.skeleton-content {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.skeleton-pulse {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  background-size: 200% 100%;
+  animation: skeletonPulse 2s ease-in-out infinite;
+  border-radius: 8px;
+}
+
+.skeleton-title {
+  height: 48px;
+  width: 60%;
+  margin: 0 auto 2rem;
+}
+
+.skeleton-subtitle {
+  height: 24px;
+  width: 40%;
+  margin: 0 auto 3rem;
+}
+
+.skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skeleton-card {
+  height: 200px;
+  width: 100%;
+}
+
+@keyframes skeletonPulse {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
   }
 }

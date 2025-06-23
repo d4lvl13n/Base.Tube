@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useMemo } from 'react';
 
 export default function USPSection2() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -9,7 +9,7 @@ export default function USPSection2() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  const features = [
+  const features = useMemo(() => [
     {
       id: 1,
       title: 'Turn Your Audience Into Your Economy',
@@ -145,7 +145,7 @@ export default function USPSection2() {
       gradient: 'linear-gradient(135deg, #a855f7 0%, #3b82f6 100%)',
       color: 'purple'
     }
-  ];
+  ], []);
 
   // Mouse tracking for 3D tilt effect
   useEffect(() => {

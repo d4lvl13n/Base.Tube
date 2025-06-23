@@ -19,8 +19,11 @@
 .transform-grid {
   position: absolute;
   inset: 0;
-  background-image: 
-    linear-gradient(to right, rgba(250, 117, 23, 0.03) 1px, transparent 1px),
+  background-image: linear-gradient(
+      to right,
+      rgba(250, 117, 23, 0.03) 1px,
+      transparent 1px
+    ),
     linear-gradient(to bottom, rgba(250, 117, 23, 0.03) 1px, transparent 1px);
   background-size: 100px 100px;
   transform: perspective(500px) rotateX(60deg) translateY(-50%);
@@ -28,8 +31,13 @@
 }
 
 @keyframes gridFloat {
-  0%, 100% { transform: perspective(500px) rotateX(60deg) translateY(-50%); }
-  50% { transform: perspective(500px) rotateX(60deg) translateY(-45%); }
+  0%,
+  100% {
+    transform: perspective(500px) rotateX(60deg) translateY(-50%);
+  }
+  50% {
+    transform: perspective(500px) rotateX(60deg) translateY(-45%);
+  }
 }
 
 .transform-gradient-orb {
@@ -39,14 +47,25 @@
   transform: translate(-50%, -50%);
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(250, 117, 23, 0.1) 0%, transparent 50%);
-  filter: blur(100px);
+  background: radial-gradient(
+    circle,
+    rgba(250, 117, 23, 0.1) 0%,
+    transparent 50%
+  );
+  filter: blur(20px);
   animation: orbPulse 10s ease-in-out infinite;
 }
 
 @keyframes orbPulse {
-  0%, 100% { opacity: 0.3; transform: translate(-50%, -50%) scale(1); }
-  50% { opacity: 0.6; transform: translate(-50%, -50%) scale(1.2); }
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
 }
 
 .transform-particles {
@@ -64,32 +83,124 @@
   animation: tParticleFloat 15s linear infinite;
 }
 
-.tp-1 { top: 10%; left: 5%; animation-delay: 0s; }
-.tp-2 { top: 20%; left: 15%; animation-delay: 0.5s; }
-.tp-3 { top: 30%; left: 25%; animation-delay: 1s; }
-.tp-4 { top: 15%; right: 10%; animation-delay: 1.5s; }
-.tp-5 { top: 25%; right: 20%; animation-delay: 2s; }
-.tp-6 { top: 35%; right: 30%; animation-delay: 2.5s; }
-.tp-7 { bottom: 20%; left: 10%; animation-delay: 3s; }
-.tp-8 { bottom: 30%; left: 20%; animation-delay: 3.5s; }
-.tp-9 { bottom: 40%; left: 30%; animation-delay: 4s; }
-.tp-10 { bottom: 15%; right: 15%; animation-delay: 4.5s; }
-.tp-11 { bottom: 25%; right: 25%; animation-delay: 5s; }
-.tp-12 { bottom: 35%; right: 35%; animation-delay: 5.5s; }
-.tp-13 { top: 50%; left: 5%; animation-delay: 6s; }
-.tp-14 { top: 60%; left: 15%; animation-delay: 6.5s; }
-.tp-15 { top: 70%; left: 25%; animation-delay: 7s; }
-.tp-16 { top: 45%; right: 10%; animation-delay: 7.5s; }
-.tp-17 { top: 55%; right: 20%; animation-delay: 8s; }
-.tp-18 { top: 65%; right: 30%; animation-delay: 8.5s; }
-.tp-19 { top: 80%; left: 40%; animation-delay: 9s; }
-.tp-20 { top: 85%; right: 45%; animation-delay: 9.5s; }
+.tp-1 {
+  top: 10%;
+  left: 5%;
+  animation-delay: 0s;
+}
+.tp-2 {
+  top: 20%;
+  left: 15%;
+  animation-delay: 0.5s;
+}
+.tp-3 {
+  top: 30%;
+  left: 25%;
+  animation-delay: 1s;
+}
+.tp-4 {
+  top: 15%;
+  right: 10%;
+  animation-delay: 1.5s;
+}
+.tp-5 {
+  top: 25%;
+  right: 20%;
+  animation-delay: 2s;
+}
+.tp-6 {
+  top: 35%;
+  right: 30%;
+  animation-delay: 2.5s;
+}
+.tp-7 {
+  bottom: 20%;
+  left: 10%;
+  animation-delay: 3s;
+}
+.tp-8 {
+  bottom: 30%;
+  left: 20%;
+  animation-delay: 3.5s;
+}
+.tp-9 {
+  bottom: 40%;
+  left: 30%;
+  animation-delay: 4s;
+}
+.tp-10 {
+  bottom: 15%;
+  right: 15%;
+  animation-delay: 4.5s;
+}
+.tp-11 {
+  bottom: 25%;
+  right: 25%;
+  animation-delay: 5s;
+}
+.tp-12 {
+  bottom: 35%;
+  right: 35%;
+  animation-delay: 5.5s;
+}
+.tp-13 {
+  top: 50%;
+  left: 5%;
+  animation-delay: 6s;
+}
+.tp-14 {
+  top: 60%;
+  left: 15%;
+  animation-delay: 6.5s;
+}
+.tp-15 {
+  top: 70%;
+  left: 25%;
+  animation-delay: 7s;
+}
+.tp-16 {
+  top: 45%;
+  right: 10%;
+  animation-delay: 7.5s;
+}
+.tp-17 {
+  top: 55%;
+  right: 20%;
+  animation-delay: 8s;
+}
+.tp-18 {
+  top: 65%;
+  right: 30%;
+  animation-delay: 8.5s;
+}
+.tp-19 {
+  top: 80%;
+  left: 40%;
+  animation-delay: 9s;
+}
+.tp-20 {
+  top: 85%;
+  right: 45%;
+  animation-delay: 9.5s;
+}
 
 @keyframes tParticleFloat {
-  0% { opacity: 0; transform: translate(0, 0) scale(0); }
-  10% { opacity: 1; transform: translate(50px, -50px) scale(1); }
-  90% { opacity: 1; transform: translate(200px, -200px) scale(1); }
-  100% { opacity: 0; transform: translate(250px, -250px) scale(0); }
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(50px, -50px) scale(1);
+  }
+  90% {
+    opacity: 1;
+    transform: translate(200px, -200px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(250px, -250px) scale(0);
+  }
 }
 
 /* Container */
@@ -123,8 +234,13 @@
 }
 
 @keyframes sparkleRotate {
-  0%, 100% { transform: rotate(-10deg) scale(1); }
-  50% { transform: rotate(10deg) scale(1.2); }
+  0%,
+  100% {
+    transform: rotate(-10deg) scale(1);
+  }
+  50% {
+    transform: rotate(10deg) scale(1.2);
+  }
 }
 
 .transform-title {
@@ -136,7 +252,11 @@
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -166,7 +286,11 @@
 
 .transform-card {
   position: relative;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.05));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.05)
+  );
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
   padding: 3rem;
@@ -184,7 +308,11 @@
 }
 
 .transform-card.active {
-  background: linear-gradient(135deg, rgba(250, 117, 23, 0.05), rgba(250, 117, 23, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(250, 117, 23, 0.05),
+    rgba(250, 117, 23, 0.1)
+  );
   border-color: var(--secondary-color);
 }
 
@@ -192,13 +320,15 @@
 .card-glow {
   position: absolute;
   inset: -100px;
-  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
-    rgba(250, 117, 23, 0.2) 0%, 
-    transparent 50%);
+  background: radial-gradient(
+    circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(250, 117, 23, 0.2) 0%,
+    transparent 50%
+  );
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
-  filter: blur(50px);
+  filter: blur(20px);
 }
 
 .transform-card:hover .card-glow {
@@ -211,9 +341,10 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, 
-    transparent, 
-    rgba(255, 255, 255, 0.1), 
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
     transparent
   );
   transition: left 0.8s ease;
@@ -258,7 +389,11 @@
 
 .to-icon {
   color: var(--secondary-color);
-  background: linear-gradient(135deg, rgba(250, 117, 23, 0.05), rgba(250, 117, 23, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(250, 117, 23, 0.05),
+    rgba(250, 117, 23, 0.1)
+  );
   border-color: rgba(250, 117, 23, 0.3);
 }
 
@@ -354,7 +489,11 @@
   flex-shrink: 0;
   width: 24px;
   height: 24px;
-  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
   border-radius: 8px;
   position: relative;
   display: flex;
@@ -363,7 +502,7 @@
 }
 
 .point-marker::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 4px;
   background: #0a0a0a;
@@ -371,7 +510,7 @@
 }
 
 .point-marker::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   height: 6px;
@@ -446,7 +585,11 @@
 .button-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
   transform: translateY(100%);
   transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -537,4 +680,4 @@
     padding: 1.25rem 2rem;
     font-size: 1rem;
   }
-} 
+}

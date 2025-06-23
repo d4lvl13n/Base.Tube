@@ -31,7 +31,7 @@
   font-weight: 900;
   line-height: 0.9;
   margin: 0 0 1rem 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .usp2-small {
@@ -73,13 +73,23 @@
 }
 
 @keyframes uspGradientShift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 @keyframes uspFloat {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-10px) rotate(1deg); }
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
 }
 
 .usp2-subtitle {
@@ -149,8 +159,7 @@
   transform: scale(1.02) !important;
   border-color: rgba(250, 117, 23, 0.3);
   background: rgba(250, 117, 23, 0.03);
-  box-shadow: 
-    0 25px 50px -12px rgba(250, 117, 23, 0.3),
+  box-shadow: 0 25px 50px -12px rgba(250, 117, 23, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
@@ -158,9 +167,7 @@
   border-color: rgba(250, 117, 23, 0.4);
   background: rgba(250, 117, 23, 0.05);
   transform: translateY(-5px) scale(1.02) !important;
-  box-shadow: 
-    0 20px 40px rgba(0, 0, 0, 0.3),
-    0 0 60px rgba(250, 117, 23, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 60px rgba(250, 117, 23, 0.1);
 }
 
 /* Icon Section */
@@ -185,15 +192,26 @@
 .icon-glow {
   position: absolute;
   inset: -40%;
-  background: radial-gradient(circle, var(--secondary-color) 0%, transparent 60%);
+  background: radial-gradient(
+    circle,
+    var(--secondary-color) 0%,
+    transparent 60%
+  );
   opacity: 0.3;
-  filter: blur(30px);
+  filter: blur(15px);
   animation: iconGlowPulse 3s ease-in-out infinite;
 }
 
 @keyframes iconGlowPulse {
-  0%, 100% { opacity: 0.3; transform: scale(1); }
-  50% { opacity: 0.5; transform: scale(1.2); }
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
 }
 
 .usp2-card.active .icon-glow {
@@ -224,8 +242,6 @@
   margin: 0 0 2rem 0;
   font-weight: 300;
 }
-
-
 
 /* Particles */
 .usp2-particles {
@@ -364,7 +380,7 @@
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
-  filter: blur(40px);
+  filter: blur(20px);
 }
 
 .usp2-card:hover .card-glow-effect {
@@ -409,8 +425,6 @@
   margin-bottom: 2rem;
   letter-spacing: 0.02em;
 }
-
-
 
 /* Reveal Animation */
 .reveal-animation {
@@ -506,4 +520,4 @@
     font-size: 1.25rem;
     padding: 0 1rem;
   }
-} 
+}

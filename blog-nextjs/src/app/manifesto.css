@@ -21,7 +21,7 @@
 .floating-orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(60px);
+  filter: blur(20px);
   opacity: 0.3;
   animation: orbFloat 20s ease-in-out infinite;
 }

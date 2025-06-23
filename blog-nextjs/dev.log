@@ -1,0 +1,127 @@
+
+> blog-nextjs@0.1.0 dev
+> next dev --turbopack
+
+   ▲ Next.js 15.3.4 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://10.17.2.160:3000
+
+ ✓ Starting...
+ ✓ Ready in 852ms
+ ○ Compiling /blog ...
+ ✓ Compiled /blog in 1913ms
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /blog 200 in 2178ms
+ GET /blog 200 in 129ms
+ ✓ Compiled /favicon.ico in 327ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 574ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 228ms
+ ✓ Compiled /_not-found/page in 367ms
+ GET /images/default-blog-image.jpg 404 in 420ms
+ ⨯ The requested resource isn't a valid image for /images/default-blog-image.jpg received text/html; charset=utf-8
+ ✓ Compiled /blog/[slug] in 493ms
+ GET /blog/hello-world 200 in 1548ms
+ GET /images/default-blog-image.jpg 404 in 57ms
+ ⨯ The requested resource isn't a valid image for /images/default-blog-image.jpg received text/html; charset=utf-8
+ HEAD /blog 200 in 76ms
+ ○ Compiling /landing ...
+ ✓ Compiled /landing in 905ms
+ HEAD /landing 200 in 1080ms
+ ✓ Compiled in 452ms
+ GET /blog/hello-world 200 in 51ms
+ ○ Compiling / ...
+ ✓ Compiled / in 945ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.tkoqjhtfwvj'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.tkoqjhtfwvj'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 647ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.jdx0uj04jt'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.jdx0uj04jt'
+}
+[Error: ENOENT: no such file or directory, open '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.tkoqjhtfwvj'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.tkoqjhtfwvj'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.8h16ptoygvj'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.8h16ptoygvj'
+}
+[Error: ENOENT: no such file or directory, open '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.0is70iip3od'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.0is70iip3od'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.kb76gsqeptg'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.kb76gsqeptg'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.nvpxlw2yrrr'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.nvpxlw2yrrr'
+}
+[Error: ENOENT: no such file or directory, open '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.kb76gsqeptg'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.kb76gsqeptg'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.uf479ka7u2'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.uf479ka7u2'
+}
+[Error: ENOENT: no such file or directory, open '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.ud64fvaekjg'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/damienlarquey/Basetube website/blog-nextjs/.next/static/development/_buildManifest.js.tmp.ud64fvaekjg'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/damienlarquey/Basetube website/blog-nextjs/.next/server/app/favicon.ico/[__metadata_id__]/route/app-paths-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/damienlarquey/Basetube website/blog-nextjs/.next/server/app/favicon.ico/[__metadata_id__]/route/app-paths-manifest.json'
+}
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to /var/folders/9p/6y96lgbd50q45ccnh5jqf7440000gn/T/next-panic-e6c6d9757183a3ce7526a3042fb43d24.log.
+
+To help make Turbopack better, report this error by ]8;;https://github.com/vercel/next.js/discussions/new?category=turbopack-error-report&title=Turbopack%20Error%3A%20Expected%20file%20content%20for%20file&body=Turbopack%20version%3A%20%60v15.3.3-3-gf9e98b9ce%60%0A%0AError%20message%3A%0A%60%60%60%0AExpected%20file%20content%20for%20file%0A%0ADebug%20info%3A%0A-%20Execution%20of%20subscribe_issues_and_diags_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aserver_changed%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20get_app_page_entry%20failed%0A-%20Execution%20of%20file_content_rope%20failed%0A-%20Expected%20file%20content%20for%20file%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace\clicking here.]8;;\
+-----
+
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to /var/folders/9p/6y96lgbd50q45ccnh5jqf7440000gn/T/next-panic-e6c6d9757183a3ce7526a3042fb43d24.log.
+
+To help make Turbopack better, report this error by ]8;;https://github.com/vercel/next.js/discussions/new?category=turbopack-error-report&title=Turbopack%20Error%3A%20Next.js%20package%20not%20found&body=Turbopack%20version%3A%20%60v15.3.3-3-gf9e98b9ce%60%0A%0AError%20message%3A%0A%60%60%60%0ANext.js%20package%20not%20found%0A%0ADebug%20info%3A%0A-%20Execution%20of%20subscribe_issues_and_diags_operation%20failed%0A-%20Execution%20of%20endpoint_server_changed_operation%20failed%0A-%20Execution%20of%20pick_endpoint%20failed%0A-%20Execution%20of%20entrypoints_without_collectibles_operation%20failed%0A-%20Execution%20of%20Project%3A%3Aentrypoints%20failed%0A-%20Execution%20of%20AppProject%3A%3Aroutes%20failed%0A-%20Execution%20of%20directory_tree_to_entrypoints_internal%20failed%0A-%20Execution%20of%20directory_tree_to_loader_tree%20failed%0A-%20Execution%20of%20get_next_package%20failed%0A-%20Next.js%20package%20not%20found%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace\clicking here.]8;;\
+-----
+
+[Error [TurbopackInternalError]: Next.js package not found
+
+Debug info:
+- Execution of get_entrypoints_with_issues_operation failed
+- Execution of EntrypointsOperation::new failed
+- Execution of Project::entrypoints failed
+- Execution of AppProject::routes failed
+- Execution of directory_tree_to_entrypoints_internal failed
+- Execution of directory_tree_to_loader_tree failed
+- Execution of get_next_package failed
+- Next.js package not found]
+[?25h

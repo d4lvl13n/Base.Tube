@@ -9,6 +9,8 @@ import PerksSection from '@/components/landing/PerksSection'
 import USPSection2 from '@/components/landing/USPSection2'
 import CTASection from '@/components/landing/CTASection'
 import NarrativeParticleSystem from '@/components/shared/NarrativeParticleSystem'
+import LazySection from '@/components/shared/LazySection'
+import SectionSkeleton from '@/components/shared/SectionSkeleton'
 import { useNarrativeScroll } from '@/hooks/useNarrativeScroll'
 import { useAnimationChain } from '@/hooks/useAnimationChain'
 
@@ -21,7 +23,7 @@ export default function LandingPageClient() {
     if (animationChain?.startChain) {
       animationChain.startChain('heroLoader')
     }
-  }, [animationChain?.startChain])
+  }, [animationChain])
 
   // Trigger section animations based on scroll
   useEffect(() => {
@@ -52,7 +54,7 @@ export default function LandingPageClient() {
         }
         break
     }
-  }, [narrativeScroll.currentChapter, animationChain])
+  }, [narrativeScroll, animationChain])
 
   return (
     <LandingLayout>
@@ -86,19 +88,58 @@ export default function LandingPageClient() {
         animationChain={animationChain}
       />
       
-      <ManifestoSection 
-        narrativeState={narrativeScroll.state}
-        animationState={narrativeScroll.getAnimationState('problem')}
-        animationChain={animationChain}
-      />
-      <HowItWorksSection 
-        narrativeState={narrativeScroll.state}
-        animationState={narrativeScroll.getAnimationState('solution')}
-        animationChain={animationChain}
-      />
-      <USPSection2 />
-      <PerksSection />
-      <CTASection />
+      <LazySection 
+        threshold={0.1}
+        rootMargin="100px"
+        fallback={<SectionSkeleton height="100vh" />}
+        minHeight="100vh"
+      >
+        <ManifestoSection 
+          narrativeState={narrativeScroll.state}
+          animationState={narrativeScroll.getAnimationState('problem')}
+          animationChain={animationChain}
+        />
+      </LazySection>
+
+      <LazySection 
+        threshold={0.1}
+        rootMargin="100px"
+        fallback={<SectionSkeleton height="100vh" />}
+        minHeight="100vh"
+      >
+        <HowItWorksSection 
+          narrativeState={narrativeScroll.state}
+          animationState={narrativeScroll.getAnimationState('solution')}
+          animationChain={animationChain}
+        />
+      </LazySection>
+
+      <LazySection 
+        threshold={0.1}
+        rootMargin="100px"
+        fallback={<SectionSkeleton height="80vh" />}
+        minHeight="80vh"
+      >
+        <USPSection2 />
+      </LazySection>
+
+      <LazySection 
+        threshold={0.1}
+        rootMargin="100px"
+        fallback={<SectionSkeleton height="100vh" />}
+        minHeight="100vh"
+      >
+        <PerksSection />
+      </LazySection>
+
+      <LazySection 
+        threshold={0.1}
+        rootMargin="50px"
+        fallback={<SectionSkeleton height="100vh" />}
+        minHeight="100vh"
+      >
+        <CTASection />
+      </LazySection>
     </LandingLayout>
   )
 } 
