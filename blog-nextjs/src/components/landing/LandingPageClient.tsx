@@ -6,7 +6,6 @@ import HeroSection from '@/components/landing/HeroSection'
 import ManifestoSection from '@/components/landing/ManifestoSection'
 import HowItWorksSection from '@/components/landing/HowItWorksSection'
 import PerksSection from '@/components/landing/PerksSection'
-import TransformationSection from '@/components/landing/TransformationSection'
 import USPSection2 from '@/components/landing/USPSection2'
 import CTASection from '@/components/landing/CTASection'
 import NarrativeParticleSystem from '@/components/shared/NarrativeParticleSystem'
@@ -26,6 +25,8 @@ export default function LandingPageClient() {
 
   // Trigger section animations based on scroll
   useEffect(() => {
+    if (!animationChain) return;
+    
     const { currentChapter } = narrativeScroll
     
     // Trigger animations when entering new chapters
@@ -51,11 +52,7 @@ export default function LandingPageClient() {
         }
         break
     }
-  }, [
-    narrativeScroll.currentChapter,
-    animationChain?.hasAnimationCompleted,
-    animationChain?.playAnimation
-  ])
+  }, [narrativeScroll.currentChapter, animationChain])
 
   return (
     <LandingLayout>
@@ -101,7 +98,6 @@ export default function LandingPageClient() {
       />
       <USPSection2 />
       <PerksSection />
-      <TransformationSection />
       <CTASection />
     </LandingLayout>
   )

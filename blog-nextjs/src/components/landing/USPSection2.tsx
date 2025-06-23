@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import EnhancedButton from '../ui/EnhancedButton';
 
 export default function USPSection2() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -356,21 +355,7 @@ export default function USPSection2() {
           ))}
         </div>
 
-        {/* CTA Section */}
-        <div className={`usp2-cta ${isInView ? 'visible' : ''}`}>
-          <p className="usp2-cta-subtitle">Ready to turn your audience into your economy?</p>
-          <EnhancedButton 
-            size="large"
-            onClick={() => {}}
-            icon={
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            }
-          >
-            Join our beta
-          </EnhancedButton>
-        </div>
+
 
         {/* Ambient particles based on mouse position */}
         <div 

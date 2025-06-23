@@ -191,7 +191,7 @@ export default async function BlogPage() {
                 <div className="avatar"></div>
                 <div className="avatar-more">+</div>
               </div>
-              <span className="proof-text">Join 500+ content pioneers</span>
+              <span className="proof-text">Join content pioneers</span>
             </div>
           </div>
         </div>

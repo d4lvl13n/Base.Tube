@@ -53,6 +53,12 @@ export const useAnimationChain = (chainConfig: AnimationChainConfig = defaultAni
   const [isPlaying, setIsPlaying] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const callbacksRef = useRef<Map<string, AnimationStep>>(new Map());
+  const completedAnimationsRef = useRef<Set<string>>(new Set());
+
+  // Keep refs in sync with state
+  useEffect(() => {
+    completedAnimationsRef.current = completedAnimations;
+  }, [completedAnimations]);
 
   // Register animation callbacks
   useEffect(() => {
@@ -64,7 +70,7 @@ export const useAnimationChain = (chainConfig: AnimationChainConfig = defaultAni
   // Play a specific animation
   const playAnimation = useCallback((animationId: string, skipChain = false) => {
     const animation = callbacksRef.current.get(animationId);
-    if (!animation || completedAnimations.has(animationId)) return;
+    if (!animation || completedAnimationsRef.current.has(animationId)) return;
 
     // Clear any existing timeout
     if (timeoutRef.current) {
@@ -93,26 +99,26 @@ export const useAnimationChain = (chainConfig: AnimationChainConfig = defaultAni
         playAnimation(animation.next);
       }
     }, animation.duration);
-  }, [completedAnimations]);
+  }, []);
 
-  // Check if an animation is active
+  // Check if an animation is active - stable version
   const isAnimationActive = useCallback((animationId: string) => {
     return currentAnimation === animationId;
   }, [currentAnimation]);
 
-  // Check if an animation has completed
+  // Check if an animation has completed - stable version
   const hasAnimationCompleted = useCallback((animationId: string) => {
-    return completedAnimations.has(animationId);
-  }, [completedAnimations]);
+    return completedAnimationsRef.current.has(animationId);
+  }, []);
 
   // Get animation progress (0-1)
   const getAnimationProgress = useCallback((animationId: string): number => {
-    if (!isAnimationActive(animationId)) {
-      return hasAnimationCompleted(animationId) ? 1 : 0;
+    if (currentAnimation !== animationId) {
+      return completedAnimationsRef.current.has(animationId) ? 1 : 0;
     }
     // Would need more complex tracking for real-time progress
     return 0.5;
-  }, [isAnimationActive, hasAnimationCompleted]);
+  }, [currentAnimation]);
 
   // Reset animation chain
   const resetChain = useCallback(() => {

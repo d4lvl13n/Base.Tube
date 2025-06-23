@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
 import EnhancedButton from '../ui/EnhancedButton';
 import { NarrativeState } from '@/hooks/useNarrativeScroll';
 
@@ -21,255 +22,185 @@ interface HeroSectionProps {
   };
 }
 
-export default function HeroSection({ narrativeState, animationChain }: HeroSectionProps) {
+export default function HeroSection({ animationChain }: HeroSectionProps) {
   const heroRef = useRef<HTMLElement>(null);
-  const titleRef = useRef<HTMLHeadingElement>(null);
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [isGlitching, setIsGlitching] = useState(false);
   const [loaderComplete, setLoaderComplete] = useState(false);
-  const [revenuePhase, setRevenuePhase] = useState<'escaping' | 'returning'>('escaping');
 
-  // Initialize animations with narrative loader
+  // Initialize loader
   useEffect(() => {
-    // Fallback for when not using narrative system
-    if (!animationChain) {
-      const loaderTimer = setTimeout(() => {
-        setLoaderComplete(true);
-        setIsLoaded(true);
-        setTimeout(() => {
-          setRevenuePhase('returning');
-        }, 3000);
-      }, 5000);
-      return () => clearTimeout(loaderTimer);
-    }
-  }, [animationChain]);
-
-  // Ensure loader completes even if animation chain fails
-  useEffect(() => {
-    const fallbackTimer = setTimeout(() => {
-      if (!loaderComplete) {
-        console.warn('Loader stuck - forcing completion');
-        setLoaderComplete(true);
-        setIsLoaded(true);
-      }
-    }, 6000); // Fallback after 6 seconds
+    const loaderTimer = setTimeout(() => {
+      setLoaderComplete(true);
+    }, 3500); // Shorter, snappier loader
     
-    return () => clearTimeout(fallbackTimer);
-  }, [loaderComplete]);
-  
-  // Handle glitch animation separately
+    return () => clearTimeout(loaderTimer);
+  }, []);
+
+  // Handle animation chain if provided
   useEffect(() => {
     if (!animationChain) return;
     
-    if (animationChain.isAnimationActive('heroGlitch')) {
-      setIsGlitching(true);
-      const timer = setTimeout(() => setIsGlitching(false), 200);
-      return () => clearTimeout(timer);
+    if (animationChain.hasAnimationCompleted && animationChain.hasAnimationCompleted('loader')) {
+      setLoaderComplete(true);
     }
-  }, [animationChain?.isAnimationActive]);
-
-  // Purposeful glitch that reveals the problem
-  useEffect(() => {
-    if (!loaderComplete) return;
-    
-    // First glitch happens right after load to grab attention
-    const firstGlitch = setTimeout(() => {
-      setIsGlitching(true);
-      setTimeout(() => setIsGlitching(false), 300);
-    }, 500);
-    
-    // Periodic glitches that hint at system breaking
-    const glitchInterval = setInterval(() => {
-      setIsGlitching(true);
-      setTimeout(() => setIsGlitching(false), 200);
-    }, 12000);
-
-    return () => {
-      clearTimeout(firstGlitch);
-      clearInterval(glitchInterval);
-    };
-  }, [loaderComplete]);
-
-  // Create local revenue particles (complement global particle system)
-  useEffect(() => {
-    if (!isLoaded || !heroRef.current) return;
-    
-    // Only create local particles if global narrative system isn't active
-    if (narrativeState && narrativeState.particlePhase === 'escaping') {
-      return; // Let global particle system handle it
-    }
-
-    const createRevenueParticle = (phase: 'escaping' | 'returning') => {
-      const particle = document.createElement('div');
-      particle.className = `hero-revenue-particle ${phase}`;
-      particle.innerHTML = '$';
-      
-      if (phase === 'escaping') {
-        // Money escaping from creator (center) to platforms (edges)
-        particle.style.left = '50%';
-        particle.style.top = '50%';
-        const angle = Math.random() * Math.PI * 2;
-        const velocity = 50 + Math.random() * 100;
-        particle.style.setProperty('--dx', `${Math.cos(angle) * velocity}vw`);
-        particle.style.setProperty('--dy', `${Math.sin(angle) * velocity}vh`);
-        particle.style.setProperty('--rotation', `${Math.random() * 360}deg`);
-      } else {
-        // Money returning from edges to creator
-        const edge = Math.floor(Math.random() * 4);
-        switch(edge) {
-          case 0: // top
-            particle.style.left = `${Math.random() * 100}%`;
-            particle.style.top = '-20px';
-            break;
-          case 1: // right
-            particle.style.left = 'calc(100% + 20px)';
-            particle.style.top = `${Math.random() * 100}%`;
-            break;
-          case 2: // bottom
-            particle.style.left = `${Math.random() * 100}%`;
-            particle.style.top = 'calc(100% + 20px)';
-            break;
-          case 3: // left
-            particle.style.left = '-20px';
-            particle.style.top = `${Math.random() * 100}%`;
-            break;
-        }
-        particle.style.setProperty('--return-delay', `${Math.random() * 2}s`);
-      }
-      
-      heroRef.current?.appendChild(particle);
-      setTimeout(() => particle.remove(), phase === 'escaping' ? 2000 : 3000);
-    };
-
-    // Initial explosion only if not using narrative system
-    if (revenuePhase === 'escaping' && !narrativeState) {
-      for (let i = 0; i < 30; i++) {
-        setTimeout(() => createRevenueParticle('escaping'), i * 50);
-      }
-    }
-    
-    // Continuous flow based on phase (reduced when narrative system is active)
-    const particleInterval = setInterval(() => {
-      if (revenuePhase === 'returning' && !narrativeState) {
-        // Create returning particles
-        createRevenueParticle('returning');
-      }
-    }, 300);
-
-    return () => clearInterval(particleInterval);
-  }, [isLoaded, revenuePhase, narrativeState]);
-
-
+  }, [animationChain]);
 
   return (
     <>
-      {/* Narrative Loader - Sets the tone */}
+      {/* Simplified Loader */}
       {!loaderComplete && (
         <div className="hero-loader">
           <div className="loader-content">
-            <div className="loader-statement">
-              <div>
-                <span className="loader-text fade-1">Your Content.</span>
-                <span className="loader-text fade-2">Your Terms.</span>
-                <span className="loader-text fade-3">Your Time.</span>
-              </div>
-              <span className="loader-amount fade-4">Base.Tube</span>
-            </div>
-            <div className="loader-progress">
+            <motion.div 
+              className="loader-statement"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8 }}
+            >
+              <motion.span 
+                className="loader-text"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+              >
+                Your Content.
+              </motion.span>
+              <motion.span 
+                className="loader-text"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+              >
+                Your Terms.
+              </motion.span>
+              <motion.span 
+                className="loader-text"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 1.3 }}
+              >
+                Your Time.
+              </motion.span>
+            </motion.div>
+            <motion.div 
+              className="loader-progress"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 2 }}
+            >
               <div className="loader-bar"></div>
-            </div>
-          </div>
-          <div className="loader-particles">
-            {[...Array(20)].map((_, i) => (
-              <div key={i} className={`loader-money money-${i + 1}`}></div>
-            ))}
+            </motion.div>
           </div>
         </div>
       )}
 
-      {/* Hero Header Section */}
-      <section ref={heroRef} className={`hero-section slide slide-header ${loaderComplete ? 'loaded' : ''}`}>
+      {/* Clean Hero Section */}
+      <section ref={heroRef} className={`hero-section ${loaderComplete ? 'loaded' : ''}`}>
         
-        {/* Dark Background - Matching VideoSection style */}
+        {/* Minimal Dark Background */}
         <div className="hero-dark-background">
-          {/* Enhanced Dark Overlay */}
           <div className="hero-dark-overlay"></div>
-          
-          {/* Animated scan lines */}
-          <div className="hero-scan-lines"></div>
-          
-          {/* Revenue state indicator */}
-          {revenuePhase === 'returning' && (
-            <div className="revenue-return-glow"></div>
-          )}
         </div>
 
-        <div className="hero-content section__content slide-header-content">
-          
-          {/* Main title with killer effects */}
-          <div className="hero-title-wrapper">
-            <h1 
-              ref={titleRef}
-              className={`hero-title ${isLoaded ? 'visible' : ''} ${isGlitching ? 'glitching' : ''}`}
-              data-text="Your Content. Their Pass. Endless Earnings."
-              data-alt-text="Your Content. Their Profit. Endless Losses."
-            >
-              <span className="hero-title-line">
-                <span className="hero-gradient-text">Your Content.</span>
-                <span className="hero-outline-text" data-text=" Their Pass."> Their Pass.</span>
-              </span>
-              <span className="hero-title-line">
-                <span className={`hero-gradient-text hero-text-emphasis ${revenuePhase === 'returning' ? 'returning' : ''}`}>
-                  {isGlitching && revenuePhase === 'escaping' ? 'Endless Losses.' : 'Endless Earnings.'}
-                </span>
-              </span>
-            </h1>
-          </div>
-
-          {/* New narrative structure */}
-          <div className={`hero-narrative ${isLoaded ? 'visible' : ''}`}>
-            <div className="narrative-block">
-              <p className="narrative-question">The creator economy&apos;s biggest lie?</p>
-              <p className="narrative-answer">That you need millions of followers to make a living.</p>
-            </div>
-            
-            <div className="narrative-block">
-              <p className="narrative-question">The truth?</p>
-              <p className="narrative-answer">You just need the right fans and the right platform.</p>
-            </div>
-            
-            <div className="narrative-punchline">
-              <p className="narrative-welcome">Welcome to the right platform.</p>
-            </div>
-          </div>
-
-          {/* CTA with magnetic effect - appears when solution is revealed */}
-          <div className={`hero-cta-wrapper ${revenuePhase === 'returning' ? 'visible' : ''}`}>
-            <EnhancedButton
-              size="large"
-              className="hero-cta-primary"
-              icon={
-                <svg viewBox="0 0 24 24" fill="none">
-                  <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M10 8L14 12L10 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              }
-            >
-              Join the Beta, and Build the Future With Us
-            </EnhancedButton>
-          </div>
-
-        </div>
-
-        {/* Floating particles - purposeful for visual atmosphere */}
+        {/* Floating dots for subtle movement */}
         <div className="hero-particles">
-          {[...Array(10)].map((_, i) => (
+          {[...Array(15)].map((_, i) => (
             <div key={i} className={`hero-particle hero-particle-${i + 1}`} />
           ))}
         </div>
 
+        <div className="hero-content">
+          
+          {/* Main Headline */}
+          <motion.h1 
+            className="hero-headline"
+            initial={{ opacity: 0, y: 30 }}
+            animate={loaderComplete ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            The Platform That Pays Creators First.
+          </motion.h1>
 
+          {/* Three Columns */}
+          <motion.div 
+            className="hero-features"
+            initial={{ opacity: 0 }}
+            animate={loaderComplete ? { opacity: 1 } : {}}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
+            <motion.div 
+              className="feature-item"
+              initial={{ opacity: 0, y: 20 }}
+              animate={loaderComplete ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              <span className="feature-icon">❌</span>
+              <span className="feature-text">No ads</span>
+            </motion.div>
+            
+            <motion.div 
+              className="feature-item"
+              initial={{ opacity: 0, y: 20 }}
+              animate={loaderComplete ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
+              <span className="feature-icon">❌</span>
+              <span className="feature-text">No algorithms</span>
+            </motion.div>
+            
+            <motion.div 
+              className="feature-item"
+              initial={{ opacity: 0, y: 20 }}
+              animate={loaderComplete ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.8 }}
+            >
+              <span className="feature-icon">❌</span>
+              <span className="feature-text">No subscriptions</span>
+            </motion.div>
+          </motion.div>
 
+          {/* Explanation */}
+          <motion.div 
+            className="hero-explanation"
+            initial={{ opacity: 0 }}
+            animate={loaderComplete ? { opacity: 1 } : {}}
+            transition={{ duration: 0.8, delay: 1 }}
+          >
+            <p className="explanation-main">
+              Just content passes your fans can buy, own, and resell.
+            </p>
+            <p className="explanation-sub">
+              You earn from every transaction.
+            </p>
+          </motion.div>
+
+          {/* Welcome Message */}
+          <motion.p 
+            className="hero-welcome"
+            initial={{ opacity: 0 }}
+            animate={loaderComplete ? { opacity: 1 } : {}}
+            transition={{ duration: 0.8, delay: 1.2 }}
+          >
+            Welcome to the future you&apos;ve been waiting for.
+          </motion.p>
+
+          {/* CTA Button */}
+          <motion.div 
+            className="hero-cta-wrapper"
+            initial={{ opacity: 0, y: 20 }}
+            animate={loaderComplete ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 1.4 }}
+          >
+            <EnhancedButton
+              size="large"
+              className="hero-cta-button"
+              icon={<span className="button-arrow">→</span>}
+              onClick={() => window.open('https://beta.base.tube/sign-up', '_blank')}
+            >
+              Join the Beta
+            </EnhancedButton>
+          </motion.div>
+
+        </div>
       </section>
     </>
   );

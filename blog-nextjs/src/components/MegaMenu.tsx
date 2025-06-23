@@ -10,39 +10,62 @@ interface MegaMenuProps {
 export default function MegaMenu({ isMenuOpen, onToggleMenu }: MegaMenuProps) {
   return (
     <>
-      {/* Mega Menu */}
-      <div id="mega-menu" className={`mega-menu ${isMenuOpen ? 'active' : ''}`}>
-        <nav>
-          <ul>
-            <li style={{'--i': 1} as React.CSSProperties}>
-              <Link href="/" onClick={onToggleMenu}>Home</Link>
-            </li>
-            <li style={{'--i': 2} as React.CSSProperties}>
-              <Link href="https://base-tube.gitbook.io" onClick={onToggleMenu}>Learn More</Link>
-            </li>
-            <li style={{'--i': 3} as React.CSSProperties}>
-              <Link href="https://base-tube.gitbook.io/base.tube-documentation/tokenomics" onClick={onToggleMenu}>Tokenomics</Link>
-            </li>
-            <li style={{'--i': 4} as React.CSSProperties}>
-              <Link href="/#investors" onClick={onToggleMenu}>Investors</Link>
-            </li>
-            <li style={{'--i': 5} as React.CSSProperties}>
-              <Link href="/blog" onClick={onToggleMenu}>Blog</Link>
-            </li>
-            <li style={{'--i': 6} as React.CSSProperties}>
-              <Link href="/roadmap" onClick={onToggleMenu}>Roadmap</Link>
-            </li>
-          </ul>
-        </nav>
+      {/* Glass Morphism Mega Menu */}
+      <div className={`mega-menu-floating ${isMenuOpen ? 'active' : ''}`}>
+        <div className="mega-menu-container">
+          <div className="mega-menu-glass-card">
+            {/* Morph Background Effects */}
+            <div className="menu-morph-gradient morph-1"></div>
+            <div className="menu-morph-gradient morph-2"></div>
+            <div className="menu-morph-gradient morph-3"></div>
+            
+            <div className="mega-menu-content">
+              <nav className="mega-menu-nav">
+                <Link href="/" className="mega-menu-link" onClick={onToggleMenu}>
+                  <span className="menu-link-text">Home</span>
+                  <span className="menu-link-underline"></span>
+                </Link>
+                
+                <Link href="https://base-tube.gitbook.io" className="mega-menu-link" onClick={onToggleMenu}>
+                  <span className="menu-link-text">Learn More</span>
+                  <span className="menu-link-underline"></span>
+                </Link>
+                
+                <Link href="https://base-tube.gitbook.io/base.tube-documentation/tokenomics" className="mega-menu-link" onClick={onToggleMenu}>
+                  <span className="menu-link-text">Tokenomics</span>
+                  <span className="menu-link-underline"></span>
+                </Link>
+                
+                <Link href="/blog" className="mega-menu-link" onClick={onToggleMenu}>
+                  <span className="menu-link-text">Blog</span>
+                  <span className="menu-link-underline"></span>
+                </Link>
+                
+                <Link href="/roadmap" className="mega-menu-link" onClick={onToggleMenu}>
+                  <span className="menu-link-text">Roadmap</span>
+                  <span className="menu-link-underline"></span>
+                </Link>
+                
+                <a 
+                  href="https://beta.base.tube/sign-up" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="mega-menu-link mega-menu-cta" 
+                  onClick={onToggleMenu}
+                >
+                  <span className="menu-link-text">Join Beta</span>
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
       </div>
 
-      {/* Overlay for mobile menu */}
-      {isMenuOpen && (
-        <div 
-          className="menu-overlay"
-          onClick={onToggleMenu}
-        />
-      )}
+      {/* Overlay for menu */}
+      <div 
+        className={`menu-overlay-glass ${isMenuOpen ? 'active' : ''}`}
+        onClick={onToggleMenu}
+      />
     </>
   );
 } 

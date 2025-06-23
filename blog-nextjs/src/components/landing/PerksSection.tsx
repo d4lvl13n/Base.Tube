@@ -8,27 +8,17 @@ export default function PerksSection() {
   const [hoveredBenefit, setHoveredBenefit] = useState<number | null>(null)
   const [passNumber, setPassNumber] = useState(1)
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
-  const [passesRemaining, setPassesRemaining] = useState(500)
   const [autoRotate, setAutoRotate] = useState(true)
   const sectionRef = useRef<HTMLElement>(null)
 
-  // Simulate pass number animation and scarcity
+  // Simulate pass number animation
   useEffect(() => {
     const interval = setInterval(() => {
       setPassNumber(prev => prev >= 500 ? 1 : prev + Math.floor(Math.random() * 10) + 1)
     }, 3000)
     
-    // Simulate passes being claimed
-    const claimInterval = setInterval(() => {
-      setPassesRemaining(prev => {
-        if (prev <= 100) return prev // Keep some scarcity
-        return prev - Math.floor(Math.random() * 3) - 1
-      })
-    }, 8000)
-    
     return () => {
       clearInterval(interval)
-      clearInterval(claimInterval)
     }
   }, [])
 
@@ -196,12 +186,8 @@ export default function PerksSection() {
           <h2 className="perks-title">
             Join the <span className="founding-highlight">Founding 500</span>
           </h2>
-          <div className="genesis-badge">
-            <span className="badge-icon">🎫</span>
-            <span className="badge-text">The Genesis Pass</span>
-          </div>
           <p className="perks-tagline">
-            One pass. Every creator. <span className="forever-text">Forever.</span>
+            <span className="genesis-text">The Genesis Pass.</span> One pass. Every creator. <span className="forever-text">Forever.</span>
           </p>
         </motion.div>
 
@@ -247,17 +233,9 @@ export default function PerksSection() {
             </div>
           </div>
           
-          {/* Scarcity Counter */}
-          <div className="scarcity-counter">
-            <motion.div 
-              className="counter-content"
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 1, type: "spring", stiffness: 200 }}
-            >
-              <span className="counter-number">{500 - passesRemaining}</span>
-              <span className="counter-text">of 500 claimed</span>
-            </motion.div>
+          {/* Subtle scarcity indicator */}
+          <div className="pass-scarcity">
+            <span className="scarcity-highlight">First 500</span>
           </div>
         </motion.div>
 
@@ -373,40 +351,6 @@ export default function PerksSection() {
               </motion.div>
             ))}
           </div>
-        </motion.div>
-
-        {/* Scarcity Notice */}
-        <motion.div 
-          className="scarcity-notice"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, delay: 0.7, type: "spring", stiffness: 100 }}
-        >
-          <div className="scarcity-content">
-            <div className="scarcity-icon">⚡</div>
-            <p className="scarcity-text">
-              Only <span className="scarcity-number">{passesRemaining}</span> Genesis Passes remaining
-            </p>
-          </div>
-        </motion.div>
-
-        {/* CTA Section */}
-        <motion.div 
-          className="perks-cta"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, delay: 0.9, type: "spring", stiffness: 80 }}
-        >
-          <button className="genesis-cta-button">
-            <span className="cta-text">Claim Your Genesis Pass</span>
-            <svg className="cta-arrow" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-            </svg>
-            <div className="button-pulse"></div>
-            <div className="button-shine"></div>
-          </button>
         </motion.div>
 
         {/* Ambient glow that follows mouse */}

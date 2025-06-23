@@ -16,6 +16,15 @@ export interface NarrativeState {
   particlePhase: 'escaping' | 'trapped' | 'flowing' | 'forming' | 'converging';
 }
 
+// Define story chapters with their scroll triggers - moved outside to prevent recreation
+const NARRATIVE_CHAPTERS: Omit<Chapter, 'status'>[] = [
+  { id: 'hero', section: 'hero-section', trigger: 0 },
+  { id: 'problem', section: 'manifesto-section', trigger: 0.5 },
+  { id: 'solution', section: 'howto-section', trigger: 1.2 },
+  { id: 'proof', section: 'usp2-section', trigger: 2.2 },
+  { id: 'urgency', section: 'perks-section', trigger: 3.2 }
+];
+
 export const useNarrativeScroll = () => {
   const [currentChapter, setCurrentChapter] = useState(0);
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -23,16 +32,13 @@ export const useNarrativeScroll = () => {
   const [isScrolling, setIsScrolling] = useState(false);
   const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Define story chapters with their scroll triggers
-  const chapters: Chapter[] = [
-    { id: 'hero', section: 'hero-section', trigger: 0, status: 'active' },
-    { id: 'problem', section: 'manifesto-section', trigger: 0.5, status: 'waiting' },
-    { id: 'solution', section: 'howto-section', trigger: 1.2, status: 'waiting' },
-    { id: 'proof', section: 'usp2-section', trigger: 2.2, status: 'waiting' },
-    { id: 'urgency', section: 'perks-section', trigger: 3.2, status: 'waiting' }
-  ];
+  // Initialize chapters with status
+  const initialChapters: Chapter[] = NARRATIVE_CHAPTERS.map((ch, index) => ({
+    ...ch,
+    status: index === 0 ? 'active' : 'waiting'
+  }));
 
-  const [chapterStates, setChapterStates] = useState(chapters);
+  const [chapterStates, setChapterStates] = useState(initialChapters);
 
   // Calculate scroll progress and update chapter states
   const handleScroll = useCallback(() => {
@@ -50,10 +56,13 @@ export const useNarrativeScroll = () => {
 
     // Update current chapter and states
     let newChapter = 0;
-    const updatedChapters = chapters.map((chapter, index) => {
+    const updatedChapters = NARRATIVE_CHAPTERS.map((chapter, index) => {
       if (viewportsScrolled >= chapter.trigger) {
         newChapter = index;
-        return { ...chapter, status: viewportsScrolled > chapter.trigger + 0.5 ? 'completed' : 'active' } as Chapter;
+        return { 
+          ...chapter, 
+          status: viewportsScrolled > chapter.trigger + 0.5 ? 'completed' : 'active' 
+        } as Chapter;
       }
       return { ...chapter, status: 'waiting' } as Chapter;
     });
@@ -69,7 +78,7 @@ export const useNarrativeScroll = () => {
       case 3: setParticlePhase('forming'); break;
       case 4: setParticlePhase('converging'); break;
     }
-  }, [chapters]);
+  }, []); // Empty dependency array since NARRATIVE_CHAPTERS is constant
 
   // Set up scroll listener
   useEffect(() => {
@@ -84,7 +93,7 @@ export const useNarrativeScroll = () => {
 
   // Smooth scroll to chapter
   const scrollToChapter = useCallback((chapterId: string) => {
-    const chapter = chapters.find(ch => ch.id === chapterId);
+    const chapter = NARRATIVE_CHAPTERS.find(ch => ch.id === chapterId);
     if (!chapter) return;
 
     const targetSection = document.querySelector(`.${chapter.section}`);
@@ -95,7 +104,7 @@ export const useNarrativeScroll = () => {
         behavior: 'smooth'
       });
     }
-  }, [chapters]);
+  }, []); // Empty dependency array since NARRATIVE_CHAPTERS is constant
 
   // Get animation state for a specific section
   const getAnimationState = useCallback((sectionId: string) => {

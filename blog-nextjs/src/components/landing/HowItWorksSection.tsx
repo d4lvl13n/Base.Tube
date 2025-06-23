@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import EnhancedButton from '../ui/EnhancedButton';
 import { NarrativeState } from '@/hooks/useNarrativeScroll';
 
 interface HowItWorksSectionProps {
@@ -451,20 +450,7 @@ export default function HowItWorksSection({ narrativeState, animationState, anim
           </div>
         </div>
 
-        {/* Enhanced CTA */}
-        <div className={`howto-cta ${isVisible ? 'visible' : ''}`}>
-          <EnhancedButton
-            size="large"
-            icon={
-              <svg viewBox="0 0 24 24" fill="none">
-                <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
-                <path d="M10 8L14 12L10 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            }
-          >
-            See It In Action
-          </EnhancedButton>
-        </div>
+
 
       </div>
     </section>

@@ -27,6 +27,14 @@ export default function NarrativeParticleSystem({ narrativeState, intensity = 1 
   const particlesRef = useRef<Particle[]>([]);
   const animationFrameRef = useRef<number>(0);
   const lastPhaseRef = useRef<NarrativeState['particlePhase']>(narrativeState.particlePhase);
+  const narrativeStateRef = useRef(narrativeState);
+  const intensityRef = useRef(intensity);
+
+  // Update refs when props change
+  useEffect(() => {
+    narrativeStateRef.current = narrativeState;
+    intensityRef.current = intensity;
+  }, [narrativeState, intensity]);
 
   // Create particles based on phase
   const createParticle = useCallback((phase: NarrativeState['particlePhase']): Particle => {
@@ -182,74 +190,99 @@ export default function NarrativeParticleSystem({ narrativeState, intensity = 1 
     particle.y += particle.vy;
   }, []);
 
-  // Render particles
-  const render = useCallback(() => {
-    const canvas = canvasRef.current;
-    const ctx = canvas?.getContext('2d');
-    if (!canvas || !ctx) return;
+  // Store callbacks in refs to make them stable
+  const createParticleRef = useRef(createParticle);
+  const updateParticleRef = useRef(updateParticle);
+  
+  useEffect(() => {
+    createParticleRef.current = createParticle;
+    updateParticleRef.current = updateParticle;
+  }, [createParticle, updateParticle]);
 
-    // Clear canvas
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    // Update and render particles
-    particlesRef.current = particlesRef.current.filter(particle => {
-      if (particle.life >= particle.maxLife) return false;
-
-      updateParticle(particle, narrativeState.particlePhase);
-
-      // Render particle with phase-based opacity
-      const lifeAlpha = 1 - (particle.life / particle.maxLife);
-      
-      // Vary opacity based on phase for visual differentiation
-      let phaseOpacity = 0.8;
-      switch (particle.phase) {
-        case 'trapped': phaseOpacity = 0.4; break; // Dimmer when trapped
-        case 'flowing': phaseOpacity = 0.6; break;
-        case 'forming': phaseOpacity = 0.7; break;
-        case 'converging': phaseOpacity = 0.9; break; // Brightest when converging
+  // Render particles - stable function with no dependencies
+  useEffect(() => {
+    let frameId: number;
+    
+    const render = () => {
+      const canvas = canvasRef.current;
+      const ctx = canvas?.getContext('2d');
+      if (!canvas || !ctx) {
+        frameId = requestAnimationFrame(render);
+        return;
       }
-      
-      ctx.save();
-      ctx.globalAlpha = lifeAlpha * phaseOpacity;
-      
-      // Glow effect
-      const gradient = ctx.createRadialGradient(
-        particle.x, particle.y, 0,
-        particle.x, particle.y, particle.size * 3
-      );
-      gradient.addColorStop(0, particle.color);
-      gradient.addColorStop(1, 'transparent');
-      
-      ctx.fillStyle = gradient;
-      ctx.fillRect(
-        particle.x - particle.size * 3,
-        particle.y - particle.size * 3,
-        particle.size * 6,
-        particle.size * 6
-      );
 
-      // Core
-      ctx.fillStyle = particle.color;
-      ctx.beginPath();
-      ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-      ctx.fill();
-      
-      ctx.restore();
+      // Clear canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      return true;
-    });
+      // Update and render particles
+      particlesRef.current = particlesRef.current.filter(particle => {
+        if (particle.life >= particle.maxLife) return false;
 
-    // Add new particles based on phase and intensity
-    const targetCount = Math.floor(20 * intensity);
-    while (particlesRef.current.length < targetCount) {
-      const particle = createParticle(narrativeState.particlePhase);
-      if (particle) {
-        particlesRef.current.push(particle);
+        updateParticleRef.current(particle, narrativeStateRef.current.particlePhase);
+
+        // Render particle with phase-based opacity
+        const lifeAlpha = 1 - (particle.life / particle.maxLife);
+        
+        // Vary opacity based on phase for visual differentiation
+        let phaseOpacity = 0.8;
+        switch (particle.phase) {
+          case 'trapped': phaseOpacity = 0.4; break; // Dimmer when trapped
+          case 'flowing': phaseOpacity = 0.6; break;
+          case 'forming': phaseOpacity = 0.7; break;
+          case 'converging': phaseOpacity = 0.9; break; // Brightest when converging
+        }
+        
+        ctx.save();
+        ctx.globalAlpha = lifeAlpha * phaseOpacity;
+        
+        // Glow effect
+        const gradient = ctx.createRadialGradient(
+          particle.x, particle.y, 0,
+          particle.x, particle.y, particle.size * 3
+        );
+        gradient.addColorStop(0, particle.color);
+        gradient.addColorStop(1, 'transparent');
+        
+        ctx.fillStyle = gradient;
+        ctx.fillRect(
+          particle.x - particle.size * 3,
+          particle.y - particle.size * 3,
+          particle.size * 6,
+          particle.size * 6
+        );
+
+        // Core
+        ctx.fillStyle = particle.color;
+        ctx.beginPath();
+        ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+        ctx.fill();
+        
+        ctx.restore();
+
+        return true;
+      });
+
+      // Add new particles based on phase and intensity
+      const targetCount = Math.floor(20 * intensityRef.current);
+      while (particlesRef.current.length < targetCount) {
+        const particle = createParticleRef.current(narrativeStateRef.current.particlePhase);
+        if (particle) {
+          particlesRef.current.push(particle);
+        }
       }
-    }
 
-    animationFrameRef.current = requestAnimationFrame(render);
-  }, [narrativeState.particlePhase, intensity, updateParticle, createParticle]);
+      frameId = requestAnimationFrame(render);
+    };
+    
+    frameId = requestAnimationFrame(render);
+    animationFrameRef.current = frameId;
+    
+    return () => {
+      if (frameId) {
+        cancelAnimationFrame(frameId);
+      }
+    };
+  }, []);
 
   // Handle phase transitions
   useEffect(() => {
@@ -260,7 +293,7 @@ export default function NarrativeParticleSystem({ narrativeState, intensity = 1 
     }
   }, [narrativeState.particlePhase]);
 
-  // Canvas setup and animation loop
+  // Canvas setup
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -273,16 +306,10 @@ export default function NarrativeParticleSystem({ narrativeState, intensity = 1 
     handleResize();
     window.addEventListener('resize', handleResize);
 
-    // Start animation
-    render();
-
     return () => {
       window.removeEventListener('resize', handleResize);
-      if (animationFrameRef.current) {
-        cancelAnimationFrame(animationFrameRef.current);
-      }
     };
-  }, [render]);
+  }, []); // Empty dependency array - only run once on mount
 
   return (
     <canvas
