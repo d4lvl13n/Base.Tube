@@ -5,12 +5,6 @@ import Link from 'next/link';
 import Layout from '@/components/LandingLayout';
 import { getPostBySlug, getAllPostSlugs, getFeaturedImageUrl, formatDate } from '@/lib/wordpress';
 
-interface BlogPostPageProps {
-  params: Promise<{
-    slug: string;
-  }>;
-}
-
 // Generate static params for all posts
 export async function generateStaticParams() {
   const slugs = await getAllPostSlugs();
@@ -21,7 +15,7 @@ export async function generateStaticParams() {
 }
 
 // Generate metadata for each post
-export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const resolvedParams = await params;
   const post = await getPostBySlug(resolvedParams.slug);
 
@@ -60,7 +54,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   };
 }
 
-export default async function BlogPostPage({ params }: BlogPostPageProps) {
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const post = await getPostBySlug(resolvedParams.slug);
 
