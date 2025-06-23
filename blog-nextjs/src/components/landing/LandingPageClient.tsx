@@ -69,17 +69,7 @@ export default function LandingPageClient() {
         />
       </div>
       
-      {/* Chapter Indicators */}
-      <div className="chapter-indicators">
-        {narrativeScroll.chapters.map((chapter) => (
-          <button
-            key={chapter.id}
-            className={`chapter-dot ${chapter.status === 'active' ? 'active' : ''} ${chapter.status === 'completed' ? 'completed' : ''}`}
-            onClick={() => narrativeScroll.scrollToChapter(chapter.id)}
-            aria-label={`Go to ${chapter.id} section`}
-          />
-        ))}
-      </div>
+      {/* Chapter Indicators - Removed per request */}
       
       {/* Pass narrative state and animation chain to sections */}
       <HeroSection 
