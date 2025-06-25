@@ -1,6 +1,6 @@
 // WordPress API configuration
 // TODO: Update this when WordPress is properly configured
-const WP_API_URL = process.env.NEXT_PUBLIC_WP_API_URL || 'https://base.tube/wp/wp-json/wp/v2';
+const WP_API_URL = process.env.NEXT_PUBLIC_WP_API_URL || 'http://wp.base.tube/wp/wp-json/wp/v2';
 
 // Types for WordPress API response
 export interface WordPressPost {
