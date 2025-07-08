@@ -41,11 +41,14 @@ export default function ReadingProgressBar() {
 }
 
 // Throttle function to improve performance
-function throttle(func: Function, delay: number) {
-  let timeoutId: NodeJS.Timeout | null = null;
+function throttle<T extends (...args: unknown[]) => void>(
+  func: T,
+  delay: number
+): (...args: Parameters<T>) => void {
+  let timeoutId: ReturnType<typeof setTimeout> | null = null;
   let lastExecTime = 0;
   
-  return function (...args: any[]) {
+  return function (...args: Parameters<T>): void {
     const currentTime = Date.now();
     
     if (currentTime - lastExecTime > delay) {

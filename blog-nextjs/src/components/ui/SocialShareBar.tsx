@@ -8,7 +8,9 @@ interface SocialShareBarProps {
   description?: string;
 }
 
-export default function SocialShareBar({ url, title, description }: SocialShareBarProps) {
+export default function SocialShareBar({ url, title, description: _description }: SocialShareBarProps) {
+  // optional description currently unused but kept for future SEO sharing purposes
+  void _description;
   const [isVisible, setIsVisible] = useState(false);
   const [copied, setCopied] = useState(false);
 

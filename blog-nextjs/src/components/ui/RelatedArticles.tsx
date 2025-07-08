@@ -7,13 +7,13 @@ import { WordPressPost, getAllPosts, getFeaturedImageUrl, getCleanTitle, getClea
 
 interface RelatedArticlesProps {
   currentPostId: number;
-  currentPostSlug: string;
+  _currentPostSlug?: string;
   maxArticles?: number;
 }
 
 export default function RelatedArticles({ 
   currentPostId, 
-  currentPostSlug, 
+  _currentPostSlug, 
   maxArticles = 3 
 }: RelatedArticlesProps) {
   const [relatedPosts, setRelatedPosts] = useState<WordPressPost[]>([]);

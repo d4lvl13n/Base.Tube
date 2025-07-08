@@ -231,7 +231,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       {/* Related Articles */}
       <RelatedArticles 
         currentPostId={post.id}
-        currentPostSlug={resolvedParams.slug}
+        _currentPostSlug={resolvedParams.slug}
         maxArticles={3}
       />
       
