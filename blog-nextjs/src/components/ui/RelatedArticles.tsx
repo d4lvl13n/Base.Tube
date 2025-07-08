@@ -16,6 +16,9 @@ export default function RelatedArticles({
   _currentPostSlug, 
   maxArticles = 3 
 }: RelatedArticlesProps) {
+  // Mark unused parameter as intentionally unused
+  void _currentPostSlug;
+  
   const [relatedPosts, setRelatedPosts] = useState<WordPressPost[]>([]);
   const [loading, setLoading] = useState(true);
 
