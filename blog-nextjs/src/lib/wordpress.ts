@@ -48,21 +48,30 @@ export interface WordPressPost {
 // Fetch all posts for static generation
 export async function getAllPosts(page: number = 1, perPage: number = 100): Promise<WordPressPost[]> {
   try {
-    const response = await fetch(
-      `${WP_API_URL}/posts?page=${page}&per_page=${perPage}&_embed&status=publish`,
-      {
-        // Add caching for better performance
-        next: { revalidate: 60 }, // Revalidate every 60 seconds
-      }
-    );
+    const url = `${WP_API_URL}/posts?page=${page}&per_page=${perPage}&_embed=1&status=publish`;
+    console.log('Fetching posts from:', url);
+    
+    const response = await fetch(url, {
+      // Add caching for better performance
+      next: { revalidate: 60 }, // Revalidate every 60 seconds
+    });
 
     if (!response.ok) {
       console.error(`Failed to fetch posts: ${response.status} - ${response.statusText}`);
+      console.error('Response URL:', response.url);
       // Return empty array instead of throwing
       return [];
     }
 
     const posts: WordPressPost[] = await response.json();
+    console.log(`Fetched ${posts.length} posts`);
+    console.log('Sample post structure:', posts[0] ? {
+      id: posts[0].id,
+      title: posts[0].title.rendered,
+      featured_media: posts[0].featured_media,
+      has_embedded: !!posts[0]._embedded
+    } : 'No posts found');
+    
     return posts;
   } catch (error) {
     console.error('Error fetching posts:', error);
@@ -73,20 +82,34 @@ export async function getAllPosts(page: number = 1, perPage: number = 100): Prom
 // Fetch a single post by slug
 export async function getPostBySlug(slug: string): Promise<WordPressPost | null> {
   try {
-    const response = await fetch(
-      `${WP_API_URL}/posts?slug=${slug}&_embed&status=publish`,
-      {
-        next: { revalidate: 60 },
-      }
-    );
+    const url = `${WP_API_URL}/posts?slug=${slug}&_embed=1&status=publish`;
+    console.log('Fetching post by slug from:', url);
+    
+    const response = await fetch(url, {
+      next: { revalidate: 60 },
+    });
 
     if (!response.ok) {
       console.error(`Failed to fetch post: ${response.status} - ${response.statusText}`);
+      console.error('Response URL:', response.url);
       return null;
     }
 
     const posts: WordPressPost[] = await response.json();
-    return posts[0] || null;
+    const post = posts[0] || null;
+    
+    if (post) {
+      console.log('Found post:', {
+        id: post.id,
+        title: post.title.rendered,
+        featured_media: post.featured_media,
+        has_embedded: !!post._embedded
+      });
+    } else {
+      console.log('No post found with slug:', slug);
+    }
+    
+    return post;
   } catch (error) {
     console.error('Error fetching post:', error);
     return null;
@@ -106,10 +129,26 @@ export async function getAllPostSlugs(): Promise<string[]> {
 
 // Helper function to get featured image URL
 export function getFeaturedImageUrl(post: WordPressPost): string {
+  // Debug logging
+  console.log('Post ID:', post.id);
+  console.log('Featured media ID:', post.featured_media);
+  console.log('Embedded data:', post._embedded);
+  
+  // Check if embedded media exists
   if (post._embedded?.['wp:featuredmedia']?.[0]?.source_url) {
-    return post._embedded['wp:featuredmedia'][0].source_url;
+    const imageUrl = post._embedded['wp:featuredmedia'][0].source_url;
+    console.log('Featured image URL:', imageUrl);
+    return imageUrl;
   }
-  return '/images/default-blog-image.jpg'; // Fallback image
+  
+  // If no embedded media but featured_media ID exists, construct URL
+  if (post.featured_media && post.featured_media > 0) {
+    // This would require a separate API call to get the media
+    console.log('Featured media ID found but no embedded data');
+  }
+  
+  console.log('Using fallback image');
+  return '/images/og-card.webp'; // Fallback image - using existing image
 }
 
 // Helper function to get clean excerpt

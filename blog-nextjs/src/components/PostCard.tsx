@@ -1,5 +1,8 @@
+'use client'
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState } from 'react';
 import { WordPressPost, getFeaturedImageUrl, getCleanExcerpt, formatDate } from '@/lib/wordpress';
 
 interface PostCardProps {
@@ -8,21 +11,33 @@ interface PostCardProps {
 }
 
 export default function PostCard({ post, featured = false }: PostCardProps) {
+  const [imageError, setImageError] = useState(false);
   const featuredImage = getFeaturedImageUrl(post);
   const excerpt = getCleanExcerpt(post);
   const formattedDate = formatDate(post.date);
 
+  const handleImageError = () => {
+    console.error('Image failed to load:', featuredImage);
+    setImageError(true);
+  };
+
+  const ImageComponent = () => (
+    <Image
+      src={imageError ? '/images/og-card.webp' : featuredImage}
+      alt={post.title.rendered}
+      width={featured ? 600 : 400}
+      height={featured ? 300 : 200}
+      className="post-image"
+      loading="lazy"
+      onError={handleImageError}
+      style={featured ? {} : { width: '100%', height: '200px', objectFit: 'cover' }}
+    />
+  );
+
   if (featured) {
     return (
       <article className="post-card featured">
-        <Image
-          src={featuredImage}
-          alt={post.title.rendered}
-          width={600}
-          height={300}
-          className="post-image"
-          loading="lazy"
-        />
+        <ImageComponent />
         
         <div className="post-content">
           <div className="post-meta">{formattedDate}</div>
@@ -47,15 +62,7 @@ export default function PostCard({ post, featured = false }: PostCardProps) {
 
   return (
     <article className="post-card">
-      <Image
-        src={featuredImage}
-        alt={post.title.rendered}
-        width={400}
-        height={200}
-        className="post-image"
-        loading="lazy"
-        style={{ width: '100%', height: '200px', objectFit: 'cover' }}
-      />
+      <ImageComponent />
       
       <div className="post-content">
         <div className="post-meta">{formattedDate}</div>
