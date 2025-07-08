@@ -28,6 +28,17 @@ export const metadata: Metadata = {
     description: 'Exploring the Future of Web3 Video Sharing. Discover insights about decentralized content creation, NFTs, and the future of digital storytelling.',
     images: ['https://base.tube/images/og-card.webp'],
   },
+  alternates: {
+    canonical: 'https://base.tube/blog',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default async function BlogPage() {

@@ -3,84 +3,70 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
-import { WordPressPost, getFeaturedImageUrl, getCleanExcerpt, formatDate } from '@/lib/wordpress';
+import { WordPressPost, getFeaturedImageUrl, getCleanExcerpt, getCleanTitle, formatDate } from '@/lib/wordpress';
 
 interface PostCardProps {
   post: WordPressPost;
-  featured?: boolean;
 }
 
-export default function PostCard({ post, featured = false }: PostCardProps) {
+export default function PostCard({ post }: PostCardProps) {
   const [imageError, setImageError] = useState(false);
   const featuredImage = getFeaturedImageUrl(post);
   const excerpt = getCleanExcerpt(post);
+  const title = getCleanTitle(post);
   const formattedDate = formatDate(post.date);
 
   const handleImageError = () => {
-    console.error('Image failed to load:', featuredImage);
     setImageError(true);
   };
 
-  const ImageComponent = () => (
-    <Image
-      src={imageError ? '/images/og-card.webp' : featuredImage}
-      alt={post.title.rendered}
-      width={featured ? 600 : 400}
-      height={featured ? 300 : 200}
-      className="post-image"
-      loading="lazy"
-      onError={handleImageError}
-      style={featured ? {} : { width: '100%', height: '200px', objectFit: 'cover' }}
-    />
-  );
+  // Truncate title if too long
+  const truncateTitle = (title: string, maxLength: number) => {
+    if (title.length <= maxLength) return title;
+    return title.substring(0, maxLength).trim() + '...';
+  };
 
-  if (featured) {
-    return (
-      <article className="post-card featured">
-        <ImageComponent />
-        
-        <div className="post-content">
-          <div className="post-meta">{formattedDate}</div>
-          
-          <h2 className="post-title">
-            <Link href={`/blog/${post.slug}`}>
-              {post.title.rendered}
-            </Link>
-          </h2>
-          
-          {excerpt && (
-            <p className="post-excerpt">{excerpt}</p>
-          )}
-          
-          <Link href={`/blog/${post.slug}`} className="read-more">
-            Read More
-          </Link>
-        </div>
-      </article>
-    );
-  }
+  // Truncate excerpt if too long
+  const truncateExcerpt = (text: string, maxLength: number) => {
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength).trim() + '...';
+  };
 
   return (
-    <article className="post-card">
-      <ImageComponent />
-      
-      <div className="post-content">
-        <div className="post-meta">{formattedDate}</div>
+    <article className="post-card-modern">
+      <Link href={`/blog/${post.slug}`} className="post-card-link">
+        <div className="post-image-container">
+          <Image
+            src={imageError ? '/images/og-card.webp' : featuredImage}
+            alt={title}
+            fill
+            className="post-image-modern"
+            onError={handleImageError}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
+          />
+          <div className="post-image-overlay"></div>
+        </div>
         
-        <h2 className="post-title">
-          <Link href={`/blog/${post.slug}`}>
-            {post.title.rendered}
-          </Link>
-        </h2>
-        
-        {excerpt && (
-          <p className="post-excerpt">{excerpt}</p>
-        )}
-        
-        <Link href={`/blog/${post.slug}`} className="read-more">
-          Read More
-        </Link>
-      </div>
+        <div className="post-content-modern">
+          <div className="post-meta-modern">
+            <span className="post-date">{formattedDate}</span>
+          </div>
+          
+          <h3 className="post-title-modern">
+            {truncateTitle(title, 60)}
+          </h3>
+          
+          {excerpt && (
+            <p className="post-excerpt-modern">
+              {truncateExcerpt(excerpt, 120)}
+            </p>
+          )}
+          
+          <div className="read-more-modern">
+            Read More →
+          </div>
+        </div>
+      </Link>
     </article>
   );
 } 

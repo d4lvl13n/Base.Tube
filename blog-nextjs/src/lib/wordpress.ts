@@ -1,6 +1,6 @@
 // WordPress API configuration
 // TODO: Update this when WordPress is properly configured
-const WP_API_URL = process.env.NEXT_PUBLIC_WP_API_URL || 'http://wp.base.tube/wp/wp-json/wp/v2';
+const WP_API_URL = process.env.NEXT_PUBLIC_WP_API_URL || 'https://wp.base.tube/wp-json/wp/v2';
 
 // Types for WordPress API response
 export interface WordPressPost {
@@ -49,7 +49,6 @@ export interface WordPressPost {
 export async function getAllPosts(page: number = 1, perPage: number = 100): Promise<WordPressPost[]> {
   try {
     const url = `${WP_API_URL}/posts?page=${page}&per_page=${perPage}&_embed=1&status=publish`;
-    console.log('Fetching posts from:', url);
     
     const response = await fetch(url, {
       // Add caching for better performance
@@ -64,13 +63,6 @@ export async function getAllPosts(page: number = 1, perPage: number = 100): Prom
     }
 
     const posts: WordPressPost[] = await response.json();
-    console.log(`Fetched ${posts.length} posts`);
-    console.log('Sample post structure:', posts[0] ? {
-      id: posts[0].id,
-      title: posts[0].title.rendered,
-      featured_media: posts[0].featured_media,
-      has_embedded: !!posts[0]._embedded
-    } : 'No posts found');
     
     return posts;
   } catch (error) {
@@ -83,7 +75,6 @@ export async function getAllPosts(page: number = 1, perPage: number = 100): Prom
 export async function getPostBySlug(slug: string): Promise<WordPressPost | null> {
   try {
     const url = `${WP_API_URL}/posts?slug=${slug}&_embed=1&status=publish`;
-    console.log('Fetching post by slug from:', url);
     
     const response = await fetch(url, {
       next: { revalidate: 60 },
@@ -99,14 +90,7 @@ export async function getPostBySlug(slug: string): Promise<WordPressPost | null>
     const post = posts[0] || null;
     
     if (post) {
-      console.log('Found post:', {
-        id: post.id,
-        title: post.title.rendered,
-        featured_media: post.featured_media,
-        has_embedded: !!post._embedded
-      });
     } else {
-      console.log('No post found with slug:', slug);
     }
     
     return post;
@@ -129,31 +113,59 @@ export async function getAllPostSlugs(): Promise<string[]> {
 
 // Helper function to get featured image URL
 export function getFeaturedImageUrl(post: WordPressPost): string {
-  // Debug logging
-  console.log('Post ID:', post.id);
-  console.log('Featured media ID:', post.featured_media);
-  console.log('Embedded data:', post._embedded);
-  
   // Check if embedded media exists
   if (post._embedded?.['wp:featuredmedia']?.[0]?.source_url) {
     const imageUrl = post._embedded['wp:featuredmedia'][0].source_url;
-    console.log('Featured image URL:', imageUrl);
     return imageUrl;
   }
   
   // If no embedded media but featured_media ID exists, construct URL
   if (post.featured_media && post.featured_media > 0) {
     // This would require a separate API call to get the media
-    console.log('Featured media ID found but no embedded data');
+    // For now, return fallback image
+    return '/images/og-card.webp';
   }
   
-  console.log('Using fallback image');
+  // Default fallback
   return '/images/og-card.webp'; // Fallback image - using existing image
+}
+
+// Helper function to decode HTML entities
+function decodeHtmlEntities(text: string): string {
+  const entities: { [key: string]: string } = {
+    '&#038;': '&',
+    '&amp;': '&',
+    '&lt;': '<',
+    '&gt;': '>',
+    '&quot;': '"',
+    '&#039;': "'",
+    '&apos;': "'",
+    '&nbsp;': ' ',
+    '&#8217;': "'",
+    '&#8216;': "'",
+    '&#8220;': '"',
+    '&#8221;': '"',
+    '&#8211;': '–',
+    '&#8212;': '—',
+  };
+  
+  let decoded = text;
+  for (const [entity, char] of Object.entries(entities)) {
+    decoded = decoded.replace(new RegExp(entity, 'g'), char);
+  }
+  
+  return decoded;
+}
+
+// Helper function to get clean title
+export function getCleanTitle(post: WordPressPost): string {
+  return decodeHtmlEntities(post.title.rendered.trim());
 }
 
 // Helper function to get clean excerpt
 export function getCleanExcerpt(post: WordPressPost): string {
-  return post.excerpt.rendered.replace(/<[^>]*>/g, '').trim();
+  const rawExcerpt = post.excerpt.rendered.replace(/<[^>]*>/g, '').trim();
+  return decodeHtmlEntities(rawExcerpt);
 }
 
 // Helper function to format date

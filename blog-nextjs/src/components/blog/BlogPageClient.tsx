@@ -3,6 +3,7 @@
 import PostCard from '@/components/PostCard'
 import LazySection from '@/components/shared/LazySection'
 import SectionSkeleton from '@/components/shared/SectionSkeleton'
+import NewsletterSignup from '@/components/ui/NewsletterSignup'
 
 import type { WordPressPost } from '@/lib/wordpress';
 
@@ -64,28 +65,26 @@ export default function BlogPageClient({ posts }: BlogPageClientProps) {
         </div>
       </section>
 
-      {/* Featured Posts Section with Lazy Loading */}
+      {/* Articles Grid with Lazy Loading */}
       <LazySection 
         threshold={0.1}
         rootMargin="100px"
-        fallback={<SectionSkeleton height="600px" />}
-        minHeight="600px"
+        fallback={<SectionSkeleton height="800px" />}
+        minHeight="800px"
       >
-        <section className="featured-section">
+        <section className="articles-section">
           <div className="section-container">
             <div className="section-header">
-              <h2 className="section-title">Featured Stories</h2>
+              <h2 className="section-title">Latest Articles</h2>
               <p className="section-subtitle">
                 Pioneering the next generation of content creation and digital storytelling
               </p>
             </div>
 
             {posts.length > 0 ? (
-              <div className="featured-grid">
-                {posts.slice(0, 3).map((post, index) => (
-                  <div key={post.id} className={`featured-card ${index === 0 ? 'featured-main' : 'featured-side'}`}>
-                    <PostCard post={post} featured={true} />
-                  </div>
+              <div className="post-grid">
+                {posts.map((post) => (
+                  <PostCard key={post.id} post={post} />
                 ))}
               </div>
             ) : (
@@ -99,48 +98,6 @@ export default function BlogPageClient({ posts }: BlogPageClientProps) {
         </section>
       </LazySection>
 
-      {/* Latest Articles Grid with Lazy Loading */}
-      {posts.length > 3 && (
-        <LazySection 
-          threshold={0.1}
-          rootMargin="100px"
-          fallback={<SectionSkeleton height="800px" />}
-          minHeight="800px"
-        >
-          <section className="articles-section">
-            <div className="section-container">
-              <div className="section-header">
-                <h2 className="section-title">Latest Articles</h2>
-                <div className="section-filter">
-                  <button className="filter-btn active">All</button>
-                  <button className="filter-btn">Innovation</button>
-                  <button className="filter-btn">Creators</button>
-                  <button className="filter-btn">Future</button>
-                </div>
-              </div>
-
-              <div className="articles-grid">
-                {posts.slice(3).map((post) => (
-                  <div key={post.id} className="article-card">
-                    <PostCard post={post} featured={false} />
-                  </div>
-                ))}
-              </div>
-
-              {/* Load More Button */}
-              <div className="load-more-section">
-                <button className="load-more-btn">
-                  <span>Load More Articles</span>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M12 5v14M5 12l7 7 7-7"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </section>
-        </LazySection>
-      )}
-
       {/* Newsletter CTA with Lazy Loading */}
       <LazySection 
         threshold={0.1}
@@ -148,51 +105,7 @@ export default function BlogPageClient({ posts }: BlogPageClientProps) {
         fallback={<SectionSkeleton height="500px" />}
         minHeight="500px"
       >
-        <section className="newsletter-cta-section">
-          <div className="cta-background">
-            <div className="cta-particles"></div>
-          </div>
-          
-          <div className="cta-content-modern">
-            <div className="cta-icon">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-            </div>
-            
-            <h2 className="cta-headline">Stay Ahead of the Curve</h2>
-            <p className="cta-description">
-              Get exclusive insights on the future of content creation and digital innovation
-            </p>
-            
-            <div className="cta-actions-modern">
-              <div className="email-capture">
-                <input 
-                  type="email" 
-                  placeholder="Enter your email address"
-                  className="email-input-modern"
-                />
-                <button className="subscribe-btn-modern">
-                  <span>Join Pioneers</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </button>
-              </div>
-              
-              <div className="social-proof">
-                <div className="proof-avatars">
-                  <div className="avatar"></div>
-                  <div className="avatar"></div>
-                  <div className="avatar"></div>
-                  <div className="avatar-more">+</div>
-                </div>
-                <span className="proof-text">Join content pioneers</span>
-              </div>
-            </div>
-          </div>
-        </section>
+        <NewsletterSignup />
       </LazySection>
 
       {/* Bottom CTA with Lazy Loading */}
@@ -203,29 +116,20 @@ export default function BlogPageClient({ posts }: BlogPageClientProps) {
         minHeight="400px"
       >
         <section className="bottom-cta-section">
-          <div className="bottom-cta-content">
-            <h2 className="bottom-cta-title">Ready to Pioneer the Future?</h2>
-            <p className="bottom-cta-subtitle">
-              Join Base.Tube and be at the forefront of content creation innovation
-            </p>
-            
-            <div className="bottom-cta-buttons">
-              <a href="https://beta.base.tube/" className="cta-btn-primary">
-                <span>Pioneer with Us</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M7 17L17 7M17 7H7M17 7v10"/>
-                </svg>
-              </a>
-              <a href="https://base-tube.gitbook.io/base.tube-documentation" className="cta-btn-secondary">
-                <span>Explore Innovation</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                  <polyline points="14,2 14,8 20,8"/>
-                  <line x1="16" y1="13" x2="8" y2="13"/>
-                  <line x1="16" y1="17" x2="8" y2="17"/>
-                  <polyline points="10,9 9,9 8,9"/>
-                </svg>
-              </a>
+          <div className="section-container">
+            <div className="bottom-cta-content">
+              <h2 className="bottom-cta-title">Ready to Pioneer the Future?</h2>
+              <p className="bottom-cta-subtitle">
+                Join the revolution in content creation and digital storytelling
+              </p>
+              <div className="bottom-cta-buttons">
+                <a href="/landing" className="cta-btn-primary">
+                  Explore Platform
+                </a>
+                <a href="#newsletter" className="cta-btn-secondary">
+                  Get Updates
+                </a>
+              </div>
             </div>
           </div>
         </section>
