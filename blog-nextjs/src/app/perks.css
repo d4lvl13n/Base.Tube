@@ -437,19 +437,97 @@
   }
 }
 
-/* Pass Scarcity Indicator */
+/* Pass Scarcity Indicator - URGENCY STYLING */
 .pass-scarcity {
-  font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  margin-top: -0.5rem;
-  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  padding: 1.25rem 2.5rem;
+  background: linear-gradient(135deg, rgba(250, 117, 23, 0.15), rgba(220, 38, 38, 0.1));
+  border: 2px solid rgba(250, 117, 23, 0.4);
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  animation: urgencyPulse 2s ease-in-out infinite;
+}
+
+.pass-scarcity::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(250, 117, 23, 0.1), transparent);
+  animation: urgencySweep 2s linear infinite;
+}
+
+@keyframes urgencyPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(250, 117, 23, 0.3), 0 0 40px rgba(250, 117, 23, 0.1);
+    border-color: rgba(250, 117, 23, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(250, 117, 23, 0.5), 0 0 60px rgba(250, 117, 23, 0.2);
+    border-color: rgba(250, 117, 23, 0.6);
+  }
+}
+
+@keyframes urgencySweep {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
 
 .scarcity-highlight {
-  color: rgba(250, 117, 23, 0.8);
+  font-size: 2rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #ff6b35, #fa7517, #ff8c42);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 0 40px rgba(250, 117, 23, 0.5);
+  animation: scarcityGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes scarcityGlow {
+  0% { filter: brightness(1) drop-shadow(0 0 10px rgba(250, 117, 23, 0.5)); }
+  100% { filter: brightness(1.2) drop-shadow(0 0 20px rgba(250, 117, 23, 0.8)); }
+}
+
+.scarcity-subtext {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.scarcity-warning {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: rgba(250, 117, 23, 0.9);
   font-weight: 600;
+  letter-spacing: 0.03em;
+  position: relative;
+  z-index: 1;
+}
+
+.scarcity-warning::before {
+  content: '⚡';
+  font-size: 1rem;
+  animation: flashIcon 0.8s ease-in-out infinite;
+}
+
+@keyframes flashIcon {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.2); }
 }
 
 /* Description */

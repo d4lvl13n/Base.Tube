@@ -27,11 +27,15 @@
 }
 
 .usp2-title {
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 900;
-  line-height: 0.9;
+  line-height: 1.1;
   margin: 0 0 1rem 0;
   font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .usp2-small {
@@ -44,7 +48,7 @@
 }
 
 .usp2-gradient-text {
-  display: inline-block;
+  display: block;
   background: linear-gradient(135deg, #ff6b35, #f7931e, #ff6b35);
   background-size: 200% 200%;
   -webkit-background-clip: text;
@@ -54,22 +58,19 @@
 }
 
 .usp2-outline-text {
+  display: block;
   position: relative;
   color: transparent;
-  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.3);
-  text-stroke: 2px rgba(255, 255, 255, 0.3);
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.4);
+  text-stroke: 1.5px rgba(255, 255, 255, 0.4);
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
+/* Remove the pseudo-element that was causing text duplication */
 .usp2-outline-text::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: rgba(255, 255, 255, 0.1);
-  -webkit-text-stroke: none;
-  text-stroke: none;
-  z-index: -1;
-  animation: uspFloat 6s ease-in-out infinite;
+  display: none;
 }
 
 @keyframes uspGradientShift {

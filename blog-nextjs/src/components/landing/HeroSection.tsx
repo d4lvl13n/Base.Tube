@@ -26,11 +26,11 @@ export default function HeroSection({ animationChain }: HeroSectionProps) {
   const heroRef = useRef<HTMLElement>(null);
   const [loaderComplete, setLoaderComplete] = useState(false);
 
-  // Initialize loader
+  // Initialize loader - fast 2 second intro
   useEffect(() => {
     const loaderTimer = setTimeout(() => {
       setLoaderComplete(true);
-    }, 3500); // Shorter, snappier loader
+    }, 2000); // Quick, punchy loader
     
     return () => clearTimeout(loaderTimer);
   }, []);
@@ -60,7 +60,7 @@ export default function HeroSection({ animationChain }: HeroSectionProps) {
                 className="loader-text"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
+                transition={{ duration: 0.4, delay: 0.1 }}
               >
                 Your Content.
               </motion.span>
@@ -68,7 +68,7 @@ export default function HeroSection({ animationChain }: HeroSectionProps) {
                 className="loader-text"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.8 }}
+                transition={{ duration: 0.4, delay: 0.5 }}
               >
                 Your Terms.
               </motion.span>
@@ -76,7 +76,7 @@ export default function HeroSection({ animationChain }: HeroSectionProps) {
                 className="loader-text"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 1.3 }}
+                transition={{ duration: 0.4, delay: 0.9 }}
               >
                 Your Time.
               </motion.span>
@@ -85,7 +85,7 @@ export default function HeroSection({ animationChain }: HeroSectionProps) {
               className="loader-progress"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 2 }}
+              transition={{ duration: 0.3, delay: 1.2 }}
             >
               <div className="loader-bar"></div>
             </motion.div>

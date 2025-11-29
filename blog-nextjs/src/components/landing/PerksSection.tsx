@@ -233,10 +233,18 @@ export default function PerksSection() {
             </div>
           </div>
           
-          {/* Subtle scarcity indicator */}
-          <div className="pass-scarcity">
-            <span className="scarcity-highlight">First 500</span>
-          </div>
+          {/* URGENCY scarcity indicator */}
+          <motion.div 
+            className="pass-scarcity"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
+            <span className="scarcity-highlight">Only 500 Spots</span>
+            <span className="scarcity-subtext">Founding Member Access</span>
+            <span className="scarcity-warning">Limited time — Don&apos;t miss out</span>
+          </motion.div>
         </motion.div>
 
         {/* Description - Moved below pass */}

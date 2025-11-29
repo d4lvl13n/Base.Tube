@@ -1719,10 +1719,12 @@ tr:nth-child(even) {
   position: relative;
   overflow: hidden;
   background: transparent;
+  width: 100%;
 }
 
 .footer-morph-container {
-  max-width: 90%;
+  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   animation: footerSlideUp 1s ease-out forwards;
@@ -2158,13 +2160,13 @@ tr:nth-child(even) {
 /* Large Screen Optimization */
 @media (min-width: 1600px) {
   .footer-morph-container {
-    max-width: 85%;
+    max-width: 1400px;
   }
 }
 
 @media (min-width: 2000px) {
   .footer-morph-container {
-    max-width: 1700px;
+    max-width: 1600px;
   }
 }
 
@@ -2191,7 +2193,8 @@ tr:nth-child(even) {
   }
 
   .footer-morph-container {
-    max-width: 95%;
+    max-width: 100%;
+    width: calc(100% - 2rem);
   }
 
   .footer-content {

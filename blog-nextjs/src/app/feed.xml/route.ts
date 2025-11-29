@@ -18,8 +18,8 @@ export async function GET() {
       <description><![CDATA[${excerpt}]]></description>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
       <author>team@base.tube (Base.Tube Team)</author>
-      <enclosure url="${imageUrl}" type="image/webp" />
-      <media:content url="${imageUrl}" medium="image" />
+      <media:content url="${imageUrl}" type="image/webp" medium="image" width="1200" height="630" />
+      <media:thumbnail url="${imageUrl}" width="1200" height="630" />
     </item>`
   }).join('')
 

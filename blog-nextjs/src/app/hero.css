@@ -353,36 +353,103 @@
 }
 
 .hero-cta-button {
-  font-size: 1.25rem;
-  padding: 20px 48px;
-  min-width: 250px;
+  font-size: 1.35rem;
+  padding: 22px 56px;
+  min-width: 280px;
+  position: relative;
+  background: linear-gradient(135deg, #ff6b35, #fa7517, #ff8c42) !important;
+  border: none !important;
+  box-shadow: 
+    0 0 30px rgba(250, 117, 23, 0.5),
+    0 0 60px rgba(250, 117, 23, 0.3),
+    0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: ctaGlow 2s ease-in-out infinite, ctaPulse 2s ease-out infinite;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.hero-cta-button::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  background: linear-gradient(135deg, #ff6b35, #fa7517, #ff8c42, #ff6b35);
+  background-size: 300% 300%;
+  border-radius: inherit;
+  z-index: -1;
+  animation: borderGlow 3s ease-in-out infinite;
+  filter: blur(8px);
+  opacity: 0.7;
+}
+
+.hero-cta-button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hero-cta-button:hover::after {
+  opacity: 1;
 }
 
 .hero-cta-button .button-arrow {
   font-size: 1.5rem;
-  margin-left: 0.5rem;
+  margin-left: 0.75rem;
   transition: transform 0.3s ease;
+  display: inline-block;
 }
 
 .hero-cta-button:hover .button-arrow {
-  transform: translateX(4px);
+  transform: translateX(6px);
+  animation: arrowBounce 0.6s ease-in-out infinite;
+}
+
+@keyframes arrowBounce {
+  0%, 100% { transform: translateX(6px); }
+  50% { transform: translateX(10px); }
+}
+
+/* Glow Animation for CTA */
+@keyframes ctaGlow {
+  0%, 100% {
+    box-shadow: 
+      0 0 30px rgba(250, 117, 23, 0.5),
+      0 0 60px rgba(250, 117, 23, 0.3),
+      0 10px 40px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    box-shadow: 
+      0 0 40px rgba(250, 117, 23, 0.7),
+      0 0 80px rgba(250, 117, 23, 0.4),
+      0 15px 50px rgba(0, 0, 0, 0.4);
+  }
+}
+
+@keyframes borderGlow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 /* Pulse Animation for CTA */
 @keyframes ctaPulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(250, 117, 23, 0.4);
+  0%, 100% {
+    transform: scale(1);
   }
-  70% {
-    box-shadow: 0 0 0 10px rgba(250, 117, 23, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(250, 117, 23, 0);
+  50% {
+    transform: scale(1.02);
   }
 }
 
-.hero-cta-button {
-  animation: ctaPulse 2s ease-out 3s;
+.hero-cta-button:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 
+    0 0 50px rgba(250, 117, 23, 0.7),
+    0 0 100px rgba(250, 117, 23, 0.4),
+    0 20px 60px rgba(0, 0, 0, 0.4) !important;
 }
 
 /* Responsive Design */
