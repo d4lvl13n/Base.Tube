@@ -1,21 +1,98 @@
+# Base.Tube Robots.txt
+# https://base.tube
+
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
+Disallow: /*.json$
+Disallow: /*?*
 
+# Crawl-delay for all bots (be polite)
+Crawl-delay: 1
+
+# Sitemap location
 Sitemap: https://base.tube/sitemap.xml
 
-# Allow search engines to crawl everything except internal routes
+# RSS Feed
+# RSS: https://base.tube/feed.xml
+
+# Allow Googlebot full access
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
-User-agent: Bingbot
+# Allow Google Image Bot
+User-agent: Googlebot-Image
+Allow: /images/
 Allow: /
 
-# Block bad bots
+# Allow Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Allow Google News Bot (for blog content)
+User-agent: Googlebot-News
+Allow: /blog/
+
+# Allow DuckDuckBot
+User-agent: DuckDuckBot
+Allow: /
+
+# Allow Yandex
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+# Social Media Crawlers (for rich previews)
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+# Block aggressive SEO bots (optional - remove if you want SEO tool access)
 User-agent: SemrushBot
 Disallow: /
 
 User-agent: AhrefsBot
-Disallow: / 
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Block bad bots
+User-agent: MegaIndex
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /

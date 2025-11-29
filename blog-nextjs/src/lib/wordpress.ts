@@ -176,4 +176,70 @@ export function formatDate(dateString: string): string {
     month: 'long',
     day: 'numeric',
   });
+}
+
+// Helper function to calculate reading time
+export function calculateReadingTime(content: string): number {
+  // Strip HTML tags
+  const text = content.replace(/<[^>]*>/g, '');
+  // Count words (split by whitespace)
+  const words = text.trim().split(/\s+/).length;
+  // Average reading speed: 200-250 words per minute
+  const wordsPerMinute = 225;
+  const readingTime = Math.ceil(words / wordsPerMinute);
+  // Minimum 1 minute
+  return Math.max(1, readingTime);
+}
+
+// Helper function to get word count
+export function getWordCount(content: string): number {
+  const text = content.replace(/<[^>]*>/g, '');
+  return text.trim().split(/\s+/).length;
+}
+
+// Helper function to get categories from embedded terms
+export function getCategories(post: WordPressPost): Array<{ id: number; name: string; slug: string }> {
+  if (post._embedded?.['wp:term']?.[0]) {
+    return post._embedded['wp:term'][0].map(term => ({
+      id: term.id,
+      name: term.name,
+      slug: term.slug,
+    }));
+  }
+  return [];
+}
+
+// Helper function to get tags from embedded terms
+export function getTags(post: WordPressPost): Array<{ id: number; name: string; slug: string }> {
+  if (post._embedded?.['wp:term']?.[1]) {
+    return post._embedded['wp:term'][1].map(term => ({
+      id: term.id,
+      name: term.name,
+      slug: term.slug,
+    }));
+  }
+  return [];
+}
+
+// Helper function to generate dynamic keywords from post content
+export function generateKeywords(post: WordPressPost): string {
+  const baseKeywords = ['Base.Tube', 'Web3', 'video sharing', 'content creation'];
+  
+  // Add categories as keywords
+  const categories = getCategories(post);
+  const categoryKeywords = categories.map(cat => cat.name);
+  
+  // Add tags as keywords
+  const tags = getTags(post);
+  const tagKeywords = tags.map(tag => tag.name);
+  
+  // Combine and deduplicate
+  const allKeywords = [...new Set([...baseKeywords, ...categoryKeywords, ...tagKeywords])];
+  
+  return allKeywords.join(', ');
+}
+
+// Helper to get ISO date string
+export function getISODate(dateString: string): string {
+  return new Date(dateString).toISOString();
 } 
