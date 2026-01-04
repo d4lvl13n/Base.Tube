@@ -45,30 +45,68 @@ export interface WordPressPost {
   };
 }
 
-// Fetch all posts for static generation
-export async function getAllPosts(page: number = 1, perPage: number = 100): Promise<WordPressPost[]> {
+interface PostsPageResult {
+  posts: WordPressPost[];
+  totalPages: number;
+}
+
+async function fetchPostsPage(page: number, perPage: number): Promise<PostsPageResult> {
   try {
     const url = `${WP_API_URL}/posts?page=${page}&per_page=${perPage}&_embed=1&status=publish`;
-    
+
     const response = await fetch(url, {
-      // Add caching for better performance
-      next: { revalidate: 60 }, // Revalidate every 60 seconds
+      next: { revalidate: 60 },
     });
 
     if (!response.ok) {
       console.error(`Failed to fetch posts: ${response.status} - ${response.statusText}`);
       console.error('Response URL:', response.url);
-      // Return empty array instead of throwing
-      return [];
+      return { posts: [], totalPages: 0 };
     }
 
     const posts: WordPressPost[] = await response.json();
-    
-    return posts;
+    const totalPagesHeader = response.headers.get('x-wp-totalpages');
+    const totalPages = totalPagesHeader ? Number(totalPagesHeader) : 0;
+
+    return { posts, totalPages };
   } catch (error) {
     console.error('Error fetching posts:', error);
-    return [];
+    return { posts: [], totalPages: 0 };
   }
+}
+
+// Fetch a single page of posts
+export async function getPostsPage(page: number = 1, perPage: number = 100): Promise<WordPressPost[]> {
+  const { posts } = await fetchPostsPage(page, perPage);
+  return posts;
+}
+
+// Fetch all posts across pages
+export async function getAllPosts(perPage: number = 100): Promise<WordPressPost[]> {
+  const allPosts: WordPressPost[] = [];
+  let page = 1;
+
+  while (true) {
+    const { posts, totalPages: headerTotalPages } = await fetchPostsPage(page, perPage);
+
+    if (posts.length === 0) {
+      break;
+    }
+
+    allPosts.push(...posts);
+
+    if (headerTotalPages > 0) {
+      if (page >= headerTotalPages) {
+        break;
+      }
+    } else if (posts.length < perPage) {
+      break;
+    }
+
+    page += 1;
+  }
+
+  return allPosts;
 }
 
 // Fetch a single post by slug

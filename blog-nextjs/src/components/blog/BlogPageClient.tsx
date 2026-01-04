@@ -65,38 +65,31 @@ export default function BlogPageClient({ posts }: BlogPageClientProps) {
         </div>
       </section>
 
-      {/* Articles Grid with Lazy Loading */}
-      <LazySection 
-        threshold={0.1}
-        rootMargin="100px"
-        fallback={<SectionSkeleton height="800px" />}
-        minHeight="800px"
-      >
-        <section className="articles-section">
-          <div className="section-container">
-            <div className="section-header">
-              <h2 className="section-title">Latest Articles</h2>
-              <p className="section-subtitle">
-                Pioneering the next generation of content creation and digital storytelling
-              </p>
-            </div>
-
-            {posts.length > 0 ? (
-              <div className="post-grid">
-                {posts.map((post) => (
-                  <PostCard key={post.id} post={post} />
-                ))}
-              </div>
-            ) : (
-              <div className="no-posts">
-                <div className="no-posts-icon">📝</div>
-                <h3>No posts found</h3>
-                <p>Check back soon for groundbreaking content creation insights!</p>
-              </div>
-            )}
+      {/* Articles Grid */}
+      <section className="articles-section">
+        <div className="section-container">
+          <div className="section-header">
+            <h2 className="section-title">Latest Articles</h2>
+            <p className="section-subtitle">
+              Pioneering the next generation of content creation and digital storytelling
+            </p>
           </div>
-        </section>
-      </LazySection>
+
+          {posts.length > 0 ? (
+            <div className="post-grid">
+              {posts.map((post) => (
+                <PostCard key={post.id} post={post} />
+              ))}
+            </div>
+          ) : (
+            <div className="no-posts">
+              <div className="no-posts-icon">📝</div>
+              <h3>No posts found</h3>
+              <p>Check back soon for groundbreaking content creation insights!</p>
+            </div>
+          )}
+        </div>
+      </section>
 
       {/* Newsletter CTA with Lazy Loading */}
       <LazySection 

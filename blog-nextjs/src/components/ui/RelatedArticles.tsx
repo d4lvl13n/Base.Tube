@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { WordPressPost, getAllPosts, getFeaturedImageUrl, getCleanTitle, getCleanExcerpt, formatDate } from '@/lib/wordpress';
+import { WordPressPost, getPostsPage, getFeaturedImageUrl, getCleanTitle, getCleanExcerpt, formatDate } from '@/lib/wordpress';
 
 interface RelatedArticlesProps {
   currentPostId: number;
@@ -26,7 +26,7 @@ export default function RelatedArticles({
     const fetchRelatedPosts = async () => {
       try {
         setLoading(true);
-        const allPosts = await getAllPosts(1, 20); // Get more posts to filter from
+        const allPosts = await getPostsPage(1, 20); // Get more posts to filter from
         
         // Filter out current post and get random selection
         const otherPosts = allPosts.filter(post => post.id !== currentPostId);
