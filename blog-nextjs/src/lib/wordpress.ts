@@ -31,6 +31,12 @@ export interface WordPressPost {
   format: string;
   categories: number[];
   tags: number[];
+  meta?: {
+    rank_math_title?: string;
+    rank_math_description?: string;
+    rank_math_focus_keyword?: string;
+    rank_math_robots?: string;
+  };
   _embedded?: {
     'wp:featuredmedia'?: Array<{
       id: number;
@@ -200,10 +206,26 @@ export function getCleanTitle(post: WordPressPost): string {
   return decodeHtmlEntities(post.title.rendered.trim());
 }
 
+// Helper function to get SEO title (prefer RankMath meta, fallback to post title)
+export function getSeoTitle(post: WordPressPost): string {
+  if (post.meta?.rank_math_title) {
+    return decodeHtmlEntities(post.meta.rank_math_title.trim());
+  }
+  return getCleanTitle(post);
+}
+
 // Helper function to get clean excerpt
 export function getCleanExcerpt(post: WordPressPost): string {
   const rawExcerpt = post.excerpt.rendered.replace(/<[^>]*>/g, '').trim();
   return decodeHtmlEntities(rawExcerpt);
+}
+
+// Helper function to get SEO description (prefer RankMath meta, fallback to excerpt)
+export function getSeoDescription(post: WordPressPost): string {
+  if (post.meta?.rank_math_description) {
+    return decodeHtmlEntities(post.meta.rank_math_description.trim());
+  }
+  return getCleanExcerpt(post);
 }
 
 // Helper function to format date
@@ -280,4 +302,22 @@ export function generateKeywords(post: WordPressPost): string {
 // Helper to get ISO date string
 export function getISODate(dateString: string): string {
   return new Date(dateString).toISOString();
+}
+
+// Sanitize WordPress content HTML for the frontend:
+// 1. Convert <h1> tags to <h2> (page template provides the H1)
+// 2. Add rel="noopener noreferrer" to external links
+export function sanitizeContent(html: string): string {
+  // Convert h1 to h2
+  let sanitized = html
+    .replace(/<h1(\s|>)/gi, '<h2$1')
+    .replace(/<\/h1>/gi, '</h2>');
+
+  // Add rel="noopener noreferrer" to external links missing rel attribute
+  sanitized = sanitized.replace(
+    /<a\s+([^>]*href=["']https?:\/\/(?!base\.tube|beta\.base\.tube|wp\.base\.tube)[^"']+["'])(?![^>]*rel=)([^>]*)>/gi,
+    '<a $1 rel="noopener noreferrer"$2>'
+  );
+
+  return sanitized;
 } 

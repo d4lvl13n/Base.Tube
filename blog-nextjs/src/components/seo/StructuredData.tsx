@@ -61,8 +61,8 @@ export function ArticleStructuredData({ post, url }: ArticleStructuredDataProps)
     "url": url,
     "wordCount": post.content.rendered.replace(/<[^>]*>/g, '').trim().split(/\s+/).length,
     "timeRequired": `PT${readingTime}M`,
-    "keywords": keywords || "Web3, video sharing, content creation, decentralized, NFT",
-    "articleSection": categories.length > 0 ? categories[0].name : "Web3",
+    "keywords": keywords || "creator economy, content creation, monetization",
+    "articleSection": categories.length > 0 ? categories[0].name : "Creator Economy",
     "inLanguage": "en-US",
     "isAccessibleForFree": true,
     "potentialAction": {
@@ -183,7 +183,7 @@ export function BlogStructuredData() {
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "Base.Tube Insights",
-    "description": "Exploring the Future of Web3 Video Sharing. Discover insights about decentralized content creation, NFTs, and the future of digital storytelling.",
+    "description": "Guides, tools, and trends for YouTube, TikTok, and Instagram creators. Monetization strategies, AI workflows, and platform comparisons.",
     "url": "https://base.tube/blog",
     "publisher": {
       "@type": "Organization",

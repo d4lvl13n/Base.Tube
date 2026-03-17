@@ -9,17 +9,20 @@ import TableOfContents from '@/components/ui/TableOfContents';
 import RelatedArticles from '@/components/ui/RelatedArticles';
 import NewsletterSignup from '@/components/ui/NewsletterSignup';
 import { ArticleStructuredData, BreadcrumbStructuredData } from '@/components/seo/StructuredData';
-import { 
-  getPostBySlug, 
-  getAllPostSlugs, 
-  getFeaturedImageUrl, 
-  getCleanTitle, 
-  getCleanExcerpt, 
+import {
+  getPostBySlug,
+  getAllPostSlugs,
+  getFeaturedImageUrl,
+  getCleanTitle,
+  getCleanExcerpt,
+  getSeoTitle,
+  getSeoDescription,
   formatDate,
   calculateReadingTime,
   generateKeywords,
   getCategories,
-  getTags 
+  getTags,
+  sanitizeContent
 } from '@/lib/wordpress';
 
 // Generate static params for all posts
@@ -43,23 +46,30 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   const cleanTitle = getCleanTitle(post);
-  const cleanExcerpt = getCleanExcerpt(post);
+  const seoTitle = getSeoTitle(post);
+  const seoDescription = getSeoDescription(post);
   const featuredImage = getFeaturedImageUrl(post);
   const dynamicKeywords = generateKeywords(post);
   const readingTime = calculateReadingTime(post.content.rendered);
-  
-  // Optimize description length (155-160 chars optimal for SERP)
-  const metaDescription = cleanExcerpt.length > 155 
-    ? cleanExcerpt.slice(0, 155).trim() + '...'
-    : cleanExcerpt;
+
+  // Use RankMath meta description if available, otherwise optimize excerpt
+  const metaDescription = seoDescription.length > 155
+    ? seoDescription.slice(0, 155).trim() + '...'
+    : seoDescription;
+
+  // Use RankMath meta title if available (already optimized for SERP)
+  // Layout template appends " | Base.Tube" automatically
+  const pageTitle = post.meta?.rank_math_title
+    ? seoTitle
+    : cleanTitle;
 
   return {
-    title: `${cleanTitle} | Base.Tube Blog`,
+    title: pageTitle,
     description: metaDescription,
     keywords: dynamicKeywords,
     authors: [{ name: 'Base.Tube Team', url: 'https://base.tube' }],
     openGraph: {
-      title: cleanTitle,
+      title: seoTitle,
       description: metaDescription,
       type: 'article',
       url: `https://base.tube/blog/${resolvedParams.slug}`,
@@ -83,7 +93,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       card: 'summary_large_image',
       site: '@base_tube',
       creator: '@base_tube',
-      title: cleanTitle,
+      title: seoTitle,
       description: metaDescription,
       images: [featuredImage.startsWith('http') ? featuredImage : `https://base.tube${featuredImage}`],
     },
@@ -233,7 +243,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             className="article-content"
             itemScope 
             itemType="https://schema.org/Article"
-            dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+            dangerouslySetInnerHTML={{ __html: sanitizeContent(post.content.rendered) }}
           />
 
           {/* Article Footer */}
@@ -298,7 +308,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </a>
-                <a href="https://base-tube.gitbook.io/base.tube-documentation" className="cta-btn secondary">
+                <a href="https://base-tube.gitbook.io/base.tube-documentation" className="cta-btn secondary" target="_blank" rel="noopener noreferrer">
                   <span>Learn More</span>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                     <circle cx="12" cy="12" r="10"/>

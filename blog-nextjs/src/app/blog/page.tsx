@@ -6,13 +6,13 @@ import { getAllPosts } from '@/lib/wordpress';
 
 // SEO metadata
 export const metadata: Metadata = {
-  title: 'Base.Tube Insights | Web3 Video Sharing Blog',
-  description: 'Exploring the Future of Web3 Video Sharing. Discover insights about decentralized content creation, NFTs, and the future of digital storytelling.',
-  keywords: 'Base.Tube, Web3, video sharing, decentralized, NFT, content creation, digital storytelling, blog, blockchain, creator economy',
+  title: 'Creator Economy Blog',
+  description: 'Guides, tools, and trends for YouTube, TikTok, and Instagram creators. Monetization strategies, AI workflows, and platform comparisons.',
+  keywords: 'creator economy, YouTube monetization, TikTok creators, content creation tools, AI tools creators, creator income, platform comparison',
   authors: [{ name: 'Base.Tube Team', url: 'https://base.tube' }],
   openGraph: {
-    title: 'Base.Tube Insights | Web3 Video Sharing Blog',
-    description: 'Exploring the Future of Web3 Video Sharing. Discover insights about decentralized content creation, NFTs, and the future of digital storytelling.',
+    title: 'Creator Economy Blog | Base.Tube',
+    description: 'Guides, tools, and trends for YouTube, TikTok, and Instagram creators. Monetization strategies, AI workflows, and platform comparisons.',
     type: 'website',
     url: 'https://base.tube/blog',
     siteName: 'Base.Tube',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: 'https://base.tube/images/og-card.webp',
         width: 1200,
         height: 630,
-        alt: 'Base.Tube Blog - Web3 Video Sharing Insights',
+        alt: 'Base.Tube Creator Economy Blog',
       },
     ],
   },
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@base_tube',
     creator: '@base_tube',
-    title: 'Base.Tube Insights | Web3 Video Sharing Blog',
-    description: 'Exploring the Future of Web3 Video Sharing. Discover insights about decentralized content creation, NFTs, and the future of digital storytelling.',
+    title: 'Creator Economy Blog | Base.Tube',
+    description: 'Guides, tools, and trends for YouTube, TikTok, and Instagram creators. Monetization strategies, AI workflows, and platform comparisons.',
     images: ['https://base.tube/images/og-card.webp'],
   },
   alternates: {
@@ -56,13 +56,20 @@ export default async function BlogPage() {
   // Fetch all posts at build time
   const posts = await getAllPosts();
 
+  // Strip heavy content from posts for the listing page — PostCard only needs
+  // title, slug, date, excerpt, and featured image. This cuts page size by ~80%.
+  const lightPosts = posts.map(post => ({
+    ...post,
+    content: { rendered: '', protected: false },
+  }));
+
   return (
     <Layout>
       {/* SEO Structured Data */}
       <BlogStructuredData />
-      <BlogPostListStructuredData posts={posts} />
-      
-      <BlogPageClient posts={posts} />
+      <BlogPostListStructuredData posts={lightPosts} />
+
+      <BlogPageClient posts={lightPosts} />
     </Layout>
   );
 }

@@ -97,10 +97,10 @@ export default function Header() {
                   <span className="nav-text">Blog</span>
                   <span className="nav-underline"></span>
                 </Link>
-                <Link href="https://base-tube.gitbook.io/base.tube-documentation" className="nav-link-item">
+                <a href="https://base-tube.gitbook.io/base.tube-documentation" className="nav-link-item" target="_blank" rel="noopener noreferrer">
                   <span className="nav-text">Docs</span>
                   <span className="nav-underline"></span>
-                </Link>
+                </a>
                 <a 
                   href="https://beta.base.tube/sign-up" 
                   target="_blank" 

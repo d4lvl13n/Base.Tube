@@ -6,47 +6,34 @@ Allow: /
 Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
-Disallow: /*.json$
-Disallow: /*?*
 
-# Crawl-delay for all bots (be polite)
 Crawl-delay: 1
 
-# Sitemap location
 Sitemap: https://base.tube/sitemap.xml
 
-# RSS Feed
-# RSS: https://base.tube/feed.xml
-
-# Allow Googlebot full access
+# Googlebot — full access, no delay
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
 
-# Allow Google Image Bot
 User-agent: Googlebot-Image
-Allow: /images/
 Allow: /
 
-# Allow Bingbot
+User-agent: Googlebot-News
+Allow: /blog/
+
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
 
-# Allow Google News Bot (for blog content)
-User-agent: Googlebot-News
-Allow: /blog/
-
-# Allow DuckDuckBot
 User-agent: DuckDuckBot
 Allow: /
 
-# Allow Yandex
 User-agent: Yandex
 Allow: /
 Crawl-delay: 2
 
-# Social Media Crawlers (for rich previews)
+# Social media crawlers
 User-agent: Twitterbot
 Allow: /
 
@@ -59,35 +46,19 @@ Allow: /
 User-agent: Slackbot
 Allow: /
 
-User-agent: TelegramBot
-Allow: /
-
 User-agent: Discordbot
 Allow: /
 
-# Block aggressive SEO bots (optional - remove if you want SEO tool access)
+# SEO tools — allow for backlink and authority tracking
 User-agent: SemrushBot
-Disallow: /
+Allow: /
+Crawl-delay: 2
 
 User-agent: AhrefsBot
-Disallow: /
+Allow: /
+Crawl-delay: 2
 
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: DotBot
-Disallow: /
-
-# Block bad bots
-User-agent: MegaIndex
-Disallow: /
-
-User-agent: BLEXBot
-Disallow: /
-
-User-agent: DataForSeoBot
-Disallow: /
-
+# AI crawlers
 User-agent: GPTBot
 Allow: /
 
@@ -96,3 +67,19 @@ Allow: /
 
 User-agent: ClaudeBot
 Allow: /
+
+# Block abusive bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MegaIndex
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
