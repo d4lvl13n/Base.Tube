@@ -3,9 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { OrganizationStructuredData, WebSiteStructuredData } from "@/components/seo/StructuredData";
 import "./globals.css";
-import "./landing.css";
-import "./header.css";
-import "./buttons.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s | Base.Tube"
   },
   description: "Turn your content into tradeable assets. No ads, no algorithms, no subscriptions. Just content passes your fans can buy, own, and resell.",
-  keywords: "blockchain content, creator economy, NFT content, digital ownership, content monetization, web3 creators, video platform, decentralized",
+  keywords: "creator economy, content monetization, content pass, creator platform, tradeable access, fan ownership, direct monetization",
   authors: [{ name: "Base.Tube", url: "https://base.tube" }],
   creator: "Base.Tube",
   publisher: "Base.Tube",

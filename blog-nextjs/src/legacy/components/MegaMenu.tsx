@@ -53,12 +53,7 @@ export default function MegaMenu({ isMenuOpen, onToggleMenu }: MegaMenuProps) {
                   <span className="menu-link-underline"></span>
                 </Link>
                 
-                <Link href="/roadmap" className="mega-menu-link" onClick={onToggleMenu}>
-                  <span className="menu-link-text">Roadmap</span>
-                  <span className="menu-link-underline"></span>
-                </Link>
-                
-                <a 
+                <a
                   href="https://beta.base.tube/sign-up" 
                   target="_blank" 
                   rel="noopener noreferrer"

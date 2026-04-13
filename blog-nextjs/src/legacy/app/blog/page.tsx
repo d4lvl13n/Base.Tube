@@ -1,8 +1,10 @@
 import { Metadata } from 'next';
-import { getAllPosts } from '@/lib/wordpress';
-import BlogList from '@/components/v2/blog/BlogList';
+import Layout from '@/components/Layout';
+import BlogPageClient from '@/components/blog/BlogPageClient';
 import { BlogStructuredData, BlogPostListStructuredData } from '@/components/seo/StructuredData';
+import { getAllPosts } from '@/lib/wordpress';
 
+// SEO metadata
 export const metadata: Metadata = {
   title: 'Creator Economy Blog',
   description: 'Guides, tools, and trends for YouTube, TikTok, and Instagram creators. Monetization strategies, AI workflows, and platform comparisons.',
@@ -50,21 +52,24 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function BlogV2Page() {
+export default async function BlogPage() {
+  // Fetch all posts at build time
   const posts = await getAllPosts();
 
-  // Strip heavy content from posts for the listing page —
-  // cards only need title, slug, date, excerpt, and featured image.
-  const lightPosts = posts.map((post) => ({
+  // Strip heavy content from posts for the listing page — PostCard only needs
+  // title, slug, date, excerpt, and featured image. This cuts page size by ~80%.
+  const lightPosts = posts.map(post => ({
     ...post,
     content: { rendered: '', protected: false },
   }));
 
   return (
-    <>
+    <Layout>
+      {/* SEO Structured Data */}
       <BlogStructuredData />
       <BlogPostListStructuredData posts={lightPosts} />
-      <BlogList posts={lightPosts} />
-    </>
+
+      <BlogPageClient posts={lightPosts} />
+    </Layout>
   );
 }

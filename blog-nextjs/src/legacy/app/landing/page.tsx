@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import V2LandingPage from '@/components/v2/LandingPage';
-import './v2.css';
+import '../v2.css';
 
 export const metadata: Metadata = {
   title: 'Base.Tube — Where Creators Build Their Economy',
@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   authors: [{ name: 'Base.Tube' }],
   openGraph: {
     type: 'website',
-    url: 'https://base.tube/',
+    url: 'https://www.base.tube/',
     title: 'Base.Tube — Where Creators Build Their Economy',
     description: 'Own your audience. Fans buy once, own forever, and resell when they leave. You keep 90% and earn from every resale.',
     images: [
       {
-        url: 'https://base.tube/images/og-card.webp',
+        url: 'https://www.base.tube/img/og-card.webp',
         width: 1200,
         height: 630,
         alt: 'Base.Tube — Creator Monetization Platform',
@@ -25,10 +25,14 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Base.Tube — Where Creators Build Their Economy',
     description: 'Own your audience. Fans buy once, own forever, and resell when they leave. You keep 90% and earn from every resale.',
-    images: ['https://base.tube/images/og-card.webp'],
+    images: ['https://www.base.tube/img/og-card.webp'],
+  },
+  icons: {
+    icon: '/images/favicon.png',
+    apple: '/images/apple-touch-icon.png',
   },
 };
 
-export default function HomePage() {
+export default function LandingPage() {
   return <V2LandingPage />;
 }
