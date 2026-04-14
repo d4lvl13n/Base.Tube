@@ -1,7 +1,17 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 export default function NavBar() {
+  const pathname = usePathname();
+
+  const isActive = (href: string) =>
+    href === '/'
+      ? pathname === '/'
+      : pathname === href || pathname.startsWith(href + '/');
+
   return (
     <nav className="v2-nav">
       <div className="v2-nav-inner">
@@ -18,13 +28,26 @@ export default function NavBar() {
 
         <ul className="v2-nav-links">
           <li>
-            <a href="#how-it-works">How it Works</a>
+            <Link href="/content-pass" className={isActive('/content-pass') ? 'active' : ''}>
+              Content Pass
+            </Link>
           </li>
           <li>
-            <Link href="/blog">Blog</Link>
+            <Link href="/tools" className={isActive('/tools') ? 'active' : ''}>
+              Tools
+            </Link>
           </li>
           <li>
-            <a href="https://base-tube.gitbook.io/base.tube-documentation" target="_blank" rel="noopener noreferrer">
+            <Link href="/blog" className={isActive('/blog') ? 'active' : ''}>
+              Blog
+            </Link>
+          </li>
+          <li>
+            <a
+              href="https://base-tube.gitbook.io/base.tube-documentation"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Docs
             </a>
           </li>

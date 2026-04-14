@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { OrganizationStructuredData, WebSiteStructuredData } from "@/components/seo/StructuredData";
 import "./globals.css";
+import "./v2.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

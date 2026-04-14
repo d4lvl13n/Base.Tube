@@ -585,6 +585,9 @@ const genFeatures = [
   'One-click download, no watermarks',
 ];
 
+/* Named exports for reuse on tool detail pages */
+export { CTROptimizerVisual, GeneratorVisual };
+
 /* ─────────────────────────────────────────────────────────
    SECTION
 ───────────────────────────────────────────────────────── */

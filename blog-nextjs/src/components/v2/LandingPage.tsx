@@ -2,7 +2,6 @@ import NavBar from './NavBar';
 import HeroSection from './HeroSection';
 import ProblemSection from './ProblemSection';
 import HowItWorksSection from './HowItWorksSection';
-import ThumbnailSection from './ThumbnailSection';
 import FeaturesSection from './FeaturesSection';
 import ComparisonSection from './ComparisonSection';
 import GenesisSection from './GenesisSection';
@@ -27,8 +26,6 @@ export default function V2LandingPage() {
         <ProblemSection />
         <Sep />
         <HowItWorksSection />
-        <Sep />
-        <ThumbnailSection />
         <Sep />
         <FeaturesSection />
         <Sep />

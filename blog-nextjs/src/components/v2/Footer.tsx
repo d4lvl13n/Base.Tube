@@ -71,8 +71,8 @@ export default function Footer() {
         <div>
           <div className="v2-footer-col-title">Product</div>
           <ul className="v2-footer-links">
-            <li><a href="#how-it-works">How it Works</a></li>
-
+            <li><Link href="/content-pass">Content Pass</Link></li>
+            <li><Link href="/tools">Tools</Link></li>
             <li>
               <a href="https://base-tube.gitbook.io/base.tube-documentation" target="_blank" rel="noopener noreferrer">
                 Docs

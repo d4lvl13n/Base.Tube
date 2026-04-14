@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import ScrollReveal from './ScrollReveal';
 
 export default function FeaturesSection() {
@@ -108,6 +109,23 @@ export default function FeaturesSection() {
             </ScrollReveal>
           </div>
         </div>
+
+        {/* Tools one-liner strip */}
+        <ScrollReveal delay={300}>
+          <div className="v2-tools-strip">
+            <div className="v2-tools-strip-body">
+              <span className="v2-feature-tag muted">Creator Toolkit</span>
+              <p className="v2-tools-strip-headline">Free tools, included.</p>
+              <p className="v2-tools-strip-text">
+                CTR scoring and AI thumbnail generation for every creator on the platform.
+                No signup required, no credit card, no limits on the free tier.
+              </p>
+            </div>
+            <Link href="/tools" className="v2-tools-strip-link">
+              Explore the toolkit →
+            </Link>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import V2LandingPage from '@/components/v2/LandingPage';
-import './v2.css';
 
 export const metadata: Metadata = {
   title: 'Base.Tube — Where Creators Build Their Economy',
