@@ -101,7 +101,7 @@ export default function FeaturesSection() {
                   </div>
                   <div className="v2-bento-mini-sep" />
                   <div className="v2-bento-mini-stat">
-                    <span className="v2-bento-mini-val">5%</span>
+                    <span className="v2-bento-mini-val">10%</span>
                     <span className="v2-bento-mini-label">platform fee</span>
                   </div>
                 </div>
@@ -115,10 +115,10 @@ export default function FeaturesSection() {
           <div className="v2-tools-strip">
             <div className="v2-tools-strip-body">
               <span className="v2-feature-tag muted">Creator Toolkit</span>
-              <p className="v2-tools-strip-headline">Free tools, included.</p>
+              <p className="v2-tools-strip-headline">Stop guessing. Start knowing.</p>
               <p className="v2-tools-strip-text">
-                CTR scoring and AI thumbnail generation for every creator on the platform.
-                No signup required, no credit card, no limits on the free tier.
+                Score any thumbnail before you publish. Generate better ones in seconds.
+                Your content deserves more than a coin flip for clicks.
               </p>
             </div>
             <Link href="/tools" className="v2-tools-strip-link">

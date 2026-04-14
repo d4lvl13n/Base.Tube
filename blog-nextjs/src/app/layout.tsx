@@ -101,6 +101,13 @@ export default function RootLayout({
         {/* Preconnect for performance */}
         <link rel="preconnect" href="https://wp.base.tube" />
         <link rel="dns-prefetch" href="https://wp.base.tube" />
+        {/* GA4 */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DQELH44BE4" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-DQELH44BE4');`,
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

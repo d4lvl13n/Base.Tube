@@ -3,7 +3,7 @@ const rows = [
     metric: 'Revenue from 1,000 true fans',
     youtube: '$10–40 / video',
     patreon: '$500–2,500 / month',
-    basetube: '$10,000+ day one',
+    basetube: 'Day one',
   },
   {
     metric: 'Time to first $10k',
@@ -15,7 +15,7 @@ const rows = [
     metric: 'Platform take rate',
     youtube: '45%',
     patreon: '12%',
-    basetube: '5%',
+    basetube: '10%',
   },
   {
     metric: 'Fan exit when they cancel',
@@ -55,28 +55,27 @@ export default function ComparisonSection() {
         </ScrollReveal>
 
         <ScrollReveal delay={150}>
-        <div className="v2-table-wrap">
-          <table className="v2-table">
-            <thead>
-              <tr>
-                <th>Scenario</th>
-                <th>YouTube</th>
-                <th>Patreon</th>
-                <th className="v2-col-highlight">Base.Tube</th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((row) => (
-                <tr key={row.metric}>
-                  <td>{row.metric}</td>
-                  <td className="dim">{row.youtube}</td>
-                  <td className="dim">{row.patreon}</td>
-                  <td className="v2-col-highlight">{row.basetube}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+          <div className="v2-cmp-grid">
+            {/* Column headers */}
+            <div className="v2-cmp-header-row">
+              <div className="v2-cmp-metric-head" />
+              <div className="v2-cmp-col-head">YouTube</div>
+              <div className="v2-cmp-col-head">Patreon</div>
+              <div className="v2-cmp-col-head v2-cmp-col-head--winner">
+                Base.Tube
+              </div>
+            </div>
+
+            {/* Rows */}
+            {rows.map((row, i) => (
+              <div key={row.metric} className={`v2-cmp-row${i % 2 === 0 ? ' v2-cmp-row--alt' : ''}`}>
+                <div className="v2-cmp-metric">{row.metric}</div>
+                <div className="v2-cmp-cell v2-cmp-cell--dim">{row.youtube}</div>
+                <div className="v2-cmp-cell v2-cmp-cell--dim">{row.patreon}</div>
+                <div className="v2-cmp-cell v2-cmp-cell--win">{row.basetube}</div>
+              </div>
+            ))}
+          </div>
         </ScrollReveal>
       </div>
     </section>

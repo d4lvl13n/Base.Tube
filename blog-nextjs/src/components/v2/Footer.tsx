@@ -71,16 +71,20 @@ export default function Footer() {
         <div>
           <div className="v2-footer-col-title">Product</div>
           <ul className="v2-footer-links">
-            <li><Link href="/content-pass">Content Pass</Link></li>
-            <li><Link href="/tools">Tools</Link></li>
             <li>
-              <a href="https://base-tube.gitbook.io/base.tube-documentation" target="_blank" rel="noopener noreferrer">
-                Docs
+              <a href="https://beta.base.tube" target="_blank" rel="noopener noreferrer">
+                App
+              </a>
+            </li>
+            <li><Link href="/content-pass">Content Pass</Link></li>
+            <li>
+              <a href="https://beta.base.tube/ai-thumbnails/generate" target="_blank" rel="noopener noreferrer">
+                AI Thumbnail Generator
               </a>
             </li>
             <li>
-              <a href="https://beta.base.tube" target="_blank" rel="noopener noreferrer">
-                Beta App
+              <a href="https://beta.base.tube/ai-thumbnails/audit" target="_blank" rel="noopener noreferrer">
+                CTR Optimiser
               </a>
             </li>
           </ul>
@@ -90,14 +94,16 @@ export default function Footer() {
         <div>
           <div className="v2-footer-col-title">Company</div>
           <ul className="v2-footer-links">
-            <li><Link href="/blog">Blog</Link></li>
             <li>
               <a href="https://discord.gg/SDdDCjGZHw" target="_blank" rel="noopener noreferrer">
                 Community
               </a>
             </li>
-            <li><Link href="/privacy-policy">Privacy Policy</Link></li>
-            <li><Link href="/terms-and-conditions">Terms</Link></li>
+            <li>
+              <a href="https://base-tube.gitbook.io/base.tube-documentation" target="_blank" rel="noopener noreferrer">
+                Docs
+              </a>
+            </li>
           </ul>
         </div>
       </div>

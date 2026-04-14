@@ -6,7 +6,7 @@ export default function HeroSection() {
         {/* Badge — animates in first */}
         <div className="v2-hero-badge v2-anim-1">
           <span className="v2-hero-badge-dot" aria-hidden />
-          Genesis Pass — only 500 ever issued
+          Beta is live
         </div>
 
         {/* Display serif headline — the Resend moment */}
@@ -16,8 +16,8 @@ export default function HeroSection() {
         </h1>
 
         <p className="v2-hero-sub v2-anim-3">
-          Content Passes your fans buy once, hold forever, and resell when
-          they leave. You keep 90% upfront — and earn from every resale.
+          Your audience has always been your greatest asset.
+          We built the infrastructure to make it theirs too.
         </p>
 
         <div className="v2-hero-actions v2-anim-4">
@@ -34,29 +34,7 @@ export default function HeroSection() {
           </a>
         </div>
 
-        <p className="v2-hero-fine v2-anim-5">
-          Free to join beta · No credit card required
-        </p>
 
-        {/* Stats strip — last to appear */}
-        <div className="v2-hero-stats v2-anim-6">
-          <div className="v2-hero-stat">
-            <div className="v2-hero-stat-value">90%</div>
-            <div className="v2-hero-stat-label">Revenue to creator</div>
-          </div>
-          <div className="v2-hero-stat">
-            <div className="v2-hero-stat-value">+5%</div>
-            <div className="v2-hero-stat-label">Royalty on every resale</div>
-          </div>
-          <div className="v2-hero-stat">
-            <div className="v2-hero-stat-value">$0</div>
-            <div className="v2-hero-stat-label">Wallet needed to buy</div>
-          </div>
-          <div className="v2-hero-stat">
-            <div className="v2-hero-stat-value">Instant</div>
-            <div className="v2-hero-stat-label">Payouts, every Tuesday</div>
-          </div>
-        </div>
 
       </div>
     </section>

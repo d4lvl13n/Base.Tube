@@ -1,28 +1,7 @@
-const rows = [
-  {
-    platform: 'YouTube',
-    take: '45%',
-    payout: 'Net 60 days',
-    exit: '✗ None',
-    bad: true,
-  },
-  {
-    platform: 'Patreon',
-    take: '12%',
-    payout: 'Monthly',
-    exit: '✗ None',
-    bad: true,
-  },
-  {
-    platform: 'Base.Tube',
-    take: '5%',
-    payout: 'Instant',
-    exit: '✓ Resell',
-    bad: false,
-  },
-];
+'use client';
 
 import ScrollReveal from './ScrollReveal';
+import ProblemDemo from './ProblemDemo';
 
 export default function ProblemSection() {
   return (
@@ -35,48 +14,35 @@ export default function ProblemSection() {
         <div className="v2-problem-grid">
           {/* Left: copy */}
           <ScrollReveal delay={100}>
-          <div className="v2-problem-text">
+          <div className="v2-problem-text v2-problem-text--spaced">
             <h2>
               Subscriptions are broken.<br />
               For everyone.
             </h2>
-            <p style={{ marginTop: 20 }}>
+            <p>
               Fans pay monthly, lose everything when they cancel, and get
               nothing for being early. Creators get paid for views, not loyalty
               — and watch their income reset to zero the moment someone hits
               &ldquo;unsubscribe.&rdquo;
             </p>
-            <p style={{ marginTop: 16 }}>
+            <p>
               No reward for being first. No exit if you change your mind.
               No upside for either side.
             </p>
+            <div>
+              <a
+                href="/content-pass"
+                className="v2-btn v2-btn-primary"
+              >
+                There&apos;s a better way →
+              </a>
+            </div>
           </div>
           </ScrollReveal>
 
-          {/* Right: comparison mini-table */}
+          {/* Right: animated comparison */}
           <ScrollReveal delay={220}>
-          <div className="v2-problem-table">
-            {/* Header */}
-            <div className="v2-ptable-row head">
-              <div className="v2-ptable-cell">Platform</div>
-              <div className="v2-ptable-cell">Take rate</div>
-              <div className="v2-ptable-cell">Fan exit?</div>
-            </div>
-
-            {rows.map((r) => (
-              <div key={r.platform} className="v2-ptable-row">
-                <div className={`v2-ptable-cell label ${!r.bad ? 'good' : ''}`}>
-                  {r.platform}
-                </div>
-                <div className={`v2-ptable-cell ${r.bad ? 'bad' : 'good'}`}>
-                  {r.take}
-                </div>
-                <div className={`v2-ptable-cell ${r.bad ? 'bad' : 'good'}`}>
-                  {r.exit}
-                </div>
-              </div>
-            ))}
-          </div>
+            <ProblemDemo />
           </ScrollReveal>
         </div>
       </div>

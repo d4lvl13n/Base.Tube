@@ -3,19 +3,6 @@
 import { useState, useEffect } from 'react';
 import ScrollReveal from './ScrollReveal';
 
-const creatorPerks = [
-  'Instant discovery — fans can find you from day one',
-  '90% revenue share locked in forever',
-  'Priority placement in the marketplace',
-  'Direct access to shape the product roadmap',
-];
-
-const fanPerks = [
-  'Unlimited access to all gated content, every creator',
-  'Founding member status — never repeated',
-  'Resell your pass on the marketplace at any time',
-  'Direct line to the team to shape the platform',
-];
 
 const passPerks = [
   'Unlimited content access',
@@ -47,43 +34,20 @@ export default function GenesisSection() {
             <span className="v2-label">Founding 500</span>
             <h2>
               The Genesis Pass.<br />
-              One pass. Every creator. Forever.
+              <em className="v2-orange">One pass. Every creator. Forever.</em>
             </h2>
             <p>
-              The first 500 members — creators and fans alike — receive the
-              Genesis Pass. A master key that unlocks every piece of content
-              on Base.Tube, forever. Limited supply. Never repeated.
+              The first <span className="v2-orange">500 members</span> — creators and fans alike — receive the
+              Genesis Pass. A <span className="v2-orange">master key</span> that unlocks every piece of content
+              on Base.Tube, <span className="v2-orange">forever</span>. Limited supply. Never repeated.
             </p>
-
-            <div style={{ marginBottom: 32 }}>
-              <div className="v2-genesis-col-title">For Creators</div>
-              <div className="v2-genesis-perks">
-                {creatorPerks.map((p) => (
-                  <div key={p} className="v2-genesis-perk">
-                    <span className="v2-genesis-perk-dot" />
-                    {p}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div style={{ marginBottom: 40 }}>
-              <div className="v2-genesis-col-title">For Fans</div>
-              <div className="v2-genesis-perks">
-                {fanPerks.map((p) => (
-                  <div key={p} className="v2-genesis-perk">
-                    <span className="v2-genesis-perk-dot" />
-                    {p}
-                  </div>
-                ))}
-              </div>
-            </div>
 
             <a
               href="https://beta.base.tube/sign-up"
               target="_blank"
               rel="noopener noreferrer"
               className="v2-btn v2-btn-primary"
+              style={{ marginTop: 32 }}
             >
               Claim your spot →
             </a>

@@ -3,9 +3,18 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 export default function NavBar() {
   const pathname = usePathname();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   const isActive = (href: string) =>
     href === '/'
@@ -13,7 +22,7 @@ export default function NavBar() {
       : pathname === href || pathname.startsWith(href + '/');
 
   return (
-    <nav className="v2-nav">
+    <nav className={`v2-nav${scrolled ? ' v2-nav--scrolled' : ''}`}>
       <div className="v2-nav-inner">
         <Link href="/" className="v2-nav-logo">
           <Image
