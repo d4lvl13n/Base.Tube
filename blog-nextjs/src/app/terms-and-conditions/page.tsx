@@ -21,7 +21,7 @@ export default function TermsPage() {
           <section>
             <h2>1. Agreement to terms</h2>
             <p>
-              By accessing or using Base.Tube ("the Platform"), you agree to be bound by these
+              By accessing or using Base.Tube (&ldquo;the Platform&rdquo;), you agree to be bound by these
               Terms and Conditions. If you do not agree, do not use the Platform.
               The Platform is operated by Base Labs (incorporation in progress, United States).
             </p>
@@ -31,7 +31,7 @@ export default function TermsPage() {
             <h2>2. Eligibility</h2>
             <p>
               You must be at least 13 years old to use the Platform. If you are under 18,
-              you represent that you have your parent or guardian's consent. We reserve the right
+              you represent that you have your parent or guardian&apos;s consent. We reserve the right
               to request proof of age and to suspend accounts that do not meet this requirement.
             </p>
           </section>
@@ -54,9 +54,9 @@ export default function TermsPage() {
             <h2>4. Content Passes</h2>
             <h3>What a Content Pass is</h3>
             <p>
-              A Content Pass is a digital access token that grants the holder access to a creator's
+              A Content Pass is a digital access token that grants the holder access to a creator&apos;s
               exclusive content on the Platform. Content Passes are recorded on the Base blockchain
-              and can be resold on the Platform's marketplace.
+              and can be resold on the Platform&apos;s marketplace.
             </p>
             <h3>Content Passes are not securities</h3>
             <p>
@@ -76,7 +76,7 @@ export default function TermsPage() {
             <p>
               Purchasing a Content Pass grants you access to all exclusive content gated behind
               that pass, for as long as you hold it. If you sell or transfer your pass,
-              you lose access to that creator's gated content.
+              you lose access to that creator&apos;s gated content.
             </p>
             <h3>No guarantees</h3>
             <p>
@@ -113,7 +113,7 @@ export default function TermsPage() {
               <li>Only gate content they own or have the rights to distribute</li>
               <li>Not upload content that is illegal, infringing, or violates third-party rights</li>
               <li>Use only unlisted YouTube videos for gated content (not private or public)</li>
-              <li>Comply with YouTube's Terms of Service when linking YouTube content</li>
+              <li>Comply with YouTube&apos;s Terms of Service when linking YouTube content</li>
             </ul>
             <p>
               We reserve the right to remove content and suspend creator accounts that violate
@@ -128,7 +128,7 @@ export default function TermsPage() {
               <li>Use the Platform for any illegal purpose</li>
               <li>Manipulate marketplace prices, engage in wash trading, or create artificial demand</li>
               <li>Distribute, share, or resell access to gated content outside the Platform</li>
-              <li>Attempt to circumvent the Platform's access controls or smart contracts</li>
+              <li>Attempt to circumvent the Platform&apos;s access controls or smart contracts</li>
               <li>Impersonate other users or creators</li>
               <li>Use bots, scrapers, or automated tools to access the Platform without permission</li>
               <li>Harass, abuse, or threaten other users</li>
@@ -165,8 +165,8 @@ export default function TermsPage() {
           <section>
             <h2>11. Limitation of liability</h2>
             <p>
-              The Platform is provided "as is" and "as available." We make no warranties,
-              express or implied, regarding the Platform's reliability, availability,
+              The Platform is provided &ldquo;as is&rdquo; and &ldquo;as available.&rdquo; We make no warranties,
+              express or implied, regarding the Platform&apos;s reliability, availability,
               or fitness for a particular purpose.
             </p>
             <p>

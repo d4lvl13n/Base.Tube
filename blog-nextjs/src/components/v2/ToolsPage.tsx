@@ -1,8 +1,6 @@
-import Image from 'next/image';
 import NavBar from './NavBar';
 import Footer from './Footer';
 import ScrollReveal from './ScrollReveal';
-import Link from 'next/link';
 import GeneratorDemo from './GeneratorDemo';
 import AuditDemo from './AuditDemo';
 

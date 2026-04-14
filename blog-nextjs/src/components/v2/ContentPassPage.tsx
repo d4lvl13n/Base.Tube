@@ -8,34 +8,6 @@ function Sep() {
   return <div className="v2-sep" aria-hidden />;
 }
 
-const creatorSteps = [
-  {
-    n: '01',
-    title: 'Connect your YouTube channel',
-    detail: 'Verify ownership in seconds via OAuth. You keep uploading to YouTube exactly as you do today — no migration, no new CMS, no workflow changes.',
-  },
-  {
-    n: '02',
-    title: 'Upload exclusive content as unlisted',
-    detail: 'Keep your public videos free and indexed. Gated content lives on YouTube as unlisted — your existing tools, your existing workflow.',
-  },
-  {
-    n: '03',
-    title: 'Create a Content Pass',
-    detail: 'Set your supply, your price, and your royalty rate. Our algorithm benchmarks comparable channels, but the decision is yours. You can adjust pricing for future passes — existing holders are never affected.',
-  },
-  {
-    n: '04',
-    title: 'Share your pass link anywhere',
-    detail: 'Post it on Twitter, Discord, your YouTube description, your newsletter. Your pass link works everywhere. You own the distribution.',
-  },
-  {
-    n: '05',
-    title: 'Get paid instantly — then earn forever',
-    detail: 'Revenue clears to your account at purchase. Plus 5% on every resale, tracked on-chain and added to your account automatically — no manual claims, ever.',
-  },
-];
-
 const fanSteps = [
   {
     n: '01',

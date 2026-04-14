@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
             <h2>1. Who we are</h2>
             <p>
               Base.Tube is operated by Base Labs (incorporation in progress, United States).
-              When we say "we," "us," or "our," we mean Base Labs and the Base.Tube platform.
+              When we say &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our,&rdquo; we mean Base Labs and the Base.Tube platform.
               For questions about this policy, contact us at <a href="mailto:info@base.tube">info@base.tube</a>.
             </p>
           </section>
