@@ -22,8 +22,8 @@ export const metadata: Metadata = {
     default: "Base.Tube - The Platform That Pays Creators First",
     template: "%s | Base.Tube"
   },
-  description: "Turn your content into tradeable assets. No ads, no algorithms, no subscriptions. Just content passes your fans can buy, own, and resell.",
-  keywords: "creator economy, content monetization, content pass, creator platform, tradeable access, fan ownership, direct monetization",
+  description: "Turn your content into passes your fans truly own. No ads, no algorithms, no subscriptions — just one-time access your fans buy, own, and can transfer.",
+  keywords: "creator economy, content monetization, content pass, creator platform, transferable access, fan ownership, direct monetization",
   authors: [{ name: "Base.Tube", url: "https://base.tube" }],
   creator: "Base.Tube",
   publisher: "Base.Tube",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Base.Tube - The Platform That Pays Creators First",
-    description: "Turn your content into tradeable assets. Your fans buy passes, watch content, and can resell. You earn from every transaction.",
+    description: "Turn your content into passes your fans own. Your fans buy a pass once, watch the content, and can transfer it — no subscriptions, no monthly reset.",
     url: "https://base.tube",
     siteName: "Base.Tube",
     locale: "en_US",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     site: "@base_tube",
     creator: "@base_tube",
     title: "Base.Tube - The Platform That Pays Creators First",
-    description: "Turn your content into tradeable assets. No ads, no algorithms, no subscriptions.",
+    description: "Turn your content into passes your fans own. No ads, no algorithms, no subscriptions.",
     images: ["/images/og-card.webp"],
   },
   robots: {

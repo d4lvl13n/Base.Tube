@@ -71,53 +71,23 @@ export default function FanDemo() {
         </div>
       </div>
 
-      {/* ── Step 3: Trade on marketplace ──────── */}
+      {/* ── Step 3: Own it — forever ──────────── */}
       <div className="fd-step fd-step--3">
         <div className="fd-step-num">Step 3</div>
-        <div className="fd-step-title">Trade on marketplace</div>
-        <div className="fd-trade-chart">
-          <div className="fd-trade-label">Pass value over time</div>
-          <div className="fd-chart-area">
-            <svg viewBox="0 0 240 80" className="fd-chart-svg" preserveAspectRatio="none">
-              <defs>
-                <linearGradient id="fd-chart-grad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#22c55e" stopOpacity="0.25" />
-                  <stop offset="100%" stopColor="#22c55e" stopOpacity="0" />
-                </linearGradient>
-              </defs>
-              {/* Non-linear growth: flat start, dip, slow climb, sudden spike */}
-              <path
-                d="M0 65 C20 64, 35 66, 50 62 C60 68, 70 70, 80 65 C95 60, 105 58, 120 52 C135 48, 145 44, 155 35 C165 30, 175 22, 190 14 C200 10, 220 6, 240 3"
-                fill="none" stroke="#22c55e" strokeWidth="2"
-                className="fd-chart-line"
-              />
-              <path
-                d="M0 65 C20 64, 35 66, 50 62 C60 68, 70 70, 80 65 C95 60, 105 58, 120 52 C135 48, 145 44, 155 35 C165 30, 175 22, 190 14 C200 10, 220 6, 240 3 V80 H0 Z"
-                fill="url(#fd-chart-grad)"
-                className="fd-chart-fill"
-              />
-              {/* Dot at current position */}
-              <circle cx="240" cy="3" r="4" fill="#22c55e" className="fd-chart-dot" />
-            </svg>
+        <div className="fd-step-title">Own it — forever</div>
+        <div className="fd-own-list">
+          <div className="fd-buy-check">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round"><polyline points="20 6 9 17 4 12" /></svg>
+            <span>Buy once — access never expires</span>
           </div>
-          <div className="fd-trade-row">
-            <div className="fd-trade-stat">
-              <span className="fd-trade-stat-label">Bought</span>
-              <span className="fd-trade-stat-val">$20</span>
-            </div>
-            <div className="fd-trade-stat">
-              <span className="fd-trade-stat-label">Current</span>
-              <span className="fd-trade-stat-val fd-trade-stat-val--green">$47</span>
-            </div>
-            <div className="fd-trade-stat">
-              <span className="fd-trade-stat-label">Return</span>
-              <span className="fd-trade-stat-val fd-trade-stat-val--green">+135%</span>
-            </div>
+          <div className="fd-buy-check">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round"><polyline points="20 6 9 17 4 12" /></svg>
+            <span>No subscription, no monthly reset</span>
           </div>
-        </div>
-        <div className="fd-trade-actions">
-          <div className="fd-trade-btn fd-trade-btn--hold">Hold</div>
-          <div className="fd-trade-btn fd-trade-btn--sell">Sell now →</div>
+          <div className="fd-buy-check">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round"><polyline points="20 6 9 17 4 12" /></svg>
+            <span>Transfer or gift your pass anytime</span>
+          </div>
         </div>
       </div>
     </div>

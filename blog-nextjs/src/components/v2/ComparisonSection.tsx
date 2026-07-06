@@ -18,16 +18,16 @@ const rows = [
     basetube: '10%',
   },
   {
-    metric: 'Fan exit when they cancel',
+    metric: 'Fan exit when they leave',
     youtube: 'Money gone',
     patreon: 'Money gone',
-    basetube: 'Sell the pass',
+    basetube: 'Keep or transfer it',
   },
   {
-    metric: 'Ongoing royalties',
+    metric: 'Creator earns on transfers',
     youtube: 'Ad views only',
     patreon: 'None',
-    basetube: '5% on every resale',
+    basetube: '5% each transfer',
   },
   {
     metric: 'Payout timing',

@@ -1053,6 +1053,13 @@ body:has(.v2-root) {
   97%, 100% { opacity: 0; transform: translateY(-10px); }
 }
 
+.fd-own-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
 .fd-trade-chart {
   width: 100%;
   background: rgba(255,255,255,0.02);

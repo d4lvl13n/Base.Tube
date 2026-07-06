@@ -47,15 +47,15 @@ export default function ProblemDemo() {
           </div>
           <div className="pbd-own-grow">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--v2-orange)" strokeWidth="2.5" strokeLinecap="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18" /><polyline points="17 6 23 6 23 12" /></svg>
-            <span>Creator grows &rarr; pass appreciates</span>
+            <span>One payment &rarr; access never expires</span>
           </div>
         </div>
         <div className="pbd-own-exit">
-          <span className="pbd-own-exit-label">You sell.</span>
+          <span className="pbd-own-exit-label">You leave.</span>
         </div>
         <div className="pbd-own-result">
-          <span className="pbd-own-profit">+$15</span>
-          <span className="pbd-own-profit-sub">Profit after 12 months</span>
+          <span className="pbd-own-profit">Yours</span>
+          <span className="pbd-own-profit-sub">Access you keep or transfer</span>
         </div>
       </div>
 

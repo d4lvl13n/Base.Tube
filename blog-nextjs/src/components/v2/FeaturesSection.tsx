@@ -23,9 +23,9 @@ export default function FeaturesSection() {
               <span className="v2-feature-tag orange">Content Pass</span>
               <h3>Own your access,<br />not rent it.</h3>
               <p>
-                Fans buy once and hold forever. When they leave, they sell —
-                they never lose money. When the creator grows, their pass
-                grows with them.
+                Fans buy once and own their access forever. When they leave,
+                they can transfer their pass to another fan instead of losing
+                everything — no subscription, no monthly reset.
               </p>
 
               {/* Visual: pass lifecycle */}
@@ -43,12 +43,12 @@ export default function FeaturesSection() {
                   <div className="v2-bento-lifecycle-line" />
                   <div className="v2-bento-lifecycle-step">
                     <span className="v2-bento-lifecycle-num orange">03</span>
-                    <span className="v2-bento-lifecycle-text">Resells if they leave</span>
+                    <span className="v2-bento-lifecycle-text">Transfers it if they leave</span>
                   </div>
                   <div className="v2-bento-lifecycle-line" />
                   <div className="v2-bento-lifecycle-step">
                     <span className="v2-bento-lifecycle-num orange">04</span>
-                    <span className="v2-bento-lifecycle-text">Creator earns 5% on resale</span>
+                    <span className="v2-bento-lifecycle-text">Creator earns 5% on transfer</span>
                   </div>
                 </div>
               </div>
@@ -84,10 +84,10 @@ export default function FeaturesSection() {
             <ScrollReveal delay={250}>
               <div className="v2-bento-card economics">
                 <span className="v2-feature-tag green">Economics</span>
-                <h3>You keep 90%.<br />Earn from resales forever.</h3>
+                <h3>You keep 90%.<br />Earn from transfers forever.</h3>
                 <p>
-                  Not 55–70% like other platforms. 90% on every sale, plus
-                  5% royalty on every resale — written into the smart contract.
+                  Not 55–70% like other platforms. 90% on every sale, plus a
+                  5% royalty each time a pass is transferred — written into the smart contract.
                 </p>
                 <div className="v2-bento-stat-row">
                   <div className="v2-bento-mini-stat">
@@ -97,7 +97,7 @@ export default function FeaturesSection() {
                   <div className="v2-bento-mini-sep" />
                   <div className="v2-bento-mini-stat">
                     <span className="v2-bento-mini-val green">+5%</span>
-                    <span className="v2-bento-mini-label">on every resale</span>
+                    <span className="v2-bento-mini-label">on every transfer</span>
                   </div>
                   <div className="v2-bento-mini-sep" />
                   <div className="v2-bento-mini-stat">

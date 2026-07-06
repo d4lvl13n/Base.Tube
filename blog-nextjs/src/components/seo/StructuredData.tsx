@@ -122,7 +122,7 @@ export function OrganizationStructuredData() {
       "width": 160,
       "height": 48
     },
-    "description": "The platform that pays creators first. Turn your content into tradeable assets with Web3 technology.",
+    "description": "The platform that pays creators first. Turn your content into passes your fans own, powered by Web3 technology.",
     "foundingDate": "2024",
     "sameAs": [
       "https://twitter.com/base_tube",
@@ -153,7 +153,7 @@ export function WebSiteStructuredData() {
     "name": "Base.Tube",
     "alternateName": "BaseTube",
     "url": "https://base.tube",
-    "description": "The platform that pays creators first. Turn your content into tradeable assets.",
+    "description": "The platform that pays creators first. Turn your content into passes your fans own.",
     "publisher": {
       "@type": "Organization",
       "name": "Base.Tube"

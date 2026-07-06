@@ -26,31 +26,31 @@ const fanSteps = [
   },
   {
     n: '04',
-    title: 'Hold, grow, or exit — your call',
-    detail: 'If you\'re done, list your pass on the marketplace at any price you choose. If the creator blows up, your pass is worth more. If they quit, you can still sell. Unlike a subscription, you always have an exit.',
+    title: 'Keep it, or move on — your call',
+    detail: 'If you\'re done, transfer your pass to another fan — you\'re not locked in like a subscription. Your access is yours to keep or hand off, on your terms.',
   },
 ];
 
 const faqs = [
   {
     q: 'Isn\'t this just an NFT?',
-    a: 'Content Passes use the same technology, but that\'s not the product. The product is a tradeable membership with real utility — access to a creator\'s exclusive content. Fans buy with a credit card and never see a wallet unless they want one. The "NFT" part is invisible infrastructure.',
+    a: 'Content Passes use the same technology, but that\'s not the product. The product is a transferable membership with real utility — access to a creator\'s exclusive content. Fans buy with a credit card and never see a wallet unless they want one. The "NFT" part is invisible infrastructure.',
   },
   {
     q: 'Why not just use Patreon?',
-    a: 'Patreon is rent. You pay $10/month for 12 months, you\'ve spent $120 — and when you leave, it\'s gone. On Base.Tube you buy once and can sell when you\'re done. Your $120 isn\'t gone; it\'s liquid. That\'s a fundamentally different relationship with the creator and with your money.',
+    a: 'Patreon is rent. You pay $10/month for 12 months, you\'ve spent $120 — and when you leave, it\'s gone. On Base.Tube you buy once and own your access. When you\'re done, you can transfer it to another fan instead of losing everything. That\'s a fundamentally different relationship with the creator.',
   },
   {
     q: 'What if no one buys my pass?',
-    a: 'You already have an audience. Even 1% of 5,000 followers is 50 passes. At $10 each, that\'s $500 from a single post — more than most creators make in a month on YouTube with that audience size. And that\'s not including resale royalties.',
+    a: 'You already have an audience. Even 1% of 5,000 followers is 50 passes. At $10 each, that\'s $500 from a single post — more than most creators make in a month on YouTube with that audience size. And that\'s not including transfer royalties.',
   },
   {
     q: 'Do I need a crypto wallet?',
-    a: 'No. Fans buy with a credit card. Creators receive fiat payouts. Wallets are optional — you can claim a pass to a self-custody wallet later if you want to trade it on external marketplaces, but it\'s never required.',
+    a: 'No. Fans buy with a credit card. Creators receive fiat payouts. Wallets are optional — you can claim a pass to a self-custody wallet later if you want to hold or transfer it on external marketplaces, but it\'s never required.',
   },
   {
     q: 'What if the creator stops making content?',
-    a: 'Sell your pass. That\'s the point. Subscriptions trap you — you stop paying and lose everything. A Content Pass gives you an exit. If the creator goes quiet and demand drops, you sell at a discount. You\'re never stuck.',
+    a: 'Transfer your pass. That\'s the point. Subscriptions trap you — you stop paying and lose everything. A Content Pass lets you hand your access to another fan instead. You\'re never stuck with nothing.',
   },
   {
     q: 'What if my YouTube channel gets terminated?',
@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     q: 'Can I change the price of new passes after launch?',
-    a: 'Yes. Price changes apply only to passes issued after the change. Existing pass holders are never affected — their pass trades freely at market price on the secondary market.',
+    a: 'Yes. Price changes apply only to passes issued after the change. Existing pass holders are never affected — their pass can be transferred freely on the secondary market.',
   },
 ];
 
@@ -81,7 +81,7 @@ export default function ContentPassPage() {
               </h1>
               <p className="v2-cp-sub">
                 Subscriptions are rent — you pay monthly and lose everything when you leave.
-                A Content Pass is ownership. Buy once, access forever, sell anytime.
+                A Content Pass is ownership. Buy once, access forever, transfer anytime.
                 The creator economy, but you actually own it.
               </p>
               <div className="v2-cp-hero-actions">
@@ -163,11 +163,11 @@ export default function ContentPassPage() {
                     </div>
                     <div className="v2-cp-comparison-row negative">
                       <span className="v2-cp-comparison-icon">✕</span>
-                      <span>No upside for being an early supporter</span>
+                      <span>No reward for being an early supporter</span>
                     </div>
                     <div className="v2-cp-comparison-row negative">
                       <span className="v2-cp-comparison-icon">✕</span>
-                      <span>No exit, no liquidity, no ownership</span>
+                      <span>No exit, no ownership — just renting</span>
                     </div>
                     <div className="v2-cp-comparison-row negative">
                       <span className="v2-cp-comparison-icon">✕</span>
@@ -187,7 +187,7 @@ export default function ContentPassPage() {
           <div className="v2-container">
             <ScrollReveal>
               <span className="v2-label">The solution</span>
-              <h2 className="v2-cp-section-h2">Buy once. Own forever. Sell anytime.</h2>
+              <h2 className="v2-cp-section-h2">Buy once. Own forever. Transfer anytime.</h2>
             </ScrollReveal>
 
             <ScrollReveal delay={80}>
@@ -203,21 +203,21 @@ export default function ContentPassPage() {
                   <span className="v2-cp-solution-icon orange">◆</span>
                   <div>
                     <div className="v2-cp-solution-title">Limited supply</div>
-                    <div className="v2-cp-solution-desc">Creators set a fixed number of passes. Scarcity creates real value.</div>
+                    <div className="v2-cp-solution-desc">Creators set a fixed number of passes. Scarcity keeps access exclusive.</div>
                   </div>
                 </div>
                 <div className="v2-cp-solution-item">
                   <span className="v2-cp-solution-icon orange">◆</span>
                   <div>
-                    <div className="v2-cp-solution-title">Tradeable on marketplace</div>
-                    <div className="v2-cp-solution-desc">Exit when you want. Sell at market price. Your access is liquid.</div>
+                    <div className="v2-cp-solution-title">Transferable anytime</div>
+                    <div className="v2-cp-solution-desc">Not locked in. Transfer or hand off your pass whenever you want.</div>
                   </div>
                 </div>
                 <div className="v2-cp-solution-item">
                   <span className="v2-cp-solution-icon orange">◆</span>
                   <div>
-                    <div className="v2-cp-solution-title">Price set by the market</div>
-                    <div className="v2-cp-solution-desc">Not by the platform. If the creator grows, so does the value of your pass.</div>
+                    <div className="v2-cp-solution-title">Truly yours</div>
+                    <div className="v2-cp-solution-desc">No monthly bill, no expiry, and no switch-off when you stop paying — because you never were.</div>
                   </div>
                 </div>
               </div>
@@ -226,17 +226,18 @@ export default function ContentPassPage() {
             <div className="v2-cp-prose" style={{ marginTop: 40 }}>
               <ScrollReveal delay={120}>
                 <p>
-                  A Content Pass is a tradeable membership. One purchase gives a fan lifetime
+                  A Content Pass is a transferable membership. One purchase gives a fan lifetime
                   access to all of a creator&apos;s exclusive content — past and future — for as long
-                  as they hold it. When they&apos;re done, they sell. The next buyer gets the same access.
-                  The creator earns a 5% royalty on that sale, written into the smart contract.
+                  as they hold it. When they&apos;re done, they can pass it on. The next holder gets the
+                  same access. The creator earns a 5% royalty each time a pass changes hands, written
+                  into the smart contract.
                 </p>
               </ScrollReveal>
               <ScrollReveal delay={180}>
                 <p>
                   Creators set a fixed supply. 500 passes means 500 passes — forever. That scarcity
-                  is real, and it belongs to the creator. If your channel grows and demand for passes
-                  increases, existing holders benefit. Your true fans become your earliest investors.
+                  is real, and it belongs to the creator. Your most committed fans get something
+                  lasting — genuine ownership of their access, not a feed they rent by the month.
                 </p>
               </ScrollReveal>
             </div>
@@ -287,11 +288,12 @@ export default function ContentPassPage() {
             <ScrollReveal>
               <span className="v2-label">For Fans</span>
               <h2 className="v2-cp-section-h2">
-                Support creators<br />with an exit strategy.
+                Support creators<br />without being locked in.
               </h2>
               <p className="v2-cp-sub" style={{ marginBottom: 48 }}>
-                Early supporters should be rewarded. If the creator blows up, you benefit.
-                If you change your mind, you sell. You&apos;re never stuck.
+                Back the creators you believe in and get lasting access — not a subscription that
+                vanishes when you stop paying. Change your mind? Hand your pass to another fan.
+                You&apos;re never stuck.
               </p>
             </ScrollReveal>
             <div className="v2-cp-steps">
@@ -353,7 +355,7 @@ export default function ContentPassPage() {
 
             {/* Fan comparison */}
             <ScrollReveal delay={160}>
-              <div className="v2-cp-econ-label" style={{ marginTop: 48 }}>For Fans — what actually happens to your money</div>
+              <div className="v2-cp-econ-label" style={{ marginTop: 48 }}>For Fans — what you&apos;re left with</div>
               <div className="v2-cp-econ-table">
                 <div className="v2-cp-econ-row header">
                   <span>Scenario</span>
@@ -361,28 +363,28 @@ export default function ContentPassPage() {
                   <span>Content Pass</span>
                 </div>
                 <div className="v2-cp-econ-row">
-                  <span>Creator stagnates</span>
-                  <span className="muted">–$120 (gone forever)</span>
-                  <span className="yellow">–$5 (sell at discount)</span>
+                  <span>You keep watching</span>
+                  <span className="muted">$120 spent, nothing to keep</span>
+                  <span className="green">Lifetime access you own</span>
                 </div>
                 <div className="v2-cp-econ-row">
                   <span>Creator quits</span>
-                  <span className="muted">–$120 (gone forever)</span>
-                  <span className="yellow">–$10 (worst case)</span>
+                  <span className="muted">–$120, gone forever</span>
+                  <span className="yellow">Access you can still transfer</span>
                 </div>
                 <div className="v2-cp-econ-row">
-                  <span>Creator grows 2×</span>
-                  <span className="muted">–$120 (no upside)</span>
-                  <span className="green">+$10 profit</span>
+                  <span>You change your mind</span>
+                  <span className="muted">–$120, gone forever</span>
+                  <span className="green">Hand your pass to another fan</span>
                 </div>
                 <div className="v2-cp-econ-row highlight">
-                  <span>Creator goes viral</span>
-                  <span className="muted">–$120 (no upside)</span>
-                  <span className="green">+$90 profit</span>
+                  <span>You stop paying</span>
+                  <span className="muted">Access switched off</span>
+                  <span className="green">Still yours — no monthly bill</span>
                 </div>
               </div>
               <div className="v2-cp-econ-callout">
-                Capped downside. Uncapped upside.
+                You own it. You&apos;re never locked in.
               </div>
             </ScrollReveal>
 
@@ -420,9 +422,9 @@ export default function ContentPassPage() {
                     </div>
                   </div>
                   <p>
-                    Six months later a fan resells at <strong>$35</strong> (channel grew).
-                    Creator earns <strong>$1.75 royalty</strong>, automatically. No action required.
-                    Fan made a <strong>$15.50 profit</strong> on a $20 purchase.
+                    Later, a holder transfers their pass to another fan. The creator earns a
+                    <strong> 5% royalty</strong> automatically — ongoing income with no extra work,
+                    written into the smart contract.
                   </p>
                 </div>
               </div>

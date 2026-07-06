@@ -2,18 +2,18 @@ import { Metadata } from 'next';
 import ContentPassPage from '@/components/v2/ContentPassPage';
 
 export const metadata: Metadata = {
-  title: 'Content Pass — Tradeable memberships for creators | Base.Tube',
+  title: 'Content Pass — Own your access, don\'t rent it | Base.Tube',
   description:
-    'The complete guide to Content Passes: tradeable memberships with 90% revenue share, resale royalties, and lifetime fan access. No subscriptions, no algorithms.',
+    'The complete guide to Content Passes: transferable memberships with 90% revenue share and lifetime fan access. Buy once, own forever — no subscriptions, no algorithms.',
   keywords:
-    'content pass, tradeable membership, creator monetization, 90% revenue share, resale royalty, fan ownership, Base.Tube',
+    'content pass, transferable membership, creator monetization, 90% revenue share, fan ownership, Base.Tube',
   authors: [{ name: 'Base.Tube' }],
   openGraph: {
     type: 'website',
     url: 'https://base.tube/content-pass',
-    title: 'Content Pass — Tradeable memberships for creators | Base.Tube',
+    title: 'Content Pass — Own your access, don\'t rent it | Base.Tube',
     description:
-      'Fans buy once, own forever, and can resell. Creators keep 90% upfront and earn 5% on every resale — written into the smart contract.',
+      'Fans buy once and own their access forever — transferable, never expiring. Creators keep 90% upfront.',
     images: [
       {
         url: 'https://base.tube/images/og-card.webp',
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@base_tube',
-    title: 'Content Pass — Tradeable memberships for creators | Base.Tube',
+    title: 'Content Pass — Own your access, don\'t rent it | Base.Tube',
     description:
-      'Fans buy once, own forever, and can resell. Creators keep 90% upfront and earn 5% on every resale.',
+      'Fans buy once and own their access forever — transferable, never expiring. Creators keep 90% upfront.',
     images: ['https://base.tube/images/og-card.webp'],
   },
   alternates: {

@@ -27,7 +27,7 @@ export default function ProblemSection() {
             </p>
             <p>
               No reward for being first. No exit if you change your mind.
-              No upside for either side.
+              Nothing to keep when it&apos;s over.
             </p>
             <div>
               <a

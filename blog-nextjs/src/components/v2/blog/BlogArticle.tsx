@@ -151,7 +151,7 @@ export default function BlogArticle({ post, slug }: BlogArticleProps) {
               Ready to build your creator economy?
             </div>
             <p className="v2-article-cta-sub">
-              Join Base.Tube — keep 90%, earn from every resale.
+              Join Base.Tube — keep 90%, earn from every transfer.
             </p>
             <a
               href="https://beta.base.tube/sign-up"
