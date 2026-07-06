@@ -35,6 +35,17 @@ export default function BlogArticle({ post, slug }: BlogArticleProps) {
       ? categories
       : [{ id: 1, name: 'Web3', slug: 'web3' }, { id: 2, name: 'Creator Economy', slug: 'creator-economy' }];
 
+  // Cluster-aware CTA: match the post topic to the right funnel destination.
+  const ctaHaystack = `${cleanTitle} ${categories.map((c) => c.name).join(' ')} ${tags
+    .map((t) => t.name)
+    .join(' ')}`.toLowerCase();
+  const isThumbnailPost = /thumbnail|\bctr\b|click.?through|packaging|a\/b|title test/.test(ctaHaystack);
+  const isMonetizePost =
+    /patreon|monetiz|subscription|membership|revenue|income|content pass|ownership|sponsor|brand deal|\bfans?\b|sell/.test(
+      ctaHaystack
+    );
+  const ctaVariant = isThumbnailPost ? 'thumbnail' : isMonetizePost ? 'monetize' : 'default';
+
   return (
     <div className="v2-root">
       <div className="v2-grain" />
@@ -144,23 +155,67 @@ export default function BlogArticle({ post, slug }: BlogArticleProps) {
 
         <div className="v2-sep" />
 
-        {/* Article CTA */}
+        {/* Article CTA — cluster-aware funnel */}
         <div className="v2-article-cta">
           <div className="v2-article-cta-box">
-            <div className="v2-article-cta-title">
-              Ready to build your creator economy?
-            </div>
-            <p className="v2-article-cta-sub">
-              Join Base.Tube — keep 90%, earn from every transfer.
-            </p>
-            <a
-              href="https://beta.base.tube/sign-up"
-              className="v2-btn v2-btn-primary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Get Early Access →
-            </a>
+            {ctaVariant === 'thumbnail' && (
+              <>
+                <div className="v2-article-cta-title">
+                  Your thumbnail is your pitch. Is it landing?
+                </div>
+                <p className="v2-article-cta-sub">
+                  Score any thumbnail free and see exactly what&apos;s hurting your click-through rate.
+                </p>
+                <a
+                  href="https://beta.base.tube/ai-thumbnails/audit"
+                  className="v2-btn v2-btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Score my thumbnail free →
+                </a>
+                <Link href="/content-pass" className="v2-article-cta-alt">
+                  Or turn your audience into income →
+                </Link>
+              </>
+            )}
+            {ctaVariant === 'monetize' && (
+              <>
+                <div className="v2-article-cta-title">
+                  Own your audience — don&apos;t rent it.
+                </div>
+                <p className="v2-article-cta-sub">
+                  Content Passes let fans buy once and own their access. You keep 90%.
+                </p>
+                <Link href="/content-pass" className="v2-btn v2-btn-primary">
+                  How Content Pass works →
+                </Link>
+                <a
+                  href="https://beta.base.tube/ai-thumbnails/audit"
+                  className="v2-article-cta-alt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Or score your thumbnail CTR free →
+                </a>
+              </>
+            )}
+            {ctaVariant === 'default' && (
+              <>
+                <div className="v2-article-cta-title">
+                  Grow your channel. Own your economy.
+                </div>
+                <p className="v2-article-cta-sub">
+                  Free tools to fix your CTR — and a new way to monetize that you actually own.
+                </p>
+                <Link href="/content-pass" className="v2-btn v2-btn-primary">
+                  Explore Content Pass →
+                </Link>
+                <Link href="/tools" className="v2-article-cta-alt">
+                  Try the free CTR tools →
+                </Link>
+              </>
+            )}
           </div>
         </div>
 

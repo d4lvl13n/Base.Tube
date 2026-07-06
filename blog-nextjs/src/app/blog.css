@@ -629,6 +629,19 @@
   margin-bottom: 28px;
 }
 
+.v2-article-cta-alt {
+  display: block;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--v2-dim);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.v2-article-cta-alt:hover {
+  color: var(--v2-orange);
+}
+
 /* ─── Back to Blog ───────────────────────────────────────── */
 .v2-article-back {
   max-width: 720px;
