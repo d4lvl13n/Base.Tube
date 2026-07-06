@@ -2,18 +2,18 @@ import { Metadata } from 'next';
 import ContentPassPage from '@/components/v2/ContentPassPage';
 
 export const metadata: Metadata = {
-  title: 'Content Pass — Own your access, don\'t rent it | Base.Tube',
+  title: 'Content Pass — The Patreon Alternative Creators & Fans Own | Base.Tube',
   description:
-    'The complete guide to Content Passes: transferable memberships with 90% revenue share and lifetime fan access. Buy once, own forever — no subscriptions, no algorithms.',
+    'Content Pass is a one-time pass that unlocks a creator\'s content for life — the Patreon alternative where creators keep 90% and fans truly own their access (buy once, transfer anytime). No subscriptions.',
   keywords:
-    'content pass, transferable membership, creator monetization, 90% revenue share, fan ownership, Base.Tube',
+    'content pass, patreon alternative, one-time creator pass, youtuber audience pass, creator monetization platform, 90% revenue share, fan ownership',
   authors: [{ name: 'Base.Tube' }],
   openGraph: {
     type: 'website',
     url: 'https://base.tube/content-pass',
-    title: 'Content Pass — Own your access, don\'t rent it | Base.Tube',
+    title: 'Content Pass — The Patreon Alternative Creators & Fans Own | Base.Tube',
     description:
-      'Fans buy once and own their access forever — transferable, never expiring. Creators keep 90% upfront.',
+      'A one-time pass that unlocks a creator\'s content for life — the Patreon alternative where creators keep 90% and fans own their access. Buy once, transfer anytime, no subscriptions.',
     images: [
       {
         url: 'https://base.tube/images/og-card.webp',
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@base_tube',
-    title: 'Content Pass — Own your access, don\'t rent it | Base.Tube',
+    title: 'Content Pass — The Patreon Alternative Creators & Fans Own | Base.Tube',
     description:
-      'Fans buy once and own their access forever — transferable, never expiring. Creators keep 90% upfront.',
+      'A one-time pass that unlocks a creator\'s content for life — the Patreon alternative where creators keep 90% and fans own their access. Buy once, transfer anytime, no subscriptions.',
     images: ['https://base.tube/images/og-card.webp'],
   },
   alternates: {
