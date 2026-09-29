@@ -19,6 +19,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/ai-thumbnails`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/tools`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
@@ -26,12 +32,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${baseUrl}/tools/ctr-optimizer`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/tools/thumbnail-generator`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,

@@ -1,0 +1,366 @@
+/* The AI Thumbnails landing page (/ai-thumbnails), imported by this route only.
+
+   1. Tailwind utilities for this page's components alone. The site's global CSS loads Tailwind
+      without its theme, so this file brings the theme for these components (values written inline:
+      no theme variables on :root) and scans only src/components/ai-thumbnails. The utilities are
+      unlayered, like the site's global preflight, so they win over it as they did in the app.
+   2. The app's landing.css, scoped under .lp as it was: names all start with lp-. */
+
+@import "tailwindcss/theme.css" theme(inline);
+@tailwind utilities source(none);
+@source "../../components/ai-thumbnails";
+
+/* The app ran Tailwind 3: keep its colors exactly (Tailwind 4 moved these palettes to OKLCH). */
+@theme inline {
+  --color-zinc-100: #f4f4f5;
+  --color-zinc-200: #e4e4e7;
+  --color-zinc-300: #d4d4d8;
+  --color-zinc-400: #a1a1aa;
+  --color-zinc-500: #71717a;
+  --color-zinc-600: #52525b;
+  --color-zinc-700: #3f3f46;
+  --color-zinc-900: #18181b;
+  --color-zinc-950: #09090b;
+  --color-orange-300: #fdba74;
+  --color-emerald-400: #34d399;
+  /* Tailwind 3 text sizes set their line height in rem, which children inherit as a length. */
+  --text-xs--line-height: 1rem;
+  --text-sm--line-height: 1.25rem;
+  --text-base--line-height: 1.5rem;
+  --text-lg--line-height: 1.75rem;
+  --text-xl--line-height: 1.75rem;
+  --text-2xl--line-height: 2rem;
+  --text-3xl--line-height: 2.25rem;
+  --text-4xl--line-height: 2.5rem;
+}
+
+/* The app's page on beta.base.tube loads a second Tailwind stylesheet after the first, which makes
+   some text sizes win over line-height classes and some plain classes win over responsive ones.
+   The components here carry only the classes that take effect there, so both pages look the same
+   (for example `text-base` without the `leading-relaxed` it overrides there). */
+
+/* ---- The app's landing.css ---------------------------------------------------------------- */
+
+/* Fonts come from next/font (see components/ai-thumbnails/fonts.ts): Archivo with its width axis,
+   Anton for the big quote marks. Motion stops under prefers-reduced-motion. */
+
+.lp {
+  font-family: var(--font-lp-archivo), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-stretch: 100%;
+  background: #070709;
+  color: #f4f4f5;
+  /* The site's body sets weight 500, line height 1.6 and thinner smoothing: back to the app's defaults. */
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+/* Headlines: Archivo widened and heavy, set tight. */
+.lp-display {
+  font-family: var(--font-lp-archivo), ui-sans-serif, system-ui, sans-serif;
+  font-stretch: 115%;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+}
+
+.lp-heading {
+  font-family: var(--font-lp-archivo), ui-sans-serif, system-ui, sans-serif;
+  font-stretch: 110%;
+  font-weight: 750;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+}
+
+.lp-anton {
+  font-family: var(--font-lp-anton), Impact, sans-serif;
+}
+
+.lp-accent {
+  background: linear-gradient(100deg, #fa7517 10%, #ffb067 60%, #ffd9b0 95%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* The drifting wall behind the final call to action. */
+.lp-wall-plane {
+  transform: perspective(1600px) rotateX(24deg) rotateZ(-9deg) scale(1.28);
+  transform-origin: 50% 40%;
+}
+.lp-drift {
+  display: flex;
+  width: max-content;
+  animation: lp-drift-left var(--lp-drift, 90s) linear infinite;
+}
+.lp-drift.lp-reverse {
+  animation-name: lp-drift-right;
+}
+@keyframes lp-drift-left {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+@keyframes lp-drift-right {
+  from { transform: translate3d(-50%, 0, 0); }
+  to { transform: translate3d(0, 0, 0); }
+}
+
+/* The YouTube feed behind the hero, on a plane tilted back and turned a little (a near-isometric
+   view): it scrolls up by one set of cards, away into the distance, then loops. */
+.lp-feed-plane {
+  transform: perspective(1700px) rotateX(34deg) rotateZ(-11deg) scale(1.3);
+  transform-origin: 50% 35%;
+}
+.lp-feed {
+  animation: lp-feed-up 110s linear infinite;
+}
+@keyframes lp-feed-up {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(0, -50%, 0); }
+}
+/* Cards sit a little dim; the one that catches the eye lights up and lifts. */
+.lp-feed-card {
+  filter: saturate(0.7) brightness(0.72);
+  transition: filter 0.7s ease, transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.lp-feed-card.lp-feed-hot {
+  filter: none;
+  transform: scale(1.05);
+}
+.lp-feed-thumb {
+  transition: box-shadow 0.7s ease;
+}
+.lp-feed-hot .lp-feed-thumb {
+  box-shadow: 0 0 0 2px #fa7517, 0 24px 60px -12px rgba(250, 117, 23, 0.55);
+}
+
+/* Quote bands: they stop while hovered or focused so a quote can be read. */
+.lp-band:hover .lp-drift,
+.lp-band:focus-within .lp-drift {
+  animation-play-state: paused;
+}
+
+.lp-caret::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 1.05em;
+  margin-left: 2px;
+  vertical-align: -0.15em;
+  background: #fa7517;
+  animation: lp-blink 1s steps(1) infinite;
+}
+@keyframes lp-blink {
+  50% { opacity: 0; }
+}
+
+.lp-glow {
+  box-shadow: 0 0 0 1px rgba(250, 117, 23, 0.55), 0 12px 40px -8px rgba(250, 117, 23, 0.45);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lp-drift,
+  .lp-feed,
+  .lp-caret::after {
+    animation: none;
+  }
+  /* Still quote bands: every quote visible, wrapped, once. */
+  .lp-band { mask-image: none; -webkit-mask-image: none; }
+  .lp-band .lp-drift { width: auto; padding: 0 1.25rem; }
+  .lp-band .lp-drift > ul { flex-wrap: wrap; }
+  .lp-band .lp-drift > ul[aria-hidden] { display: none; }
+}
+
+/* ---- Round 2: more motion, alternating orange and white, buttons that pull ---- */
+
+/* The orange phrase of a headline: its gradient drifts slowly. */
+.lp-accent-live {
+  background-size: 220% 100%;
+  animation: lp-accent-drift 7s ease-in-out infinite alternate;
+}
+@keyframes lp-accent-drift {
+  from { background-position: 0% 50%; }
+  to { background-position: 100% 50%; }
+}
+.lp-accent {
+  background-image: linear-gradient(100deg, #fa7517 0%, #ff9a3c 30%, #ffd2a6 50%, #ff9a3c 70%, #fa7517 100%);
+}
+
+/* Primary button: warm gradient, a light that sweeps across it, lift and glow on hover. */
+.lp-btn-primary {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-image: linear-gradient(135deg, #ff8a2b 0%, #fa7517 45%, #e8590c 100%);
+  box-shadow: 0 14px 44px -12px rgba(250, 117, 23, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.lp-btn-primary::after {
+  content: '';
+  position: absolute;
+  inset: -20% auto -20% -60%;
+  width: 45%;
+  z-index: -1;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+  transform: skewX(-18deg);
+  animation: lp-shine 3.8s ease-in-out infinite;
+}
+.lp-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 60px -12px rgba(250, 117, 23, 0.95), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+@keyframes lp-shine {
+  0%, 55% { left: -60%; }
+  85%, 100% { left: 130%; }
+}
+
+/* Secondary button: a rotating orange light runs along its border. */
+@property --lp-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+.lp-btn-secondary {
+  position: relative;
+  border: 1.5px solid transparent;
+  background:
+    linear-gradient(#111116, #111116) padding-box,
+    conic-gradient(from var(--lp-angle), #fa7517, #ffd2a6 12%, rgba(255, 255, 255, 0.14) 28%, rgba(255, 255, 255, 0.14) 72%, #fa7517) border-box;
+  animation: lp-spin 4.5s linear infinite;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.lp-btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 50px -16px rgba(250, 117, 23, 0.7);
+}
+@keyframes lp-spin {
+  to { --lp-angle: 360deg; }
+}
+
+/* Hero spotlight: the dark veil opens where the cursor is, so the wall shows through. */
+.lp-veil {
+  -webkit-mask-image: radial-gradient(300px circle at var(--lp-mx, -999px) var(--lp-my, -999px), rgba(0, 0, 0, 0.25), #000 75%);
+  mask-image: radial-gradient(300px circle at var(--lp-mx, -999px) var(--lp-my, -999px), rgba(0, 0, 0, 0.25), #000 75%);
+}
+.lp-spot {
+  background: radial-gradient(420px circle at var(--lp-mx, -999px) var(--lp-my, -999px), rgba(250, 117, 23, 0.16), transparent 65%);
+}
+
+/* Quote notes: a highlighter pass over the words that matter (once the bands are in view). */
+.lp-mark {
+  background-repeat: no-repeat;
+  background-position: 0 88%;
+  background-size: 0% 42%;
+  transition: background-size 1.1s cubic-bezier(0.2, 0.7, 0.2, 1) 0.2s;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0 0.08em;
+}
+.lp-seen .lp-mark,
+.lp-mark.lp-on {
+  background-size: 100% 42%;
+}
+
+.lp-float {
+  animation: lp-float 7s ease-in-out infinite;
+}
+@keyframes lp-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lp-accent-live,
+  .lp-btn-primary::after,
+  .lp-btn-secondary,
+  .lp-float {
+    animation: none;
+  }
+  .lp-mark {
+    transition: none;
+    background-size: 100% 42%;
+  }
+}
+
+/* ---- Reveals (the app played them with framer-motion; here the text is in the server's HTML and
+   CSS plays the same motion) ------------------------------------------------------------------ */
+
+/* Headline words rise into place, blurred to sharp: on first paint for the hero (.lp-words-now),
+   when scrolled into view for the others (.lp-words, then .lp-in). --lp-d: each word's delay. */
+.lp-word {
+  display: inline-block;
+}
+.lp-words .lp-word {
+  opacity: 0;
+  transform: translateY(0.5em);
+  filter: blur(10px);
+  transition:
+    opacity 0.75s cubic-bezier(0.2, 0.7, 0.2, 1) var(--lp-d, 0s),
+    transform 0.75s cubic-bezier(0.2, 0.7, 0.2, 1) var(--lp-d, 0s),
+    filter 0.75s cubic-bezier(0.2, 0.7, 0.2, 1) var(--lp-d, 0s);
+}
+.lp-words.lp-in .lp-word {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0px);
+}
+.lp-words-now .lp-word {
+  animation: lp-word-in 0.75s cubic-bezier(0.2, 0.7, 0.2, 1) var(--lp-d, 0s) both;
+}
+.lp-words-now .lp-word.lp-accent-live {
+  animation:
+    lp-word-in 0.75s cubic-bezier(0.2, 0.7, 0.2, 1) var(--lp-d, 0s) both,
+    lp-accent-drift 7s ease-in-out infinite alternate;
+}
+@keyframes lp-word-in {
+  from { opacity: 0; transform: translateY(0.5em); filter: blur(10px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0px); }
+}
+
+/* The hero's words under the headline, its buttons and terms: in after the headline. */
+.lp-hero-rise {
+  animation: lp-rise 0.7s ease-in-out 0.85s both;
+}
+@keyframes lp-rise {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Blocks that fade and rise once in view. --lp-y: distance, --lp-t: duration, --lp-d: delay. */
+.lp-reveal {
+  opacity: 0;
+  transform: translateY(var(--lp-y, 24px));
+  transition:
+    opacity var(--lp-t, 0.8s) cubic-bezier(0.2, 0.7, 0.2, 1) var(--lp-d, 0s),
+    transform var(--lp-t, 0.8s) cubic-bezier(0.2, 0.7, 0.2, 1) var(--lp-d, 0s);
+}
+.lp-reveal.lp-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Reduced motion: every reveal shows as it ends, from the first paint (no script needed); the
+   framer-motion pieces ([data-lp-reveal], the score ring) are held at their end state. */
+@media (prefers-reduced-motion: reduce) {
+  .lp-words .lp-word,
+  .lp-reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+  .lp-words-now .lp-word,
+  .lp-words-now .lp-word.lp-accent-live,
+  .lp-hero-rise {
+    animation: none;
+  }
+  .lp [data-lp-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+  .lp [data-lp-ring] {
+    stroke-dashoffset: var(--lp-ring-final) !important;
+  }
+}
