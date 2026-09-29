@@ -11,6 +11,12 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      // The old thumbnail tool page: AI Thumbnails now has its landing page here.
+      { source: '/tools/thumbnail-generator', destination: '/ai-thumbnails', permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;

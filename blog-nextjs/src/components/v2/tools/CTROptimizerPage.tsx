@@ -206,8 +206,8 @@ export default function CTROptimizerPage() {
                   >
                     Run the free audit →
                   </a>
-                  <Link href="/tools/thumbnail-generator" className="v2-btn v2-btn-ghost">
-                    See the Thumbnail Studio
+                  <Link href="/ai-thumbnails" className="v2-btn v2-btn-ghost">
+                    See AI Thumbnails
                   </Link>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 // Shared, honest copy for the three existing tool pages
-// (/tools, /tools/ctr-optimizer, /tools/thumbnail-generator).
+// (/tools, /tools/ctr-optimizer).
 //
 // Position: Base.Tube does NOT predict or score click-through rate.
 // What is true and live on the beta: AI Thumbnail Studio, a free channel audit
@@ -92,16 +92,3 @@ export function auditAppJsonLd() {
   };
 }
 
-// No `offers` here on purpose: pricing of the Studio is not stated on this page.
-export function studioAppJsonLd() {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'WebApplication',
-    name: 'Base.Tube AI Thumbnail Studio',
-    url: `${SITE}/tools/thumbnail-generator`,
-    applicationCategory: 'MultimediaApplication',
-    operatingSystem: 'Web',
-    description:
-      'Generate YouTube thumbnails in your channel\'s saved style: your brand kit and your own face, 3 variants per video, one-sentence edits.',
-  };
-}
