@@ -6,7 +6,7 @@ import ResizerTool from './ResizerTool';
 import { SPEC_CHECKED, faqs, steps } from './content';
 import styles from './ThumbnailResizer.module.css';
 
-const STUDIO_GENERATE = 'https://beta.base.tube/ai-thumbnails/generate';
+const STUDIO_GENERATE = '/ai-thumbnails';
 const STUDIO_AUDIT = 'https://beta.base.tube/ai-thumbnails/audit';
 
 function Sep() {
@@ -162,7 +162,7 @@ export default function ThumbnailResizerPage() {
                   your channel.
                 </p>
                 <div className={styles.ctaActions}>
-                  <a href={STUDIO_GENERATE} className="v2-btn v2-btn-primary" rel="noopener">
+                  <a href={STUDIO_GENERATE} className="v2-btn v2-btn-primary">
                     Make thumbnails in Studio →
                   </a>
                   <a href={STUDIO_AUDIT} className="v2-btn v2-btn-ghost" rel="noopener">

@@ -38,6 +38,42 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/youtube-thumbnail-size`,
+      lastModified: new Date('2026-09-29'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/tools/youtube-thumbnail-resizer`,
+      lastModified: new Date('2026-09-29'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/tools/youtube-thumbnail-preview`,
+      lastModified: new Date('2026-09-29'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/tools/youtube-thumbnail-tester`,
+      lastModified: new Date('2026-09-29'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/tools/youtube-title-checker`,
+      lastModified: new Date('2026-09-29'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/tools/video-to-thumbnail`,
+      lastModified: new Date('2026-09-29'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/blog`,
       lastModified: new Date(),
       changeFrequency: 'daily',

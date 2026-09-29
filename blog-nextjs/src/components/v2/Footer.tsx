@@ -78,13 +78,11 @@ export default function Footer() {
             </li>
             <li><Link href="/content-pass">Content Pass</Link></li>
             <li>
-              <a href="https://beta.base.tube/ai-thumbnails/generate" target="_blank" rel="noopener noreferrer">
-                AI Thumbnail Generator
-              </a>
+              <Link href="/ai-thumbnails">AI Thumbnails</Link>
             </li>
             <li>
               <a href="https://beta.base.tube/ai-thumbnails/audit" target="_blank" rel="noopener noreferrer">
-                CTR Optimiser
+                Channel Audit
               </a>
             </li>
           </ul>

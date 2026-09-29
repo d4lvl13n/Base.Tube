@@ -7,7 +7,7 @@ import { FAQ } from './faq';
 import s from './thumbnail-preview.module.css';
 
 const STUDIO_AUDIT = 'https://beta.base.tube/ai-thumbnails/audit';
-const STUDIO_GENERATE = 'https://beta.base.tube/ai-thumbnails/generate';
+const STUDIO_GENERATE = '/ai-thumbnails';
 
 function Sep() {
   return <div className="v2-sep" aria-hidden />;

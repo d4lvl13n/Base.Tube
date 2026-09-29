@@ -6,7 +6,7 @@ import TitleCheckerTool from './TitleCheckerTool';
 import styles from './TitleChecker.module.css';
 import { CAPACITY_ROWS, FAQS, PAIRS, SOURCES } from './content';
 
-const STUDIO_GENERATE = 'https://beta.base.tube/ai-thumbnails/generate';
+const STUDIO_GENERATE = '/ai-thumbnails';
 const STUDIO_AUDIT = 'https://beta.base.tube/ai-thumbnails/audit';
 
 function Sep() {
@@ -228,7 +228,7 @@ export default function TitleCheckerPage() {
                   rate. Base.Tube measures that for you when you connect your channel.
                 </p>
                 <div className="v2-tool-bridge-links">
-                  <a className="v2-btn v2-btn-primary" href={STUDIO_GENERATE} target="_blank" rel="noopener noreferrer">
+                  <a className="v2-btn v2-btn-primary" href={STUDIO_GENERATE}>
                     Generate a thumbnail that fits this title →
                   </a>
                   <a className="v2-btn v2-btn-ghost" href={STUDIO_AUDIT} target="_blank" rel="noopener noreferrer">

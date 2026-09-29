@@ -117,8 +117,8 @@ export default function FeaturesSection() {
               <span className="v2-feature-tag muted">Creator Toolkit</span>
               <p className="v2-tools-strip-headline">Stop guessing. Start knowing.</p>
               <p className="v2-tools-strip-text">
-                Score any thumbnail before you publish. Generate better ones in seconds.
-                Your content deserves more than a coin flip for clicks.
+                Check any thumbnail and title before you publish. Make better ones in your
+                own style. Then measure the result in your real YouTube numbers.
               </p>
             </div>
             <Link href="/tools" className="v2-tools-strip-link">

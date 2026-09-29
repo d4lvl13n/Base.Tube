@@ -7,7 +7,7 @@
 // YouTube, their real impressions and real click-through rate.
 
 export const AUDIT_URL = 'https://beta.base.tube/ai-thumbnails/audit';
-export const STUDIO_URL = 'https://beta.base.tube/ai-thumbnails/generate';
+export const STUDIO_URL = '/ai-thumbnails';
 
 export interface Faq {
   q: string;

@@ -1,6 +1,6 @@
 export const PAGE_URL = 'https://base.tube/tools/youtube-thumbnail-tester';
 export const STUDIO_AUDIT_URL = 'https://beta.base.tube/ai-thumbnails/audit';
-export const STUDIO_GENERATE_URL = 'https://beta.base.tube/ai-thumbnails/generate';
+export const STUDIO_GENERATE_URL = '/ai-thumbnails';
 /** YouTube Help: "A/B test titles & thumbnails" (first released as Test & Compare). */
 export const YT_AB_HELP_URL = 'https://support.google.com/youtube/answer/16391400';
 /** Date the YouTube Help page was last read for the facts on this page. */

@@ -8,7 +8,7 @@ import { useSurfaceMeasurers } from './useMeasurer';
 import Previews, { type Theme } from './Previews';
 import BatchTable from './BatchTable';
 
-const STUDIO_GENERATE = 'https://beta.base.tube/ai-thumbnails/generate';
+const STUDIO_GENERATE = '/ai-thumbnails';
 const STUDIO_AUDIT = 'https://beta.base.tube/ai-thumbnails/audit';
 
 const EXAMPLE_TITLE = 'I Tried Editing YouTube Videos Only on My Phone for 30 Days (Here’s What Happened)';
@@ -302,7 +302,7 @@ export default function TitleCheckerTool() {
                   </p>
                 </div>
                 <div className={styles.nextActions}>
-                  <a className="v2-btn v2-btn-primary" href={STUDIO_GENERATE} target="_blank" rel="noopener noreferrer">
+                  <a className="v2-btn v2-btn-primary" href={STUDIO_GENERATE}>
                     Generate a thumbnail for this title
                     <span aria-hidden="true">{'→'}</span>
                   </a>

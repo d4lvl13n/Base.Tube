@@ -671,7 +671,7 @@ export default function FrameGrabber() {
       setExportMsg({
         tone: overLimit ? 'warn' : 'ok',
         text: overLimit
-          ? `Saved ${name}: ${out.width}×${out.height}, ${formatBytes(blob.size)}. That is over YouTube's 2 MB thumbnail limit. Export it as JPG to make it smaller.`
+          ? `Saved ${name}: ${out.width}×${out.height}, ${formatBytes(blob.size)}. That is over the 2 MB limit for uploads from the YouTube phone app (computers allow up to 50 MB). Export it as JPG to make it smaller.`
           : `Saved ${name}: ${out.width}×${out.height}, ${formatBytes(blob.size)}.`,
       });
     } catch {

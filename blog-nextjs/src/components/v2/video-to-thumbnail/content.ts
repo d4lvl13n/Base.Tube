@@ -8,7 +8,7 @@ export const PAGE_TITLE = 'Video to Thumbnail: Extract the Best Frame, Free';
 export const PAGE_DESCRIPTION =
   'Turn any video into a YouTube thumbnail. Step frame by frame, auto-pick the sharpest shots, export 1280×720 JPG or PNG. Runs in your browser, no upload.';
 
-export const STUDIO_GENERATE_URL = 'https://beta.base.tube/ai-thumbnails/generate';
+export const STUDIO_GENERATE_URL = '/ai-thumbnails';
 export const STUDIO_AUDIT_URL = 'https://beta.base.tube/ai-thumbnails/audit';
 
 export interface Faq {

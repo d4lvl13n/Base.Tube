@@ -164,18 +164,14 @@ export default function BlogArticle({ post, slug }: BlogArticleProps) {
                   Your thumbnail is your pitch. Is it landing?
                 </div>
                 <p className="v2-article-cta-sub">
-                  Score any thumbnail free and see exactly what&apos;s hurting your click-through rate.
+                  Make thumbnails with your face and your channel&apos;s style, then check the
+                  result in your real YouTube numbers.
                 </p>
-                <a
-                  href="https://beta.base.tube/ai-thumbnails/audit"
-                  className="v2-btn v2-btn-primary"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Score my thumbnail free →
-                </a>
-                <Link href="/content-pass" className="v2-article-cta-alt">
-                  Or turn your audience into income →
+                <Link href="/ai-thumbnails" className="v2-btn v2-btn-primary">
+                  See AI Thumbnails →
+                </Link>
+                <Link href="/tools" className="v2-article-cta-alt">
+                  Or try the free thumbnail tools →
                 </Link>
               </>
             )}
@@ -190,14 +186,9 @@ export default function BlogArticle({ post, slug }: BlogArticleProps) {
                 <Link href="/content-pass" className="v2-btn v2-btn-primary">
                   How Content Pass works →
                 </Link>
-                <a
-                  href="https://beta.base.tube/ai-thumbnails/audit"
-                  className="v2-article-cta-alt"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Or score your thumbnail CTR free →
-                </a>
+                <Link href="/tools" className="v2-article-cta-alt">
+                  Or try the free thumbnail tools →
+                </Link>
               </>
             )}
             {ctaVariant === 'default' && (
@@ -206,13 +197,13 @@ export default function BlogArticle({ post, slug }: BlogArticleProps) {
                   Grow your channel. Own your economy.
                 </div>
                 <p className="v2-article-cta-sub">
-                  Free tools to fix your CTR — and a new way to monetize that you actually own.
+                  Free thumbnail tools for creators, and a way to monetize that you actually own.
                 </p>
                 <Link href="/content-pass" className="v2-btn v2-btn-primary">
                   Explore Content Pass →
                 </Link>
                 <Link href="/tools" className="v2-article-cta-alt">
-                  Try the free CTR tools →
+                  Try the free thumbnail tools →
                 </Link>
               </>
             )}

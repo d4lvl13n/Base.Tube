@@ -4,6 +4,7 @@ import ScrollReveal from './ScrollReveal';
 import AuditPreview from './studio-audit/AuditPreview';
 import StudioPreview from './studio-audit/StudioPreview';
 import { AUDIT_URL, STUDIO_URL } from './studio-audit/content';
+import ToolsDirectory from './tools-directory/ToolsDirectory';
 
 function Sep() {
   return <div className="v2-sep" aria-hidden />;
@@ -32,6 +33,19 @@ export default function ToolsPage() {
                 can see in your own numbers whether a change worked.
               </p>
             </ScrollReveal>
+          </div>
+        </section>
+
+        <Sep />
+
+        {/* ── FREE TOOLS ───────────────────────────────────── */}
+        <section className="v2-cp-section">
+          <div className="v2-container">
+            <ScrollReveal>
+              <span className="v2-label">Free tools</span>
+              <h2 className="v2-cp-section-h2">Check it before you publish.</h2>
+            </ScrollReveal>
+            <ToolsDirectory />
           </div>
         </section>
 
@@ -106,8 +120,6 @@ export default function ToolsPage() {
                   </div>
                   <a
                     href={STUDIO_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="v2-btn v2-btn-primary"
                     style={{ marginTop: 24, background: '#3b9eff' }}
                   >
@@ -152,8 +164,6 @@ export default function ToolsPage() {
                   </a>
                   <a
                     href={STUDIO_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="v2-btn v2-btn-ghost"
                   >
                     Generate thumbnails →

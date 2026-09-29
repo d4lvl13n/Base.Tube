@@ -33,7 +33,7 @@ export const DESCRIPTION_MIN = 70;
 export const GALLERY_INITIAL = 24;
 
 /** Links into the Base.Tube Studio. Query parameters are added by studioGenerateUrl(). */
-export const STUDIO_GENERATE_URL = 'https://beta.base.tube/ai-thumbnails/generate';
+export const STUDIO_GENERATE_URL = 'https://base.tube/ai-thumbnails';
 export const STUDIO_AUDIT_URL = 'https://beta.base.tube/ai-thumbnails/audit';
 
 /** Page groups, in the order the hub shows them. */

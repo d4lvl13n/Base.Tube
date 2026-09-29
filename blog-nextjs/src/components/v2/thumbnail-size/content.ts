@@ -95,6 +95,6 @@ export const RELATED_TOOLS = [
   { href: '/tools/video-to-thumbnail', label: 'Video to thumbnail' },
 ];
 
-export const STUDIO_GENERATE_URL = 'https://beta.base.tube/ai-thumbnails/generate';
+export const STUDIO_GENERATE_URL = '/ai-thumbnails';
 export const STUDIO_AUDIT_URL = 'https://beta.base.tube/ai-thumbnails/audit';
 export const RESIZER_URL = '/tools/youtube-thumbnail-resizer';
