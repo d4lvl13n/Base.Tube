@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { getAllPosts } from '@/lib/wordpress'
+import { getThumbnailSitemapEntries } from '@/components/v2/thumbnail-pages/sitemap-entries'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://base.tube'
@@ -71,5 +72,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     console.error('Error fetching posts for sitemap:', error)
   }
 
-  return [...staticPages, ...blogPosts]
+  // /thumbnails hub + niche pages: only pages that are published AND complete
+  // (enough gallery images, no placeholders...). Drafts are never listed.
+  let thumbnailPages: MetadataRoute.Sitemap = []
+  try {
+    thumbnailPages = getThumbnailSitemapEntries(baseUrl)
+  } catch (error) {
+    console.error('Error loading /thumbnails pages for sitemap:', error)
+  }
+
+  return [...staticPages, ...thumbnailPages, ...blogPosts]
 }
