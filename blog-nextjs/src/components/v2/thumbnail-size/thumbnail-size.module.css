@@ -1,0 +1,971 @@
+/*
+ * Styles for /youtube-thumbnail-size.
+ * Everything is scoped under .root so it beats the v2.css universal reset
+ * (`.v2-root *` zeroes margins and padding) on specificity, not on load order.
+ * Colours come from the v2 tokens defined on .v2-root.
+ */
+
+.root {
+  --ok: #4ade80;
+  --caution: #fbbf24;
+  --bad: #f87171;
+  --panel-bg: rgba(255, 255, 255, 0.022);
+}
+
+.root .srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Anchor targets sit below the fixed nav bar. */
+.root [id] {
+  scroll-margin-top: 84px;
+}
+
+.root :focus-visible {
+  outline: 2px solid var(--v2-orange);
+  outline-offset: 3px;
+}
+
+/* White on the brand orange is 2.5:1. Near-black on the same orange is about 8:1. */
+.root .onAccent {
+  color: #140a02;
+}
+
+.root .inlineLink {
+  color: var(--v2-text);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.35);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s var(--v2-ease);
+}
+.root .inlineLink:hover {
+  text-decoration-color: var(--v2-orange);
+}
+
+/* ─── Hero ────────────────────────────────────────────────── */
+.root .hero {
+  padding: 28px 0 80px;
+}
+
+.root .h1 {
+  font-size: clamp(38px, 5.2vw, 66px);
+  margin: 18px 0 30px;
+  max-width: 900px;
+}
+
+.root .heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 500px);
+  grid-template-areas:
+    'answer checker'
+    'spec   checker';
+  grid-template-rows: auto 1fr;
+  column-gap: 64px;
+  align-items: start;
+}
+.root .gridAnswer { grid-area: answer; }
+.root .gridSpec { grid-area: spec; }
+.root .gridChecker { grid-area: checker; }
+
+.root .answer {
+  font-size: 17px;
+  line-height: 1.68;
+  color: var(--v2-muted);
+  max-width: 520px;
+  margin-bottom: 14px;
+}
+.root .answer strong {
+  color: var(--v2-text);
+  font-weight: 600;
+}
+
+.root .specs {
+  margin: 0 0 20px;
+  border-top: 1px solid var(--v2-frost);
+  max-width: 520px;
+}
+.root .specRow {
+  display: grid;
+  grid-template-columns: 148px minmax(0, 1fr);
+  gap: 16px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--v2-frost);
+  align-items: baseline;
+}
+.root .specs dt {
+  font-size: 13px;
+  color: var(--v2-muted);
+}
+.root .specs dd {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--v2-text);
+  font-variant-numeric: tabular-nums;
+}
+.root .specNote {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--v2-muted);
+  margin-top: 2px;
+}
+
+.root .source {
+  font-size: 13.5px;
+  color: var(--v2-muted);
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+.root .jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  margin-top: 14px;
+  font-size: 13.5px;
+}
+.root .jump a {
+  color: var(--v2-muted);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-underline-offset: 3px;
+}
+.root .jump a:hover {
+  color: var(--v2-text);
+}
+
+/* ─── Checker panel ───────────────────────────────────────── */
+.root .panel {
+  border: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r-lg);
+  background: var(--panel-bg);
+  padding: 20px;
+  transition: border-color 0.2s var(--v2-ease), background 0.2s var(--v2-ease);
+}
+.root .panelDrag {
+  border-color: var(--v2-orange);
+}
+
+.root .panelHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.root .panelTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--v2-text);
+}
+
+.root .seg {
+  display: inline-flex;
+  border: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r-pill);
+  padding: 3px;
+  margin: 0;
+  min-inline-size: 0;
+}
+.root .segOption {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.root .segInput {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.root .segLabel {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: var(--v2-r-pill);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--v2-muted);
+  transition: background 0.15s var(--v2-ease), color 0.15s var(--v2-ease);
+}
+.root .segLabel small {
+  font-size: 11px;
+  font-weight: 500;
+  margin-left: 4px;
+  opacity: 0.85;
+}
+.root .segInput:checked + .segLabel {
+  background: var(--v2-orange-soft);
+  color: var(--v2-orange);
+}
+.root .segInput:focus-visible + .segLabel {
+  outline: 2px solid var(--v2-orange);
+  outline-offset: 2px;
+}
+
+.root .error {
+  color: #ffc2c2;
+  background: rgba(248, 113, 113, 0.08);
+  border: 1px solid rgba(248, 113, 113, 0.3);
+  border-radius: var(--v2-r);
+  padding: 10px 14px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+
+/* Drop zone */
+.root .dz {
+  border: 1px dashed var(--v2-frost);
+  border-radius: 12px;
+  padding: 34px 20px 26px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.012);
+  transition: background 0.2s var(--v2-ease), border-color 0.2s var(--v2-ease);
+}
+.root .panelDrag .dz {
+  border-color: var(--v2-orange);
+  background: var(--v2-orange-soft);
+}
+.root .dzIcon {
+  color: var(--v2-muted);
+  margin-bottom: 6px;
+}
+.root .dzTitle {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--v2-text);
+}
+.root .dzSub {
+  font-size: 13.5px;
+  color: var(--v2-muted);
+}
+.root .dzActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  margin-top: 14px;
+}
+.root .linkBtn {
+  background: none;
+  border: none;
+  font: inherit;
+  font-size: 14px;
+  color: var(--v2-muted);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.25);
+  text-underline-offset: 3px;
+  cursor: pointer;
+  padding: 4px 2px;
+}
+.root .linkBtn:hover {
+  color: var(--v2-text);
+}
+.root .privacy {
+  margin-top: 14px;
+  font-size: 12.5px;
+  color: var(--v2-muted);
+}
+
+.root .touchOnly {
+  display: none;
+}
+@media (pointer: coarse) {
+  .root .pointerOnly {
+    display: none;
+  }
+  .root .touchOnly {
+    display: inline;
+  }
+}
+
+/* Keyboard focus lands on the hidden file input; show it on its visible label. */
+.root .fileInput:focus-visible ~ .dz .chooseLabel,
+.root .fileInput:focus-visible ~ .result .fileActions label {
+  outline: 2px solid var(--v2-orange);
+  outline-offset: 3px;
+}
+
+/* Results */
+.root .file {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 16px;
+}
+.root .fileThumb {
+  flex: none;
+  width: 84px;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.root .fileThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.root .fileMeta {
+  min-width: 0;
+  flex: 1;
+}
+.root .fileName {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--v2-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.root .fileFacts {
+  font-size: 12.5px;
+  color: var(--v2-muted);
+  font-variant-numeric: tabular-nums;
+  margin-top: 2px;
+}
+.root .fileActions {
+  display: flex;
+  gap: 8px;
+  flex: none;
+}
+.root .smallBtn {
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--v2-text);
+  background: transparent;
+  border: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r-pill);
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.15s var(--v2-ease), border-color 0.15s var(--v2-ease);
+}
+.root .smallBtn:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--v2-frost-hover);
+}
+
+.root .summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 14px 0 12px;
+  border-top: 1px solid var(--v2-frost);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--v2-text);
+}
+.root .summaryMode {
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--v2-muted);
+}
+
+.root .rows {
+  list-style: none;
+}
+.root .row {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr);
+  gap: 12px;
+  padding: 13px 0;
+  border-top: 1px solid var(--v2-frost);
+}
+.root .rowIcon {
+  display: flex;
+  padding-top: 1px;
+}
+.root .row.pass .rowIcon,
+.root .row.pass .rowStatus {
+  color: var(--ok);
+}
+.root .row.warn .rowIcon,
+.root .row.warn .rowStatus {
+  color: var(--caution);
+}
+.root .row.fail .rowIcon,
+.root .row.fail .rowStatus {
+  color: var(--bad);
+}
+.root .rowTop {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+}
+.root .rowLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--v2-text);
+}
+.root .rowValue {
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--v2-text);
+  font-variant-numeric: tabular-nums;
+}
+.root .rowStatus {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  border-radius: var(--v2-r-pill);
+  padding: 2px 8px;
+  line-height: 1.4;
+}
+.root .rowDetail {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--v2-muted);
+  margin-top: 5px;
+}
+
+.root .resultActions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--v2-frost);
+}
+.root .textLink {
+  font-size: 14px;
+  color: var(--v2-muted);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.25);
+  text-underline-offset: 3px;
+}
+.root .textLink:hover {
+  color: var(--v2-text);
+}
+
+/* ─── Sections ────────────────────────────────────────────── */
+.root .section {
+  padding: 88px 0;
+}
+.root .sectionHead {
+  margin-bottom: 40px;
+  max-width: 720px;
+}
+.root .h2 {
+  margin-bottom: 16px;
+}
+.root .sectionLead p {
+  font-size: 16px;
+  line-height: 1.72;
+  color: var(--v2-muted);
+}
+.root .h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--v2-text);
+  margin-bottom: 12px;
+}
+
+/* Preview bars shared by the real-size and safe-zone sections */
+.root .previewBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--v2-frost);
+}
+.root .previewing {
+  font-size: 14px;
+  color: var(--v2-muted);
+}
+.root .previewing strong {
+  color: var(--v2-text);
+  font-weight: 600;
+}
+.root .check {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--v2-text);
+  cursor: pointer;
+}
+.root .check input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--v2-orange);
+  cursor: pointer;
+}
+.root .previewWarn {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--caution);
+  margin-bottom: 24px;
+}
+
+/* A frame is a container so the badge can scale with the thumbnail:
+   --dw is the width (px) at which the badge is drawn at true size. */
+.root .surfaces {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 44px 56px;
+}
+.root .surface,
+.root .zoneFigure {
+  width: var(--w);
+  max-width: 100%;
+  margin: 0;
+}
+.root .frame {
+  container-type: inline-size;
+  width: 100%;
+}
+.root .thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: var(--aspect, 16 / 9);
+  border-radius: var(--radius, 12px);
+  overflow: hidden;
+  background: #000;
+}
+.root .thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.root .badge {
+  position: absolute;
+  right: calc(100cqw * var(--inset) / var(--dw));
+  bottom: calc(100cqw * var(--inset) / var(--dw));
+  height: calc(100cqw * 20 / var(--dw));
+  padding: 0 calc(100cqw * 4 / var(--dw));
+  font-size: calc(100cqw * 12 / var(--dw));
+  line-height: calc(100cqw * 20 / var(--dw));
+  border-radius: calc(100cqw * 4 / var(--dw));
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+}
+
+.root .skel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 14px;
+}
+.root .skelBar {
+  display: block;
+  height: 10px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.root .surfaceCap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 10px;
+  row-gap: 3px;
+  margin-bottom: 12px;
+}
+.root .surfaceTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--v2-text);
+}
+.root .surfaceSize {
+  font-size: 13px;
+  color: var(--v2-muted);
+  font-variant-numeric: tabular-nums;
+}
+.root .surfaceNote {
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--v2-muted);
+}
+.root .aside {
+  flex: 1 1 300px;
+  min-width: 260px;
+  max-width: 440px;
+}
+.root .aside p {
+  font-size: 15px;
+  line-height: 1.72;
+  color: var(--v2-muted);
+  margin-bottom: 18px;
+}
+.root .aside .measureNote {
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* Safe zone */
+.root .zoneFrames {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 36px 56px;
+}
+.root .zoneThumb {
+  border-radius: 12px;
+}
+.root .zoneBox {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: 2px dashed var(--v2-orange);
+  background: rgba(255, 128, 31, 0.28);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(0, 0, 0, 0.35);
+  box-sizing: border-box;
+}
+.root .legend {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+  font-size: 13.5px;
+  color: var(--v2-muted);
+}
+.root .swatch {
+  width: 22px;
+  height: 14px;
+  border: 2px dashed var(--v2-orange);
+  background: rgba(255, 128, 31, 0.28);
+  box-sizing: border-box;
+}
+.root .legendSep {
+  margin: 0 6px;
+  color: var(--v2-dim);
+}
+.root .legendBadge {
+  font-size: 12px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+.root .hoverBtn {
+  position: absolute;
+  right: calc(100cqw * 8 / var(--dw));
+  width: calc(100cqw * 40 / var(--dw));
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  display: grid;
+  place-items: center;
+}
+.root .hoverBtn1 { top: calc(100cqw * 8 / var(--dw)); }
+.root .hoverBtn2 { top: calc(100cqw * 56 / var(--dw)); }
+
+.root .zoneCols {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: 56px;
+  margin-top: 56px;
+  align-items: start;
+}
+.root .zoneText p {
+  font-size: 15px;
+  line-height: 1.72;
+  color: var(--v2-muted);
+  margin-bottom: 14px;
+  max-width: 600px;
+}
+.root .zoneText strong {
+  color: var(--v2-text);
+  font-weight: 600;
+}
+
+/* Tables */
+.root .tableWrap {
+  overflow-x: auto;
+  border: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r-lg);
+}
+.root .tableGap {
+  margin-top: 40px;
+}
+.root .table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  min-width: 520px;
+}
+.root .zoneTableWrap .table {
+  min-width: 0;
+}
+.root .tableCap {
+  caption-side: top;
+  text-align: left;
+  padding: 18px 20px 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--v2-text);
+}
+/* globals.css styles bare th/td/tr (grey fills, full borders, centred text): reset them here. */
+.root .table tr {
+  background: transparent;
+}
+.root .table th,
+.root .table td {
+  text-align: left;
+  padding: 13px 20px;
+  border: 0;
+  border-top: 1px solid var(--v2-frost);
+  background: transparent;
+  vertical-align: top;
+  line-height: 1.55;
+}
+.root .table thead th {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--v2-muted);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.root .table tbody th {
+  font-weight: 500;
+  color: var(--v2-muted);
+  width: 34%;
+}
+.root .table td {
+  color: var(--v2-text);
+  font-variant-numeric: tabular-nums;
+  min-width: 170px;
+}
+.root .zoneTableWrap .table tbody th {
+  width: auto;
+  white-space: nowrap;
+}
+.root .zoneTableWrap .table td {
+  min-width: 0;
+  white-space: nowrap;
+}
+.root .tableNote {
+  margin-top: 14px;
+  max-width: 760px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--v2-muted);
+}
+
+.root .nowrap {
+  white-space: nowrap;
+}
+
+/* Mistakes: each row sits in its own reveal wrapper, so v2.css :last-child hides the dividers. */
+.root .mistakes > div:not(:last-child) {
+  border-bottom: 1px solid var(--v2-frost);
+}
+
+/* Bridge */
+.root .bridge {
+  max-width: 780px;
+  padding: 44px 48px;
+  border: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r-lg);
+  background: rgba(255, 255, 255, 0.012);
+}
+.root .bridgeH {
+  margin-bottom: 18px;
+}
+.root .bridgeText {
+  font-size: 16px;
+  line-height: 1.78;
+  color: var(--v2-muted);
+  max-width: 640px;
+}
+.root .bridgeLinks {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+.root .related {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--v2-frost);
+}
+.root .relatedLabel {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--v2-muted);
+}
+.root .related ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  list-style: none;
+}
+.root .related a {
+  font-size: 14px;
+  color: var(--v2-text);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.28);
+  text-underline-offset: 3px;
+}
+.root .related a:hover {
+  text-decoration-color: var(--v2-orange);
+}
+
+/* Sources */
+.root .sourcesSection {
+  padding: 64px 0 96px;
+}
+.root .sources {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 56px;
+}
+.root .sources p {
+  font-size: 14px;
+  line-height: 1.72;
+  color: var(--v2-muted);
+  margin-bottom: 12px;
+}
+.root .changelog {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.root .changelog li {
+  display: grid;
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: 16px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--v2-muted);
+}
+.root .changeDate {
+  color: var(--v2-text);
+  font-weight: 600;
+}
+
+/* ─── Responsive ──────────────────────────────────────────── */
+@media (max-width: 960px) {
+  .root .heroGrid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      'answer'
+      'checker'
+      'spec';
+    grid-template-rows: auto;
+  }
+  .root .gridChecker {
+    margin-bottom: 40px;
+  }
+  .root .answer {
+    margin-bottom: 28px;
+  }
+  .root .zoneCols,
+  .root .sources {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .root .hero {
+    padding: 24px 0 56px;
+  }
+  .root .h1 {
+    font-size: clamp(29px, 7.6vw, 44px);
+    margin: 18px 0 24px;
+  }
+  .root .section {
+    padding: 64px 0;
+  }
+  .root .sectionHead {
+    margin-bottom: 28px;
+  }
+  .root .panel {
+    padding: 16px;
+  }
+  .root .specRow {
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 12px;
+  }
+  .root .file {
+    flex-wrap: wrap;
+  }
+  .root .fileActions {
+    width: 100%;
+  }
+  .root .bridge {
+    padding: 28px 22px;
+  }
+  /* Tables shrink to the screen instead of scrolling sideways. */
+  .root .table {
+    min-width: 0;
+    font-size: 13px;
+  }
+  .root .table th,
+  .root .table td {
+    padding: 11px 8px;
+  }
+  .root .table th:first-child,
+  .root .table td:first-child {
+    padding-left: 12px;
+  }
+  .root .table th:last-child,
+  .root .table td:last-child {
+    padding-right: 12px;
+  }
+  .root .table td {
+    min-width: 0;
+  }
+  .root .table tbody th {
+    width: 30%;
+  }
+  .root .tableCap {
+    padding: 16px 12px 10px;
+  }
+  .root .changelog li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+  }
+  .root .surfaces,
+  .root .zoneFrames {
+    gap: 36px;
+  }
+}
