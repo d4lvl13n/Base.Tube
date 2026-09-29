@@ -15,6 +15,18 @@ import {
   getTags,
 } from '@/lib/wordpress';
 
+// The root layout template appends " | Base.Tube" to every page title, so a post title
+// (or a Rank Math SEO title) must not carry the brand itself. Strip a trailing brand
+// suffix and Rank Math placeholders so the brand appears exactly once in <title>.
+function withoutBrand(title: string): string {
+  const cleaned = title
+    .replace(/\s*%sitename%\s*$/i, '')
+    .replace(/\s*%sep%\s*$/i, '')
+    .replace(/\s*[|\-–—]\s*Base\.?Tube(\s+Blog)?\s*$/i, '')
+    .trim();
+  return cleaned || title;
+}
+
 export async function generateStaticParams() {
   const slugs = await getAllPostSlugs();
   return slugs.map((slug) => ({ slug }));
@@ -30,7 +42,7 @@ export async function generateMetadata({
 
   if (!post) {
     return {
-      title: 'Post Not Found - Base.Tube Blog',
+      title: 'Post Not Found',
     };
   }
 
@@ -46,7 +58,7 @@ export async function generateMetadata({
       ? seoDescription.slice(0, 155).trim() + '...'
       : seoDescription;
 
-  const pageTitle = post.meta?.rank_math_title ? seoTitle : cleanTitle;
+  const pageTitle = withoutBrand(post.meta?.rank_math_title ? seoTitle : cleanTitle);
 
   return {
     title: pageTitle,

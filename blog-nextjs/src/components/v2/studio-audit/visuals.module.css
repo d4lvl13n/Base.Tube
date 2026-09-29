@@ -1,0 +1,355 @@
+/* Static, honest illustrations for the audit and Studio tool pages.
+   Uses the v2 custom properties (defined on .v2-root). No animation, no fake scores. */
+
+.frame {
+  margin: 0;
+  width: 100%;
+  border: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r-lg);
+  background: #0a0a0a;
+  overflow: hidden;
+  text-align: left;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--v2-frost);
+}
+
+.barLabel {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--v2-muted);
+}
+
+.chip {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--v2-muted);
+  padding: 3px 10px;
+  border: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r-pill);
+  white-space: nowrap;
+}
+
+/* ── Audit ─────────────────────────────────────────── */
+
+.findings {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.finding {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 12px;
+  padding: 20px 20px 20px 20px;
+  border-bottom: 1px solid var(--v2-frost);
+}
+
+.findingNum {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--v2-orange);
+  letter-spacing: 0.5px;
+  padding-top: 2px;
+}
+
+.findingTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--v2-text);
+  margin-bottom: 6px;
+}
+
+.findingText {
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--v2-muted);
+}
+
+.evidence {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--v2-muted);
+}
+
+.evidenceLabel {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #8a8d8f;
+}
+
+.connected {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 20px;
+  background: rgba(255, 128, 31, 0.05);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--v2-muted);
+}
+
+.connected strong {
+  color: var(--v2-text);
+  font-weight: 600;
+}
+
+.dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: var(--v2-orange);
+}
+
+/* ── Studio ────────────────────────────────────────── */
+
+.studioBody {
+  padding: 20px;
+}
+
+.styleRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.avatar {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--v2-frost);
+}
+
+.styleText {
+  flex: 1;
+  min-width: 0;
+}
+
+.styleName {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--v2-text);
+}
+
+.styleSub {
+  font-size: 12px;
+  color: var(--v2-muted);
+}
+
+.swatches {
+  display: flex;
+  gap: 6px;
+}
+
+.swatch {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid var(--v2-frost-hover);
+}
+
+.rules {
+  margin-top: 12px;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--v2-muted);
+}
+
+.kicker {
+  margin: 24px 0 10px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--v2-muted);
+}
+
+.variants {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.thumb {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--v2-frost);
+  background: #111;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.editLine {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 8px 14px;
+  font-size: 13px;
+  color: var(--v2-text);
+  border: 1px solid var(--v2-orange-border);
+  background: var(--v2-orange-soft);
+  border-radius: var(--v2-r-pill);
+}
+
+.editPair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.editCap {
+  margin-top: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #8a8d8f;
+}
+
+.caption {
+  padding: 14px 20px;
+  border-top: 1px solid var(--v2-frost);
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--v2-muted);
+}
+
+/* ── Hero start panel (replaces the old disabled dropzone / prompt box) ── */
+
+.startPanel {
+  max-width: 640px;
+  padding: 36px 32px;
+  border: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r-lg);
+  background: rgba(255, 255, 255, 0.014);
+}
+
+.startTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--v2-text);
+  margin-bottom: 10px;
+  letter-spacing: -0.2px;
+}
+
+.startText {
+  font-size: 14px;
+  line-height: 1.72;
+  color: var(--v2-muted);
+  max-width: 520px;
+}
+
+.startActions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin-top: 24px;
+}
+
+.startLink {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--v2-muted);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--v2-frost-hover);
+  transition: color 0.15s var(--v2-ease);
+}
+
+.startLink:hover {
+  color: var(--v2-text);
+}
+
+.startLink:focus-visible,
+.related a:focus-visible {
+  outline: 2px solid var(--v2-orange);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.startNote {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--v2-frost);
+  font-size: 13px;
+  line-height: 1.65;
+  color: #8a8d8f;
+}
+
+/* ── Related tools row ── */
+
+.related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-top: 28px;
+  font-size: 14px;
+}
+
+.related a {
+  color: var(--v2-muted);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--v2-frost-hover);
+  transition: color 0.15s var(--v2-ease);
+}
+
+.related a:hover {
+  color: var(--v2-text);
+}
+
+.relatedLabel {
+  flex-basis: 100%;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #8a8d8f;
+}
+
+@media (max-width: 560px) {
+  .startPanel {
+    padding: 28px 22px;
+  }
+  .studioBody {
+    padding: 16px;
+  }
+  .finding {
+    padding: 18px 16px;
+    grid-template-columns: 24px 1fr;
+    gap: 10px;
+  }
+  .bar {
+    padding: 12px 16px;
+  }
+  .connected,
+  .caption {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

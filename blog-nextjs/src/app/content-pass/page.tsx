@@ -2,7 +2,8 @@ import { Metadata } from 'next';
 import ContentPassPage from '@/components/v2/ContentPassPage';
 
 export const metadata: Metadata = {
-  title: 'Content Pass — The Patreon Alternative Creators & Fans Own | Base.Tube',
+  // No brand in the page title: the layout template appends " | Base.Tube".
+  title: 'Content Pass — The Patreon Alternative You Own',
   description:
     'Content Pass is a one-time pass that unlocks a creator\'s content for life — the Patreon alternative where creators keep 90% and fans truly own their access (buy once, transfer anytime). No subscriptions.',
   keywords:
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://base.tube/content-pass',
-    title: 'Content Pass — The Patreon Alternative Creators & Fans Own | Base.Tube',
+    title: 'Content Pass — The Patreon Alternative You Own | Base.Tube',
     description:
       'A one-time pass that unlocks a creator\'s content for life — the Patreon alternative where creators keep 90% and fans own their access. Buy once, transfer anytime, no subscriptions.',
     images: [
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@base_tube',
-    title: 'Content Pass — The Patreon Alternative Creators & Fans Own | Base.Tube',
+    title: 'Content Pass — The Patreon Alternative You Own | Base.Tube',
     description:
       'A one-time pass that unlocks a creator\'s content for life — the Patreon alternative where creators keep 90% and fans own their access. Buy once, transfer anytime, no subscriptions.',
     images: ['https://base.tube/images/og-card.webp'],
