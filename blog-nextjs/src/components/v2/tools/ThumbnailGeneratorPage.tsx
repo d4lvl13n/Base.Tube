@@ -1,10 +1,16 @@
 'use client';
 
+// Route stays /tools/thumbnail-generator. This page presents the AI Thumbnail Studio
+// that is live on the Base.Tube beta: thumbnails in the channel's saved style, 3 variants
+// per video, one-sentence edits. No predicted-CTR ranking, no "trained on N thumbnails" claim.
+
 import Link from 'next/link';
 import NavBar from '../NavBar';
 import Footer from '../Footer';
 import ScrollReveal from '../ScrollReveal';
-import { GeneratorVisual } from '../ThumbnailSection';
+import StudioPreview from '../studio-audit/StudioPreview';
+import { AUDIT_URL, STUDIO_URL, studioFaqs } from '../studio-audit/content';
+import styles from '../studio-audit/visuals.module.css';
 
 function Sep() {
   return <div className="v2-sep" aria-hidden />;
@@ -13,33 +19,33 @@ function Sep() {
 const howSteps = [
   {
     n: '01',
-    title: 'Describe your video',
-    desc: 'Type a prompt: topic, tone, target emotion. Optionally upload a reference image for style matching.',
+    title: 'Give it the video',
+    desc: 'Paste a link to your video, or describe the idea in a sentence.',
   },
   {
     n: '02',
-    title: 'We generate 4 variants',
-    desc: 'Each variant is generated with a different composition strategy — face-forward, text-heavy, drama, curiosity gap — and scored by projected CTR.',
+    title: 'Get 3 variants in your style',
+    desc: 'The Studio uses your saved channel style: your brand kit and your own face. You get 3 thumbnail variants for that video.',
   },
   {
     n: '03',
-    title: 'Download the winner',
-    desc: 'The highest-projected CTR variant is flagged automatically. Download any or all variants at full resolution.',
+    title: 'Change anything with one sentence',
+    desc: 'Something off? Say what to change, for example "warmer light, more steam", and the Studio edits that thumbnail. Keep the one you like.',
   },
 ];
 
 const differentiators = [
   {
-    title: 'CTR-first generation',
-    desc: 'Other tools generate pretty images. We optimize for click-through rate — trained on what actually performs on YouTube, not what looks good on a portfolio.',
+    title: 'Your style, saved',
+    desc: 'Set your brand kit and your face once. Every thumbnail after that starts from your look, so your channel stays recognisable from video to video.',
   },
   {
-    title: 'Pattern-trained, not prompt-engineered',
-    desc: 'The model learned from 300k+ thumbnails paired with real performance data. It understands face size, text placement, contrast, and composition — not just aesthetics.',
+    title: 'Variants you can steer',
+    desc: 'Three variants per video, and a one-sentence edit for anything you would change. You stay the art director.',
   },
   {
-    title: 'Four variants, one decision',
-    desc: 'We show you the options so you pick the one that fits your brand. The CTR score tells you which one would likely perform best if you\'re unsure.',
+    title: 'Measured, not promised',
+    desc: 'We do not claim a generated thumbnail will get more clicks. Connect YouTube and Base.Tube shows your real impressions and click-through rate, so you can compare before and after.',
   },
 ];
 
@@ -51,58 +57,51 @@ export default function ThumbnailGeneratorPage() {
 
       <main style={{ paddingTop: 56 }}>
 
-        {/* ── HERO + TOOL ──────────────────────────────────── */}
+        {/* ── HERO + START ─────────────────────────────────── */}
         <section className="v2-tool-hero">
           <div className="v2-container">
             <ScrollReveal>
               <div className="v2-tool-eyebrow">
                 <Link href="/tools" className="v2-tool-breadcrumb">← All tools</Link>
-                <span className="v2-feature-tag blue" style={{ marginBottom: 0 }}>Free tier: 3/day</span>
+                <span className="v2-feature-tag blue" style={{ marginBottom: 0 }}>Live on the beta</span>
               </div>
               <h1 className="v2-cp-h1" style={{ marginTop: 20 }}>
-                Generate thumbnails<br />
-                <em>optimized for CTR.</em>
+                Generate YouTube thumbnails<br />
+                <em>in your channel&apos;s style.</em>
               </h1>
               <p className="v2-cp-sub">
-                Describe your video. Get 4 AI-generated variants, each ranked by projected
-                click-through rate. Trained on what actually performs — not what looks pretty.
+                AI Thumbnail Studio makes 3 thumbnail variants for each video, using your
+                saved brand kit and your own face. Change anything with one sentence.
               </p>
             </ScrollReveal>
 
-            {/* Tool input area */}
             <ScrollReveal delay={120}>
               <div className="v2-tool-input-area">
-                <div className="v2-gen-input-wrap">
-                  <textarea
-                    className="v2-gen-prompt"
-                    placeholder="Describe your video: topic, tone, who's in it, what emotion you want to trigger…"
-                    rows={3}
-                    disabled
-                  />
-                  <div className="v2-gen-input-actions">
-                    <label className="v2-gen-ref-label">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <rect x="3" y="3" width="18" height="18" rx="2" />
-                        <circle cx="8.5" cy="8.5" r="1.5" />
-                        <polyline points="21 15 16 10 5 21" />
-                      </svg>
-                      Add reference image
-                    </label>
-                    <button className="v2-btn v2-btn-primary" disabled>
-                      Generate thumbnails
-                    </button>
-                  </div>
-                  <div className="v2-tool-coming-bar">
-                    <span className="v2-tool-coming-badge">Tool launching soon — join beta to get early access</span>
+                <div className={styles.startPanel}>
+                  <p className={styles.startTitle}>Open the Thumbnail Studio</p>
+                  <p className={styles.startText}>
+                    Paste a video link or describe the idea. The Studio opens on
+                    Base.Tube, in the beta.
+                  </p>
+                  <div className={styles.startActions}>
                     <a
-                      href="https://beta.base.tube/sign-up"
+                      href={STUDIO_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="v2-tool-coming-link"
+                      className="v2-btn v2-btn-primary"
+                      style={{ background: '#3b9eff' }}
                     >
-                      Join waitlist →
+                      Generate thumbnails →
+                    </a>
+                    <a href="#how-it-works" className={styles.startLink}>
+                      How it works
                     </a>
                   </div>
+                  <p className={styles.startNote}>
+                    We do not predict click-through rate, so we do not promise a lift.
+                    To see what works for your audience, connect YouTube and measure
+                    your real numbers.
+                  </p>
                 </div>
               </div>
             </ScrollReveal>
@@ -111,16 +110,15 @@ export default function ThumbnailGeneratorPage() {
 
         <Sep />
 
-        {/* ── HOW IT WORKS (with animated visual) ─────────── */}
-        <section className="v2-cp-section">
+        {/* ── HOW IT WORKS ─────────────────────────────────── */}
+        <section className="v2-cp-section" id="how-it-works">
           <div className="v2-container">
             <ScrollReveal>
               <span className="v2-label">How it works</span>
-              <h2 className="v2-cp-section-h2">From prompt to thumbnail in seconds.</h2>
+              <h2 className="v2-cp-section-h2">From a video to three thumbnails.</h2>
             </ScrollReveal>
 
             <div className="v2-tool-demo-layout">
-              {/* Steps */}
               <div className="v2-cp-steps" style={{ flex: 1 }}>
                 {howSteps.map((s, i) => (
                   <ScrollReveal key={s.n} delay={i * 80}>
@@ -135,10 +133,9 @@ export default function ThumbnailGeneratorPage() {
                 ))}
               </div>
 
-              {/* Animated visual */}
-              <div className="v2-tool-demo-visual">
-                <GeneratorVisual />
-              </div>
+              <ScrollReveal delay={120}>
+                <StudioPreview />
+              </ScrollReveal>
             </div>
           </div>
         </section>
@@ -149,8 +146,8 @@ export default function ThumbnailGeneratorPage() {
         <section className="v2-cp-section">
           <div className="v2-container">
             <ScrollReveal>
-              <span className="v2-label">Why it works</span>
-              <h2 className="v2-cp-section-h2">Optimized for click, not for pretty.</h2>
+              <span className="v2-label">Our approach</span>
+              <h2 className="v2-cp-section-h2">Built around your channel.</h2>
             </ScrollReveal>
             <div className="v2-tool-diff-grid">
               {differentiators.map((d, i) => (
@@ -168,25 +165,64 @@ export default function ThumbnailGeneratorPage() {
 
         <Sep />
 
+        {/* ── FAQ ─────────────────────────────────────────── */}
+        <section className="v2-cp-section">
+          <div className="v2-container">
+            <ScrollReveal>
+              <span className="v2-label">FAQ</span>
+              <h2 className="v2-cp-section-h2">Questions about the Studio.</h2>
+            </ScrollReveal>
+            <ScrollReveal delay={80}>
+              <div className="v2-faq" style={{ maxWidth: 760 }}>
+                {studioFaqs.map((item) => (
+                  <details key={item.q} className="v2-faq-item">
+                    <summary className="v2-faq-q">{item.q}</summary>
+                    <p className="v2-faq-a">{item.a}</p>
+                  </details>
+                ))}
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        <Sep />
+
         {/* ── BRIDGE ───────────────────────────────────────── */}
         <section className="v2-cp-section">
           <div className="v2-container">
             <ScrollReveal>
               <div className="v2-tool-bridge">
                 <p className="v2-tool-bridge-text">
-                  These tools are free because Base.Tube makes money when creators
-                  monetize — not when they pay for SaaS. When you&apos;re ready to turn
-                  your audience into income, we&apos;re here.
+                  Not sure which thumbnails to fix first? Run the free channel audit on
+                  your thumbnails and titles, then make new ones in the Studio.
                 </p>
                 <div className="v2-tool-bridge-links">
-                  <Link href="/content-pass" className="v2-btn v2-btn-primary">
-                    Learn about Content Pass →
-                  </Link>
-                  <Link href="/" className="v2-btn v2-btn-ghost">
-                    See the platform
-                  </Link>
+                  <a
+                    href={STUDIO_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="v2-btn v2-btn-primary"
+                    style={{ background: '#3b9eff' }}
+                  >
+                    Generate thumbnails →
+                  </a>
+                  <a
+                    href={AUDIT_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="v2-btn v2-btn-ghost"
+                  >
+                    Run the free audit
+                  </a>
                 </div>
               </div>
+              <nav className={styles.related} aria-label="Related free tools">
+                <span className={styles.relatedLabel}>More free tools</span>
+                <Link href="/tools">All creator tools</Link>
+                <Link href="/tools/video-to-thumbnail">Video to thumbnail</Link>
+                <Link href="/tools/youtube-thumbnail-resizer">Thumbnail resizer</Link>
+                <Link href="/youtube-thumbnail-size">Thumbnail size guide</Link>
+              </nav>
             </ScrollReveal>
           </div>
         </section>
