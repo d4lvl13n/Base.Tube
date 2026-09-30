@@ -109,7 +109,12 @@ export function BreadcrumbStructuredData({ items }: BreadcrumbStructuredDataProp
   )
 }
 
-// Organization Schema (for site-wide use)
+// The site-wide Organization and WebSite schemas are plain <script> tags, so they are in the
+// server's HTML of every page (next/script only put them in the React payload).
+const jsonLd = (data: unknown) => ({ __html: JSON.stringify(data).replace(/</g, '\\u003c') })
+
+// Organization Schema (for site-wide use). sameAs: only the accounts the footer links to and that
+// were checked to exist (30 September 2026).
 export function OrganizationStructuredData() {
   const structuredData = {
     "@context": "https://schema.org",
@@ -119,30 +124,23 @@ export function OrganizationStructuredData() {
     "logo": {
       "@type": "ImageObject",
       "url": "https://base.tube/images/basetube-logo.png",
-      "width": 160,
-      "height": 48
+      "width": 217,
+      "height": 70
     },
-    "description": "The platform that pays creators first. Turn your content into passes your fans own, powered by Web3 technology.",
+    "description": "Base.Tube is a creator hub: creators publish their films, courses and archives, sell them directly to fans with Content Passes, and grow with built-in tools such as AI Thumbnails and free YouTube tools.",
     "foundingDate": "2024",
     "sameAs": [
-      "https://twitter.com/base_tube",
-      "https://t.me/basetube",
-      "https://discord.gg/basetube"
+      "https://x.com/base_tube",
+      "https://discord.gg/SDdDCjGZHw"
     ],
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer support",
-      "url": "https://base.tube/help"
+      "email": "support@base.tube"
     }
   }
 
-  return (
-    <Script
-      id="organization-structured-data"
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-    />
-  )
+  return <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(structuredData)} />
 }
 
 // WebSite Schema with SearchAction (for site search rich results)
@@ -153,7 +151,7 @@ export function WebSiteStructuredData() {
     "name": "Base.Tube",
     "alternateName": "BaseTube",
     "url": "https://base.tube",
-    "description": "The platform that pays creators first. Turn your content into passes your fans own.",
+    "description": "The creator hub: publish your work, sell it directly to your fans, and grow.",
     "publisher": {
       "@type": "Organization",
       "name": "Base.Tube"
@@ -168,13 +166,7 @@ export function WebSiteStructuredData() {
     }
   }
 
-  return (
-    <Script
-      id="website-structured-data"
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-    />
-  )
+  return <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(structuredData)} />
 }
 
 // Blog Schema for the blog listing page

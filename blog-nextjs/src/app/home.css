@@ -1,0 +1,804 @@
+/* The home page (/), imported by this route only. Same visual language as /ai-thumbnails (Archivo
+   with its width axis, the orange #fa7517 and its gradient, near-black, real example thumbnails);
+   the lp- classes (headline type, accent, main button, reveals) come from ai-thumbnails.css, the
+   hp- classes below are this page's own. Every rule starts with .hp so it wins over the v2 reset
+   (.v2-root *) whatever order the stylesheets load in. Motion stops under prefers-reduced-motion.
+   No 3D transforms anywhere (Safari). */
+
+body:has(.v2-root.hp) {
+  background: #070709 !important;
+}
+
+.v2-root.hp {
+  --hp-bg: #070709;
+  --hp-line: rgba(255, 255, 255, 0.07);
+  --hp-muted: #a1a1aa;
+  --hp-soft: #d4d4d8;
+  --hp-orange: #fa7517;
+  --hp-orange-light: #ff9a3c;
+  --hp-gutter: 20px;
+  /* Where the page's text starts, inside a full-width element (percentages of that element). */
+  --hp-left: max(var(--hp-gutter), calc((100% - 1280px) / 2));
+  background: var(--hp-bg);
+  color: #f4f4f5;
+  font-family: var(--font-lp-archivo), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-stretch: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+@media (min-width: 640px) {
+  .v2-root.hp { --hp-gutter: 32px; }
+}
+@media (min-width: 1024px) {
+  .v2-root.hp { --hp-gutter: 40px; }
+}
+
+/* The shared nav and footer, on this page's wider grid. */
+.hp .v2-nav { padding: 0 var(--hp-gutter); }
+.hp .v2-nav-inner,
+.hp .v2-footer-grid,
+.hp .v2-footer-bottom { max-width: 1280px; }
+.hp .v2-nav--scrolled { background: rgba(7, 7, 9, 0.8); }
+.hp .v2-footer { padding-left: var(--hp-gutter); padding-right: var(--hp-gutter); border-top: 1px solid var(--hp-line); }
+
+.hp .hp-wrap {
+  max-width: calc(1280px + 2 * var(--hp-gutter));
+  margin: 0 auto;
+  padding: 0 var(--hp-gutter);
+}
+
+.hp .hp-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ---- Buttons and links ------------------------------------------------------------------- */
+
+.hp .hp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.hp .hp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  padding: 0 28px;
+  border-radius: 9999px;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #fff;
+}
+/* The AI Thumbnails page's warm button, without its sweeping light: the hero's feed is the motion here. */
+.hp .lp-btn-primary::after { display: none; }
+.hp .hp-btn-ghost {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.03);
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.25s ease;
+}
+.hp .hp-btn-ghost:hover {
+  border-color: rgba(255, 255, 255, 0.34);
+  background: rgba(255, 255, 255, 0.07);
+  transform: translateY(-2px);
+}
+
+.hp .hp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+.hp .hp-link::after {
+  content: '→';
+  color: var(--hp-orange);
+  transition: transform 0.2s ease;
+}
+.hp .hp-link:hover::after { transform: translateX(4px); }
+.hp .hp-link:hover { color: var(--hp-orange-light); }
+
+.hp :focus-visible {
+  outline: 2px solid var(--hp-orange);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* ---- Hero: the feed runs through the headline -------------------------------------------- */
+
+.hp .hp-hero {
+  position: relative;
+  padding: calc(56px + clamp(36px, 7vh, 96px)) 0 clamp(64px, 8vw, 112px);
+  overflow: hidden;
+}
+
+.hp .hp-h1 {
+  margin: 0;
+  font-size: clamp(3.1rem, 7.3vw, 7rem);
+  color: #fff;
+}
+.hp .hp-h1-line {
+  display: block;
+  padding-left: var(--hp-left);
+  padding-right: var(--hp-gutter);
+}
+
+/* The strip: one row of cards (the set twice), with the frame at the text's left edge. The frame's
+   wide shadow dims every card around it; the card inside it shows at full strength. */
+.hp .hp-strip {
+  --card-w: 54vw;
+  --gap: 12px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: clamp(16px, 2.2vw, 32px) 0;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-stretch: 100%;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+@media (min-width: 768px) {
+  .hp .hp-strip { --card-w: min(23vw, 320px); --gap: 16px; }
+}
+@media (min-width: 1280px) {
+  .hp .hp-strip { --gap: 20px; }
+}
+
+.hp .hp-track {
+  display: flex;
+  width: max-content;
+  /* One card to the left of the frame. */
+  margin-left: calc(var(--hp-left) - var(--card-w) - var(--gap));
+  animation: hp-feed 31.2s cubic-bezier(0.7, 0, 0.2, 1) infinite;
+}
+.hp .hp-card {
+  position: relative;
+  display: block;
+  flex: none;
+  width: var(--card-w);
+  aspect-ratio: 16 / 9;
+  margin-right: var(--gap);
+  overflow: hidden;
+  border-radius: 12px;
+  background: #18181b;
+}
+.hp .hp-card img,
+.hp .hp-wall-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hp .hp-duration {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  font-stretch: 100%;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+.hp .hp-duration[data-duration]::after { content: attr(data-duration); }
+
+.hp .hp-frame {
+  position: absolute;
+  top: 10px;
+  left: var(--hp-left);
+  display: block;
+  width: var(--card-w);
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  pointer-events: none;
+  box-shadow:
+    0 0 0 3px var(--hp-bg),
+    0 0 0 5px var(--hp-orange),
+    0 0 0 200vmax rgba(7, 7, 9, 0.6);
+}
+/* The flash when the cursor clicks. */
+.hp .hp-frame::after {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  border-radius: 16px;
+  box-shadow: 0 0 0 2px #ffb067, 0 18px 50px -8px rgba(250, 117, 23, 0.75);
+  opacity: 0;
+  animation: hp-glow 2.6s ease-out infinite;
+}
+.hp .hp-cursor {
+  position: absolute;
+  right: 17%;
+  bottom: 16%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  transform-origin: 20% 15%;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.6));
+  animation: hp-press 2.6s ease-in-out infinite;
+}
+.hp .hp-cursor svg { display: block; }
+.hp .hp-ripple {
+  position: absolute;
+  left: 6px;
+  top: 4px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin: -11px 0 0 -11px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  opacity: 0;
+  animation: hp-ripple 2.6s ease-out infinite;
+}
+
+/* Twelve steps of one card each: hold 70% of a step, then slide; the second set makes the loop seamless. */
+@keyframes hp-feed {
+  0%, 5.833% { transform: translate3d(0, 0, 0); }
+  8.333%, 14.167% { transform: translate3d(-4.1667%, 0, 0); }
+  16.667%, 22.5% { transform: translate3d(-8.3333%, 0, 0); }
+  25%, 30.833% { transform: translate3d(-12.5%, 0, 0); }
+  33.333%, 39.167% { transform: translate3d(-16.6667%, 0, 0); }
+  41.667%, 47.5% { transform: translate3d(-20.8333%, 0, 0); }
+  50%, 55.833% { transform: translate3d(-25%, 0, 0); }
+  58.333%, 64.167% { transform: translate3d(-29.1667%, 0, 0); }
+  66.667%, 72.5% { transform: translate3d(-33.3333%, 0, 0); }
+  75%, 80.833% { transform: translate3d(-37.5%, 0, 0); }
+  83.333%, 89.167% { transform: translate3d(-41.6667%, 0, 0); }
+  91.667%, 97.5% { transform: translate3d(-45.8333%, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+/* One step (2.6s): the card lands at 0%, the cursor clicks just after. */
+@keyframes hp-press {
+  0%, 9% { transform: scale(1); }
+  13% { transform: scale(0.82); }
+  19%, 100% { transform: scale(1); }
+}
+@keyframes hp-ripple {
+  0%, 12% { opacity: 0; transform: scale(0.4); }
+  14% { opacity: 0.9; }
+  36%, 100% { opacity: 0; transform: scale(2.4); }
+}
+@keyframes hp-glow {
+  0%, 11% { opacity: 0; }
+  15% { opacity: 1; }
+  48%, 100% { opacity: 0; }
+}
+
+.hp .hp-hero-foot {
+  display: grid;
+  gap: 28px;
+  margin-top: clamp(24px, 3vw, 40px);
+}
+.hp .hp-hero-sub {
+  max-width: 40rem;
+  font-size: clamp(1.06rem, 1.35vw, 1.25rem);
+  line-height: 1.6;
+  color: var(--hp-soft);
+}
+.hp .hp-hero-sub strong { font-weight: 600; color: #fff; }
+@media (min-width: 1024px) {
+  .hp .hp-hero-foot {
+    grid-template-columns: minmax(0, 40rem) auto;
+    justify-content: space-between;
+    align-items: end;
+  }
+}
+
+/* ---- Sections ------------------------------------------------------------------------------ */
+
+.hp .hp-section {
+  position: relative;
+  padding: clamp(80px, 10vw, 144px) 0;
+  border-top: 1px solid var(--hp-line);
+}
+.hp .hp-h2 {
+  margin: 0;
+  font-size: clamp(2.1rem, 5vw, 4.5rem);
+  color: #fff;
+}
+/* Headlines are set on fixed lines; each line wraps on its own on small screens. */
+.hp .hp-line { display: block; }
+.hp .hp-h3 {
+  margin: 0;
+  font-family: var(--font-lp-archivo), ui-sans-serif, system-ui, sans-serif;
+  font-stretch: 110%;
+  font-weight: 750;
+  font-size: clamp(1.85rem, 2.8vw, 2.5rem);
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  color: #fff;
+}
+
+/* ---- The hub's pillars: publish and sell · know your buyers · grow ------------------------------ */
+
+.hp .hp-way {
+  padding-top: 36px;
+  border-top: 1px solid var(--hp-line);
+}
+.hp .hp-pillar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 40px;
+  margin-top: clamp(48px, 6vw, 88px);
+}
+.hp .hp-pillar + .hp-pillar { margin-top: clamp(64px, 7vw, 104px); }
+.hp .hp-way-lead {
+  margin-top: 16px;
+  max-width: 34ch;
+  font-size: clamp(1.15rem, 1.5vw, 1.375rem);
+  line-height: 1.45;
+  color: #e4e4e7;
+}
+.hp .hp-way-lead strong { font-weight: 600; color: var(--hp-orange-light); }
+.hp .hp-way-body {
+  margin-top: 12px;
+  max-width: 44ch;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--hp-muted);
+}
+.hp .hp-pillar-ticket { display: flex; justify-content: center; }
+.hp .hp-pillar-head { display: grid; gap: 4px; }
+@media (min-width: 1024px) {
+  .hp .hp-pillar {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: 72px;
+    align-items: center;
+  }
+  /* "Know your buyers": the words on one row, the comparison full width under them. */
+  .hp .hp-pillar--wide { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .hp .hp-pillar--wide .hp-pillar-head {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: 72px;
+    align-items: start;
+  }
+  .hp .hp-pillar--wide .hp-way-lead { margin-top: 0; max-width: 40ch; }
+}
+
+/* Grow: the three tools as a list of links. */
+.hp .hp-grow {
+  margin-top: 24px;
+  list-style: none;
+  border-top: 1px solid var(--hp-line);
+}
+.hp .hp-grow .hp-tool-text { max-width: 46ch; line-height: 1.5; }
+.hp .hp-tag {
+  margin-left: 8px;
+  padding: 1px 7px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--hp-muted);
+  vertical-align: 2px;
+}
+
+/* The Studio, sketched: link in, three ideas out, one edited in a sentence. */
+.hp .hp-sketch-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 16px 7px 7px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 9999px;
+  background: #111116;
+  font-size: 13.5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.hp .hp-sketch-face {
+  width: 30px;
+  height: 30px;
+  flex: none;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 2px rgba(242, 179, 0, 0.7);
+}
+.hp .hp-sketch-channel { flex: none; font-weight: 600; color: #fff; }
+.hp .hp-sketch-link {
+  min-width: 0;
+  padding-left: 10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--hp-muted);
+}
+.hp .hp-sketch-ideas {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 12px;
+  margin-top: 14px;
+}
+.hp .hp-sketch-idea {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #18181b;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+.hp .hp-sketch-idea--main {
+  grid-row: span 2;
+  aspect-ratio: auto;
+}
+.hp .hp-sketch-idea img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hp .hp-sketch-num {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(7, 7, 9, 0.78);
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+}
+.hp .hp-sketch-edited {
+  opacity: 0;
+  animation: hp-edit-swap 8s ease-in-out infinite;
+}
+.hp .hp-sketch-edit {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: calc(100% - 24px);
+  padding: 7px 14px 7px 10px;
+  border: 1px solid rgba(250, 117, 23, 0.55);
+  border-radius: 9999px;
+  background: rgba(7, 7, 9, 0.85);
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #fff;
+  white-space: nowrap;
+  animation: hp-edit-chip 8s ease-out infinite;
+}
+.hp .hp-sketch-edit svg { flex: none; color: var(--hp-orange); }
+.hp .hp-sketch-edit-text {
+  animation: hp-type 8s steps(24) infinite;
+}
+@keyframes hp-edit-chip {
+  0%, 16% { opacity: 0; transform: translateY(6px); }
+  21%, 84% { opacity: 1; transform: none; }
+  90%, 100% { opacity: 0; transform: translateY(6px); }
+}
+@keyframes hp-type {
+  0%, 21% { clip-path: inset(0 100% 0 0); }
+  40%, 100% { clip-path: inset(0 0 0 0); }
+}
+@keyframes hp-edit-swap {
+  0%, 44% { opacity: 0; }
+  52%, 84% { opacity: 1; }
+  90%, 100% { opacity: 0; }
+}
+
+/* A tool as a link row: name, one line, arrow. */
+.hp .hp-tool {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas: 'name arrow' 'text arrow';
+  column-gap: 16px;
+  row-gap: 2px;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--hp-line);
+}
+.hp .hp-tool::after {
+  content: '→';
+  grid-area: arrow;
+  color: #52525b;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.hp .hp-tool::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 1px;
+  background: var(--hp-orange);
+  transition: width 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.hp .hp-tool-name { grid-area: name; font-size: 16.5px; font-weight: 600; color: #fff; transition: color 0.2s ease; }
+.hp .hp-tool-text { grid-area: text; font-size: 14.5px; color: var(--hp-muted); }
+.hp .hp-tool:hover .hp-tool-name { color: var(--hp-orange-light); }
+.hp .hp-tool:hover::after { color: var(--hp-orange); transform: translateX(3px); }
+.hp .hp-tool:hover::before { width: 100%; }
+
+/* Content Pass: the object a fan buys. */
+.hp .hp-ticket {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 18px;
+  background: #111116;
+  box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.9);
+  transform: rotate(-1.5deg);
+  transform-origin: 30% 50%;
+}
+.hp .hp-ticket-art { position: relative; aspect-ratio: 16 / 9; }
+.hp .hp-ticket-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hp .hp-ticket-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  background: rgba(7, 7, 9, 0.82);
+  font-size: 12px;
+  font-weight: 600;
+  color: #e4e4e7;
+}
+.hp .hp-ticket-body { padding: 16px 20px 18px; }
+.hp .hp-ticket-title { font-size: 18px; font-weight: 700; font-stretch: 105%; line-height: 1.3; color: #fff; }
+.hp .hp-ticket-by { margin-top: 2px; font-size: 14px; color: var(--hp-muted); }
+.hp .hp-ticket-stub {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 14px 20px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.18);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--hp-orange-light);
+}
+.hp .hp-ticket-stub::before,
+.hp .hp-ticket-stub::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--hp-bg);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.09);
+}
+.hp .hp-ticket-stub::before { left: -11px; }
+.hp .hp-ticket-stub::after { right: -11px; }
+
+/* ---- Proof: the wall ------------------------------------------------------------------------ */
+
+.hp .hp-proof-title { max-width: none; }
+.hp .hp-wall {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: clamp(40px, 5vw, 72px);
+  overflow: hidden;
+}
+.hp .hp-wall-row {
+  display: flex;
+  gap: 14px;
+  width: max-content;
+}
+.hp .hp-wall-row:nth-child(1) { margin-left: calc(var(--hp-left) - 120px); }
+.hp .hp-wall-row:nth-child(2) { margin-left: calc(var(--hp-left) - 290px); }
+.hp .hp-wall-row:nth-child(3) { margin-left: calc(var(--hp-left) - 40px); }
+.hp .hp-wall-card {
+  position: relative;
+  display: block;
+  flex: none;
+  width: clamp(200px, 56vw, 340px);
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #18181b;
+  transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.35s ease;
+}
+@media (min-width: 640px) {
+  .hp .hp-wall-card { width: clamp(200px, 36vw, 340px); }
+}
+@media (min-width: 1024px) {
+  .hp .hp-wall-card { width: 340px; }
+}
+.hp .hp-wall-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 0 2px var(--hp-orange), 0 22px 50px -14px rgba(250, 117, 23, 0.55);
+}
+.hp .hp-proof-foot .hp-link { margin-top: 36px; }
+
+/* ---- Know your buyers: membership and Content Pass compared --------------------------------- */
+
+.hp .hp-bars {
+  display: grid;
+  gap: 22px;
+}
+.hp .hp-bar-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+}
+.hp .hp-bar-label { font-size: 15px; font-weight: 600; color: #fff; }
+.hp .hp-bar { display: flex; gap: 3px; height: 40px; }
+.hp .hp-month {
+  display: grid;
+  flex: 1 1 0;
+  place-items: center;
+  min-width: 0;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+}
+.hp .hp-month.is-paid {
+  background: rgba(250, 117, 23, 0.14);
+  box-shadow: inset 0 0 0 1px rgba(250, 117, 23, 0.4);
+  color: #ffb067;
+}
+.hp .hp-month.is-gone {
+  background: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.045) 0 5px, transparent 5px 10px);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  color: #52525b;
+}
+/* The month the fan stops paying: a gap and a line. */
+.hp .hp-month.is-paid + .hp-month.is-gone { position: relative; margin-left: 12px; }
+.hp .hp-month.is-paid + .hp-month.is-gone::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: -6px;
+  bottom: -6px;
+  width: 2px;
+  border-radius: 1px;
+  background: #71717a;
+}
+.hp .hp-bar--pass { align-items: center; gap: 0; }
+.hp .hp-pass-paid {
+  display: grid;
+  place-items: center;
+  flex: none;
+  height: 100%;
+  padding: 0 12px;
+  border-radius: 6px;
+  background-image: linear-gradient(135deg, #ff8a2b 0%, #fa7517 45%, #e8590c 100%);
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+}
+/* After the one payment, the access line runs on past the end of the year. */
+.hp .hp-bar--pass::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  margin-left: 3px;
+  background: linear-gradient(90deg, rgba(250, 117, 23, 0.9), rgba(250, 117, 23, 0.9) 85%, rgba(250, 117, 23, 0));
+}
+.hp .hp-bar-note { font-size: 14px; color: var(--hp-muted); }
+.hp .hp-bar-note--on { color: var(--hp-orange-light); font-weight: 600; }
+@media (min-width: 768px) {
+  .hp .hp-bar-row {
+    grid-template-columns: 8.5rem minmax(0, 1fr) 15rem;
+    gap: 24px;
+    align-items: center;
+  }
+  .hp .hp-bar { height: 44px; gap: 4px; }
+  .hp .hp-month { font-size: 12px; }
+  .hp .hp-pass-paid { font-size: 12.5px; padding: 0 16px; }
+}
+
+.hp .hp-compare {
+  width: 100%;
+  margin-top: clamp(40px, 5vw, 64px);
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 1.45;
+}
+/* The site's global table style (gray cells, zebra rows) does not apply here. */
+.hp .hp-compare tr { background: none; }
+.hp .hp-compare th,
+.hp .hp-compare td {
+  padding: 16px 16px 16px 0;
+  text-align: left;
+  vertical-align: top;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--hp-line);
+}
+.hp .hp-compare thead th {
+  padding-top: 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--hp-muted);
+}
+.hp .hp-compare thead th:last-child { color: var(--hp-orange-light); }
+.hp .hp-compare tbody th { width: 30%; font-weight: 500; color: var(--hp-muted); }
+.hp .hp-compare tbody td { color: var(--hp-soft); }
+.hp .hp-compare tbody td:last-child { font-weight: 600; color: #fff; }
+@media (min-width: 768px) {
+  .hp .hp-compare { font-size: 17px; }
+  .hp .hp-compare tbody th { width: 26%; font-size: 15px; }
+}
+
+/* ---- Why Base.Tube -------------------------------------------------------------------------- */
+
+.hp .hp-why-title {
+  max-width: none;
+  font-size: clamp(2.2rem, 4.6vw, 4.25rem);
+}
+.hp .hp-why-text {
+  display: grid;
+  gap: 16px;
+  max-width: 62rem;
+  margin-top: clamp(28px, 3.5vw, 48px);
+}
+.hp .hp-why-text p {
+  font-size: clamp(1.06rem, 1.3vw, 1.2rem);
+  line-height: 1.65;
+  color: var(--hp-soft);
+}
+@media (min-width: 768px) {
+  .hp .hp-why-text {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 48px;
+  }
+}
+
+/* ---- Final call to action ------------------------------------------------------------------- */
+
+.hp .hp-final-title {
+  margin: 0;
+  max-width: none;
+  font-size: clamp(2.5rem, 11vw, 7.25rem);
+  color: #fff;
+}
+.hp .hp-final-sub {
+  margin-top: 28px;
+  max-width: 50ch;
+  font-size: clamp(1.06rem, 1.3vw, 1.2rem);
+  line-height: 1.6;
+  color: var(--hp-soft);
+}
+.hp .hp-final .hp-actions { margin-top: 36px; }
+.hp .hp-final .hp-final-pass { margin: 0 0 0 12px; }
+
+/* ---- Reduced motion: the feed stands still with a card in the frame; the edit shows as done ---- */
+
+@media (prefers-reduced-motion: reduce) {
+  .hp .hp-track,
+  .hp .hp-cursor,
+  .hp .hp-ripple,
+  .hp .hp-frame::after,
+  .hp .hp-sketch-edit,
+  .hp .hp-sketch-edit-text {
+    animation: none;
+  }
+  .hp .hp-sketch-edited { animation: none; opacity: 1; }
+  .hp .hp-btn-ghost,
+  .hp .hp-wall-card,
+  .hp .hp-tool::before,
+  .hp .hp-link::after { transition: none; }
+}

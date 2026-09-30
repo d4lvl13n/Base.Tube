@@ -20,15 +20,6 @@ const socials = [
     ),
   },
   {
-    label: 'Telegram',
-    href: 'https://t.me/basetubeofficial',
-    icon: (
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
-      </svg>
-    ),
-  },
-  {
     label: 'Instagram',
     href: 'https://www.instagram.com/basetubeofficial/',
     icon: (
@@ -38,6 +29,18 @@ const socials = [
     ),
   },
 ];
+
+/** The free tools, in the order of the /tools page. */
+const tools = [
+  { href: '/youtube-thumbnail-size', label: 'Thumbnail size checker' },
+  { href: '/tools/youtube-thumbnail-resizer', label: 'Thumbnail resizer' },
+  { href: '/tools/youtube-thumbnail-preview', label: 'Thumbnail preview' },
+  { href: '/tools/youtube-thumbnail-tester', label: 'Thumbnail tester' },
+  { href: '/tools/youtube-title-checker', label: 'Title checker' },
+  { href: '/tools/video-to-thumbnail', label: 'Video to thumbnail' },
+];
+
+const external = { target: '_blank', rel: 'noopener noreferrer' } as const;
 
 export default function Footer() {
   return (
@@ -49,7 +52,9 @@ export default function Footer() {
             Base<em>.</em>Tube
           </div>
           <p className="v2-footer-brand-tag">
-            Where creators build their economy.
+            The creator hub.
+            <br />
+            Publish, sell to your fans, grow.
           </p>
           <div className="v2-footer-socials">
             {socials.map((s) => (
@@ -68,48 +73,55 @@ export default function Footer() {
         </div>
 
         {/* Product */}
-        <div>
+        <nav aria-label="Product">
           <div className="v2-footer-col-title">Product</div>
           <ul className="v2-footer-links">
-            <li>
-              <a href="https://beta.base.tube" target="_blank" rel="noopener noreferrer">
-                App
-              </a>
-            </li>
+            <li><Link href="/ai-thumbnails">AI Thumbnails</Link></li>
             <li><Link href="/content-pass">Content Pass</Link></li>
             <li>
-              <Link href="/ai-thumbnails">AI Thumbnails</Link>
-            </li>
-            <li>
-              <a href="https://beta.base.tube/ai-thumbnails/audit" target="_blank" rel="noopener noreferrer">
-                Channel Audit
+              <a href="https://beta.base.tube/ai-thumbnails/audit" {...external}>
+                Channel Audit <span className="v2-footer-tag">beta</span>
               </a>
             </li>
           </ul>
-        </div>
+        </nav>
+
+        {/* Free tools */}
+        <nav aria-label="Free tools">
+          <div className="v2-footer-col-title">
+            <Link href="/tools">Free tools</Link>
+          </div>
+          <ul className="v2-footer-links">
+            {tools.map((tool) => (
+              <li key={tool.href}>
+                <Link href={tool.href}>{tool.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
         {/* Company */}
-        <div>
+        <nav aria-label="Company">
           <div className="v2-footer-col-title">Company</div>
           <ul className="v2-footer-links">
+            <li><Link href="/blog">Blog</Link></li>
             <li>
-              <a href="https://discord.gg/SDdDCjGZHw" target="_blank" rel="noopener noreferrer">
-                Community
-              </a>
-            </li>
-            <li>
-              <a href="https://base-tube.gitbook.io/base.tube-documentation" target="_blank" rel="noopener noreferrer">
+              <a href="https://base-tube.gitbook.io/base.tube-documentation" {...external}>
                 Docs
               </a>
             </li>
+            <li>
+              <a href="https://discord.gg/SDdDCjGZHw" {...external}>
+                Community
+              </a>
+            </li>
+            <li><a href="mailto:support@base.tube">Contact</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
 
       <div className="v2-footer-bottom">
-        <span className="v2-footer-copy">
-          © 2026 Base.Tube. Building the creator economy that should have existed all along.
-        </span>
+        <span className="v2-footer-copy">© 2026 Base.Tube</span>
         <div className="v2-footer-legal">
           <Link href="/privacy-policy">Privacy</Link>
           <Link href="/terms-and-conditions">Terms</Link>
