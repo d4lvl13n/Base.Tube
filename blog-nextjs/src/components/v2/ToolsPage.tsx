@@ -1,10 +1,14 @@
+import Link from 'next/link';
 import NavBar from './NavBar';
 import Footer from './Footer';
 import ScrollReveal from './ScrollReveal';
 import AuditPreview from './studio-audit/AuditPreview';
 import StudioPreview from './studio-audit/StudioPreview';
-import { AUDIT_URL, STUDIO_URL } from './studio-audit/content';
+import { STUDIO_URL } from './studio-audit/content';
 import ToolsDirectory from './tools-directory/ToolsDirectory';
+
+/** The channel audit's landing page on this site (it opens the audit in the app). */
+const CHANNEL_AUDIT_PAGE = '/youtube-channel-audit';
 
 function Sep() {
   return <div className="v2-sep" aria-hidden />;
@@ -73,15 +77,13 @@ export default function ToolsPage() {
                   <div className="v2-tools-showcase-meta">
                     <span className="v2-tools-showcase-free">Free channel audit</span>
                   </div>
-                  <a
-                    href={AUDIT_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href={CHANNEL_AUDIT_PAGE}
                     className="v2-btn v2-btn-primary"
                     style={{ marginTop: 24 }}
                   >
                     Run the free audit →
-                  </a>
+                  </Link>
                 </ScrollReveal>
               </div>
               <ScrollReveal delay={150}>
@@ -149,18 +151,16 @@ export default function ToolsPage() {
                 </h2>
                 <p>
                   Audit your thumbnails and titles for free. Make new thumbnails in your
-                  own style. Connect YouTube to see your real click-through rate before
-                  and after every change.
+                  own style. Connect YouTube to see each video&apos;s real impressions and
+                  click-through rate.
                 </p>
                 <div className="v2-cta-actions">
-                  <a
-                    href={AUDIT_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href={CHANNEL_AUDIT_PAGE}
                     className="v2-btn v2-btn-primary"
                   >
                     Run the free audit →
-                  </a>
+                  </Link>
                   <a
                     href={STUDIO_URL}
                     className="v2-btn v2-btn-ghost"

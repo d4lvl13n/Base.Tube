@@ -1,0 +1,213 @@
+/* The channel audit landing page (/youtube-channel-audit), imported by this route only, after
+   ../ai-thumbnails/ai-thumbnails.css (which brings the shared .lp base: Archivo, reveals, buttons).
+
+   1. Tailwind utilities for this page's components and for the few AI Thumbnails pieces it reuses.
+      This sheet loads last, so it lists every class those components use, in Tailwind's own order:
+      a plain class can never win over a responsive one from the earlier sheet.
+   2. The page's own styles, all named ca-. Motion stops under prefers-reduced-motion. */
+
+@import "tailwindcss/theme.css" theme(inline);
+@tailwind utilities source(none);
+@source "../../components/channel-audit";
+@source "../../components/ai-thumbnails/motion.tsx";
+@source "../../components/ai-thumbnails/FaqRow.tsx";
+@source "../../components/ai-thumbnails/HeaderShell.tsx";
+@source "../../components/ai-thumbnails/ScrollProgress.tsx";
+
+/* The same colors as the AI Thumbnails page (the app's Tailwind 3 values). */
+@theme inline {
+  --color-zinc-100: #f4f4f5;
+  --color-zinc-200: #e4e4e7;
+  --color-zinc-300: #d4d4d8;
+  --color-zinc-400: #a1a1aa;
+  --color-zinc-500: #71717a;
+  --color-zinc-600: #52525b;
+  --color-zinc-700: #3f3f46;
+  --color-zinc-900: #18181b;
+  --color-zinc-950: #09090b;
+  --color-orange-300: #fdba74;
+  --text-xs--line-height: 1rem;
+  --text-sm--line-height: 1.25rem;
+  --text-base--line-height: 1.5rem;
+  --text-lg--line-height: 1.75rem;
+  --text-xl--line-height: 1.75rem;
+  --text-2xl--line-height: 2rem;
+  --text-3xl--line-height: 2.25rem;
+  --text-4xl--line-height: 2.5rem;
+}
+
+/* ---- Page base --------------------------------------------------------------------------- */
+
+.ca {
+  --ca-orange: #fa7517;
+  --ca-paper: #f3efe7;
+  --ca-ink: #141416;
+  --ca-ink-soft: #55555c;
+  --ca-rule: rgba(20, 20, 22, 0.13);
+  --ca-orange-ink: #b8430b;
+}
+
+/* Small uppercase labels inside the report (the app's own labels: Observed, Hypothesis...). */
+.ca-label {
+  font-family: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ca-mono {
+  font-family: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-feature-settings: 'tnum' 1;
+}
+
+/* ---- The report sheet (the example audit): printed paper on the dark page ---------------- */
+
+.ca-paper {
+  background: var(--ca-paper);
+  color: var(--ca-ink);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.6) inset,
+    0 50px 120px -40px rgba(0, 0, 0, 0.9),
+    0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+.ca-paper .ca-rule { border-color: var(--ca-rule); }
+.ca-ink-soft { color: var(--ca-ink-soft); }
+.ca-orange-ink { color: var(--ca-orange-ink); }
+
+/* The hedged hypothesis: dashed and italic, as in the app. */
+.ca-hypothesis {
+  border: 1.5px dashed rgba(20, 20, 22, 0.28);
+  background: rgba(20, 20, 22, 0.025);
+}
+.ca-hypothesis-dark {
+  border: 1.5px dashed rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.02);
+}
+.ca-brief {
+  background: rgba(250, 117, 23, 0.09);
+  border: 1px solid rgba(250, 117, 23, 0.28);
+}
+
+/* The video picker of the evidence board: the chosen thumbnail carries the orange frame. */
+.ca-pick {
+  outline: 2px solid transparent;
+  outline-offset: 3px;
+  transition: outline-color 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
+}
+.ca-pick[aria-selected='false'] { opacity: 0.55; }
+.ca-pick[aria-selected='false']:hover { opacity: 0.85; }
+.ca-pick[aria-selected='true'] { outline-color: var(--ca-orange); }
+.ca-pick:focus-visible { outline-color: #ffb067; opacity: 1; }
+
+/* A panel of the evidence board fades in when its video is picked. */
+.ca-panel-in { animation: ca-fade-up 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+
+/* ---- Hero: the report writing itself ------------------------------------------------------ */
+
+/* The stages tick one after the other, then the observed facts arrive one by one. Pure CSS: it
+   plays without script, and under reduced motion everything shows at once. --ca-d: the delay. */
+.ca-seq {
+  animation: ca-fade-up 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) var(--ca-d, 0s) both;
+}
+.ca-tick {
+  animation: ca-pop 0.35s cubic-bezier(0.2, 0.7, 0.2, 1) var(--ca-d, 0s) both;
+}
+.ca-dot {
+  animation: ca-hide 0.01s linear var(--ca-d, 0s) both;
+}
+.ca-stage-text {
+  animation: ca-dim-to-soft 0.4s ease var(--ca-d, 0s) both;
+}
+.ca-bar {
+  transform-origin: 0 50%;
+  animation: ca-grow 2.6s cubic-bezier(0.3, 0.6, 0.3, 1) 0.2s both;
+}
+.ca-status-running { animation: ca-hide 0.2s ease 2.8s both; }
+.ca-status-done { animation: ca-fade-up 0.4s ease 2.8s both; }
+
+@keyframes ca-fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes ca-pop {
+  from { opacity: 0; transform: scale(0.4); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes ca-hide {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@keyframes ca-dim-to-soft {
+  from { color: #52525b; }
+  to { color: #d4d4d8; }
+}
+@keyframes ca-grow {
+  from { transform: scaleX(0.02); }
+  to { transform: scaleX(1); }
+}
+
+/* ---- "What it is not": the line is struck through once it is in view --------------------- */
+
+.ca-strike {
+  position: relative;
+  display: inline;
+  background-image: linear-gradient(var(--ca-orange), var(--ca-orange));
+  background-repeat: no-repeat;
+  background-position: 0 58%;
+  background-size: 0% 0.09em;
+  transition: background-size 0.9s cubic-bezier(0.6, 0, 0.2, 1) var(--ca-d, 0s), color 0.9s ease var(--ca-d, 0s);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.lp-in .ca-strike,
+.ca-strike.lp-in {
+  background-size: 100% 0.09em;
+  color: #71717a;
+}
+
+/* ---- The views strip (review queue and sample diagram) ------------------------------------ */
+
+.ca-strip-dot {
+  transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) var(--ca-d, 0s), opacity 0.6s ease var(--ca-d, 0s);
+  transform: translateY(10px);
+  opacity: 0;
+}
+.lp-in .ca-strip-dot {
+  transform: none;
+  opacity: 1;
+}
+
+/* ---- The evidence scale (connected mode) --------------------------------------------------- */
+
+.ca-scale-marker {
+  transition: left 1.4s cubic-bezier(0.5, 0, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ca-seq,
+  .ca-tick,
+  .ca-dot,
+  .ca-stage-text,
+  .ca-bar,
+  .ca-status-running,
+  .ca-status-done,
+  .ca-panel-in {
+    animation: none;
+  }
+  .ca-dot,
+  .ca-status-running { opacity: 0; }
+  .ca-stage-text { color: #d4d4d8; }
+  .ca-strike {
+    transition: none;
+    background-size: 100% 0.09em;
+    color: #71717a;
+  }
+  .ca-strip-dot {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+  .ca-scale-marker { transition: none; }
+  .ca-pick { transition: none; }
+}
