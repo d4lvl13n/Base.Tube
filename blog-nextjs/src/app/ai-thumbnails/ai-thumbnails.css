@@ -119,6 +119,22 @@
   from { transform: translate3d(0, 0, 0); }
   to { transform: translate3d(0, -50%, 0); }
 }
+/* Phones: a shorter plane (4 rows) and a milder tilt, so no part of it passes behind the camera
+   (Safari draws that part mirrored), and dimmer cards so the headline and buttons stay easy to read. */
+@media (max-width: 767px) {
+  .lp-feed-plane {
+    transform: perspective(1400px) rotateX(28deg) rotateZ(-11deg) scale(1.15);
+    transform-origin: 50% 20%;
+  }
+  .lp-feed-card {
+    filter: saturate(0.6) brightness(0.5);
+  }
+  /* Keep the header clear: the feed fades in below it. */
+  .lp-feed-root {
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, transparent 64px, #000 150px);
+    mask-image: linear-gradient(to bottom, transparent 0, transparent 64px, #000 150px);
+  }
+}
 /* Cards sit a little dim; the one that catches the eye lights up and lifts. */
 .lp-feed-card {
   filter: saturate(0.7) brightness(0.72);
