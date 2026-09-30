@@ -9,7 +9,7 @@ import Previews, { type Theme } from './Previews';
 import BatchTable from './BatchTable';
 
 const STUDIO_GENERATE = '/ai-thumbnails';
-const STUDIO_AUDIT = 'https://beta.base.tube/ai-thumbnails/audit';
+const STUDIO_AUDIT = '/youtube-channel-audit';
 
 const EXAMPLE_TITLE = 'I Tried Editing YouTube Videos Only on My Phone for 30 Days (Here’s What Happened)';
 const EXAMPLE_KEYWORD = 'editing youtube videos';
@@ -306,7 +306,7 @@ export default function TitleCheckerTool() {
                     Generate a thumbnail for this title
                     <span aria-hidden="true">{'→'}</span>
                   </a>
-                  <a className="v2-btn v2-btn-ghost" href={STUDIO_AUDIT} target="_blank" rel="noopener noreferrer">
+                  <a className="v2-btn v2-btn-ghost" href={STUDIO_AUDIT}>
                     Audit my channel
                   </a>
                 </div>

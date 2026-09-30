@@ -6,7 +6,7 @@
 // (thumbnails + titles, evidence-based critique) and, once a creator connects
 // YouTube, their real impressions and real click-through rate.
 
-export const AUDIT_URL = 'https://beta.base.tube/ai-thumbnails/audit';
+export const AUDIT_URL = '/youtube-channel-audit';
 export const STUDIO_URL = '/ai-thumbnails';
 
 export interface Faq {

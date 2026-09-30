@@ -7,7 +7,7 @@ import { SPEC_CHECKED, faqs, steps } from './content';
 import styles from './ThumbnailResizer.module.css';
 
 const STUDIO_GENERATE = '/ai-thumbnails';
-const STUDIO_AUDIT = 'https://beta.base.tube/ai-thumbnails/audit';
+const STUDIO_AUDIT = '/youtube-channel-audit';
 
 function Sep() {
   return <div className="v2-sep" aria-hidden />;
@@ -165,7 +165,7 @@ export default function ThumbnailResizerPage() {
                   <a href={STUDIO_GENERATE} className="v2-btn v2-btn-primary">
                     Make thumbnails in Studio →
                   </a>
-                  <a href={STUDIO_AUDIT} className="v2-btn v2-btn-ghost" rel="noopener">
+                  <a href={STUDIO_AUDIT} className="v2-btn v2-btn-ghost">
                     Run the free channel audit
                   </a>
                 </div>

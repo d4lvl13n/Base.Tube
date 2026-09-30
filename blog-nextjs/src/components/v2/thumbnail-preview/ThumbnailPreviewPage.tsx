@@ -6,7 +6,7 @@ import PreviewTool from './PreviewTool';
 import { FAQ } from './faq';
 import s from './thumbnail-preview.module.css';
 
-const STUDIO_AUDIT = 'https://beta.base.tube/ai-thumbnails/audit';
+const STUDIO_AUDIT = '/youtube-channel-audit';
 const STUDIO_GENERATE = '/ai-thumbnails';
 
 function Sep() {
@@ -151,7 +151,7 @@ export default function ThumbnailPreviewPage() {
                 </p>
                 <div className={s.ctaLinks}>
                   <a href={STUDIO_AUDIT} className="v2-btn v2-btn-primary">
-                    Connect your channel to measure real CTR →
+                    See your real CTR with the free audit →
                   </a>
                   <a href={STUDIO_GENERATE} className="v2-btn v2-btn-ghost">
                     Make a new thumbnail

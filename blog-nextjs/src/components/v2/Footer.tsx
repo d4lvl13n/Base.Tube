@@ -79,9 +79,9 @@ export default function Footer() {
             <li><Link href="/ai-thumbnails">AI Thumbnails</Link></li>
             <li><Link href="/content-pass">Content Pass</Link></li>
             <li>
-              <a href="https://beta.base.tube/ai-thumbnails/audit" {...external}>
-                Channel Audit <span className="v2-footer-tag">beta</span>
-              </a>
+              <Link href="/youtube-channel-audit">
+                Channel Audit <span className="v2-footer-tag">free</span>
+              </Link>
             </li>
           </ul>
         </nav>

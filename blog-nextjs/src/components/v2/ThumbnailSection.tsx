@@ -88,7 +88,7 @@ export default function ThumbnailSection() {
                   </li>
                 ))}
               </ul>
-              <a href={AUDIT_URL} target="_blank" rel="noopener noreferrer" style={{ color: ORANGE, display: 'inline-block', marginTop: 18, fontWeight: 600, fontSize: 14 }}>
+              <a href={AUDIT_URL} style={{ color: ORANGE, display: 'inline-block', marginTop: 18, fontWeight: 600, fontSize: 14 }}>
                 Run the free audit →
               </a>
             </div>

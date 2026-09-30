@@ -34,7 +34,7 @@ export const GALLERY_INITIAL = 24;
 
 /** Links into the Base.Tube Studio. Query parameters are added by studioGenerateUrl(). */
 export const STUDIO_GENERATE_URL = 'https://base.tube/ai-thumbnails';
-export const STUDIO_AUDIT_URL = 'https://beta.base.tube/ai-thumbnails/audit';
+export const STUDIO_AUDIT_URL = '/youtube-channel-audit';
 
 /** Page groups, in the order the hub shows them. */
 export const CATEGORIES = /** @type {const} */ (['game', 'style', 'genre']);

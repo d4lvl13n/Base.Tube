@@ -7,7 +7,7 @@ import styles from './TitleChecker.module.css';
 import { CAPACITY_ROWS, FAQS, PAIRS, SOURCES } from './content';
 
 const STUDIO_GENERATE = '/ai-thumbnails';
-const STUDIO_AUDIT = 'https://beta.base.tube/ai-thumbnails/audit';
+const STUDIO_AUDIT = '/youtube-channel-audit';
 
 function Sep() {
   return <div className="v2-sep" aria-hidden />;
@@ -231,7 +231,7 @@ export default function TitleCheckerPage() {
                   <a className="v2-btn v2-btn-primary" href={STUDIO_GENERATE}>
                     Generate a thumbnail that fits this title →
                   </a>
-                  <a className="v2-btn v2-btn-ghost" href={STUDIO_AUDIT} target="_blank" rel="noopener noreferrer">
+                  <a className="v2-btn v2-btn-ghost" href={STUDIO_AUDIT}>
                     Free channel audit
                   </a>
                 </div>

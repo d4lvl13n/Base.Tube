@@ -208,7 +208,7 @@ export default function ThumbnailHubPage({ loaded, pages }: { loaded: LoadedHub;
                   Generate a thumbnail <span aria-hidden>→</span>
                   <span className={s.srOnly}> (opens the Base.Tube Studio in a new tab)</span>
                 </a>
-                <a className="v2-btn v2-btn-ghost" href={STUDIO_AUDIT_URL} {...NEW_TAB}>
+                <a className="v2-btn v2-btn-ghost" href={STUDIO_AUDIT_URL}>
                   Free channel audit
                   <span className={s.srOnly}> (opens the Base.Tube Studio in a new tab)</span>
                 </a>

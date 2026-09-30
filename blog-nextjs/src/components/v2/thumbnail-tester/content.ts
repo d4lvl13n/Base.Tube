@@ -1,5 +1,5 @@
 export const PAGE_URL = 'https://base.tube/tools/youtube-thumbnail-tester';
-export const STUDIO_AUDIT_URL = 'https://beta.base.tube/ai-thumbnails/audit';
+export const STUDIO_AUDIT_URL = '/youtube-channel-audit';
 export const STUDIO_GENERATE_URL = '/ai-thumbnails';
 /** YouTube Help: "A/B test titles & thumbnails" (first released as Test & Compare). */
 export const YT_AB_HELP_URL = 'https://support.google.com/youtube/answer/16391400';
@@ -25,7 +25,7 @@ export const FAQ: FaqItem[] = [
   {
     q: 'Does this thumbnail test predict my click-through rate?',
     a: 'No. Nothing on this page predicts or scores clicks. Click-through rate (CTR) is the share of people who saw your thumbnail and clicked it. It depends on your audience, your title and what else is in their feed, so only real impressions on YouTube can show it. The measurements here describe the image: how bright, contrasty and colourful it is, and what survives when it is blurred or small.',
-    link: { href: STUDIO_AUDIT_URL, label: 'See your real CTR with the free audit', external: true },
+    link: { href: STUDIO_AUDIT_URL, label: 'See your real CTR with the free audit', external: false },
   },
   {
     q: 'How do I test a thumbnail on YouTube itself?',

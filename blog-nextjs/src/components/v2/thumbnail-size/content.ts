@@ -96,5 +96,5 @@ export const RELATED_TOOLS = [
 ];
 
 export const STUDIO_GENERATE_URL = '/ai-thumbnails';
-export const STUDIO_AUDIT_URL = 'https://beta.base.tube/ai-thumbnails/audit';
+export const STUDIO_AUDIT_URL = '/youtube-channel-audit';
 export const RESIZER_URL = '/tools/youtube-thumbnail-resizer';

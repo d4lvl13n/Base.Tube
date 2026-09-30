@@ -226,7 +226,7 @@ export default function ThumbnailTesterPage() {
                   them in the Studio.
                 </p>
                 <div className={styles.nextActions}>
-                  <a className="v2-btn v2-btn-primary" href={STUDIO_AUDIT_URL} target="_blank" rel="noopener noreferrer">
+                  <a className="v2-btn v2-btn-primary" href={STUDIO_AUDIT_URL}>
                     Run the free channel audit →
                   </a>
                   <a className="v2-btn v2-btn-ghost" href={STUDIO_GENERATE_URL}>
