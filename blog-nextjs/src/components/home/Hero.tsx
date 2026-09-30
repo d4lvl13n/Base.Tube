@@ -33,10 +33,6 @@ export default function Hero() {
             How it works
           </a>
         </div>
-        <p className="hp-legend" data-hp-clear="">
-          <span className="hp-legend-rented">Grey and blurred</span>: fans you rent through a platform, out of reach.{' '}
-          <span className="hp-legend-owned">Orange</span>: buyers who are yours, by name. (Illustration.)
-        </p>
       </div>
     </section>
   );
