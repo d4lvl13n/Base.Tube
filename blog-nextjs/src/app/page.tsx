@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import HomePage from '@/components/home/HomePage';
-import './ai-thumbnails/ai-thumbnails.css';
 import './home.css';
 
 const PAGE_URL = 'https://base.tube';

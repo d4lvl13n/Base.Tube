@@ -12,25 +12,16 @@ export const SIGN_UP_URL = 'https://beta.base.tube/sign-up';
 const CHANNELS = '/images/ai-thumbnails/channels';
 
 /**
- * The hero's audience: illustrative fans (invented names), what each one bought, and a face for some.
- * The first 6 show on phones (one column), all 15 from tablet width up (three columns).
+ * "Know your buyers": an example buyer list (invented names, labelled "Example" on the page) that
+ * fills in sale after sale. Some rows have a face, the others their initial.
  */
-export const FANS: { name: string; bought: string; face: string | null; tint: string }[] = [
-  { name: 'Ana P.', bought: 'Full course', face: `${CHANNELS}/ana.webp`, tint: '#f2b300' },
-  { name: 'Tom K.', bought: 'Director’s cut', face: `${CHANNELS}/tom.webp`, tint: '#3b9eff' },
-  { name: 'Lina S.', bought: 'Archive pass', face: null, tint: '#e8590c' },
-  { name: 'Kai M.', bought: 'Full course', face: `${CHANNELS}/kai.webp`, tint: '#11c48a' },
-  { name: 'Rosa D.', bought: 'Film', face: null, tint: '#c084fc' },
-  { name: 'Ben A.', bought: 'Archive pass', face: `${CHANNELS}/ben.webp`, tint: '#f97316' },
-  { name: 'Maya R.', bought: 'Workshop', face: `${CHANNELS}/maya.webp`, tint: '#fbbf24' },
-  { name: 'Jonas W.', bought: 'Film', face: null, tint: '#60a5fa' },
-  { name: 'Leo F.', bought: 'Director’s cut', face: `${CHANNELS}/leo.webp`, tint: '#34d399' },
-  { name: 'Ines B.', bought: 'Full course', face: null, tint: '#fb7185' },
-  { name: 'Sam O.', bought: 'Archive pass', face: `${CHANNELS}/sam.webp`, tint: '#a3e635' },
-  { name: 'Nora L.', bought: 'Workshop', face: null, tint: '#f472b6' },
-  { name: 'Theo G.', bought: 'Film', face: null, tint: '#38bdf8' },
-  { name: 'Aiko T.', bought: 'Full course', face: null, tint: '#facc15' },
-  { name: 'Omar H.', bought: 'Director’s cut', face: null, tint: '#fb923c' },
+export const BUYERS: { name: string; bought: string; face: string | null; tint: string }[] = [
+  { name: 'Léa M.', bought: 'Full course', face: null, tint: '#f2b300' },
+  { name: 'Kofi A.', bought: 'Director’s cut', face: `${CHANNELS}/ben.webp`, tint: '#3b9eff' },
+  { name: 'Hana T.', bought: 'Archive pass', face: null, tint: '#fb7185' },
+  { name: 'Mateo R.', bought: 'Film', face: `${CHANNELS}/tom.webp`, tint: '#11c48a' },
+  { name: 'Aisha K.', bought: 'Workshop', face: `${CHANNELS}/ana.webp`, tint: '#c084fc' },
+  { name: 'Sven L.', bought: 'Full course', face: null, tint: '#60a5fa' },
 ];
 
 export interface Source {

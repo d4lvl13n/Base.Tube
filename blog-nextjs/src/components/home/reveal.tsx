@@ -32,6 +32,109 @@ function useSeen<T extends Element>(amount: number): [React.RefObject<T | null>,
   return [ref, seen];
 }
 
+const REDUCED_QUERY = '(prefers-reduced-motion: reduce)';
+
+/**
+ * True once, after hydration, when the element should play its entrance: motion is allowed and the
+ * element starts below the fold (one already on screen stays as the server drew it, with no flash).
+ * Before that, and without scripts, the element shows its final state from the server's HTML.
+ */
+function useArmed(ref: React.RefObject<Element | null>): boolean {
+  const [armed, setArmed] = useState(false);
+  useEffect(() => {
+    const element = ref.current;
+    if (!element || window.matchMedia(REDUCED_QUERY).matches) return;
+    if (element.getBoundingClientRect().top < window.innerHeight * 0.92) return;
+    setArmed(true);
+  }, [ref]);
+  return armed;
+}
+
+/**
+ * A block that plays a CSS entrance once it scrolls into view: it gets `is-armed` (the start state)
+ * after hydration, then `is-seen` (the entrance). See the .is-armed rules in home.css.
+ */
+export function OnSeen({ children, className = '', amount = 0.35 }: { children: React.ReactNode; className?: string; amount?: number }) {
+  const [ref, seen] = useSeen<HTMLDivElement>(amount);
+  const armed = useArmed(ref);
+  return (
+    <div ref={ref} className={`${className} ${armed ? 'is-armed' : ''} ${armed && seen ? 'is-seen' : ''}`}>
+      {children}
+    </div>
+  );
+}
+
+/**
+ * A number that counts up to its value once in view. The server's HTML holds the final value; the
+ * count shows 0 only once the page knows it will animate.
+ */
+export function CountUp({ value, prefix = '', suffix = '', className = '' }: { value: number; prefix?: string; suffix?: string; className?: string }) {
+  const [ref, seen] = useSeen<HTMLSpanElement>(0.6);
+  const armed = useArmed(ref);
+  useEffect(() => {
+    // The span's one text node (React's own): only its characters change.
+    const node = ref.current?.firstChild;
+    if (!node || node.nodeType !== Node.TEXT_NODE || !armed) return undefined;
+    if (!seen) {
+      node.nodeValue = `${prefix}0${suffix}`;
+      return undefined;
+    }
+    let frame = 0;
+    const start = performance.now();
+    const tick = (now: number) => {
+      const progress = Math.min(1, (now - start) / 1100);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      node.nodeValue = `${prefix}${Math.round(value * eased)}${suffix}`;
+      if (progress < 1) frame = requestAnimationFrame(tick);
+    };
+    frame = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frame);
+  }, [armed, seen, value, prefix, suffix, ref]);
+  return (
+    <span ref={ref} className={className}>
+      {`${prefix}${value}${suffix}`}
+    </span>
+  );
+}
+
+/**
+ * Text that types in quickly, like an incoming message, once in view. The real text stays in the
+ * page (transparent while the copy on top types), so the layout never moves and screen readers and
+ * search engines always get the whole text.
+ */
+export function TypeIn({ text, delay = 0 }: { text: string; delay?: number }) {
+  const [ref, seen] = useSeen<HTMLSpanElement>(0.6);
+  const armed = useArmed(ref);
+  const [shown, setShown] = useState(0);
+  const [done, setDone] = useState(false);
+  useEffect(() => {
+    if (!armed || !seen) return undefined;
+    let frame = 0;
+    const duration = Math.min(1500, 18 * text.length);
+    const start = performance.now() + delay * 1000;
+    const tick = (now: number) => {
+      const progress = Math.max(0, Math.min(1, (now - start) / duration));
+      setShown(Math.round(text.length * progress));
+      if (progress < 1) frame = requestAnimationFrame(tick);
+      else setDone(true);
+    };
+    frame = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frame);
+  }, [armed, seen, text, delay]);
+  const typing = armed && !done;
+  return (
+    <span ref={ref} className={`hp-type ${typing ? 'is-typing' : ''}`}>
+      <span className="hp-type-real">{text}</span>
+      {typing && (
+        <span className="hp-type-live" aria-hidden="true">
+          {text.slice(0, shown)}
+          <span className="hp-type-caret" />
+        </span>
+      )}
+    </span>
+  );
+}
+
 /** A headline part: white, or the orange accent. */
 export type HeadingPart = string | { accent: string };
 

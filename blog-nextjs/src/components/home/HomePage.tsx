@@ -4,7 +4,7 @@
 // built-in tools), and a close on the same conviction. Same visual language as /ai-thumbnails
 // (Archivo, the orange accent, near-black). All copy is in the server's HTML; motion stops under
 // prefers-reduced-motion.
-import { archivo } from '@/components/ai-thumbnails/fonts';
+import { archivo } from './fonts';
 import Footer from '@/components/v2/Footer';
 import NavBar from '@/components/v2/NavBar';
 import Case from './Case';

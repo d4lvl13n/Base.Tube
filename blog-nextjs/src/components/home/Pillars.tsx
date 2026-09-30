@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { getImageProps } from 'next/image';
 import { PenLine } from 'lucide-react';
 import { AUDIT_URL } from '@/components/ai-thumbnails/catalog';
-import { Reveal, RevealHeading } from './reveal';
-import { DEMO, PASS_VS_MEMBERSHIP } from './content';
+import { OnSeen, Reveal, RevealHeading } from './reveal';
+import { BUYERS, DEMO, PASS_VS_MEMBERSHIP } from './content';
 
 function img(src: string, sizes: string, width = 640, height = 360) {
   return getImageProps({ src, alt: '', width, height, sizes, loading: 'lazy', decoding: 'async' }).props;
@@ -31,6 +31,40 @@ function PassTicket() {
         <span>Watch now</span>
         <span>Yours for good</span>
       </div>
+    </div>
+  );
+}
+
+/** An example buyer list: every sale is a person, by name (invented names, labelled "Example"). */
+function BuyerList() {
+  return (
+    <div className="hp-buyers">
+      <div className="hp-buyers-head">
+        <span>Your buyers</span>
+        <span className="hp-buyers-tag">Example</span>
+      </div>
+      <ul>
+        {BUYERS.map((buyer, index) => {
+          const face = buyer.face
+            ? getImageProps({ src: buyer.face, alt: '', width: 40, height: 40, unoptimized: true, loading: 'lazy', decoding: 'async' }).props
+            : null;
+          return (
+            <li key={buyer.name} className="hp-buyer" style={{ ['--i' as string]: String(index) }}>
+              {face ? (
+                // eslint-disable-next-line @next/next/no-img-element -- a 40px avatar, served as is
+                <img {...face} alt="" className="hp-buyer-face" />
+              ) : (
+                <span className="hp-buyer-face hp-buyer-initial" style={{ background: buyer.tint }} aria-hidden="true">
+                  {buyer.name[0]}
+                </span>
+              )}
+              <span className="hp-buyer-name">{buyer.name}</span>
+              <span className="hp-buyer-bought">{buyer.bought}</span>
+              <span className="hp-buyer-paid">Paid once</span>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
@@ -170,27 +204,30 @@ export default function Pillars() {
               How Content Pass works
             </Link>
           </Reveal>
-          <Reveal delay={0.15} className="hp-way-visual hp-pillar-ticket">
+          {/* The pass is issued as it comes into view: it slides out, then its stub tears off. */}
+          <OnSeen className="hp-way-visual hp-pillar-ticket hp-issue" amount={0.45}>
             <PassTicket />
-          </Reveal>
+          </OnSeen>
         </article>
 
-        <article className="hp-way hp-pillar hp-pillar--wide">
-          <Reveal className="hp-way-text hp-pillar-head">
+        <article className="hp-way hp-pillar">
+          <Reveal className="hp-way-text">
             <h3 className="hp-h3">Know your buyers</h3>
-            <div>
-              <p className="hp-way-lead">
-                Fans buy from you, not from a platform: <strong>the relationship and the buyer list are yours.</strong>
-              </p>
-              <p className="hp-way-body">
-                What they buy stays in their library for good, like a film they bought. Here is how that differs from a membership.
-              </p>
-            </div>
+            <p className="hp-way-lead">
+              Fans buy from you, not from a platform: <strong>the relationship and the buyer list are yours.</strong>
+            </p>
+            <p className="hp-way-body">What they buy stays in their library for good, like a film they bought.</p>
           </Reveal>
-          <Reveal delay={0.1} y={16}>
-            <PassVsMembership />
-          </Reveal>
+          {/* The list fills in, sale after sale, as it comes into view. */}
+          <OnSeen className="hp-way-visual hp-sales" amount={0.45}>
+            <BuyerList />
+          </OnSeen>
         </article>
+
+        <Reveal y={16} className="hp-compare-block">
+          <p className="hp-compare-title">Membership or Content Pass?</p>
+          <PassVsMembership />
+        </Reveal>
 
         <article className="hp-way hp-pillar">
           <Reveal className="hp-way-text">
