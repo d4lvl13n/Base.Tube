@@ -1,0 +1,233 @@
+/* CTR AI waitlist: the "Get notified" panel and the small pieces around it.
+   Uses the v2 custom properties (defined on .v2-root). Static, no animation. */
+
+/* ── Waitlist panel ───────────────────────────────── */
+
+.panel {
+  max-width: 640px;
+  padding: 32px;
+  border: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r-lg);
+  background: rgba(255, 255, 255, 0.014);
+  scroll-margin-top: 96px;
+}
+
+.panelTitle {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  color: var(--v2-text);
+  margin-bottom: 4px;
+}
+
+.form {
+  margin-top: 18px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--v2-text);
+}
+
+.row {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  height: 48px;
+  padding: 0 20px;
+  border: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r-pill);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--v2-text);
+  font-family: inherit;
+  /* 16px keeps iOS Safari from zooming the page when the field is focused. */
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.15s var(--v2-ease), box-shadow 0.15s var(--v2-ease), opacity 0.15s var(--v2-ease);
+}
+
+.input::placeholder {
+  color: #7b7f81;
+}
+
+.input:hover {
+  border-color: var(--v2-frost-hover);
+}
+
+.input:focus-visible {
+  border-color: var(--v2-orange);
+  box-shadow: 0 0 0 3px var(--v2-orange-glow);
+}
+
+.input[aria-invalid='true'] {
+  border-color: #ff8a8a;
+}
+
+.input:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.row .submit {
+  flex: none;
+  justify-content: center;
+  height: 48px;
+  padding: 0 26px;
+}
+
+.row .submit:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.row .submit:disabled,
+.row .submit:disabled:hover {
+  background: var(--v2-orange);
+  opacity: 0.6;
+  cursor: progress;
+  transform: none;
+}
+
+.error {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #ff9d9d;
+}
+
+.note {
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #8a8d8f;
+}
+
+/* ── Success state ────────────────────────────────── */
+
+.success {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 18px;
+  padding: 18px 20px;
+  border: 1px solid rgba(17, 255, 153, 0.28);
+  border-radius: var(--v2-r);
+  background: var(--v2-green-soft);
+  outline: none;
+}
+
+.successDot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  margin-top: 7px;
+  border-radius: 50%;
+  background: var(--v2-green);
+}
+
+.successTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--v2-text);
+  margin-bottom: 4px;
+}
+
+.successText {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--v2-muted);
+}
+
+/* ── Status cards and "What you can use today" cards ── */
+
+.statusGrid,
+.todayGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 8px;
+}
+
+/* Each card sits inside a scroll-reveal wrapper: stretch both so cards in a row share one height. */
+.statusGrid > *,
+.todayGrid > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.statusGrid > * > *,
+.todayGrid > * > * {
+  flex: 1;
+}
+
+.todayCard {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 24px;
+  border: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r-lg);
+  transition: background 0.2s var(--v2-ease), border-color 0.2s var(--v2-ease);
+}
+
+.todayCard:hover {
+  background: rgba(255, 255, 255, 0.018);
+  border-color: var(--v2-frost-hover);
+}
+
+.todayCard:focus-visible {
+  outline: 2px solid var(--v2-orange);
+  outline-offset: 3px;
+}
+
+.todayTitle {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: var(--v2-text);
+  margin-bottom: 10px;
+}
+
+.todayDesc {
+  flex: 1;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--v2-muted);
+}
+
+.todayCta {
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--v2-orange);
+}
+
+@media (max-width: 960px) {
+  .statusGrid,
+  .todayGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .panel {
+    padding: 24px 20px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  /* In a column, "flex: 1" would shrink the field to zero height; keep the set height. */
+  .row .input {
+    flex: none;
+  }
+  .row .submit {
+    width: 100%;
+  }
+}
