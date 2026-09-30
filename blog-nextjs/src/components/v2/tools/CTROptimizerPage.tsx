@@ -29,8 +29,8 @@ const howSteps = [
   },
   {
     n: '03',
-    title: 'Connect YouTube to measure',
-    desc: 'Add your real impressions and click-through rate. Change a thumbnail or a title, then compare the same video before and after.',
+    title: 'Connect YouTube for real numbers',
+    desc: 'The audit adds each video’s real impressions and click-through rate, straight from YouTube.',
   },
 ];
 
@@ -195,7 +195,7 @@ export default function CTROptimizerPage() {
                 <p className="v2-tool-bridge-text">
                   Audit first. When a thumbnail needs work, the AI Thumbnail Studio
                   makes new ones in your channel&apos;s saved style: your brand kit and
-                  your face. Then connect YouTube and see what your real numbers say.
+                  your face. Connect YouTube and the audit shows each video&apos;s real numbers.
                 </p>
                 <div className="v2-tool-bridge-links">
                   <a

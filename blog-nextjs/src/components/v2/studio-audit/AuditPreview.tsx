@@ -48,8 +48,8 @@ export default function AuditPreview() {
       <div className={styles.connected}>
         <span className={styles.dot} aria-hidden />
         <span>
-          <strong>With YouTube connected:</strong> your real impressions and real click-through
-          rate, so you can measure the same video before and after a change.
+          <strong>With YouTube connected:</strong> each video&apos;s real impressions and real
+          click-through rate, straight from YouTube.
         </span>
       </div>
     </figure>

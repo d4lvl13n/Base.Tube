@@ -221,8 +221,8 @@ export default function ThumbnailTesterPage() {
                   rate (CTR), which is the share of people who saw a thumbnail and clicked it.
                 </p>
                 <p>
-                  Connect your channel and Base.Tube&apos;s free audit shows real impressions and CTR for your videos,
-                  including how CTR changed before and after you swapped a thumbnail. Need more versions to test? Generate
+                  Connect your channel and Base.Tube&apos;s free audit shows the real impressions and CTR of each of your
+                  videos. To compare versions of one video, use YouTube&apos;s own A/B test. Need more versions to test? Generate
                   them in the Studio.
                 </p>
                 <div className={styles.nextActions}>

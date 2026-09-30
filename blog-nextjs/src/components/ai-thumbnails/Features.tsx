@@ -8,7 +8,7 @@ const FEATURES = [
   { Icon: MessageSquareText, title: 'Edits in plain words', text: '“Brighter sky, bigger title.” Done.' },
   { Icon: ScanSearch, title: 'Thumbnail review', text: 'A score from 1 to 10 and exactly what to change.' },
   { Icon: BarChart3, title: 'Channel review', text: 'Your channel’s thumbnails next to channels your size.' },
-  { Icon: Youtube, title: 'YouTube connection', text: 'Your real clicks and impressions, before and after.' },
+  { Icon: Youtube, title: 'YouTube connection', text: 'Each video’s real impressions and click rate, in your review.' },
 ];
 
 export default function Features() {

@@ -29,8 +29,8 @@ export default function ToolsPage() {
               </h1>
               <p className="v2-cp-sub" style={{ maxWidth: 540 }}>
                 Every video you publish gets one chance to earn a click. These tools
-                help you make a stronger thumbnail and title. Connect YouTube, and you
-                can see in your own numbers whether a change worked.
+                help you make a stronger thumbnail and title. Connect YouTube, and the
+                audit shows each video&apos;s real impressions and click-through rate.
               </p>
             </ScrollReveal>
           </div>
@@ -67,9 +67,8 @@ export default function ToolsPage() {
                     own videos, not a number out of 100.
                   </p>
                   <p className="v2-tools-showcase-desc" style={{ marginTop: 12 }}>
-                    Connect YouTube and the audit also shows your real impressions and
-                    real click-through rate. Change a thumbnail, then check the result
-                    in your own data.
+                    Connect YouTube and the audit also shows each video&apos;s real
+                    impressions and real click-through rate, straight from YouTube.
                   </p>
                   <div className="v2-tools-showcase-meta">
                     <span className="v2-tools-showcase-free">Free channel audit</span>

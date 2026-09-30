@@ -126,8 +126,8 @@ export default function VideoToThumbnailPage() {
               </div>
               <p className={s.honest}>
                 <strong>One honest limit.</strong> No tool, this one included, can tell you which frame
-                will get more clicks. Only a real test on YouTube can. Base.Tube measures that for you
-                when you connect your channel.
+                will get more clicks. Only a real test on YouTube can, such as YouTube&apos;s own A/B test.
+                Connect your channel and Base.Tube&apos;s audit shows each video&apos;s real click-through rate.
               </p>
             </ScrollReveal>
           </div>

@@ -225,7 +225,7 @@ export default function TitleCheckerPage() {
                 <p className="v2-tool-bridge-text">
                   This tool does not score your title and cannot predict clicks. Nothing can, from text alone. The only
                   real test is how a title and thumbnail perform on YouTube, in your own impressions and click-through
-                  rate. Base.Tube measures that for you when you connect your channel.
+                  rate. Connect your channel and Base.Tube&apos;s audit shows each video&apos;s real numbers.
                 </p>
                 <div className="v2-tool-bridge-links">
                   <a className="v2-btn v2-btn-primary" href={STUDIO_GENERATE}>

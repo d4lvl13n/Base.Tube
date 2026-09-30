@@ -187,7 +187,7 @@ export function landingFaq(catalog: SubscriptionCatalog | null): FaqItem[] {
     {
       question: 'Will this increase my views?',
       answer:
-        'We can’t promise that, and anyone who does is guessing. Better thumbnails give your video a better chance. Connect YouTube to see your real click rate before and after.',
+        'We can’t promise that, and anyone who does is guessing. Better thumbnails give your video a better chance. Connect YouTube to see each video’s real click rate.',
     },
     {
       question: 'Will it look AI-made?',

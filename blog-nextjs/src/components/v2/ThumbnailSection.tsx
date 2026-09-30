@@ -51,7 +51,7 @@ export default function ThumbnailSection() {
           </h2>
           <p>
             See how your thumbnails and titles read, make new ones in your own style,
-            and check the result in your real YouTube numbers. Grow first, monetize
+            and see each video&apos;s real numbers once YouTube is connected. Grow first, monetize
             when you&apos;re ready.
           </p>
         </motion.div>

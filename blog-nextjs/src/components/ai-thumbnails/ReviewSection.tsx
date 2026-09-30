@@ -103,8 +103,8 @@ export default function ReviewSection({ freeReviews }: { freeReviews: number | n
                 Measured, <span className="text-[#ff9a3c]">not predicted.</span>
               </p>
               <p className="mt-2 text-base text-zinc-400">
-                No one can predict your click rate from one image, so we don&apos;t. Connect YouTube and see your real numbers before and after
-                you change a thumbnail.
+                No one can predict your click rate from one image, so we don&apos;t. Connect YouTube and the review shows each video&apos;s
+                real impressions and click rate.
               </p>
             </div>
             <div className="mt-8 flex flex-wrap items-center gap-4">

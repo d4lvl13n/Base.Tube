@@ -99,7 +99,7 @@ export default function StudioDemo() {
             })}
           </ol>
           <p className="mt-8 text-sm text-zinc-500">
-            Example with a made-up channel. On Pro, connect YouTube to see your real click rate before and after.
+            Example with a made-up channel. Connect YouTube to see each video’s real click rate.
           </p>
         </div>
 

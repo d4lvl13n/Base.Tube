@@ -25,11 +25,11 @@ export const auditFaqs: Faq[] = [
   },
   {
     q: 'How do I know if a thumbnail change worked?',
-    a: 'Connect YouTube. Base.Tube then shows your real impressions and your real click-through rate, so you can compare the same video before and after you change its thumbnail or title. Give each version enough time and views before you judge it.',
+    a: 'Use YouTube’s own A/B test (Test & Compare), which shows versions of one video to real viewers. Connect YouTube to Base.Tube and the audit also shows each video’s real impressions and click-through rate. Give each version enough time and views before you judge it.',
   },
   {
     q: 'What does connecting my YouTube channel add?',
-    a: 'Your real impressions and your real click-through rate, straight from YouTube. That is what turns "I think this is better" into a measured before and after.',
+    a: 'Each video’s real impressions and real click-through rate, straight from YouTube, added to your audit.',
   },
   {
     q: 'Is the channel audit free?',
@@ -60,7 +60,7 @@ export const studioFaqs: Faq[] = [
   },
   {
     q: 'Will an AI thumbnail get me more clicks?',
-    a: 'We do not predict click-through rate, so we do not promise a lift. The Studio helps you make thumbnails you are happy with, fast. To learn what works for your audience, connect YouTube: Base.Tube shows your real impressions and click-through rate so you can compare before and after.',
+    a: 'We do not predict click-through rate, so we do not promise a lift. The Studio helps you make thumbnails you are happy with, fast. To learn what works for your audience, test versions with YouTube’s own A/B test, and connect YouTube to see each video’s real impressions and click-through rate.',
   },
 ];
 
