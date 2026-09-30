@@ -11,7 +11,7 @@ const videoById = new Map(EXAMPLE.videos.map((video) => [video.id, video]));
 const observationCount = EXAMPLE.videos.reduce((sum, video) => sum + video.observed.length, 0);
 
 /**
- * The example report, laid out like a printed sheet: the app's sections in the app's order
+ * The example report, on one dark sheet: the app's sections in the app's order
  * (Positioning, Evidence board, Experiments to run, Swipe file). The evidence board shows one video
  * at a time, picked from the channel's row of thumbnails; every panel is in the server's HTML.
  */
@@ -64,11 +64,11 @@ export default function ExampleAudit() {
         </div>
 
         <Reveal y={40} duration={1} amount={0.05}>
-          <article aria-label="Example channel audit of Sam’s Garage" className="ca-paper mt-14 overflow-hidden rounded-[28px]">
+          <article aria-label="Example channel audit of Sam’s Garage" className="ca-sheet mt-14 overflow-hidden rounded-[28px]">
             {/* Sheet header */}
             <header className="ca-rule flex flex-wrap items-center justify-between gap-4 border-b px-5 py-5 sm:px-10">
               <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#141416] text-base font-bold text-[#f3efe7]">S</span>
+                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#fa7517]/15 text-base font-bold text-[#ff9a3c] ring-1 ring-[#fa7517]/30">S</span>
                 <div className="leading-tight">
                   <p className="text-base font-bold">{EXAMPLE.channel}</p>
                   <p className="ca-ink-soft text-sm">
@@ -77,7 +77,7 @@ export default function ExampleAudit() {
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <span className="ca-label rounded-md border border-[#141416]/15 px-2 py-1 text-[#141416]/70">Public data</span>
+                <span className="ca-label rounded-md border border-white/15 px-2 py-1 text-zinc-300">Public data</span>
                 <span className="ca-label rounded-md bg-[#fa7517] px-2 py-1 text-white">Example</span>
               </div>
             </header>
@@ -170,7 +170,7 @@ export default function ExampleAudit() {
                               <ul className="mt-3 space-y-2">
                                 {video.observed.map((fact) => (
                                   <li key={fact} className="flex gap-2.5 text-[15px] leading-snug">
-                                    <span className="mt-[9px] h-1 w-1 shrink-0 rounded-full bg-[#141416]/45" aria-hidden="true" />
+                                    <span className="mt-[9px] h-1 w-1 shrink-0 rounded-full bg-zinc-500" aria-hidden="true" />
                                     {fact}
                                   </li>
                                 ))}
@@ -184,7 +184,7 @@ export default function ExampleAudit() {
                               {experiment && (
                                 <a
                                   href={`#ca-experiment-${experiment.priority}`}
-                                  className="ca-brief mt-4 inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold text-[#b8430b] transition-colors hover:bg-[#fa7517]/15"
+                                  className="ca-brief mt-4 inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold text-[#ff9a3c] transition-colors hover:bg-[#fa7517]/15"
                                 >
                                   <FlaskConical className="h-4 w-4" aria-hidden="true" />
                                   Experiment {experiment.priority}: {experiment.title}
@@ -251,7 +251,7 @@ export default function ExampleAudit() {
                               key={id}
                               type="button"
                               onClick={() => showVideo(id)}
-                              className="inline-flex max-w-full cursor-pointer items-center gap-2 rounded-lg border border-[#141416]/15 bg-white/60 py-1 pl-1 pr-3 text-left text-xs font-medium transition-colors hover:border-[#fa7517]/60"
+                              className="inline-flex max-w-full cursor-pointer items-center gap-2 rounded-lg border border-white/10 bg-white/[0.04] py-1 pl-1 pr-3 text-left text-xs font-medium transition-colors hover:border-[#fa7517]/60"
                             >
                               <Image src={video.src} alt="" width={1280} height={720} sizes="48px" loading="lazy" className="aspect-video w-12 shrink-0 rounded object-cover" />
                               <span className="truncate">{video.title}</span>
@@ -276,13 +276,13 @@ export default function ExampleAudit() {
               </div>
               <div className="lg:col-span-9">
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="rounded-lg border border-[#141416]/15 px-2.5 py-1 text-xs font-semibold">{EXAMPLE.swipeFile.size}</span>
+                  <span className="rounded-lg border border-white/15 px-2.5 py-1 text-xs font-semibold">{EXAMPLE.swipeFile.size}</span>
                   <span className="ca-ink-soft ml-2 inline-flex items-center gap-1.5 text-xs">
                     <Search className="h-3.5 w-3.5" aria-hidden="true" />
                     Found via:
                   </span>
                   {EXAMPLE.swipeFile.searchQueries.map((query) => (
-                    <span key={query} className="ca-mono rounded-md bg-[#141416]/[0.06] px-2 py-1 text-xs">
+                    <span key={query} className="ca-mono rounded-md bg-white/[0.06] px-2 py-1 text-xs text-zinc-300">
                       {query}
                     </span>
                   ))}

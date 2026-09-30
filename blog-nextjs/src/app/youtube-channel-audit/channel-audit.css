@@ -40,11 +40,11 @@
 
 .ca {
   --ca-orange: #fa7517;
-  --ca-paper: #f3efe7;
-  --ca-ink: #141416;
-  --ca-ink-soft: #55555c;
-  --ca-rule: rgba(20, 20, 22, 0.13);
-  --ca-orange-ink: #b8430b;
+  --ca-sheet: #0d0d11;
+  --ca-ink: #f4f4f5;
+  --ca-ink-soft: #a1a1aa;
+  --ca-rule: rgba(255, 255, 255, 0.09);
+  --ca-orange-ink: #ff9a3c;
 }
 
 /* Small uppercase labels inside the report (the app's own labels: Observed, Hypothesis...). */
@@ -61,27 +61,21 @@
   font-feature-settings: 'tnum' 1;
 }
 
-/* ---- The report sheet (the example audit): printed paper on the dark page ---------------- */
+/* ---- The report sheet (the example audit and the hero card): the page's dark card surface -- */
 
-.ca-paper {
-  background: var(--ca-paper);
+.ca-sheet {
+  background: var(--ca-sheet);
   color: var(--ca-ink);
-  box-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.6) inset,
-    0 50px 120px -40px rgba(0, 0, 0, 0.9),
-    0 0 0 1px rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 50px 120px -40px rgba(0, 0, 0, 0.9);
 }
-.ca-paper .ca-rule { border-color: var(--ca-rule); }
+.ca-sheet .ca-rule { border-color: var(--ca-rule); }
 .ca-ink-soft { color: var(--ca-ink-soft); }
 .ca-orange-ink { color: var(--ca-orange-ink); }
 
 /* The hedged hypothesis: dashed and italic, as in the app. */
 .ca-hypothesis {
-  border: 1.5px dashed rgba(20, 20, 22, 0.28);
-  background: rgba(20, 20, 22, 0.025);
-}
-.ca-hypothesis-dark {
-  border: 1.5px dashed rgba(255, 255, 255, 0.22);
+  border: 1.5px dashed rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.02);
 }
 .ca-brief {

@@ -40,7 +40,7 @@ export default function Hero() {
               See what is really on your thumbnails, and what to test next.
             </p>
             <p className="mt-5 max-w-xl text-lg text-zinc-400">
-              Paste your channel. Base.Tube pulls your latest videos, reads their thumbnails and titles closely and writes them up in
+              Add your channel. Base.Tube pulls your latest videos, reads their thumbnails and titles closely and writes them up in
               plain words: the facts on each, what might be holding it back, and the experiments to run. No score, no click prediction.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-x-7 gap-y-4">
@@ -86,8 +86,8 @@ export default function Hero() {
             </ol>
           </div>
 
-          {/* One card of the evidence board, as the report prints it. */}
-          <div className="ca-paper relative z-10 ml-auto w-full overflow-hidden rounded-2xl sm:-mt-5 sm:w-[86%] lg:rotate-[1.2deg]">
+          {/* One card of the evidence board, as the report shows it. */}
+          <div className="ca-sheet relative z-10 ml-auto w-full overflow-hidden rounded-2xl sm:-mt-5 sm:w-[86%] lg:rotate-[1.2deg]">
             <Image
               src={HERO_VIDEO.src}
               alt={HERO_VIDEO.alt}
@@ -103,7 +103,7 @@ export default function Hero() {
               <ul className="mt-2 space-y-1.5">
                 {HERO_VIDEO.observed.slice(0, 3).map((fact, index) => (
                   <li key={fact} className="ca-seq flex gap-2 text-[13px] leading-snug" style={delay(0.9 + index * 0.45)}>
-                    <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-[#141416]/40" />
+                    <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-zinc-500" />
                     {fact}
                   </li>
                 ))}
