@@ -9,7 +9,15 @@ export const SAMPLE_TITLE = '3 mistakes that cost me a year';
 
 const W = 1280;
 const H = 720;
-const FONT = 'Inter, "Helvetica Neue", Arial, sans-serif';
+const FALLBACK_FONTS = '"Helvetica Neue", Arial, sans-serif';
+// Inter comes from next/font under its own family name, which the root layout puts in --font-inter
+// on <body>; the canvas asks for that name (read in the browser, just before drawing).
+let FONT = `Inter, ${FALLBACK_FONTS}`;
+
+function readInterFamily(): string {
+  const inter = getComputedStyle(document.body).getPropertyValue('--font-inter').trim();
+  return inter ? `${inter}, ${FALLBACK_FONTS}` : FONT;
+}
 
 function roundRect(ctx: CanvasRenderingContext2D, x: number, y: number, w: number, h: number, r: number) {
   ctx.beginPath();
@@ -112,8 +120,9 @@ function sampleC(ctx: CanvasRenderingContext2D) {
 const DRAWERS = [sampleA, sampleB, sampleC];
 
 export async function makeSampleFiles(): Promise<File[]> {
+  FONT = readInterFamily();
   try {
-    await Promise.all([document.fonts.load(`800 100px Inter`), document.fonts.load(`600 60px Inter`)]);
+    await Promise.all([document.fonts.load(`800 100px ${FONT}`), document.fonts.load(`600 60px ${FONT}`)]);
   } catch {
     /* fall back to the system font */
   }

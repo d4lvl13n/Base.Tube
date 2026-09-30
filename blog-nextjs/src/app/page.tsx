@@ -1,34 +1,42 @@
-import { Metadata } from 'next';
-import V2LandingPage from '@/components/v2/LandingPage';
+import type { Metadata } from 'next';
+import HomePage from '@/components/home/HomePage';
+import './home.css';
+
+const PAGE_URL = 'https://base.tube';
+// The brand is already in the title: skip the layout's "%s | Base.Tube" template.
+const TITLE = 'Base.Tube: Stop Renting Fans. Own Your Audience.';
+const DESCRIPTION =
+  'On the big platforms your fans are a number the platform keeps. On Base.Tube they buy your work directly with a Content Pass, and every buyer stays yours.';
+const OG_IMAGE = { url: '/images/og-home.jpg', width: 1200, height: 630, alt: 'Base.Tube: Stop renting fans. Own your audience.', type: 'image/jpeg' };
 
 export const metadata: Metadata = {
-  // absolute: the brand is already in the text, so skip the layout's "%s | Base.Tube" template
-  title: { absolute: 'Base.Tube — Where Creators Build Their Economy' },
-  description: 'The creator monetization platform built on ownership. Fans buy once and own their access forever — transferable, never expiring. Creators keep 90%.',
-  keywords: 'creator monetization, content pass, creator economy, fan ownership, Base.Tube, transferable access',
-  authors: [{ name: 'Base.Tube' }],
+  title: { absolute: TITLE },
+  description: DESCRIPTION,
+  keywords: 'own your audience, sell directly to fans, Content Pass, creator platform, creator hub, Base.Tube',
+  alternates: {
+    canonical: PAGE_URL,
+    types: { 'application/rss+xml': `${PAGE_URL}/feed.xml` },
+  },
   openGraph: {
     type: 'website',
-    url: 'https://base.tube/',
-    title: 'Base.Tube — Where Creators Build Their Economy',
-    description: 'Own your audience. Fans buy once and own their access — yours to keep or transfer, never a monthly reset. Creators keep 90%.',
-    images: [
-      {
-        url: 'https://base.tube/images/og-card.webp',
-        width: 1200,
-        height: 630,
-        alt: 'Base.Tube — Creator Monetization Platform',
-      },
-    ],
+    url: PAGE_URL,
+    siteName: 'Base.Tube',
+    locale: 'en_US',
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Base.Tube — Where Creators Build Their Economy',
-    description: 'Own your audience. Fans buy once and own their access — yours to keep or transfer, never a monthly reset. Creators keep 90%.',
-    images: ['https://base.tube/images/og-card.webp'],
+    site: '@base_tube',
+    creator: '@base_tube',
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [{ url: OG_IMAGE.url, alt: OG_IMAGE.alt }],
   },
 };
 
-export default function HomePage() {
-  return <V2LandingPage />;
+// Organization and WebSite structured data come from the root layout (one of each on every page).
+export default function Home() {
+  return <HomePage />;
 }

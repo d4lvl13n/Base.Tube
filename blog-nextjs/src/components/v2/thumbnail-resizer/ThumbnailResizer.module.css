@@ -568,7 +568,7 @@
 }
 
 .previewsH {
-  font-family: 'DM Serif Display', Georgia, serif;
+  font-family: var(--font-dm-serif), Georgia, serif;
   font-size: clamp(24px, 2.8vw, 32px);
   font-weight: 400;
   letter-spacing: -0.5px;
@@ -619,7 +619,7 @@
 }
 
 .yt {
-  font-family: Roboto, Arial, 'Inter', sans-serif;
+  font-family: Roboto, Arial, var(--font-inter), sans-serif;
   background: #0f0f0f;
   border-radius: var(--v2-r);
   padding: 12px;
@@ -791,7 +791,7 @@
 }
 
 .ctaH {
-  font-family: 'DM Serif Display', Georgia, serif;
+  font-family: var(--font-dm-serif), Georgia, serif;
   font-size: clamp(26px, 3vw, 36px);
   font-weight: 400;
   letter-spacing: -0.6px;

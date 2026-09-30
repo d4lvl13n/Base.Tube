@@ -1,20 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { OrganizationStructuredData, WebSiteStructuredData } from "@/components/seo/StructuredData";
+import { dmSerifDisplay, geistMono, inter } from "@/lib/fonts";
 import "./globals.css";
 import "./v2.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://base.tube'),
@@ -104,7 +94,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://wp.base.tube" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${dmSerifDisplay.variable} ${geistMono.variable} antialiased`}
       >
         {/* Site-wide Structured Data */}
         <OrganizationStructuredData />
