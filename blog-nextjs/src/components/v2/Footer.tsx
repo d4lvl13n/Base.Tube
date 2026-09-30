@@ -52,9 +52,9 @@ export default function Footer() {
             Base<em>.</em>Tube
           </div>
           <p className="v2-footer-brand-tag">
-            The creator hub.
+            Stop renting fans.
             <br />
-            Publish, sell to your fans, grow.
+            Own your audience.
           </p>
           <div className="v2-footer-socials">
             {socials.map((s) => (

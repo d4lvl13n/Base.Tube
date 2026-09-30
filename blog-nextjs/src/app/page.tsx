@@ -5,15 +5,15 @@ import './home.css';
 
 const PAGE_URL = 'https://base.tube';
 // The brand is already in the title: skip the layout's "%s | Base.Tube" template.
-const TITLE = 'Base.Tube: The Creator Hub to Publish, Sell and Grow';
+const TITLE = 'Base.Tube: Stop Renting Fans. Own Your Audience.';
 const DESCRIPTION =
-  'Publish your films, courses and archives, sell them straight to your fans with a Content Pass, keep 90%, and grow with AI thumbnails and free tools.';
-const OG_IMAGE = { url: '/images/og-home.jpg', width: 1200, height: 630, alt: 'Base.Tube: Grow on the feed. Own your audience.', type: 'image/jpeg' };
+  'On the big platforms your fans are a number the platform keeps. On Base.Tube they buy your work directly with a Content Pass, and every buyer stays yours.';
+const OG_IMAGE = { url: '/images/og-home.jpg', width: 1200, height: 630, alt: 'Base.Tube: Stop renting fans. Own your audience.', type: 'image/jpeg' };
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESCRIPTION,
-  keywords: 'creator hub, Content Pass, sell videos to fans, creator platform, AI thumbnails, free YouTube tools, Base.Tube',
+  keywords: 'own your audience, sell directly to fans, Content Pass, creator platform, creator hub, Base.Tube',
   alternates: {
     canonical: PAGE_URL,
     types: { 'application/rss+xml': `${PAGE_URL}/feed.xml` },

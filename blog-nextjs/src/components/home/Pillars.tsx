@@ -147,23 +147,24 @@ const GROW = [
 ];
 
 /**
- * The hub's three pillars, not three equal cards: publish and sell (the pass a fan buys), know your
- * buyers (paid once, access for good, the relationship stays yours), grow (the tools).
+ * How Base.Tube gives the audience back, as proof of the conviction (the "How it works" anchor):
+ * sell directly (the pass a fan buys), know your buyers (the relationship and the list are yours),
+ * grow with built-in tools (one pillar of three, never the lead). Not three equal cards.
  */
 export default function Pillars() {
   return (
-    <section className="hp-section hp-pillars" aria-labelledby="home-pillars-title">
+    <section id="how-it-works" className="hp-section hp-pillars" aria-labelledby="home-pillars-title">
       <div className="hp-wrap">
-        <RevealHeading id="home-pillars-title" className="lp-heading hp-h2" lines={[['Publish, sell and grow.'], [{ accent: 'All in one hub.' }]]} />
+        <RevealHeading id="home-pillars-title" className="lp-heading hp-h2" lines={[['Base.Tube gives you'], [{ accent: 'your audience back.' }]]} />
 
         <article className="hp-way hp-pillar">
           <Reveal className="hp-way-text">
-            <h3 className="hp-h3">Publish and sell</h3>
+            <h3 className="hp-h3">Sell directly</h3>
             <p className="hp-way-lead">
-              Put your films, courses and archives on Base.Tube and sell them with a <strong>Content Pass</strong>.
+              Sell your films, courses and archives straight to your fans with a <strong>Content Pass</strong>.
             </p>
             <p className="hp-way-body">
-              Your videos are hosted on Base.Tube and play in a secure player. Fans pay once by card and watch straight away.
+              Fans pay once by card, watch straight away and keep access for good. You are paid upfront and keep 90%.
             </p>
             <Link href="/content-pass" className="hp-link">
               How Content Pass works
@@ -179,10 +180,10 @@ export default function Pillars() {
             <h3 className="hp-h3">Know your buyers</h3>
             <div>
               <p className="hp-way-lead">
-                Fans buy from you, not from a platform: <strong>the relationship is yours.</strong>
+                Fans buy from you, not from a platform: <strong>the relationship and the buyer list are yours.</strong>
               </p>
               <p className="hp-way-body">
-                What they buy stays in their library for good, like a film they bought. You are paid upfront and keep 90% of every sale.
+                What they buy stays in their library for good, like a film they bought. Here is how that differs from a membership.
               </p>
             </div>
           </Reveal>
@@ -193,8 +194,8 @@ export default function Pillars() {
 
         <article className="hp-way hp-pillar">
           <Reveal className="hp-way-text">
-            <h3 className="hp-h3">Grow</h3>
-            <p className="hp-way-lead">Built-in tools to win the click on YouTube and bring viewers to your work.</p>
+            <h3 className="hp-h3">Grow with built-in tools</h3>
+            <p className="hp-way-lead">Reach new viewers on YouTube, then bring them to your work.</p>
             <ul className="hp-grow">
               {GROW.map((tool) => (
                 <li key={tool.name}>
