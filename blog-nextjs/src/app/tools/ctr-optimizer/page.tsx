@@ -1,14 +1,16 @@
-import { Metadata } from 'next';
-import CTROptimizerPage, { ctrFaqs } from '@/components/v2/tools/CTROptimizerPage';
+import type { Metadata } from 'next';
+import CtrOptimizerPage from '@/components/ctr-optimizer/CtrOptimizerPage';
+import { CTR_FAQ } from '@/components/ctr-optimizer/content';
+// The AI Thumbnails page's type, buttons, motion and FAQ styles (all scoped to .lp or lp- names).
+import '../../ai-thumbnails/ai-thumbnails.css';
 
 // The URL keeps its old slug (/tools/ctr-optimizer) to preserve existing URL equity.
-// The page is an honest "in development" page for Base.Tube's own CTR AI. The free
-// channel audit now lives at /youtube-channel-audit.
+// The page is an honest "in development" page for Base.Tube's own CTR AI, with a waitlist.
 // Titles must NOT contain the brand: the root layout template appends " | Base.Tube".
 const PAGE_URL = 'https://base.tube/tools/ctr-optimizer';
 const TITLE = 'YouTube CTR AI: In Development';
 const DESCRIPTION =
-  'Base.Tube is building its own AI to analyze YouTube thumbnails and click-through rate. It is not released yet. Get notified when it launches.';
+  'Which thumbnail gets the click? Base.Tube is teaching its own AI to answer that. It isn’t good enough to trust yet, so it isn’t released. Get notified.';
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -56,13 +58,14 @@ const webPage = {
   description: DESCRIPTION,
 };
 
+// The same list the page shows (CTR_FAQ), word for word.
 const faqPage = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: ctrFaqs.map((f) => ({
+  mainEntity: CTR_FAQ.map((item) => ({
     '@type': 'Question',
-    name: f.q,
-    acceptedAnswer: { '@type': 'Answer', text: f.a },
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer },
   })),
 };
 
@@ -71,7 +74,7 @@ export default function CTROptimizerRoute() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(webPage)} />
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(faqPage)} />
-      <CTROptimizerPage />
+      <CtrOptimizerPage />
     </>
   );
 }

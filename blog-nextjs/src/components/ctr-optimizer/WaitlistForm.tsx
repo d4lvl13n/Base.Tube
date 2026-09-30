@@ -4,7 +4,9 @@
 // Posts client-side to the same Formspree endpoint the newsletter signup uses.
 
 import { useEffect, useId, useRef, useState, type FormEvent } from 'react';
-import styles from './ctrWaitlist.module.css';
+import { Check } from 'lucide-react';
+import { primaryButton } from '@/components/ai-thumbnails/Buttons';
+import styles from './ctr.module.css';
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mvgrqevw';
 const LIST_ID = 'ctr-engine-waitlist';
@@ -19,11 +21,11 @@ type ErrorKind = 'invalid' | 'failed';
 
 const MESSAGES = {
   empty: 'Enter your email address.',
-  invalid: 'That email address does not look right. Check it and try again.',
-  failed: 'We could not save your email. Check your connection and try again.',
+  invalid: 'That email address doesn’t look right. Check it and try again.',
+  failed: 'We couldn’t save your email. Check your connection and try again.',
 } as const;
 
-export default function CtrWaitlistForm() {
+export default function WaitlistForm() {
   const uid = useId();
   const inputId = `${uid}-email`;
   const noteId = `${uid}-note`;
@@ -88,57 +90,61 @@ export default function CtrWaitlistForm() {
 
   const sending = status === 'sending';
 
-  return (
-    <div className={styles.panel} id="get-notified">
-      <h2 className={styles.panelTitle}>Get notified when it launches</h2>
-
-      {status === 'success' ? (
+  if (status === 'success') {
+    return (
+      <div id="get-notified" className={styles.formArea}>
         <div className={styles.success} role="status" tabIndex={-1} ref={successRef}>
-          <span className={styles.successDot} aria-hidden />
+          <span className={styles.successIcon} aria-hidden="true">
+            <Check strokeWidth={3} />
+          </span>
           <div>
-            <p className={styles.successTitle}>You are on the list.</p>
-            <p className={styles.successText}>We&apos;ll email you when the CTR AI launches.</p>
+            <p className={styles.successTitle}>You’re on the list.</p>
+            <p className={styles.successText}>We’ll email you when the CTR AI launches.</p>
           </div>
         </div>
-      ) : (
-        <form className={styles.form} onSubmit={handleSubmit} noValidate aria-busy={sending}>
-          <input type="hidden" name="list" value={LIST_ID} />
+      </div>
+    );
+  }
 
-          <label className={styles.label} htmlFor={inputId}>
-            Email address
-          </label>
-          <div className={styles.row}>
-            <input
-              ref={inputRef}
-              id={inputId}
-              className={styles.input}
-              type="email"
-              name="email"
-              inputMode="email"
-              autoComplete="email"
-              placeholder="you@example.com"
-              required
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-              disabled={sending}
-              aria-invalid={error?.kind === 'invalid'}
-              aria-describedby={error ? `${errorId} ${noteId}` : noteId}
-            />
-            <button type="submit" className={`v2-btn v2-btn-primary ${styles.submit}`} disabled={sending}>
-              {sending ? 'Sending…' : 'Get notified'}
-            </button>
-          </div>
+  return (
+    <div id="get-notified" className={styles.formArea}>
+      <form onSubmit={handleSubmit} noValidate aria-busy={sending}>
+        <input type="hidden" name="list" value={LIST_ID} />
 
-          {error && (
-            <p className={styles.error} id={errorId} role="alert">
-              {error.text}
-            </p>
-          )}
-          <p className={styles.note} id={noteId}>
-            We&apos;ll only email you when it launches.
+        <label className={styles.label} htmlFor={inputId}>
+          Email address
+        </label>
+        <div className={styles.field} data-invalid={error?.kind === 'invalid' ? '' : undefined}>
+          <input
+            ref={inputRef}
+            id={inputId}
+            className={styles.input}
+            type="email"
+            name="email"
+            inputMode="email"
+            autoComplete="email"
+            placeholder="you@example.com"
+            required
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+            disabled={sending}
+            aria-invalid={error?.kind === 'invalid'}
+            aria-describedby={error ? `${errorId} ${noteId}` : noteId}
+          />
+          <button type="submit" className={`${primaryButton} ${styles.submit}`} disabled={sending}>
+            {sending ? 'Sending…' : 'Get notified'}
+          </button>
+        </div>
+
+        {error && (
+          <p className={styles.error} id={errorId} role="alert">
+            {error.text}
           </p>
-        </form>
-      )}
+        )}
+        <p className={styles.note} id={noteId}>
+          We’ll only email you when it launches.
+        </p>
+      </form>
     </div>
   );
 }
