@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Styles de thumbnails gaming à valider</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; font:15px/1.45 system-ui,-apple-system,sans-serif; background:#0d0d10; color:#eee; }
+  header { position:sticky; top:0; z-index:5; background:#0d0d10ee; backdrop-filter:blur(8px); border-bottom:1px solid #222; padding:14px 24px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+  header h1 { font-size:18px; margin:0; }
+  header nav a { color:#ff8a3d; margin-right:12px; text-decoration:none; font-size:13px; }
+  .count { margin-left:auto; font-size:13px; color:#aaa; }
+  button { background:#ff7a1a; color:#000; border:0; border-radius:8px; padding:8px 14px; font-weight:700; cursor:pointer; }
+  main { padding:8px 24px 80px; max-width:1500px; margin:auto; }
+  .intro { color:#aaa; max-width:820px; }
+  h2 { margin:36px 0 14px; } h2 small { color:#888; font-weight:400; font-size:14px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:16px; }
+  .card { background:#16161b; border:2px solid #23232a; border-radius:12px; overflow:hidden; display:flex; flex-direction:column; }
+  .card.oui { border-color:#2ecc71; } .card.non { border-color:#e74c3c; opacity:.55; }
+  .img { display:block; aspect-ratio:16/9; background:#000; } .img img { width:100%; height:100%; object-fit:cover; display:block; }
+  .meta { padding:10px 12px 4px; } .ch { font-weight:700; } .ch span { color:#888; font-weight:400; font-size:13px; }
+  .t { font-size:13px; color:#ccc; margin-top:2px; } .v { font-size:12px; color:#777; margin-top:2px; }
+  .vote { display:flex; gap:8px; padding:8px 12px; }
+  .vote label { flex:1; border:1px solid #333; border-radius:8px; padding:7px 8px; font-size:13px; cursor:pointer; text-align:center; }
+  .vote input { margin-right:4px; }
+  .card.oui .yes { background:#1d3b2a; border-color:#2ecc71; } .card.non .no { background:#3b1d1d; border-color:#e74c3c; }
+  textarea { margin:0 12px 12px; background:#0f0f13; color:#ddd; border:1px solid #2a2a31; border-radius:8px; min-height:38px; padding:6px 8px; font:inherit; font-size:13px; resize:vertical; }
+  #out { width:100%; min-height:120px; margin-top:12px; display:none; }
+</style></head><body>
+<header>
+  <h1>Thumbnails gaming réelles : quels styles on garde ?</h1>
+  <nav><a href="#fortnite">Fortnite</a><a href="#gta-6">GTA 6 / GTA 5</a><a href="#minecraft">Minecraft</a><a href="#roblox">Roblox</a><a href="#gorilla-tag">Gorilla Tag</a><a href="#call-of-duty">Call of Duty</a><a href="#zelda-ocarina-of-time">Zelda: Ocarina of Time</a></nav>
+  <span class="count" id="count"></span>
+  <button id="export">Copier mes choix</button>
+</header>
+<main>
+  <p class="intro">35 vraies thumbnails, 5 par jeu, chacune d'un créateur différent, tous entre 20 000 et 2 millions d'abonnés (pas de géants).
+  Vidéos publiées ce mois-ci, récupérées le 22 octobre 2026 via Monid / TikHub. Cliquez sur une image pour ouvrir la vidéo.
+  Vos choix sont gardés dans ce navigateur ; « Copier mes choix » les met dans le presse-papiers pour me les coller.</p>
+  
+  <section id="fortnite">
+    <h2>Fortnite <small>5 thumbnails</small></h2>
+    <div class="grid">
+      <article class="card" data-key="fortnite:qXK4tlzbxRM">
+        <a href="https://www.youtube.com/watch?v=qXK4tlzbxRM" target="_blank" rel="noopener" class="img">
+          <img src="img/qXK4tlzbxRM.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">Dan D <span>1.1 M abonnés</span></div>
+          <div class="t">Fortnite&#x27;s ONE PIECE Chest is OPEN! (FINALLY)</div>
+          <div class="v">24 k vues · 17 hours ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="fortnite:qXK4tlzbxRM" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="fortnite:qXK4tlzbxRM" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="fortnite:NB-sO-xPnyY">
+        <a href="https://www.youtube.com/watch?v=NB-sO-xPnyY" target="_blank" rel="noopener" class="img">
+          <img src="img/NB-sO-xPnyY.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">Flow <span>67 k abonnés</span></div>
+          <div class="t">Fortnite Chapter 8 Could Bring Back FORTNITE&#x27;S PRIME… 🔥</div>
+          <div class="v">9 k vues · 16 hours ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="fortnite:NB-sO-xPnyY" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="fortnite:NB-sO-xPnyY" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="fortnite:t6LpnOg-WjA">
+        <a href="https://www.youtube.com/watch?v=t6LpnOg-WjA" target="_blank" rel="noopener" class="img">
+          <img src="img/t6LpnOg-WjA.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">Falco <span>118 k abonnés</span></div>
+          <div class="t">100 Day Competitive Fortnite Progression (Noob To Pro)</div>
+          <div class="v">57 k vues · 2 days ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="fortnite:t6LpnOg-WjA" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="fortnite:t6LpnOg-WjA" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="fortnite:QE9AWMVGxj8">
+        <a href="https://www.youtube.com/watch?v=QE9AWMVGxj8" target="_blank" rel="noopener" class="img">
+          <img src="img/QE9AWMVGxj8.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">Setty <span>408 k abonnés</span></div>
+          <div class="t">SETTY vs PRO MAPS in Fortnite</div>
+          <div class="v">68 k vues · 20 hours ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="fortnite:QE9AWMVGxj8" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="fortnite:QE9AWMVGxj8" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="fortnite:wf1lvrErPV8">
+        <a href="https://www.youtube.com/watch?v=wf1lvrErPV8" target="_blank" rel="noopener" class="img">
+          <img src="img/wf1lvrErPV8.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">dkay <span>20 k abonnés</span></div>
+          <div class="t">NEW Nikki (Obsession) SKIN! 140 Elimination &quot;RANKED RELOAD” Gameplay Wins (Fortnite Chapter 7)</div>
+          <div class="v">5 k vues · 8 hours ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="fortnite:wf1lvrErPV8" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="fortnite:wf1lvrErPV8" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+    </div>
+  </section>
+  <section id="gta-6">
+    <h2>GTA 6 / GTA 5 <small>5 thumbnails</small></h2>
+    <div class="grid">
+      <article class="card" data-key="gta-6:w-NGfFCIsK0">
+        <a href="https://www.youtube.com/watch?v=w-NGfFCIsK0" target="_blank" rel="noopener" class="img">
+          <img src="img/w-NGfFCIsK0.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">Hazard <span>711 k abonnés</span></div>
+          <div class="t">Rockstar Just Made A VERY Strange Decision... The NEW GTA Online UPDATE Today! (GTA5 New Update)</div>
+          <div class="v">51 k vues · 14 hours ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="gta-6:w-NGfFCIsK0" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="gta-6:w-NGfFCIsK0" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="gta-6:2KZEBJLNBOY">
+        <a href="https://www.youtube.com/watch?v=2KZEBJLNBOY" target="_blank" rel="noopener" class="img">
+          <img src="img/2KZEBJLNBOY.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">HarmNone and HarmNoneLIVE <span>440 k abonnés</span></div>
+          <div class="t">GTA 5 UPDATE | SUPER EASY $500K, NEW Discounts &amp; More!</div>
+          <div class="v">17 k vues · 15 hours ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="gta-6:2KZEBJLNBOY" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="gta-6:2KZEBJLNBOY" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="gta-6:jatakHuFsqA">
+        <a href="https://www.youtube.com/watch?v=jatakHuFsqA" target="_blank" rel="noopener" class="img">
+          <img src="img/jatakHuFsqA.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">Kreek and KreekCraft <span>555 k abonnés</span></div>
+          <div class="t">It&#x27;s finally happening.. (GTA 6)</div>
+          <div class="v">107 k vues · 9 hours ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="gta-6:jatakHuFsqA" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="gta-6:jatakHuFsqA" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="gta-6:enlPN-3HOkw">
+        <a href="https://www.youtube.com/watch?v=enlPN-3HOkw" target="_blank" rel="noopener" class="img">
+          <img src="img/enlPN-3HOkw.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">Trofees <span>156 k abonnés</span></div>
+          <div class="t">Can A New Player Make 1 BILLION Dollars in GTA Online? (Full Series)</div>
+          <div class="v">172 k vues · 4 weeks ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="gta-6:enlPN-3HOkw" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="gta-6:enlPN-3HOkw" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="gta-6:Q9pOPWe6t0M">
+        <a href="https://www.youtube.com/watch?v=Q9pOPWe6t0M" target="_blank" rel="noopener" class="img">
+          <img src="img/Q9pOPWe6t0M.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">Will Mac <span>25 k abonnés</span></div>
+          <div class="t">GTA 6 Turned Burger Shot Into A Real Restaurant... Wrappers And All!</div>
+          <div class="v">27 k vues · 11 hours ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="gta-6:Q9pOPWe6t0M" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="gta-6:Q9pOPWe6t0M" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+    </div>
+  </section>
+  <section id="minecraft">
+    <h2>Minecraft <small>5 thumbnails</small></h2>
+    <div class="grid">
+      <article class="card" data-key="minecraft:3n72DQR6WKk">
+        <a href="https://www.youtube.com/watch?v=3n72DQR6WKk" target="_blank" rel="noopener" class="img">
+          <img src="img/3n72DQR6WKk.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">halvetone <span>614 k abonnés</span></div>
+          <div class="t">I Survived 1000 Days in Minecraft Hardcore FULL MOVIE</div>
+          <div class="v">66 k vues · 3 days ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="minecraft:3n72DQR6WKk" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="minecraft:3n72DQR6WKk" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="minecraft:4cGunLzABbg">
+        <a href="https://www.youtube.com/watch?v=4cGunLzABbg" target="_blank" rel="noopener" class="img">
+          <img src="img/4cGunLzABbg.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">TheAetherGamer <span>145 k abonnés</span></div>
+          <div class="t">11 Important Things To Know If You Just Returned To Minecraft</div>
+          <div class="v">583 k vues · 3 weeks ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="minecraft:4cGunLzABbg" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="minecraft:4cGunLzABbg" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="minecraft:igtiPYWnnw8">
+        <a href="https://www.youtube.com/watch?v=igtiPYWnnw8" target="_blank" rel="noopener" class="img">
+          <img src="img/igtiPYWnnw8.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">Marco <span>54 k abonnés</span></div>
+          <div class="t">I Secretly Served a Minecraft God</div>
+          <div class="v">434 k vues · 4 days ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="minecraft:igtiPYWnnw8" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="minecraft:igtiPYWnnw8" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="minecraft:KTOVD7NB2Lk">
+        <a href="https://www.youtube.com/watch?v=KTOVD7NB2Lk" target="_blank" rel="noopener" class="img">
+          <img src="img/KTOVD7NB2Lk.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">GameRig <span>242 k abonnés</span></div>
+          <div class="t">Can a $1 MacBook Pro Run Minecraft?</div>
+          <div class="v">291 k vues · 2 weeks ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="minecraft:KTOVD7NB2Lk" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="minecraft:KTOVD7NB2Lk" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="minecraft:ZuhpG4hM5ec">
+        <a href="https://www.youtube.com/watch?v=ZuhpG4hM5ec" target="_blank" rel="noopener" class="img">
+          <img src="img/ZuhpG4hM5ec.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">Tootsie <span>834 k abonnés</span></div>
+          <div class="t">I Spent 100 DAYS As A FARMER In MINECRAFT Hardcore</div>
+          <div class="v">212 k vues · 4 days ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="minecraft:ZuhpG4hM5ec" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="minecraft:ZuhpG4hM5ec" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+    </div>
+  </section>
+  <section id="roblox">
+    <h2>Roblox <small>5 thumbnails</small></h2>
+    <div class="grid">
+      <article class="card" data-key="roblox:8_JsRiBnpsA">
+        <a href="https://www.youtube.com/watch?v=8_JsRiBnpsA" target="_blank" rel="noopener" class="img">
+          <img src="img/8_JsRiBnpsA.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">OTTER ON ROBLOX <span>762 k abonnés</span></div>
+          <div class="t">can you STOP THE TRAIN in Roblox...</div>
+          <div class="v">94 k vues · 1 day ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="roblox:8_JsRiBnpsA" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="roblox:8_JsRiBnpsA" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="roblox:UONix7WuTtk">
+        <a href="https://www.youtube.com/watch?v=UONix7WuTtk" target="_blank" rel="noopener" class="img">
+          <img src="img/UONix7WuTtk.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">More Techy <span>1.4 M abonnés</span></div>
+          <div class="t">Roblox WHERE DID I PARK...?</div>
+          <div class="v">383 k vues · 19 hours ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="roblox:UONix7WuTtk" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="roblox:UONix7WuTtk" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="roblox:6hNsRl9D_WY">
+        <a href="https://www.youtube.com/watch?v=6hNsRl9D_WY" target="_blank" rel="noopener" class="img">
+          <img src="img/6hNsRl9D_WY.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">Foltyn Universe <span>365 k abonnés</span></div>
+          <div class="t">I Broke 1,000 RULES in Roblox!</div>
+          <div class="v">520 k vues · 2 weeks ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="roblox:6hNsRl9D_WY" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="roblox:6hNsRl9D_WY" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="roblox:AhGHNl4ixPM">
+        <a href="https://www.youtube.com/watch?v=AhGHNl4ixPM" target="_blank" rel="noopener" class="img">
+          <img src="img/AhGHNl4ixPM.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">wantedhighly <span>28 k abonnés</span></div>
+          <div class="t">Roblox Made a NEW Headless Horseman</div>
+          <div class="v">33 k vues · 4 days ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="roblox:AhGHNl4ixPM" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="roblox:AhGHNl4ixPM" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="roblox:57ykBk3xG8o">
+        <a href="https://www.youtube.com/watch?v=57ykBk3xG8o" target="_blank" rel="noopener" class="img">
+          <img src="img/57ykBk3xG8o.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">Quacks <span>420 k abonnés</span></div>
+          <div class="t">I Built MAX LEVEL Military Empire Tycoon in Roblox!</div>
+          <div class="v">79 k vues · 3 days ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="roblox:57ykBk3xG8o" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="roblox:57ykBk3xG8o" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+    </div>
+  </section>
+  <section id="gorilla-tag">
+    <h2>Gorilla Tag <small>5 thumbnails</small></h2>
+    <div class="grid">
+      <article class="card" data-key="gorilla-tag:OTqixdTJ1iI">
+        <a href="https://www.youtube.com/watch?v=OTqixdTJ1iI" target="_blank" rel="noopener" class="img">
+          <img src="img/OTqixdTJ1iI.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">StyledSnail <span>374 k abonnés</span></div>
+          <div class="t">Hunted by EVERY COLOR Lucy in Gorilla Tag?</div>
+          <div class="v">4 k vues · 16 hours ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="gorilla-tag:OTqixdTJ1iI" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="gorilla-tag:OTqixdTJ1iI" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="gorilla-tag:PlEwePGF0Zs">
+        <a href="https://www.youtube.com/watch?v=PlEwePGF0Zs" target="_blank" rel="noopener" class="img">
+          <img src="img/PlEwePGF0Zs.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">Be Prepared <span>1.7 M abonnés</span></div>
+          <div class="t">We Added Aisles Of The Locust To Gorilla Tag...</div>
+          <div class="v">406 k vues · 3 days ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="gorilla-tag:PlEwePGF0Zs" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="gorilla-tag:PlEwePGF0Zs" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="gorilla-tag:FRND8l9e9RA">
+        <a href="https://www.youtube.com/watch?v=FRND8l9e9RA" target="_blank" rel="noopener" class="img">
+          <img src="img/FRND8l9e9RA.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">SuperCatCrazeGT <span>107 k abonnés</span></div>
+          <div class="t">I Taught a Gorilla How to Play Gorilla Tag (seriously)</div>
+          <div class="v">212 k vues · 4 days ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="gorilla-tag:FRND8l9e9RA" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="gorilla-tag:FRND8l9e9RA" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="gorilla-tag:iSdKeddNAjc">
+        <a href="https://www.youtube.com/watch?v=iSdKeddNAjc" target="_blank" rel="noopener" class="img">
+          <img src="img/iSdKeddNAjc.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">elli0t <span>176 k abonnés</span></div>
+          <div class="t">gorilla tag is cooked</div>
+          <div class="v">249 k vues · 11 days ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="gorilla-tag:iSdKeddNAjc" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="gorilla-tag:iSdKeddNAjc" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="gorilla-tag:yeFtOJRinQE">
+        <a href="https://www.youtube.com/watch?v=yeFtOJRinQE" target="_blank" rel="noopener" class="img">
+          <img src="img/yeFtOJRinQE.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">maxo <span>457 k abonnés</span></div>
+          <div class="t">I Added Minecraft Into Gorilla Tag</div>
+          <div class="v">478 k vues · 13 days ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="gorilla-tag:yeFtOJRinQE" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="gorilla-tag:yeFtOJRinQE" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+    </div>
+  </section>
+  <section id="call-of-duty">
+    <h2>Call of Duty (Warzone, Black Ops 7, MW4) <small>5 thumbnails</small></h2>
+    <div class="grid">
+      <article class="card" data-key="call-of-duty:6CSjEdCpo2k">
+        <a href="https://www.youtube.com/watch?v=6CSjEdCpo2k" target="_blank" rel="noopener" class="img">
+          <img src="img/6CSjEdCpo2k.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">klaw <span>164 k abonnés</span></div>
+          <div class="t">The #1 MOVEMENT LEGACY Meta on Warzone 👑 </div>
+          <div class="v">11 k vues · 20 hours ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="call-of-duty:6CSjEdCpo2k" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="call-of-duty:6CSjEdCpo2k" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="call-of-duty:JjXyon5z64U">
+        <a href="https://www.youtube.com/watch?v=JjXyon5z64U" target="_blank" rel="noopener" class="img">
+          <img src="img/JjXyon5z64U.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">Optimus <span>1.2 M abonnés</span></div>
+          <div class="t">Activision Admits Black Ops 7 Was A Failure</div>
+          <div class="v">92 k vues · 6 days ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="call-of-duty:JjXyon5z64U" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="call-of-duty:JjXyon5z64U" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="call-of-duty:yXrvoNSQ-Iw">
+        <a href="https://www.youtube.com/watch?v=yXrvoNSQ-Iw" target="_blank" rel="noopener" class="img">
+          <img src="img/yXrvoNSQ-Iw.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">UnitedG <span>94 k abonnés</span></div>
+          <div class="t">Call of Duty: Modern Warfare 4 Multiplayer Gameplay [4K]</div>
+          <div class="v">38 k vues · 21 hours ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="call-of-duty:yXrvoNSQ-Iw" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="call-of-duty:yXrvoNSQ-Iw" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="call-of-duty:XWNjFTNek2E">
+        <a href="https://www.youtube.com/watch?v=XWNjFTNek2E" target="_blank" rel="noopener" class="img">
+          <img src="img/XWNjFTNek2E.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">Top WARZONE Moments <span>674 k abonnés</span></div>
+          <div class="t">*NEW* WARZONE BEST HIGHLIGHTS! - Epic &amp; Funny Moments #196</div>
+          <div class="v">27 k vues · 2 days ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="call-of-duty:XWNjFTNek2E" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="call-of-duty:XWNjFTNek2E" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="call-of-duty:9wJg4ftSnAc">
+        <a href="https://www.youtube.com/watch?v=9wJg4ftSnAc" target="_blank" rel="noopener" class="img">
+          <img src="img/9wJg4ftSnAc.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">TheseKnivesOnly <span>1.8 M abonnés</span></div>
+          <div class="t">I ran around PIEING angry Black Ops 7 players 🤣</div>
+          <div class="v">86 k vues · 2 weeks ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="call-of-duty:9wJg4ftSnAc" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="call-of-duty:9wJg4ftSnAc" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+    </div>
+  </section>
+  <section id="zelda-ocarina-of-time">
+    <h2>Zelda: Ocarina of Time <small>5 thumbnails</small></h2>
+    <div class="grid">
+      <article class="card" data-key="zelda-ocarina-of-time:iZTjQxsCQmM">
+        <a href="https://www.youtube.com/watch?v=iZTjQxsCQmM" target="_blank" rel="noopener" class="img">
+          <img src="img/iZTjQxsCQmM.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">DPatriot <span>31 k abonnés</span></div>
+          <div class="t">Ocarina of Time Keeps Surprising Me...Even The Chickens Are Insane</div>
+          <div class="v">7 k vues · 20 hours ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="zelda-ocarina-of-time:iZTjQxsCQmM" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="zelda-ocarina-of-time:iZTjQxsCQmM" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="zelda-ocarina-of-time:EwrrliwFtQQ">
+        <a href="https://www.youtube.com/watch?v=EwrrliwFtQQ" target="_blank" rel="noopener" class="img">
+          <img src="img/EwrrliwFtQQ.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">BeatEmUps <span>1.9 M abonnés</span></div>
+          <div class="t">I OFFICIALLY Ranked EVERY ZELDA from BEST to WORST</div>
+          <div class="v">123 k vues · 15 hours ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="zelda-ocarina-of-time:EwrrliwFtQQ" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="zelda-ocarina-of-time:EwrrliwFtQQ" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="zelda-ocarina-of-time:_G9joPkP-4E">
+        <a href="https://www.youtube.com/watch?v=_G9joPkP-4E" target="_blank" rel="noopener" class="img">
+          <img src="img/_G9joPkP-4E.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">Kit &amp; Krysta <span>114 k abonnés</span></div>
+          <div class="t">Forgotten Development Lore About The Legend of Zelda: Ocarina of Time</div>
+          <div class="v">13 k vues · 19 hours ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="zelda-ocarina-of-time:_G9joPkP-4E" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="zelda-ocarina-of-time:_G9joPkP-4E" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="zelda-ocarina-of-time:zCtkJnOGJfc">
+        <a href="https://www.youtube.com/watch?v=zCtkJnOGJfc" target="_blank" rel="noopener" class="img">
+          <img src="img/zCtkJnOGJfc.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">AndresRestart <span>62 k abonnés</span></div>
+          <div class="t">Mysterious New Items &amp; Abilities In Ocarina Of Time Remake Uncovered!</div>
+          <div class="v">24 k vues · 14 hours ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="zelda-ocarina-of-time:zCtkJnOGJfc" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="zelda-ocarina-of-time:zCtkJnOGJfc" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+      <article class="card" data-key="zelda-ocarina-of-time:V3DZMP7zDTw">
+        <a href="https://www.youtube.com/watch?v=V3DZMP7zDTw" target="_blank" rel="noopener" class="img">
+          <img src="img/V3DZMP7zDTw.jpg" alt="" loading="lazy">
+        </a>
+        <div class="meta">
+          <div class="ch">PlayerEssence <span>140 k abonnés</span></div>
+          <div class="t">EXCITING Zelda Ocarina of Time Switch 2 Updates!</div>
+          <div class="v">18 k vues · 16 hours ago</div>
+        </div>
+        <div class="vote">
+          <label class="yes"><input type="radio" name="zelda-ocarina-of-time:V3DZMP7zDTw" value="oui"> On garde ce style</label>
+          <label class="no"><input type="radio" name="zelda-ocarina-of-time:V3DZMP7zDTw" value="non"> Non</label>
+        </div>
+        <textarea placeholder="Note (facultatif) : ce qui plaît ou pas…"></textarea>
+      </article>
+    </div>
+  </section>
+  <textarea id="out" readonly></textarea>
+</main>
+<script>
+const KEY='gaming-thumb-review-v1';
+const state=JSON.parse(localStorage.getItem(KEY)||'{}');
+const cards=[...document.querySelectorAll('.card')];
+function paint(){
+  let oui=0,non=0;
+  cards.forEach(c=>{const s=state[c.dataset.key]||{}; c.classList.toggle('oui',s.v==='oui'); c.classList.toggle('non',s.v==='non'); if(s.v==='oui')oui++; if(s.v==='non')non++;});
+  document.getElementById('count').textContent=`${oui} gardées · ${non} refusées · ${cards.length-oui-non} à voir`;
+}
+cards.forEach(c=>{
+  const k=c.dataset.key, s=state[k]||{};
+  c.querySelectorAll('input').forEach(i=>{ if(i.value===s.v) i.checked=true; i.addEventListener('change',()=>{state[k]={...state[k],v:i.value}; localStorage.setItem(KEY,JSON.stringify(state)); paint();}); });
+  const t=c.querySelector('textarea'); t.value=s.note||''; t.addEventListener('input',()=>{state[k]={...state[k],note:t.value}; localStorage.setItem(KEY,JSON.stringify(state));});
+});
+document.getElementById('export').onclick=async()=>{
+  const rows=cards.map(c=>{const s=state[c.dataset.key]||{}; return `${c.dataset.key} | ${s.v||'?'} | ${c.querySelector('.ch').firstChild.textContent.trim()} | ${(s.note||'').replace(/\n/g,' ')}`;});
+  const txt=rows.join('\n'); const out=document.getElementById('out'); out.style.display='block'; out.value=txt;
+  try{ await navigator.clipboard.writeText(txt); document.getElementById('export').textContent='Copié ✓'; }catch(e){ out.select(); }
+};
+paint();
+</script>
+</body></html>

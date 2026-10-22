@@ -28,7 +28,7 @@ export interface ContentIndex {
 export interface LiveIndex {
   note: string;
   hub: { updated: string } | null;
-  pages: { slug: string; updated: string }[];
+  pages: { slug: string; category: string; updated: string }[];
 }
 
 export const LIVE_INDEX_PATH: string;

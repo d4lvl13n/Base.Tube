@@ -7,6 +7,8 @@ import NavBar from '../NavBar';
 import ScrollReveal from '../ScrollReveal';
 import { article, defaultHeadings, disclaimerText, examplesNote, formatDate, lookName } from './copy';
 import Gallery, { type GalleryItem } from './Gallery';
+import { GAMING_HUB_SLUG, realExamples, SIBLING_COPY, siblingPages } from './games';
+import g from './games.module.css';
 import { BASE_PATH, GALLERY_INITIAL, STUDIO_AUDIT_URL, TOOL_LINKS } from './lib/config.mjs';
 import { getLivePages, getLoadedPage, type LoadedPage } from './lib/content.mjs';
 import { studioGenerateUrl, type ThumbnailPage } from './lib/schema.mjs';
@@ -46,10 +48,15 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
   const heroHref = studioGenerateUrl({ style: p.cta.style, ref: ref('hero') });
   const cover = p.gallery[0];
 
+  // Every page links to the other pages of its category (games, styles, genres); "related" then keeps the other categories.
+  const siblings = siblingPages(loaded);
+  const sib = SIBLING_COPY[p.category];
   const related = p.related
     .map((slug) => getLoadedPage(slug))
-    .filter((r): r is LoadedPage => Boolean(r?.live && r.page))
-    .map((r) => r.page as ThumbnailPage);
+    // A live page links to live pages only; a draft preview links to drafts too.
+    .filter((r): r is LoadedPage => Boolean(r?.page && (r.live || !loaded.live)))
+    .map((r) => r.page as ThumbnailPage)
+    .filter((r) => realExamples(r).length > 0 && r.category !== p.category);
   const listing = p.listing ? getLivePages().filter((l) => l.page?.category === p.listing && l.slug !== p.slug).map((l) => l.page as ThumbnailPage) : [];
 
   const galleryItems: GalleryItem[] = p.gallery.map((g, i) => ({
@@ -84,6 +91,11 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
                     <li>
                       <Link href={BASE_PATH}>Thumbnail ideas</Link>
                     </li>
+                    {p.category === 'game' && (
+                      <li>
+                        <Link href={`${BASE_PATH}/${GAMING_HUB_SLUG}`}>Gaming</Link>
+                      </li>
+                    )}
                     <li aria-current="page">{p.name}</li>
                   </ol>
                 </nav>
@@ -417,6 +429,44 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
             </div>
           </div>
         </section>
+
+        {/* ── SAME CATEGORY (more games / styles / genres) ─────── */}
+        {siblings.length > 0 && (
+          <>
+            <Sep />
+            <section className="v2-cp-section" aria-labelledby="siblings-h">
+              <div className="v2-container">
+                <div className={g.moreHead}>
+                  <div>
+                    <span className="v2-label">{sib.label}</span>
+                    <h2 id="siblings-h" className="v2-cp-section-h2">
+                      {sib.title}
+                    </h2>
+                  </div>
+                  <Link href={sib.allHref} className={g.seeAll}>
+                    {sib.allLabel} <span aria-hidden>→</span>
+                  </Link>
+                </div>
+                <ul className={g.moreGames}>
+                  {siblings.map((mg) => {
+                    const cover = realExamples(mg)[0];
+                    return (
+                      <li key={mg.slug}>
+                        <Link href={`${BASE_PATH}/${mg.slug}`} className={g.moreGame}>
+                          <span className={g.thumb}>
+                            <Image src={cover.src} alt={cover.alt} fill sizes="(max-width: 900px) 60vw, 280px" className={g.thumbImg} />
+                          </span>
+                          <span className={g.moreGameName}>{mg.name} thumbnails</span>
+                          <span className={g.moreGameMeta}>{realExamples(mg).length} examples</span>
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            </section>
+          </>
+        )}
 
         <Sep />
 

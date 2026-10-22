@@ -1,17 +1,25 @@
 /**
  * YouTube thumbnail specs and the pure checking logic used by the size checker.
  *
- * Every number below comes from YouTube Help, "Add custom thumbnails on YouTube"
- * (https://support.google.com/youtube/answer/72431), read on 29 September 2026.
- * When YouTube changes that page, update this file and CHECKED_ON_* below.
+ * Every upload rule below comes from YouTube Help, "Add custom thumbnails on YouTube"
+ * (https://support.google.com/youtube/answer/72431). First read on 29 September 2026,
+ * re-read on 22 October 2026 with no change. When YouTube changes that page, update
+ * this file and CHECKED_ON_* below.
+ *
+ * The on-screen sizes in MEASURED are our own measurements from a different day.
+ * They keep their own date (MEASURED_ON_*), so re-reading YouTube Help does not move it.
  */
 
 export type Mode = 'video' | 'short';
 export type Status = 'pass' | 'warn' | 'fail';
 export type CheckId = 'resolution' | 'ratio' | 'size' | 'format';
 
-export const CHECKED_ON_ISO = '2026-09-29';
-export const CHECKED_ON_LABEL = '29 September 2026';
+/** Date we last re-read YouTube Help and confirmed every upload rule on the page. */
+export const CHECKED_ON_ISO = '2026-10-22';
+export const CHECKED_ON_LABEL = '22 October 2026';
+/** Date we measured the sizes viewers see on youtube.com. Not re-measured since. */
+export const MEASURED_ON_ISO = '2026-09-29';
+export const MEASURED_ON_LABEL = '29 September 2026';
 export const SOURCE_URL = 'https://support.google.com/youtube/answer/72431';
 export const SOURCE_NAME = 'YouTube Help, "Add custom thumbnails on YouTube"';
 
@@ -245,7 +253,7 @@ export function checkImage(facts: ImageFacts, mode: Mode): CheckResult {
 
 /** Measured on youtube.com on 29 September 2026 (Chrome, signed out, en-US). CSS pixels. */
 export const MEASURED = {
-  date: CHECKED_ON_LABEL,
+  date: MEASURED_ON_LABEL,
   desktopSearch: { w: 500, h: 281 },
   desktopSidebar: { w: 248, h: 139 },
   mobileFeed: { w: 390, h: 219 },

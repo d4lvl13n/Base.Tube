@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Host: https://base.tube
+Sitemap: https://base.tube/sitemap.xml

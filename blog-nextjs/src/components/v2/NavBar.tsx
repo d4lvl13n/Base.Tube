@@ -10,6 +10,7 @@ const DOCS_URL = 'https://base-tube.gitbook.io/base.tube-documentation';
 const LINKS: { href: string; label: string; external?: boolean }[] = [
   { href: '/content-pass', label: 'Content Pass' },
   { href: '/ai-thumbnails', label: 'AI Thumbnails' },
+  { href: '/thumbnails', label: 'Thumbnail ideas' },
   { href: '/tools', label: 'Tools' },
   { href: '/blog', label: 'Blog' },
   { href: DOCS_URL, label: 'Docs', external: true },

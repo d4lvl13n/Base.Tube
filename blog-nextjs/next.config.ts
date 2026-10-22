@@ -15,6 +15,8 @@ const nextConfig: NextConfig = {
     return [
       // The old thumbnail tool page: AI Thumbnails now has its landing page here.
       { source: '/tools/thumbnail-generator', destination: '/ai-thumbnails', permanent: true },
+      // Modern Warfare 4 is covered on the Call of Duty page.
+      { source: '/thumbnails/modern-warfare-4', destination: '/thumbnails/call-of-duty', permanent: true },
     ];
   },
 };

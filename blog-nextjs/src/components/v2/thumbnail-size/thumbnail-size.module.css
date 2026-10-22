@@ -847,6 +847,92 @@
   text-decoration-color: var(--v2-orange);
 }
 
+/* Quick answers: one cell per common search, right under the hero */
+.root .quickSection {
+  padding: 64px 0;
+}
+.root .quick {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--v2-frost);
+  border-left: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r-lg);
+  overflow: hidden;
+}
+.root .quickItem {
+  padding: 20px 22px;
+  border-right: 1px solid var(--v2-frost);
+  border-bottom: 1px solid var(--v2-frost);
+}
+.root .quickItem dt {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--v2-muted);
+  margin-bottom: 8px;
+}
+.root .quickItem dd {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--v2-text);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Upload: why it can fail */
+.root .blockers {
+  max-width: 760px;
+  margin-top: 40px;
+}
+.root .blockers ul {
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.root .blockers li {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--v2-muted);
+}
+
+/* Next steps */
+.root .nextGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  list-style: none;
+}
+.root .nextCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  padding: 22px 24px;
+  border: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r-lg);
+  background: rgba(255, 255, 255, 0.012);
+  transition: border-color 0.2s ease;
+}
+.root .nextCard:hover {
+  border-color: var(--v2-orange);
+}
+.root .nextTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--v2-text);
+}
+.root .nextTitle::after {
+  content: ' →';
+  color: var(--v2-orange);
+}
+.root .nextText {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--v2-muted);
+}
+
 /* Sources */
 .root .sourcesSection {
   padding: 64px 0 96px;
@@ -901,6 +987,10 @@
   .root .sources {
     grid-template-columns: minmax(0, 1fr);
     gap: 40px;
+  }
+  .root .quick,
+  .root .nextGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -967,5 +1057,12 @@
   .root .surfaces,
   .root .zoneFrames {
     gap: 36px;
+  }
+  .root .quickSection {
+    padding: 48px 0;
+  }
+  .root .quick,
+  .root .nextGrid {
+    grid-template-columns: minmax(0, 1fr);
   }
 }

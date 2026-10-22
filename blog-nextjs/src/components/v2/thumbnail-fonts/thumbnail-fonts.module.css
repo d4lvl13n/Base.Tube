@@ -1,0 +1,648 @@
+/*
+ * Styles for /youtube-thumbnail-fonts.
+ * Everything is scoped under .root so it beats the v2.css universal reset
+ * (`.v2-root *` zeroes margins and padding) on specificity, not on load order.
+ * Colours come from the v2 tokens defined on .v2-root.
+ */
+
+.root {
+  --panel-bg: rgba(255, 255, 255, 0.022);
+}
+
+.root .srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Anchor targets sit below the fixed nav bar. */
+.root [id] {
+  scroll-margin-top: 84px;
+}
+
+.root :focus-visible {
+  outline: 2px solid var(--v2-orange);
+  outline-offset: 3px;
+}
+
+/* White on the brand orange is 2.5:1. Near-black on the same orange is about 8:1. */
+.root .onAccent {
+  color: #140a02;
+}
+
+.root .inlineLink {
+  color: var(--v2-text);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.35);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s var(--v2-ease);
+}
+.root .inlineLink:hover {
+  text-decoration-color: var(--v2-orange);
+}
+
+/* ─── Hero ────────────────────────────────────────────────── */
+.root .hero {
+  padding: 28px 0 40px;
+}
+.root .h1 {
+  font-size: clamp(38px, 5.2vw, 66px);
+  margin: 18px 0 26px;
+  max-width: 900px;
+}
+.root .answer {
+  font-size: 17px;
+  line-height: 1.68;
+  color: var(--v2-muted);
+  max-width: 680px;
+}
+.root .answer strong {
+  color: var(--v2-text);
+  font-weight: 600;
+}
+.root .jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  margin-top: 20px;
+  font-size: 13.5px;
+}
+.root .jump a {
+  color: var(--v2-muted);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-underline-offset: 3px;
+}
+.root .jump a:hover {
+  color: var(--v2-text);
+}
+
+/* ─── Preview tool ────────────────────────────────────────── */
+.root .toolSection {
+  padding: 8px 0 88px;
+}
+.root .toolTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--v2-text);
+  margin-bottom: 14px;
+}
+.root .tool {
+  border: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r-lg);
+  background: var(--panel-bg);
+  padding: 22px;
+}
+.root .controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px 28px;
+  align-items: start;
+}
+.root .textField {
+  grid-column: 1 / -1;
+}
+.root .viewField {
+  grid-column: span 2;
+}
+.root .field {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-inline-size: 0;
+}
+.root .fieldLabel {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--v2-muted);
+  margin-bottom: 10px;
+  padding: 0;
+}
+.root .textRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.root .textInput {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--v2-text);
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r);
+  padding: 12px 14px;
+  text-transform: uppercase;
+}
+.root .textInput:focus {
+  border-color: var(--v2-orange);
+  outline: none;
+}
+.root .textInput::placeholder {
+  color: var(--v2-dim);
+}
+.root .counter {
+  font-size: 13px;
+  color: var(--v2-muted);
+  font-variant-numeric: tabular-nums;
+  min-width: 44px;
+  text-align: right;
+}
+
+.root .swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.root .swatch {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.12s var(--v2-ease), border-color 0.12s var(--v2-ease);
+}
+.root .swatch:hover {
+  transform: scale(1.08);
+}
+.root .swatch[aria-pressed='true'],
+.root .swatch[data-active] {
+  border-color: var(--v2-orange);
+  box-shadow: 0 0 0 2px rgba(255, 128, 31, 0.35);
+}
+.root .swatchCustom {
+  background: conic-gradient(#ff3b30, #ffcc00, #34c759, #00c7ff, #5856d6, #ff2d55, #ff3b30);
+  overflow: hidden;
+  display: inline-block;
+}
+.root .colorInput {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+}
+.root .swatchCustom:focus-within {
+  outline: 2px solid var(--v2-orange);
+  outline-offset: 3px;
+}
+
+.root .seg {
+  display: inline-flex;
+  flex-wrap: wrap;
+  border: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r-pill);
+  padding: 3px;
+}
+.root .segOption {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.root .segInput {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  margin: 0;
+}
+.root .segLabel {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: var(--v2-r-pill);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--v2-muted);
+  transition: background 0.15s var(--v2-ease), color 0.15s var(--v2-ease);
+}
+.root .segLabel small {
+  font-size: 11px;
+  font-weight: 500;
+  margin-left: 4px;
+  opacity: 0.85;
+}
+.root .segInput:checked + .segLabel {
+  background: var(--v2-orange-soft);
+  color: var(--v2-orange);
+}
+.root .segInput:focus-visible + .segLabel {
+  outline: 2px solid var(--v2-orange);
+  outline-offset: 2px;
+}
+.root .check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--v2-text);
+  cursor: pointer;
+}
+.root .check input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--v2-orange);
+}
+
+.root .toolNote {
+  margin: 22px 0 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--v2-frost);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--v2-muted);
+}
+
+.root .previewGrid {
+  list-style: none;
+  display: grid;
+  gap: 22px 18px;
+  justify-items: start;
+}
+.root .previewItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 100%;
+}
+.root .previewCaption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+}
+.root .previewName {
+  color: var(--v2-text);
+  font-weight: 600;
+}
+.root .previewLink {
+  color: var(--v2-muted);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-underline-offset: 3px;
+  white-space: nowrap;
+}
+.root .previewLink:hover {
+  color: var(--v2-text);
+}
+
+/* ─── Thumbnail tile ──────────────────────────────────────── */
+.root .tile {
+  position: relative;
+  container-type: inline-size;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+}
+/* A soft light from the top-left, so flat colours read a bit like a photo. */
+.root .tile::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 90% at 15% 10%, rgba(255, 255, 255, 0.16), transparent 55%);
+  z-index: -1;
+}
+.root .tileText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  white-space: nowrap;
+  -webkit-text-stroke: var(--stroke, 0) var(--outline, #000);
+  paint-order: stroke fill;
+  transform: rotate(-2deg);
+}
+.root .tileLine {
+  display: block;
+  padding: 0.04em 0.08em;
+}
+.root .badge {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  padding: 1px 4px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ─── Sections ────────────────────────────────────────────── */
+.root .section {
+  padding: 88px 0;
+}
+.root .sectionHead {
+  margin-bottom: 40px;
+  max-width: 720px;
+}
+.root .h2 {
+  margin-bottom: 16px;
+}
+.root .sectionLead p {
+  font-size: 16px;
+  line-height: 1.72;
+  color: var(--v2-muted);
+}
+.root .h3 {
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--v2-text);
+  margin: 34px 0 12px;
+}
+.root .h3:first-child {
+  margin-top: 0;
+}
+
+/* Font groups and cards */
+.root .group + .group {
+  margin-top: 64px;
+}
+.root .groupHead {
+  max-width: 720px;
+  margin-bottom: 22px;
+}
+.root .groupTitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--v2-text);
+  margin-bottom: 8px;
+}
+.root .groupIntro {
+  font-size: 15px;
+  line-height: 1.68;
+  color: var(--v2-muted);
+}
+.root .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 22px;
+}
+.root .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r-lg);
+  background: var(--panel-bg);
+  padding: 12px;
+}
+.root .card .tile {
+  border-radius: 10px;
+}
+.root .cardBody {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 16px 6px 6px;
+}
+.root .cardName {
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--v2-text);
+}
+.root .cardWeight {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--v2-muted);
+}
+.root .cardMeta {
+  font-size: 12.5px;
+  color: var(--v2-muted);
+  margin: 4px 0 12px;
+  line-height: 1.5;
+}
+.root .cardText {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--v2-muted);
+  margin-bottom: 10px;
+}
+.root .cardText strong {
+  color: var(--v2-text);
+  font-weight: 600;
+}
+.root .cardBtn {
+  margin-top: auto;
+  align-self: flex-start;
+  font-size: 13.5px;
+}
+
+/* Prose */
+.root .prose {
+  max-width: 720px;
+}
+.root .prose p {
+  font-size: 16px;
+  line-height: 1.78;
+  color: var(--v2-muted);
+  margin-bottom: 14px;
+}
+.root .prose strong {
+  color: var(--v2-text);
+  font-weight: 600;
+}
+.root .list {
+  list-style: disc;
+  padding-left: 22px;
+  margin: 0 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.root .list li {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--v2-muted);
+}
+
+/* Niches */
+.root .niches {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 900px;
+  margin: 4px 0 30px;
+}
+.root .niche {
+  height: 100%;
+  border: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r);
+  padding: 18px 20px;
+  background: var(--panel-bg);
+}
+.root .nicheName {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--v2-text);
+  margin-bottom: 8px;
+}
+.root .nicheText {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--v2-muted);
+  margin-bottom: 10px;
+}
+.root .nicheFonts {
+  font-size: 14px;
+  color: var(--v2-text);
+}
+.root .nicheFonts span {
+  color: var(--v2-orange);
+  font-weight: 600;
+}
+
+/* Mistakes: each row sits in its own reveal wrapper, so v2.css :last-child hides the dividers. */
+.root .mistakes > div:not(:last-child) {
+  border-bottom: 1px solid var(--v2-frost);
+}
+
+/* Bridge */
+.root .bridge {
+  max-width: 780px;
+  padding: 44px 48px;
+  border: 1px solid var(--v2-frost);
+  border-radius: var(--v2-r-lg);
+  background: rgba(255, 255, 255, 0.012);
+}
+.root .bridgeH {
+  margin-bottom: 18px;
+}
+.root .bridgeText {
+  font-size: 16px;
+  line-height: 1.78;
+  color: var(--v2-muted);
+  max-width: 640px;
+}
+.root .bridgeLinks {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+.root .related {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--v2-frost);
+}
+.root .relatedLabel {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--v2-muted);
+}
+.root .related ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  list-style: none;
+}
+.root .related a {
+  font-size: 14px;
+  color: var(--v2-text);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.28);
+  text-underline-offset: 3px;
+}
+.root .related a:hover {
+  text-decoration-color: var(--v2-orange);
+}
+
+/* Sources */
+.root .sourcesSection {
+  padding: 64px 0 96px;
+}
+.root .sources {
+  max-width: 760px;
+}
+.root .sources .h3 {
+  font-size: 15px;
+  margin-top: 0;
+}
+.root .sources p {
+  font-size: 14px;
+  line-height: 1.72;
+  color: var(--v2-muted);
+  margin-bottom: 12px;
+}
+
+/* ─── Responsive ──────────────────────────────────────────── */
+@media (max-width: 960px) {
+  .root .controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .root .viewField {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .root .hero {
+    padding: 24px 0 32px;
+  }
+  .root .h1 {
+    font-size: clamp(29px, 7.6vw, 44px);
+    margin: 18px 0 22px;
+  }
+  .root .section {
+    padding: 64px 0;
+  }
+  .root .toolSection {
+    padding-bottom: 64px;
+  }
+  .root .sectionHead {
+    margin-bottom: 28px;
+  }
+  .root .tool {
+    padding: 16px;
+  }
+  .root .controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .root .niches {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .root .bridge {
+    padding: 28px 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .root .swatch {
+    transition: none;
+  }
+}

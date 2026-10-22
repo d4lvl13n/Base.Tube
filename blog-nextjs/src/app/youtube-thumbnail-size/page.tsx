@@ -4,15 +4,17 @@ import { FAQ } from '@/components/v2/thumbnail-size/content';
 import { CHECKED_ON_ISO } from '@/components/v2/thumbnail-size/specs';
 
 const PAGE_URL = 'https://base.tube/youtube-thumbnail-size';
-const TITLE = 'YouTube Thumbnail Size (2026): 3840x2160 + Free Checker';
+// The root layout appends " | Base.Tube", so the rendered <title> is exactly 60 characters.
+const TITLE = 'YouTube Thumbnail Size: 3840x2160 + Free Checker';
+// 155 characters.
 const DESCRIPTION =
-  'YouTube recommends 3840x2160 (16:9), min width 640 px, max 2 MB in the phone app or 50 MB on desktop. Drop your image to check it. Checked Sep 2026.';
+  'YouTube thumbnail size: 3840x2160 (16:9), min 640 px wide, 2 MB on phone or 50 MB on desktop, JPG or PNG. Shorts 2160x3840. Free checker. Checked Oct 2026.';
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   keywords:
-    'youtube thumbnail size, youtube thumbnail dimensions, youtube thumbnail aspect ratio, youtube thumbnail file size, youtube shorts thumbnail size, thumbnail size checker',
+    'youtube thumbnail size, youtube thumbnail dimensions, youtube thumbnail aspect ratio, youtube thumbnail resolution, youtube thumbnail file size, youtube shorts thumbnail size, how big is a youtube thumbnail, thumbnail size checker',
   authors: [{ name: 'Base.Tube' }],
   openGraph: {
     type: 'website',

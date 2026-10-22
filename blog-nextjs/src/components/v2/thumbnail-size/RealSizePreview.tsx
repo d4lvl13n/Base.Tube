@@ -2,7 +2,7 @@
 
 import { useState, type CSSProperties } from 'react';
 import s from './thumbnail-size.module.css';
-import { CHECKED_ON_LABEL, MEASURED, type Mode } from './specs';
+import { MEASURED, MEASURED_ON_LABEL, type Mode } from './specs';
 
 export interface PreviewImage {
   url: string;
@@ -151,7 +151,7 @@ export default function RealSizePreview({ image, mode }: Props) {
             words, larger type and a simpler picture.
           </p>
           <p className={s.measureNote}>
-            Sizes measured on youtube.com on {CHECKED_ON_LABEL} (Chrome, signed out). They are in CSS pixels, so on your
+            Sizes measured on youtube.com on {MEASURED_ON_LABEL} (Chrome, signed out). They are in CSS pixels, so on your
             screen they appear at true scale, or scaled down if your window is narrower. Layouts shift with window width
             and with YouTube&apos;s own tests, so read them as typical, not fixed.
           </p>

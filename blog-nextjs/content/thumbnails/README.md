@@ -30,8 +30,8 @@ Each file is a Markdown file with a block of settings at the top (called
 2. **Write the page.** Fill in every field (the comments in the template say
    what each one is for) and write the guide under the second `---` line.
    Use the keywords from the SEO plan (`plan/content_plan.csv`).
-3. **Add the images.** Generate at least 12 original thumbnails in the
-   Base.Tube Studio (24 to 40 is the target), export them as 1280×720 WebP,
+3. **Add the images.** Generate at least 6 thumbnails in the Base.Tube
+   Studio (game pages use 6, each a different style), export them as 1280×720 WebP,
    put them in `public/thumbnails/<page-name>/`, and add one `gallery` entry
    per image (file name, alt text, caption, the prompt you used).
 4. **Check it.** From the `blog-nextjs` folder, run:
@@ -54,7 +54,7 @@ A page is shown to Google (indexed and listed in the sitemap and on the hub)
 only when **all** of these are true:
 
 - `status: published`;
-- at least **12 gallery images** (setting: `MIN_GALLERY_IMAGES`), every file
+- at least **6 gallery images** (setting: `MIN_GALLERY_IMAGES`), every file
   present in `public/thumbnails/<page-name>/` and in 16:9;
 - no image marked `placeholder: true`;
 - at least **4 FAQ questions**, a guide of at least **400 words**, a title of
@@ -75,15 +75,21 @@ is not live says so and how many items are left to fix.
 
 ## Images: rules
 
-- **Our own generations only.** Every image is made with Base.Tube. Never real
-  people's faces (famous creators included), logos, game art, screenshots, or
-  copies of existing thumbnails.
-- **Descriptive names only.** Say "Fortnite-style thumbnail", never "official".
-  Game and creator pages set `trademark:` so the page shows the "not
-  affiliated" line.
-- **Describe the look in prompts, do not name the game or the creator.** The
-  validator warns when a prompt contains the trademark name, because naming it
-  makes a generator more likely to copy protected characters.
+- **Our own generations only.** Every image is made with Base.Tube. Never a
+  real person's face (creators, developers, celebrities included) and never a
+  copy of an existing thumbnail.
+- **Game pages show the real game.** Name the game in the prompt and use its
+  real characters, places, items and HUD; IGDB screenshots can be attached as
+  references. The game's logo is allowed as a small badge, never in the
+  bottom-right corner. Follow the validated direction in
+  `docs/research/game-thumbnail-refs/style-directions.md`: one clear video idea
+  per image, 0 to 3 words of text, no info-heavy "news" thumbnails.
+- **Creator-style pages describe the look, never the creator.** The validator
+  warns when a style page's prompt names the creator.
+- **Prompts are short creative briefs**, not pixel layouts: the video idea, what
+  must appear, the mood, the text. Let the generator be creative.
+- **Never "official".** Game and creator pages set `trademark:` so the page shows
+  the "not affiliated" line.
 - **Format:** 1280×720 pixels, WebP, under 400 KB, lowercase file names with
   hyphens (`roblox-victory-01.webp`). The first image is also the preview shown
   when the page is shared on social media.

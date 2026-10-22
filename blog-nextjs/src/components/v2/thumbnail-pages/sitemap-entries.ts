@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-import { BASE_PATH, SITE_URL } from './lib/config.mjs';
+import { BASE_PATH, HUB_MIN_LIVE_PAGES, SITE_URL } from './lib/config.mjs';
 import type { LiveIndex } from './lib/content.mjs';
 import liveIndexJson from './lib/live-pages.json';
 
@@ -18,6 +18,16 @@ export function getThumbnailSitemapEntries(baseUrl: string = SITE_URL): Metadata
     out.push({
       url: `${baseUrl}${BASE_PATH}`,
       lastModified: new Date(`${liveIndex.hub.updated}T00:00:00Z`),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    });
+  }
+  // The gaming hub is indexed once HUB_MIN_LIVE_PAGES game pages are live (same rule as games.ts).
+  const liveGames = liveIndex.pages.filter((p) => p.category === 'game');
+  if (liveGames.length >= HUB_MIN_LIVE_PAGES) {
+    out.push({
+      url: `${baseUrl}${BASE_PATH}/gaming`,
+      lastModified: new Date(`${liveGames.map((p) => p.updated).sort().pop()}T00:00:00Z`),
       changeFrequency: 'weekly',
       priority: 0.7,
     });

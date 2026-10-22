@@ -8,7 +8,7 @@ export const SITE_URL = 'https://base.tube';
 export const BASE_PATH = '/thumbnails';
 
 /** A page needs at least this many gallery images to be indexed and listed in the sitemap. */
-export const MIN_GALLERY_IMAGES = 12;
+export const MIN_GALLERY_IMAGES = 6;
 
 /** The /thumbnails hub is only indexed once at least this many pages are live. */
 export const HUB_MIN_LIVE_PAGES = 3;

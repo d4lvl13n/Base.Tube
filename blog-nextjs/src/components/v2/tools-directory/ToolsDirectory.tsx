@@ -38,6 +38,18 @@ const TOOLS = [
     desc: 'Pick the sharpest frame from your own video and export it as a thumbnail.',
     go: 'Grab a frame',
   },
+  {
+    href: '/youtube-thumbnail-fonts',
+    name: 'Thumbnail fonts',
+    desc: 'Free fonts that stay readable at phone size. Type your own words and see them in every font.',
+    go: 'Compare fonts',
+  },
+  {
+    href: '/youtube-thumbnail-backgrounds',
+    name: 'Thumbnail backgrounds',
+    desc: 'Free 1280 × 720 backgrounds with one side left empty for your face and title. Download one or build a full thumbnail on it.',
+    go: 'Get a background',
+  },
 ];
 
 export default function ToolsDirectory() {

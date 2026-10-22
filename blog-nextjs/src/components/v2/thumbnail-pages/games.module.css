@@ -1,0 +1,149 @@
+/* Gaming hub strips and the "More games" block on game pages. */
+
+.gameHead {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px 32px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.gameTitle {
+  color: inherit;
+  text-decoration: none;
+}
+
+.gameTitle:hover {
+  color: var(--v2-orange);
+}
+
+.gameSummary {
+  margin: 8px 0 0;
+  max-width: 62ch;
+  color: var(--v2-muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.seeAll {
+  flex-shrink: 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--v2-orange);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.seeAll:hover {
+  text-decoration: underline;
+}
+
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.thumb {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  outline: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.2s ease, outline-color 0.2s ease;
+}
+
+.thumb:hover {
+  transform: translateY(-2px);
+  outline-color: rgba(255, 122, 26, 0.6);
+}
+
+.thumb:focus-visible {
+  outline: 2px solid var(--v2-orange);
+  outline-offset: 2px;
+}
+
+.thumbImg {
+  object-fit: cover;
+}
+
+/* "More games" on a game page: one card per game, scrolls sideways on small screens. */
+.moreGames {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.moreGame {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.moreGame .thumb {
+  margin-bottom: 10px;
+}
+
+.moreGame:hover .thumb {
+  transform: translateY(-2px);
+  outline-color: rgba(255, 122, 26, 0.6);
+}
+
+.moreGameName {
+  display: block;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.moreGameMeta {
+  display: block;
+  margin-top: 2px;
+  font-size: 13px;
+  color: var(--v2-muted);
+}
+
+.moreHead {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px 24px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .moreGames {
+    grid-auto-flow: column;
+    grid-template-columns: none;
+    grid-auto-columns: minmax(220px, 60%);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px;
+  }
+
+  .moreGames > li {
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+}

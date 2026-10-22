@@ -1,0 +1,9 @@
+
+# Heavy working files of the thumbnail galleries (kept locally, not in git)
+docs/thumbnail-images/originals/
+docs/thumbnail-images/archive-v1-lookalike/
+docs/thumbnail-images/igdb/
+docs/research/*/raw/
+docs/research/game-thumbnail-refs/img/
+docs/research/kabo-2026-10-03/*.json
+docs/qa/

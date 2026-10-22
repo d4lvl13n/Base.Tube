@@ -1,22 +1,18 @@
 ---
-# Worked example of a /thumbnails/<slug> page. Field-by-field help: _TEMPLATE.md.
-#
-# This page is a DRAFT on purpose: every gallery image is a labelled placeholder
-# ("placeholder: true"). To publish it:
-#   1. generate the real images in the Base.Tube Studio (original art only),
-#   2. save them in public/thumbnails/fortnite/ and update the gallery entries,
-#   3. remove every "placeholder: true" line,
-#   4. write the sibling pages listed under "related" (or remove them),
-#   5. set status: published and run: node scripts/validate-thumbnails.mjs
+# Gallery rewritten on 2026-10-22 to show the real game (direction validated
+# that day: docs/research/game-thumbnail-refs/style-directions.md).
+# 6 briefs, each a different style. Every image is a placeholder until it is regenerated
+# with Base.Tube Studio.
+# Remains draft: review the page and related links before publishing.
 
 slug: fortnite
 status: draft
 category: game
 name: Fortnite
-updated: 2026-09-29
+updated: 2026-10-22
 
 title: "Fortnite Thumbnail Ideas: {count} Examples and 5 Layouts"
-description: "{count} original Fortnite-style thumbnail examples, the colours, text and layouts behind them, and how to make your own montage, win or fail thumbnail."
+description: "{count} Fortnite thumbnail examples, the colours, text and layouts behind them, and how to make your own montage, win or fail thumbnail."
 h1: "Fortnite thumbnail ideas"
 h1Accent: "that read at phone size."
 summary: "Bright colours, one big character and three words at most: the rules and five layouts behind the look."
@@ -32,8 +28,10 @@ secondaryKeywords:
 intro: >
   A good Fortnite thumbnail shows one character, one moment and one to three
   words, in colours players already recognise from the game. Below: {count}
-  original examples, the style rules behind them, five layouts for montages,
-  wins, fails, updates and challenges, and a quick way to generate your own.
+  examples generated with Base.Tube to show what a Fortnite thumbnail can look
+  like; they use the game's look and characters. Then the style rules, five
+  layouts for wins, progression videos, live events, face-cam reactions and
+  challenges, and a quick way to generate your own.
 
 styleRecipe:
   palette:
@@ -53,206 +51,150 @@ styleRecipe:
       hex: "#0B0B10"
       use: Thick text outlines and drop shadows
   composition: >
-    One character, large, on the left or right third, cut at the chest or
-    waist. The text sits on the other side. One prop at most. Leave the
+    One idea per image: a win, a before and after, a live event, a reaction or
+    a challenge. One skin, large, or one iconic place or object from the island.
+    Show a piece of the game's interface (elimination counter, storm circle,
+    Victory Royale banner) so the game is recognisable at a glance. Leave the
     bottom-right corner empty: YouTube shows the video length there.
   text: >
-    One to three words in capitals, in a heavy condensed display font, white or
+    Zero to three words in capitals, in a heavy condensed display font, white or
     yellow with a thick black outline and a slight tilt. If it is not readable
-    at phone size, cut words.
+    at phone size, cut words. Never a block of information.
   expressions: >
-    Exaggerated cartoon emotion: open-mouth shock, a wide grin, narrowed eyes
-    before a fight. The character looks at the text or the object, which leads
-    the viewer's eye to it.
+    Big, readable emotion: open-mouth shock, a wide grin, narrowed eyes before
+    a fight. On face-cam thumbnails the creator reacts to the game behind them.
+    The character looks at the text or the object, which leads the viewer's eye
+    to it.
   props:
-    - A glowing treasure chest or loot crate
+    - The Victory Royale banner and an elimination counter
     - A light beam in a rarity colour (grey, green, blue, purple, gold)
-    - Quickly built wooden ramps and walls
+    - Mythic weapons, chests, the Loot Llama or the Battle Bus
+    - Quickly built ramps, walls and edit pieces
     - Red arrows and circles on the key detail
-    - A parachute or glider silhouette in the sky
   background: >
-    A bright, simplified island landscape for wins and updates; a dark purple
-    storm sky for montages. Blur or darken it so the character stands out.
+    A real place from the island in bright daylight for wins and updates; the
+    purple storm or a night sky for tense moments and montages. Blur or darken
+    it so the character stands out.
 
 layouts:
-  - name: Montage
-    description: >
-      A dark, cinematic frame: one character in silhouette with a coloured rim
-      light, a storm-purple sky and a short title. Less text than any other
-      layout; the mood does the work.
-    prompt: "Cinematic montage thumbnail, stylised 3D cartoon hero in silhouette with purple rim light, stormy violet sky, short bold title, lots of empty space"
   - name: Victory
     description: >
-      The win moment: the character mid-celebration with arms up, gold light
-      and confetti behind, and a two-word result in big yellow letters such as
-      "30 KILLS" or "FIRST WIN".
-    prompt: "Victory thumbnail, cheerful stylised 3D cartoon hero jumping with arms up, golden light burst and confetti, bright blue sky, big yellow outlined text"
-  - name: Fail
+      The win moment: a skin standing over the island, the Victory Royale banner
+      and a big number such as eliminations or health left. Works for win,
+      ranked and "only one weapon" videos.
+    prompt: >
+      16:9 YouTube thumbnail for a Fortnite video: a skin celebrating on a
+      rooftop above the island, Victory Royale banner and big elimination count,
+      bright daylight, short text in yellow capitals, keep the bottom-right
+      corner clear, be creative with the composition
+  - name: Progression
     description: >
-      The mistake, zoomed in: a shocked face on one side, the thing that went
-      wrong on the other, joined by a red arrow or circle. Works for funny
-      moments and "why did I do that" videos.
-    prompt: "Fail reaction thumbnail, stylised 3D cartoon character with a shocked open-mouth face on the left, red arrow pointing at a broken wooden ramp on the right, bright colours"
-  - name: Update
+      Before and after in one frame: beginner and pro, Bronze and Unreal, a
+      wobbly wall and a perfect build. Each side gets its own colour so the
+      change reads instantly. Made for "noob to pro" and "100 days" videos.
+    prompt: >
+      16:9 YouTube thumbnail for a Fortnite video: split before/after, the same
+      skin as a beginner on a grey left side and as a pro on a glowing gold
+      right side, a progress arrow between them, short text, keep the
+      bottom-right corner clear, be creative with the composition
+  - name: Live event
     description: >
-      News and new-season videos: the new item or place floats in the centre
-      with a rarity-coloured glow, a small "NEW" tag and one word. The
-      character is optional; the object is the hero.
-    prompt: "Update news thumbnail, a glowing futuristic item floating in the centre with purple light rays, clean gradient background, small NEW badge, bold one-word title"
+      Season launches, live events and returning places: the iconic object or
+      place is the hero, huge and glowing, with players looking up at it and
+      one or two words.
+    prompt: >
+      16:9 YouTube thumbnail for a Fortnite video: a huge live event over the
+      island, glowing in purple and gold, tiny players watching from rooftops,
+      the Battle Bus in the sky, one or two words, keep the bottom-right corner
+      clear, be creative with the composition
+  - name: Face cam
+    description: >
+      A creator's face reacting next to the game: shock, laughter or a secret.
+      The face is large on one side, the Fortnite moment on the other. Use your
+      own face; our examples use an invented streamer.
+    prompt: >
+      16:9 YouTube thumbnail for a Fortnite video: an invented streamer with a
+      headset reacting with open-mouth shock on one side, a bright Fortnite
+      gameplay moment on the other, short text, keep the bottom-right corner
+      clear, be creative with the composition
   - name: Challenge
     description: >
-      Two sides of a split frame: before and after, beginner and pro, grey loot
-      and gold loot. Give each side its own background colour and one short
-      label so the contrast reads instantly.
-    prompt: "Split-screen challenge thumbnail, left a clumsy beginner cartoon character on a grey background, right a confident pro character on a gold background, bold VS in the middle"
+      One rule, shown in the image: pickaxe only, floor is lava, hide and seek,
+      the hardest edit course. The rule must be visible without reading the
+      title.
+    prompt: >
+      16:9 YouTube thumbnail for a Fortnite video: a skin in the middle of a
+      one-rule challenge (pickaxe only, floor is lava), saturated colours, the
+      rule written in two or three words, keep the bottom-right corner clear, be
+      creative with the composition
 
 gallery:
-  - file: placeholder-01-montage.webp
-    alt: "Fortnite-style montage thumbnail: a cartoon hero in silhouette with a purple rim light under a stormy violet sky, title SEASON MONTAGE"
-    caption: "Montage: silhouette against a storm-purple sky"
-    prompt: "Cinematic montage thumbnail, stylised 3D cartoon hero in silhouette, purple rim light, stormy violet sky, bold title SEASON MONTAGE on the right, no logos"
-    notes: "Two-word title; the empty sky carries the mood."
-    layout: Montage
-    placeholder: true
-  - file: placeholder-02-montage.webp
-    alt: "Fortnite-style montage thumbnail: a hooded cartoon player lit by cyan and pink neon, one-word title CLUTCH"
-    caption: "Montage: neon rim light and a one-word title"
-    prompt: "Moody montage thumbnail, hooded stylised cartoon player, cyan and pink neon rim light, dark background, one-word title CLUTCH in white with black outline"
-    layout: Montage
-    placeholder: true
-  - file: placeholder-03-montage.webp
-    alt: "Fortnite-style montage thumbnail: a cartoon player seen from behind, facing a glowing purple storm wall, player tag in a glitch font"
-    caption: "Montage: player tag in a glitch font"
-    prompt: "Montage thumbnail, stylised cartoon player seen from behind facing a glowing purple storm wall, glitch-effect player name text, cinematic lighting"
-    layout: Montage
-    placeholder: true
-  - file: placeholder-04-montage.webp
-    alt: "Fortnite-style montage thumbnail: low-angle shot of a cartoon hero holding a glowing blade, dark sky, title UNSTOPPABLE"
-    caption: "Montage: low-angle hero shot, dark sky"
-    prompt: "Low-angle hero shot montage thumbnail, stylised 3D cartoon hero holding a glowing energy blade, dark violet sky, bold title UNSTOPPABLE"
-    layout: Montage
-    placeholder: true
-  - file: placeholder-05-montage.webp
-    alt: "Fortnite-style montage thumbnail: a cartoon hero split-lit in orange and blue, short title HIGHLIGHTS"
-    caption: "Montage: two-tone light, short title"
-    prompt: "Montage thumbnail, stylised cartoon hero lit half orange and half blue, black background, clean bold title HIGHLIGHTS"
-    layout: Montage
-    placeholder: true
-  - file: placeholder-06-victory.webp
-    alt: "Fortnite-style victory thumbnail: a cartoon hero jumping with arms up in a gold light burst, text FIRST WIN"
-    caption: "Victory: arms up in a gold light burst"
-    prompt: "Victory thumbnail, cheerful stylised 3D cartoon hero jumping with arms up, golden light burst, confetti, bright blue sky, big yellow text FIRST WIN with black outline"
+  - file: 01-victory.webp
+    alt: "Fortnite thumbnail: Jonesy kneeling in the last storm circle with a red health bar at 1 HP and the Victory Royale banner above"
+    caption: "Victory: a win on one health point"
+    prompt: >
+      16:9 YouTube thumbnail for a Fortnite video: winning with 1 HP left.
+      Jonesy kneels exhausted in the final storm circle, health bar almost
+      empty, Victory Royale banner overhead, purple storm wall all around. Tense
+      purple with a gold glow. Text "1 HP". Keep the bottom-right corner clear,
+      be creative with the composition
     layout: Victory
     placeholder: true
-  - file: placeholder-07-victory.webp
-    alt: "Fortnite-style victory thumbnail: a grinning cartoon player pointing at big yellow text 30 KILLS on a blue sky"
-    caption: "Victory: the result in big yellow letters"
-    prompt: "Victory thumbnail, grinning stylised cartoon player pointing at huge yellow outlined text 30 KILLS, bright blue sky, simple island background"
+  - file: 04-victory.webp
+    alt: "Fortnite thumbnail: aerial view of Tilted Towers mid-fight with gliders landing and a skin on the clock tower"
+    caption: "Victory: landing at Tilted every game"
+    prompt: >
+      16:9 YouTube thumbnail for a Fortnite video: hot-dropping Tilted Towers
+      every game until a win. Wide aerial gameplay shot of Tilted Towers,
+      gliders landing, builds going up, a skin posing on the clock tower.
+      Bright, busy but readable. Text "TILTED ONLY". Keep the bottom-right
+      corner clear, be creative with the composition
     layout: Victory
     placeholder: true
-  - file: placeholder-08-victory.webp
-    alt: "Fortnite-style victory thumbnail: a cartoon hero wearing a small gold crown under falling confetti, text CROWN WIN"
-    caption: "Victory: crown and confetti on a bright sky"
-    prompt: "Victory thumbnail, stylised cartoon hero wearing a small golden crown, falling confetti, bright sky, bold text CROWN WIN, generic original character"
-    layout: Victory
+  - file: 05-progression.webp
+    alt: "Fortnite thumbnail: Renegade Raider split in two, a grey Bronze rank badge on the left and a glowing Unreal badge on the right"
+    caption: "Progression: from Bronze to Unreal in ranked"
+    prompt: >
+      16:9 YouTube thumbnail for a Fortnite video: climbing ranked from Bronze
+      to Unreal. Renegade Raider in the centre, left half dull with a grey
+      Bronze rank badge, right half glowing with the purple Unreal badge.
+      Text "BRONZE → UNREAL". Keep the bottom-right corner clear, be creative
+      with the composition
+    layout: Progression
     placeholder: true
-  - file: placeholder-09-victory.webp
-    alt: "Fortnite-style victory thumbnail: an exhausted but happy cartoon player with a nearly empty health bar, text 1 HP WIN"
-    caption: "Victory: last circle, one health point left"
-    prompt: "Victory thumbnail, exhausted but happy stylised cartoon player, nearly empty red health bar graphic, glowing circle zone behind, text 1 HP WIN"
-    layout: Victory
+  - file: 11-live-event.webp
+    alt: "Fortnite thumbnail: a building-sized golden Loot Llama standing over Pleasant Park as tiny players run toward it"
+    caption: "Live event: a giant Loot Llama, no text needed"
+    prompt: >
+      16:9 YouTube thumbnail for a Fortnite video: a giant Loot Llama appears
+      on the map. A building-sized golden Loot Llama towers over Pleasant Park,
+      loot spilling out, tiny skins sprinting toward it. Sunny, saturated,
+      gold sparkles. No text. Keep the bottom-right corner clear, be creative
+      with the composition
+    layout: Live event
     placeholder: true
-  - file: placeholder-10-victory.webp
-    alt: "Fortnite-style victory thumbnail: two cartoon heroes high-fiving in front of a golden sunset, text DUO WIN"
-    caption: "Victory: duo celebration"
-    prompt: "Victory thumbnail, two stylised cartoon heroes high-fiving, golden sunset sky, confetti, bold yellow text DUO WIN"
-    layout: Victory
+  - file: 13-face-cam.webp
+    alt: "Fortnite thumbnail: an invented streamer with a headset gasping next to the item shop showing a returning Skull Trooper skin"
+    caption: "Face cam: a rare skin back in the shop"
+    prompt: >
+      16:9 YouTube thumbnail for a Fortnite video: a rare skin returns to the
+      item shop. An invented streamer (not a real person) with a headset gasps,
+      hands on head, beside the item shop with Skull Trooper glowing in a
+      featured slot. Blue and purple. Text "FINALLY". Keep the bottom-right
+      corner clear, be creative with the composition
+    layout: Face cam
     placeholder: true
-  - file: placeholder-11-fail.webp
-    alt: "Fortnite-style fail thumbnail: a shocked cartoon character next to a collapsing wooden ramp, red arrow, text WHY"
-    caption: "Fail: shocked face and a broken ramp"
-    prompt: "Fail reaction thumbnail, stylised cartoon character with shocked open mouth on the left, collapsing wooden ramp on the right, red arrow, text WHY in red"
-    layout: Fail
-    placeholder: true
-  - file: placeholder-12-fail.webp
-    alt: "Fortnite-style fail thumbnail: a red circle around a missed shot, a cartoon player holding their head, text SO CLOSE"
-    caption: "Fail: red circle on the missed shot"
-    prompt: "Fail thumbnail, stylised cartoon player holding their head in disbelief, red circle around a missed target, bright background, text SO CLOSE"
-    layout: Fail
-    placeholder: true
-  - file: placeholder-13-fail.webp
-    alt: "Fortnite-style fail thumbnail: a cartoon character falling through the sky without a glider, text OOPS"
-    caption: "Fail: falling from the sky, no glider"
-    prompt: "Fail thumbnail, panicked stylised cartoon character falling through a blue sky without a parachute, island far below, big text OOPS"
-    layout: Fail
-    placeholder: true
-  - file: placeholder-14-fail.webp
-    alt: "Fortnite-style fail thumbnail: a cartoon player running the wrong way as a purple storm closes in, text WRONG WAY"
-    caption: "Fail: running the wrong way from the storm"
-    prompt: "Fail thumbnail, stylised cartoon player running toward a purple storm wall, red arrow pointing the other way, text WRONG WAY"
-    layout: Fail
-    placeholder: true
-  - file: placeholder-15-fail.webp
-    alt: "Fortnite-style fail thumbnail: a disappointed cartoon player looking into an empty treasure chest, text EMPTY"
-    caption: "Fail: the empty chest"
-    prompt: "Fail thumbnail, disappointed stylised cartoon player looking into an open empty treasure chest, dim light, bold text EMPTY with question marks"
-    layout: Fail
-    placeholder: true
-  - file: placeholder-16-update.webp
-    alt: "Fortnite-style update thumbnail: a glowing futuristic item floating in purple light rays with a NEW badge"
-    caption: "Update: the new item in purple light"
-    prompt: "Update news thumbnail, glowing futuristic item floating in the centre, purple light rays, clean gradient background, small NEW badge, bold title NEW ITEM"
-    layout: Update
-    placeholder: true
-  - file: placeholder-17-update.webp
-    alt: "Fortnite-style update thumbnail: before and after view of a cartoon island with a new volcano, text NEW MAP"
-    caption: "Update: map change, before and after"
-    prompt: "Update thumbnail, split view of a stylised cartoon island before and after a new volcano appears, arrow between, bold text NEW MAP"
-    layout: Update
-    placeholder: true
-  - file: placeholder-18-update.webp
-    alt: "Fortnite-style update thumbnail: a countdown clock over a colourful gradient sky, text NEW SEASON"
-    caption: "Update: new season countdown"
-    prompt: "Update thumbnail, big stylised countdown clock over a colourful blue-to-purple gradient sky, sparkles, bold text NEW SEASON"
-    layout: Update
-    placeholder: true
-  - file: placeholder-19-update.webp
-    alt: "Fortnite-style update thumbnail: a cartoon weapon with a green up arrow and a gold glow, text BUFFED"
-    caption: "Update: patch notes, one big verdict"
-    prompt: "Patch notes thumbnail, stylised cartoon blaster with a green up arrow and golden glow, dark background, bold text BUFFED"
-    layout: Update
-    placeholder: true
-  - file: placeholder-20-update.webp
-    alt: "Fortnite-style update thumbnail: a rare item glowing gold inside a light beam, text SO RARE"
-    caption: "Update: rare item in a gold beam"
-    prompt: "Update thumbnail, rare glowing item inside a vertical golden light beam, dark blue background, bold text SO RARE"
-    layout: Update
-    placeholder: true
-  - file: placeholder-21-challenge.webp
-    alt: "Fortnite-style challenge thumbnail: split screen with a clumsy beginner on grey and a confident pro on gold, VS in the middle"
-    caption: "Challenge: beginner vs pro, split screen"
-    prompt: "Split-screen challenge thumbnail, left a clumsy beginner cartoon character on a grey background, right a confident pro cartoon character on a gold background, bold VS in the middle"
+  - file: 18-challenge.webp
+    alt: "Fortnite thumbnail: Fishstick balancing on the last wooden platform above rising lava in a Creative map"
+    caption: "Challenge: the floor is lava"
+    prompt: >
+      16:9 YouTube thumbnail for a Fortnite video: a floor is lava challenge.
+      Fishstick balances on the last wooden platform above glowing rising lava
+      in a Creative map, other skins falling in. Hot orange and red with a blue
+      sky. Text "FLOOR IS LAVA". Keep the bottom-right corner clear, be creative
+      with the composition
     layout: Challenge
     placeholder: true
-  - file: placeholder-22-challenge.webp
-    alt: "Fortnite-style challenge thumbnail: a cartoon player holding only grey loot, text GREY LOOT ONLY"
-    caption: "Challenge: grey loot only"
-    prompt: "Challenge thumbnail, determined stylised cartoon player holding a plain grey blaster, grey light beam behind, text GREY LOOT ONLY"
-    layout: Challenge
-    placeholder: true
-  - file: placeholder-23-challenge.webp
-    alt: "Fortnite-style challenge thumbnail: one cartoon hero facing a crowd of tiny opponents on a bright island, text 1 VS 50"
-    caption: "Challenge: one against fifty"
-    prompt: "Challenge thumbnail, one confident stylised cartoon hero facing a crowd of tiny opponents on a bright island, bold text 1 VS 50"
-    layout: Challenge
-    placeholder: true
-  - file: placeholder-24-challenge.webp
-    alt: "Fortnite-style challenge thumbnail: a cartoon builder surrounded by wooden walls and ramps, crossed-out blaster icon, text NO GUNS"
-    caption: "Challenge: build only, no weapons"
-    prompt: "Challenge thumbnail, stylised cartoon builder surrounded by quickly built wooden walls and ramps, crossed-out blaster icon, text NO GUNS"
-    layout: Challenge
-    placeholder: true
-
 dos:
   - Show one character, big enough to recognise at phone size.
   - Keep the text to three words or fewer, with a thick dark outline.
@@ -260,7 +202,7 @@ dos:
   - Leave the bottom-right corner clear for the video length.
   - Promise something the video shows in its first minute.
 donts:
-  - Don't copy another creator's thumbnail or use official key art; make an original image in the same style.
+  - Don't copy another creator's thumbnail. Build your own scene from your own gameplay, and check Epic Games' fan content rules before using official art.
   - Don't repeat the video title word for word in the thumbnail.
   - Don't stack loot, effects, arrows and emojis at once. Pick one focus.
   - Don't use thin fonts or small text; they disappear on a phone.
@@ -281,10 +223,11 @@ faq:
       thumbnails.
   - q: What is a good Fortnite background for a thumbnail?
     a: >
-      A simple one. A bright blue sky and a stylised island work for wins and
-      updates; a purple storm sky works for montages and tense moments. Blur or
-      darken the background so the character and the text stand out, and avoid
-      busy scenes full of small details that turn into noise at phone size.
+      A simple one. A bright blue sky over a well-known place on the island
+      works for wins and updates; a purple storm sky works for montages and
+      tense moments. Blur or darken the background so the character and the
+      text stand out, and avoid busy scenes full of small details that turn
+      into noise at phone size.
   - q: What font do Fortnite thumbnails use?
     a: >
       Most use a heavy, condensed, all-caps display font with a thick black
@@ -294,11 +237,12 @@ faq:
       readable when the thumbnail is small.
   - q: Can I use Fortnite skins, logos or screenshots in my thumbnail?
     a: >
-      The examples on this page never do: they are original images made by
-      Base.Tube in a Fortnite-inspired style. For your own channel, Epic Games
-      publishes a fan content policy that explains what you may do with its game
-      content; read it before using official art, logos or promotional images.
-      This page is not legal advice.
+      The examples on this page are generated with Base.Tube to show what a
+      Fortnite thumbnail can look like; they use the game's look and
+      characters. For your own channel, Epic Games publishes a fan content
+      policy that explains what you may do with its game content; read it
+      before using official art, logos or promotional images. This page is not
+      legal advice.
   - q: Is there a free Fortnite thumbnail maker?
     a: >
       You can build one by hand in any free image editor with the rules on this
@@ -307,10 +251,10 @@ faq:
       layouts, add what happens in your video, and choose the version you like.
 
 related:
-  - gaming
   - roblox
   - minecraft
   - gorilla-tag
+  - call-of-duty
 
 cta:
   style: fortnite
@@ -342,21 +286,23 @@ arrows and circles.
 
 The character does the emotional work. Make it large (cut at the chest or the
 waist), give it one exaggerated expression and point its eyes at the thing that
-matters: the text, the loot or the opponent. The examples above use original
-cartoon characters in the style of the game, never real skins. On your own
-channel, a photo of you making the same big expression works just as well.
+matters: the text, the loot or the opponent. The examples above are generated
+with Base.Tube and use the game's own skins and places. On your own channel,
+your skin in your own gameplay works, and so does a photo of you making the
+same big expression next to the game.
 
 ## Text: fewer words, thicker outlines
 
 Three words is the upper limit. Use capitals, a heavy condensed font and a thick
 black outline so the text survives any background. The words should add
-something the image cannot say on its own, like "1 HP" or "NO GUNS", instead of
-repeating the video title.
+something the image cannot say on its own, like "1 HP" or "PICKAXE ONLY",
+instead of repeating the video title. To compare heavy display fonts side by
+side, see the [YouTube thumbnail fonts guide](/youtube-thumbnail-fonts).
 
 ## Five layouts, one per video type
 
-Most Fortnite videos fit one of five shapes: **montage**, **victory**,
-**fail**, **update** or **challenge**. The layout recipes above give the
+Most Fortnite videos fit one of five shapes: **victory**, **progression**,
+**live event**, **face cam** or **challenge**. The layout recipes above give the
 structure of each one. Pick the layout that matches the promise of your video,
 then change the character, the colour and the words. Keeping the same layout
 across a series also helps returning viewers spot your videos.
@@ -366,7 +312,9 @@ across a series also helps returning viewers spot your videos.
 A Fortnite thumbnail background sets the mood and nothing else. A bright island and blue sky say
 "fun" and suit wins and updates. A dark purple storm says "tension" and suits
 montages. Whatever you choose, blur it or darken it so it never competes with
-the character or the text.
+the character or the text. For more ways to build a background that stays
+behind the subject, see the
+[YouTube thumbnail backgrounds guide](/youtube-thumbnail-backgrounds).
 
 ## Size and format
 

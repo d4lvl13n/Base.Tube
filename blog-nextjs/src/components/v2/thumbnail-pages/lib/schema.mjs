@@ -444,8 +444,11 @@ export function normalizePage(data, body, ctx) {
     }
     const placeholder = g.placeholder === true;
     if (g.placeholder !== undefined && typeof g.placeholder !== 'boolean') r.add('error', `${f}.placeholder`, 'must be true or false');
+    // Game pages show the real game (its art, characters and logo badge); real people stay forbidden everywhere.
+    const isGame = category === 'game';
     for (const term of riskyPromptTerms(`${prompt} ${g.notes ?? ''}`)) {
-      r.add('warning', `${f}.prompt`, `mentions "${term}": examples must never contain logos, screenshots, official art or real people`);
+      if (isGame && !/real|celebrit/.test(term)) continue;
+      r.add('warning', `${f}.prompt`, isGame ? `mentions "${term}": examples must never show real people` : `mentions "${term}": examples must never contain logos, screenshots, official art or real people`);
     }
     return {
       file,
@@ -508,11 +511,12 @@ export function normalizePage(data, body, ctx) {
   } else if (category === 'game') {
     r.add('warning', 'trademark', 'game pages should name the trademark and its owner so the page shows the "not affiliated" line');
   }
-  if (trademark) {
+  // Game pages show the real game, so their prompts name it. Creator-style pages still describe the look.
+  if (trademark && category !== 'game') {
     const tmLower = trademark.name.toLowerCase();
     gallery.forEach((g, i) => {
       if (g.prompt.toLowerCase().includes(tmLower)) {
-        r.add('warning', `gallery[${i + 1}].prompt`, `names "${trademark?.name}": describe the look instead, so the generator never copies protected characters or art`);
+        r.add('warning', `gallery[${i + 1}].prompt`, `names "${trademark?.name}": describe the look instead of naming the creator`);
       }
     });
     layouts.forEach((l, i) => {

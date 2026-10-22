@@ -38,6 +38,9 @@ const tools = [
   { href: '/tools/youtube-thumbnail-tester', label: 'Thumbnail tester' },
   { href: '/tools/youtube-title-checker', label: 'Title checker' },
   { href: '/tools/video-to-thumbnail', label: 'Video to thumbnail' },
+  { href: '/youtube-thumbnail-fonts', label: 'Thumbnail fonts' },
+  { href: '/youtube-thumbnail-backgrounds', label: 'Thumbnail backgrounds' },
+  { href: '/thumbnails', label: 'Thumbnail ideas' },
 ];
 
 const external = { target: '_blank', rel: 'noopener noreferrer' } as const;

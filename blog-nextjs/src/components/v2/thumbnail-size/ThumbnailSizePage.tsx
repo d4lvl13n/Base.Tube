@@ -14,11 +14,26 @@ import {
   CHANGELOG,
   FAQ,
   MISTAKES,
+  NEXT_STEPS,
+  QUICK_ANSWERS,
   RELATED_TOOLS,
+  ROBLOX_SOURCE_URL,
   STUDIO_AUDIT_URL,
   STUDIO_GENERATE_URL,
+  UPLOAD_BLOCKERS,
+  UPLOAD_STEPS,
+  YT_BLOG_TV_URL,
 } from './content';
-import { CHECKED_ON_ISO, CHECKED_ON_LABEL, MEASURED, SOURCE_NAME, SOURCE_URL, type Mode } from './specs';
+import {
+  CHECKED_ON_ISO,
+  CHECKED_ON_LABEL,
+  MEASURED,
+  MEASURED_ON_ISO,
+  MEASURED_ON_LABEL,
+  SOURCE_NAME,
+  SOURCE_URL,
+  type Mode,
+} from './specs';
 import { useThumbnailUpload } from './useThumbnailUpload';
 
 function Sep() {
@@ -78,9 +93,10 @@ export default function ThumbnailSizePage() {
             <div className={s.heroGrid}>
               <ScrollReveal className={s.gridAnswer}>
                 <p className={s.answer}>
-                  YouTube recommends <strong>3840 × 2160 pixels</strong> in a <strong>16:9</strong> frame. The older
-                  1280 × 720 still works. Keep the file under <strong>2 MB</strong> if you upload from the phone app, or{' '}
-                  <strong>50 MB</strong> on a computer. Use <strong>JPG or PNG</strong>.
+                  The YouTube thumbnail size is <strong>3840 × 2160 pixels</strong>, in a <strong>16:9</strong> aspect
+                  ratio. The older 1280 × 720 still works, and the minimum is 640 pixels wide. Keep the file under{' '}
+                  <strong>2 MB</strong> if you upload from the phone app, or <strong>50 MB</strong> on a computer. Use{' '}
+                  <strong>JPG or PNG</strong>. Shorts use <strong>2160 × 3840</strong> (9:16).
                 </p>
                 <p className={s.source}>
                   Source:{' '}
@@ -144,13 +160,34 @@ export default function ThumbnailSizePage() {
                 </dl>
 
                 <p className={s.jump}>
+                  <a href="#quick-answers">Quick answers</a>
                   <a href="#real-size">Real-size preview</a>
                   <a href="#safe-zone">Safe zone</a>
                   <a href="#specs">Spec tables</a>
+                  <a href="#upload">How to upload</a>
                   <a href="#faq">FAQ</a>
                 </p>
               </ScrollReveal>
             </div>
+          </div>
+        </section>
+
+        <Sep />
+
+        {/* ── QUICK ANSWERS ────────────────────────────────── */}
+        <section className={`${s.section} ${s.quickSection}`} id="quick-answers">
+          <div className="v2-container">
+            <SectionHead label="Quick answers" title="YouTube thumbnail size, at a glance." />
+            <ScrollReveal>
+              <dl className={s.quick}>
+                {QUICK_ANSWERS.map((item) => (
+                  <div key={item.q} className={s.quickItem}>
+                    <dt>{item.q}</dt>
+                    <dd>{item.a}</dd>
+                  </div>
+                ))}
+              </dl>
+            </ScrollReveal>
           </div>
         </section>
 
@@ -162,8 +199,14 @@ export default function ThumbnailSizePage() {
             <SectionHead label="At real size" title="Viewers see it much smaller.">
               {mode === 'video' ? (
                 <p>
-                  A 3840 × 2160 file is shown at 500 pixels wide in search on a computer and 248 pixels wide in the
-                  up-next list. This is your image at those sizes, next to a video length label.
+                  A 3840 × 2160 file is shown at {MEASURED.desktopSearch.w} pixels wide in search on a computer and{' '}
+                  {MEASURED.desktopSidebar.w} pixels wide in the up-next list. This is your image at those sizes, next
+                  to a video length label. On a TV the thumbnail fills far more of the screen. YouTube gave that as the
+                  reason for{' '}
+                  <a href={YT_BLOG_TV_URL} target="_blank" rel="noopener noreferrer" className={s.inlineLink}>
+                    allowing 4K thumbnails
+                  </a>
+                  . We have not measured TV sizes, so they are not listed here.
                 </p>
               ) : (
                 <p>
@@ -206,7 +249,8 @@ export default function ThumbnailSizePage() {
                 <a href={SOURCE_URL} target="_blank" rel="noopener noreferrer" className={s.inlineLink}>
                   YouTube Help
                 </a>
-                , checked {CHECKED_ON_LABEL}. The sizes viewers see are our own measurements.
+                , checked {CHECKED_ON_LABEL}. The sizes viewers see are our own measurements from{' '}
+                {MEASURED_ON_LABEL}.
               </p>
             </SectionHead>
 
@@ -302,10 +346,58 @@ export default function ThumbnailSizePage() {
                 </table>
               </div>
               <p className={s.tableNote}>
-                Measured on youtube.com on {CHECKED_ON_LABEL} in Chrome, signed out, in a 1440 px wide window on
+                Measured on youtube.com on {MEASURED_ON_LABEL} in Chrome, signed out, in a 1440 px wide window on
                 desktop and a 390 px wide window on a phone. YouTube states that the embedded player uses your
                 thumbnail as its preview image, which is why it asks for the largest size you can give it.
               </p>
+              <p className={s.tableNote}>
+                <strong>Looking for the Roblox thumbnail size?</strong> That is a different platform. The{' '}
+                <a href={ROBLOX_SOURCE_URL} target="_blank" rel="noopener noreferrer" className={s.inlineLink}>
+                  Roblox Creator Hub
+                </a>{' '}
+                asks for 16:9, ideally 1920 × 1080 pixels, in JPG, GIF, PNG, TGA or BMP. A YouTube video about a Roblox
+                game still uses the YouTube sizes above.
+              </p>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        <Sep />
+
+        {/* ── HOW TO UPLOAD ────────────────────────────────── */}
+        <section className={s.section} id="upload">
+          <div className="v2-container">
+            <SectionHead label="How to upload" title="Add or change a thumbnail in four steps.">
+              <p>
+                These are the steps in{' '}
+                <a href={SOURCE_URL} target="_blank" rel="noopener noreferrer" className={s.inlineLink}>
+                  YouTube Help
+                </a>{' '}
+                for a computer. Shorts thumbnails can only be added this way.
+              </p>
+            </SectionHead>
+            <div className={`v2-cp-steps ${s.mistakes}`}>
+              {UPLOAD_STEPS.map((step, i) => (
+                <ScrollReveal key={step.title} delay={i * 50}>
+                  <div className="v2-cp-step">
+                    <div className="v2-cp-step-num">{String(i + 1).padStart(2, '0')}</div>
+                    <div className="v2-cp-step-body">
+                      <h3 className="v2-cp-step-title">{step.title}</h3>
+                      <p className="v2-cp-step-detail">{step.detail}</p>
+                    </div>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+            <ScrollReveal>
+              <div className={s.blockers}>
+                <h3 className={s.h3}>No Upload file button, or the image was rejected?</h3>
+                <ul>
+                  {UPLOAD_BLOCKERS.map((b) => (
+                    <li key={b}>{b}</li>
+                  ))}
+                </ul>
+              </div>
             </ScrollReveal>
           </div>
         </section>
@@ -329,6 +421,27 @@ export default function ThumbnailSizePage() {
                 </ScrollReveal>
               ))}
             </div>
+          </div>
+        </section>
+
+        <Sep />
+
+        {/* ── NEXT STEPS ───────────────────────────────────── */}
+        <section className={s.section} id="next-steps">
+          <div className="v2-container">
+            <SectionHead label="Next steps" title="Right size. Now make it good." />
+            <ScrollReveal>
+              <ul className={s.nextGrid}>
+                {NEXT_STEPS.map((n) => (
+                  <li key={n.href}>
+                    <Link href={n.href} className={s.nextCard}>
+                      <span className={s.nextTitle}>{n.title}</span>
+                      <span className={s.nextText}>{n.text}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </ScrollReveal>
           </div>
         </section>
 
@@ -404,9 +517,21 @@ export default function ThumbnailSizePage() {
                     . Last checked: <time dateTime={CHECKED_ON_ISO}>{CHECKED_ON_LABEL}</time>.
                   </p>
                   <p>
+                    The 2 MB to 50 MB change and the TV reason behind it:{' '}
+                    <a href={YT_BLOG_TV_URL} target="_blank" rel="noopener noreferrer" className={s.inlineLink}>
+                      YouTube Official Blog, 29 October 2025
+                    </a>
+                    . Roblox sizes:{' '}
+                    <a href={ROBLOX_SOURCE_URL} target="_blank" rel="noopener noreferrer" className={s.inlineLink}>
+                      Roblox Creator Hub, &quot;Thumbnails&quot;
+                    </a>
+                    , checked {CHECKED_ON_LABEL}.
+                  </p>
+                  <p>
                     Sizes viewers see, and the video length label: our own measurements on youtube.com on{' '}
-                    {CHECKED_ON_LABEL}. Your image is read in your browser and is never uploaded. The checker counts 1
-                    MB as 1,000,000 bytes, the stricter reading, so a pass on file size is a safe pass.
+                    <time dateTime={MEASURED_ON_ISO}>{MEASURED_ON_LABEL}</time>. Your image is read in your browser and
+                    is never uploaded. The checker counts 1 MB as 1,000,000 bytes, the stricter reading, so a pass on
+                    file size is a safe pass.
                   </p>
                   <p>
                     Base.Tube is not affiliated with YouTube. YouTube can change these limits at any time, so check

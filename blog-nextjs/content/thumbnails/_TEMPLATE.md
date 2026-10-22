@@ -20,11 +20,16 @@
 #  Brand and legal rules (checked by people, partly by the validator):
 #   - Names are descriptive only: "Roblox-style thumbnail", "MrBeast-style".
 #     Never say "official", never suggest a partnership or endorsement.
-#   - Every image is Base.Tube's own AI generation. Never real people's faces
-#     (including famous creators), logos, game art, screenshots or copies of
-#     existing thumbnails.
-#   - In generation prompts, describe the look ("blocky 3D characters, bright
-#     plastic colours") instead of naming the game or the creator.
+#   - Every image is Base.Tube's own AI generation. Never a real person's face
+#     (creators, developers, celebrities) and never a copy of an existing thumbnail.
+#   - GAME pages show the real game: name it in the prompt and use its real
+#     characters, places, items and HUD (IGDB screenshots can be attached as
+#     references). The game's logo is allowed as a small badge. A synthetic
+#     (invented) creator face-cam is allowed.
+#   - CREATOR-STYLE pages (MrBeast-style…) describe the look, never the creator.
+#   - Prompts are short creative briefs: the video idea, what must appear, the
+#     mood and the on-image text. Let the generator choose the composition.
+#   - Direction for game pages: docs/research/game-thumbnail-refs/style-directions.md
 #   - No invented numbers, and never claim to predict or score click-through rate.
 # ════════════════════════════════════════════════════════════════════════════
 
@@ -99,7 +104,7 @@ styleRecipe:
 
 # ── Layout recipes (3 to 6; game pages: 5) ────────────────────────────────
 # Each becomes a numbered recipe with a "Generate" button, and a chip in the hero.
-# "prompt" is sent to the Base.Tube Studio. Describe the look; do NOT name the game.
+# "prompt" is sent to the Base.Tube Studio. Game pages name the game; creator-style pages describe the look.
 layouts:
   - name: Victory
     description: >
@@ -115,7 +120,7 @@ layouts:
     prompt: "..."
 
 # ── Gallery ───────────────────────────────────────────────────────────────
-# At least 12 images (the page stays noindex below that); 24 to 40 is the target.
+# At least 6 images (the page stays noindex below that). Game pages use 6, each a different style.
 # Files go in public/thumbnails/<slug>/ : 1280x720 (16:9) WebP under 400 KB,
 # lowercase names with hyphens. The FIRST image is also the social-media preview.
 gallery:
