@@ -139,7 +139,6 @@ gallery:
       purple with a gold glow. Text "1 HP". Keep the bottom-right corner clear,
       be creative with the composition
     layout: Victory
-    placeholder: true
   - file: 04-victory.webp
     alt: "Fortnite thumbnail: aerial view of Tilted Towers mid-fight with gliders landing and a skin on the clock tower"
     caption: "Victory: landing at Tilted every game"
@@ -150,7 +149,6 @@ gallery:
       Bright, busy but readable. Text "TILTED ONLY". Keep the bottom-right
       corner clear, be creative with the composition
     layout: Victory
-    placeholder: true
   - file: 05-progression.webp
     alt: "Fortnite thumbnail: Renegade Raider split in two, a grey Bronze rank badge on the left and a glowing Unreal badge on the right"
     caption: "Progression: from Bronze to Unreal in ranked"
@@ -161,7 +159,6 @@ gallery:
       Text "BRONZE → UNREAL". Keep the bottom-right corner clear, be creative
       with the composition
     layout: Progression
-    placeholder: true
   - file: 11-live-event.webp
     alt: "Fortnite thumbnail: a building-sized golden Loot Llama standing over Pleasant Park as tiny players run toward it"
     caption: "Live event: a giant Loot Llama, no text needed"
@@ -172,7 +169,6 @@ gallery:
       gold sparkles. No text. Keep the bottom-right corner clear, be creative
       with the composition
     layout: Live event
-    placeholder: true
   - file: 13-face-cam.webp
     alt: "Fortnite thumbnail: an invented streamer with a headset gasping next to the item shop showing a returning Skull Trooper skin"
     caption: "Face cam: a rare skin back in the shop"
@@ -183,7 +179,6 @@ gallery:
       featured slot. Blue and purple. Text "FINALLY". Keep the bottom-right
       corner clear, be creative with the composition
     layout: Face cam
-    placeholder: true
   - file: 18-challenge.webp
     alt: "Fortnite thumbnail: Fishstick balancing on the last wooden platform above rising lava in a Creative map"
     caption: "Challenge: the floor is lava"
@@ -194,7 +189,6 @@ gallery:
       sky. Text "FLOOR IS LAVA". Keep the bottom-right corner clear, be creative
       with the composition
     layout: Challenge
-    placeholder: true
 dos:
   - Show one character, big enough to recognise at phone size.
   - Keep the text to three words or fewer, with a thick dark outline.

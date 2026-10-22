@@ -134,42 +134,36 @@ gallery:
     prompt: >
       16:9 YouTube thumbnail for a Gorilla Tag video: something follows you in the Caves. First-person VR monke hands hold a flashlight; behind, a pale stretched monke with blank white eyes. Cold blue-black. Text "BEHIND YOU". Keep the bottom-right corner clear, be creative with the composition
     layout: Horror Map
-    placeholder: true
   - file: 06-meme-moment.webp
     alt: "Gorilla Tag thumbnail: extreme close-up of a smug grey monke as pixel sunglasses drop onto its face, text TOO EASY"
     caption: "Meme: the smug win, up close"
     prompt: >
       16:9 YouTube thumbnail for a Gorilla Tag video: I never got tagged once. Extreme close-up of a smug grey monke face as pixel sunglasses drop onto it, low-poly Forest blurred behind. Bright, meme energy. Text "TOO EASY". Keep the bottom-right corner clear, be creative with the composition
     layout: Meme Moment
-    placeholder: true
   - file: 10-game-crossover.webp
     alt: "Gorilla Tag thumbnail: monkes gliding down onto the Forest map while a glowing storm ring closes in, text LAST MONKE"
     caption: "Crossover: Gorilla Tag as a battle royale"
     prompt: >
       16:9 YouTube thumbnail for a Gorilla Tag battle royale video: dozens of coloured monkes glide down onto the Forest map from the sky while a glowing purple storm ring closes in. Wide aerial view. Text "LAST MONKE". Keep the bottom-right corner clear, be creative with the composition
     layout: Game Crossover
-    placeholder: true
   - file: 13-real-world.webp
     alt: "Gorilla Tag thumbnail: a yellow low-poly monke swinging from a ceiling lamp in a real living room through mixed reality, text IN MY HOUSE"
     caption: "Real world: a monke in the living room"
     prompt: >
       16:9 YouTube thumbnail for a Gorilla Tag mixed reality video. A yellow low-poly monke swings from the ceiling lamp of a real photographed living room; a cushion flies, a vase tips over. Warm home light. Text "IN MY HOUSE". Keep the bottom-right corner clear, be creative with the composition
     layout: Real World
-    placeholder: true
   - file: 17-hunt-and-hide.webp
     alt: "Gorilla Tag thumbnail: a crowd of glowing lava monkes pouring out of the Caves entrance toward one ice-blue survivor, text INFECTED"
     caption: "Hunt: the last survivor against the lava monkes"
     prompt: >
       16:9 YouTube thumbnail for a Gorilla Tag Infection video: last one alive. A crowd of glowing lava monkes pours out of the Caves entrance toward one ice-blue survivor monke swinging away, arms stretched. Lava orange and dark rock. Text "INFECTED". Keep the bottom-right corner clear, be creative with the composition
     layout: Hunt and Hide
-    placeholder: true
   - file: 20-hunt-and-hide.webp
     alt: "Gorilla Tag thumbnail: a huge red hunter monke in the foreground of the Canyons, ten tiny monkes fleeing behind it, text 1 VS 10"
     caption: "Hunt: one hunter against ten"
     prompt: >
       16:9 YouTube thumbnail for a Gorilla Tag Hunt mode video: one hunter against ten players. A huge red monke fills the foreground, arms wide, grinning; ten tiny coloured monkes flee across orange Canyons rock behind it. Hot orange. Text "1 VS 10". Keep the bottom-right corner clear, be creative with the composition
     layout: Hunt and Hide
-    placeholder: true
 
 dos:
   - Show one monke, large, with its arms doing something.

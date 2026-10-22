@@ -150,7 +150,6 @@ gallery:
       top. Bright tier colours. Text "WORST DUNGEON?", keep the bottom-right
       corner clear, be creative with the composition
     layout: Tier List & Ranking
-    placeholder: true
   - file: 03-tier-list.webp
     alt: "Zelda: Ocarina of Time thumbnail: the Hookshot wears a gold crown above other items in a glowing inventory grid, text #1 ITEM"
     caption: "Best item: the inventory screen as a ranking"
@@ -161,7 +160,6 @@ gallery:
       Biggoron Sword below. Deep blue glow. Text "#1 ITEM", keep the
       bottom-right corner clear, be creative with the composition
     layout: Tier List & Ranking
-    placeholder: true
   - file: 06-remake-reveal.webp
     alt: "Zelda: Ocarina of Time thumbnail: adult Link leaps across a lava gap on Death Mountain next to a big glowing A-button prompt, text JUMP BUTTON!"
     caption: "New feature: Link can finally jump"
@@ -172,7 +170,6 @@ gallery:
       logo badge. Text "JUMP BUTTON!", keep the bottom-right corner clear, be
       creative with the composition
     layout: Remake Reveal
-    placeholder: true
   - file: 10-n64-vs-switch-2.webp
     alt: "Zelda: Ocarina of Time thumbnail: Ganondorf's face split in two, blocky N64 polygons and the detailed remake, text GLOW UP"
     caption: "Glow up: one face, two eras"
@@ -183,7 +180,6 @@ gallery:
       the other. Dark red and gold. Text "GLOW UP", keep the bottom-right
       corner clear, be creative with the composition
     layout: N64 vs Switch 2
-    placeholder: true
   - file: 16-first-playthrough.webp
     alt: "Zelda: Ocarina of Time thumbnail: adult Link on Epona jumps the Lon Lon Ranch wall at sunset while Ingo shakes his fist, text SHE'S MINE"
     caption: "Getting Epona: the horse mid-air"
@@ -194,7 +190,6 @@ gallery:
       light. Text "SHE'S MINE", keep the bottom-right corner clear, be creative
       with the composition
     layout: First Playthrough & Reaction
-    placeholder: true
   # ── Secrets & Dungeon Guides ───────────────────────────────────────────
   - file: 17-secrets-guide.webp
     alt: "Zelda: Ocarina of Time thumbnail: adult Link in Iron Boots faces Dark Link on the misty Water Temple floor, a gold arrow, text SOLVED"
@@ -206,7 +201,6 @@ gallery:
       blue and silver. Text "SOLVED", keep the bottom-right corner clear, be
       creative with the composition
     layout: Secrets & Dungeon Guides
-    placeholder: true
 dos:
   - Give each thumbnail one video idea a viewer gets in a second, a ranking, a new feature, a comparison, a reaction or a secret.
   - Show the real game so fans recognise it at once, Link, Hyrule, the items and the HUD.

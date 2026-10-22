@@ -113,42 +113,36 @@ gallery:
     prompt: >
       16:9 YouTube thumbnail for a GTA 6 video: midnight launch stream. Face cam of an invented streamer in headphones, jaw dropped, lit by the opening view of Vice City at sunset, Jason and Lucia behind, small GTA VI logo badge, pink and orange glow. Text "IT'S HERE". Keep the bottom-right corner clear, be creative with the composition
     layout: Launch Reaction
-    placeholder: true
   - file: 05-side-by-side.webp
     alt: "GTA 6 thumbnail: split of the Vice City beachfront in GTA 6 and the real Miami Beach with a red arrow between them, text SO REAL"
     caption: "Side by side: the Vice City beachfront and the real one"
     prompt: >
       16:9 YouTube thumbnail for a GTA 6 video: GTA 6 vs real life. The Vice City beachfront in GTA 6 with art-deco hotels and neon on one side, the real Miami Beach strip on the other, a red arrow linking matching buildings, no recognisable people. Text "SO REAL". Keep the bottom-right corner clear, be creative with the composition
     layout: Side by Side
-    placeholder: true
   - file: 09-leonida-tour.webp
     alt: "GTA 6 thumbnail: the full GTA 6 map of Leonida with the GTA 5 map laid over it for scale, text HOW BIG?"
     caption: "Leonida tour: the map size, with GTA 5 for scale"
     prompt: >
       16:9 YouTube thumbnail for a GTA 6 video: how big is the map. The full GTA 6 map of Leonida, Vice City, the Keys and swamps, with the GTA 5 Los Santos map laid over it as a small faded overlay for scale, satellite style with turquoise sea. Text "HOW BIG?". Keep the bottom-right corner clear, be creative with the composition
     layout: Leonida Tour
-    placeholder: true
   - file: 14-heist-and-chase.webp
     alt: "GTA 6 thumbnail: full gameplay shot of a sports car flying off a causeway, police cars and a helicopter behind, five wanted stars, text 5 STARS"
     caption: "Heist and chase: five stars on the causeway"
     prompt: >
       16:9 YouTube thumbnail for a GTA 6 video: a max wanted level escape. Full gameplay shot: a sports car airborne off a Vice City causeway, police cars and a helicopter right behind, GTA 6 HUD with five wanted stars lit, sunset sky, red and blue sirens. Text "5 STARS". Keep the bottom-right corner clear, be creative with the composition
     layout: Heist and Chase
-    placeholder: true
   - file: 15-heist-and-chase.webp
     alt: "GTA 6 thumbnail: Lucia in a bank vault with a duffel bag of cash and gold bars, cold blue light, text BIG SCORE"
     caption: "Heist and chase: the bank vault, Lucia up close"
     prompt: >
       16:9 YouTube thumbnail for a GTA 6 video: the biggest heist in GTA 6. Lucia large in frame inside an open bank vault, a duffel bag of cash on her shoulder, gold bars and money stacks glowing behind, cold blue light with gold highlights. Text "BIG SCORE". Keep the bottom-right corner clear, be creative with the composition
     layout: Heist and Chase
-    placeholder: true
   - file: 19-rp-series.webp
     alt: "GTA 6 thumbnail: a GTA 6 taxi driver turning to a masked passenger holding a briefcase, neon streaks outside, text WRONG RIDE"
     caption: "RP series: the taxi driver's strangest fare"
     prompt: >
       16:9 YouTube thumbnail for a GTA 6 video: GTA 6 RP taxi driver story. Inside a Vice City cab at night, the driver turns with raised eyebrows to a masked passenger holding a briefcase, neon streaks through the windows, taxi yellow and pink. Text "WRONG RIDE". Keep the bottom-right corner clear, be creative with the composition
     layout: RP Series
-    placeholder: true
 dos:
   - "Show the real game so it reads in one glance: Jason, Lucia, Vice City, the wanted stars or the map."
   - "Pick one video idea per thumbnail: a reaction, a comparison, a place, a heist or a role."

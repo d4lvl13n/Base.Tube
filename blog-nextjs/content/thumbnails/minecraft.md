@@ -143,7 +143,6 @@ gallery:
       it became. Text "ONE BLOCK". Keep the bottom-right corner clear, be
       creative with the composition.
     layout: 100 Days
-    placeholder: true
   - file: 04-100-days.webp
     alt: "Minecraft thumbnail: gameplay shot of a base dug into a crimson forest in the Nether, a ghast and hoglins nearby, text NETHER ONLY"
     caption: "100 days: a Nether-only base, with the HUD on screen"
@@ -154,7 +153,6 @@ gallery:
       red and orange. Text "NETHER ONLY". Keep the bottom-right corner clear,
       be creative with the composition.
     layout: 100 Days
-    placeholder: true
   - file: 07-versus.webp
     alt: "Minecraft thumbnail: an iron golem and the Warden face to face in a sculk arena with health bars above them, text WHO WINS?"
     caption: "Versus: iron golem against the Warden"
@@ -165,7 +163,6 @@ gallery:
       iron grey. Text "WHO WINS?". Keep the bottom-right corner clear, be
       creative with the composition.
     layout: Versus
-    placeholder: true
   - file: 10-boss-fight.webp
     alt: "Minecraft thumbnail: the three-headed Wither looming over Steve in plain clothes with an iron sword, boss bar on top, text NO ARMOR"
     caption: "Boss fight: the Wither, and no armour"
@@ -176,7 +173,6 @@ gallery:
       top. Dark sky, purple glow. Text "NO ARMOR". Keep the bottom-right corner
       clear, be creative with the composition.
     layout: Boss Fight
-    placeholder: true
   - file: 15-updates-secrets.webp
     alt: "Minecraft thumbnail: a creaking with glowing orange eyes stepping out of the grey fog of the Pale Garden toward Alex and her torch, no text"
     caption: "Update: the Pale Garden at night, no words"
@@ -187,7 +183,6 @@ gallery:
       torch. Eerie grey and orange. No text. Keep the bottom-right corner
       clear, be creative with the composition.
     layout: Updates & Secrets
-    placeholder: true
   - file: 18-real-life.webp
     alt: "Minecraft thumbnail: split frame of the Eiffel Tower at sunset and its block-for-block Minecraft replica with Steve on top, text 1:1 SCALE"
     caption: "Real life: a landmark and its block replica"
@@ -198,7 +193,6 @@ gallery:
       Steve on top for scale. Text "1:1 SCALE". Keep the bottom-right corner
       clear, be creative with the composition.
     layout: Real Life
-    placeholder: true
 dos:
   - "Show what changed: the finished base, the last heart, the new mob."
   - Show the real game so fans recognise it at a glance, with one clear video idea per image.

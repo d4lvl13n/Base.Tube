@@ -136,7 +136,6 @@ gallery:
       yellow. Text "INFINITE CASH". Keep the bottom-right corner clear, be
       creative with the composition.
     layout: Tycoon
-    placeholder: true
   - file: 06-challenge.webp
     alt: "Roblox thumbnail: a classic noob avatar as tall as a skyscraper stomping through a blocky city, tiny avatars fleeing, text RUN!"
     caption: "Challenge: a giant noob, seen from below"
@@ -147,7 +146,6 @@ gallery:
       colours. Text "RUN!". Keep the bottom-right corner clear, be creative with
       the composition.
     layout: Challenge
-    placeholder: true
   - file: 07-challenge.webp
     alt: "Roblox thumbnail: an avatar hanging off the last ledge of an obby tower in the sky, neon kill bricks below, text 1 JUMP LEFT"
     caption: "Obby: hanging on at the very last stage"
@@ -158,7 +156,6 @@ gallery:
       blue sky, red danger. Text "1 JUMP LEFT". Keep the bottom-right corner
       clear, be creative with the composition.
     layout: Challenge
-    placeholder: true
   - file: 09-admin.webp
     alt: "Roblox thumbnail: a huge glowing ban hammer above a tiny avatar, the grey kick message box blurred behind, text BANNED?"
     caption: "Admin: the ban hammer is the hero"
@@ -168,7 +165,6 @@ gallery:
       blurred behind. Dark red and white, dramatic light. Text "BANNED?". Keep
       the bottom-right corner clear, be creative with the composition.
     layout: Admin and rules
-    placeholder: true
   - file: 14-horror-event.webp
     alt: "Roblox thumbnail: a huge monster with a stretched classic Roblox smile leaning out of a classroom door, text DON'T LOOK"
     caption: "Horror: the classic smile, made wrong"
@@ -179,7 +175,6 @@ gallery:
       the flashlight beam. Cold navy, one red accent. Text "DON'T LOOK". Keep
       the bottom-right corner clear, be creative with the composition.
     layout: Horror and events
-    placeholder: true
   - file: 17-noob-to-pro.webp
     alt: "Roblox thumbnail: split frame, the classic noob with 0 Robux against the same avatar in a Dominus and Korblox leg, text NOOB TO RICH"
     caption: "Noob to rich: split frame"
@@ -190,7 +185,6 @@ gallery:
       against bright gold. Text "NOOB TO RICH". Keep the bottom-right corner
       clear, be creative with the composition.
     layout: Noob to Pro
-    placeholder: true
 dos:
   - "Make the idea obvious in one glance: a giant tycoon, a ban hammer, a thousand noobs, a dark corridor."
   - Push the avatar's expression and pose; simple faces need big emotions.

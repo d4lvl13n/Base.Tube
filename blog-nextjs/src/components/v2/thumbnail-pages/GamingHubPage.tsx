@@ -12,8 +12,6 @@ import s from './thumbnails.module.css';
 
 const NEW_TAB = { target: '_blank', rel: 'noopener noreferrer' } as const;
 
-/** Examples shown per game on the hub; the full set lives on the game's own page. */
-const PER_GAME = 8;
 
 export const GAMING_FAQ = [
   {
@@ -102,48 +100,39 @@ export default function GamingHubPage({ pages, isLive }: { pages: ThumbnailPage[
           </div>
         </section>
 
-        {/* ── ONE STRIP PER GAME ───────────────────────────────── */}
-        {pages.map((p) => {
-          const examples = realExamples(p);
-          const href = `${BASE_PATH}/${p.slug}`;
-          return (
-            <div key={p.slug}>
-              <div className="v2-sep" aria-hidden />
-              <section className={`v2-cp-section ${g.game}`} id={p.slug} aria-labelledby={`${p.slug}-h`}>
-                <div className="v2-container">
-                  <div className={g.gameHead}>
-                    <ScrollReveal>
-                      <h2 id={`${p.slug}-h`} className="v2-cp-section-h2">
-                        <Link href={href} className={g.gameTitle}>
-                          {p.name} thumbnails
-                        </Link>
-                      </h2>
-                      <p className={g.gameSummary}>{p.summary}</p>
-                    </ScrollReveal>
-                    <Link href={`${href}#examples`} className={g.seeAll}>
-                      See all {examples.length} examples <span aria-hidden>→</span>
+        {/* ── ONE THUMBNAIL PER GAME, STAGGERED LEFT / RIGHT ───── */}
+        <div className="v2-sep" aria-hidden />
+        <section className="v2-cp-section" aria-label="Games">
+          <div className="v2-container">
+            <ol className={g.stagger}>
+              {pages.map((p, i) => {
+                const examples = realExamples(p);
+                const cover = examples[0];
+                const href = `${BASE_PATH}/${p.slug}`;
+                return (
+                  <li key={p.slug} id={p.slug} className={i % 2 ? `${g.row} ${g.rowFlip}` : g.row}>
+                    <Link href={href} className={`${g.thumb} ${g.rowMedia}`} aria-label={`${p.name} thumbnail ideas`}>
+                      <Image src={cover.src} alt={cover.alt} fill sizes="(max-width: 900px) 100vw, 640px" className={g.thumbImg} />
                     </Link>
-                  </div>
-                  <ul className={g.grid}>
-                    {examples.slice(0, PER_GAME).map((img) => (
-                      <li key={img.file}>
-                        <Link href={`${href}#examples`} className={g.thumb} aria-label={`${p.name}: ${img.caption}`}>
-                          <Image
-                            src={img.src}
-                            alt={img.alt}
-                            fill
-                            sizes="(max-width: 560px) 50vw, (max-width: 1100px) 33vw, 280px"
-                            className={g.thumbImg}
-                          />
+                    <div className={g.rowBody}>
+                      <ScrollReveal>
+                        <h2 id={`${p.slug}-h`} className="v2-cp-section-h2">
+                          <Link href={href} className={g.gameTitle}>
+                            {p.name} thumbnails
+                          </Link>
+                        </h2>
+                        <p className={g.gameSummary}>{p.summary}</p>
+                        <Link href={href} className={g.seeAll}>
+                          See all {examples.length} examples <span aria-hidden>→</span>
                         </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </section>
-            </div>
-          );
-        })}
+                      </ScrollReveal>
+                    </div>
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
+        </section>
 
         <div className="v2-sep" aria-hidden />
 
