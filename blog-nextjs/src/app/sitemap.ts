@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import { getAllPosts } from '@/lib/wordpress'
 import { getThumbnailSitemapEntries } from '@/components/v2/thumbnail-pages/sitemap-entries'
+import { BACKGROUNDS } from '@/components/v2/thumbnail-backgrounds/backgrounds'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://base.tube'
@@ -45,7 +46,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${baseUrl}/youtube-thumbnail-size`,
-      lastModified: new Date('2026-09-29'),
+      lastModified: new Date('2026-10-22'),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
@@ -85,6 +86,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    // Same rule as the page itself: listed only once every background image is real.
+    ...(BACKGROUNDS.every((b) => !b.placeholder)
+      ? [
+          {
+            url: `${baseUrl}/youtube-thumbnail-backgrounds`,
+            lastModified: new Date('2026-10-22'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+          },
+        ]
+      : []),
     {
       url: `${baseUrl}/blog`,
       lastModified: new Date(),
