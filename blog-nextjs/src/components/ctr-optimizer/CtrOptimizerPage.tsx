@@ -6,6 +6,7 @@ import Faq from '@/components/ai-thumbnails/Faq';
 import { anton, archivo } from '@/components/ai-thumbnails/fonts';
 import { MotionProvider, RevealHeading } from '@/components/ai-thumbnails/motion';
 import Footer from '@/components/v2/Footer';
+import ThumbnailIdeasStrip from '@/components/v2/thumbnail-pages/ThumbnailIdeasStrip';
 import NavBar from '@/components/v2/NavBar';
 import ClickQuestion from './ClickQuestion';
 import { CTR_FAQ, FACTS } from './content';
@@ -73,6 +74,7 @@ export default function CtrOptimizerPage() {
           </main>
         </MotionProvider>
       </div>
+      <ThumbnailIdeasStrip />
       <Footer />
     </div>
   );

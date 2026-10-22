@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import NavBar from '../NavBar';
 import Footer from '../Footer';
+import ThumbnailIdeasStrip from '@/components/v2/thumbnail-pages/ThumbnailIdeasStrip';
 import ScrollReveal from '../ScrollReveal';
 import TesterTool from './TesterTool';
 import styles from './ThumbnailTester.module.css';
@@ -305,6 +306,7 @@ export default function ThumbnailTesterPage() {
       </main>
 
       <Sep />
+      <ThumbnailIdeasStrip />
       <Footer />
     </div>
   );

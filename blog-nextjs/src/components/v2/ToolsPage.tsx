@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import NavBar from './NavBar';
 import Footer from './Footer';
+import ThumbnailIdeasStrip from '@/components/v2/thumbnail-pages/ThumbnailIdeasStrip';
 import ScrollReveal from './ScrollReveal';
 import AuditPreview from './studio-audit/AuditPreview';
 import StudioPreview from './studio-audit/StudioPreview';
@@ -176,6 +177,7 @@ export default function ToolsPage() {
       </main>
 
       <Sep />
+      <ThumbnailIdeasStrip />
       <Footer />
     </div>
   );

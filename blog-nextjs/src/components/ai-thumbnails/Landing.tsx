@@ -8,6 +8,7 @@ import Faq from './Faq';
 import Features from './Features';
 import FinalCTA from './FinalCTA';
 import Footer from './Footer';
+import ThumbnailIdeasStrip from '@/components/v2/thumbnail-pages/ThumbnailIdeasStrip';
 import { anton, archivo } from './fonts';
 import Header from './Header';
 import Hero from './Hero';
@@ -42,6 +43,7 @@ export default function Landing({ catalog, freeReviews }: { catalog: Subscriptio
           <Faq items={landingFaq(catalog)} />
           <FinalCTA offer={offer} />
         </main>
+        <ThumbnailIdeasStrip />
         <Footer />
       </MotionProvider>
     </div>

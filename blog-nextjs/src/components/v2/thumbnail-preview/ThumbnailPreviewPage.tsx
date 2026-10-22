@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import NavBar from '../NavBar';
 import Footer from '../Footer';
+import ThumbnailIdeasStrip from '@/components/v2/thumbnail-pages/ThumbnailIdeasStrip';
 import ScrollReveal from '../ScrollReveal';
 import PreviewTool from './PreviewTool';
 import { FAQ } from './faq';
@@ -212,6 +213,7 @@ export default function ThumbnailPreviewPage() {
       </main>
 
       <Sep />
+      <ThumbnailIdeasStrip />
       <Footer />
     </div>
   );

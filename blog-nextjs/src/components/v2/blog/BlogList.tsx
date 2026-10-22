@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import NavBar from '@/components/v2/NavBar';
 import Footer from '@/components/v2/Footer';
+import ThumbnailIdeasStrip from '@/components/v2/thumbnail-pages/ThumbnailIdeasStrip';
 import {
   WordPressPost,
   getFeaturedImageUrl,
@@ -178,6 +179,7 @@ export default function BlogList({ posts }: BlogListProps) {
       </main>
 
       <div className="v2-sep" />
+      <ThumbnailIdeasStrip />
       <Footer />
     </div>
   );

@@ -5,6 +5,7 @@ import Footer from '../Footer';
 import NavBar from '../NavBar';
 import ScrollReveal from '../ScrollReveal';
 import { realExamples } from './games';
+import Marquee, { marqueeItems, ShowcaseHead, splitRows } from './Marquee';
 import g from './games.module.css';
 import { BASE_PATH, STUDIO_AUDIT_URL, TOOL_LINKS } from './lib/config.mjs';
 import { studioGenerateUrl, type ThumbnailPage } from './lib/schema.mjs';
@@ -99,6 +100,18 @@ export default function GamingHubPage({ pages, isLive }: { pages: ThumbnailPage[
             )}
           </div>
         </section>
+
+        {/* ── SHOWCASE: every game example, two scrolling rows ── */}
+        {pages.length > 0 && (
+          <section className={`v2-cp-section ${s.showcase}`} aria-labelledby="showcase-h">
+            <ShowcaseHead
+              pill="Made with Base.Tube"
+              title="Every game, one look at a time"
+              sub="Thumbnails generated with Base.Tube in each game's own style. Open one to see the layouts behind it."
+            />
+            <Marquee rows={splitRows(marqueeItems(pages, 6), 2)} />
+          </section>
+        )}
 
         {/* ── ONE THUMBNAIL PER GAME, STAGGERED LEFT / RIGHT ───── */}
         <div className="v2-sep" aria-hidden />

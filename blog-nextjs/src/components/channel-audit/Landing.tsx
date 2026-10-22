@@ -11,6 +11,7 @@ import ExampleAudit from './ExampleAudit';
 import Faq from './Faq';
 import FinalCTA from './FinalCTA';
 import Footer from './Footer';
+import ThumbnailIdeasStrip from '@/components/v2/thumbnail-pages/ThumbnailIdeasStrip';
 import Header from './Header';
 import Hero from './Hero';
 import HowItWorks from './HowItWorks';
@@ -39,6 +40,7 @@ export default function Landing({ freeReviews }: { freeReviews: number | null })
           <Faq items={channelAuditFaq(freeReviews)} />
           <FinalCTA />
         </main>
+        <ThumbnailIdeasStrip />
         <Footer />
       </MotionProvider>
     </div>

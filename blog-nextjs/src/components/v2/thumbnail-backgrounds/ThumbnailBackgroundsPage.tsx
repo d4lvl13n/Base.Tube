@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import Footer from '../Footer';
+import ThumbnailIdeasStrip from '@/components/v2/thumbnail-pages/ThumbnailIdeasStrip';
 import NavBar from '../NavBar';
 import ScrollReveal from '../ScrollReveal';
 import { getLoadedPage } from '../thumbnail-pages/lib/content.mjs';
@@ -308,6 +309,7 @@ export default function ThumbnailBackgroundsPage({ readyIds }: Props) {
       </main>
 
       <Sep />
+      <ThumbnailIdeasStrip />
       <Footer />
     </div>
   );

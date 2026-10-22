@@ -173,7 +173,7 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
                     {h.listing}
                   </h2>
                 </ScrollReveal>
-                <div className={s.cards}>
+                <div className={s.tiles} style={{ '--cols': Math.min(listing.length, 4) } as CSSProperties}>
                   {listing.map((lp) => (
                     <PageCard key={lp.slug} page={lp} />
                   ))}
@@ -478,10 +478,7 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
               {related.length > 0 ? h.related : 'Check your thumbnail before you upload'}
             </h2>
             {related.length > 0 && (
-              <div
-                className={`${s.cards} ${s.cardsRow}`}
-                style={{ '--cols': related.length >= 4 ? 4 : 3 } as CSSProperties}
-              >
+              <div className={s.tiles} style={{ '--cols': Math.min(related.length, 4) } as CSSProperties}>
                 {related.map((r) => (
                   <PageCard key={r.slug} page={r} />
                 ))}

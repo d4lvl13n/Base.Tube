@@ -1,0 +1,145 @@
+/* Drifting rows of thumbnails (hubs), after the "Made with" section of visualkit.app. */
+
+.marquee {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  /* Short fade on both edges. */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 7%, #000 93%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 7%, #000 93%, transparent 100%);
+}
+
+.row {
+  --card-w: 384px;
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  /* Rows start in line with the page's text column. */
+  padding: 8px max(var(--v2-px, 24px), calc((100vw - var(--v2-max-w, 1200px)) / 2 + var(--v2-px, 24px)));
+}
+
+.row::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  position: relative;
+  flex: 0 0 var(--card-w);
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #0b0b0d;
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 24px 64px -36px rgba(0, 0, 0, 0.95);
+  transition:
+    transform 0.5s ease-out,
+    box-shadow 0.5s ease-out,
+    border-color 0.5s ease-out,
+    opacity 0.5s ease-out,
+    filter 0.5s ease-out;
+}
+
+.img {
+  object-fit: cover;
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--v2-orange);
+  outline-offset: 3px;
+}
+
+@media (hover: hover) {
+  /* Hovering a row dims its other cards; the one under the pointer stays bright and lifts. */
+  .row:hover .card {
+    opacity: 0.45;
+    filter: saturate(0.6);
+  }
+
+  .row:hover .card:hover {
+    opacity: 1;
+    filter: none;
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.14);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 30px 72px -32px rgba(0, 0, 0, 1);
+  }
+}
+
+@media (max-width: 1024px) {
+  .row {
+    --card-w: 328px;
+  }
+}
+
+@media (max-width: 640px) {
+  .marquee {
+    gap: 16px;
+  }
+
+  .row {
+    --card-w: 272px;
+    gap: 16px;
+    scroll-snap-type: x proximity;
+  }
+
+  .card {
+    scroll-snap-align: start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+}
+
+/* ── Showcase heading ─────────────────────────────────────── */
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  margin: 0 auto 48px;
+  padding: 0 var(--v2-px, 24px);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--v2-muted);
+}
+
+.pillDot {
+  color: var(--v2-orange);
+  font-size: 12px;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-dm-serif), Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  color: var(--v2-text);
+}
+
+.sub {
+  margin: 0;
+  max-width: 560px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--v2-muted);
+}

@@ -32,6 +32,16 @@ export interface LiveIndex {
 }
 
 export const LIVE_INDEX_PATH: string;
+export const PAGES_INDEX_PATH: string;
+export interface PagesIndexEntry {
+  slug: string;
+  name: string;
+  category: 'game' | 'style' | 'genre';
+  live: boolean;
+  examples: number;
+  cover: { src: string; alt: string };
+}
+export function computePagesIndex(index: ContentIndex): { note: string; pages: PagesIndexEntry[] };
 export function loadContent(opts?: { rootDir?: string; fresh?: boolean }): ContentIndex;
 export function getBuildablePages(): LoadedPage[];
 export function getLoadedPage(slug: string): LoadedPage | undefined;

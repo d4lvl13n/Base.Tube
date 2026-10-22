@@ -29,7 +29,9 @@ import { fileURLToPath } from 'node:url';
 import { MIN_GALLERY_IMAGES } from '../src/components/v2/thumbnail-pages/lib/config.mjs';
 import {
   computeLiveIndex,
+  computePagesIndex,
   LIVE_INDEX_PATH,
+  PAGES_INDEX_PATH,
   loadContent,
   readLiveIndexFile,
   sameLiveIndex,
@@ -61,6 +63,13 @@ let indexWritten = false;
 if (!indexFresh && !checkOnly) {
   fs.writeFileSync(path.join(APP_ROOT, LIVE_INDEX_PATH), JSON.stringify(expectedIndex, null, 2) + '\n');
   indexWritten = true;
+}
+
+// Site-wide links index (footer, "Thumbnail ideas" strip).
+const pagesIndexJson = JSON.stringify(computePagesIndex(index), null, 2) + '\n';
+const pagesIndexFile = path.join(APP_ROOT, PAGES_INDEX_PATH);
+if (!checkOnly && (!fs.existsSync(pagesIndexFile) || fs.readFileSync(pagesIndexFile, 'utf8') !== pagesIndexJson)) {
+  fs.writeFileSync(pagesIndexFile, pagesIndexJson);
 }
 
 // Image folders that have no content file.

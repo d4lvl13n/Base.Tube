@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { linkablePages } from './thumbnail-pages/ThumbnailIdeasStrip';
+
 const socials = [
   {
     label: 'X (Twitter)',
@@ -40,7 +42,6 @@ const tools = [
   { href: '/tools/video-to-thumbnail', label: 'Video to thumbnail' },
   { href: '/youtube-thumbnail-fonts', label: 'Thumbnail fonts' },
   { href: '/youtube-thumbnail-backgrounds', label: 'Thumbnail backgrounds' },
-  { href: '/thumbnails', label: 'Thumbnail ideas' },
 ];
 
 const external = { target: '_blank', rel: 'noopener noreferrer' } as const;
@@ -100,6 +101,25 @@ export default function Footer() {
                 <Link href={tool.href}>{tool.label}</Link>
               </li>
             ))}
+          </ul>
+        </nav>
+
+        {/* Thumbnail ideas: the hubs, then every game page (from lib/pages-index.json) */}
+        <nav aria-label="Thumbnail ideas">
+          <div className="v2-footer-col-title">
+            <Link href="/thumbnails">Thumbnail ideas</Link>
+          </div>
+          <ul className="v2-footer-links">
+            <li><Link href="/thumbnails/gaming">Gaming thumbnails</Link></li>
+            {linkablePages()
+              .filter((p) => p.category === 'game')
+              .map((p) => (
+                <li key={p.slug}>
+                  <Link href={`/thumbnails/${p.slug}`}>{p.name}</Link>
+                </li>
+              ))}
+            <li><Link href="/thumbnails#style">Creator styles</Link></li>
+            <li><Link href="/thumbnails#genre">Video genres</Link></li>
           </ul>
         </nav>
 

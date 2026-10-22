@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import NavBar from '../NavBar';
 import Footer from '../Footer';
+import ThumbnailIdeasStrip from '@/components/v2/thumbnail-pages/ThumbnailIdeasStrip';
 import ScrollReveal from '../ScrollReveal';
 import FrameGrabber from './FrameGrabber';
 import s from './video-to-thumbnail.module.css';
@@ -240,6 +241,7 @@ export default function VideoToThumbnailPage() {
       </main>
 
       <Sep />
+      <ThumbnailIdeasStrip />
       <Footer />
     </div>
   );

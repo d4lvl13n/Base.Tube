@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import NavBar from '../NavBar';
 import Footer from '../Footer';
+import ThumbnailIdeasStrip from '@/components/v2/thumbnail-pages/ThumbnailIdeasStrip';
 import ScrollReveal from '../ScrollReveal';
 import ResizerTool from './ResizerTool';
 import { SPEC_CHECKED, faqs, steps } from './content';
@@ -187,6 +188,7 @@ export default function ThumbnailResizerPage() {
       </main>
 
       <Sep />
+      <ThumbnailIdeasStrip />
       <Footer />
     </div>
   );

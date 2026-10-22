@@ -6,6 +6,7 @@
 // prefers-reduced-motion.
 import { archivo } from './fonts';
 import Footer from '@/components/v2/Footer';
+import ThumbnailIdeasStrip from '@/components/v2/thumbnail-pages/ThumbnailIdeasStrip';
 import NavBar from '@/components/v2/NavBar';
 import Case from './Case';
 import { FinalCall } from './Closing';
@@ -27,6 +28,7 @@ export default function HomePage() {
         <Pillars />
         <FinalCall />
       </main>
+      <ThumbnailIdeasStrip />
       <Footer />
     </div>
   );

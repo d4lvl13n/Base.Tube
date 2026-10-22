@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import NavBar from '@/components/v2/NavBar';
 import Footer from '@/components/v2/Footer';
+import ThumbnailIdeasStrip from '@/components/v2/thumbnail-pages/ThumbnailIdeasStrip';
 import ReadingProgress from '@/components/v2/blog/ReadingProgress';
 import {
   WordPressPost,
@@ -219,6 +220,7 @@ export default function BlogArticle({ post, slug }: BlogArticleProps) {
       </main>
 
       <div className="v2-sep" />
+      <ThumbnailIdeasStrip />
       <Footer />
     </div>
   );

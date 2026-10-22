@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import NavBar from '../NavBar';
 import Footer from '../Footer';
+import ThumbnailIdeasStrip from '@/components/v2/thumbnail-pages/ThumbnailIdeasStrip';
 import ScrollReveal from '../ScrollReveal';
 import FontPreview from './FontPreview';
 import ThumbText, { type ResolvedFont } from './ThumbText';
@@ -443,6 +444,7 @@ export default function ThumbnailFontsPage() {
       </main>
 
       <Sep />
+      <ThumbnailIdeasStrip />
       <Footer />
     </div>
   );

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import NavBar from '../NavBar';
 import Footer from '../Footer';
+import ThumbnailIdeasStrip from '@/components/v2/thumbnail-pages/ThumbnailIdeasStrip';
 import ScrollReveal from '../ScrollReveal';
 import TitleCheckerTool from './TitleCheckerTool';
 import styles from './TitleChecker.module.css';
@@ -297,6 +298,7 @@ export default function TitleCheckerPage() {
       </main>
 
       <Sep />
+      <ThumbnailIdeasStrip />
       <Footer />
     </div>
   );

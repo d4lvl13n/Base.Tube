@@ -49,5 +49,7 @@ export const TOOL_LINKS = [
   { href: '/tools/youtube-thumbnail-preview', label: 'YouTube thumbnail preview' },
   { href: '/tools/youtube-thumbnail-tester', label: 'YouTube thumbnail tester' },
   { href: '/youtube-thumbnail-size', label: 'YouTube thumbnail size guide' },
+  { href: '/youtube-thumbnail-fonts', label: 'Best YouTube thumbnail fonts' },
+  { href: '/youtube-thumbnail-backgrounds', label: 'Free thumbnail backgrounds' },
   { href: '/tools', label: 'All free tools' },
 ];
