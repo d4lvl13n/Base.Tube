@@ -157,3 +157,4 @@ export function normalizeHub(
 ): { hub: HubContent | null; issues: Issue[] };
 
 export function studioGenerateUrl(opts: { style?: string; prompt?: string; ref?: string }): string;
+export function studioPromptUrl(prompt: string, ref?: string): string;

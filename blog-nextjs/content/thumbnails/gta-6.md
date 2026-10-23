@@ -109,37 +109,37 @@ layouts:
 
 gallery:
   - file: 01-launch-reaction.webp
-    alt: "GTA 6 thumbnail: an invented streamer, jaw dropped, lit by Vice City at sunset with Jason and Lucia behind, text IT'S HERE"
+    alt: "GTA 6 thumbnail: a streamer in headphones, mouth open in surprise, next to Lucia hitting a punching bag in a gym, text IT'S HERE"
     caption: "Launch reaction: the midnight launch stream"
     prompt: >
       16:9 YouTube thumbnail for a GTA 6 video: midnight launch stream. Face cam of an invented streamer in headphones, jaw dropped, lit by the opening view of Vice City at sunset, Jason and Lucia behind, small GTA VI logo badge, pink and orange glow. Text "IT'S HERE". Keep the bottom-right corner clear, be creative with the composition
     layout: Launch Reaction
   - file: 05-side-by-side.webp
-    alt: "GTA 6 thumbnail: split of the Vice City beachfront in GTA 6 and the real Miami Beach with a red arrow between them, text SO REAL"
+    alt: "GTA 6 thumbnail: split of a sunny Vice City beach with towers and art-deco hotels lit in neon at night, a red arrow between, text SO REAL"
     caption: "Side by side: the Vice City beachfront and the real one"
     prompt: >
       16:9 YouTube thumbnail for a GTA 6 video: GTA 6 vs real life. The Vice City beachfront in GTA 6 with art-deco hotels and neon on one side, the real Miami Beach strip on the other, a red arrow linking matching buildings, no recognisable people. Text "SO REAL". Keep the bottom-right corner clear, be creative with the composition
     layout: Side by Side
   - file: 09-leonida-tour.webp
-    alt: "GTA 6 thumbnail: the full GTA 6 map of Leonida with the GTA 5 map laid over it for scale, text HOW BIG?"
-    caption: "Leonida tour: the map size, with GTA 5 for scale"
+    alt: "GTA 6 thumbnail: aerial view of islands and a long bridge in Leonida, a seaplane, an island outlined in pink, text HOW BIG?"
+    caption: "Leonida tour: the islands and the bridge from a seaplane"
     prompt: >
       16:9 YouTube thumbnail for a GTA 6 video: how big is the map. The full GTA 6 map of Leonida, Vice City, the Keys and swamps, with the GTA 5 Los Santos map laid over it as a small faded overlay for scale, satellite style with turquoise sea. Text "HOW BIG?". Keep the bottom-right corner clear, be creative with the composition
     layout: Leonida Tour
   - file: 14-heist-and-chase.webp
-    alt: "GTA 6 thumbnail: full gameplay shot of a sports car flying off a causeway, police cars and a helicopter behind, five wanted stars, text 5 STARS"
-    caption: "Heist and chase: five stars on the causeway"
+    alt: "GTA 6 thumbnail: Lucia and Jason cruising in a convertible, Jason holding a soda, five wanted stars and siren glow, text 5 STARS"
+    caption: "Heist and chase: five stars and no hurry"
     prompt: >
       16:9 YouTube thumbnail for a GTA 6 video: a max wanted level escape. Full gameplay shot: a sports car airborne off a Vice City causeway, police cars and a helicopter right behind, GTA 6 HUD with five wanted stars lit, sunset sky, red and blue sirens. Text "5 STARS". Keep the bottom-right corner clear, be creative with the composition
     layout: Heist and Chase
   - file: 15-heist-and-chase.webp
-    alt: "GTA 6 thumbnail: Lucia in a bank vault with a duffel bag of cash and gold bars, cold blue light, text BIG SCORE"
-    caption: "Heist and chase: the bank vault, Lucia up close"
+    alt: "GTA 6 thumbnail: Lucia and a partner in a skull mask, both in black tactical gear, at an open vault door with cash flying, text BIG SCORE"
+    caption: "Heist and chase: Lucia and her masked partner at the vault"
     prompt: >
       16:9 YouTube thumbnail for a GTA 6 video: the biggest heist in GTA 6. Lucia large in frame inside an open bank vault, a duffel bag of cash on her shoulder, gold bars and money stacks glowing behind, cold blue light with gold highlights. Text "BIG SCORE". Keep the bottom-right corner clear, be creative with the composition
     layout: Heist and Chase
   - file: 19-rp-series.webp
-    alt: "GTA 6 thumbnail: a GTA 6 taxi driver turning to a masked passenger holding a briefcase, neon streaks outside, text WRONG RIDE"
+    alt: "GTA 6 thumbnail: a puzzled streamer next to a driver in a backwards cap in his car, palm trees, a taxi icon, text WRONG RIDE"
     caption: "RP series: the taxi driver's strangest fare"
     prompt: >
       16:9 YouTube thumbnail for a GTA 6 video: GTA 6 RP taxi driver story. Inside a Vice City cab at night, the driver turns with raised eyebrows to a masked passenger holding a briefcase, neon streaks through the windows, taxi yellow and pink. Text "WRONG RIDE". Keep the bottom-right corner clear, be creative with the composition

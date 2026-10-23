@@ -34,6 +34,11 @@ export const GALLERY_INITIAL = 24;
 
 /** Links into the Base.Tube Studio. Query parameters are added by studioGenerateUrl(). */
 export const STUDIO_GENERATE_URL = 'https://base.tube/ai-thumbnails';
+/**
+ * The app's Studio "new thumbnail" page. A visitor who is not signed in sees it with ?prompt= already
+ * in the "Video title or idea" field; the draft is kept through sign-up.
+ */
+export const STUDIO_APP_GENERATE_URL = 'https://beta.base.tube/ai-thumbnails/generate';
 export const STUDIO_AUDIT_URL = '/youtube-channel-audit';
 
 /** Page groups, in the order the hub shows them. */

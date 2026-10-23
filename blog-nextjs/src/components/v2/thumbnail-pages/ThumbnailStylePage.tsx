@@ -3,6 +3,7 @@ import Link from 'next/link';
 import type { CSSProperties } from 'react';
 
 import CreatorsToStudy from '../creators/CreatorsToStudy';
+import { getMakerForGame, makerIsLive, makerPath } from '../maker-pages/makers';
 import { creatorsToLink } from '../creators/links';
 import Footer from '../Footer';
 import NavBar from '../NavBar';
@@ -71,6 +72,10 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
     studioHref: studioGenerateUrl({ style: p.cta.style, prompt: g.prompt, ref: ref(`example-${i + 1}`) }),
   }));
 
+  // The game's "thumbnail maker" page, when it exists (a live gallery links to it once it is live too).
+  const maker = getMakerForGame(p.slug);
+  const makerHref = maker && (makerIsLive(maker) || !loaded.live) ? makerPath(p.slug) : null;
+
   const guideHeadings = p.bodyBlocks.filter((b): b is HeadingBlock => b.type === 'heading' && b.depth === 2);
 
   return (
@@ -121,9 +126,15 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
                     {p.cta.label} <span aria-hidden>→</span>
                     <span className={s.srOnly}> (opens the Base.Tube Studio in a new tab)</span>
                   </a>
-                  <a className="v2-btn v2-btn-ghost" href="#examples">
-                    See the examples
-                  </a>
+                  {makerHref ? (
+                    <Link className="v2-btn v2-btn-ghost" href={makerHref}>
+                      {p.name} thumbnail maker
+                    </Link>
+                  ) : (
+                    <a className="v2-btn v2-btn-ghost" href="#examples">
+                      See the examples
+                    </a>
+                  )}
                 </div>
                 {p.layouts.length > 0 && (
                   <div className={s.chips}>

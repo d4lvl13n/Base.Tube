@@ -9,7 +9,7 @@
       "examples": 6,
       "cover": {
         "src": "/thumbnails/call-of-duty/01-mw4-launch-day.webp",
-        "alt": "Call of Duty thumbnail: a streamer face cam amazed next to Modern Warfare 4 gameplay with Captain Price, small MW4 badge, text DAY ONE"
+        "alt": "Call of Duty thumbnail: a shocked streamer face cam, a yellow arrow to a gas-masked operator in a rainy street, MW4 logo, text DAY ONE"
       }
     },
     {
@@ -42,7 +42,7 @@
       "examples": 6,
       "cover": {
         "src": "/thumbnails/fortnite/01-victory.webp",
-        "alt": "Fortnite thumbnail: Jonesy kneeling in the last storm circle with a red health bar at 1 HP and the Victory Royale banner above"
+        "alt": "Fortnite thumbnail: a Tilted Towers street in daylight, a red arrow on a health bar at 1/100, a golden Loot Llama crown and the text 1 HP"
       }
     },
     {
@@ -64,7 +64,7 @@
       "examples": 6,
       "cover": {
         "src": "/thumbnails/gorilla-tag/01-horror-map.webp",
-        "alt": "Gorilla Tag thumbnail: first-person VR hands with a flashlight in the Caves, a pale long-armed monke with white eyes right behind, text BEHIND YOU"
+        "alt": "Gorilla Tag thumbnail: a red monke in a miner's helmet points down a dark cave at a blue monke climbing a rope, circled in red, text BEHIND YOU"
       }
     },
     {
@@ -75,7 +75,7 @@
       "examples": 6,
       "cover": {
         "src": "/thumbnails/gta-6/01-launch-reaction.webp",
-        "alt": "GTA 6 thumbnail: an invented streamer, jaw dropped, lit by Vice City at sunset with Jason and Lucia behind, text IT'S HERE"
+        "alt": "GTA 6 thumbnail: a streamer in headphones, mouth open in surprise, next to Lucia hitting a punching bag in a gym, text IT'S HERE"
       }
     },
     {
@@ -97,7 +97,7 @@
       "examples": 6,
       "cover": {
         "src": "/thumbnails/minecraft/03-100-days.webp",
-        "alt": "Minecraft thumbnail: Steve standing on a single grass block floating in an empty blue void, a huge sky island far behind, text ONE BLOCK"
+        "alt": "Minecraft thumbnail: Steve on a single grass block, an arrow to a huge grassy hill full of mobs with Alex and a house, text ONE BLOCK"
       }
     },
     {
@@ -141,7 +141,7 @@
       "examples": 6,
       "cover": {
         "src": "/thumbnails/roblox/02-tycoon.webp",
-        "alt": "Roblox thumbnail: an avatar in a chef hat swimming in cash inside a pizza factory tycoon flooded with pizzas, text INFINITE CASH"
+        "alt": "Roblox thumbnail: avatars on a city rooftop around a pile of green cash, a white SUV and a black and cyan sports car, dollar bills flying, text INFINITE CASH"
       }
     },
     {
@@ -152,7 +152,7 @@
       "examples": 6,
       "cover": {
         "src": "/thumbnails/zelda-ocarina-of-time/01-tier-list.webp",
-        "alt": "Zelda: Ocarina of Time thumbnail: an invented streamer reacts as the Water Temple drops to the bottom of a dungeon tier list, text WORST DUNGEON?"
+        "alt": "Zelda: Ocarina of Time thumbnail: a shocked invented streamer, Link in the Water Temple and that room in the red bottom tier, text WORST DUNGEON?"
       }
     }
   ]

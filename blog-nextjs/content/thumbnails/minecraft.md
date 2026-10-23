@@ -135,8 +135,8 @@ layouts:
 
 gallery:
   - file: 03-100-days.webp
-    alt: "Minecraft thumbnail: Steve standing on a single grass block floating in an empty blue void, a huge sky island far behind, text ONE BLOCK"
-    caption: "100 days: one block in the void"
+    alt: "Minecraft thumbnail: Steve on a single grass block, an arrow to a huge grassy hill full of mobs with Alex and a house, text ONE BLOCK"
+    caption: "100 days: from one block to a whole hill"
     prompt: >
       16:9 YouTube thumbnail for a Minecraft video: 100 days on one block. A
       single grass block floating in an empty blue void, Steve standing on it
@@ -145,8 +145,8 @@ gallery:
       creative with the composition.
     layout: 100 Days
   - file: 04-100-days.webp
-    alt: "Minecraft thumbnail: gameplay shot of a base dug into a crimson forest in the Nether, a ghast and hoglins nearby, text NETHER ONLY"
-    caption: "100 days: a Nether-only base, with the HUD on screen"
+    alt: "Minecraft thumbnail: first-person view in a Nether crimson forest, two hoglins up close, the heart bar at the bottom, text NETHER ONLY"
+    caption: "100 days: Nether only, with the heart bar on screen"
     prompt: >
       16:9 YouTube thumbnail for a Minecraft video: 100 days in the Nether
       only. Full gameplay shot of a base dug into a crimson forest, lava lakes,
@@ -155,7 +155,7 @@ gallery:
       be creative with the composition.
     layout: 100 Days
   - file: 07-versus.webp
-    alt: "Minecraft thumbnail: an iron golem and the Warden face to face in a sculk arena with health bars above them, text WHO WINS?"
+    alt: "Minecraft thumbnail: an iron golem and the Warden on each side of a glowing line in a sculk cave, a VS badge, text WHO WINS?"
     caption: "Versus: iron golem against the Warden"
     prompt: >
       16:9 YouTube thumbnail for a Minecraft video: a mob battle. An iron
@@ -165,8 +165,8 @@ gallery:
       creative with the composition.
     layout: Versus
   - file: 10-boss-fight.webp
-    alt: "Minecraft thumbnail: the three-headed Wither looming over Steve in plain clothes with an iron sword, boss bar on top, text NO ARMOR"
-    caption: "Boss fight: the Wither, and no armour"
+    alt: "Minecraft thumbnail: Steve and Alex with no armour running from mobs around a house at night, the Wither glowing in the corner, text NO ARMOR"
+    caption: "No armour, with the Wither waiting"
     prompt: >
       16:9 YouTube thumbnail for a Minecraft video: fighting the Wither with no
       armour. The three-headed Wither looms huge above Steve in plain clothes
@@ -175,8 +175,8 @@ gallery:
       clear, be creative with the composition.
     layout: Boss Fight
   - file: 15-updates-secrets.webp
-    alt: "Minecraft thumbnail: a creaking with glowing orange eyes stepping out of the grey fog of the Pale Garden toward Alex and her torch, no text"
-    caption: "Update: the Pale Garden at night, no words"
+    alt: "Minecraft thumbnail: first-person view at night, a creaking's orange eyes circled, an arrow to a glowing block in the wall by two torches, no text"
+    caption: "Update: a creaking at night, no words"
     prompt: >
       16:9 YouTube thumbnail for a Minecraft video: exploring the Pale Garden
       at night. Full gameplay shot of pale oak trees in grey fog, a creaking
@@ -185,8 +185,8 @@ gallery:
       clear, be creative with the composition.
     layout: Updates & Secrets
   - file: 18-real-life.webp
-    alt: "Minecraft thumbnail: split frame of the Eiffel Tower at sunset and its block-for-block Minecraft replica with Steve on top, text 1:1 SCALE"
-    caption: "Real life: a landmark and its block replica"
+    alt: "Minecraft thumbnail: a photo of the real Eiffel Tower, an arrow to its glowing cyan blueprint in a Minecraft world with Steve watching, text 1:1 SCALE"
+    caption: "Real life: the Eiffel Tower, planned block for block"
     prompt: >
       16:9 YouTube thumbnail for a Minecraft video: building the Eiffel Tower
       block for block. Split frame: the real Eiffel Tower at sunset, photo

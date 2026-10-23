@@ -131,7 +131,7 @@ layouts:
 
 gallery:
   - file: 01-victory.webp
-    alt: "Fortnite thumbnail: Jonesy kneeling in the last storm circle with a red health bar at 1 HP and the Victory Royale banner above"
+    alt: "Fortnite thumbnail: a Tilted Towers street in daylight, a red arrow on a health bar at 1/100, a golden Loot Llama crown and the text 1 HP"
     caption: "Victory: a win on one health point"
     prompt: >
       16:9 YouTube thumbnail for a Fortnite video: winning with 1 HP left.
@@ -141,7 +141,7 @@ gallery:
       be creative with the composition
     layout: Victory
   - file: 04-victory.webp
-    alt: "Fortnite thumbnail: aerial view of Tilted Towers mid-fight with gliders landing and a skin on the clock tower"
+    alt: "Fortnite thumbnail: Tilted Towers at street level with a map pin and a red arrow on the clock tower, text TILTED ONLY"
     caption: "Victory: landing at Tilted every game"
     prompt: >
       16:9 YouTube thumbnail for a Fortnite video: hot-dropping Tilted Towers
@@ -161,8 +161,8 @@ gallery:
       with the composition
     layout: Progression
   - file: 11-live-event.webp
-    alt: "Fortnite thumbnail: a building-sized golden Loot Llama standing over Pleasant Park as tiny players run toward it"
-    caption: "Live event: a giant Loot Llama, no text needed"
+    alt: "Fortnite thumbnail: Cuddle Team Leader looking up at a giant red creature towering over the trees, with a zoomed circle on its eye"
+    caption: "Live event: a giant creature, no text needed"
     prompt: >
       16:9 YouTube thumbnail for a Fortnite video: a giant Loot Llama appears
       on the map. A building-sized golden Loot Llama towers over Pleasant Park,

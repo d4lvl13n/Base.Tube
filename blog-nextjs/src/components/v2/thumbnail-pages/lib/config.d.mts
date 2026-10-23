@@ -14,6 +14,7 @@ export const DESCRIPTION_MAX: number;
 export const DESCRIPTION_MIN: number;
 export const GALLERY_INITIAL: number;
 export const STUDIO_GENERATE_URL: string;
+export const STUDIO_APP_GENERATE_URL: string;
 export const STUDIO_AUDIT_URL: string;
 export const CATEGORIES: readonly ['game', 'style', 'genre'];
 export const CATEGORY_LABELS: { game: string; style: string; genre: string };

@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import { getAllPosts } from '@/lib/wordpress'
 import { getThumbnailSitemapEntries } from '@/components/v2/thumbnail-pages/sitemap-entries'
 import { getCreatorSitemapEntries } from '@/components/v2/creators/links'
+import { getMakerSitemapEntries } from '@/components/v2/maker-pages/makers'
 import { BACKGROUNDS } from '@/components/v2/thumbnail-backgrounds/backgrounds'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -151,5 +152,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     console.error('Error loading /creators pages for sitemap:', error)
   }
 
-  return [...staticPages, ...thumbnailPages, ...creatorPages, ...blogPosts]
+  // /<game>-thumbnail-maker pages: published and their gallery live.
+  const makerPages = getMakerSitemapEntries(baseUrl)
+
+  return [...staticPages, ...makerPages, ...thumbnailPages, ...creatorPages, ...blogPosts]
 }

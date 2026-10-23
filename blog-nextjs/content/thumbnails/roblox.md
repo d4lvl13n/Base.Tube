@@ -128,8 +128,8 @@ layouts:
 gallery:
   # ── Tycoon ─────────────────────────────────────────────────────────────
   - file: 02-tycoon.webp
-    alt: "Roblox thumbnail: an avatar in a chef hat swimming in cash inside a pizza factory tycoon flooded with pizzas, text INFINITE CASH"
-    caption: "Tycoon: the factory out of control"
+    alt: "Roblox thumbnail: avatars on a city rooftop around a pile of green cash, a white SUV and a black and cyan sports car, dollar bills flying, text INFINITE CASH"
+    caption: "Tycoon: cash and cars on the rooftop"
     prompt: >
       16:9 YouTube thumbnail for a Roblox tycoon video: a pizza factory tycoon
       gone wild, conveyor belts flooded with pizzas, green cash pop-ups
@@ -138,8 +138,8 @@ gallery:
       creative with the composition.
     layout: Tycoon
   - file: 06-challenge.webp
-    alt: "Roblox thumbnail: a classic noob avatar as tall as a skyscraper stomping through a blocky city, tiny avatars fleeing, text RUN!"
-    caption: "Challenge: a giant noob, seen from below"
+    alt: "Roblox thumbnail: a tall avatar in a light blue jacket and shorts, outlined in yellow with a red arrow, inside a football-themed mall with other avatars around, text RUN!"
+    caption: "Challenge: one avatar singled out with an arrow"
     prompt: >
       16:9 YouTube thumbnail for a Roblox challenge video: a classic noob avatar
       as tall as a skyscraper stomping through a blocky Roblox city, tiny
@@ -148,8 +148,8 @@ gallery:
       the composition.
     layout: Challenge
   - file: 07-challenge.webp
-    alt: "Roblox thumbnail: an avatar hanging off the last ledge of an obby tower in the sky, neon kill bricks below, text 1 JUMP LEFT"
-    caption: "Obby: hanging on at the very last stage"
+    alt: "Roblox thumbnail: four avatars jumping between floating neon-edged platforms above lava, the last small platform circled with a red arrow, text 1 JUMP LEFT"
+    caption: "Obby: the last jump circled over lava"
     prompt: >
       16:9 YouTube thumbnail for a Roblox obby video: an impossible obby tower
       in the sky, neon kill bricks, spinning bars and tiny platforms, one avatar
@@ -158,8 +158,8 @@ gallery:
       clear, be creative with the composition.
     layout: Challenge
   - file: 09-admin.webp
-    alt: "Roblox thumbnail: a huge glowing ban hammer above a tiny avatar, the grey kick message box blurred behind, text BANNED?"
-    caption: "Admin: the ban hammer is the hero"
+    alt: "Roblox thumbnail: avatars running on a grassy path below a castle and a waterfall, fitness stats floating beside the leader, a red ban hammer icon, text BANNED?"
+    caption: "Admin: a ban hammer over a fitness run"
     prompt: >
       16:9 YouTube thumbnail for a Roblox admin video: a huge glowing ban hammer
       hanging over a tiny Roblox avatar, the grey Roblox kick message box
@@ -167,8 +167,8 @@ gallery:
       the bottom-right corner clear, be creative with the composition.
     layout: Admin and rules
   - file: 14-horror-event.webp
-    alt: "Roblox thumbnail: a huge monster with a stretched classic Roblox smile leaning out of a classroom door, text DON'T LOOK"
-    caption: "Horror: the classic smile, made wrong"
+    alt: "Roblox thumbnail: four scared avatars with a flashlight in a dark forest, a red arrow pointing at a gargoyle on a haunted castle under the full moon, text DON'T LOOK"
+    caption: "Horror: the arrow points at the castle"
     prompt: >
       16:9 YouTube thumbnail for a Roblox horror video: a huge monster wearing
       the classic Roblox smile face, stretched and wrong, leaning out of a
@@ -177,8 +177,8 @@ gallery:
       the bottom-right corner clear, be creative with the composition.
     layout: Horror and events
   - file: 17-noob-to-pro.webp
-    alt: "Roblox thumbnail: split frame, the classic noob with 0 Robux against the same avatar in a Dominus and Korblox leg, text NOOB TO RICH"
-    caption: "Noob to rich: split frame"
+    alt: "Roblox thumbnail: split frame, the same avatar with shopping bags in a grey store with one silver coin, then in colour with gold coins in a fashion store, text NOOB TO RICH"
+    caption: "Noob to rich: grey store, gold store"
     prompt: >
       16:9 YouTube thumbnail for a Roblox noob-to-rich video: split frame, left
       the classic noob avatar with 0 Robux in the HUD, right the same avatar in

@@ -113,38 +113,38 @@ layouts:
 
 gallery:
   - file: 01-mw4-launch-day.webp
-    alt: "Call of Duty thumbnail: a streamer face cam amazed next to Modern Warfare 4 gameplay with Captain Price, small MW4 badge, text DAY ONE"
+    alt: "Call of Duty thumbnail: a shocked streamer face cam, a yellow arrow to a gas-masked operator in a rainy street, MW4 logo, text DAY ONE"
     caption: "MW4 launch day: the first reaction, next to the game"
     prompt: >
       16:9 YouTube thumbnail for a Modern Warfare 4 launch video: a synthetic streamer face-cam (invented person), mouth open in awe, beside bright MW4 multiplayer gameplay with Captain Price in the foreground. Small MW4 logo badge top-left. Text "DAY ONE". Keep the bottom-right corner clear, be creative with the composition
     layout: MW4 Launch Day
   - file: 02-mw4-launch-day.webp
-    alt: "Call of Duty thumbnail: Private Park in a snowy Korean trench under a red flare in the MW4 campaign, text MISSION 1"
+    alt: "Call of Duty thumbnail: soldiers in a crowded neon Korean street at night, a red circle on one figure, MW4 logo, text MISSION 1"
     caption: "MW4 launch day: the first campaign mission, no spoilers"
     prompt: >
       16:9 YouTube thumbnail for a Modern Warfare 4 campaign video: Private Park, the young South Korean soldier, pressed against a snowy muddy trench wall as a red flare lights the sky. Cinematic, cold steel-blue, no gore. Text "MISSION 1". Keep the bottom-right corner clear, be creative with the composition
     layout: MW4 Launch Day
   - file: 07-realistic-gameplay.webp
-    alt: "Call of Duty thumbnail: photorealistic sniper scope view across Verdansk at dawn with a tiny red enemy diamond, text 1 KM"
-    caption: "Realistic gameplay: one very long shot across Verdansk"
+    alt: "Call of Duty thumbnail: a Warzone desert town with a river and a bridge, a dotted line to a sniper scope on a far building, text 1 KM"
+    caption: "Realistic gameplay: one very long sniper shot across the map"
     prompt: >
       16:9 YouTube thumbnail for a Call of Duty: Warzone video: photorealistic first-person scope view across Verdansk at dawn, mist over the rooftops, the crosshair on a tiny red enemy diamond far away, dotted bullet path. Text "1 KM". Keep the bottom-right corner clear, be creative with the composition
     layout: Realistic Gameplay
   - file: 09-warzone-moment.webp
-    alt: "Call of Duty thumbnail: Warzone final circle on Verdansk with the orange gas wall closing in and a red arrow on the last enemy, text FINAL CIRCLE"
+    alt: "Call of Duty thumbnail: a Warzone squad on a speeding boat, orange gas at the edges, a red arrow on the enemy boat ahead, text FINAL CIRCLE"
     caption: "Warzone moment: the last circle and the last enemy"
     prompt: >
       16:9 YouTube thumbnail for a Call of Duty: Warzone video: first-person in the final circle on Verdansk, orange gas wall closing in on all sides, plate counter in the HUD, a red arrow on the last enemy behind a car. Small Warzone logo badge. Text "FINAL CIRCLE". Keep the bottom-right corner clear, be creative with the composition
     layout: Warzone Moment
   - file: 13-nuke-and-streaks.webp
-    alt: "Call of Duty thumbnail: an operator seen from behind as a huge orange nuke glow rises over a multiplayer map, text NUKE"
-    caption: "Nuke and streaks: the glow on the horizon"
+    alt: "Call of Duty thumbnail: three soldiers seen from behind watch a huge fiery blast in a forest, a jet overhead, a 30 nuke icon, text NUKE"
+    caption: "Nuke and streaks: the blast and the 30 streak"
     prompt: >
       16:9 YouTube thumbnail for a Call of Duty multiplayer video: an operator seen from behind on a rooftop as a huge orange nuke glow rises over the map, the HUD streak counter at 30, dust in the air. Orange and gold. Text "NUKE". Keep the bottom-right corner clear, be creative with the composition
     layout: Nuke and Streaks
   - file: 17-dmz-extraction.webp
-    alt: "Call of Duty thumbnail: a DMZ operator with a heavy backpack sprinting to an exfil helicopter through green smoke in Hajin, text EXTRACTED"
-    caption: "DMZ extraction: the run to the helicopter"
+    alt: "Call of Duty thumbnail: two masked operators on the open ramp of a flying exfil helicopter, a green check mark, text EXTRACTED"
+    caption: "DMZ extraction: safe on the helicopter ramp"
     prompt: >
       16:9 YouTube thumbnail for a Modern Warfare 4 DMZ video: an operator with an overstuffed backpack sprinting toward a landing exfil helicopter through thick green smoke in the Hajin zone at dusk, rotor wash, enemies far behind. Text "EXTRACTED". Keep the bottom-right corner clear, be creative with the composition
     layout: DMZ Extraction

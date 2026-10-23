@@ -142,7 +142,7 @@ layouts:
 gallery:
   # ── Tier List & Ranking ────────────────────────────────────────────────
   - file: 01-tier-list.webp
-    alt: "Zelda: Ocarina of Time thumbnail: an invented streamer reacts as the Water Temple drops to the bottom of a dungeon tier list, text WORST DUNGEON?"
+    alt: "Zelda: Ocarina of Time thumbnail: a shocked invented streamer, Link in the Water Temple and that room in the red bottom tier, text WORST DUNGEON?"
     caption: "Dungeon tier list: the face cam reacts to the verdict"
     prompt: >
       16:9 YouTube thumbnail for a Zelda: Ocarina of Time video: ranking every
@@ -152,8 +152,8 @@ gallery:
       corner clear, be creative with the composition
     layout: Tier List & Ranking
   - file: 03-tier-list.webp
-    alt: "Zelda: Ocarina of Time thumbnail: the Hookshot wears a gold crown above other items in a glowing inventory grid, text #1 ITEM"
-    caption: "Best item: the inventory screen as a ranking"
+    alt: "Zelda: Ocarina of Time thumbnail: the Hookshot wears a gold crown above the Megaton Hammer, young Link and Zelda on the grass, text #1 ITEM"
+    caption: "Best item: the Hookshot gets the crown"
     prompt: >
       16:9 YouTube thumbnail for a Zelda: Ocarina of Time video: the best item
       in the game. The Hookshot wears a tiny gold crown on top of a glowing
@@ -162,7 +162,7 @@ gallery:
       bottom-right corner clear, be creative with the composition
     layout: Tier List & Ranking
   - file: 06-remake-reveal.webp
-    alt: "Zelda: Ocarina of Time thumbnail: adult Link leaps across a lava gap on Death Mountain next to a big glowing A-button prompt, text JUMP BUTTON!"
+    alt: "Zelda: Ocarina of Time thumbnail: young Link lunges sword-first between giant Deku Babas, a green A button points at him, text JUMP BUTTON!"
     caption: "New feature: Link can finally jump"
     prompt: >
       16:9 YouTube thumbnail for a Zelda: Ocarina of Time video: Link can
@@ -172,8 +172,8 @@ gallery:
       creative with the composition
     layout: Remake Reveal
   - file: 10-n64-vs-switch-2.webp
-    alt: "Zelda: Ocarina of Time thumbnail: Ganondorf's face split in two, blocky N64 polygons and the detailed remake, text GLOW UP"
-    caption: "Glow up: one face, two eras"
+    alt: "Zelda: Ocarina of Time thumbnail: Link fights a blocky N64 enemy on the left, an arrow points to a detailed Ganondorf on the right, text GLOW UP"
+    caption: "Glow up: blocky N64 on one side, Ganondorf in detail on the other"
     prompt: >
       16:9 YouTube thumbnail for a Zelda: Ocarina of Time video: Ganondorf's new
       look. Close-up of Ganondorf's face split down the middle: blocky N64
@@ -182,8 +182,8 @@ gallery:
       corner clear, be creative with the composition
     layout: N64 vs Switch 2
   - file: 16-first-playthrough.webp
-    alt: "Zelda: Ocarina of Time thumbnail: adult Link on Epona jumps the Lon Lon Ranch wall at sunset while Ingo shakes his fist, text SHE'S MINE"
-    caption: "Getting Epona: the horse mid-air"
+    alt: "Zelda: Ocarina of Time thumbnail: an N64 horse race at Lon Lon Ranch with carrots and a timer on screen, a gold heart key, text SHE'S MINE"
+    caption: "Getting Epona: the horse race at Lon Lon Ranch"
     prompt: >
       16:9 YouTube thumbnail for a Zelda: Ocarina of Time video: getting Epona.
       Adult Link rides Epona over the Lon Lon Ranch stone wall at sunset, the
@@ -193,7 +193,7 @@ gallery:
     layout: First Playthrough & Reaction
   # ── Secrets & Dungeon Guides ───────────────────────────────────────────
   - file: 17-secrets-guide.webp
-    alt: "Zelda: Ocarina of Time thumbnail: adult Link in Iron Boots faces Dark Link on the misty Water Temple floor, a gold arrow, text SOLVED"
+    alt: "Zelda: Ocarina of Time thumbnail: Link in a blue tunic crosses swords with Dark Link on misty water, a gold arrow and a gold tick, text SOLVED"
     caption: "Water Temple guide: the famous room, one arrow"
     prompt: >
       16:9 YouTube thumbnail for a Zelda: Ocarina of Time video: the Water

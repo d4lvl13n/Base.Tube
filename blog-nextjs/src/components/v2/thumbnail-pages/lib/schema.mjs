@@ -29,6 +29,7 @@ import {
   STUDIO_GENERATE_URL,
   TITLE_MAX,
 } from './config.mjs';
+import { studioPromptUrl } from './studio-link.mjs';
 import { blockLinks, blocksText, countWords, parseMarkdown, stripInline } from './markdown-lite.mjs';
 
 /** @typedef {import('./schema.d.mts').Issue} Issue */
@@ -671,19 +672,24 @@ export function normalizeHub(data, body, ctx) {
 }
 
 /**
- * Build a link into the Base.Tube Studio generator.
- * `style` and `prompt` are passed as query parameters; the Studio may or may
- * not use them yet, the link works either way. `ref` tells the Studio which
- * page and which button the visitor came from (no UTM tags on purpose, so
- * analytics keep the visitor's original source).
+ * Link of a "Generate" button.
+ * - With a prompt: straight into the app's Studio, where the idea is already typed in the
+ *   "Video title or idea" field (works for visitors who are not signed in).
+ * - Without a prompt: the AI Thumbnails sales page, with `style`.
+ * `ref` tells which page and which button the visitor came from. In the app it is sent as
+ * `site_ref`, because the app reads `ref` as a referral code. No UTM tags on purpose, so
+ * analytics keep the visitor's original source.
  *
  * @param {{ style?: string, prompt?: string, ref?: string }} opts
  * @returns {string}
  */
+export { studioPromptUrl };
+
 export function studioGenerateUrl(opts) {
+  if (opts.prompt) return studioPromptUrl(opts.prompt, opts.ref);
   const u = new URL(STUDIO_GENERATE_URL);
   if (opts.style) u.searchParams.set('style', opts.style);
-  if (opts.prompt) u.searchParams.set('prompt', opts.prompt);
   if (opts.ref) u.searchParams.set('ref', opts.ref);
   return u.toString();
 }
+
