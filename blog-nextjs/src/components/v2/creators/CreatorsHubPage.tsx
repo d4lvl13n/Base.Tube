@@ -8,7 +8,7 @@ import { studioGenerateUrl } from '../thumbnail-pages/lib/schema.mjs';
 import s from '../thumbnail-pages/thumbnails.module.css';
 import { Avatar } from './CreatorCards';
 import YtThumb from './YtThumb';
-import { channelNumbers, compactNumber, formatMultiple, standoutsOf, type Creator } from './creators';
+import { channelNumbers, compactNumber, formatMultiple, standoutsOf, trustedViews, type Creator } from './creators';
 import c from './creators.module.css';
 import { CREATORS_HUB_MIN_LIVE, creatorPath, gamePage } from './links';
 
@@ -40,6 +40,60 @@ function groupByGame(creators: Creator[], hubIsLive: boolean): Group[] {
     grp.creators.push(cr);
   }
   return [...map.values()].sort((a, b) => b.creators.length - a.creators.length || a.name.localeCompare(b.name));
+}
+
+/** A small channel's breakout video: the thumbnail in large, its reach against the channel's size. */
+function MoonshotRow({ creator: cr, flip }: { creator: Creator; flip: boolean }) {
+  const href = creatorPath(cr.slug);
+  const nums = channelNumbers(cr);
+  const video = cr.videos.find((v) => v.id === cr.moonshotVideoId) ?? standoutsOf(cr)[0]?.video;
+  if (!video) return null;
+  const views = trustedViews(video);
+  const vsSubs = views && cr.subscribers ? Math.round(views / cr.subscribers) : null;
+  const vsUsual = views && nums.medianViews ? Math.round((views / nums.medianViews) * 10) / 10 : null;
+  return (
+    <li className={`${c.row} ${flip ? c.rowFlip : ''}`}>
+      <Link href={href} className={c.moonshotMedia} aria-hidden tabIndex={-1}>
+        <YtThumb src={video.thumbnailHd || video.thumbnail} fallback={video.thumbnail} alt="" />
+      </Link>
+      <div className={c.rowBody}>
+        <div className={c.rowIdentity}>
+          <Avatar src={cr.avatar} size={64} className={c.rowAvatar} />
+          <div>
+            <h3 className={c.rowName}>
+              <Link href={href}>{cr.name}</Link>
+            </h3>
+            <span className={c.rowHandle}>{cr.subscribersText}</span>
+          </div>
+        </div>
+        <p className={c.rowNiche}>{video.title}</p>
+        <dl className={c.rowStats}>
+          {views != null && (
+            <div>
+              <dt>Views</dt>
+              <dd>{compactNumber(views)}</dd>
+            </div>
+          )}
+          {vsSubs != null && (
+            <div>
+              <dt>vs subscribers</dt>
+              <dd className={c.rowHot}>×{vsSubs}</dd>
+            </div>
+          )}
+          {vsUsual != null && (
+            <div>
+              <dt>vs usual video</dt>
+              <dd>×{vsUsual}</dd>
+            </div>
+          )}
+        </dl>
+        {cr.analysis?.summary && <p className={c.rowSummary}>{cr.analysis.summary}</p>}
+        <Link href={href} className={c.rowCta}>
+          Read how it happened <span aria-hidden>→</span>
+        </Link>
+      </div>
+    </li>
+  );
 }
 
 /**
@@ -102,7 +156,11 @@ function CreatorRow({ creator: cr, flip }: { creator: Creator; flip: boolean }) 
 
 /** /creators/youtube: real channels to learn from, grouped by game. */
 export default function CreatorsHubPage({ creators, isLive }: { creators: Creator[]; isLive: boolean }) {
-  const groups = groupByGame(creators, isLive);
+  const moonshots = creators.filter((cr) => cr.spotlight === 'moonshot');
+  const groups = groupByGame(
+    creators.filter((cr) => cr.spotlight !== 'moonshot'),
+    isLive,
+  );
 
   return (
     <div className="v2-root">
@@ -171,7 +229,7 @@ export default function CreatorsHubPage({ creators, isLive }: { creators: Creato
               <ShowcaseHead
                 pill="The creators"
                 title="Who you can learn from"
-                sub="Mid-sized gaming channels, from about 65K to 850K subscribers. Pick one to read how their thumbnails work."
+                sub="Gaming channels from 11K to 850K subscribers. Pick one to read how their thumbnails work."
               />
               <ul className={c.directory}>
                 {creators.map((cr) => (
@@ -189,6 +247,34 @@ export default function CreatorsHubPage({ creators, isLive }: { creators: Creato
               </ul>
             </div>
           </section>
+        )}
+
+        {/* ── SMALL CHANNELS, BIG VIDEOS ───────────────────────── */}
+        {moonshots.length > 0 && (
+          <>
+            <div className="v2-sep" aria-hidden />
+            <section className="v2-cp-section" id="moonshots" aria-labelledby="moonshots-h">
+              <div className="v2-container">
+                <div className={c.groupHead}>
+                  <ScrollReveal>
+                    <span className="v2-label">Small channels, big videos</span>
+                    <h2 id="moonshots-h" className={`v2-cp-section-h2 ${c.groupTitle}`}>
+                      One video that outgrew the channel
+                    </h2>
+                  </ScrollReveal>
+                </div>
+                <p className={c.groupLead}>
+                  Channels under 35K subscribers with one upload that reached many times their audience. What the
+                  thumbnail and title did differently, and what you can copy.
+                </p>
+                <ol className={c.rows}>
+                  {moonshots.map((cr, i) => (
+                    <MoonshotRow key={cr.slug} creator={cr} flip={i % 2 === 1} />
+                  ))}
+                </ol>
+              </div>
+            </section>
+          </>
         )}
 
         {/* ── CREATORS BY GAME ─────────────────────────────────── */}

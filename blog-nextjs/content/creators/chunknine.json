@@ -1,0 +1,173 @@
+{
+  "slug": "chunknine",
+  "status": "draft",
+  "channelId": "UCdx8_SWn5I-AzFyiwuNdKhA",
+  "name": "ChunkNine",
+  "handle": "ChunkNine",
+  "url": "https://www.youtube.com/channel/UCdx8_SWn5I-AzFyiwuNdKhA",
+  "avatar": "https://yt3.googleusercontent.com/HSFEAhlIMfAYUiKhqzbglRbwyhECvrM3pzcsmb2ekDIr-enlFbHyD2Lxr6swRFBgsTK_tY20KlA=s900-c-k-c0x00ffffff-no-rj",
+  "game": "minecraft",
+  "spotlight": "moonshot",
+  "moonshotVideoId": "pAo2F8-_gC8",
+  "subscribers": 11000,
+  "subscribersText": "11K subscribers",
+  "videoCount": 5,
+  "description": "I make gaming challenge videos",
+  "collectedAt": "2026-10-23",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 5,
+    "medianViews": 82000,
+    "outliers": [
+      {
+        "id": "pAo2F8-_gC8",
+        "multiple": 8.5
+      },
+      {
+        "id": "8aA2JVnfAcI",
+        "multiple": 2.5
+      },
+      {
+        "id": "fnJOYm-xCPY",
+        "multiple": 1
+      },
+      {
+        "id": "7YU1yN1JXAA",
+        "multiple": 0.7
+      },
+      {
+        "id": "Q6BjiVvd9og",
+        "multiple": 0.4
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "Q6BjiVvd9og",
+      "title": "I Built My Villagers an ACTUAL Village in Minecraft Hardcore",
+      "views": 36000,
+      "viewsText": "36K views",
+      "membersOnly": false,
+      "duration": "29:12",
+      "durationSec": 1752,
+      "published": "4 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/Q6BjiVvd9og/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Q6BjiVvd9og/maxresdefault.jpg"
+    },
+    {
+      "id": "7YU1yN1JXAA",
+      "title": "I Transformed My Nether Portal in Minecraft Hardcore",
+      "views": 55000,
+      "viewsText": "55K views",
+      "membersOnly": false,
+      "duration": "27:17",
+      "durationSec": 1637,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/7YU1yN1JXAA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/7YU1yN1JXAA/maxresdefault.jpg"
+    },
+    {
+      "id": "fnJOYm-xCPY",
+      "title": "I Built a MASSIVE Wizard Tower in Minecraft Hardcore",
+      "views": 82000,
+      "viewsText": "82K views",
+      "membersOnly": false,
+      "duration": "36:17",
+      "durationSec": 2177,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/fnJOYm-xCPY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/fnJOYm-xCPY/maxresdefault.jpg"
+    },
+    {
+      "id": "pAo2F8-_gC8",
+      "title": "My Perfect Start to Minecraft Hardcore",
+      "views": 698000,
+      "viewsText": "698K views",
+      "membersOnly": false,
+      "duration": "32:39",
+      "durationSec": 1959,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/pAo2F8-_gC8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/pAo2F8-_gC8/maxresdefault.jpg"
+    },
+    {
+      "id": "8aA2JVnfAcI",
+      "title": "I Survived on the Last Island in Hardcore Minecraft",
+      "views": 201000,
+      "viewsText": "201K views",
+      "membersOnly": false,
+      "duration": "43:29",
+      "durationSec": 2609,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/8aA2JVnfAcI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/8aA2JVnfAcI/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "An 11K-subscriber Minecraft channel with only 5 videos, whose first Hardcore episode, 'My Perfect Start to Minecraft Hardcore', reached 698K views. ChunkNine makes long Hardcore survival build videos, and the thumbnails show one big finished build in shader lighting, a numbered hardcore heart in the top-left corner and a pickaxe in the bottom-right, with no text.",
+    "niche": "Minecraft Hardcore survival builds (a new channel, 5 videos)",
+    "styleTraits": [
+      {
+        "title": "The finished build is the whole picture",
+        "detail": "Every thumbnail is one large build seen from above or from a distance: a walled castle town, a dark wizard tower, a giant rune circle, a timber village. There is no face and no character. The build fills about two thirds of the frame, so the size of the project is what you read first."
+      },
+      {
+        "title": "A numbered heart marks the series",
+        "detail": "The four series episodes carry a red pixel hardcore heart in the top-left corner with a white number inside (1, 2, 3, 4). It works like an episode badge: a viewer can tell at a glance which part comes first and that the videos belong together."
+      },
+      {
+        "title": "The pickaxe shows progress",
+        "detail": "A large pickaxe pokes in from the bottom-right corner of every series thumbnail. It is a diamond pickaxe in episodes 1 and 2 and a darker netherite pickaxe in episodes 3 and 4, so the corner prop quietly tells regular viewers that the world has moved on."
+      },
+      {
+        "title": "Shader lighting and strong colour blocks",
+        "detail": "The screenshots use realistic shaders: soft skies, sunset gradients, deep shadows. Each image is built on one dominant contrast, such as the orange badlands around the green castle grounds, or the white rune circle on a dark evening sky."
+      },
+      {
+        "title": "Text only on the one-off video",
+        "detail": "The only thumbnail with words is the standalone island video: 'FROM THIS' and 'TO THIS' in white, red and green with a black brush-stroke behind, a curved red arrow, and 'HARDCORE ISLAND CHALLENGE' at the bottom. The series episodes leave the text to the title."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "pAo2F8-_gC8",
+        "why": "This episode reached 698K views, about 8.5 times the channel's median of 82K and about 63 times its 11K subscribers. Its layout is the same as the later episodes (heart badge, pickaxe, no text), so the difference is mostly in the subject: a complete walled castle town with towers, flags, a fountain and farms, sitting in an orange badlands bowl that makes the green grounds pop, while the later episodes show a single tower, a portal or a village. The title promises a 'perfect start', which pairs with the image in a way that may create curiosity: a castle town on what is supposedly the beginning of a Hardcore world looks almost impossible. It is also episode 1, and first episodes are where new viewers usually enter a series, which probably helped it keep getting recommended. These causes are hypotheses; the numbers show that it stood out, not why."
+      },
+      {
+        "id": "8aA2JVnfAcI",
+        "why": "The channel's oldest video in the sample reached 201K views, about 2.5 times the median. It is the only thumbnail with text: a split 'FROM THIS / TO THIS' before-and-after, a bare sand island on the left and a full desert town on the right, joined by a red arrow. The transformation is understood in one second, and the title adds a survival stake ('the last island'), which probably helped a brand-new channel get its first clicks."
+      },
+      {
+        "id": "fnJOYm-xCPY",
+        "why": "At 82K views this episode is exactly the channel's median (1 times), so it shows what a normal upload looks like rather than a breakout. The thumbnail is the cleanest of the series: one tall dark wizard tower with a wheel on top and floating amethyst shards, against a pale sky. With only 5 videos it is hard to tell whether the drop after episode 1 comes from the packaging or from the usual fall-off of a series."
+      }
+    ],
+    "lessons": [
+      "Show the finished result, not the work in progress. A complete, detailed build that looks hard to achieve is a strong reason to click.",
+      "Use a title that makes the image surprising. 'My Perfect Start' next to a full castle town creates a question in the viewer's head: how is that a start?",
+      "Put one strong colour contrast behind your subject, like the orange badlands around the green castle. It makes the build stand out at small sizes.",
+      "If you run a series, add a small consistent badge with the episode number in the same corner every time, and make episode 1 your strongest thumbnail because it is the door into the series.",
+      "A before-and-after split ('from this, to this') explains a transformation video instantly and can work well for a channel nobody knows yet."
+    ],
+    "experiment": "Pick your next build video and make two thumbnails: one showing the finished build from a high three-quarter angle with no text, and one before-and-after split with two or three words. Run them in YouTube's thumbnail test (Test and Compare) for a week and keep the one with more watch time.",
+    "faq": [
+      {
+        "q": "How did ChunkNine get so many views on 'My Perfect Start to Minecraft Hardcore'?",
+        "a": "As of 23 October 2026 the video has about 698K views, roughly 63 times the channel's 11K subscribers. The thumbnail shows a complete castle town in a colourful badlands valley, and the title calls it a 'perfect start', which may make viewers curious about how it was built so early. Being episode 1 of the series probably helped too. These are likely reasons, not proven ones."
+      },
+      {
+        "q": "How many subscribers does ChunkNine have?",
+        "a": "As of 23 October 2026, ChunkNine has about 11K subscribers and only 5 public videos, so it is a very new channel. Its five uploads range from 36K to 698K views, with a median of 82K, which is high for a channel of that size."
+      },
+      {
+        "q": "What does ChunkNine make videos about?",
+        "a": "ChunkNine makes long Minecraft Hardcore videos, mostly between 27 and 44 minutes, where each episode is built around one big project: a castle town, a wizard tower, a decorated Nether portal, a village for the villagers. The first video was a separate island survival challenge."
+      },
+      {
+        "q": "What do ChunkNine's thumbnails look like?",
+        "a": "Most show one large finished build in shader lighting, seen from above, with a red hardcore heart holding the episode number in the top-left corner and a pickaxe in the bottom-right. There is no face and no text, except on the island challenge video, which uses a before-and-after split with bold words."
+      }
+    ],
+    "reviewedAt": "2026-10-23"
+  }
+}

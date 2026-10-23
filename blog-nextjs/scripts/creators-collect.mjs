@@ -138,6 +138,9 @@ for (const ch of channels) {
     url: `https://www.youtube.com/channel/${ch.channel_id}`,
     avatar,
     game: ch.game,
+    // "moonshot": a small channel featured for one video that far outgrew its size.
+    spotlight: ch.spotlight ?? null,
+    moonshotVideoId: ch.moonshotVideoId ?? null,
     subscribers: parseCount(profile.subscriber_count),
     subscribersText: profile.subscriber_count ?? null,
     videoCount: parseCount(profile.video_count),

@@ -39,6 +39,9 @@ export interface Creator {
   url: string;
   avatar: string | null;
   game: string;
+  /** "moonshot": a small channel featured for one video that far outgrew its size. */
+  spotlight?: 'moonshot' | null;
+  moonshotVideoId?: string | null;
   subscribers: number | null;
   subscribersText: string | null;
   videoCount: number | null;

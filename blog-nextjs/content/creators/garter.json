@@ -1,0 +1,477 @@
+{
+  "slug": "garter",
+  "status": "draft",
+  "channelId": "UCYPAfSAa68ZQWmJOufBkotQ",
+  "name": "Garter",
+  "handle": "garterzelda",
+  "url": "https://www.youtube.com/channel/UCYPAfSAa68ZQWmJOufBkotQ",
+  "avatar": "https://yt3.googleusercontent.com/NrjrQ8EaAqeYVvI8ocXlg1atSpF1nQp-hPFrXOcaiTe7zY8Gq3oEp6wB977VcJEvN92hWt4--0E=s900-c-k-c0x00ffffff-no-rj",
+  "game": "zelda-ocarina-of-time",
+  "spotlight": "moonshot",
+  "moonshotVideoId": "FI3KkTgdXec",
+  "subscribers": 11100,
+  "subscribersText": "11.1K subscribers",
+  "videoCount": 507,
+  "description": "Want me to time anything Legend of Zelda? Send me a request! I have videos from timing every 3D Zelda game, from breaking down every individual dungeon length. Stay a while!",
+  "collectedAt": "2026-10-23",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 23000,
+    "outliers": [
+      {
+        "id": "FI3KkTgdXec",
+        "multiple": 32
+      },
+      {
+        "id": "JIjOFJsFavw",
+        "multiple": 14.7
+      },
+      {
+        "id": "gu91apwspfU",
+        "multiple": 5.3
+      },
+      {
+        "id": "PLPBccEhQIs",
+        "multiple": 5.3
+      },
+      {
+        "id": "2Werz712A-A",
+        "multiple": 2.9
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "-qeHzTJFN4M",
+      "title": "Ranking EVERY Fire Dungeon in Zelda from Worst to Best",
+      "views": 57000,
+      "viewsText": "57K views",
+      "membersOnly": false,
+      "duration": "33:40",
+      "durationSec": 2020,
+      "published": "7 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/-qeHzTJFN4M/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/-qeHzTJFN4M/maxresdefault.jpg"
+    },
+    {
+      "id": "gu91apwspfU",
+      "title": "Ranking EVERY Forest Dungeon in Zelda from Worst to Best",
+      "views": 121000,
+      "viewsText": "121K views",
+      "membersOnly": false,
+      "duration": "16:38",
+      "durationSec": 998,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/gu91apwspfU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/gu91apwspfU/maxresdefault.jpg"
+    },
+    {
+      "id": "7DI4rJylx6I",
+      "title": "Which Skyward Sword Dungeon Takes the Longest to Reach?",
+      "views": 23000,
+      "viewsText": "23K views",
+      "membersOnly": false,
+      "duration": "1:04:47",
+      "durationSec": 3887,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/7DI4rJylx6I/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/7DI4rJylx6I/maxresdefault.jpg"
+    },
+    {
+      "id": "FI3KkTgdXec",
+      "title": "How Long Does It Take to Walk Across EVERY Zelda Map?",
+      "views": 737000,
+      "viewsText": "737K views",
+      "membersOnly": false,
+      "duration": "16:52",
+      "durationSec": 1012,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/FI3KkTgdXec/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/FI3KkTgdXec/maxresdefault.jpg"
+    },
+    {
+      "id": "9YfpRV4KRGg",
+      "title": "Which Twilight Princess Dungeon Takes the Longest to Reach?",
+      "views": 48000,
+      "viewsText": "48K views",
+      "membersOnly": false,
+      "duration": "53:39",
+      "durationSec": 3219,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/9YfpRV4KRGg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/9YfpRV4KRGg/maxresdefault.jpg"
+    },
+    {
+      "id": "KAlO3xNnGbc",
+      "title": "Which Wind Waker Dungeon Takes the Longest to Reach?",
+      "views": 11000,
+      "viewsText": "11K views",
+      "membersOnly": false,
+      "duration": "44:02",
+      "durationSec": 2642,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/KAlO3xNnGbc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/KAlO3xNnGbc/maxresdefault.jpg"
+    },
+    {
+      "id": "LcJ_PKMKDxI",
+      "title": "Which Majora's Mask Dungeon Takes the Longest to Reach?",
+      "views": 26000,
+      "viewsText": "26K views",
+      "membersOnly": false,
+      "duration": "34:33",
+      "durationSec": 2073,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/LcJ_PKMKDxI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/LcJ_PKMKDxI/maxresdefault.jpg"
+    },
+    {
+      "id": "y4SV1mohGnE",
+      "title": "Which OoT Dungeon Takes the Longest to Reach?",
+      "views": 27000,
+      "viewsText": "27K views",
+      "membersOnly": false,
+      "duration": "27:49",
+      "durationSec": 1669,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/y4SV1mohGnE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/y4SV1mohGnE/maxresdefault.jpg"
+    },
+    {
+      "id": "pq7Y0nYpI0Y",
+      "title": "How Long Does It Take to Get All 900 Korok Seeds in BOTW?",
+      "views": 3100,
+      "viewsText": "3.1K views",
+      "membersOnly": false,
+      "duration": "38:28",
+      "durationSec": 2308,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/pq7Y0nYpI0Y/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/pq7Y0nYpI0Y/maxresdefault.jpg"
+    },
+    {
+      "id": "PLPBccEhQIs",
+      "title": "All 21 Zelda Games Ranked from WORST to BEST",
+      "views": 123000,
+      "viewsText": "123K views",
+      "membersOnly": false,
+      "duration": "39:09",
+      "durationSec": 2349,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/PLPBccEhQIs/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/PLPBccEhQIs/maxresdefault.jpg"
+    },
+    {
+      "id": "mUdawOUnacc",
+      "title": "Ranking EVERY 3D Zelda Dungeon from Shortest to Longest",
+      "views": 9200,
+      "viewsText": "9.2K views",
+      "membersOnly": false,
+      "duration": "12:30",
+      "durationSec": 750,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/mUdawOUnacc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/mUdawOUnacc/maxresdefault.jpg"
+    },
+    {
+      "id": "xTC1MLnEfYk",
+      "title": "Which 3D Zelda Mini-Dungeon Takes the Longest to Beat?",
+      "views": 11000,
+      "viewsText": "11K views",
+      "membersOnly": false,
+      "duration": "1:24:48",
+      "durationSec": 5088,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/xTC1MLnEfYk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/xTC1MLnEfYk/maxresdefault.jpg"
+    },
+    {
+      "id": "yoUL7jhcKDA",
+      "title": "Which Dungeon in Tears of the Kingdom Takes the Longest to Beat?",
+      "views": 8600,
+      "viewsText": "8.6K views",
+      "membersOnly": false,
+      "duration": "35:05",
+      "durationSec": 2105,
+      "published": "9 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/yoUL7jhcKDA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/yoUL7jhcKDA/maxresdefault.jpg"
+    },
+    {
+      "id": "dVlviNatOkY",
+      "title": "Which Dungeon in Breath of the Wild Takes the Longest to Beat?",
+      "views": 25000,
+      "viewsText": "25K views",
+      "membersOnly": false,
+      "duration": "30:17",
+      "durationSec": 1817,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/dVlviNatOkY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/dVlviNatOkY/maxresdefault.jpg"
+    },
+    {
+      "id": "lEIncrHST5I",
+      "title": "Which Dungeon in Skyward Sword Takes the Longest to Beat?",
+      "views": 20000,
+      "viewsText": "20K views",
+      "membersOnly": false,
+      "duration": "45:24",
+      "durationSec": 2724,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/lEIncrHST5I/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/lEIncrHST5I/maxresdefault.jpg"
+    },
+    {
+      "id": "2Werz712A-A",
+      "title": "Which Dungeon in Twilight Princess Takes the Longest to Beat?",
+      "views": 66000,
+      "viewsText": "66K views",
+      "membersOnly": false,
+      "duration": "54:01",
+      "durationSec": 3241,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/2Werz712A-A/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/2Werz712A-A/maxresdefault.jpg"
+    },
+    {
+      "id": "vJCQ8ZwfXJ8",
+      "title": "Which Dungeon in Wind Waker Takes the Longest to Beat?",
+      "views": 23000,
+      "viewsText": "23K views",
+      "membersOnly": false,
+      "duration": "37:44",
+      "durationSec": 2264,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/vJCQ8ZwfXJ8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/vJCQ8ZwfXJ8/maxresdefault.jpg"
+    },
+    {
+      "id": "PapaUBhvBmo",
+      "title": "Which Dungeon in Majora's Mask Takes the Longest to Beat?",
+      "views": 23000,
+      "viewsText": "23K views",
+      "membersOnly": false,
+      "duration": "21:48",
+      "durationSec": 1308,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/PapaUBhvBmo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/PapaUBhvBmo/maxresdefault.jpg"
+    },
+    {
+      "id": "hIrIZHoh3FE",
+      "title": "Which Dungeon in Ocarina of Time Takes the Longest to Beat?",
+      "views": 28000,
+      "viewsText": "28K views",
+      "membersOnly": false,
+      "duration": "21:03",
+      "durationSec": 1263,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/hIrIZHoh3FE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/hIrIZHoh3FE/maxresdefault.jpg"
+    },
+    {
+      "id": "p664EFgDeg8",
+      "title": "Which Zelda Games Are Worth Replaying? (Ranking Them All)",
+      "views": 56000,
+      "viewsText": "56K views",
+      "membersOnly": false,
+      "duration": "22:34",
+      "durationSec": 1354,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/p664EFgDeg8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/p664EFgDeg8/maxresdefault.jpg"
+    },
+    {
+      "id": "vGjOT_5DzE0",
+      "title": "Which 2D Zelda Game Actually Takes the Longest to Beat?",
+      "views": 40000,
+      "viewsText": "40K views",
+      "membersOnly": false,
+      "duration": "2:25:26",
+      "durationSec": 8726,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/vGjOT_5DzE0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/vGjOT_5DzE0/maxresdefault.jpg"
+    },
+    {
+      "id": "JIjOFJsFavw",
+      "title": "Which 3D Zelda Game Actually Takes the Longest to Beat?",
+      "views": 338000,
+      "viewsText": "338K views",
+      "membersOnly": false,
+      "duration": "47:45",
+      "durationSec": 2865,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/JIjOFJsFavw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/JIjOFJsFavw/maxresdefault.jpg"
+    },
+    {
+      "id": "SFeytfndmZM",
+      "title": "The Legend of Zelda: Tears of the Kingdom 100% Walkthrough - Part 220: Hero's Path (Finale)",
+      "views": 1100,
+      "viewsText": "1.1K views",
+      "membersOnly": false,
+      "duration": "15:42",
+      "durationSec": 942,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/SFeytfndmZM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/SFeytfndmZM/maxresdefault.jpg"
+    },
+    {
+      "id": "T17o6VSwGvk",
+      "title": "The Legend of Zelda: Tears of the Kingdom 100% Walkthrough - Part 219: Final Boss + Credits",
+      "views": 452,
+      "viewsText": "452 views",
+      "membersOnly": false,
+      "duration": "43:56",
+      "durationSec": 2636,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/T17o6VSwGvk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/T17o6VSwGvk/maxresdefault.jpg"
+    },
+    {
+      "id": "O08O61HAqds",
+      "title": "The Legend of Zelda: Tears of the Kingdom 100% Walkthrough - Part 218: The Demon King's Army",
+      "views": 458,
+      "viewsText": "458 views",
+      "membersOnly": false,
+      "duration": "17:49",
+      "durationSec": 1069,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/O08O61HAqds/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/O08O61HAqds/maxresdefault.jpg"
+    },
+    {
+      "id": "rccwonfmoYI",
+      "title": "The Legend of Zelda: Tears of the Kingdom 100% Walkthrough - Part 217: Hestu's Gift",
+      "views": 490,
+      "viewsText": "490 views",
+      "membersOnly": false,
+      "duration": "21:54",
+      "durationSec": 1314,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/rccwonfmoYI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/rccwonfmoYI/maxresdefault.jpg"
+    },
+    {
+      "id": "Fo6f2P4YHZg",
+      "title": "The Legend of Zelda: Tears of the Kingdom 100% Walkthrough - Part 216: Ancient Hero's Aspect",
+      "views": 605,
+      "viewsText": "605 views",
+      "membersOnly": false,
+      "duration": "21:21",
+      "durationSec": 1281,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/Fo6f2P4YHZg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Fo6f2P4YHZg/maxresdefault.jpg"
+    },
+    {
+      "id": "hEayUy1HRCw",
+      "title": "The Legend of Zelda: Tears of the Kingdom 100% Walkthrough - Part 215: The Master Sword",
+      "views": 280,
+      "viewsText": "280 views",
+      "membersOnly": false,
+      "duration": "20:33",
+      "durationSec": 1233,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/hEayUy1HRCw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/hEayUy1HRCw/maxresdefault.jpg"
+    },
+    {
+      "id": "5D8AHmePpYI",
+      "title": "The Legend of Zelda: Tears of the Kingdom 100% Walkthrough - Part 214: Korok Forest",
+      "views": 188,
+      "viewsText": "188 views",
+      "membersOnly": false,
+      "duration": "23:02",
+      "durationSec": 1382,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/5D8AHmePpYI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/5D8AHmePpYI/maxresdefault.jpg"
+    },
+    {
+      "id": "bQfF8V1cP4c",
+      "title": "The Legend of Zelda: Tears of the Kingdom 100% Walkthrough - Part 213: Eldin Dark Skeleton",
+      "views": 269,
+      "viewsText": "269 views",
+      "membersOnly": false,
+      "duration": "20:32",
+      "durationSec": 1232,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/bQfF8V1cP4c/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/bQfF8V1cP4c/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "An 11.1K-subscriber Zelda channel whose 'How Long Does It Take to Walk Across EVERY Zelda Map?' reached 737K views, about 66 times its subscriber count. Garter times and ranks Legend of Zelda games and dungeons, and the thumbnails usually split the frame into three dungeon panels with coloured labels and a big gold serif caption, while the breakout uses a single map, a red route and two giant words.",
+    "niche": "Legend of Zelda timing videos and dungeon rankings",
+    "styleTraits": [
+      {
+        "title": "Three panels with a scale on top",
+        "detail": "The most common layout splits the image into three vertical panels, each showing a dungeon, with a label above each: 'SHORT / ??? / LONG' in green, yellow and red, or 'WORST / MID / BEST' on the newer ranking videos. The middle panel is often a '???', which leaves the answer for the video."
+      },
+      {
+        "title": "Gold serif caption at the bottom",
+        "detail": "Most dungeon videos carry a caption in a decorative serif font close to the Zelda logo style, in gold or yellow with a dark shadow: 'LONGEST DUNGEON?', 'HOW LONG TO REACH EVERY DUNGEON', 'RANKING EVERY FOREST DUNGEON'. One word is often coloured differently (green 'FOREST', orange 'FIRE', blue 'DUNGEON')."
+      },
+      {
+        "title": "Official art and bright, saturated colours",
+        "detail": "Garter uses official character art and cleaned-up game scenes rather than raw gameplay: Link from different games, Zelda holding a clock, Majora's Mask in the centre. Colours are pushed hard, with glowing greens, purples and teals, so even dark dungeons read as bright."
+      },
+      {
+        "title": "Time is shown, not just said",
+        "detail": "Because the channel is about how long things take, the thumbnails put time on screen: hour counts above each game ('38+ HOURS', '55+ HOURS'), minute counts ('7+ MIN', '33+ MIN'), timers ('SEED 1 00:00:00'), clocks and pocket watches. Some numbers are pixelated to hide the result."
+      },
+      {
+        "title": "Newer videos try big modern words",
+        "detail": "The most recent uploads mix in a different look: huge bold sans-serif words in white and yellow, slightly slanted, next to one character ('HOW LONG?', 'THIS TOOK FOREVER', 'SO MANY TASKS'). The breakout video uses this style."
+      },
+      {
+        "title": "Old walkthroughs use a separate template",
+        "detail": "The 8 oldest videos in the sample are parts 213 to 220 of a Tears of the Kingdom 100% walkthrough. They use a teal frame and a big part number in a Zonai-style circle, and each got between 188 and 1.1K views, far below the newer timing and ranking videos."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "FI3KkTgdXec",
+        "why": "This video reached 737K views, about 32 times the channel's median of 23K and about 66 times its 11.1K subscribers. Its thumbnail drops the usual three-panel layout and serif caption: it shows one full map (it looks like the Breath of the Wild map of Hyrule), a red dashed route between two red map pins, Link running in the corner, and only two words, 'HOW LONG?', in huge white and yellow letters. The subject is different too: instead of the dungeons of one game, the title asks a question about every Zelda map, which any Zelda player can understand without knowing the dungeons, and the route line shows the challenge at a glance. A likely part of the result is that this question is simple and broad enough to interest casual fans, not only the channel's dungeon fans, but that is a hypothesis. Note that the channel is listed under Ocarina of Time on this site while this video covers the whole series."
+      },
+      {
+        "id": "JIjOFJsFavw",
+        "why": "With 338K views, about 14.7 times the median, this was the first video in the sample after the channel moved from walkthrough parts to timing videos. The thumbnail lines up seven Links, one per 3D Zelda game, as tall strips with an hour count above each and the last three numbers pixelated, so the viewer has to watch to see the answer. Like the breakout, it asks a simple 'which one takes longest' question about the whole series."
+      },
+      {
+        "id": "gu91apwspfU",
+        "why": "At 121K views, about 5.3 times the median, this ranking video uses the 'WORST / MID / BEST' version of the three-panel layout, with three forest dungeons under red, yellow and green labels and 'FOREST' in green inside the gold caption. The best panel shows a vine-covered stone courtyard that looks like Ocarina of Time's Forest Temple, a dungeon many fans remember. A ranking invites people to check if they agree, which may help, but that is a hypothesis."
+      }
+    ],
+    "lessons": [
+      "Ask one question that any fan of your game can understand without background, like 'how long to walk across every map?'. Broad, simple questions can reach people far beyond your subscribers.",
+      "Draw the promise. A red dashed route between two map pins explains the video before anyone reads the title. Look for a simple graphic (a line, a timer, a scale) that shows your idea.",
+      "Cut the words to two or three and make them huge. 'HOW LONG?' is readable on a phone; a long serif caption is not always.",
+      "Hide the answer on purpose. Pixelated numbers and a '???' panel give the viewer a reason to click without lying about what is inside.",
+      "When one video breaks out, study what changed (topic width, layout, amount of text) and test that change again rather than assuming the whole channel should copy it."
+    ],
+    "experiment": "Take your next video and write its idea as one short question that a casual player would understand. Make one thumbnail with a single image, one simple graphic that shows the question (a route, a timer, a before-and-after) and at most three huge words. Test it against your usual layout with YouTube's Test and Compare for a week.",
+    "faq": [
+      {
+        "q": "How did Garter get so many views on 'How Long Does It Take to Walk Across Every Zelda Map?'",
+        "a": "As of 23 October 2026 the video has about 737K views, around 66 times the channel's 11.1K subscribers. Its thumbnail is unusually simple for the channel: a map, a red route between two pins and the words 'HOW LONG?'. The question covers every Zelda game, so it may appeal to casual fans too. These are likely reasons, not proven ones."
+      },
+      {
+        "q": "How many subscribers does Garter have?",
+        "a": "As of 23 October 2026, Garter has about 11.1K subscribers and 507 public videos. In the latest 30 uploads the median is about 23K views, much more than the subscriber count, because the timing and ranking videos are recommended widely. The older walkthrough parts in that sample get only a few hundred views each."
+      },
+      {
+        "q": "What does Garter make videos about?",
+        "a": "Garter makes videos about The Legend of Zelda that measure and rank things: which dungeon takes longest to beat or to reach in each game, which 3D or 2D Zelda is longest, rankings of fire and forest dungeons and of all 21 games. Before that, the channel posted a long 100% walkthrough of Tears of the Kingdom."
+      },
+      {
+        "q": "What do Garter's thumbnails look like?",
+        "a": "Most use three dungeon panels side by side with labels like 'SHORT / ??? / LONG' or 'WORST / MID / BEST' and a gold serif caption at the bottom. Time is often shown with hour counts, timers or clocks. Recent ones, including the most viewed, use huge white and yellow sans-serif words next to one image of Link."
+      }
+    ],
+    "reviewedAt": "2026-10-23"
+  }
+}

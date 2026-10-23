@@ -90,7 +90,11 @@ export default function CreatorPage({ creator }: { creator: Creator }) {
             <div className={c.profile}>
               <Avatar src={creator.avatar} size={104} className={c.avatar} />
               <div>
-                {game && <span className={`v2-feature-tag orange ${s.heroTag}`}>{game.name} creator</span>}
+                {game && (
+                  <span className={`v2-feature-tag orange ${s.heroTag}`}>
+                    {creator.spotlight === 'moonshot' ? `Small channel, big video · ${game.name}` : `${game.name} creator`}
+                  </span>
+                )}
                 <h1 className={`v2-cp-h1 ${s.hubH1} ${c.name}`}>{creator.name}</h1>
                 {handle && <span className={c.handle}>{handle}</span>}
               </div>

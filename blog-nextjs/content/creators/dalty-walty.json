@@ -1,0 +1,473 @@
+{
+  "slug": "dalty-walty",
+  "status": "draft",
+  "channelId": "UC8-y8ZmRWtKpnMyQr8ISytA",
+  "name": "dalty walty",
+  "handle": "daltywaltyy",
+  "url": "https://www.youtube.com/channel/UC8-y8ZmRWtKpnMyQr8ISytA",
+  "avatar": "https://yt3.googleusercontent.com/EBv-SxmHwq3ijYR_OqJN4OPtDNbyVRgU8rh284CHymGqbrF9_S85b88JSThoFKh_YpXJSpsaAsM=s900-c-k-c0x00ffffff-no-rj",
+  "game": "fortnite",
+  "spotlight": "moonshot",
+  "moonshotVideoId": "yLRnoyA5Hlc",
+  "subscribers": 31200,
+  "subscribersText": "31.2K subscribers",
+  "videoCount": 193,
+  "description": "I post good music with fortnite in the background :D",
+  "collectedAt": "2026-10-23",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 14500,
+    "outliers": [
+      {
+        "id": "yLRnoyA5Hlc",
+        "multiple": 49.5
+      },
+      {
+        "id": "R_Mq-a9xR-w",
+        "multiple": 15.9
+      },
+      {
+        "id": "bZ0hF3Wu2M8",
+        "multiple": 9.1
+      },
+      {
+        "id": "y9d7SzNqxh8",
+        "multiple": 6.3
+      },
+      {
+        "id": "BNMNtWe06r0",
+        "multiple": 3.8
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "R_Mq-a9xR-w",
+      "title": "I Became Fortnite's Smartest Player",
+      "views": 230000,
+      "viewsText": "230K views",
+      "membersOnly": false,
+      "duration": "23:09",
+      "durationSec": 1389,
+      "published": "11 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/R_Mq-a9xR-w/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/R_Mq-a9xR-w/maxresdefault.jpg"
+    },
+    {
+      "id": "Ed9SCreAA1g",
+      "title": "I Spent $200 To Win a Fortnite Tournament",
+      "views": 40000,
+      "viewsText": "40K views",
+      "membersOnly": false,
+      "duration": "25:25",
+      "durationSec": 1525,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/Ed9SCreAA1g/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Ed9SCreAA1g/maxresdefault.jpg"
+    },
+    {
+      "id": "y9d7SzNqxh8",
+      "title": "I Went Undercover in Fortnite’s Worst Tournament",
+      "views": 91000,
+      "viewsText": "91K views",
+      "membersOnly": false,
+      "duration": "20:38",
+      "durationSec": 1238,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/y9d7SzNqxh8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/y9d7SzNqxh8/maxresdefault.jpg"
+    },
+    {
+      "id": "BNMNtWe06r0",
+      "title": "The Reality of a Falloff",
+      "views": 55000,
+      "viewsText": "55K views",
+      "membersOnly": false,
+      "duration": "15:21",
+      "durationSec": 921,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/BNMNtWe06r0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/BNMNtWe06r0/maxresdefault.jpg"
+    },
+    {
+      "id": "Z5Rt73adhAw",
+      "title": "Solo Reload Tournaments are Unfair...",
+      "views": 41000,
+      "viewsText": "41K views",
+      "membersOnly": false,
+      "duration": "24:41",
+      "durationSec": 1481,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/Z5Rt73adhAw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Z5Rt73adhAw/maxresdefault.jpg"
+    },
+    {
+      "id": "MV_B0Bx9pFs",
+      "title": "Solo Victory Cups are Disappointing...",
+      "views": 25000,
+      "viewsText": "25K views",
+      "membersOnly": false,
+      "duration": "17:23",
+      "durationSec": 1043,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/MV_B0Bx9pFs/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/MV_B0Bx9pFs/maxresdefault.jpg"
+    },
+    {
+      "id": "QWhPvhDGnJs",
+      "title": "Winning a Fortnite Tournament Without Talking",
+      "views": 6700,
+      "viewsText": "6.7K views",
+      "membersOnly": false,
+      "duration": "21:19",
+      "durationSec": 1279,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/QWhPvhDGnJs/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/QWhPvhDGnJs/maxresdefault.jpg"
+    },
+    {
+      "id": "8FXCIOekzow",
+      "title": "Fortnite Console Tournaments are AWFUL",
+      "views": 45000,
+      "viewsText": "45K views",
+      "membersOnly": false,
+      "duration": "13:32",
+      "durationSec": 812,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/8FXCIOekzow/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/8FXCIOekzow/maxresdefault.jpg"
+    },
+    {
+      "id": "bZ0hF3Wu2M8",
+      "title": "The Reality of FNCS Division 1",
+      "views": 132000,
+      "viewsText": "132K views",
+      "membersOnly": false,
+      "duration": "16:51",
+      "durationSec": 1011,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/bZ0hF3Wu2M8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/bZ0hF3Wu2M8/maxresdefault.jpg"
+    },
+    {
+      "id": "BHwO7UF96uA",
+      "title": "Accidentally Winning a $2.5 Million Dollar Fortnite Tournament... Again?",
+      "views": 31000,
+      "viewsText": "31K views",
+      "membersOnly": false,
+      "duration": "27:29",
+      "durationSec": 1649,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/BHwO7UF96uA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/BHwO7UF96uA/maxresdefault.jpg"
+    },
+    {
+      "id": "RXwUM_UWvK4",
+      "title": "I Broke Every Rule In a Fortnite Tournament",
+      "views": 51000,
+      "viewsText": "51K views",
+      "membersOnly": false,
+      "duration": "25:06",
+      "durationSec": 1506,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/RXwUM_UWvK4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/RXwUM_UWvK4/maxresdefault.jpg"
+    },
+    {
+      "id": "xvUEHH1taaM",
+      "title": "Can You Win a Fortnite Tournament as Helen Keller?",
+      "views": 9900,
+      "viewsText": "9.9K views",
+      "membersOnly": false,
+      "duration": "23:12",
+      "durationSec": 1392,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/xvUEHH1taaM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/xvUEHH1taaM/maxresdefault.jpg"
+    },
+    {
+      "id": "Y1pdzH1rvPM",
+      "title": "I Trained Fortnite's Worst Player",
+      "views": 11000,
+      "viewsText": "11K views",
+      "membersOnly": false,
+      "duration": "33:13",
+      "durationSec": 1993,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/Y1pdzH1rvPM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Y1pdzH1rvPM/maxresdefault.jpg"
+    },
+    {
+      "id": "yLRnoyA5Hlc",
+      "title": "Accidentally Winning a $2.5 Million Dollar Fortnite Tournament",
+      "views": 718000,
+      "viewsText": "718K views",
+      "membersOnly": false,
+      "duration": "33:54",
+      "durationSec": 2034,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/yLRnoyA5Hlc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/yLRnoyA5Hlc/maxresdefault.jpg"
+    },
+    {
+      "id": "jOHrrD3cQyQ",
+      "title": "I Reunited With My Pro Duo",
+      "views": 15000,
+      "viewsText": "15K views",
+      "membersOnly": false,
+      "duration": "25:53",
+      "durationSec": 1553,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/jOHrrD3cQyQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/jOHrrD3cQyQ/maxresdefault.jpg"
+    },
+    {
+      "id": "NSi2YU1XmaE",
+      "title": "I Mastered Fortnite's Most Broken Edit",
+      "views": 4000,
+      "viewsText": "4K views",
+      "membersOnly": false,
+      "duration": "26:16",
+      "durationSec": 1576,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/NSi2YU1XmaE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/NSi2YU1XmaE/maxresdefault.jpg"
+    },
+    {
+      "id": "GCSTKSSLriU",
+      "title": "1 Year Keyboard and Mouse Progression (Fortnite Competitive)",
+      "views": 32000,
+      "viewsText": "32K views",
+      "membersOnly": false,
+      "duration": "14:01",
+      "durationSec": 841,
+      "published": "9 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/GCSTKSSLriU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/GCSTKSSLriU/maxresdefault.jpg"
+    },
+    {
+      "id": "176pY6iqH1s",
+      "title": "Winning a Fortnite Tournament on TWO Accounts",
+      "views": 14000,
+      "viewsText": "14K views",
+      "membersOnly": false,
+      "duration": "29:19",
+      "durationSec": 1759,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/176pY6iqH1s/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/176pY6iqH1s/maxresdefault.jpg"
+    },
+    {
+      "id": "8ZizyvEhqI8",
+      "title": "Hitting Unreal TWICE in 48 Hours",
+      "views": 6000,
+      "viewsText": "6K views",
+      "membersOnly": false,
+      "duration": "46:39",
+      "durationSec": 2799,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/8ZizyvEhqI8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/8ZizyvEhqI8/maxresdefault.jpg"
+    },
+    {
+      "id": "9VkzsUcB1Pg",
+      "title": "Winning SOLO FNCS in 1 Hour...",
+      "views": 3600,
+      "viewsText": "3.6K views",
+      "membersOnly": false,
+      "duration": "13:12",
+      "durationSec": 792,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/9VkzsUcB1Pg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/9VkzsUcB1Pg/maxresdefault.jpg"
+    },
+    {
+      "id": "iptnZhfbCNI",
+      "title": "Winning a Fortnite Tournament on TWO Inputs",
+      "views": 6900,
+      "viewsText": "6.9K views",
+      "membersOnly": false,
+      "duration": "22:22",
+      "durationSec": 1342,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/iptnZhfbCNI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/iptnZhfbCNI/maxresdefault.jpg"
+    },
+    {
+      "id": "IanBvYdWkyc",
+      "title": "I Mastered Lurking In 3 Days",
+      "views": 40000,
+      "viewsText": "40K views",
+      "membersOnly": false,
+      "duration": "21:42",
+      "durationSec": 1302,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/IanBvYdWkyc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/IanBvYdWkyc/maxresdefault.jpg"
+    },
+    {
+      "id": "iNBhG5auoUw",
+      "title": "MY BEST DUO CASH CUP...",
+      "views": 3500,
+      "viewsText": "3.5K views",
+      "membersOnly": false,
+      "duration": "13:22",
+      "durationSec": 802,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/iNBhG5auoUw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/iNBhG5auoUw/maxresdefault.jpg"
+    },
+    {
+      "id": "Q8kEO2lS6GA",
+      "title": "Can I Survive All 5 Fortnite Divisions?",
+      "views": 39000,
+      "viewsText": "39K views",
+      "membersOnly": false,
+      "duration": "45:13",
+      "durationSec": 2713,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/Q8kEO2lS6GA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Q8kEO2lS6GA/maxresdefault.jpg"
+    },
+    {
+      "id": "qsUXKpO1HdA",
+      "title": "I Snuck a Pro Into a Bronze Tournament",
+      "views": 3400,
+      "viewsText": "3.4K views",
+      "membersOnly": false,
+      "duration": "23:31",
+      "durationSec": 1411,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/qsUXKpO1HdA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/qsUXKpO1HdA/maxresdefault.jpg"
+    },
+    {
+      "id": "ExuFO20Xj3U",
+      "title": "Can a Bronze Player Survive FNCS?",
+      "views": 3000,
+      "viewsText": "3K views",
+      "membersOnly": false,
+      "duration": "13:14",
+      "durationSec": 794,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/ExuFO20Xj3U/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ExuFO20Xj3U/maxresdefault.jpg"
+    },
+    {
+      "id": "nD9yyUe294U",
+      "title": "I Carried a Bronze Player To Division 1",
+      "views": 4200,
+      "viewsText": "4.2K views",
+      "membersOnly": false,
+      "duration": "18:42",
+      "durationSec": 1122,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/nD9yyUe294U/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/nD9yyUe294U/maxresdefault.jpg"
+    },
+    {
+      "id": "ifYswJLn1Ck",
+      "title": "I Went Pro in 7 Days...",
+      "views": 5900,
+      "viewsText": "5.9K views",
+      "membersOnly": false,
+      "duration": "17:49",
+      "durationSec": 1069,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/ifYswJLn1Ck/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ifYswJLn1Ck/maxresdefault.jpg"
+    },
+    {
+      "id": "FjkiYN5KiAY",
+      "title": "Carrying a Bronze Player to a FNCS Win..",
+      "views": 2700,
+      "viewsText": "2.7K views",
+      "membersOnly": false,
+      "duration": "20:28",
+      "durationSec": 1228,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/FjkiYN5KiAY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/FjkiYN5KiAY/maxresdefault.jpg"
+    },
+    {
+      "id": "jhLHJD5_kxE",
+      "title": "Winning Solo FNCS How Epic Games Intended",
+      "views": 9000,
+      "viewsText": "9K views",
+      "membersOnly": false,
+      "duration": "22:12",
+      "durationSec": 1332,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/jhLHJD5_kxE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/jhLHJD5_kxE/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "A 31.2K-subscriber channel whose 'Accidentally Winning a $2.5 Million Dollar Fortnite Tournament' reached about 718,000 views. dalty walty makes 13 to 47 minute Fortnite videos about tournaments and competitive challenges; most thumbnails show a recurring blue-beanie skin over bright gameplay with short lowercase captions and red arrows, but the breakout used one red 3D word on plain white.",
+    "niche": "Fortnite tournaments and competitive challenges",
+    "styleTraits": [
+      {
+        "title": "One skin as the face of the channel",
+        "detail": "Most thumbnails feature the same skin: a blue beanie with a purple triangle, long blue braids and a camo vest. It acts like a face cam, with expressions that change by video: shocked, smug, scared, or with tape over the mouth for 'NO TALKING'."
+      },
+      {
+        "title": "Lowercase captions that sound like chat",
+        "detail": "Recent thumbnails use short, casual phrases in bold white letters with a black outline: 'i'm getting farmed...', 'basically legal aimbot', 'all pros', 'can't even BUILD', 'it worked'. One word is sometimes switched to red or capitals for emphasis."
+      },
+      {
+        "title": "Red arrows that point at 'me'",
+        "detail": "A thick red arrow often points at one detail: 'ME' on a map or a leaderboard, the '0 REBOOTS' counter, the crowd of pros. It tells the viewer where to look in a busy gameplay frame."
+      },
+      {
+        "title": "An older split-screen template",
+        "detail": "About 9 to 12 months ago, many uploads used a split face with a leaderboard banner ('#1 DALTY WALTY'), magenta and teal colours and before/after labels ('HOUR 1' / 'HOUR 48', 'DIV 5' / 'DIV 1'). Most of these landed between 3,500 and 14,000 views."
+      },
+      {
+        "title": "Big 3D words for the big stories",
+        "detail": "A few videos drop gameplay for one huge 3D word: red 'OOPS' on white for the breakout, green 'AGAIN?' on white for its sequel, red 'TRASH' over a grass field. These are the simplest images on the channel."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "yLRnoyA5Hlc",
+        "why": "About 718,000 views: 49.5 times the channel's median of 14,500 and about 23 times its 31.2K subscribers. The usual thumbnail is a colourful gameplay frame with a caption and an arrow; this one is almost empty: a huge red 3D 'OOPS' on plain white, and below it the skin lying flat, asleep ('zzz'), next to a '#1' trophy stuffed with cash. The whole story (he won while not even trying) reads in one second, and the title adds the two things the image leaves out: the $2.5 million prize and the word 'Accidentally'. Our hypotheses are that the white background stood out among saturated Fortnite thumbnails and that the contradiction (asleep, yet first) raised curiosity, even for people who do not play tournaments. The sequel used the same layout ('AGAIN?' in green, two trophies) and got about 31,000 views, 2.1 times the median, so the layout alone did not repeat the result."
+      },
+      {
+        "id": "R_Mq-a9xR-w",
+        "why": "About 230,000 views, 15.9 times the median, reached in about 11 days. There is no skin at all: a top-down map with a big circle packed with dozens of coloured player arrows and a smaller circle with one lone white arrow, labelled 'ME' with a red arrow. The idea (avoid everyone, stay alone) is visible before reading the title, which may explain why 'Smartest Player' felt believable."
+      },
+      {
+        "id": "bZ0hF3Wu2M8",
+        "why": "About 132,000 views, 9.1 times the median. The blue-beanie skin fills the left side while the sky is full of dozens of other players on gliders and launch pads, with 'all pros' in white and a red arrow pointing up. 'The Reality of...' titles worked twice on the channel (this one and 'The Reality of a Falloff', 3.8 times), probably because they promise an honest look at something viewers cannot reach themselves."
+      }
+    ],
+    "lessons": [
+      "Draw the story, not the gameplay. 'OOPS', a sleeping skin and a trophy say 'won by accident' in one look, with no screenshot needed.",
+      "Let the title carry the number and the thumbnail carry the feeling. '$2.5 Million' is only in the title; the image only shows the surprise.",
+      "Show 'me against the crowd' as a picture: one white arrow away from dozens on a map, or one skin in a sky full of pros. Both reached 9 to 16 times the median.",
+      "Do not expect a sequel in the same layout to repeat a breakout. 'AGAIN?' copied 'OOPS' and got about 31,000 views against 718,000.",
+      "Keep making the topic that broke. Before the breakout, the channel's uploads had a median of about 6,000 views (16 videos); the 13 uploads since have a median of about 41,000, almost all still about tournaments and competitive challenges."
+    ],
+    "experiment": "For your next video, make two thumbnails: your usual gameplay frame, and a version on a plain white background with one cut-out character acting out the title and one 3D word of four or five letters. Run both in YouTube's Test & Compare.",
+    "faq": [
+      {
+        "q": "How many subscribers does dalty walty have?",
+        "a": "As of 23 October 2026, dalty walty (@daltywaltyy) has about 31.2K subscribers and 193 videos. Across the latest 30 long videos, the median is about 14,500 views. The biggest one, 'Accidentally Winning a $2.5 Million Dollar Fortnite Tournament', has about 718,000 views, roughly 23 times the subscriber count."
+      },
+      {
+        "q": "How did dalty walty get so many views on the $2.5 million tournament video?",
+        "a": "The packaging tells a simple, surprising story: a huge red 'OOPS' on white, the skin asleep next to a '#1' trophy full of cash, and a title with a $2.5 million prize and the word 'Accidentally'. It looks nothing like the channel's usual colourful gameplay thumbnails. These are likely reasons, not proven ones; a sequel with the same layout got about 31,000 views."
+      },
+      {
+        "q": "What does dalty walty make videos about?",
+        "a": "Fortnite competitive play: tournaments such as cash cups, FNCS and Victory Cups, plus challenges built around them, like winning on two accounts, winning without talking, coaching weak players or going undercover in a low-level tournament. Videos usually run 13 to 47 minutes, and some are opinion pieces on how tournaments are run."
+      },
+      {
+        "q": "What do dalty walty's thumbnails look like?",
+        "a": "Usually a bright gameplay frame with the same blue-beanie skin, a short lowercase caption in white with a black outline ('all pros', 'i'm getting farmed...') and a red arrow pointing at the key detail. Older ones used split faces with a '#1 DALTY WALTY' leaderboard banner. The biggest video is the exception: one red 3D word on plain white."
+      }
+    ],
+    "reviewedAt": "2026-10-23"
+  }
+}

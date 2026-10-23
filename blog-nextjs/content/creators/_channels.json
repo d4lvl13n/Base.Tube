@@ -98,5 +98,33 @@
     "channel_id": "UCmhLWUxwTyFJqHt4h0lSUsQ",
     "name": "PlayerEssence",
     "game": "zelda-ocarina-of-time"
+  },
+  {
+    "channel_id": "UCdx8_SWn5I-AzFyiwuNdKhA",
+    "name": "ChunkNine",
+    "game": "minecraft",
+    "spotlight": "moonshot",
+    "moonshotVideoId": "pAo2F8-_gC8"
+  },
+  {
+    "channel_id": "UCYPAfSAa68ZQWmJOufBkotQ",
+    "name": "Garter",
+    "game": "zelda-ocarina-of-time",
+    "spotlight": "moonshot",
+    "moonshotVideoId": "FI3KkTgdXec"
+  },
+  {
+    "channel_id": "UC3zNfndZU3V7eHQseWT33eA",
+    "name": "TRENCHCOAT",
+    "game": "gta-6",
+    "spotlight": "moonshot",
+    "moonshotVideoId": "NhBKlUwwQnA"
+  },
+  {
+    "channel_id": "UC8-y8ZmRWtKpnMyQr8ISytA",
+    "name": "dalty walty",
+    "game": "fortnite",
+    "spotlight": "moonshot",
+    "moonshotVideoId": "yLRnoyA5Hlc"
   }
 ]

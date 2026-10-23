@@ -1,0 +1,449 @@
+{
+  "slug": "trenchcoat",
+  "status": "draft",
+  "channelId": "UC3zNfndZU3V7eHQseWT33eA",
+  "name": "TRENCHCOAT",
+  "handle": "trenchcoatyt",
+  "url": "https://www.youtube.com/channel/UC3zNfndZU3V7eHQseWT33eA",
+  "avatar": "https://yt3.googleusercontent.com/nbU2ZnS8gHX8f6mgtpCIUVYmwVxg6P5Pj0Llczyxg4tZef9KEiVTi5uEbbsEst1WTr4x4S6p=s900-c-k-c0x00ffffff-no-rj",
+  "game": "gta-6",
+  "spotlight": "moonshot",
+  "moonshotVideoId": "NhBKlUwwQnA",
+  "subscribers": 14900,
+  "subscribersText": "14.9K subscribers",
+  "videoCount": 28,
+  "description": "Investigating Games",
+  "collectedAt": "2026-10-23",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 28,
+    "medianViews": 69500,
+    "outliers": [
+      {
+        "id": "NhBKlUwwQnA",
+        "multiple": 9.4
+      },
+      {
+        "id": "byp8__qc5iY",
+        "multiple": 9
+      },
+      {
+        "id": "BLnFQ98Ek-w",
+        "multiple": 4.1
+      },
+      {
+        "id": "uaItJfNjLF8",
+        "multiple": 2.8
+      },
+      {
+        "id": "8TQ3Acv0f6c",
+        "multiple": 2.7
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "uaItJfNjLF8",
+      "title": "Saying Goodbye to GTA V… 13 Years Later",
+      "views": 198000,
+      "viewsText": "198K views",
+      "membersOnly": false,
+      "duration": "23:06",
+      "durationSec": 1386,
+      "published": "9 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/uaItJfNjLF8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/uaItJfNjLF8/maxresdefault.jpg"
+    },
+    {
+      "id": "roOY5DgzsyM",
+      "title": "The Blood of Dawnwalker's Timer Is a Lie",
+      "views": 125000,
+      "viewsText": "125K views",
+      "membersOnly": false,
+      "duration": "12:50",
+      "durationSec": 770,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/roOY5DgzsyM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/roOY5DgzsyM/maxresdefault.jpg"
+    },
+    {
+      "id": "RP2aCDG1EL8",
+      "title": "I Finally Understand Control… 7 Years Later",
+      "views": 173000,
+      "viewsText": "173K views",
+      "membersOnly": false,
+      "duration": "20:17",
+      "durationSec": 1217,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/RP2aCDG1EL8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/RP2aCDG1EL8/maxresdefault.jpg"
+    },
+    {
+      "id": "fHCSOgiS2Bc",
+      "title": "Why No One Has Made Another L.A. Noire",
+      "views": 19000,
+      "viewsText": "19K views",
+      "membersOnly": false,
+      "duration": "11:21",
+      "durationSec": 681,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/fHCSOgiS2Bc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/fHCSOgiS2Bc/maxresdefault.jpg"
+    },
+    {
+      "id": "U5XhFCH8xU0",
+      "title": "I Can't Stop Thinking About 007 First Light",
+      "views": 51000,
+      "viewsText": "51K views",
+      "membersOnly": false,
+      "duration": "49:18",
+      "durationSec": 2958,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/U5XhFCH8xU0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/U5XhFCH8xU0/maxresdefault.jpg"
+    },
+    {
+      "id": "8TQ3Acv0f6c",
+      "title": "I’m Still Obsessed With Uncharted 4… 10 Years Later",
+      "views": 185000,
+      "viewsText": "185K views",
+      "membersOnly": false,
+      "duration": "21:21",
+      "durationSec": 1281,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/8TQ3Acv0f6c/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/8TQ3Acv0f6c/maxresdefault.jpg"
+    },
+    {
+      "id": "k0KnGLCr5Qc",
+      "title": "How Starfield Fixed Its Biggest Problem (Kinda)",
+      "views": 12000,
+      "viewsText": "12K views",
+      "membersOnly": false,
+      "duration": "9:49",
+      "durationSec": 589,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/k0KnGLCr5Qc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/k0KnGLCr5Qc/maxresdefault.jpg"
+    },
+    {
+      "id": "byp8__qc5iY",
+      "title": "Crimson Desert Sucks... Until It Doesn't",
+      "views": 626000,
+      "viewsText": "626K views",
+      "membersOnly": false,
+      "duration": "13:25",
+      "durationSec": 805,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/byp8__qc5iY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/byp8__qc5iY/maxresdefault.jpg"
+    },
+    {
+      "id": "SAa30ORmBdE",
+      "title": "Resident Evil Requiem Is… A Lot",
+      "views": 42000,
+      "viewsText": "42K views",
+      "membersOnly": false,
+      "duration": "31:16",
+      "durationSec": 1876,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/SAa30ORmBdE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/SAa30ORmBdE/maxresdefault.jpg"
+    },
+    {
+      "id": "BLnFQ98Ek-w",
+      "title": "How Resident Evil 2 Ruined Resident Evil 3 For Me",
+      "views": 284000,
+      "viewsText": "284K views",
+      "membersOnly": false,
+      "duration": "19:16",
+      "durationSec": 1156,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/BLnFQ98Ek-w/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/BLnFQ98Ek-w/maxresdefault.jpg"
+    },
+    {
+      "id": "MDCQMNXEP2Y",
+      "title": "I Finally Played The Most Popular Resident Evil… 3 Years Later",
+      "views": 29000,
+      "viewsText": "29K views",
+      "membersOnly": false,
+      "duration": "18:02",
+      "durationSec": 1082,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/MDCQMNXEP2Y/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/MDCQMNXEP2Y/maxresdefault.jpg"
+    },
+    {
+      "id": "VlYSWJ4Yg_c",
+      "title": "I Finally Played The Scariest Resident Evil… 9 Years Later",
+      "views": 88000,
+      "viewsText": "88K views",
+      "membersOnly": false,
+      "duration": "18:21",
+      "durationSec": 1101,
+      "published": "9 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/VlYSWJ4Yg_c/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/VlYSWJ4Yg_c/maxresdefault.jpg"
+    },
+    {
+      "id": "mYj4hgLKhgs",
+      "title": "Indiana Jones and the Greatest Adventure Game Ever Made",
+      "views": 30000,
+      "viewsText": "30K views",
+      "membersOnly": false,
+      "duration": "25:16",
+      "durationSec": 1516,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/mYj4hgLKhgs/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/mYj4hgLKhgs/maxresdefault.jpg"
+    },
+    {
+      "id": "rydgiG2KIF4",
+      "title": "How Arc Raiders Made Online Multiplayer Human Again",
+      "views": 31000,
+      "viewsText": "31K views",
+      "membersOnly": false,
+      "duration": "15:24",
+      "durationSec": 924,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/rydgiG2KIF4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/rydgiG2KIF4/maxresdefault.jpg"
+    },
+    {
+      "id": "5vqiu6ePrEc",
+      "title": "Ghost of Yōtei Isn't About Revenge",
+      "views": 18000,
+      "viewsText": "18K views",
+      "membersOnly": false,
+      "duration": "17:16",
+      "durationSec": 1036,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/5vqiu6ePrEc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/5vqiu6ePrEc/maxresdefault.jpg"
+    },
+    {
+      "id": "TwjiW2Eypis",
+      "title": "I Can't Stop Thinking About Silent Hill 2",
+      "views": 127000,
+      "viewsText": "127K views",
+      "membersOnly": false,
+      "duration": "19:11",
+      "durationSec": 1151,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/TwjiW2Eypis/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/TwjiW2Eypis/maxresdefault.jpg"
+    },
+    {
+      "id": "nFNpls_IMlA",
+      "title": "I Hate That I Don't Love Mafia: The Old Country",
+      "views": 7400,
+      "viewsText": "7.4K views",
+      "membersOnly": false,
+      "duration": "14:22",
+      "durationSec": 862,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/nFNpls_IMlA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/nFNpls_IMlA/maxresdefault.jpg"
+    },
+    {
+      "id": "wcleSqctsE8",
+      "title": "I Genuinely Like Mafia III, I'm Sorry - A 9 Year Retrospective",
+      "views": 184000,
+      "viewsText": "184K views",
+      "membersOnly": false,
+      "duration": "21:04",
+      "durationSec": 1264,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/wcleSqctsE8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/wcleSqctsE8/maxresdefault.jpg"
+    },
+    {
+      "id": "h9fAa41QRC0",
+      "title": "Mafia II Was Almost Perfect - A 15 Year Retrospective",
+      "views": 38000,
+      "viewsText": "38K views",
+      "membersOnly": false,
+      "duration": "18:16",
+      "durationSec": 1096,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/h9fAa41QRC0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/h9fAa41QRC0/maxresdefault.jpg"
+    },
+    {
+      "id": "UjIoFsjh1rM",
+      "title": "Mafia: Definitive Edition Proved Everyone Wrong - A 5 Year Retrospective",
+      "views": 29000,
+      "viewsText": "29K views",
+      "membersOnly": false,
+      "duration": "20:19",
+      "durationSec": 1219,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/UjIoFsjh1rM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/UjIoFsjh1rM/maxresdefault.jpg"
+    },
+    {
+      "id": "aMi9QrTdgpc",
+      "title": "Why IO Interactive's Bond Game Will Change Everything",
+      "views": 191000,
+      "viewsText": "191K views",
+      "membersOnly": false,
+      "duration": "8:11",
+      "durationSec": 491,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/aMi9QrTdgpc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/aMi9QrTdgpc/maxresdefault.jpg"
+    },
+    {
+      "id": "cIiywf7p6ho",
+      "title": "They Don’t Make Them Like Assassin’s Creed II Anymore",
+      "views": 4200,
+      "viewsText": "4.2K views",
+      "membersOnly": false,
+      "duration": "28:11",
+      "durationSec": 1691,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/cIiywf7p6ho/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/cIiywf7p6ho/maxresdefault.jpg"
+    },
+    {
+      "id": "NQYW_SUnTwk",
+      "title": "Alan Wake 2 - One Year Later",
+      "views": 27000,
+      "viewsText": "27K views",
+      "membersOnly": false,
+      "duration": "16:32",
+      "durationSec": 992,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/NQYW_SUnTwk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/NQYW_SUnTwk/maxresdefault.jpg"
+    },
+    {
+      "id": "kO0AvfpTkRA",
+      "title": "Spider-Man 2 - One Year Later",
+      "views": 117000,
+      "viewsText": "117K views",
+      "membersOnly": false,
+      "duration": "19:36",
+      "durationSec": 1176,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/kO0AvfpTkRA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/kO0AvfpTkRA/maxresdefault.jpg"
+    },
+    {
+      "id": "ifnkXRwNr6s",
+      "title": "Cyberpunk 2077: Phantom Liberty - One Year Later",
+      "views": 49000,
+      "viewsText": "49K views",
+      "membersOnly": false,
+      "duration": "18:31",
+      "durationSec": 1111,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/ifnkXRwNr6s/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ifnkXRwNr6s/maxresdefault.jpg"
+    },
+    {
+      "id": "TFepgoAjWFg",
+      "title": "Why Ghost of Yōtei is PlayStation's Answer to Assassin’s Creed",
+      "views": 95000,
+      "viewsText": "95K views",
+      "membersOnly": false,
+      "duration": "8:33",
+      "durationSec": 513,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/TFepgoAjWFg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/TFepgoAjWFg/maxresdefault.jpg"
+    },
+    {
+      "id": "_Pc8pOUbgSk",
+      "title": "God of War Ragnarök - Two Years Later",
+      "views": 188000,
+      "viewsText": "188K views",
+      "membersOnly": false,
+      "duration": "17:46",
+      "durationSec": 1066,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/_Pc8pOUbgSk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/_Pc8pOUbgSk/maxresdefault.jpg"
+    },
+    {
+      "id": "NhBKlUwwQnA",
+      "title": "How Death March Changed My Opinion on The Witcher 3",
+      "views": 654000,
+      "viewsText": "654K views",
+      "membersOnly": false,
+      "duration": "8:11",
+      "durationSec": 491,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/NhBKlUwwQnA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/NhBKlUwwQnA/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "A 14.9K-subscriber channel whose 'How Death March Changed My Opinion on The Witcher 3' reached about 654,000 views, and that video is about The Witcher 3, not GTA. TRENCHCOAT makes 8 to 49 minute essays and retrospectives on story-driven games, and every thumbnail uses one recipe: a single giant white word over a cinematic game scene, with the character standing in front of the letters.",
+    "niche": "Video essays and retrospectives on story-driven games",
+    "styleTraits": [
+      {
+        "title": "One giant word, every time",
+        "detail": "All 28 thumbnails in the sample carry one word in heavy, condensed white capitals, usually across the middle and almost edge to edge. The word is a feeling or a verdict, not a game name: 'LEGACY', 'TRIPPY', 'OBSESSION', 'HORRIFYING', 'UNHINGED', 'TIMELESS', 'MASTERPIECE'."
+      },
+      {
+        "title": "The character stands in front of the word",
+        "detail": "The hero is cut out and placed over the letters, which gives depth. Where a body crosses a letter, the letter often turns into a thin white outline, as in 'ILLUSION', 'PEAK', 'PERFECTION' and 'UNHINGED', so the word stays readable without hiding the character."
+      },
+      {
+        "title": "Cinematic art, nothing else",
+        "detail": "No face cam, no arrows, no circles, no logos, no second line of text. The background is a clean, high-quality game scene with film-like light: a sunset over Los Santos for GTA V, a rainy night street for Resident Evil 2, a misty lake for Silent Hill 2. Many heroes are seen from behind, walking into the scene."
+      },
+      {
+        "title": "The word gives the mood, the title names the game",
+        "detail": "The thumbnail almost never says which game it is; the title does ('I Finally Understand Control… 7 Years Later' with 'TRIPPY'). The older uploads, about 1 to 2 years ago, used time labels instead ('ONE YEAR LATER', 'TWO YEARS LATER', '5 YEARS LATER'), which repeated the title. The newer ones switched to emotion words."
+      },
+      {
+        "title": "Titles built on time and changed opinions",
+        "detail": "Many titles count years ('13 Years Later', '10 Years Later', 'A 9 Year Retrospective') or admit a change of mind ('Sucks... Until It Doesn't', 'I'm Sorry', 'Ruined Resident Evil 3 For Me'). The thumbnails stay calm and beautiful, so the tension sits in the title."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "NhBKlUwwQnA",
+        "why": "About 654,000 views: 9.4 times the channel's median of 69,500 and about 44 times its 14.9K subscribers. The thumbnail uses the usual recipe, so the packaging difference is mostly the subject: 'IMMERSIVE' over Geralt seen from behind, walking into a bright golden field under a huge cloudy sky, a lighter and wider image than the dark character portraits of many other uploads. The title adds what the house style usually carries: a personal turn ('changed my opinion') tied to Death March, the game's hardest difficulty, about one of the most-watched story games there is. It is not a GTA video, even though the channel is filed under GTA 6 here. It is also the oldest upload in the sample (about 2 years old), so it has had the most time to collect views; and the same word 'IMMERSIVE' on the Arc Raiders video got about 31,000 views, which suggests the word alone was not the cause. The role of the famous game, the opinion-change title and the bright scene are hypotheses, not proven causes, and today's thumbnail may not be the one it launched with."
+      },
+      {
+        "id": "byp8__qc5iY",
+        "why": "About 626,000 views, 9 times the median. 'ADDICTIVE' sits over a tiny rider on a cliff above a wide green lake valley. The title says the game 'Sucks... Until It Doesn't'; the thumbnail only shows the 'until it doesn't' part, so title and image disagree on purpose, which may have made people curious. It came out about six months ago, probably close to the game's launch, when interest in Crimson Desert was high."
+      },
+      {
+        "id": "BLnFQ98Ek-w",
+        "why": "About 284,000 views, 4.1 times the median, and the best of four Resident Evil uploads in a row (the others got 29,000 to 88,000). Leon and Claire aim their guns on a rainy blue street behind 'PERFECTION', with the letters turning into outlines where they cross the characters. The word praises one game while the title complains about another ('Ruined Resident Evil 3 For Me'); that comparison is probably a stronger hook than a single-game review."
+      }
+    ],
+    "lessons": [
+      "Put a change of mind in the title. Of the five titles in the sample that admit one ('Changed My Opinion', 'Sucks... Until It Doesn't', 'Ruined... For Me', 'I'm Sorry', 'I Hate That I Don't Love'), four reached 2.6 to 9.4 times the median.",
+      "Pick one thumbnail recipe you can make in 20 minutes and keep it: one big word, one cut-out character placed in front of the letters. Twenty-eight uploads in a row look like one series.",
+      "Let the thumbnail word be a feeling ('ADDICTIVE', 'HAUNTING') and let the title name the game. You get two different reasons to click instead of the same one twice.",
+      "Cover big, well-loved games, including older ones. The Witcher 3, Uncharted 4, God of War Ragnarök and GTA V videos all reached 185,000 views or more on a channel under 15K subscribers.",
+      "Judge a video after months, not days. The breakout is the oldest upload in the sample; older videos keep collecting views long after release."
+    ],
+    "experiment": "Pick a famous game you changed your mind about and title it around that change ('How X Changed My Opinion on Y'). Make the thumbnail with one feeling word and a character walking away from the camera into a bright, wide scene, then test a second word in YouTube's Test & Compare.",
+    "faq": [
+      {
+        "q": "How many subscribers does TRENCHCOAT have?",
+        "a": "As of 23 October 2026, TRENCHCOAT (@trenchcoatyt) has about 14.9K subscribers and 28 videos. The median of those 28 videos is about 69,500 views, almost five times the subscriber count, and the biggest one, 'How Death March Changed My Opinion on The Witcher 3', has about 654,000 views."
+      },
+      {
+        "q": "How did TRENCHCOAT get so many views on the Witcher 3 Death March video?",
+        "a": "It is a short, 8-minute video about a famous game with a personal turn in the title: playing on Death March, the hardest difficulty, changed his opinion. The thumbnail is calm and bright: 'IMMERSIVE' over Geralt walking into a golden field. It is also the oldest upload on the channel, about 2 years old, so it has had time to keep collecting views. These are likely reasons, not proven ones."
+      },
+      {
+        "q": "What game does TRENCHCOAT play?",
+        "a": "Many, not one. The latest 28 uploads cover story-driven games such as The Witcher 3, Resident Evil, Mafia, Uncharted, Crimson Desert, Control and God of War. GTA appears once ('Saying Goodbye to GTA V… 13 Years Later', about 198,000 views). The breakout video is about The Witcher 3, not GTA."
+      },
+      {
+        "q": "What do TRENCHCOAT's thumbnails look like?",
+        "a": "Always the same recipe: one giant word in white condensed capitals, such as 'LEGACY', 'HAUNTING' or 'PERFECTION', across a cinematic game scene. The main character is cut out and placed in front of the letters, which sometimes turn into thin outlines where they overlap. There is no face cam, no arrows and no second line of text."
+      }
+    ],
+    "reviewedAt": "2026-10-23"
+  }
+}
