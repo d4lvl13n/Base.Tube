@@ -5,7 +5,7 @@
       "slug": "call-of-duty",
       "name": "Call of Duty",
       "category": "game",
-      "live": false,
+      "live": true,
       "examples": 6,
       "cover": {
         "src": "/thumbnails/call-of-duty/01-mw4-launch-day.webp",
@@ -16,7 +16,7 @@
       "slug": "chess",
       "name": "Chess",
       "category": "genre",
-      "live": false,
+      "live": true,
       "examples": 20,
       "cover": {
         "src": "/thumbnails/chess/01-brilliant-move.webp",
@@ -27,7 +27,7 @@
       "slug": "clickbait",
       "name": "Clickbait",
       "category": "style",
-      "live": false,
+      "live": true,
       "examples": 19,
       "cover": {
         "src": "/thumbnails/clickbait/02-proof.webp",
@@ -38,7 +38,7 @@
       "slug": "fortnite",
       "name": "Fortnite",
       "category": "game",
-      "live": false,
+      "live": true,
       "examples": 6,
       "cover": {
         "src": "/thumbnails/fortnite/01-victory.webp",
@@ -49,7 +49,7 @@
       "slug": "funny",
       "name": "Funny",
       "category": "style",
-      "live": false,
+      "live": true,
       "examples": 20,
       "cover": {
         "src": "/thumbnails/funny/01-deadpan.webp",
@@ -60,7 +60,7 @@
       "slug": "gorilla-tag",
       "name": "Gorilla Tag",
       "category": "game",
-      "live": false,
+      "live": true,
       "examples": 6,
       "cover": {
         "src": "/thumbnails/gorilla-tag/01-horror-map.webp",
@@ -71,7 +71,7 @@
       "slug": "gta-6",
       "name": "GTA 6",
       "category": "game",
-      "live": false,
+      "live": true,
       "examples": 6,
       "cover": {
         "src": "/thumbnails/gta-6/01-launch-reaction.webp",
@@ -82,7 +82,7 @@
       "slug": "meme",
       "name": "Meme",
       "category": "style",
-      "live": false,
+      "live": true,
       "examples": 20,
       "cover": {
         "src": "/thumbnails/meme/01-red-circle.webp",
@@ -93,7 +93,7 @@
       "slug": "minecraft",
       "name": "Minecraft",
       "category": "game",
-      "live": false,
+      "live": true,
       "examples": 6,
       "cover": {
         "src": "/thumbnails/minecraft/03-100-days.webp",
@@ -104,7 +104,7 @@
       "slug": "mrbeast",
       "name": "MrBeast-style",
       "category": "style",
-      "live": false,
+      "live": true,
       "examples": 20,
       "cover": {
         "src": "/thumbnails/mrbeast/01-challenge.webp",
@@ -115,7 +115,7 @@
       "slug": "nba",
       "name": "NBA",
       "category": "genre",
-      "live": false,
+      "live": true,
       "examples": 20,
       "cover": {
         "src": "/thumbnails/nba/01-highlight.webp",
@@ -137,7 +137,7 @@
       "slug": "roblox",
       "name": "Roblox",
       "category": "game",
-      "live": false,
+      "live": true,
       "examples": 6,
       "cover": {
         "src": "/thumbnails/roblox/02-tycoon.webp",
@@ -148,7 +148,7 @@
       "slug": "zelda-ocarina-of-time",
       "name": "Zelda: Ocarina of Time",
       "category": "game",
-      "live": false,
+      "live": true,
       "examples": 6,
       "cover": {
         "src": "/thumbnails/zelda-ocarina-of-time/01-tier-list.webp",

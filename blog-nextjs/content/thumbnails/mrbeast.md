@@ -5,10 +5,11 @@
 # creator's face or any real person.
 
 slug: mrbeast
-status: draft
+status: published
 category: style
 name: MrBeast-style
-updated: 2026-10-22
+updated: 2026-10-23
+published: 2026-10-23
 
 title: "MrBeast Thumbnail Style: {count} Examples and How to Make One"
 description: "{count} original MrBeast-style thumbnail examples: huge stakes, bright daylight colours and one shocked face, with 5 layouts you can reuse."

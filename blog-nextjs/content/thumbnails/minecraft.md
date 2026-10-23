@@ -5,10 +5,11 @@
 # docs/research/game-thumbnail-refs/style-directions.md (validated 2026-10-22).
 
 slug: minecraft
-status: draft
+status: published
 category: game
 name: Minecraft
-updated: 2026-10-22
+updated: 2026-10-23
+published: 2026-10-23
 
 title: "Minecraft Thumbnail Ideas: {count} Examples and 5 Layouts"
 description: "{count} Minecraft thumbnail examples for 100 days, versus, boss fights, updates and real-life videos, with the backgrounds and colours behind them."

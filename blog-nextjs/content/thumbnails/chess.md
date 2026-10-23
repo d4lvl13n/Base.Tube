@@ -5,10 +5,11 @@
 # Synthetic people only: never imitate a real chess streamer's face.
 
 slug: chess
-status: draft
+status: published
 category: genre
 name: "Chess"
-updated: 2026-10-22
+updated: 2026-10-23
+published: 2026-10-23
 
 title: "Chess Thumbnail Ideas: {count} Examples, Layouts and Memes"
 description: "{count} original chess thumbnail examples: brilliant moves, blunders, rating battles, opening traps and memes, with the board, arrow and text rules."

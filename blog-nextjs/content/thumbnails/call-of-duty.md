@@ -9,10 +9,11 @@
 #   https://www.callofduty.com/blog/2026/05/modernwarfare4-fob (hub, last updated 2026-10-05)
 
 slug: call-of-duty
-status: draft
+status: published
 category: game
 name: "Call of Duty"
-updated: 2026-10-22
+updated: 2026-10-23
+published: 2026-10-23
 
 title: "Call of Duty Thumbnail Ideas: {count} Warzone and MW4 Examples"
 description: "{count} Call of Duty thumbnail examples for Warzone, Black Ops 7 and Modern Warfare 4: launch day, real gameplay, nukes and DMZ runs."

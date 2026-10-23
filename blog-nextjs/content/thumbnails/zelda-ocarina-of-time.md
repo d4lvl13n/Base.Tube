@@ -11,10 +11,11 @@
 # Australian game page) and nintendo.com/ph news; sources listed in the guide.
 
 slug: zelda-ocarina-of-time
-status: draft
+status: published
 category: game
 name: "Zelda: Ocarina of Time"
-updated: 2026-10-22
+updated: 2026-10-23
+published: 2026-10-23
 
 title: "Ocarina of Time Thumbnail Ideas: {count} Remake Examples"
 description: "{count} Ocarina of Time thumbnail ideas for the Switch 2 remake: tier lists, what's new, N64 vs Switch 2, first reactions and secrets, with the rules."

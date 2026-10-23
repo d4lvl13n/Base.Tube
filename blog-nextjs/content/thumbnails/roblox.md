@@ -4,10 +4,11 @@
 # below are written to be sent as-is to the image generator.
 
 slug: roblox
-status: draft
+status: published
 category: game
 name: Roblox
-updated: 2026-10-22
+updated: 2026-10-23
+published: 2026-10-23
 
 title: "Roblox Thumbnail Ideas: {count} Examples and Size Guide"
 description: "{count} Roblox YouTube thumbnail examples in 5 layouts, plus the right size for YouTube and for Roblox game thumbnails and icons."

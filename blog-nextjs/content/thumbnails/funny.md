@@ -5,10 +5,11 @@
 # thumbnails in general and only touches meme captions in passing.
 
 slug: funny
-status: draft
+status: published
 category: style
 name: Funny
-updated: 2026-10-22
+updated: 2026-10-23
+published: 2026-10-23
 
 title: "Funny YouTube Thumbnail Ideas: {count} Examples, 5 Layouts"
 description: "{count} original funny YouTube thumbnail examples: deadpan faces, absurd sizes, side-eyes and pets in charge, with the rules that make a joke read."

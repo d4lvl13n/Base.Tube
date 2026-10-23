@@ -5,10 +5,11 @@
 # on 2026-10-22: docs/research/game-thumbnail-refs/style-directions.md.
 
 slug: gorilla-tag
-status: draft
+status: published
 category: game
 name: Gorilla Tag
-updated: 2026-10-22
+updated: 2026-10-23
+published: 2026-10-23
 
 title: "Gorilla Tag Thumbnail Ideas: {count} Examples and 5 Layouts"
 description: "{count} Gorilla Tag thumbnail examples for horror maps, memes, crossovers, hunts and real-world videos, and how to make your own from VR gameplay."

@@ -10,10 +10,11 @@
 # a real meme image or a real person, in the text or in a prompt.
 
 slug: meme
-status: draft
+status: published
 category: style
 name: Meme
-updated: 2026-10-22
+updated: 2026-10-23
+published: 2026-10-23
 
 title: "YouTube Thumbnail Memes: {count} Examples, 5 Formats"
 description: "{count} original meme-style YouTube thumbnails: red circle, absurd zoom, deep-fried, gone wrong and mystery caption, and how to use the look on purpose."

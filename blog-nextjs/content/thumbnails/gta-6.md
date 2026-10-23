@@ -6,10 +6,11 @@
 # (date, platforms, setting). Re-check them before publishing and after launch.
 
 slug: gta-6
-status: draft
+status: published
 category: game
 name: "GTA 6"
-updated: 2026-10-22
+updated: 2026-10-23
+published: 2026-10-23
 
 title: "GTA 6 Thumbnail Ideas: {count} Examples for Launch and RP"
 description: "{count} original GTA 6 thumbnail examples for launch videos, map tours, heists, chaos and RP, with layouts that also work for GTA 5 and GTA Online."

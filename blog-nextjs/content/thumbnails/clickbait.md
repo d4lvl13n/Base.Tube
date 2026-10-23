@@ -8,10 +8,11 @@
 #   A/B test titles & thumbnails  https://support.google.com/youtube/answer/13861714
 
 slug: clickbait
-status: draft
+status: published
 category: style
 name: Clickbait
-updated: 2026-10-22
+updated: 2026-10-23
+published: 2026-10-23
 
 title: "Clickbait Thumbnail Ideas That Don't Lie: {count} Examples"
 description: "{count} clickbait thumbnail examples that exaggerate but still deliver: red circles, shocked faces and before/after, without breaking YouTube's rules."

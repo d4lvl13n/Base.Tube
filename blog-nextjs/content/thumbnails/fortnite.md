@@ -6,10 +6,11 @@
 # Remains draft: review the page and related links before publishing.
 
 slug: fortnite
-status: draft
+status: published
 category: game
 name: Fortnite
-updated: 2026-10-22
+updated: 2026-10-23
+published: 2026-10-23
 
 title: "Fortnite Thumbnail Ideas: {count} Examples and 5 Layouts"
 description: "{count} Fortnite thumbnail examples, the colours, text and layouts behind them, and how to make your own montage, win or fail thumbnail."

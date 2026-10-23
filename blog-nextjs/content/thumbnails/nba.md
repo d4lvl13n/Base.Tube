@@ -6,10 +6,11 @@
 # logos, real team jerseys or league marks, in images or prompts.
 
 slug: nba
-status: draft
+status: published
 category: genre
 name: "NBA"
-updated: 2026-10-22
+updated: 2026-10-23
+published: 2026-10-23
 
 title: "NBA Thumbnail Ideas: {count} Basketball Examples and Memes"
 description: "{count} original NBA thumbnail examples for highlights, breakdowns, reactions, memes and basketball video game builds, with the rules behind them."
