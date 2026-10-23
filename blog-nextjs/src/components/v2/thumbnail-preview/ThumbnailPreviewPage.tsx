@@ -204,8 +204,7 @@ export default function ThumbnailPreviewPage() {
                 ))}
               </ul>
               <p className={s.fine}>
-                Base.Tube is not affiliated with YouTube. YouTube is a trademark of Google LLC. The
-                layouts above are generic recreations and can differ from what you see on YouTube.
+                The layouts above are generic recreations and can differ from what you see on YouTube.
               </p>
             </ScrollReveal>
           </div>

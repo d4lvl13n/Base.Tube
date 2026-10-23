@@ -157,9 +157,11 @@ faq:
   - q: What font do Example thumbnails use?
     a: >
       ... [verify] any font name before publishing.
+# No disclaimers anywhere on the page: no "not affiliated", "not legal advice",
+# "X is a trademark of Y" or "images belong to their owners" sentences.
   - q: Can I use Example logos or screenshots in my thumbnail?
     a: >
-      ... This page is not legal advice.
+      ...
   - q: Is there a free Example thumbnail maker?
     a: >
       ...
@@ -179,9 +181,9 @@ cta:
   # Optional button text (default: "Generate a <name>-style thumbnail").
   # label: "Generate a Roblox-style thumbnail"
 
-# ── Trademark (game and creator pages) ────────────────────────────────────
-# Shows the "not affiliated" line at the bottom of the page. Remove for generic
-# topics (podcast, vlog...). Owner is optional; check it before publishing.
+# ── Trademark (optional, not shown on the page) ──────────────────────────
+# Kept only as a note of who owns the name. Never add disclaimers, "not
+# affiliated" lines, "not legal advice" or ownership statements to the page.
 trademark:
   name: Example
   owner: "Example Studio, Inc."

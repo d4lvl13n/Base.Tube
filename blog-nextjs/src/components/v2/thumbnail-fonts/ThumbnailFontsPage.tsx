@@ -434,7 +434,7 @@ export default function ThumbnailFontsPage() {
                 </p>
                 <p>
                   The fonts on this page are served from base.tube, not from Google, and the preview runs in your
-                  browser. Base.Tube is not affiliated with YouTube or Google. Licences can change, so check the
+                  browser. Licences can change, so check the
                   font&apos;s page before a big project.
                 </p>
               </div>

@@ -242,7 +242,7 @@ faq:
       Mojang's [Minecraft Usage Guidelines](https://www.minecraft.net/en-us/usage-guidelines)
       allow videos and screenshots of you playing, including monetised videos
       that add your own content. They count logos as part of the Minecraft
-      brand, so read them before using the logo. This page is not legal advice.
+      brand, so read them before using the logo.
 
 related:
   - roblox

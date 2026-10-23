@@ -193,11 +193,10 @@ faq:
   - q: Can I use Call of Duty screenshots or logos in my thumbnail?
     a: >
       The examples on this page are generated with Base.Tube and use the
-      game's look, operators and HUD. Call of Duty, Warzone and Modern Warfare
-      are trademarks of Activision Publishing, Inc. Before you use official
+      game's look, operators and HUD. Before you use official
       art, logos or promotional images on your channel, read the publisher's
       terms. Frames from your own gameplay are a different question from key
-      art. This page is not legal advice.
+      art.
   - q: Is there a free COD thumbnail maker?
     a: >
       You can make one by hand in any free image editor with the rules on this

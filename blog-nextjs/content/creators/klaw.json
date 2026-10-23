@@ -1,0 +1,471 @@
+{
+  "slug": "klaw",
+  "status": "draft",
+  "channelId": "UCobh5NnN-5B5_seTu-88IoA",
+  "name": "klaw",
+  "handle": "klawYT",
+  "url": "https://www.youtube.com/channel/UCobh5NnN-5B5_seTu-88IoA",
+  "avatar": "https://yt3.googleusercontent.com/6LYLdon0PASjKpZe32aMq8kHaPBBV-8GJ4sz9_UlEfHZ9wPi_fnr5DpLby0xiq8I-ZUeLY_g=s900-c-k-c0x00ffffff-no-rj",
+  "game": "call-of-duty",
+  "subscribers": 164000,
+  "subscribersText": "164K subscribers",
+  "videoCount": 1000,
+  "description": "Subscribe for Daily Warzone Content",
+  "collectedAt": "2026-10-23",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 18000,
+    "outliers": [
+      {
+        "id": "E7poAioEUT4",
+        "multiple": 13.8
+      },
+      {
+        "id": "T5AsIQi3JGk",
+        "multiple": 6.6
+      },
+      {
+        "id": "xDC8m2qdAjY",
+        "multiple": 5.4
+      },
+      {
+        "id": "WTy2-VDSx9o",
+        "multiple": 2.5
+      },
+      {
+        "id": "-cZmn2zMMF0",
+        "multiple": 1.9
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "rFLjgSmTvU0",
+      "title": "The #1 NEW META Loadout on Rebirth Island 👑",
+      "views": 11000,
+      "viewsText": "11K views",
+      "membersOnly": false,
+      "duration": "32:56",
+      "durationSec": 1976,
+      "published": "16 hours ago",
+      "thumbnail": "https://i.ytimg.com/vi/rFLjgSmTvU0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/rFLjgSmTvU0/maxresdefault.jpg"
+    },
+    {
+      "id": "6CSjEdCpo2k",
+      "title": "The #1 MOVEMENT LEGACY Meta on Warzone 👑 ",
+      "views": 17000,
+      "viewsText": "17K views",
+      "membersOnly": false,
+      "duration": "31:34",
+      "durationSec": 1894,
+      "published": "1 day ago",
+      "thumbnail": "https://i.ytimg.com/vi/6CSjEdCpo2k/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/6CSjEdCpo2k/maxresdefault.jpg"
+    },
+    {
+      "id": "FKryReN2n-U",
+      "title": "88 Kills w/ BEST MOVEMENT Meta on Rebirth island 👑",
+      "views": 23000,
+      "viewsText": "23K views",
+      "membersOnly": false,
+      "duration": "32:10",
+      "durationSec": 1930,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/FKryReN2n-U/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/FKryReN2n-U/maxresdefault.jpg"
+    },
+    {
+      "id": "3ntDy1ixzK0",
+      "title": "The #1 PERFECT SMG Meta on Warzone 👑",
+      "views": 18000,
+      "viewsText": "18K views",
+      "membersOnly": false,
+      "duration": "44:46",
+      "durationSec": 2686,
+      "published": "3 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/3ntDy1ixzK0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/3ntDy1ixzK0/maxresdefault.jpg"
+    },
+    {
+      "id": "0uq2Vn65d_Q",
+      "title": "The NEW MAX MOVEMENT Meta on Warzone 👑",
+      "views": 19000,
+      "viewsText": "19K views",
+      "membersOnly": false,
+      "duration": "46:28",
+      "durationSec": 2788,
+      "published": "4 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/0uq2Vn65d_Q/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/0uq2Vn65d_Q/maxresdefault.jpg"
+    },
+    {
+      "id": "9aV1W_5Wxpw",
+      "title": "109 Kills on Warzone 👑 + PERFECT SMG Loadout",
+      "views": 15000,
+      "viewsText": "15K views",
+      "membersOnly": false,
+      "duration": "45:34",
+      "durationSec": 2734,
+      "published": "5 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/9aV1W_5Wxpw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/9aV1W_5Wxpw/maxresdefault.jpg"
+    },
+    {
+      "id": "cHYWopj574o",
+      "title": "The #1 LEGACY SNIPER META Loadout on Rebirth Island 👑",
+      "views": 9900,
+      "viewsText": "9.9K views",
+      "membersOnly": false,
+      "duration": "44:56",
+      "durationSec": 2696,
+      "published": "6 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/cHYWopj574o/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/cHYWopj574o/maxresdefault.jpg"
+    },
+    {
+      "id": "MVE9DbC1jco",
+      "title": "106 Kills w/ SMOOTH SUPERI SMG Meta on Warzone 👑",
+      "views": 16000,
+      "viewsText": "16K views",
+      "membersOnly": false,
+      "duration": "48:09",
+      "durationSec": 2889,
+      "published": "7 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/MVE9DbC1jco/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/MVE9DbC1jco/maxresdefault.jpg"
+    },
+    {
+      "id": "WK9Z2xR49-0",
+      "title": "The PERFECT OG SMG Meta on Warzone 👑 (108 Kills)",
+      "views": 13000,
+      "viewsText": "13K views",
+      "membersOnly": false,
+      "duration": "46:05",
+      "durationSec": 2765,
+      "published": "8 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/WK9Z2xR49-0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/WK9Z2xR49-0/maxresdefault.jpg"
+    },
+    {
+      "id": "86gi9d38qzc",
+      "title": "103 Kills w/ FAST SPEED SMG on Warzone 👑",
+      "views": 30000,
+      "viewsText": "30K views",
+      "membersOnly": false,
+      "duration": "42:06",
+      "durationSec": 2526,
+      "published": "9 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/86gi9d38qzc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/86gi9d38qzc/maxresdefault.jpg"
+    },
+    {
+      "id": "IwnnNk1xNKk",
+      "title": "108 Kills w/ #1 LEGACY META Loadout on Warzone 👑",
+      "views": 22000,
+      "viewsText": "22K views",
+      "membersOnly": false,
+      "duration": "45:55",
+      "durationSec": 2755,
+      "published": "10 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/IwnnNk1xNKk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/IwnnNk1xNKk/maxresdefault.jpg"
+    },
+    {
+      "id": "amgoYIyZr30",
+      "title": "#1 BEST Movement on Warzone 👑 + FULL Settings",
+      "views": 13000,
+      "viewsText": "13K views",
+      "membersOnly": false,
+      "duration": "45:56",
+      "durationSec": 2756,
+      "published": "11 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/amgoYIyZr30/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/amgoYIyZr30/maxresdefault.jpg"
+    },
+    {
+      "id": "f-yxjCljFAQ",
+      "title": "The #1 PERFECT PPSH-41 Meta on Warzone 👑",
+      "views": 16000,
+      "viewsText": "16K views",
+      "membersOnly": false,
+      "duration": "44:00",
+      "durationSec": 2640,
+      "published": "12 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/f-yxjCljFAQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/f-yxjCljFAQ/maxresdefault.jpg"
+    },
+    {
+      "id": "-cZmn2zMMF0",
+      "title": "107 Kills on Warzone 👑 + #1 FASTEST Movement",
+      "views": 35000,
+      "viewsText": "35K views",
+      "membersOnly": false,
+      "duration": "44:39",
+      "durationSec": 2679,
+      "published": "13 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/-cZmn2zMMF0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/-cZmn2zMMF0/maxresdefault.jpg"
+    },
+    {
+      "id": "WTy2-VDSx9o",
+      "title": "110 Kills w/ #1 MOVEMENT Meta on Rebirth Island 👑",
+      "views": 45000,
+      "viewsText": "45K views",
+      "membersOnly": false,
+      "duration": "44:11",
+      "durationSec": 2651,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/WTy2-VDSx9o/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/WTy2-VDSx9o/maxresdefault.jpg"
+    },
+    {
+      "id": "ya3AuRmpAv0",
+      "title": "The #1 BROKEN RANKED Meta on Warzone 👑",
+      "views": 18000,
+      "viewsText": "18K views",
+      "membersOnly": false,
+      "duration": "45:28",
+      "durationSec": 2728,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/ya3AuRmpAv0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ya3AuRmpAv0/maxresdefault.jpg"
+    },
+    {
+      "id": "w4rjIUutjIA",
+      "title": "108 Kills w/ #1 PP-919 Movement on Warzone 👑",
+      "views": 15000,
+      "viewsText": "15K views",
+      "membersOnly": false,
+      "duration": "47:03",
+      "durationSec": 2823,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/w4rjIUutjIA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/w4rjIUutjIA/maxresdefault.jpg"
+    },
+    {
+      "id": "XKQer2BAXJI",
+      "title": "The NEW PERFECT LEGACY SMG Meta on Warzone 👑",
+      "views": 9600,
+      "viewsText": "9.6K views",
+      "membersOnly": false,
+      "duration": "46:49",
+      "durationSec": 2809,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/XKQer2BAXJI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/XKQer2BAXJI/maxresdefault.jpg"
+    },
+    {
+      "id": "xDC8m2qdAjY",
+      "title": "102 Kills on Warzone 👑 + #1 BEST SNIPER Loadout",
+      "views": 97000,
+      "viewsText": "97K views",
+      "membersOnly": false,
+      "duration": "43:34",
+      "durationSec": 2614,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/xDC8m2qdAjY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/xDC8m2qdAjY/maxresdefault.jpg"
+    },
+    {
+      "id": "GJDSvO3Nkzc",
+      "title": "The NEW #1 BEST META Loadout on Rebirth Island 👑",
+      "views": 10000,
+      "viewsText": "10K views",
+      "membersOnly": false,
+      "duration": "47:44",
+      "durationSec": 2864,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/GJDSvO3Nkzc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/GJDSvO3Nkzc/maxresdefault.jpg"
+    },
+    {
+      "id": "VQJoBaG3uao",
+      "title": "The #1 RANKED META Loadout on Warzone 👑 (120 Kills)",
+      "views": 18000,
+      "viewsText": "18K views",
+      "membersOnly": false,
+      "duration": "44:26",
+      "durationSec": 2666,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/VQJoBaG3uao/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/VQJoBaG3uao/maxresdefault.jpg"
+    },
+    {
+      "id": "T5AsIQi3JGk",
+      "title": "106 Kills w/ #1 FASTEST Movement on Rebirth Island 👑",
+      "views": 118000,
+      "viewsText": "118K views",
+      "membersOnly": false,
+      "duration": "47:48",
+      "durationSec": 2868,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/T5AsIQi3JGk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/T5AsIQi3JGk/maxresdefault.jpg"
+    },
+    {
+      "id": "Az0-2x3upsQ",
+      "title": "The #1 WARZONE SMG Loadout on Rebirth Island 👑",
+      "views": 18000,
+      "viewsText": "18K views",
+      "membersOnly": false,
+      "duration": "46:31",
+      "durationSec": 2791,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/Az0-2x3upsQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Az0-2x3upsQ/maxresdefault.jpg"
+    },
+    {
+      "id": "F0fU_HvUuXw",
+      "title": "113 Kills w/ #1 BROKEN XM4 Meta on Warzone 👑",
+      "views": 35000,
+      "viewsText": "35K views",
+      "membersOnly": false,
+      "duration": "48:06",
+      "durationSec": 2886,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/F0fU_HvUuXw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/F0fU_HvUuXw/maxresdefault.jpg"
+    },
+    {
+      "id": "5qbkz0oRLEA",
+      "title": "The #1 LEGACY MOVEMENT Meta on Warzone 👑",
+      "views": 19000,
+      "viewsText": "19K views",
+      "membersOnly": false,
+      "duration": "45:26",
+      "durationSec": 2726,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/5qbkz0oRLEA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/5qbkz0oRLEA/maxresdefault.jpg"
+    },
+    {
+      "id": "20d_-VgaFPU",
+      "title": "110 Kills on Rebirth Island 👑 + #1 RANKED Settings",
+      "views": 12000,
+      "viewsText": "12K views",
+      "membersOnly": false,
+      "duration": "44:01",
+      "durationSec": 2641,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/20d_-VgaFPU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/20d_-VgaFPU/maxresdefault.jpg"
+    },
+    {
+      "id": "wYuh8GZu884",
+      "title": "The OG MOVEMENT SMG Meta on Warzone 👑",
+      "views": 10000,
+      "viewsText": "10K views",
+      "membersOnly": false,
+      "duration": "30:13",
+      "durationSec": 1813,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/wYuh8GZu884/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/wYuh8GZu884/maxresdefault.jpg"
+    },
+    {
+      "id": "E7poAioEUT4",
+      "title": "105 Kills w/ #1 WARZONE SNIPER Meta on Rebirth Island 👑",
+      "views": 249000,
+      "viewsText": "249K views",
+      "membersOnly": false,
+      "duration": "46:45",
+      "durationSec": 2805,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/E7poAioEUT4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/E7poAioEUT4/maxresdefault.jpg"
+    },
+    {
+      "id": "Hs46gYdvKdE",
+      "title": "The #1 FASTEST VMP Movement on Warzone 👑",
+      "views": 21000,
+      "viewsText": "21K views",
+      "membersOnly": false,
+      "duration": "29:23",
+      "durationSec": 1763,
+      "published": "4 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/Hs46gYdvKdE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Hs46gYdvKdE/maxresdefault.jpg"
+    },
+    {
+      "id": "RiCr_ZuX5pA",
+      "title": "The NEW MOVEMENT KSV Meta on Warzone 👑",
+      "views": 15000,
+      "viewsText": "15K views",
+      "membersOnly": false,
+      "duration": "31:03",
+      "durationSec": 1863,
+      "published": "4 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/RiCr_ZuX5pA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/RiCr_ZuX5pA/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "klaw posts long Call of Duty: Warzone videos almost every day, built around meta loadouts and high-kill games. Every thumbnail is the same shot: first-person blue-gloved hands showing off one gun in bright pink or purple camo against a pale, sunny sky.",
+    "niche": "Call of Duty: Warzone meta loadouts and high-kill games",
+    "styleTraits": [
+      {
+        "title": "One shot, repeated",
+        "detail": "All 30 thumbnails use the same scene: the weapon-inspect view on the same rooftop (a '28' is painted on the wall behind), an overexposed sky, and blue-gloved hands holding the gun. Only the gun and its camo change from one upload to the next."
+      },
+      {
+        "title": "The gun is the subject",
+        "detail": "No face, no character, no text. The weapon fills the middle of the frame on a diagonal, which is exactly what a loadout viewer wants to see."
+      },
+      {
+        "title": "Loud camo, one sticker",
+        "detail": "The guns wear glowing pink or purple crystal-crack camo; the six newest switch to a blue and pink swirl, and the oldest in the sample has a rainbow liquid pattern. Every gun carries the same red box sticker reading 'Splendid', a small repeated mark."
+      },
+      {
+        "title": "The title does the selling",
+        "detail": "Titles carry every claim: a kill count ('110 Kills'), '#1', 'META', 'NEW', the weapon name, and a crown emoji at the end of every one. The thumbnail only shows which gun."
+      },
+      {
+        "title": "Snipers hold up a bullet",
+        "detail": "In sniper videos the left hand holds a single brass round next to the scope. It is the only change in pose across the sample, and it makes sniper uploads easy to tell apart."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "E7poAioEUT4",
+        "why": "About 249,000 views, 13.8 times the 18,000 median. A purple crystal sniper rifle with a large scope, the left hand holding up a bullet. Sniper uploads are rarer than SMG ones in his feed, so the frame looks different in a row of his videos. But 'The #1 LEGACY SNIPER META Loadout', with a near-identical sniper thumbnail, got about 9,900 views, so the image alone doesn't explain the gap."
+      },
+      {
+        "id": "T5AsIQi3JGk",
+        "why": "About 118,000 views, 6.6 times the median. A pink crystal SMG with a long suppressor, held up on a diagonal. It looks almost the same as uploads that got 15,000 to 20,000 views, so the difference more likely came from the title (a kill count plus 'FASTEST Movement') or from timing than from the image."
+      },
+      {
+        "id": "xDC8m2qdAjY",
+        "why": "About 97,000 views, 5.4 times the median. Another purple sniper with the bullet held up. Two of his three biggest videos in the sample are sniper loadouts with a kill count in the title. That is a pattern worth watching, not proof."
+      }
+    ],
+    "lessons": [
+      "A fixed shot makes a channel instantly recognisable in a subscriber's feed; klaw's rooftop inspect view never changes.",
+      "If your audience comes for gear, make the gear the whole thumbnail and keep everything else constant.",
+      "Put numbers that prove skill in the title. In klaw's sample, the 15 titles with a kill count had a median of about 23,000 views against about 16,000 for the 15 without, and all five of his biggest videos had one.",
+      "A bright, unusual camo colour keeps a gun readable against a pale background at small sizes.",
+      "A fully identical template leaves the thumbnail little room to win a click on its own, so test adding one element that changes per video."
+    ],
+    "experiment": "If your thumbnails reuse one template, keep version A as your usual clean shot and add one changing element to version B: the kill count in big outlined numbers in a corner (for example '110 KILLS'). Compare them in YouTube's Test & Compare on watch time share.",
+    "faq": [
+      {
+        "q": "How many subscribers does klaw have?",
+        "a": "As of 23 October 2026, klaw has about 164K subscribers (rounded by YouTube) and around 1,000 videos. Across the 30 latest uploads we sampled, the median was about 18,000 views. The biggest, '105 Kills w/ #1 WARZONE SNIPER Meta on Rebirth Island', had about 249,000 views, roughly 13.8 times the median."
+      },
+      {
+        "q": "What does klaw make videos about?",
+        "a": "Call of Duty: Warzone gameplay, often on Rebirth Island. Each video shows a 'meta' loadout, meaning the strongest current weapon setup, usually with a high-kill game and movement or settings tips. In our sample, a new video went up nearly every day, each 29 to 48 minutes long."
+      },
+      {
+        "q": "What do klaw's thumbnails look like?",
+        "a": "Every one is the same first-person shot: two blue-gloved hands holding up a gun with bright pink, purple or swirl camo, on a rooftop under a pale, sunny sky. There is no face and no text. Only the gun model and the camo change; the title carries the kill count and the claim."
+      },
+      {
+        "q": "What game does klaw play?",
+        "a": "Call of Duty: Warzone, with many videos on Rebirth Island, the smaller Warzone map. All 30 uploads in our sample are Warzone loadout and gameplay videos, and every title ends with a crown emoji."
+      }
+    ],
+    "reviewedAt": "2026-10-23"
+  }
+}

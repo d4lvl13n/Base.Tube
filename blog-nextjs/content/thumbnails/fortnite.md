@@ -236,8 +236,7 @@ faq:
       Fortnite thumbnail can look like; they use the game's look and
       characters. For your own channel, Epic Games publishes a fan content
       policy that explains what you may do with its game content; read it
-      before using official art, logos or promotional images. This page is not
-      legal advice.
+      before using official art, logos or promotional images.
   - q: Is there a free Fortnite thumbnail maker?
     a: >
       You can build one by hand in any free image editor with the rules on this

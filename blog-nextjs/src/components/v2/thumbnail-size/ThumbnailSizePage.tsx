@@ -535,7 +535,7 @@ export default function ThumbnailSizePage() {
                     file size is a safe pass.
                   </p>
                   <p>
-                    Base.Tube is not affiliated with YouTube. YouTube can change these limits at any time, so check
+                    YouTube can change these limits at any time, so check
                     the source before a big upload.
                   </p>
                 </div>

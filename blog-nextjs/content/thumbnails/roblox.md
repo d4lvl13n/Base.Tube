@@ -239,7 +239,7 @@ faq:
       page does the same. Roblox publishes name and logo usage guidelines that
       limit how its logo may be used and forbid suggesting an official
       partnership. Read them, and Roblox's rules for creators, before you
-      publish. This page is not legal advice.
+      publish.
 
 related:
   - minecraft

@@ -1,0 +1,471 @@
+{
+  "slug": "tootsie",
+  "status": "draft",
+  "channelId": "UCH_y9b1Giqv5KbKqQ_XkAKg",
+  "name": "Tootsie",
+  "handle": "Tootsie22",
+  "url": "https://www.youtube.com/channel/UCH_y9b1Giqv5KbKqQ_XkAKg",
+  "avatar": "https://yt3.googleusercontent.com/EhLgRJjQXYHqoZRjGbTHFsMBva9Odk3YOKbe_Mu9kdkZKfrXiZDHZrHiUHUwh1XF_EDwE8Dw7A=s900-c-k-c0x00ffffff-no-rj",
+  "game": "minecraft",
+  "subscribers": 834000,
+  "subscribersText": "834K subscribers",
+  "videoCount": 60,
+  "description": "Hey you! I am an Irish and French Minecraft Youtuber. I started playing Minecraft when I was 11 even though when you actually see me play it looks like I discovered the game yesterday... Nevertheless I love sharing with my community, mainly animal related, building or adventure themed Minecraft videos. I also enjoy incorporating facts on a variety of subjects in my videos, and I hope that I'm fair",
+  "collectedAt": "2026-10-23",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 737500,
+    "outliers": [
+      {
+        "id": "MeWc5xOfyxE",
+        "multiple": 4.7
+      },
+      {
+        "id": "xj8m9D2fPkM",
+        "multiple": 3.5
+      },
+      {
+        "id": "54mqWdAlJNo",
+        "multiple": 3.3
+      },
+      {
+        "id": "8yFtPeEL-gQ",
+        "multiple": 2.3
+      },
+      {
+        "id": "JNDvod0tBr0",
+        "multiple": 2
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "ZuhpG4hM5ec",
+      "title": "I Spent 100 DAYS As A FARMER In MINECRAFT Hardcore",
+      "views": 230000,
+      "viewsText": "230K views",
+      "membersOnly": false,
+      "duration": "1:12:20",
+      "durationSec": 4340,
+      "published": "5 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/ZuhpG4hM5ec/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ZuhpG4hM5ec/maxresdefault.jpg"
+    },
+    {
+      "id": "MlcN-B6DlKs",
+      "title": "I Spent 100 Days as a DRAGON in Minecraft",
+      "views": 186000,
+      "viewsText": "186K views",
+      "membersOnly": false,
+      "duration": "1:10:22",
+      "durationSec": 4222,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/MlcN-B6DlKs/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/MlcN-B6DlKs/maxresdefault.jpg"
+    },
+    {
+      "id": "spxoUTN_NxQ",
+      "title": "I Spent 100 Days UNDERGROUND in Minecraft Hardcore | Full Movie",
+      "views": 456000,
+      "viewsText": "456K views",
+      "membersOnly": false,
+      "duration": "1:02:15",
+      "durationSec": 3735,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/spxoUTN_NxQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/spxoUTN_NxQ/maxresdefault.jpg"
+    },
+    {
+      "id": "hHy7QnQQObQ",
+      "title": "I Spent 100 Days Building a HORSE RANCH in Minecraft Hardcore | Full Movie",
+      "views": 642000,
+      "viewsText": "642K views",
+      "membersOnly": false,
+      "duration": "1:17:46",
+      "durationSec": 4666,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/hHy7QnQQObQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/hHy7QnQQObQ/maxresdefault.jpg"
+    },
+    {
+      "id": "EDcdTBuWOAQ",
+      "title": "I Spent 100 DAYS in the ICE AGE in Minecraft Hardcore | Full Movie",
+      "views": 364000,
+      "viewsText": "364K views",
+      "membersOnly": false,
+      "duration": "1:25:41",
+      "durationSec": 5141,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/EDcdTBuWOAQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/EDcdTBuWOAQ/maxresdefault.jpg"
+    },
+    {
+      "id": "S0IArYbGgVc",
+      "title": "I Spent 100 DAYS in an OCEAN ONLY World in Minecraft Hardcore | Full Movie",
+      "views": 955000,
+      "viewsText": "955K views",
+      "membersOnly": false,
+      "duration": "1:09:32",
+      "durationSec": 4172,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/S0IArYbGgVc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/S0IArYbGgVc/maxresdefault.jpg"
+    },
+    {
+      "id": "JNDvod0tBr0",
+      "title": "I Spent 100 DAYS in a RAVINE in Minecraft Hardcore | Full Movie",
+      "views": 1500000,
+      "viewsText": "1.5M views",
+      "membersOnly": false,
+      "duration": "1:08:16",
+      "durationSec": 4096,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/JNDvod0tBr0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/JNDvod0tBr0/maxresdefault.jpg"
+    },
+    {
+      "id": "fBpovTFbBxM",
+      "title": "I Built an INTERNATIONAL Hobbit VILLAGE in Hardcore Minecraft | Here's What Happened...",
+      "views": 224000,
+      "viewsText": "224K views",
+      "membersOnly": false,
+      "duration": "45:58",
+      "durationSec": 2758,
+      "published": "9 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/fBpovTFbBxM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/fBpovTFbBxM/maxresdefault.jpg"
+    },
+    {
+      "id": "Korv70gh7eA",
+      "title": "I Built an Awesome FARM in Hardcore Minecraft - Let's Play | Episode 2",
+      "views": 218000,
+      "viewsText": "218K views",
+      "membersOnly": false,
+      "duration": "23:59",
+      "durationSec": 1439,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/Korv70gh7eA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Korv70gh7eA/maxresdefault.jpg"
+    },
+    {
+      "id": "8pQdze7rzLg",
+      "title": "A PERFECT Start in Hardcore Minecraft - Let's Play | Episode 1",
+      "views": 550000,
+      "viewsText": "550K views",
+      "membersOnly": false,
+      "duration": "35:33",
+      "durationSec": 2133,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/8pQdze7rzLg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/8pQdze7rzLg/maxresdefault.jpg"
+    },
+    {
+      "id": "g-DQJExyz5U",
+      "title": "I Survived 100 DAYS on an ISLAND in Minecraft Hardcore | Full Movie",
+      "views": 946000,
+      "viewsText": "946K views",
+      "membersOnly": false,
+      "duration": "1:08:58",
+      "durationSec": 4138,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/g-DQJExyz5U/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/g-DQJExyz5U/maxresdefault.jpg"
+    },
+    {
+      "id": "5giSKPzMc0I",
+      "title": "I Survived 100 Days Building a ZOO in a Zombie APOCALYPSE - Minecraft Hardcore | Full Movie",
+      "views": 417000,
+      "viewsText": "417K views",
+      "membersOnly": false,
+      "duration": "1:11:01",
+      "durationSec": 4261,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/5giSKPzMc0I/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/5giSKPzMc0I/maxresdefault.jpg"
+    },
+    {
+      "id": "8yFtPeEL-gQ",
+      "title": "I Spent 100 DAYS in a Lush Cave ONLY World in Minecraft Hardcore | Full Movie",
+      "views": 1700000,
+      "viewsText": "1.7M views",
+      "membersOnly": false,
+      "duration": "1:01:25",
+      "durationSec": 3685,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/8yFtPeEL-gQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/8yFtPeEL-gQ/maxresdefault.jpg"
+    },
+    {
+      "id": "Ve3d9kbfIXM",
+      "title": "I Spent 100 Days Building Noah’s Ark for Every Animal | Minecraft Full Movie",
+      "views": 460000,
+      "viewsText": "460K views",
+      "membersOnly": false,
+      "duration": "1:13:22",
+      "durationSec": 4402,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/Ve3d9kbfIXM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Ve3d9kbfIXM/maxresdefault.jpg"
+    },
+    {
+      "id": "kuJfd8HR1n0",
+      "title": "I Spent 100 Days in Jurassic Park | Minecraft Full Movie",
+      "views": 835000,
+      "viewsText": "835K views",
+      "membersOnly": false,
+      "duration": "1:55:57",
+      "durationSec": 6957,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/kuJfd8HR1n0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/kuJfd8HR1n0/maxresdefault.jpg"
+    },
+    {
+      "id": "pjwIc2sjiiE",
+      "title": "I Spent 100 Days in How To Train Your Dragon | Minecraft Full Movie",
+      "views": 818000,
+      "viewsText": "818K views",
+      "membersOnly": false,
+      "duration": "1:00:48",
+      "durationSec": 3648,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/pjwIc2sjiiE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/pjwIc2sjiiE/maxresdefault.jpg"
+    },
+    {
+      "id": "qV4nweS-Uso",
+      "title": "I Built a Huge ZOO for Every Nether Mob in Minecraft Hardcore! | 1.21 Let's Play | Episode 3",
+      "views": 221000,
+      "viewsText": "221K views",
+      "membersOnly": false,
+      "duration": "38:55",
+      "durationSec": 2335,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/qV4nweS-Uso/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/qV4nweS-Uso/maxresdefault.jpg"
+    },
+    {
+      "id": "Lq0AVItpm-k",
+      "title": "I Spent 100 Days in a Jungle Only World | Minecraft Full Movie",
+      "views": 721000,
+      "viewsText": "721K views",
+      "membersOnly": false,
+      "duration": "1:43:51",
+      "durationSec": 6231,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/Lq0AVItpm-k/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Lq0AVItpm-k/maxresdefault.jpg"
+    },
+    {
+      "id": "UJhj3WiJs4s",
+      "title": "I Spent 100 DAYS in a HORSE World | Minecraft Full Movie",
+      "views": 1500000,
+      "viewsText": "1.5M views",
+      "membersOnly": false,
+      "duration": "1:37:34",
+      "durationSec": 5854,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/UJhj3WiJs4s/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/UJhj3WiJs4s/maxresdefault.jpg"
+    },
+    {
+      "id": "7ez5xaZGLiU",
+      "title": "I built a HUGE Aquarium for Every Aquatic Animal in Minecraft Hardcore - 1.21 Let's Play | Episode 2",
+      "views": 754000,
+      "viewsText": "754K views",
+      "membersOnly": false,
+      "duration": "1:06:21",
+      "durationSec": 3981,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/7ez5xaZGLiU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/7ez5xaZGLiU/maxresdefault.jpg"
+    },
+    {
+      "id": "NfHf0JILojY",
+      "title": "The Perfect Start! - Minecraft Hardcore - 1.21 Let's Play | Episode 1",
+      "views": 802000,
+      "viewsText": "802K views",
+      "membersOnly": false,
+      "duration": "53:03",
+      "durationSec": 3183,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/NfHf0JILojY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/NfHf0JILojY/maxresdefault.jpg"
+    },
+    {
+      "id": "hECp70Se7ec",
+      "title": "I Spent 100 Days with Dragons | Minecraft Full Movie",
+      "views": 1200000,
+      "viewsText": "1.2M views",
+      "membersOnly": false,
+      "duration": "1:19:02",
+      "durationSec": 4742,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/hECp70Se7ec/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/hECp70Se7ec/maxresdefault.jpg"
+    },
+    {
+      "id": "GU8y3i3qK2w",
+      "title": "I Survived 1000 Days In Minecraft Hardcore! | FULL MOVIE",
+      "views": 899000,
+      "viewsText": "899K views",
+      "membersOnly": false,
+      "duration": "2:42:10",
+      "durationSec": 9730,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/GU8y3i3qK2w/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/GU8y3i3qK2w/maxresdefault.jpg"
+    },
+    {
+      "id": "BRP7nIbppAU",
+      "title": "I Built a Wolf Sanctuary in Minecraft Hardcore | 1.21 Let's Play | Episode 5",
+      "views": 662000,
+      "viewsText": "662K views",
+      "membersOnly": false,
+      "duration": "37:46",
+      "durationSec": 2266,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/BRP7nIbppAU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/BRP7nIbppAU/maxresdefault.jpg"
+    },
+    {
+      "id": "54mqWdAlJNo",
+      "title": "I Spent 100 DAYS Building a FARM In MINECRAFT",
+      "views": 2400000,
+      "viewsText": "2.4M views",
+      "membersOnly": false,
+      "duration": "1:06:56",
+      "durationSec": 4016,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/54mqWdAlJNo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/54mqWdAlJNo/maxresdefault.jpg"
+    },
+    {
+      "id": "MeWc5xOfyxE",
+      "title": "I Built A ZOO For The RARE Mobs in Minecraft | Let's Play | Episode 4",
+      "views": 3500000,
+      "viewsText": "3.5M views",
+      "membersOnly": false,
+      "duration": "38:37",
+      "durationSec": 2317,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/MeWc5xOfyxE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/MeWc5xOfyxE/maxresdefault.jpg"
+    },
+    {
+      "id": "Pl_LtfRgCn4",
+      "title": "I Built EVERY Automatic Farm in Minecraft Hardcore | Let's Play | Episode 3",
+      "views": 215000,
+      "viewsText": "215K views",
+      "membersOnly": false,
+      "duration": "29:20",
+      "durationSec": 1760,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/Pl_LtfRgCn4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Pl_LtfRgCn4/maxresdefault.jpg"
+    },
+    {
+      "id": "xj8m9D2fPkM",
+      "title": "I Spent 100 DAYS Building a ZOO In Hardcore MINECRAFT | Full Movie",
+      "views": 2600000,
+      "viewsText": "2.6M views",
+      "membersOnly": false,
+      "duration": "1:06:31",
+      "durationSec": 3991,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/xj8m9D2fPkM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/xj8m9D2fPkM/maxresdefault.jpg"
+    },
+    {
+      "id": "i2_wZ3w1Qyo",
+      "title": "I Built the SNIFFER BIOME in Minecraft Hardcore | Let's Play | Episode 2",
+      "views": 704000,
+      "viewsText": "704K views",
+      "membersOnly": false,
+      "duration": "33:24",
+      "durationSec": 2004,
+      "published": "3 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/i2_wZ3w1Qyo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/i2_wZ3w1Qyo/maxresdefault.jpg"
+    },
+    {
+      "id": "hQa7EVT8kVU",
+      "title": "A New Beginning! - Minecraft Hardcore | Let's Play | Episode 1",
+      "views": 1200000,
+      "viewsText": "1.2M views",
+      "membersOnly": false,
+      "duration": "26:29",
+      "durationSec": 1589,
+      "published": "3 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/hQa7EVT8kVU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/hQa7EVT8kVU/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "Tootsie makes long Minecraft Hardcore videos, mostly '100 days' movies and Let's Play episodes about animals, zoos, farms and themed worlds. The thumbnails are bright, detailed build shots, often split 'DAY 1' to 'DAY 100', with the channel's orange-haired player skin in front and a Minecraft Hardcore logo on top.",
+    "niche": "Minecraft Hardcore 100-day movies about animals and builds",
+    "styleTraits": [
+      {
+        "title": "Day 1 to Day 100 split",
+        "detail": "The core layout puts the orange-haired player skin on the left in a bare starting spot and the finished build on the right, joined by a curved red arrow, with 'DAY 1' (or 'DAY 0') and 'DAY 100' in white blocky letters along the bottom. The 'RAVINE', 'OCEAN', 'ICE AGE' and 'HORSE RANCH' thumbnails all follow it."
+      },
+      {
+        "title": "A branded title stack",
+        "detail": "At the top centre sits a logo stack: 'MINECRAFT' in the game's stone lettering, 'HARDCORE' in red with a heart in place of the O, then the world theme in a coloured word ('RAVINE' in purple, 'CAVE ONLY' in yellow) and '100 DAYS'. It works like a title card for the series."
+      },
+      {
+        "title": "Animals up front",
+        "detail": "Many thumbnails fill the foreground with a crowd of animals facing the camera: horses, cows, pigs, a giraffe, an elephant, lions, dragons. The build sits behind them. For a channel about zoos, ranches and animal rescue, the animals are the promise."
+      },
+      {
+        "title": "Warm, saturated and full",
+        "detail": "Colours are warm and strong: golden fields, pink cherry trees, deep greens, red mushroom blocks. The builds are packed with detail, with no empty corner. That richness may signal a long, finished project rather than a quick video."
+      },
+      {
+        "title": "Episode hearts for the Let's Play",
+        "detail": "The Let's Play series swaps the logo for a red pixel heart with the episode number (1 to 5) in a top corner, and usually shows a top-down map of the build, such as zoo pens laid out like flower petals."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "MeWc5xOfyxE",
+        "why": "A heart with '4' in the corner; on the left a panda, a pink sheep and an axolotl crowd the frame, and a red arrow leads to a top-down view of a zoo with many pens. 'Rare mobs' gives viewers a list to discover, and the animals are shown rather than described. At 3.5 million views it is 4.7 times the median, and it has had about two years to collect them."
+      },
+      {
+        "id": "xj8m9D2fPkM",
+        "why": "An elephant, a giraffe, a lion, a polar bear and more stand close to the camera in front of a blurred zoo map, with '100 DAYS MINECRAFT HARDCORE FULL MOVIE' stacked at the bottom and a red arrow pointing into the build. It reached 3.5 times the median. The two biggest videos in the sample are both zoos, which suggests the theme itself is probably a large part of the draw."
+      },
+      {
+        "id": "8yFtPeEL-gQ",
+        "why": "The cleanest example of the Day 0 / Day 100 layout: the orange-haired skin with a pickaxe in a grey cave on the left, a glowing village under hanging vines on the right, and 'CAVE ONLY' in yellow under the Hardcore logo. The unusual rule (one biome only) is stated in two words. It reached 2.3 times a median that is already high."
+      }
+    ],
+    "lessons": [
+      "For a long project, show the end result. The finished build sells the hours of work inside the video.",
+      "Use a repeatable title stack (game, mode, theme) so every video looks like part of the same series.",
+      "If your audience loves a subject, here animals, put it in the foreground, large and facing the camera.",
+      "State the challenge's rule in one or two words on the thumbnail: 'CAVE ONLY', 'OCEAN', 'ICE AGE'.",
+      "Give your player skin one distinctive feature; Tootsie's orange hair is easy to spot even at small size."
+    ],
+    "experiment": "For your next build or challenge video, test a Day 1 / Day 100 split with a curved arrow against a thumbnail that shows only the finished build. Use the same build screenshot in both, so the only difference is the 'before' half.",
+    "faq": [
+      {
+        "q": "How many subscribers does Tootsie have?",
+        "a": "As of 23 October 2026, Tootsie has about 834K subscribers and 60 public videos. The latest 30 long uploads have a median of about 737,500 views, which is very high for a channel of this size. The most-viewed video in that sample is 'I Built A ZOO For The RARE Mobs in Minecraft', with about 3.5 million views."
+      },
+      {
+        "q": "What does Tootsie make videos about?",
+        "a": "Tootsie makes Minecraft Hardcore videos built around animals and big builds: 100-day challenges in themed worlds (ocean only, cave only, ice age, horse world, dragons), zoos, farms, ranches and a Let's Play series. Many uploads are full movies that run longer than an hour."
+      },
+      {
+        "q": "What do Tootsie's thumbnails look like?",
+        "a": "They are bright, detailed shots of a finished build, often split into 'DAY 1' and 'DAY 100' with a curved red arrow. The channel's orange-haired player skin stands on the left, a 'MINECRAFT HARDCORE' logo sits on top, and many thumbnails put a crowd of animals in the foreground."
+      },
+      {
+        "q": "How long are Tootsie's videos?",
+        "a": "Long. The recent 100-day movies run between about one hour and one hour 26 minutes, and the 1000-day video lasts 2 hours 42 minutes. The Let's Play episodes are shorter, between about 24 and 66 minutes each, based on the 30 uploads checked on 23 October 2026."
+      }
+    ],
+    "reviewedAt": "2026-10-23"
+  }
+}

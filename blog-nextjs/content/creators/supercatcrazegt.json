@@ -1,0 +1,475 @@
+{
+  "slug": "supercatcrazegt",
+  "status": "draft",
+  "channelId": "UCCxIWs9kbkWMupJhvZ01fTg",
+  "name": "SuperCatCrazeGT",
+  "handle": "SuperCatCrazeGT",
+  "url": "https://www.youtube.com/channel/UCCxIWs9kbkWMupJhvZ01fTg",
+  "avatar": "https://yt3.googleusercontent.com/npBCmz-vdFjN6vFcwu_RVp4dsQ_SZwRgcUU7ovCUDpR38FRc4cFFI-IwVNnc0EiYyDgL0xFOt5w=s900-c-k-c0x00ffffff-no-rj",
+  "game": "gorilla-tag",
+  "subscribers": 108000,
+  "subscribersText": "108K subscribers",
+  "videoCount": 390,
+  "description": "I create the maps, you play the maps, I create the videos, you watch the videos. Now subscribe because I create so much https://www.youtube.com/channel/UCCxIWs9kbkWMupJhvZ01fTg?sub_confirmation=1",
+  "collectedAt": "2026-10-23",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 13500,
+    "outliers": [
+      {
+        "id": "wK4lixw7p4M",
+        "multiple": 81.5
+      },
+      {
+        "id": "3gpJ-X9yvTc",
+        "multiple": 20.9
+      },
+      {
+        "id": "FRND8l9e9RA",
+        "multiple": 18.1
+      },
+      {
+        "id": "vfRUlX7dVRk",
+        "multiple": 12.6
+      },
+      {
+        "id": "9Pr7bLo8mHk",
+        "multiple": 11.4
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "FRND8l9e9RA",
+      "title": "I Taught a Gorilla How to Play Gorilla Tag (seriously)",
+      "views": 245000,
+      "viewsText": "245K views",
+      "membersOnly": false,
+      "duration": "8:06",
+      "durationSec": 486,
+      "published": "5 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/FRND8l9e9RA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/FRND8l9e9RA/maxresdefault.jpg"
+    },
+    {
+      "id": "wK4lixw7p4M",
+      "title": "I Taught a Fly How to Play Gorilla Tag (seriously)",
+      "views": 1100000,
+      "viewsText": "1.1M views",
+      "membersOnly": false,
+      "duration": "8:40",
+      "durationSec": 520,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/wK4lixw7p4M/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/wK4lixw7p4M/maxresdefault.jpg"
+    },
+    {
+      "id": "TAJ3FgEiLZ4",
+      "title": "I Added SPIDERMAN into Gorilla Tag…",
+      "views": 98304,
+      "viewsText": "98,304 views",
+      "membersOnly": false,
+      "duration": "12:27",
+      "durationSec": 747,
+      "published": "2026-09-05",
+      "thumbnail": "https://i.ytimg.com/vi/TAJ3FgEiLZ4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/TAJ3FgEiLZ4/maxresdefault.jpg",
+      "collab": true
+    },
+    {
+      "id": "srxK-Saws2M",
+      "title": "I Added Laser Tag into Gorilla Tag…",
+      "views": 7588,
+      "viewsText": "7,588 views",
+      "membersOnly": false,
+      "duration": "10:21",
+      "durationSec": 621,
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/srxK-Saws2M/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/srxK-Saws2M/maxresdefault.jpg",
+      "collab": true
+    },
+    {
+      "id": "3gpJ-X9yvTc",
+      "title": "I Trained an AI to Beat Gorilla Tag’s Fastest Player",
+      "views": 282000,
+      "viewsText": "282K views",
+      "membersOnly": false,
+      "duration": "8:40",
+      "durationSec": 520,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/3gpJ-X9yvTc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/3gpJ-X9yvTc/maxresdefault.jpg"
+    },
+    {
+      "id": "86mGzj4ph4A",
+      "title": "NEW Gorilla Tag Merch! | Back2School Bundle",
+      "views": 3600,
+      "viewsText": "3.6K views",
+      "membersOnly": false,
+      "duration": "3:55",
+      "durationSec": 235,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/86mGzj4ph4A/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/86mGzj4ph4A/maxresdefault.jpg"
+    },
+    {
+      "id": "CDvrG3-U98E",
+      "title": "An AI Joined My Code... It Was Terrifying",
+      "views": 10000,
+      "viewsText": "10K views",
+      "membersOnly": false,
+      "duration": "11:12",
+      "durationSec": 672,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/CDvrG3-U98E/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/CDvrG3-U98E/maxresdefault.jpg"
+    },
+    {
+      "id": "vfRUlX7dVRk",
+      "title": "I Added Meccha Chameleon into Gorilla Tag…",
+      "views": 170684,
+      "viewsText": "170,684 views",
+      "membersOnly": false,
+      "duration": "10:55",
+      "durationSec": 655,
+      "published": "2026-07-11",
+      "thumbnail": "https://i.ytimg.com/vi/vfRUlX7dVRk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/vfRUlX7dVRk/maxresdefault.jpg",
+      "collab": true
+    },
+    {
+      "id": "9Pr7bLo8mHk",
+      "title": "I Added Verity into Gorilla Tag…",
+      "views": 154000,
+      "viewsText": "154K views",
+      "membersOnly": false,
+      "duration": "9:41",
+      "durationSec": 581,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/9Pr7bLo8mHk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/9Pr7bLo8mHk/maxresdefault.jpg"
+    },
+    {
+      "id": "C7fiyKgkZ8s",
+      "title": "SuperCatCraze Face Reveal...",
+      "views": 7500,
+      "viewsText": "7.5K views",
+      "membersOnly": false,
+      "duration": "2:19",
+      "durationSec": 139,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/C7fiyKgkZ8s/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/C7fiyKgkZ8s/maxresdefault.jpg"
+    },
+    {
+      "id": "WDBuocNRvz4",
+      "title": "I Made Gorilla Tag Look Like a Horror Game...",
+      "views": 84000,
+      "viewsText": "84K views",
+      "membersOnly": false,
+      "duration": "11:18",
+      "durationSec": 678,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/WDBuocNRvz4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/WDBuocNRvz4/maxresdefault.jpg"
+    },
+    {
+      "id": "aNP_g6ZbLTU",
+      "title": "I Added Backrooms Monsters into Gorilla Tag…",
+      "views": 60000,
+      "viewsText": "60K views",
+      "membersOnly": false,
+      "duration": "10:36",
+      "durationSec": 636,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/aNP_g6ZbLTU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/aNP_g6ZbLTU/maxresdefault.jpg"
+    },
+    {
+      "id": "ta0rGPoOStQ",
+      "title": "I Added UG into Gorilla Tag…",
+      "views": 57000,
+      "viewsText": "57K views",
+      "membersOnly": false,
+      "duration": "13:22",
+      "durationSec": 802,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/ta0rGPoOStQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ta0rGPoOStQ/maxresdefault.jpg"
+    },
+    {
+      "id": "ONO-hsqjVDE",
+      "title": "How To Make Custom Maps in Gorilla Tag! V6",
+      "views": 18000,
+      "viewsText": "18K views",
+      "membersOnly": false,
+      "duration": "15:14",
+      "durationSec": 914,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/ONO-hsqjVDE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ONO-hsqjVDE/maxresdefault.jpg"
+    },
+    {
+      "id": "vlDNTUpV3jU",
+      "title": "How to Make Gorilla Shirts in 2026!",
+      "views": 11000,
+      "viewsText": "11K views",
+      "membersOnly": false,
+      "duration": "6:04",
+      "durationSec": 364,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/vlDNTUpV3jU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/vlDNTUpV3jU/maxresdefault.jpg"
+    },
+    {
+      "id": "V2BofQ_ZFwc",
+      "title": "I Added Jiggle Physics to Gorilla Tag",
+      "views": 16000,
+      "viewsText": "16K views",
+      "membersOnly": false,
+      "duration": "13:07",
+      "durationSec": 787,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/V2BofQ_ZFwc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/V2BofQ_ZFwc/maxresdefault.jpg"
+    },
+    {
+      "id": "AizT7Ddd5I8",
+      "title": "I Added BRAINROT into Gorilla Tag…",
+      "views": 2121,
+      "viewsText": "2,121 views",
+      "membersOnly": false,
+      "duration": "1:01:12",
+      "durationSec": 3672,
+      "published": "2026-05-02",
+      "thumbnail": "https://i.ytimg.com/vi/AizT7Ddd5I8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/AizT7Ddd5I8/maxresdefault.jpg",
+      "collab": true
+    },
+    {
+      "id": "wnABzWU7_Wc",
+      "title": "I Got My Own Creator Store...",
+      "views": 59000,
+      "viewsText": "59K views",
+      "membersOnly": false,
+      "duration": "11:11",
+      "durationSec": 671,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/wnABzWU7_Wc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/wnABzWU7_Wc/maxresdefault.jpg"
+    },
+    {
+      "id": "zBJFV6tD1Rw",
+      "title": "I Turned YOUR Comments Into Cosmetics!",
+      "views": 6400,
+      "viewsText": "6.4K views",
+      "membersOnly": false,
+      "duration": "11:36",
+      "durationSec": 696,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/zBJFV6tD1Rw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/zBJFV6tD1Rw/maxresdefault.jpg"
+    },
+    {
+      "id": "4aPLzMkNda0",
+      "title": "I Added Your Terrible Ideas into Gorilla Tag",
+      "views": 7100,
+      "viewsText": "7.1K views",
+      "membersOnly": false,
+      "duration": "14:43",
+      "durationSec": 883,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/4aPLzMkNda0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/4aPLzMkNda0/maxresdefault.jpg"
+    },
+    {
+      "id": "2rt1i0pmsnc",
+      "title": "I Added MINECRAFT into Gorilla Tag...",
+      "views": 10000,
+      "viewsText": "10K views",
+      "membersOnly": false,
+      "duration": "10:41",
+      "durationSec": 641,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/2rt1i0pmsnc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/2rt1i0pmsnc/maxresdefault.jpg"
+    },
+    {
+      "id": "mN_DYkgt6iY",
+      "title": "I Added Poppy Playtime into Gorilla Tag",
+      "views": 13000,
+      "viewsText": "13K views",
+      "membersOnly": false,
+      "duration": "8:18",
+      "durationSec": 498,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/mN_DYkgt6iY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/mN_DYkgt6iY/maxresdefault.jpg"
+    },
+    {
+      "id": "nWjXXBtFCbM",
+      "title": "I Created Gorilla Tag's NEXT Live Event!",
+      "views": 66000,
+      "viewsText": "66K views",
+      "membersOnly": false,
+      "duration": "9:39",
+      "durationSec": 579,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/nWjXXBtFCbM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/nWjXXBtFCbM/maxresdefault.jpg"
+    },
+    {
+      "id": "aPYLC7FhKTw",
+      "title": "I Added You VS Homer into Gorilla Tag..",
+      "views": 77000,
+      "viewsText": "77K views",
+      "membersOnly": false,
+      "duration": "11:46",
+      "durationSec": 706,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/aPYLC7FhKTw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/aPYLC7FhKTw/maxresdefault.jpg"
+    },
+    {
+      "id": "4FWf4A7W0v4",
+      "title": "Scary Baboon is INSANE…",
+      "views": 1900,
+      "viewsText": "1.9K views",
+      "membersOnly": false,
+      "duration": "12:41",
+      "durationSec": 761,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/4FWf4A7W0v4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/4FWf4A7W0v4/maxresdefault.jpg"
+    },
+    {
+      "id": "xKEMjgrl5L8",
+      "title": "I Added ESCAPE TSUNAMIS for BRAINROTS into Gorilla Tag…",
+      "views": 6300,
+      "viewsText": "6.3K views",
+      "membersOnly": false,
+      "duration": "9:30",
+      "durationSec": 570,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/xKEMjgrl5L8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/xKEMjgrl5L8/maxresdefault.jpg"
+    },
+    {
+      "id": "p_vF2eOU1UA",
+      "title": "I Added Gorilla Tag into Roblox…",
+      "views": 11000,
+      "viewsText": "11K views",
+      "membersOnly": false,
+      "duration": "9:35",
+      "durationSec": 575,
+      "published": "9 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/p_vF2eOU1UA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/p_vF2eOU1UA/maxresdefault.jpg"
+    },
+    {
+      "id": "77K2GZWbSjU",
+      "title": "Last to Leave the Circle Wins $10,000 Shiny Rocks…",
+      "views": 14000,
+      "viewsText": "14K views",
+      "membersOnly": false,
+      "duration": "11:51",
+      "durationSec": 711,
+      "published": "9 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/77K2GZWbSjU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/77K2GZWbSjU/maxresdefault.jpg"
+    },
+    {
+      "id": "y3yuVFOBir8",
+      "title": "I TROLLED As a PRESENT In Gorilla Tag...",
+      "views": 4500,
+      "viewsText": "4.5K views",
+      "membersOnly": false,
+      "duration": "11:50",
+      "durationSec": 710,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/y3yuVFOBir8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/y3yuVFOBir8/maxresdefault.jpg"
+    },
+    {
+      "id": "1YOVnRmuLQs",
+      "title": "STRANGER THINGS Got Added To Gorilla Tag...",
+      "views": 7700,
+      "viewsText": "7.7K views",
+      "membersOnly": false,
+      "duration": "8:08",
+      "durationSec": 488,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/1YOVnRmuLQs/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/1YOVnRmuLQs/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "SuperCatCrazeGT builds custom Gorilla Tag maps that bring in characters and ideas from other games, plus tutorials and experiments with AI. Most thumbnails show his blue gorilla in a white pot hat next to the added character, with one short word and a red arrow; his most-viewed recent videos drop that template for one strange, photo-like image.",
+    "niche": "Gorilla Tag custom maps, crossovers and experiments",
+    "styleTraits": [
+      {
+        "title": "One template for the map series",
+        "detail": "17 of the 30 thumbnails in the sample show his blue gorilla in a white cooking-pot hat. In the 'I Added X' videos it sits on the left, with a one-word question in white outlined letters at the top right ('Verity?', 'UGVR?', 'Brainrot?', 'Roblox?') and a thick red curved arrow pointing at the guest. Each new episode only changes the guest."
+      },
+      {
+        "title": "Red marks what is new",
+        "detail": "When the caption has two parts, the new thing is in red and the rest in white: 'Huggy' red with 'Wuggy' white, 'You VS' white with 'Homer' red, 'The' white with 'Backrooms...' red. The arrows are red too, so the eye lands on the guest first."
+      },
+      {
+        "title": "The biggest recent videos leave the avatar out",
+        "detail": "The 4 most-viewed videos in the sample (the fly, the AI race, the real gorilla and Meccha Gorilla) don't show the blue pot-hat gorilla at all. Each is built around one odd image: a photo-real fly or gorilla wearing a VR headset, a crowd of rainbow gorillas racing one red one, a gorilla painted into a brick wall."
+      },
+      {
+        "title": "Same frame, very different results",
+        "detail": "Inside the template, views vary a lot: 'I Added Verity into Gorilla Tag…' reached about 154,000, 'I Added UG into Gorilla Tag…' about 57,000 and 'I Added MINECRAFT into Gorilla Tag...' about 10,000, with almost the same layout. The guest probably matters more than the frame."
+      },
+      {
+        "title": "Bright lettering is not a guarantee",
+        "detail": "Some one-offs use loud multicoloured titles: 'LASER TAG' in blocky arcade letters, each a different colour, above three gorillas firing a laser through neon beams. That thumbnail is one of the most striking in the sample, yet 'I Added Laser Tag into Gorilla Tag…' had 7,588 views, below the 13,500 median."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "wK4lixw7p4M",
+        "why": "About 1.1 million views, 81.5 times the 13,500 median, three weeks after upload. A photo-real fly wears a white VR headset with coloured wires running to a monitor that shows Gorilla Tag, under a red 'Fly' label and arrow. The image is absurd but readable in a second, and '(seriously)' in the title answers the doubt it raises. The follow-up with a real gorilla in a headset had about 245,000 views (18.1 times the median) at five days old, so the idea may be repeatable."
+      },
+      {
+        "id": "3gpJ-X9yvTc",
+        "why": "About 282,000 views, 20.9 times the median. A crowd of rainbow-coloured gorillas labelled 'HUMANS' sits behind one red gorilla labelled 'AI', with a red arrow on it and a black-and-white checkered finish line on the right. Two words and a race line tell the story: one against many, who wins? The title adds the stake, beating the game's fastest player."
+      },
+      {
+        "id": "vfRUlX7dVRk",
+        "why": "170,684 views, 12.6 times the median. 'MEcCHA GORILLA' is written in rainbow letters across a red brick wall, and a gorilla painted half white, half brick is pressed against it as if camouflaged. The thumbnail renames the game Meccha Chameleon to fit Gorilla Tag and shows its blending trick instead of explaining it. It is a collaboration listed on several channels, which may also have widened its reach."
+      }
+    ],
+    "lessons": [
+      "Build a repeatable frame for a series (avatar, guest, red arrow, one word) so each new episode changes only one thing.",
+      "Colour only the new element in red, in the caption and the arrow, and keep the rest white.",
+      "Rename a borrowed idea to fit your game ('Meccha Gorilla') and show its key trick in the picture.",
+      "For a bigger idea, try one absurd real-world image, like an animal in a VR headset, and let the title answer the doubt ('(seriously)').",
+      "When the same template gets 10,000 views on one video and 154,000 on another, change the idea before redesigning the layout."
+    ],
+    "experiment": "For your next 'I added X into my game' video, make two thumbnails. A uses your usual layout: your avatar, a red arrow and the guest. B drops the avatar and shows one strange image of the idea, with the guest's name rewritten to fit your game in big colourful letters. Compare them in YouTube's Test & Compare on watch time share.",
+    "faq": [
+      {
+        "q": "How many subscribers does SuperCatCrazeGT have?",
+        "a": "As of 23 October 2026, SuperCatCrazeGT has about 108K subscribers (YouTube's rounded figure) and around 390 videos. Across the 30 recent uploads we sampled, the median was 13,500 views. A few went far beyond it: 'I Taught a Fly How to Play Gorilla Tag (seriously)' had about 1.1 million views three weeks after upload."
+      },
+      {
+        "q": "What does SuperCatCrazeGT make videos about?",
+        "a": "He makes custom maps for Gorilla Tag, the VR game where players move as gorillas using only their arms, and films people playing them. Many videos add something from outside the game, such as Spider-Man, Laser Tag, Minecraft or the Backrooms. Lately he also posts experiments, like training an AI or teaching a fly to play, plus map-making tutorials, cosmetics and merch updates."
+      },
+      {
+        "q": "What do SuperCatCrazeGT's thumbnails look like?",
+        "a": "Most show his blue gorilla in a white pot hat, a red curved arrow and the added character, under a short white word like 'Verity?' or 'Minecraft'. His most-viewed recent videos use another style: one striking image, such as a fly or a real gorilla wearing a VR headset, or a crowd of gorillas labelled 'HUMANS' against one labelled 'AI'."
+      },
+      {
+        "q": "What game does SuperCatCrazeGT play?",
+        "a": "Gorilla Tag. Almost every video in our sample is set in Gorilla Tag or its custom maps, with the occasional reverse crossover such as 'I Added Gorilla Tag into Roblox…'. The crossovers borrow characters and ideas from other games, but Gorilla Tag's arm-swinging movement stays at the centre."
+      }
+    ],
+    "reviewedAt": "2026-10-23"
+  }
+}

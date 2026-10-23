@@ -1,0 +1,470 @@
+{
+  "slug": "hazard",
+  "status": "draft",
+  "channelId": "UCI1-J45WXprOQQ_m9pmfW9A",
+  "name": "Hazard",
+  "handle": "HazardousHDTV",
+  "url": "https://www.youtube.com/channel/UCI1-J45WXprOQQ_m9pmfW9A",
+  "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k1-xdk0JwE4E9XSXIfRXMQnKIUfK_sKaoBr-HYK7_vHbY=s900-c-k-c0x00ffffff-no-rj",
+  "game": "gta-6",
+  "subscribers": 711000,
+  "subscribersText": "711K subscribers",
+  "videoCount": 4700,
+  "description": "-I upload daily gaming videos from Red Dead Redemption 2, RDR2, Red Dead Online - RDR2 News, RDR2 Information, Red Dead Online & Much More! Within my playlist of Red Dead Online, Red Dead Redemption 2 and RDR2 you can find tips and tricks, news and information videos like... ▶Red Dead Redemption 2 (RDR2) ▶Red Dead Redemption 2 Gameplay (RDR2 Gameplay) ▶Red Dead Redemption 2 News (RDR2 News) ▶Red D",
+  "collectedAt": "2026-10-23",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 65500,
+    "outliers": [
+      {
+        "id": "zUMj9DMSVVI",
+        "multiple": 5.7
+      },
+      {
+        "id": "BQvC8KDhgqw",
+        "multiple": 4.5
+      },
+      {
+        "id": "cnF7uagbdNQ",
+        "multiple": 3
+      },
+      {
+        "id": "6-p4hdQSWnc",
+        "multiple": 2.1
+      },
+      {
+        "id": "VZ29sqFn_mE",
+        "multiple": 1.9
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "wVjKA7MmfSA",
+      "title": "GTA 6 Just Revealed the DARK Truth About Jason Duval...",
+      "views": 33000,
+      "viewsText": "33K views",
+      "membersOnly": false,
+      "duration": "12:54",
+      "durationSec": 774,
+      "published": "12 hours ago",
+      "thumbnail": "https://i.ytimg.com/vi/wVjKA7MmfSA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/wVjKA7MmfSA/maxresdefault.jpg"
+    },
+    {
+      "id": "mlzLXpI3XS4",
+      "title": "ALL Major CHANGES & Rewards in The NEW GTA Online UPDATE! Things You NEED to BUY! (New GTA5 Update)",
+      "views": 37000,
+      "viewsText": "37K views",
+      "membersOnly": false,
+      "duration": "14:59",
+      "durationSec": 899,
+      "published": "15 hours ago",
+      "thumbnail": "https://i.ytimg.com/vi/mlzLXpI3XS4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/mlzLXpI3XS4/maxresdefault.jpg"
+    },
+    {
+      "id": "w-NGfFCIsK0",
+      "title": "Rockstar Just Made A VERY Strange Decision... The NEW GTA Online UPDATE Today! (GTA5 New Update)",
+      "views": 75000,
+      "viewsText": "75K views",
+      "membersOnly": false,
+      "duration": "8:50",
+      "durationSec": 530,
+      "published": "1 day ago",
+      "thumbnail": "https://i.ytimg.com/vi/w-NGfFCIsK0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/w-NGfFCIsK0/maxresdefault.jpg"
+    },
+    {
+      "id": "JfniaiMm458",
+      "title": "GTA 6 is About to Take Rockstar's Open Worlds to a WHOLE NEW LEVEL...",
+      "views": 71000,
+      "viewsText": "71K views",
+      "membersOnly": false,
+      "duration": "13:18",
+      "durationSec": 798,
+      "published": "1 day ago",
+      "thumbnail": "https://i.ytimg.com/vi/JfniaiMm458/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/JfniaiMm458/maxresdefault.jpg"
+    },
+    {
+      "id": "GQ0FCIUHFHc",
+      "title": "Top 5 BEST GTA 5 RP Servers for 2026",
+      "views": 5400,
+      "viewsText": "5.4K views",
+      "membersOnly": false,
+      "duration": "10:14",
+      "durationSec": 614,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/GQ0FCIUHFHc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/GQ0FCIUHFHc/maxresdefault.jpg"
+    },
+    {
+      "id": "KUcGwiuIIZ0",
+      "title": "It's ALL Going Away.. Don't MISS THIS Before The NEW GTA Online Update! (New GTA5 Update)",
+      "views": 44000,
+      "viewsText": "44K views",
+      "membersOnly": false,
+      "duration": "16:07",
+      "durationSec": 967,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/KUcGwiuIIZ0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/KUcGwiuIIZ0/maxresdefault.jpg"
+    },
+    {
+      "id": "QIXlSfXc5gE",
+      "title": "The Best Money Tips for Making Millions with EVERY Business in GTA Online",
+      "views": 34000,
+      "viewsText": "34K views",
+      "membersOnly": false,
+      "duration": "14:32",
+      "durationSec": 872,
+      "published": "3 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/QIXlSfXc5gE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/QIXlSfXc5gE/maxresdefault.jpg"
+    },
+    {
+      "id": "DfucLqXWx8c",
+      "title": "I Tried to Become a Billionaire in GTA Online Before GTA 6…",
+      "views": 26000,
+      "viewsText": "26K views",
+      "membersOnly": false,
+      "duration": "7:08:58",
+      "durationSec": 25738,
+      "published": "3 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/DfucLqXWx8c/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/DfucLqXWx8c/maxresdefault.jpg"
+    },
+    {
+      "id": "zUMj9DMSVVI",
+      "title": "GTA 6 is FINALLY Adding Features We've Wanted for YEARS...",
+      "views": 371000,
+      "viewsText": "371K views",
+      "membersOnly": false,
+      "duration": "9:44",
+      "durationSec": 584,
+      "published": "4 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/zUMj9DMSVVI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/zUMj9DMSVVI/maxresdefault.jpg"
+    },
+    {
+      "id": "YogrX5D4Sz8",
+      "title": "Fastest Way to Complete All Cayo Perico Setups in GTA Online (2026)",
+      "views": 27000,
+      "viewsText": "27K views",
+      "membersOnly": false,
+      "duration": "11:29",
+      "durationSec": 689,
+      "published": "4 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/YogrX5D4Sz8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/YogrX5D4Sz8/maxresdefault.jpg"
+    },
+    {
+      "id": "BQvC8KDhgqw",
+      "title": "GTA 6: EVERYTHING We Know So Far... (The ULTIMATE Breakdown)",
+      "views": 295000,
+      "viewsText": "295K views",
+      "membersOnly": false,
+      "duration": "3:02:43",
+      "durationSec": 10963,
+      "published": "5 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/BQvC8KDhgqw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/BQvC8KDhgqw/maxresdefault.jpg"
+    },
+    {
+      "id": "rS43IV8TI4g",
+      "title": "The ULTIMATE Vehicle Cargo Warehouse Guide to Make MILLIONS in GTA Online",
+      "views": 30000,
+      "viewsText": "30K views",
+      "membersOnly": false,
+      "duration": "12:47",
+      "durationSec": 767,
+      "published": "5 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/rS43IV8TI4g/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/rS43IV8TI4g/maxresdefault.jpg"
+    },
+    {
+      "id": "K8mWZvCQlmw",
+      "title": "GTA 6's NEW Trailer FINALLY Reveals What Rockstar Has Been Hiding...",
+      "views": 71000,
+      "viewsText": "71K views",
+      "membersOnly": false,
+      "duration": "12:53",
+      "durationSec": 773,
+      "published": "6 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/K8mWZvCQlmw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/K8mWZvCQlmw/maxresdefault.jpg"
+    },
+    {
+      "id": "VZ29sqFn_mE",
+      "title": "GTA 6: 15 Things Rockstar Wants You to Know Before Launch...",
+      "views": 125000,
+      "viewsText": "125K views",
+      "membersOnly": false,
+      "duration": "12:49",
+      "durationSec": 769,
+      "published": "6 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/VZ29sqFn_mE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/VZ29sqFn_mE/maxresdefault.jpg"
+    },
+    {
+      "id": "LIVWTO77YAA",
+      "title": "GTA 6's ENTIRE Map Explored in 3D! (ALL HIDDEN LOCATIONS)",
+      "views": 61000,
+      "viewsText": "61K views",
+      "membersOnly": false,
+      "duration": "10:15",
+      "durationSec": 615,
+      "published": "7 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/LIVWTO77YAA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/LIVWTO77YAA/maxresdefault.jpg"
+    },
+    {
+      "id": "EnNJkwsQqP4",
+      "title": "ALL Major CHANGES & Rewards in The NEW GTA Online UPDATE! Things You NEED to BUY! (New GTA5 Update)",
+      "views": 69000,
+      "viewsText": "69K views",
+      "membersOnly": false,
+      "duration": "15:52",
+      "durationSec": 952,
+      "published": "7 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/EnNJkwsQqP4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/EnNJkwsQqP4/maxresdefault.jpg"
+    },
+    {
+      "id": "O-SAItsogDA",
+      "title": "Rockstar Just Gave Players A BIG Opportunity... The NEW GTA Online UPDATE Today! (GTA5 New Update)",
+      "views": 80000,
+      "viewsText": "80K views",
+      "membersOnly": false,
+      "duration": "8:26",
+      "durationSec": 506,
+      "published": "8 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/O-SAItsogDA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/O-SAItsogDA/maxresdefault.jpg"
+    },
+    {
+      "id": "cnF7uagbdNQ",
+      "title": "GTA 6 Lets You Do Things You NEVER Thought Were Possible...",
+      "views": 199000,
+      "viewsText": "199K views",
+      "membersOnly": false,
+      "duration": "11:08",
+      "durationSec": 668,
+      "published": "8 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/cnF7uagbdNQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/cnF7uagbdNQ/maxresdefault.jpg"
+    },
+    {
+      "id": "lGZuQLUKrqQ",
+      "title": "GTA 6 PC Release in 2027! Here's Everything We Know...",
+      "views": 28000,
+      "viewsText": "28K views",
+      "membersOnly": false,
+      "duration": "11:19",
+      "durationSec": 679,
+      "published": "9 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/lGZuQLUKrqQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/lGZuQLUKrqQ/maxresdefault.jpg"
+    },
+    {
+      "id": "Sl_KiFtfSuI",
+      "title": "Rockstar is REMOVING it ALL.. Don't MISS THIS Before The NEW GTA Online Update! (New GTA5 Update)",
+      "views": 52000,
+      "viewsText": "52K views",
+      "membersOnly": false,
+      "duration": "18:09",
+      "durationSec": 1089,
+      "published": "9 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/Sl_KiFtfSuI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Sl_KiFtfSuI/maxresdefault.jpg"
+    },
+    {
+      "id": "C-_pyBPFn8g",
+      "title": "6 UNBELIEVABLE Things You Can Do in GTA 6",
+      "views": 83000,
+      "viewsText": "83K views",
+      "membersOnly": false,
+      "duration": "11:31",
+      "durationSec": 691,
+      "published": "10 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/C-_pyBPFn8g/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/C-_pyBPFn8g/maxresdefault.jpg"
+    },
+    {
+      "id": "RNypAqB28V8",
+      "title": "How to Make $10M PER DAY in GTA Online",
+      "views": 68000,
+      "viewsText": "68K views",
+      "membersOnly": false,
+      "duration": "11:49",
+      "durationSec": 709,
+      "published": "10 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/RNypAqB28V8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/RNypAqB28V8/maxresdefault.jpg"
+    },
+    {
+      "id": "xsxAOsWn7dk",
+      "title": "GTA 6 is About to BREAK Every Rule of Grand Theft Auto...",
+      "views": 112000,
+      "viewsText": "112K views",
+      "membersOnly": false,
+      "duration": "12:35",
+      "durationSec": 755,
+      "published": "11 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/xsxAOsWn7dk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/xsxAOsWn7dk/maxresdefault.jpg"
+    },
+    {
+      "id": "CA9Um1JGrxk",
+      "title": "The ULTIMATE Cayo Perico SOLO Elite Challenge Stealth Guide in GTA Online (Updated 2026)",
+      "views": 42000,
+      "viewsText": "42K views",
+      "membersOnly": false,
+      "duration": "12:09",
+      "durationSec": 729,
+      "published": "11 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/CA9Um1JGrxk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/CA9Um1JGrxk/maxresdefault.jpg"
+    },
+    {
+      "id": "6-p4hdQSWnc",
+      "title": "Everything We Know About GTA 6's Map So Far",
+      "views": 135000,
+      "viewsText": "135K views",
+      "membersOnly": false,
+      "duration": "12:25",
+      "durationSec": 745,
+      "published": "12 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/6-p4hdQSWnc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/6-p4hdQSWnc/maxresdefault.jpg"
+    },
+    {
+      "id": "ThrP6riqpWI",
+      "title": "The ONLY GARMENT FACTORY Money Guide You Need to Make MILLIONS Completely SOLO in GTA Online (2026)",
+      "views": 36000,
+      "viewsText": "36K views",
+      "membersOnly": false,
+      "duration": "21:38",
+      "durationSec": 1298,
+      "published": "12 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/ThrP6riqpWI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ThrP6riqpWI/maxresdefault.jpg"
+    },
+    {
+      "id": "XblbPIKwTfg",
+      "title": "GTA 6 LEAKER IS BACK... And This Is His BIGGEST Leak Yet!",
+      "views": 81000,
+      "viewsText": "81K views",
+      "membersOnly": false,
+      "duration": "12:05",
+      "durationSec": 725,
+      "published": "13 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/XblbPIKwTfg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/XblbPIKwTfg/maxresdefault.jpg"
+    },
+    {
+      "id": "vqJW5iIWaMs",
+      "title": "THIS PRINTS MILLIONS! BEST WAYS To Make Millions SOLO After UPDATE in GTA Online! (GTA5 Fast Money)",
+      "views": 63000,
+      "viewsText": "63K views",
+      "membersOnly": false,
+      "duration": "25:11",
+      "durationSec": 1511,
+      "published": "13 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/vqJW5iIWaMs/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/vqJW5iIWaMs/maxresdefault.jpg"
+    },
+    {
+      "id": "GhexsF9jnnM",
+      "title": "GTA 6 Has WAY More Gameplay Features Than We Realized...",
+      "views": 37000,
+      "viewsText": "37K views",
+      "membersOnly": false,
+      "duration": "11:54",
+      "durationSec": 714,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/GhexsF9jnnM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/GhexsF9jnnM/maxresdefault.jpg"
+    },
+    {
+      "id": "l_c2YnL80fo",
+      "title": "ALL Major CHANGES & Rewards in The NEW GTA Online UPDATE! Things You NEED to BUY! (New GTA5 Update)",
+      "views": 71000,
+      "viewsText": "71K views",
+      "membersOnly": false,
+      "duration": "18:38",
+      "durationSec": 1118,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/l_c2YnL80fo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/l_c2YnL80fo/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "Hazard posts about two videos a day on GTA 6 news and GTA Online updates and money guides. Each series has its own look: cinematic GTA 6 scenes under a two-colour headline bar, a red poster panel for weekly GTA Online updates, and a smiling character on piles of cash for money guides.",
+    "niche": "GTA 6 news and GTA Online updates and money guides",
+    "styleTraits": [
+      {
+        "title": "A different template for each series",
+        "detail": "Weekly GTA Online update videos use a fixed layout: a red, grungy panel on the left with an orange and a blue Rockstar logo and stacked white capitals ('NEW UPDATE MAJOR CHANGES & UNLOCKS!'), and two car screenshots stacked on the right. Eight of the 30 recent videos use it."
+      },
+      {
+        "title": "GTA 6: one cinematic scene, full frame",
+        "detail": "GTA 6 videos use a single polished, photo-real scene filling the image: a man at an ATM in a shop, two people racing kayaks, the map seen from above, a close-up of Jason. A small GTA VI logo sits in the bottom-left corner."
+      },
+      {
+        "title": "Two-colour headline in a bar",
+        "detail": "Headlines run across the top, often inside a black or red rounded bar, with the key word in a second colour: 'GETTING REAL' in white and yellow, 'LITERALLY EVERYTHING' in white and magenta, 'MAKE MILLIONS FAST' in white and green."
+      },
+      {
+        "title": "Money guides: a character on cash",
+        "detail": "GTA Online money guides show a smiling character in a red hoodie, arms crossed or holding a document, with green banknote piles along the bottom and green '+$2,200,000' style figures. The GTA Online logo sits bottom-left."
+      },
+      {
+        "title": "Red arrows and circles on details",
+        "detail": "Red arrows and circles point at the detail the video is about: a tyre being removed, the small GTA 5 map circled next to the huge GTA 6 map, a clue in a trailer frame."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "zUMj9DMSVVI",
+        "why": "About 371,000 views, 5.7 times the median, in only four days. A man in a blue T-shirt takes cash from an ATM inside a convenience store, under 'GETTING REAL' in white and yellow. It shows one everyday action instead of a generic hero shot, so the promise of new realistic features is visible, not just stated."
+      },
+      {
+        "id": "BQvC8KDhgqw",
+        "why": "About 295,000 views, 4.5 times the median, for a three-hour breakdown. The two lead characters sit on an old pickup under 'LITERALLY EVERYTHING' in white and magenta. The text promises completeness, which fits a very long video, and the familiar characters make the topic clear without reading."
+      },
+      {
+        "id": "cnF7uagbdNQ",
+        "why": "About 199,000 views, 3.0 times the median. A man crouches to take a wheel off a red muscle car, with a 'SELL TYRES' label and a red arrow on the wheel, under '10 INSANE FEATURES'. One specific, slightly surprising mechanic is shown up close, which may make the list feel concrete."
+      }
+    ],
+    "lessons": [
+      "Show one concrete action ('withdrawing cash', 'removing a tyre') rather than a generic character pose. Hazard's top three recent thumbnails each show one specific thing happening.",
+      "Give each recurring series its own template so regular viewers know what they are getting. Hazard's weekly update videos look almost identical and stay close to the median (about 37,000 to 80,000 views).",
+      "Put the headline in a bar and colour the one word that matters.",
+      "Be honest about topic versus design: all five of Hazard's top recent videos are about GTA 6, so the topic probably pulls more than any single design choice."
+    ],
+    "experiment": "For your next feature or news video, test a thumbnail that shows a single specific action from the game against your usual collage or character pose, with the same headline on both.",
+    "faq": [
+      {
+        "q": "How many subscribers does Hazard have?",
+        "a": "As of 23 October 2026, Hazard (@HazardousHDTV) has about 711K subscribers and around 4,700 videos. The latest 30 long videos were posted in about two weeks, with a median of about 65,500 views. The biggest, 'GTA 6 is FINALLY Adding Features We've Wanted for YEARS...', has about 371,000."
+      },
+      {
+        "q": "What does Hazard make videos about?",
+        "a": "Two things. GTA 6 coverage ahead of its release: trailer breakdowns, leaks, map analysis and feature lists. And GTA Online: weekly update recaps, money-making guides for businesses, Cayo Perico heist guides, a long billionaire challenge and lists of GTA 5 roleplay servers."
+      },
+      {
+        "q": "What do Hazard's thumbnails look like?",
+        "a": "Polished, photo-real game scenes with a big two-colour headline at the top, often in a black or red bar. GTA Online updates use a red poster panel with two Rockstar logos next to car screenshots, and money guides show a smiling character in a red hoodie on piles of green cash. Red arrows and circles point at details."
+      },
+      {
+        "q": "What game does Hazard play?",
+        "a": "Grand Theft Auto. The channel covers GTA 6 news and analysis before its release and plays GTA Online (the online mode of GTA 5), with occasional videos on GTA 5 roleplay servers and Red Dead Redemption 2 comparisons."
+      }
+    ],
+    "reviewedAt": "2026-10-23"
+  }
+}

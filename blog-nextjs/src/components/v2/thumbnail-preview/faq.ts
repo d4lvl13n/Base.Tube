@@ -23,7 +23,7 @@ export const FAQ: FaqItem[] = [
   },
   {
     q: 'Is this exactly how YouTube looks?',
-    a: 'It is a close recreation, not a copy. Proportions, colours and the two-line title cut-off follow the real layouts, but YouTube changes its design often, and the exact look depends on your device, screen size and fonts. Base.Tube is not affiliated with YouTube.',
+    a: 'It is a close recreation, not a copy. Proportions, colours and the two-line title cut-off follow the real layouts, but YouTube changes its design often, and the exact look depends on your device, screen size and fonts.',
   },
   {
     q: 'Does a good-looking preview mean more clicks?',

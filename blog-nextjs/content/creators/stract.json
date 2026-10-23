@@ -1,0 +1,471 @@
+{
+  "slug": "stract",
+  "status": "draft",
+  "channelId": "UCbTCJUYDKatfSB_EYBnEghg",
+  "name": "Stract",
+  "handle": "Stracts",
+  "url": "https://www.youtube.com/channel/UCbTCJUYDKatfSB_EYBnEghg",
+  "avatar": "https://yt3.googleusercontent.com/RJYuo2IK8bNCGor6U4jd0PyMMhZWO_ubup-hhVW8a7ha_HEpkVF2UaglkuOTrXBtyzd3aHXn0A=s900-c-k-c0x00ffffff-no-rj",
+  "game": "call-of-duty",
+  "subscribers": 422000,
+  "subscribersText": "422K subscribers",
+  "videoCount": 1900,
+  "description": "21 year old chasing his dream 💫 Content Creator for Xen For any business inquiries, review or advertising you can contact me through email here: stract@xenggs.com",
+  "collectedAt": "2026-10-23",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 18500,
+    "outliers": [
+      {
+        "id": "1ot6o4_Ayx4",
+        "multiple": 5.1
+      },
+      {
+        "id": "Chj8W3dMpdo",
+        "multiple": 4
+      },
+      {
+        "id": "hPQm06frIX4",
+        "multiple": 3
+      },
+      {
+        "id": "4DwOnkqAlCY",
+        "multiple": 3
+      },
+      {
+        "id": "rye6xJBgIPQ",
+        "multiple": 3
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "YuCNdpZYsRI",
+      "title": "Warzone but, 1 Win = Newer Loadout",
+      "views": 20000,
+      "viewsText": "20K views",
+      "membersOnly": false,
+      "duration": "1:03:58",
+      "durationSec": 3838,
+      "published": "3 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/YuCNdpZYsRI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/YuCNdpZYsRI/maxresdefault.jpg"
+    },
+    {
+      "id": "Z51Wq9wwEQ4",
+      "title": "I Tested the FIRST Meta from EVERY Season of BO7 Warzone!",
+      "views": 15000,
+      "viewsText": "15K views",
+      "membersOnly": false,
+      "duration": "58:17",
+      "durationSec": 3497,
+      "published": "6 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/Z51Wq9wwEQ4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Z51Wq9wwEQ4/maxresdefault.jpg"
+    },
+    {
+      "id": "VXsZp1hMUOk",
+      "title": "I Quit Warzone to Play HOOD Call of Duty & it's.. 😂",
+      "views": 15000,
+      "viewsText": "15K views",
+      "membersOnly": false,
+      "duration": "30:04",
+      "durationSec": 1804,
+      "published": "7 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/VXsZp1hMUOk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/VXsZp1hMUOk/maxresdefault.jpg"
+    },
+    {
+      "id": "A-7Uu-ee6Hk",
+      "title": "I Let My Viewers COACH ME to a Win on Warzone..",
+      "views": 16000,
+      "viewsText": "16K views",
+      "membersOnly": false,
+      "duration": "1:11:19",
+      "durationSec": 4279,
+      "published": "10 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/A-7Uu-ee6Hk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/A-7Uu-ee6Hk/maxresdefault.jpg"
+    },
+    {
+      "id": "hPQm06frIX4",
+      "title": "I Tested EVERY Loadout in Warzone!",
+      "views": 56000,
+      "viewsText": "56K views",
+      "membersOnly": false,
+      "duration": "3:01:03",
+      "durationSec": 10863,
+      "published": "12 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/hPQm06frIX4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/hPQm06frIX4/maxresdefault.jpg"
+    },
+    {
+      "id": "htsk8R7QiZU",
+      "title": "I Used the FIRST META Loadout from EVERY Warzone!",
+      "views": 12000,
+      "viewsText": "12K views",
+      "membersOnly": false,
+      "duration": "1:02:15",
+      "durationSec": 3735,
+      "published": "13 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/htsk8R7QiZU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/htsk8R7QiZU/maxresdefault.jpg"
+    },
+    {
+      "id": "Chj8W3dMpdo",
+      "title": "Warzone but, 1 Win = Older Loadout",
+      "views": 74000,
+      "viewsText": "74K views",
+      "membersOnly": false,
+      "duration": "1:04:08",
+      "durationSec": 3848,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/Chj8W3dMpdo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Chj8W3dMpdo/maxresdefault.jpg"
+    },
+    {
+      "id": "blJ-qIHvcW4",
+      "title": "Warzone, But I can ONLY Use BO6 Weapons",
+      "views": 14000,
+      "viewsText": "14K views",
+      "membersOnly": false,
+      "duration": "45:50",
+      "durationSec": 2750,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/blJ-qIHvcW4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/blJ-qIHvcW4/maxresdefault.jpg"
+    },
+    {
+      "id": "EjiDFsD_Y-U",
+      "title": "I Tested Casual vs Sweaty Loadouts on Warzone Rebirth Island",
+      "views": 29000,
+      "viewsText": "29K views",
+      "membersOnly": false,
+      "duration": "1:01:02",
+      "durationSec": 3662,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/EjiDFsD_Y-U/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/EjiDFsD_Y-U/maxresdefault.jpg"
+    },
+    {
+      "id": "n5oPu2En9ec",
+      "title": "I Built a Custom $600 CONTROLLER For Warzone 🤯",
+      "views": 15000,
+      "viewsText": "15K views",
+      "membersOnly": false,
+      "duration": "52:19",
+      "durationSec": 3139,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/n5oPu2En9ec/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/n5oPu2En9ec/maxresdefault.jpg"
+    },
+    {
+      "id": "TVz4gQ3UV1o",
+      "title": "I Tested PlayStation vs XBOX vs PC Loadouts on Warzone",
+      "views": 52000,
+      "viewsText": "52K views",
+      "membersOnly": false,
+      "duration": "1:03:02",
+      "durationSec": 3782,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/TVz4gQ3UV1o/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/TVz4gQ3UV1o/maxresdefault.jpg"
+    },
+    {
+      "id": "6UIfEmAUng0",
+      "title": "I Tested YouTube vs TikTok Loadouts on Warzone!",
+      "views": 16000,
+      "viewsText": "16K views",
+      "membersOnly": false,
+      "duration": "1:02:17",
+      "durationSec": 3737,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/6UIfEmAUng0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/6UIfEmAUng0/maxresdefault.jpg"
+    },
+    {
+      "id": "b1OJHkGa5HM",
+      "title": "Warzone's new DOOM Update is HERE & it's Insane..",
+      "views": 20000,
+      "viewsText": "20K views",
+      "membersOnly": false,
+      "duration": "40:00",
+      "durationSec": 2400,
+      "published": "4 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/b1OJHkGa5HM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/b1OJHkGa5HM/maxresdefault.jpg"
+    },
+    {
+      "id": "h3tzX4lV__M",
+      "title": "I Tested BOT vs PRO Loadouts on Warzone!",
+      "views": 15000,
+      "viewsText": "15K views",
+      "membersOnly": false,
+      "duration": "58:28",
+      "durationSec": 3508,
+      "published": "4 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/h3tzX4lV__M/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/h3tzX4lV__M/maxresdefault.jpg"
+    },
+    {
+      "id": "bvLbXkuhRmc",
+      "title": "Warzone's NEW #1 SMG is HERE & it's a PROBLEM..",
+      "views": 17000,
+      "viewsText": "17K views",
+      "membersOnly": false,
+      "duration": "51:45",
+      "durationSec": 3105,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/bvLbXkuhRmc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/bvLbXkuhRmc/maxresdefault.jpg"
+    },
+    {
+      "id": "1ot6o4_Ayx4",
+      "title": "Warzone's Halloween Update is HERE & its..",
+      "views": 95000,
+      "viewsText": "95K views",
+      "membersOnly": false,
+      "duration": "30:41",
+      "durationSec": 1841,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/1ot6o4_Ayx4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/1ot6o4_Ayx4/maxresdefault.jpg"
+    },
+    {
+      "id": "4DwOnkqAlCY",
+      "title": "I Tested Level 1-1000 Loadouts in Warzone Rebirth Island",
+      "views": 55000,
+      "viewsText": "55K views",
+      "membersOnly": false,
+      "duration": "2:10:45",
+      "durationSec": 7845,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/4DwOnkqAlCY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/4DwOnkqAlCY/maxresdefault.jpg"
+    },
+    {
+      "id": "9Tw4VGLnmOQ",
+      "title": "I Tested YouTuber vs PRO Loadouts on Warzone Rebirth Island",
+      "views": 31000,
+      "viewsText": "31K views",
+      "membersOnly": false,
+      "duration": "1:02:53",
+      "durationSec": 3773,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/9Tw4VGLnmOQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/9Tw4VGLnmOQ/maxresdefault.jpg"
+    },
+    {
+      "id": "dwJK1ZoUfvk",
+      "title": "Warzone, But I can ONLY Use MW3 Weapons",
+      "views": 36000,
+      "viewsText": "36K views",
+      "membersOnly": false,
+      "duration": "44:33",
+      "durationSec": 2673,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/dwJK1ZoUfvk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/dwJK1ZoUfvk/maxresdefault.jpg"
+    },
+    {
+      "id": "1jrprrKvbGU",
+      "title": "I Tested OLD vs NEW Meta Loadouts in Warzone Rebirth Island",
+      "views": 27000,
+      "viewsText": "27K views",
+      "membersOnly": false,
+      "duration": "1:01:11",
+      "durationSec": 3671,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/1jrprrKvbGU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/1jrprrKvbGU/maxresdefault.jpg"
+    },
+    {
+      "id": "gOVfr-rsCpA",
+      "title": "I Let My GIRLFRIEND Build my Loadout on Warzone Rebirth Island",
+      "views": 16000,
+      "viewsText": "16K views",
+      "membersOnly": false,
+      "duration": "1:19:25",
+      "durationSec": 4765,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/gOVfr-rsCpA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/gOVfr-rsCpA/maxresdefault.jpg"
+    },
+    {
+      "id": "l9eMDK34zhA",
+      "title": "I Let EVERY Type of Player Build my Loadout in Warzone!",
+      "views": 22000,
+      "viewsText": "22K views",
+      "membersOnly": false,
+      "duration": "1:14:59",
+      "durationSec": 4499,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/l9eMDK34zhA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/l9eMDK34zhA/maxresdefault.jpg"
+    },
+    {
+      "id": "qmKSZtISjpk",
+      "title": "Already the #1 Player on MW4 Warzone 😍",
+      "views": 8300,
+      "viewsText": "8.3K views",
+      "membersOnly": false,
+      "duration": "1:17:04",
+      "durationSec": 4624,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/qmKSZtISjpk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/qmKSZtISjpk/maxresdefault.jpg"
+    },
+    {
+      "id": "jd3eeKIu8eQ",
+      "title": "The NEW Warzone Update made MOVEMENT Broken! 😍",
+      "views": 11000,
+      "viewsText": "11K views",
+      "membersOnly": false,
+      "duration": "40:47",
+      "durationSec": 2447,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/jd3eeKIu8eQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/jd3eeKIu8eQ/maxresdefault.jpg"
+    },
+    {
+      "id": "mEfLizoA1aU",
+      "title": "I Dropped the World Record in the NEW MW4 Zodiac Warzone!",
+      "views": 8200,
+      "viewsText": "8.2K views",
+      "membersOnly": false,
+      "duration": "28:08",
+      "durationSec": 1688,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/mEfLizoA1aU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/mEfLizoA1aU/maxresdefault.jpg"
+    },
+    {
+      "id": "HCFMCII9gCM",
+      "title": "The NEW Warzone Map ZODIAC is HERE and it's INSANE!",
+      "views": 14000,
+      "viewsText": "14K views",
+      "membersOnly": false,
+      "duration": "25:10",
+      "durationSec": 1510,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/HCFMCII9gCM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/HCFMCII9gCM/maxresdefault.jpg"
+    },
+    {
+      "id": "uS8nuxRdMG4",
+      "title": "Warzone's NEW #1 Loadout is HERE & it's a PROBLEM..",
+      "views": 53000,
+      "viewsText": "53K views",
+      "membersOnly": false,
+      "duration": "51:48",
+      "durationSec": 3108,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/uS8nuxRdMG4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/uS8nuxRdMG4/maxresdefault.jpg"
+    },
+    {
+      "id": "rye6xJBgIPQ",
+      "title": "Meet Warzone's YOUNGEST Pro Player!",
+      "views": 56000,
+      "viewsText": "56K views",
+      "membersOnly": false,
+      "duration": "37:54",
+      "durationSec": 2274,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/rye6xJBgIPQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/rye6xJBgIPQ/maxresdefault.jpg"
+    },
+    {
+      "id": "0FlRQ0eP9ZM",
+      "title": "I Tested MAX DAMAGE vs NO RECOIL Loadouts in Warzone Rebirth Island",
+      "views": 17000,
+      "viewsText": "17K views",
+      "membersOnly": false,
+      "duration": "59:39",
+      "durationSec": 3579,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/0FlRQ0eP9ZM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/0FlRQ0eP9ZM/maxresdefault.jpg"
+    },
+    {
+      "id": "NaxMsENazlA",
+      "title": "I Used the BEST SMG from EVERY Warzone EVER!",
+      "views": 21000,
+      "viewsText": "21K views",
+      "membersOnly": false,
+      "duration": "1:08:06",
+      "durationSec": 4086,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/NaxMsENazlA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/NaxMsENazlA/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "Stract makes long Warzone challenge and loadout-comparison videos, many over an hour. The thumbnails rotate between three layouts: split panels that compare weapons under bold labels, a face next to one gun with a short lowercase comment, and grey tier cards with four weapons.",
+    "niche": "Warzone loadout challenges and comparisons",
+    "styleTraits": [
+      {
+        "title": "Comparison panels",
+        "detail": "11 of the last 30 thumbnails are split into 2 or 3 vertical panels, each with a coloured label on top: KIDS / MAX DAMAGE / PRO, PS5 / XBOX / PC, CASUAL / SWEATY, LEVEL 1 / LEVEL 1000. Each panel holds one weapon skin, so the comparison is visible before the title is read."
+      },
+      {
+        "title": "Face, gun and a one-line comment",
+        "detail": "10 thumbnails put Stract's face on the left (white T-shirt, wide eyes and open mouth, or a pained grimace) next to one weapon, with a red arrow pointing at it and a short lowercase comment in the top right: 'you suck', 'nerf this now.', 'it sucks now', 'girlfriend loadout', 'he's 15'."
+      },
+      {
+        "title": "Same rooftop, same sky",
+        "detail": "Most gameplay shots are taken from the same rooftop with a red-brick tower and a bright cyan sky. It ties the different layouts together, so the uploads still look like one set."
+      },
+      {
+        "title": "Game logos as labels",
+        "detail": "Older Call of Duty games appear as their logos instead of words: MW (2019), VANGUARD, MWIII, BO7, COLD WAR. Fans read these instantly, and it keeps the text very short."
+      },
+      {
+        "title": "Grey tier cards",
+        "detail": "A rarer layout shows four weapons on a dark grey card with the face small at the bottom centre (SEASON 1 vs SEASON 6, BRONZE vs IRIDESCENT, DAMAGE vs NO RECOIL, DIABLO vs BIFFLE). Three of these four videos sit below the 18.5K median."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "1ot6o4_Ayx4",
+        "why": "'Warzone's Halloween Update is HERE & its..' reached 95K views, 5.1 times the 18.5K median. It drops the sunny rooftop for a dark blue in-game menu: a Ghostface operator with a bloody knife, 'THE HAUNTING' in orange horror type with a NEW tag, a grid of operator portraits along the bottom, and Stract scratching his head in surprise. It shows the new content itself rather than a weapon. A big seasonal update probably brought much of the interest; the thumbnail makes clear this is that update."
+      },
+      {
+        "id": "Chj8W3dMpdo",
+        "why": "'Warzone but, 1 Win = Older Loadout' reached 74K views, 4.0 times the median. Two panels show WIN #1 and WIN #5 joined by a red arrow, with the BO7 logo on a teal skin and the VANGUARD logo on a pink studded gun, so the whole challenge is readable in one look. The newest upload, '1 Win = Newer Loadout', uses the mirrored thumbnail and has 20K after 3 days; the gap may come from the first video's novelty, its extra time online, or the pull of older guns."
+      },
+      {
+        "id": "hPQm06frIX4",
+        "why": "'I Tested EVERY Loadout in Warzone!' reached 56K views, 3.0 times the median, and runs just over three hours. Three panels labelled KIDS, MAX DAMAGE and PRO show three very different guns (a green toy-like gun, a black chrome one, a gold leopard one). The word EVERY promises a complete answer, and the three panels show the range of what is covered."
+      }
+    ],
+    "lessons": [
+      "If the video compares things, give each one its own panel and a one-word label, so the comparison is visible without reading.",
+      "Reusing a winning format is fine, but each follow-up is judged on its own: the 'Older Loadout' and 'Newer Loadout' videos share a mirrored thumbnail and stand at 74K and 20K so far.",
+      "Make the caption a reaction, not a description: 'nerf this now.' or 'it sucks now' tells viewers how to feel about the gun shown.",
+      "When a big seasonal update lands, show the new thing itself (a new character, a new map) instead of your usual gameplay shot.",
+      "Use game logos as shorthand for an audience that already knows them; it saves words."
+    ],
+    "experiment": "For your next comparison video, make two thumbnails: one with your face, a single item and a short reaction caption, and one with 2 or 3 labelled panels and no face. Run them in YouTube's Test & Compare tool if your channel has it, or use them on two similar videos, and compare views after 7 days.",
+    "faq": [
+      {
+        "q": "How many subscribers does Stract have?",
+        "a": "As of 23 October 2026, Stract has about 422K subscribers and roughly 1,900 videos on YouTube. The median of the 30 most recent long videos is about 18.5K views. The most-watched video in that sample, about Warzone's Halloween update, had about 95K views."
+      },
+      {
+        "q": "What does Stract make videos about?",
+        "a": "Stract makes Call of Duty: Warzone challenge and loadout videos: '1 Win = Older Loadout', PlayStation vs Xbox vs PC loadouts, level 1 to level 1000 loadouts, letting viewers or a girlfriend build the class. Many videos run an hour or more, and the longest recent one lasts just over three hours."
+      },
+      {
+        "q": "What do Stract's thumbnails look like?",
+        "a": "They use three layouts: split panels comparing weapons under bold coloured labels (KIDS / PRO, PS5 / XBOX / PC), Stract's face next to one gun with a red arrow and a short lowercase comment such as 'nerf this now.', and grey cards with four weapons. Most share the same sunny rooftop background."
+      },
+      {
+        "q": "What game does Stract play?",
+        "a": "Stract plays Call of Duty: Warzone, including Rebirth Island. Many challenges bring back weapons from older Call of Duty games such as Modern Warfare (2019), Vanguard, MW3, Black Ops 6 and Black Ops 7, and compare them with the current meta."
+      }
+    ],
+    "reviewedAt": "2026-10-23"
+  }
+}

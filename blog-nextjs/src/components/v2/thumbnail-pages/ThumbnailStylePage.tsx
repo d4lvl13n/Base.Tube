@@ -2,10 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { CSSProperties } from 'react';
 
+import CreatorsToStudy from '../creators/CreatorsToStudy';
+import { creatorsToLink } from '../creators/links';
 import Footer from '../Footer';
 import NavBar from '../NavBar';
 import ScrollReveal from '../ScrollReveal';
-import { article, defaultHeadings, disclaimerText, examplesNote, formatDate, lookName } from './copy';
+import { article, defaultHeadings, examplesNote, lookName } from './copy';
 import Gallery, { type GalleryItem } from './Gallery';
 import { GAMING_HUB_SLUG, realExamples, SIBLING_COPY, siblingPages } from './games';
 import g from './games.module.css';
@@ -430,6 +432,14 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
           </div>
         </section>
 
+        {/* ── CREATORS TO STUDY (game pages: real channels of this game) ── */}
+        {p.category === 'game' && creatorsToLink(p.slug, !loaded.live).length > 0 && (
+          <>
+            <Sep />
+            <CreatorsToStudy game={p.slug} gameName={p.name} galleryIsLive={loaded.live} />
+          </>
+        )}
+
         {/* ── SAME CATEGORY (more games / styles / genres) ─────── */}
         {siblings.length > 0 && (
           <>
@@ -536,15 +546,6 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
           </div>
         </section>
 
-        {/* ── DISCLAIMER ───────────────────────────────────────── */}
-        <div className="v2-container">
-          <aside className={s.disclaimer} aria-label="About this page">
-            <p>
-              Last updated <time dateTime={p.updated}>{formatDate(p.updated)}</time>.
-            </p>
-            <p>{disclaimerText(p)}</p>
-          </aside>
-        </div>
       </main>
 
       <Sep />

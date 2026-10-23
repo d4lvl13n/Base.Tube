@@ -1,0 +1,471 @@
+{
+  "slug": "trofees",
+  "status": "draft",
+  "channelId": "UClmHQLnrd3vZo66AVcnifbA",
+  "name": "Trofees",
+  "handle": "Trofees",
+  "url": "https://www.youtube.com/channel/UClmHQLnrd3vZo66AVcnifbA",
+  "avatar": "https://yt3.googleusercontent.com/KKTnoWd5_pwJsjgr4M5b_6mnyRItGw8_Berstd96cPdwMjkThaClKXrfq1j5FMOJwjf0x9K-=s900-c-k-c0x00ffffff-no-rj",
+  "game": "gta-6",
+  "subscribers": 156000,
+  "subscribersText": "156K subscribers",
+  "videoCount": 120,
+  "description": "GTA Online money guides and challenges to help you make more cash and have more fun",
+  "collectedAt": "2026-10-23",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 20,
+    "medianViews": 159000,
+    "outliers": [
+      {
+        "id": "H-Qv-kkxQBw",
+        "multiple": 3.1
+      },
+      {
+        "id": "QZQPZreICIY",
+        "multiple": 2.7
+      },
+      {
+        "id": "Ziuy9spB53U",
+        "multiple": 2.7
+      },
+      {
+        "id": "erP5m7uQ0Uo",
+        "multiple": 2.6
+      },
+      {
+        "id": "MwcMIKgZ4Gk",
+        "multiple": 2.3
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "o1phMagNxf0",
+      "title": "I Made a GTA 5 Mod With RDR2 Challenges Then Beat Them All",
+      "views": 6000,
+      "viewsText": "6K views",
+      "membersOnly": false,
+      "duration": "1:01:16",
+      "durationSec": 3676,
+      "published": "16 hours ago",
+      "thumbnail": "https://i.ytimg.com/vi/o1phMagNxf0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/o1phMagNxf0/maxresdefault.jpg"
+    },
+    {
+      "id": "MnS_WkAYLGU",
+      "title": "I Spent 155 Hours Getting The RDR2 Platinum",
+      "views": 221000,
+      "viewsText": "221K views",
+      "membersOnly": false,
+      "duration": "1:49:15",
+      "durationSec": 6555,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/MnS_WkAYLGU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/MnS_WkAYLGU/maxresdefault.jpg"
+    },
+    {
+      "id": "erP5m7uQ0Uo",
+      "title": "I Did Every GTA V Heist the Way Rockstar Intended",
+      "views": 421000,
+      "viewsText": "421K views",
+      "membersOnly": false,
+      "duration": "30:29",
+      "durationSec": 1829,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/erP5m7uQ0Uo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/erP5m7uQ0Uo/maxresdefault.jpg"
+    },
+    {
+      "id": "QZQPZreICIY",
+      "title": "I Tried to Catch Every Legendary Fish in RDR2",
+      "views": 430000,
+      "viewsText": "430K views",
+      "membersOnly": false,
+      "duration": "13:38",
+      "durationSec": 818,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/QZQPZreICIY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/QZQPZreICIY/maxresdefault.jpg"
+    },
+    {
+      "id": "enlPN-3HOkw",
+      "title": "Can A New Player Make 1 BILLION Dollars in GTA Online? (Full Series)",
+      "views": 174000,
+      "viewsText": "174K views",
+      "membersOnly": false,
+      "duration": "11:34:47",
+      "durationSec": 41687,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/enlPN-3HOkw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/enlPN-3HOkw/maxresdefault.jpg"
+    },
+    {
+      "id": "JsTaxHHMa8M",
+      "title": "The WORST (and Best) Things I Bought With My $1 Billion in GTA Online",
+      "views": null,
+      "viewsText": null,
+      "membersOnly": true,
+      "duration": "14:47",
+      "durationSec": 887,
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/JsTaxHHMa8M/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/JsTaxHHMa8M/maxresdefault.jpg"
+    },
+    {
+      "id": "MwcMIKgZ4Gk",
+      "title": "I Spent My Entire $600,000,000 Until I Was BROKE In GTA Online",
+      "views": 371000,
+      "viewsText": "371K views",
+      "membersOnly": false,
+      "duration": "22:32",
+      "durationSec": 1352,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/MwcMIKgZ4Gk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/MwcMIKgZ4Gk/maxresdefault.jpg"
+    },
+    {
+      "id": "0ZIQEp8owEM",
+      "title": "NEW GTA 6 DETAILS - It's Way Deeper Than We Thought!",
+      "views": null,
+      "viewsText": null,
+      "membersOnly": true,
+      "duration": "16:52",
+      "durationSec": 1012,
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/0ZIQEp8owEM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/0ZIQEp8owEM/maxresdefault.jpg"
+    },
+    {
+      "id": "mjx5jkcTi5g",
+      "title": "GTA 6: San Andreas' Body System Is Back And It's Way Deeper",
+      "views": null,
+      "viewsText": null,
+      "membersOnly": true,
+      "duration": "12:16",
+      "durationSec": 736,
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/mjx5jkcTi5g/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/mjx5jkcTi5g/maxresdefault.jpg"
+    },
+    {
+      "id": "Z1J8SLJUv9A",
+      "title": "GTA 6: How Money REALLY Works (It’s Not What You Think)",
+      "views": null,
+      "viewsText": null,
+      "membersOnly": true,
+      "duration": "10:29",
+      "durationSec": 629,
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/Z1J8SLJUv9A/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Z1J8SLJUv9A/maxresdefault.jpg"
+    },
+    {
+      "id": "mzdhIhbbm38",
+      "title": "Why You Can't Break Up Jason and Lucia in GTA 6",
+      "views": null,
+      "viewsText": null,
+      "membersOnly": true,
+      "duration": "14:30",
+      "durationSec": 870,
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/mzdhIhbbm38/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/mzdhIhbbm38/maxresdefault.jpg"
+    },
+    {
+      "id": "l7ydA24f_dw",
+      "title": "GTA 6 Isn't What You Think It Is",
+      "views": 102000,
+      "viewsText": "102K views",
+      "membersOnly": false,
+      "duration": "21:16",
+      "durationSec": 1276,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/l7ydA24f_dw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/l7ydA24f_dw/maxresdefault.jpg"
+    },
+    {
+      "id": "qYZ6lR4DJ2M",
+      "title": "I Tested EVERY Heist AFTER the Nerfs",
+      "views": null,
+      "viewsText": null,
+      "membersOnly": true,
+      "duration": "24:24",
+      "durationSec": 1464,
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/qYZ6lR4DJ2M/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/qYZ6lR4DJ2M/maxresdefault.jpg"
+    },
+    {
+      "id": "Y-jEe1RvQZ4",
+      "title": "I FINALLY Made $1 Billion in GTA Online!",
+      "views": 261000,
+      "viewsText": "261K views",
+      "membersOnly": false,
+      "duration": "23:52",
+      "durationSec": 1432,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/Y-jEe1RvQZ4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Y-jEe1RvQZ4/maxresdefault.jpg"
+    },
+    {
+      "id": "WIRNsOMrtMM",
+      "title": "I Made $50 Million with the Panther Statue in GTA Online!",
+      "views": 62026,
+      "viewsText": "62,026 views",
+      "membersOnly": false,
+      "duration": "15:07",
+      "durationSec": 907,
+      "published": "2026-08-13",
+      "thumbnail": "https://i.ytimg.com/vi/WIRNsOMrtMM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/WIRNsOMrtMM/maxresdefault.jpg",
+      "collab": true
+    },
+    {
+      "id": "Ziuy9spB53U",
+      "title": "I Made $16,400,000 in 2 Days SOLO! (After the Heist Nerfs)",
+      "views": 425000,
+      "viewsText": "425K views",
+      "membersOnly": false,
+      "duration": "21:01",
+      "durationSec": 1261,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/Ziuy9spB53U/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Ziuy9spB53U/maxresdefault.jpg"
+    },
+    {
+      "id": "jLBC4VXz83Q",
+      "title": "I Ran Every Heist to See If Nerfs Killed the Grind",
+      "views": 167000,
+      "viewsText": "167K views",
+      "membersOnly": false,
+      "duration": "24:28",
+      "durationSec": 1468,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/jLBC4VXz83Q/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/jLBC4VXz83Q/maxresdefault.jpg"
+    },
+    {
+      "id": "ft8tBy26WXU",
+      "title": "I Ran The New Kortz Center Heist - Here's What Happened",
+      "views": null,
+      "viewsText": null,
+      "membersOnly": true,
+      "duration": "14:02",
+      "durationSec": 842,
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/ft8tBy26WXU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ft8tBy26WXU/maxresdefault.jpg"
+    },
+    {
+      "id": "ztL4IZ8niv4",
+      "title": "I Made $50 MILLION From the Diamond Casino Heist in One Week!",
+      "views": 58000,
+      "viewsText": "58K views",
+      "membersOnly": false,
+      "duration": "14:29",
+      "durationSec": 869,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/ztL4IZ8niv4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ztL4IZ8niv4/maxresdefault.jpg"
+    },
+    {
+      "id": "o9vcxbezWb8",
+      "title": "I Attempted to Make $100 Million in 7 Days!",
+      "views": 224000,
+      "viewsText": "224K views",
+      "membersOnly": false,
+      "duration": "18:24",
+      "durationSec": 1104,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/o9vcxbezWb8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/o9vcxbezWb8/maxresdefault.jpg"
+    },
+    {
+      "id": "-UHd-ET0YR0",
+      "title": "Rockstar's New KORTZ CENTER HEIST: Release Date & Details!",
+      "views": null,
+      "viewsText": null,
+      "membersOnly": true,
+      "duration": "3:46",
+      "durationSec": 226,
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/-UHd-ET0YR0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/-UHd-ET0YR0/maxresdefault.jpg"
+    },
+    {
+      "id": "FwDBzuIYno4",
+      "title": "The Most Punishing GTA Online Heist Run Ever Attempted",
+      "views": 41000,
+      "viewsText": "41K views",
+      "membersOnly": false,
+      "duration": "40:25",
+      "durationSec": 2425,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/FwDBzuIYno4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/FwDBzuIYno4/maxresdefault.jpg"
+    },
+    {
+      "id": "5BxzY2Ci0Nw",
+      "title": "The Truth About GTA 6: Official Facts You Need To Know",
+      "views": null,
+      "viewsText": null,
+      "membersOnly": true,
+      "duration": "13:22",
+      "durationSec": 802,
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/5BxzY2Ci0Nw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/5BxzY2Ci0Nw/maxresdefault.jpg"
+    },
+    {
+      "id": "u3AxUxBUWOQ",
+      "title": "I Ran the Cayo Perico Heist 10 Times and Made $15 Million",
+      "views": 80000,
+      "viewsText": "80K views",
+      "membersOnly": false,
+      "duration": "28:05",
+      "durationSec": 1685,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/u3AxUxBUWOQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/u3AxUxBUWOQ/maxresdefault.jpg"
+    },
+    {
+      "id": "E28DxHLqjIk",
+      "title": "I Made $16 Million in ONE Day in GTA Online",
+      "views": 107000,
+      "viewsText": "107K views",
+      "membersOnly": false,
+      "duration": "16:20",
+      "durationSec": 980,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/E28DxHLqjIk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/E28DxHLqjIk/maxresdefault.jpg"
+    },
+    {
+      "id": "H-Qv-kkxQBw",
+      "title": "The Hunt for Every Legendary Animal in RDR2!",
+      "views": 500000,
+      "viewsText": "500K views",
+      "membersOnly": false,
+      "duration": "15:47",
+      "durationSec": 947,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/H-Qv-kkxQBw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/H-Qv-kkxQBw/maxresdefault.jpg"
+    },
+    {
+      "id": "SPe3R3bzXf4",
+      "title": "The Best Money Making Route for NEW Players in GTA Online Right Now",
+      "views": 151000,
+      "viewsText": "151K views",
+      "membersOnly": false,
+      "duration": "1:52:51",
+      "durationSec": 6771,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/SPe3R3bzXf4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/SPe3R3bzXf4/maxresdefault.jpg"
+    },
+    {
+      "id": "aHmYhlSQdBM",
+      "title": "I Followed Chat's Worst Advice in GTA 5",
+      "views": null,
+      "viewsText": null,
+      "membersOnly": true,
+      "duration": "25:35",
+      "durationSec": 1535,
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/aHmYhlSQdBM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/aHmYhlSQdBM/maxresdefault.jpg"
+    },
+    {
+      "id": "hREcuTdUKAU",
+      "title": "How Much Money Can MC Sell Missions Make in GTA Online?",
+      "views": 45000,
+      "viewsText": "45K views",
+      "membersOnly": false,
+      "duration": "18:12",
+      "durationSec": 1092,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/hREcuTdUKAU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/hREcuTdUKAU/maxresdefault.jpg"
+    },
+    {
+      "id": "7WNUyrJlZZs",
+      "title": "You NEED to do this to Make MILLIONS in GTA Online!",
+      "views": 65000,
+      "viewsText": "65K views",
+      "membersOnly": false,
+      "duration": "21:17",
+      "durationSec": 1277,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/7WNUyrJlZZs/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/7WNUyrJlZZs/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "Trofees makes GTA Online money challenges (heists, billion-dollar goals, spending sprees) plus GTA 6 analysis and Red Dead Redemption 2 hunts. GTA Online thumbnails star the same blond character in a black blazer under a huge bright-green dollar amount; RDR2 ones show Arthur in a dramatic scene with a red arrow.",
+    "niche": "GTA Online money challenges, GTA 6 analysis and RDR2",
+    "styleTraits": [
+      {
+        "title": "A recurring character as the host",
+        "detail": "Most GTA Online thumbnails feature the same character: blond hair, black blazer over a white tank top. He is always mid-gesture: arms spread wide, peace signs, a palm-up shrug, a facepalm, hands pressed together. He works as the channel's face."
+      },
+      {
+        "title": "The money amount is the headline",
+        "detail": "A huge bright-green figure with a dark outline runs across the top: '$ 16,400,000', '$ 50,000,000', '$1,000,000,000'. A smaller white tag adds the twist ('SOLO ONLY', 'AFTER THE NERFS', 'IN 7 DAYS?'), and red strike-throughs show losses ('NERFED', '$600,000,000' crossed out to '$156')."
+      },
+      {
+        "title": "Thumbnail and title use the same number",
+        "detail": "The figure in the image matches the title: '$16,400,000' in both for the solo heist video, '$100 Million in 7 Days' in both for the challenge. The viewer gets one clear number, repeated."
+      },
+      {
+        "title": "A separate look for RDR2",
+        "detail": "Red Dead Redemption 2 videos switch style: Arthur in a cold or wild landscape, condensed white text with a yellow-orange key word ('EVERY LEGENDARY FISH', 'LEGENDARY ANIMAL #6'), and one red curved arrow pointing at the animal or trophy."
+      },
+      {
+        "title": "Settings that tell the heist",
+        "detail": "Backgrounds explain the money: a round gold vault door, a vault room with red lasers, jets and supercars in a hangar, banknotes flying. The character stands in the middle of the scene, usually centred and symmetrical."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "H-Qv-kkxQBw",
+        "why": "About 500,000 views, roughly 3.1 times the median of Trofees' recent public videos. Arthur is caught mid-fight with a huge alligator-like legendary animal, under 'LEGENDARY ANIMAL #6' in white and yellow, with a red curved arrow on the animal. It shows an action moment, and the '#6' hints at a collection to finish."
+      },
+      {
+        "id": "QZQPZreICIY",
+        "why": "About 430,000 views, roughly 2.7 times the public median. Arthur holds a giant red fish in front of a snowy lake, under 'EVERY LEGENDARY FISH' with 'FISH' in orange, and a red arrow on the fish. The bright red fish against cold blue and white is one of the strongest colour contrasts in the sample."
+      },
+      {
+        "id": "Ziuy9spB53U",
+        "why": "About 425,000 views, roughly 2.7 times the public median. The host character stands centred inside a huge gold vault door with hands pressed together, under '$ 16,400,000' in bright green and 'SOLO ONLY' in white. The amount matches the title exactly, and 'solo only' answers the first question a GTA Online player may have."
+      }
+    ],
+    "lessons": [
+      "If your video is about a number, make the number the biggest thing in the thumbnail and use the exact same number in the title.",
+      "A recurring character with big, readable body language (shrug, facepalm, arms wide) can carry a channel without a camera face.",
+      "Give a second game its own look. Trofees' two RDR2 hunting videos are among the best public videos in this sample while using a completely different style from the GTA ones.",
+      "Use one red arrow to point at the exact subject (the fish, the animal), not several arrows at once."
+    ],
+    "experiment": "On a challenge or money video, test an 'amount first' thumbnail (huge number across the top, small character) against a 'scene first' one (big action moment, short text). Keep the title identical so only the thumbnail changes.",
+    "faq": [
+      {
+        "q": "How many subscribers does Trofees have?",
+        "a": "As of 23 October 2026, Trofees has about 156K subscribers and 120 videos. Ten of the latest 30 uploads are members-only, so their views are not public. Across the 20 public ones, the median is about 159,000 views, and the biggest is 'The Hunt for Every Legendary Animal in RDR2!' with about 500,000."
+      },
+      {
+        "q": "What does Trofees make videos about?",
+        "a": "Mainly GTA Online money challenges: running heists before and after nerfs, trying to reach $1 billion, spending everything until broke. The channel also analyses GTA 6 details and plays Red Dead Redemption 2, hunting every legendary animal and fish and going for the platinum trophy."
+      },
+      {
+        "q": "What do Trofees' thumbnails look like?",
+        "a": "GTA Online thumbnails show the same blond character in a black blazer, posing in a vault or on a street, under a huge bright-green dollar amount. RDR2 thumbnails show Arthur in a dramatic wild scene with a red arrow, and GTA 6 ones use official-style character art with a short teaser line."
+      },
+      {
+        "q": "What game does Trofees play?",
+        "a": "Mostly GTA Online, the online mode of GTA 5, with regular GTA 6 analysis videos. The channel also plays Red Dead Redemption 2, another Rockstar game, and sometimes mixes them, such as a GTA 5 mod built around RDR2 challenges."
+      }
+    ],
+    "reviewedAt": "2026-10-23"
+  }
+}

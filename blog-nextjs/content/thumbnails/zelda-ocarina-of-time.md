@@ -246,7 +246,7 @@ faq:
       forbid implying your video is affiliated with Nintendo. The examples on
       this page are generated with Base.Tube and use the game's look and
       characters. Read Nintendo's rules before you publish, and never present
-      your video as official. This page is not legal advice.
+      your video as official.
   - q: What font works for a Legend of Zelda thumbnail?
     a: >
       A heavy sans-serif such as Anton reads best at small sizes, for words

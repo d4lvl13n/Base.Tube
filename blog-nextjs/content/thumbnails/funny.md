@@ -275,8 +275,7 @@ faq:
       Most meme images are photos or film frames that someone owns, and many
       show real people. Using them can lead to copyright claims or likeness
       issues. A safer route is to recreate the idea: your own face, your own
-      props, or an original generated character. This page is not legal
-      advice.
+      props, or an original generated character.
 
 related:
   - meme

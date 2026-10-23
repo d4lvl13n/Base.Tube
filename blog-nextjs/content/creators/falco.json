@@ -1,0 +1,471 @@
+{
+  "slug": "falco",
+  "status": "draft",
+  "channelId": "UCuQtEV3owmPsGOl5lbOn5EA",
+  "name": "Falco",
+  "handle": "FalcoFPS",
+  "url": "https://www.youtube.com/channel/UCuQtEV3owmPsGOl5lbOn5EA",
+  "avatar": "https://yt3.googleusercontent.com/hFOmarg0gWNhqX3OjiXkqYG1QP5zTGRwWjaWumCZnJuYNk7M2i3OvUxHC19xAWTgd1LUgCiPAg=s900-c-k-c0x00ffffff-no-rj",
+  "game": "fortnite",
+  "subscribers": 118000,
+  "subscribersText": "118K subscribers",
+  "videoCount": 62,
+  "description": "i make fortnite videos.",
+  "collectedAt": "2026-10-23",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 26,
+    "medianViews": 250500,
+    "outliers": [
+      {
+        "id": "NmSZpoEI7DQ",
+        "multiple": 3.2
+      },
+      {
+        "id": "fHFeZPIxmxI",
+        "multiple": 2.7
+      },
+      {
+        "id": "RngYvSOHtZY",
+        "multiple": 2.2
+      },
+      {
+        "id": "Lnoekjk3eCM",
+        "multiple": 2
+      },
+      {
+        "id": "wdVG1xxPadA",
+        "multiple": 1.9
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "t6LpnOg-WjA",
+      "title": "100 Day Competitive Fortnite Progression (Noob To Pro)",
+      "views": 62000,
+      "viewsText": "62K views",
+      "membersOnly": false,
+      "duration": "1:06:59",
+      "durationSec": 4019,
+      "published": "3 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/t6LpnOg-WjA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/t6LpnOg-WjA/maxresdefault.jpg"
+    },
+    {
+      "id": "4QgFlPwaEkQ",
+      "title": "WORST $1200 SPENT 😭",
+      "views": 101000,
+      "viewsText": "101K views",
+      "membersOnly": false,
+      "duration": "5:13",
+      "durationSec": 313,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/4QgFlPwaEkQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/4QgFlPwaEkQ/maxresdefault.jpg"
+    },
+    {
+      "id": "Lnoekjk3eCM",
+      "title": "I Bought My Duo a PC to Win FNCS..",
+      "views": 511000,
+      "viewsText": "511K views",
+      "membersOnly": false,
+      "duration": "27:17",
+      "durationSec": 1637,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/Lnoekjk3eCM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Lnoekjk3eCM/maxresdefault.jpg"
+    },
+    {
+      "id": "wdVG1xxPadA",
+      "title": "My Duo DROPPED Me So I Got REVENGE..",
+      "views": 471000,
+      "viewsText": "471K views",
+      "membersOnly": false,
+      "duration": "28:46",
+      "durationSec": 1726,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/wdVG1xxPadA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/wdVG1xxPadA/maxresdefault.jpg"
+    },
+    {
+      "id": "kMXtmIth2xU",
+      "title": "I Bought a Banned Keyboard..",
+      "views": 365000,
+      "viewsText": "365K views",
+      "membersOnly": false,
+      "duration": "11:14",
+      "durationSec": 674,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/kMXtmIth2xU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/kMXtmIth2xU/maxresdefault.jpg"
+    },
+    {
+      "id": "LjeC6RPWpf0",
+      "title": "100 Day Competitive Fortnite Progression (Noob To Pro)",
+      "views": 253000,
+      "viewsText": "253K views",
+      "membersOnly": false,
+      "duration": "1:47:32",
+      "durationSec": 6452,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/LjeC6RPWpf0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/LjeC6RPWpf0/maxresdefault.jpg"
+    },
+    {
+      "id": "5Hx0aLRv944",
+      "title": "Worst $2000 Spent 😭",
+      "views": 177000,
+      "viewsText": "177K views",
+      "membersOnly": false,
+      "duration": "8:16",
+      "durationSec": 496,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/5Hx0aLRv944/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/5Hx0aLRv944/maxresdefault.jpg"
+    },
+    {
+      "id": "QLLa-qfupFE",
+      "title": "I Bought a BANNED Fortnite Mouse..",
+      "views": 78000,
+      "viewsText": "78K views",
+      "membersOnly": false,
+      "duration": "12:57",
+      "durationSec": 777,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/QLLa-qfupFE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/QLLa-qfupFE/maxresdefault.jpg"
+    },
+    {
+      "id": "dFck6JkdavM",
+      "title": "My Fortnite Earnings Progression...",
+      "views": null,
+      "viewsText": null,
+      "membersOnly": true,
+      "duration": "23:25",
+      "durationSec": 1405,
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/dFck6JkdavM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/dFck6JkdavM/maxresdefault.jpg"
+    },
+    {
+      "id": "fHFeZPIxmxI",
+      "title": "I Trained like PETERBOT for 10 Days..",
+      "views": 687000,
+      "viewsText": "687K views",
+      "membersOnly": false,
+      "duration": "48:28",
+      "durationSec": 2908,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/fHFeZPIxmxI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/fHFeZPIxmxI/maxresdefault.jpg"
+    },
+    {
+      "id": "yfu0udyNav8",
+      "title": "100 Day Competitive Fortnite Progression (Noob To Pro)",
+      "views": 366000,
+      "viewsText": "366K views",
+      "membersOnly": false,
+      "duration": "1:33:32",
+      "durationSec": 5612,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/yfu0udyNav8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/yfu0udyNav8/maxresdefault.jpg"
+    },
+    {
+      "id": "IyJ8JWZgsX0",
+      "title": "I Went PRO in 7 Days..",
+      "views": 287000,
+      "viewsText": "287K views",
+      "membersOnly": false,
+      "duration": "30:03",
+      "durationSec": 1803,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/IyJ8JWZgsX0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/IyJ8JWZgsX0/maxresdefault.jpg"
+    },
+    {
+      "id": "NmSZpoEI7DQ",
+      "title": "I Bought The Next Peterbot a PC..",
+      "views": 790000,
+      "viewsText": "790K views",
+      "membersOnly": false,
+      "duration": "16:00",
+      "durationSec": 960,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/NmSZpoEI7DQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/NmSZpoEI7DQ/maxresdefault.jpg"
+    },
+    {
+      "id": "fPV0Ra6zzcw",
+      "title": "I Hired a Pro Coach To Win FNCS..",
+      "views": null,
+      "viewsText": null,
+      "membersOnly": true,
+      "duration": "14:57",
+      "durationSec": 897,
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/fPV0Ra6zzcw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/fPV0Ra6zzcw/maxresdefault.jpg"
+    },
+    {
+      "id": "AWzNJ0g---M",
+      "title": "How One Decision Won Me FNCS...",
+      "views": 99000,
+      "viewsText": "99K views",
+      "membersOnly": false,
+      "duration": "12:38",
+      "durationSec": 758,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/AWzNJ0g---M/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/AWzNJ0g---M/maxresdefault.jpg"
+    },
+    {
+      "id": "Hvo2UE5M8rI",
+      "title": "I Bought a $3000 Setup to Win FNCS..",
+      "views": 361000,
+      "viewsText": "361K views",
+      "membersOnly": false,
+      "duration": "31:21",
+      "durationSec": 1881,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/Hvo2UE5M8rI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Hvo2UE5M8rI/maxresdefault.jpg"
+    },
+    {
+      "id": "NkVy7g5hje4",
+      "title": "How I Made Earnings With The Next PETERBOT..",
+      "views": null,
+      "viewsText": null,
+      "membersOnly": true,
+      "duration": "13:31",
+      "durationSec": 811,
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/NkVy7g5hje4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/NkVy7g5hje4/maxresdefault.jpg"
+    },
+    {
+      "id": "iF2xDCfMokE",
+      "title": "How Getting Dropped Turned Me Into PETERBOT..",
+      "views": 125000,
+      "viewsText": "125K views",
+      "membersOnly": false,
+      "duration": "16:11",
+      "durationSec": 971,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/iF2xDCfMokE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/iF2xDCfMokE/maxresdefault.jpg"
+    },
+    {
+      "id": "cgTlFJG7DNA",
+      "title": "How I Made Earnings TWICE in ONE Day..",
+      "views": 202000,
+      "viewsText": "202K views",
+      "membersOnly": false,
+      "duration": "25:59",
+      "durationSec": 1559,
+      "published": "9 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/cgTlFJG7DNA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/cgTlFJG7DNA/maxresdefault.jpg"
+    },
+    {
+      "id": "IV3MwLlZrGU",
+      "title": "How I Found The Perfect Duo..",
+      "views": 339000,
+      "viewsText": "339K views",
+      "membersOnly": false,
+      "duration": "21:56",
+      "durationSec": 1316,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/IV3MwLlZrGU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/IV3MwLlZrGU/maxresdefault.jpg"
+    },
+    {
+      "id": "iffgN8XX14o",
+      "title": "How I Mastered Competitive Fortnite..",
+      "views": 124000,
+      "viewsText": "124K views",
+      "membersOnly": false,
+      "duration": "24:37",
+      "durationSec": 1477,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/iffgN8XX14o/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/iffgN8XX14o/maxresdefault.jpg"
+    },
+    {
+      "id": "yP1V62SyaJ8",
+      "title": "I Won Solo FNCS..",
+      "views": 80000,
+      "viewsText": "80K views",
+      "membersOnly": false,
+      "duration": "16:44",
+      "durationSec": 1004,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/yP1V62SyaJ8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/yP1V62SyaJ8/maxresdefault.jpg"
+    },
+    {
+      "id": "5UKoe2eQ9lQ",
+      "title": "We Had 3 Days to Make Earnings..",
+      "views": 242000,
+      "viewsText": "242K views",
+      "membersOnly": false,
+      "duration": "18:55",
+      "durationSec": 1135,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/5UKoe2eQ9lQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/5UKoe2eQ9lQ/maxresdefault.jpg"
+    },
+    {
+      "id": "RngYvSOHtZY",
+      "title": "How I Found the Next PETERBOT..",
+      "views": 552000,
+      "viewsText": "552K views",
+      "membersOnly": false,
+      "duration": "18:27",
+      "durationSec": 1107,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/RngYvSOHtZY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/RngYvSOHtZY/maxresdefault.jpg"
+    },
+    {
+      "id": "-n5bddHNEA0",
+      "title": "How We Went Pro in 3 Days..",
+      "views": 106000,
+      "viewsText": "106K views",
+      "membersOnly": false,
+      "duration": "28:44",
+      "durationSec": 1724,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/-n5bddHNEA0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/-n5bddHNEA0/maxresdefault.jpg"
+    },
+    {
+      "id": "Fs3oE_qPOP8",
+      "title": "MY BEST SOLO CASH CUP..",
+      "views": 248000,
+      "viewsText": "248K views",
+      "membersOnly": false,
+      "duration": "14:03",
+      "durationSec": 843,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/Fs3oE_qPOP8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Fs3oE_qPOP8/maxresdefault.jpg"
+    },
+    {
+      "id": "DxcmVfv0hBk",
+      "title": "MY BEST FNCS EVER..",
+      "views": null,
+      "viewsText": null,
+      "membersOnly": true,
+      "duration": "12:16",
+      "durationSec": 736,
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/DxcmVfv0hBk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/DxcmVfv0hBk/maxresdefault.jpg"
+    },
+    {
+      "id": "8m6kg_LYLnY",
+      "title": "I Went PRO in 10 Days..",
+      "views": 451000,
+      "viewsText": "451K views",
+      "membersOnly": false,
+      "duration": "23:34",
+      "durationSec": 1414,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/8m6kg_LYLnY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/8m6kg_LYLnY/maxresdefault.jpg"
+    },
+    {
+      "id": "OcIBaUoKP_s",
+      "title": "My Trio DROPPED Me So I Won FNCS..",
+      "views": 266000,
+      "viewsText": "266K views",
+      "membersOnly": false,
+      "duration": "14:44",
+      "durationSec": 884,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/OcIBaUoKP_s/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/OcIBaUoKP_s/maxresdefault.jpg"
+    },
+    {
+      "id": "JodNN8MFNo8",
+      "title": "MY GREATEST FNCS EVER..",
+      "views": 171000,
+      "viewsText": "171K views",
+      "membersOnly": false,
+      "duration": "14:20",
+      "durationSec": 860,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/JodNN8MFNo8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/JodNN8MFNo8/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "Falco tells competitive Fortnite stories: FNCS runs, finding a duo, 100-day progressions and buying gear. Every thumbnail stars the same red holiday-sweater skin in a bright, posed scene, usually with a short lowercase caption like 'it worked.' or 'we won..'.",
+    "niche": "Competitive Fortnite story videos (FNCS, duos, gear)",
+    "styleTraits": [
+      {
+        "title": "One skin as the face of the channel",
+        "detail": "Almost every thumbnail features the same skin: a red sweater with a green llama print and a white-trimmed Santa hat. Falco does not show a camera face; the skin plays that role, so a viewer can spot the channel in a feed without reading anything."
+      },
+      {
+        "title": "Quiet lowercase captions",
+        "detail": "Many thumbnails carry a thin, white, lowercase caption in the top corner, ending with one or two dots: 'it worked.', 'revenge..', 'pick one..', 'we won..', 'banned.'. It matches the titles, which also end in '..'. It reads like the last line of a story, not a shout."
+      },
+      {
+        "title": "Posed renders, not gameplay screenshots",
+        "detail": "Most images are clean 3D poses on sunny Fortnite grass with a bright blue sky and strong rim light. Characters face each other, point, hold props or react, the way a movie poster would stage them."
+      },
+      {
+        "title": "Props carry the stakes",
+        "detail": "The object tells you the episode: a glowing purple gaming PC, a keyboard held up next to 'BANNED', a mouse in a glass case, a burning PC for the bad purchase, and the gold FNCS axe and FNCS crest for tournament wins."
+      },
+      {
+        "title": "A fixed template for the series",
+        "detail": "The '100 Day Competitive Fortnite Progression' episodes all use the same layout: 'DAY #1' and 'DAY #99' headers with stat cards on each side ('Power Ranking 67, Earnings $0' against six-figure rankings). The skin stands in the middle, slightly worn on the 'after' side."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "NmSZpoEI7DQ",
+        "why": "About 790,000 views, roughly 3.2 times the median of Falco's recent public videos. The image looks like a real match: the skin next to a glowing purple PC on the grass, a red arrow pointing at another player on a ramp, and 'NEXT PETERBOT' in bold white. Naming a famous pro and showing the gift (the PC) probably made the story clear before the title was read."
+      },
+      {
+        "id": "fHFeZPIxmxI",
+        "why": "About 687,000 views, roughly 2.7 times the public median. A close-up face split down the middle, half Falco's skin and half a real human face, with one glowing red eye and a hand on the chin, under 'it worked.'. It shows the transformation the title promises ('I Trained like PETERBOT for 10 Days..') instead of describing it."
+      },
+      {
+        "id": "RngYvSOHtZY",
+        "why": "About 552,000 views, roughly 2.2 times the public median. The skin, seen from behind, faces glowing blue cloning pods with a character floating inside and the gold FNCS axe, under 'we won..'. The sci-fi lab hints at 'building' a pro, and it is the earliest public video of the 'next Peterbot' storyline in this sample."
+      }
+    ],
+    "lessons": [
+      "If you do not show your face, pick one skin and never change it. Falco's sweater skin does the job of a face.",
+      "Let the title set up the story and the thumbnail caption give the ending: 'it worked.', 'we won..'.",
+      "When a storyline lands, make sequels with the same name in the title and the same props in the image. Falco's three best public videos in this sample all belong to the 'next Peterbot' story.",
+      "Use one prop to show what is at stake (a PC, a banned keyboard, the FNCS axe) instead of a paragraph of text.",
+      "Give a recurring series one fixed layout, like the 'DAY #1 / DAY #99' stat cards, so each new episode is recognised at a glance."
+    ],
+    "experiment": "For your next story video, test a small lowercase caption ('it worked.') in a corner against a big bold block of text. Keep the same image and change only the text, so the result tells you which tone your viewers click.",
+    "faq": [
+      {
+        "q": "How many subscribers does Falco have?",
+        "a": "As of 23 October 2026, Falco (@FalcoFPS) has about 118K subscribers and 62 videos. Four of the latest 30 uploads are members-only, so their views are not public. Across the 26 public ones, the median is about 250,000 views, and the biggest is 'I Bought The Next Peterbot a PC..' with about 790,000."
+      },
+      {
+        "q": "What does Falco make videos about?",
+        "a": "Competitive Fortnite told as stories: trying to win FNCS, finding or losing a duo, training like top pros, buying expensive or banned gear, and long '100 Day Competitive Fortnite Progression (Noob To Pro)' videos. Some videos are reserved for channel members."
+      },
+      {
+        "q": "What do Falco's thumbnails look like?",
+        "a": "Bright, posed Fortnite scenes with a blue sky and green grass, almost always starring the same red llama-sweater skin with a Santa hat. Props such as a gaming PC, a keyboard or the gold FNCS axe show the stakes, and a short white lowercase caption like 'it worked.' or 'we won..' sits in a corner."
+      },
+      {
+        "q": "What game does Falco play?",
+        "a": "Fortnite, focused on the competitive side: FNCS (the official Fortnite Champion Series), cash cups, ranked play and duo tournaments. The channel's videos follow Falco's own progress and earnings in those events."
+      }
+    ],
+    "reviewedAt": "2026-10-23"
+  }
+}

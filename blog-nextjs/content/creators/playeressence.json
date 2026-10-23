@@ -1,0 +1,471 @@
+{
+  "slug": "playeressence",
+  "status": "draft",
+  "channelId": "UCmhLWUxwTyFJqHt4h0lSUsQ",
+  "name": "PlayerEssence",
+  "handle": "Playeressence",
+  "url": "https://www.youtube.com/channel/UCmhLWUxwTyFJqHt4h0lSUsQ",
+  "avatar": "https://yt3.googleusercontent.com/ePVb3mouzjOm8zJJgQLU3DhUVKuD1iuLpIP72agkdaH428034ZSdVhvWtN9wTzOR9OuCsfke3Q=s900-c-k-c0x00ffffff-no-rj",
+  "game": "zelda-ocarina-of-time",
+  "subscribers": 140000,
+  "subscribersText": "140K subscribers",
+  "videoCount": 7500,
+  "description": "Daily Nintendo Switch 2 and RPG news, discussions, reviews and livestreams.",
+  "collectedAt": "2026-10-23",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 23000,
+    "outliers": [
+      {
+        "id": "rVJnRjvbpIY",
+        "multiple": 3.4
+      },
+      {
+        "id": "xJD_PZgGnLI",
+        "multiple": 1.8
+      },
+      {
+        "id": "_wfh2m713HM",
+        "multiple": 1.6
+      },
+      {
+        "id": "II677YSnGbE",
+        "multiple": 1.6
+      },
+      {
+        "id": "8odrrACKW3E",
+        "multiple": 1.5
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "zjLtLRMyeeg",
+      "title": "Fire Emblem Fortune's Weave US Sales EXPLODE!",
+      "views": 13000,
+      "viewsText": "13K views",
+      "membersOnly": false,
+      "duration": "13:50",
+      "durationSec": 830,
+      "published": "12 hours ago",
+      "thumbnail": "https://i.ytimg.com/vi/zjLtLRMyeeg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/zjLtLRMyeeg/maxresdefault.jpg"
+    },
+    {
+      "id": "V3DZMP7zDTw",
+      "title": "EXCITING Zelda Ocarina of Time Switch 2 Updates!",
+      "views": 21000,
+      "viewsText": "21K views",
+      "membersOnly": false,
+      "duration": "15:26",
+      "durationSec": 926,
+      "published": "1 day ago",
+      "thumbnail": "https://i.ytimg.com/vi/V3DZMP7zDTw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/V3DZMP7zDTw/maxresdefault.jpg"
+    },
+    {
+      "id": "I1zqY9nNi2Y",
+      "title": "ALL Zelda Ocarina of Time New Content & Upgrades!",
+      "views": 22000,
+      "viewsText": "22K views",
+      "membersOnly": false,
+      "duration": "14:25",
+      "durationSec": 865,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/I1zqY9nNi2Y/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/I1zqY9nNi2Y/maxresdefault.jpg"
+    },
+    {
+      "id": "EKXgcTDrBJ4",
+      "title": "NEW Zelda Ocarina of Time Controversy ERUPTS!",
+      "views": 31000,
+      "viewsText": "31K views",
+      "membersOnly": false,
+      "duration": "19:42",
+      "durationSec": 1182,
+      "published": "3 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/EKXgcTDrBJ4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/EKXgcTDrBJ4/maxresdefault.jpg"
+    },
+    {
+      "id": "rVJnRjvbpIY",
+      "title": "Zelda Ocarina of Time & Switch 2 Sales EXPLODE!",
+      "views": 78000,
+      "viewsText": "78K views",
+      "membersOnly": false,
+      "duration": "14:50",
+      "durationSec": 890,
+      "published": "4 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/rVJnRjvbpIY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/rVJnRjvbpIY/maxresdefault.jpg"
+    },
+    {
+      "id": "ERYHGPL42no",
+      "title": "Metroid Ravenous causes high level STUPIDITY...",
+      "views": 33000,
+      "viewsText": "33K views",
+      "membersOnly": false,
+      "duration": "15:34",
+      "durationSec": 934,
+      "published": "5 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/ERYHGPL42no/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ERYHGPL42no/maxresdefault.jpg"
+    },
+    {
+      "id": "ZS2MyFjcX5w",
+      "title": "Zelda Ocarina of Time Looks EVEN BETTER now...",
+      "views": 23000,
+      "viewsText": "23K views",
+      "membersOnly": false,
+      "duration": "14:27",
+      "durationSec": 867,
+      "published": "6 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/ZS2MyFjcX5w/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ZS2MyFjcX5w/maxresdefault.jpg"
+    },
+    {
+      "id": "8odrrACKW3E",
+      "title": "BIG Publisher JEALOUS of Zelda Ocarina of Time Remake?!",
+      "views": 34000,
+      "viewsText": "34K views",
+      "membersOnly": false,
+      "duration": "16:10",
+      "durationSec": 970,
+      "published": "7 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/8odrrACKW3E/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/8odrrACKW3E/maxresdefault.jpg"
+    },
+    {
+      "id": "bOQeeAIW32o",
+      "title": "Fire Emblem Fortune's Weave just got much BIGGER...",
+      "views": 21000,
+      "viewsText": "21K views",
+      "membersOnly": false,
+      "duration": "13:20",
+      "durationSec": 800,
+      "published": "8 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/bOQeeAIW32o/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/bOQeeAIW32o/maxresdefault.jpg"
+    },
+    {
+      "id": "KZLWyxlC_kY",
+      "title": "Zelda Ocarina of Time just proved everyone WRONG...",
+      "views": 15000,
+      "viewsText": "15K views",
+      "membersOnly": false,
+      "duration": "15:40",
+      "durationSec": 940,
+      "published": "8 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/KZLWyxlC_kY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/KZLWyxlC_kY/maxresdefault.jpg"
+    },
+    {
+      "id": "pU0CaBgxNb0",
+      "title": "Zelda Ocarina of Time is DOMINATING now...",
+      "views": 24000,
+      "viewsText": "24K views",
+      "membersOnly": false,
+      "duration": "15:09",
+      "durationSec": 909,
+      "published": "9 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/pU0CaBgxNb0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/pU0CaBgxNb0/maxresdefault.jpg"
+    },
+    {
+      "id": "_wfh2m713HM",
+      "title": "NEW Nintendo Switch 2 Game Leaks!",
+      "views": 37000,
+      "viewsText": "37K views",
+      "membersOnly": false,
+      "duration": "14:42",
+      "durationSec": 882,
+      "published": "10 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/_wfh2m713HM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/_wfh2m713HM/maxresdefault.jpg"
+    },
+    {
+      "id": "vCy_EeEdt5U",
+      "title": "Nintendo Switch 2 just made the BEST Decision...",
+      "views": 24000,
+      "viewsText": "24K views",
+      "membersOnly": false,
+      "duration": "14:31",
+      "durationSec": 871,
+      "published": "11 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/vCy_EeEdt5U/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/vCy_EeEdt5U/maxresdefault.jpg"
+    },
+    {
+      "id": "fAOsvmJojsE",
+      "title": "Decapolice from Level-5 Looks TERRIBLE?!",
+      "views": 12000,
+      "viewsText": "12K views",
+      "membersOnly": false,
+      "duration": "15:50",
+      "durationSec": 950,
+      "published": "12 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/fAOsvmJojsE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/fAOsvmJojsE/maxresdefault.jpg"
+    },
+    {
+      "id": "d3ygYhbdtuU",
+      "title": "Zelda Ocarina of Time does the IMPOSSIBLE...",
+      "views": 24000,
+      "viewsText": "24K views",
+      "membersOnly": false,
+      "duration": "15:07",
+      "durationSec": 907,
+      "published": "12 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/d3ygYhbdtuU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/d3ygYhbdtuU/maxresdefault.jpg"
+    },
+    {
+      "id": "bKy4Px1YHtw",
+      "title": "NEW Xenoblade Genesis & Switch 2 AAA Game Updates!",
+      "views": 16000,
+      "viewsText": "16K views",
+      "membersOnly": false,
+      "duration": "15:39",
+      "durationSec": 939,
+      "published": "13 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/bKy4Px1YHtw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/bKy4Px1YHtw/maxresdefault.jpg"
+    },
+    {
+      "id": "0N2RwTE15aI",
+      "title": "Nintendo Switch 2 Sales EXPLODE!",
+      "views": 28000,
+      "viewsText": "28K views",
+      "membersOnly": false,
+      "duration": "17:28",
+      "durationSec": 1048,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/0N2RwTE15aI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/0N2RwTE15aI/maxresdefault.jpg"
+    },
+    {
+      "id": "r5OnOpqwI0w",
+      "title": "Only Zelda Ocarina of Time on Switch 2 can do THIS...",
+      "views": 20000,
+      "viewsText": "20K views",
+      "membersOnly": false,
+      "duration": "13:11",
+      "durationSec": 791,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/r5OnOpqwI0w/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/r5OnOpqwI0w/maxresdefault.jpg"
+    },
+    {
+      "id": "C3BIhxd8EJU",
+      "title": "Fire Emblem Fortune's Weave Sales STILL Exploding!",
+      "views": 18000,
+      "viewsText": "18K views",
+      "membersOnly": false,
+      "duration": "15:26",
+      "durationSec": 926,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/C3BIhxd8EJU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/C3BIhxd8EJU/maxresdefault.jpg"
+    },
+    {
+      "id": "4g0FtxZpq7Y",
+      "title": "Zelda Majora's Mask Switch 2 Remake NOW Possible...",
+      "views": 13000,
+      "viewsText": "13K views",
+      "membersOnly": false,
+      "duration": "13:22",
+      "durationSec": 802,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/4g0FtxZpq7Y/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/4g0FtxZpq7Y/maxresdefault.jpg"
+    },
+    {
+      "id": "KgE8Fx2PwWU",
+      "title": "HUGE Zelda Ocarina of Time Nintendo Switch 2 Updates!",
+      "views": 22000,
+      "viewsText": "22K views",
+      "membersOnly": false,
+      "duration": "11:52",
+      "durationSec": 712,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/KgE8Fx2PwWU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/KgE8Fx2PwWU/maxresdefault.jpg"
+    },
+    {
+      "id": "xJD_PZgGnLI",
+      "title": "BIG Platinum Games Nintendo Switch 2 Updates!",
+      "views": 41000,
+      "viewsText": "41K views",
+      "membersOnly": false,
+      "duration": "13:45",
+      "durationSec": 825,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/xJD_PZgGnLI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/xJD_PZgGnLI/maxresdefault.jpg"
+    },
+    {
+      "id": "GmK6JzpaJhE",
+      "title": "Why Nintendo Switch 2 Generation NEEDS to be VERY Long...",
+      "views": 23000,
+      "viewsText": "23K views",
+      "membersOnly": false,
+      "duration": "16:22",
+      "durationSec": 982,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/GmK6JzpaJhE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/GmK6JzpaJhE/maxresdefault.jpg"
+    },
+    {
+      "id": "oQtxZ8Q-Gqw",
+      "title": "NEW Zelda Ocarina of Time Updates + News!",
+      "views": 23000,
+      "viewsText": "23K views",
+      "membersOnly": false,
+      "duration": "13:45",
+      "durationSec": 825,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/oQtxZ8Q-Gqw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/oQtxZ8Q-Gqw/maxresdefault.jpg"
+    },
+    {
+      "id": "hwgAnwGmB8I",
+      "title": "BIG Fire Emblem Fortune's Weave Updates + Switch 2 news!",
+      "views": 15000,
+      "viewsText": "15K views",
+      "membersOnly": false,
+      "duration": "14:09",
+      "durationSec": 849,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/hwgAnwGmB8I/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/hwgAnwGmB8I/maxresdefault.jpg"
+    },
+    {
+      "id": "II677YSnGbE",
+      "title": "Zelda Ocarina of Time DESTROYS Kotaku AI SLOP Claims!",
+      "views": 36000,
+      "viewsText": "36K views",
+      "membersOnly": false,
+      "duration": "14:15",
+      "durationSec": 855,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/II677YSnGbE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/II677YSnGbE/maxresdefault.jpg"
+    },
+    {
+      "id": "bJPDA-dlm14",
+      "title": "Metroid Ravenous has a HUGE chance now...",
+      "views": 21000,
+      "viewsText": "21K views",
+      "membersOnly": false,
+      "duration": "14:39",
+      "durationSec": 879,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/bJPDA-dlm14/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/bJPDA-dlm14/maxresdefault.jpg"
+    },
+    {
+      "id": "I7T3nvl_9CY",
+      "title": "How is Nintendo Switch 2 CRUSHING PS5 in Exclusive Games Already?!",
+      "views": 26000,
+      "viewsText": "26K views",
+      "membersOnly": false,
+      "duration": "15:19",
+      "durationSec": 919,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/I7T3nvl_9CY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/I7T3nvl_9CY/maxresdefault.jpg"
+    },
+    {
+      "id": "UA28IIjEUOo",
+      "title": "GREAT Zelda Ocarina of Time news + Switch 2 updates!",
+      "views": 10000,
+      "viewsText": "10K views",
+      "membersOnly": false,
+      "duration": "17:07",
+      "durationSec": 1027,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/UA28IIjEUOo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/UA28IIjEUOo/maxresdefault.jpg"
+    },
+    {
+      "id": "VDG_Xd5YKGA",
+      "title": "Fire Emblem Fortune's Weave Sales EXPLODE!",
+      "views": 23000,
+      "viewsText": "23K views",
+      "membersOnly": false,
+      "duration": "13:22",
+      "durationSec": 802,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/VDG_Xd5YKGA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/VDG_Xd5YKGA/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "PlayerEssence posts daily Nintendo Switch 2 news and opinion, lately dominated by the Ocarina of Time remake and Fire Emblem: Fortune's Weave. Thumbnails are built from two game characters, usually inside a Switch 2 screen, a red Switch 2 badge in the corner and one huge tilted word in red or yellow with a thick black outline.",
+    "niche": "Daily Nintendo Switch 2 news and commentary",
+    "styleTraits": [
+      {
+        "title": "One shouted word",
+        "detail": "Every thumbnail has a single word or very short phrase in heavy italic capitals on a thick black outline, tilted slightly upward, in red, yellow or white: EXPLODE!, WHAT?!, WAIT..., JEALOUS?!, FAILED!, YES!!!!. The punctuation carries the emotion."
+      },
+      {
+        "title": "Two characters side by side",
+        "detail": "Nearly every thumbnail shows two character renders next to each other: Link beside Ganondorf, a Fire Emblem heroine, Samus, or a character from the game in the news. The pairing hints at a story that connects two games or two sides."
+      },
+      {
+        "title": "Inside a Switch 2 screen",
+        "detail": "25 of the last 30 thumbnails put the characters inside a Switch 2 console outline over a blurred background, and all 30 have the red Switch 2 badge in the top-left corner. The five newest uploads drop the console frame and show the characters full-size."
+      },
+      {
+        "title": "Link as a mascot",
+        "detail": "The remake's Link appears in 18 of 30 thumbnails, even when the video is not only about Zelda; 'BIG Publisher JEALOUS of Zelda Ocarina of Time Remake?!' pairs him with a realistic soldier from another game. He has become the channel's recurring face."
+      },
+      {
+        "title": "Title gives the facts, image gives the feeling",
+        "detail": "The title states the news (sales, leaks, updates) and the image word gives the reaction. 'Zelda Ocarina of Time & Switch 2 Sales EXPLODE!' becomes SHOCKED!; 'Zelda Ocarina of Time DESTROYS Kotaku AI SLOP Claims!' becomes FAILED!."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "rVJnRjvbpIY",
+        "why": "'Zelda Ocarina of Time & Switch 2 Sales EXPLODE!' reached 78K views, 3.4 times the 23K median. It is one of the few frameless thumbnails: a big close-up of Link staring at the viewer on the left, the black-and-gold Zelda edition Switch 2 on the right, and SHOCKED! in white on black. The face is larger than usual and the second element is a real product. It joins the channel's two biggest subjects; Fire Emblem 'sales explode' videos in the sample got 13K to 23K, so the Zelda and hardware pairing may matter more than the word."
+      },
+      {
+        "id": "xJD_PZgGnLI",
+        "why": "'BIG Platinum Games Nintendo Switch 2 Updates!' reached 41K views, 1.8 times the median. It shows Bayonetta and a character from Astral Chain inside the Switch 2 frame, with NEW! in yellow. It steps outside the usual Zelda and Fire Emblem rotation toward a studio with a loyal fanbase, and both characters are easy to recognise for those fans."
+      },
+      {
+        "id": "_wfh2m713HM",
+        "why": "'NEW Nintendo Switch 2 Game Leaks!' reached 37K views, 1.6 times the median. LEAKS! in yellow sits under two characters from non-Nintendo games, including 2B from NieR: Automata, inside the Switch 2 frame. The word promises secret information, and the familiar third-party faces suggest which kinds of games the leak is about, which may have widened its appeal."
+      }
+    ],
+    "lessons": [
+      "One word with strong punctuation can be enough when the title carries the facts.",
+      "Use recognisable characters from the game being discussed as the hook: viewers read a familiar face faster than a logo.",
+      "If one topic dominates your channel, pairing it with the next biggest topic (Zelda plus the Switch 2 hardware) may reach more viewers than either alone.",
+      "Watch for word fatigue: EXPLODE!, NEW! and UPDATES! appear 9 times between them in 30 uploads, and videos using the same word range from 13K to 41K, so the word alone is not doing the work.",
+      "Test a frameless layout: the console frame shrinks the characters, and the most-watched video in the sample had no frame and a bigger face."
+    ],
+    "experiment": "Take your most-used thumbnail word and stop using it for your next five uploads; replace it each time with a word that names the specific reaction to that story (SHOCKED, JEALOUS, FAILED). Compare those five videos' 7-day views with the five before.",
+    "faq": [
+      {
+        "q": "How many subscribers does PlayerEssence have?",
+        "a": "As of 23 October 2026, PlayerEssence has about 140K subscribers and roughly 7,500 videos on YouTube. The median of the 30 most recent long videos is about 23K views. The most-watched in that sample, about Ocarina of Time and Switch 2 sales, had about 78K views."
+      },
+      {
+        "q": "What does PlayerEssence make videos about?",
+        "a": "PlayerEssence makes Nintendo Switch 2 news and opinion videos: sales numbers, leaks, game updates and reactions to coverage elsewhere. As of October 2026 the main subjects are The Legend of Zelda: Ocarina of Time remake, Fire Emblem: Fortune's Weave and Metroid Ravenous. Most videos run 12 to 20 minutes."
+      },
+      {
+        "q": "What do PlayerEssence's thumbnails look like?",
+        "a": "Most show two game characters inside a Switch 2 console outline, a red Switch 2 badge in the top-left corner, and one huge tilted word in red or yellow with a thick black outline, such as WHAT?!, EXPLODE! or WAIT.... The remake's Link appears in 18 of the last 30."
+      },
+      {
+        "q": "How often does PlayerEssence upload?",
+        "a": "Very often. The 30 most recent long videos were all published within about three weeks before 23 October 2026, which is more than one video per day on average. The channel lists roughly 7,500 videos in total, many of them daily news updates."
+      }
+    ],
+    "reviewedAt": "2026-10-23"
+  }
+}

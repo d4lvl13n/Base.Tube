@@ -1,0 +1,471 @@
+{
+  "slug": "halvetone",
+  "status": "draft",
+  "channelId": "UCioozw3WaA-bXKl6Qw6xs0A",
+  "name": "halvetone",
+  "handle": "halvetone",
+  "url": "https://www.youtube.com/channel/UCioozw3WaA-bXKl6Qw6xs0A",
+  "avatar": "https://yt3.googleusercontent.com/N9CG9zoGzNVOQ6gn1p9uAdlE4HGvaSlxCh8Xoo238QwQEPLvXT5hMeta00gT2JfURAREowdC=s900-c-k-c0x00ffffff-no-rj",
+  "game": "minecraft",
+  "subscribers": 614000,
+  "subscribersText": "614K subscribers",
+  "videoCount": 276,
+  "description": "Hello! Welcome to my channel. I hide how incredibly handsome I am under the bag Subscribe if you enjoy my content & Follow me on my other socials @halvetone Spotify - https://open.spotify.com/show/3orbeExU7E3nNtSiDTQNaJ",
+  "collectedAt": "2026-10-23",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 193500,
+    "outliers": [
+      {
+        "id": "wFGiONLePDU",
+        "multiple": 27.4
+      },
+      {
+        "id": "8I1fFaXhbF4",
+        "multiple": 22.7
+      },
+      {
+        "id": "6Z3cmogdOho",
+        "multiple": 11.9
+      },
+      {
+        "id": "CP3g2kybokQ",
+        "multiple": 5.7
+      },
+      {
+        "id": "GULQ_bq2eHk",
+        "multiple": 3.7
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "3n72DQR6WKk",
+      "title": "I Survived 1000 Days in Minecraft Hardcore [MOVIE]",
+      "views": 74000,
+      "viewsText": "74K views",
+      "membersOnly": false,
+      "duration": "2:44:24",
+      "durationSec": 9864,
+      "published": "4 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/3n72DQR6WKk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/3n72DQR6WKk/maxresdefault.jpg"
+    },
+    {
+      "id": "GjTLQ4PQGKE",
+      "title": "I Transformed the END PORTAL in Minecraft Hardcore!",
+      "views": 34000,
+      "viewsText": "34K views",
+      "membersOnly": false,
+      "duration": "20:01",
+      "durationSec": 1201,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/GjTLQ4PQGKE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/GjTLQ4PQGKE/maxresdefault.jpg"
+    },
+    {
+      "id": "Di3gS9apsPA",
+      "title": "I Obtained the WORLDS BEST Armor in Minecraft!",
+      "views": 85000,
+      "viewsText": "85K views",
+      "membersOnly": false,
+      "duration": "23:32",
+      "durationSec": 1412,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/Di3gS9apsPA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Di3gS9apsPA/maxresdefault.jpg"
+    },
+    {
+      "id": "4xAsB2p4MEE",
+      "title": "I Spent 100 Hours Building INSANE Farms in HARDCORE Minecraft!",
+      "views": 243000,
+      "viewsText": "243K views",
+      "membersOnly": false,
+      "duration": "36:43",
+      "durationSec": 2203,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/4xAsB2p4MEE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/4xAsB2p4MEE/maxresdefault.jpg"
+    },
+    {
+      "id": "5DcHH9UOjIM",
+      "title": "I Built the LARGEST FNAF Build in Hardcore Minecraft",
+      "views": 308000,
+      "viewsText": "308K views",
+      "membersOnly": false,
+      "duration": "24:40",
+      "durationSec": 1480,
+      "published": "9 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/5DcHH9UOjIM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/5DcHH9UOjIM/maxresdefault.jpg"
+    },
+    {
+      "id": "GULQ_bq2eHk",
+      "title": "My Perfect Start in HARDCORE Minecraft",
+      "views": 708000,
+      "viewsText": "708K views",
+      "membersOnly": false,
+      "duration": "59:24",
+      "durationSec": 3564,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/GULQ_bq2eHk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/GULQ_bq2eHk/maxresdefault.jpg"
+    },
+    {
+      "id": "8I1fFaXhbF4",
+      "title": "I Survived 100 Days on a Deserted Island in Minecraft Hardcore",
+      "views": 4400000,
+      "viewsText": "4.4M views",
+      "membersOnly": false,
+      "duration": "51:37",
+      "durationSec": 3097,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/8I1fFaXhbF4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/8I1fFaXhbF4/maxresdefault.jpg"
+    },
+    {
+      "id": "nZ-_Otup-vY",
+      "title": "I Turned Every Minecraft Mob Into FNAF!",
+      "views": 121000,
+      "viewsText": "121K views",
+      "membersOnly": false,
+      "duration": "1:28:09",
+      "durationSec": 5289,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/nZ-_Otup-vY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/nZ-_Otup-vY/maxresdefault.jpg"
+    },
+    {
+      "id": "NbeiyR4ZoZ4",
+      "title": "I Remade Every Mob into SUPER HEROES in Minecraft",
+      "views": 12000,
+      "viewsText": "12K views",
+      "membersOnly": false,
+      "duration": "59:19",
+      "durationSec": 3559,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/NbeiyR4ZoZ4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/NbeiyR4ZoZ4/maxresdefault.jpg"
+    },
+    {
+      "id": "zP9_oAu2yjE",
+      "title": "I Remade Every Mob into HORROR in minecraft",
+      "views": 31000,
+      "viewsText": "31K views",
+      "membersOnly": false,
+      "duration": "1:47:33",
+      "durationSec": 6453,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/zP9_oAu2yjE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/zP9_oAu2yjE/maxresdefault.jpg"
+    },
+    {
+      "id": "LBqgTzhHhdU",
+      "title": "We Remade Every Mob in Minecraft 1.21",
+      "views": 11000,
+      "viewsText": "11K views",
+      "membersOnly": false,
+      "duration": "1:30:02",
+      "durationSec": 5402,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/LBqgTzhHhdU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/LBqgTzhHhdU/maxresdefault.jpg"
+    },
+    {
+      "id": "yaIhhk6UZqQ",
+      "title": "I Remade Every Mob Into The Amazing Digital Circus in Minecraft",
+      "views": 10000,
+      "viewsText": "10K views",
+      "membersOnly": false,
+      "duration": "13:42",
+      "durationSec": 822,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/yaIhhk6UZqQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/yaIhhk6UZqQ/maxresdefault.jpg"
+    },
+    {
+      "id": "RlrUI-73uSQ",
+      "title": "I Google Translated Every Minecraft Mob 10,000 Times",
+      "views": 17000,
+      "viewsText": "17K views",
+      "membersOnly": false,
+      "duration": "15:49",
+      "durationSec": 949,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/RlrUI-73uSQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/RlrUI-73uSQ/maxresdefault.jpg"
+    },
+    {
+      "id": "aCGF2-RE7eI",
+      "title": "I Remade Blocks into Mobs in Minecraft",
+      "views": 14000,
+      "viewsText": "14K views",
+      "membersOnly": false,
+      "duration": "14:48",
+      "durationSec": 888,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/aCGF2-RE7eI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/aCGF2-RE7eI/maxresdefault.jpg"
+    },
+    {
+      "id": "wY70xFXvPN8",
+      "title": "I remade every mob into my viewers ideas in minecraft",
+      "views": 8100,
+      "viewsText": "8.1K views",
+      "membersOnly": false,
+      "duration": "12:24",
+      "durationSec": 744,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/wY70xFXvPN8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/wY70xFXvPN8/maxresdefault.jpg"
+    },
+    {
+      "id": "6Z3cmogdOho",
+      "title": "I remade EVERY mob into Poppy Playtime in minecraft",
+      "views": 2300000,
+      "viewsText": "2.3M views",
+      "membersOnly": false,
+      "duration": "1:05:46",
+      "durationSec": 3946,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/6Z3cmogdOho/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/6Z3cmogdOho/maxresdefault.jpg"
+    },
+    {
+      "id": "W4JPLsaqwhM",
+      "title": "I remade every mob into Nightmare Critters in minecraft",
+      "views": 151000,
+      "viewsText": "151K views",
+      "membersOnly": false,
+      "duration": "14:56",
+      "durationSec": 896,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/W4JPLsaqwhM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/W4JPLsaqwhM/maxresdefault.jpg"
+    },
+    {
+      "id": "XM7PPQDqvNk",
+      "title": "I remade every mob Better in minecraft",
+      "views": 236000,
+      "viewsText": "236K views",
+      "membersOnly": false,
+      "duration": "11:48",
+      "durationSec": 708,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/XM7PPQDqvNk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/XM7PPQDqvNk/maxresdefault.jpg"
+    },
+    {
+      "id": "cgweyAbKP74",
+      "title": "I remade every mob into Poppy Playtime 4 in minecraft",
+      "views": 592000,
+      "viewsText": "592K views",
+      "membersOnly": false,
+      "duration": "9:43",
+      "durationSec": 583,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/cgweyAbKP74/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/cgweyAbKP74/maxresdefault.jpg"
+    },
+    {
+      "id": "3hPKz0Fw1PY",
+      "title": "I remade every mob into FNAF 5 in minecraft",
+      "views": 247000,
+      "viewsText": "247K views",
+      "membersOnly": false,
+      "duration": "18:04",
+      "durationSec": 1084,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/3hPKz0Fw1PY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/3hPKz0Fw1PY/maxresdefault.jpg"
+    },
+    {
+      "id": "Lj-rbOkI-9g",
+      "title": "I remade every mob into Sonic 3 in minecraft",
+      "views": 344000,
+      "viewsText": "344K views",
+      "membersOnly": false,
+      "duration": "19:37",
+      "durationSec": 1177,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/Lj-rbOkI-9g/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Lj-rbOkI-9g/maxresdefault.jpg"
+    },
+    {
+      "id": "WiJxnaRepIs",
+      "title": "I remade every mob into Poppy Playtime 3 in minecraft",
+      "views": 492000,
+      "viewsText": "492K views",
+      "membersOnly": false,
+      "duration": "22:50",
+      "durationSec": 1370,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/WiJxnaRepIs/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/WiJxnaRepIs/maxresdefault.jpg"
+    },
+    {
+      "id": "OBgyYVfb5_s",
+      "title": "We remade every mob into horror in minecraft",
+      "views": 114000,
+      "viewsText": "114K views",
+      "membersOnly": false,
+      "duration": "9:39",
+      "durationSec": 579,
+      "published": "3 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/OBgyYVfb5_s/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/OBgyYVfb5_s/maxresdefault.jpg"
+    },
+    {
+      "id": "wFGiONLePDU",
+      "title": "We remade every mob into FNAF in minecraft",
+      "views": 5300000,
+      "viewsText": "5.3M views",
+      "membersOnly": false,
+      "duration": "25:39",
+      "durationSec": 1539,
+      "published": "3 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/wFGiONLePDU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/wFGiONLePDU/maxresdefault.jpg"
+    },
+    {
+      "id": "dlFurEWkln8",
+      "title": "We remade every mob into garten of banban 4 in minecraft",
+      "views": 132000,
+      "viewsText": "132K views",
+      "membersOnly": false,
+      "duration": "9:15",
+      "durationSec": 555,
+      "published": "3 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/dlFurEWkln8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/dlFurEWkln8/maxresdefault.jpg"
+    },
+    {
+      "id": "FKFrQcLwvIc",
+      "title": "we remade every mob into rainbow friends in minecraft",
+      "views": 59000,
+      "viewsText": "59K views",
+      "membersOnly": false,
+      "duration": "16:46",
+      "durationSec": 1006,
+      "published": "3 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/FKFrQcLwvIc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/FKFrQcLwvIc/maxresdefault.jpg"
+    },
+    {
+      "id": "CP3g2kybokQ",
+      "title": "We remade every mob into FNAF RUIN in minecraft",
+      "views": 1100000,
+      "viewsText": "1.1M views",
+      "membersOnly": false,
+      "duration": "10:58",
+      "durationSec": 658,
+      "published": "3 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/CP3g2kybokQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/CP3g2kybokQ/maxresdefault.jpg"
+    },
+    {
+      "id": "lzifmjvqnTU",
+      "title": "We remade every mob into garten of banban in minecraft",
+      "views": 615000,
+      "viewsText": "615K views",
+      "membersOnly": false,
+      "duration": "30:51",
+      "durationSec": 1851,
+      "published": "3 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/lzifmjvqnTU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/lzifmjvqnTU/maxresdefault.jpg"
+    },
+    {
+      "id": "ShsAgI7mWSw",
+      "title": "We remade every item into mobs in minecraft",
+      "views": 365000,
+      "viewsText": "365K views",
+      "membersOnly": false,
+      "duration": "8:45",
+      "durationSec": 525,
+      "published": "3 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/ShsAgI7mWSw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ShsAgI7mWSw/maxresdefault.jpg"
+    },
+    {
+      "id": "OWLYKhtKuz8",
+      "title": "We remade every mob into spiderman in minecraft",
+      "views": 461000,
+      "viewsText": "461K views",
+      "membersOnly": false,
+      "duration": "12:19",
+      "durationSec": 739,
+      "published": "3 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/OWLYKhtKuz8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/OWLYKhtKuz8/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "halvetone makes long Minecraft videos: first a run of 'I remade every mob into...' transformation videos, now Hardcore survival challenges and a 1000-day movie. The thumbnails are almost wordless: a before-and-after pair of creatures joined by a big red arrow, or a finished build shown from above with two or three outlined words.",
+    "niche": "Minecraft mob remakes and Hardcore survival challenges",
+    "styleTraits": [
+      {
+        "title": "The red-arrow transformation",
+        "detail": "Every 'I remade every mob' thumbnail uses the same layout: an ordinary Minecraft mob on the left, its remade version on the right, and a thick red arrow with a white outline between them. A creeper becomes a golden animatronic, a spider becomes Spider-Man, a sheep becomes a Nightmare Critter. The whole video is understood in one look."
+      },
+      {
+        "title": "No words on the format thumbnails",
+        "detail": "None of the 23 mob-remake thumbnails in the sample carries a single word. The title names the theme (FNAF, Poppy Playtime, Sonic 3) and the creature on the right shows it, so the image never repeats the title."
+      },
+      {
+        "title": "The same stage every time",
+        "detail": "The creatures stand on the same flat grass field under a blue sky, each with a soft dark shadow underneath. Because the background never changes, the only new thing in each thumbnail is the remade creature, and the eye goes straight to it."
+      },
+      {
+        "title": "Hardcore era: short, heavy text",
+        "detail": "The newer Hardcore videos add bold white or yellow block letters with a black outline: '1000 DAYS', 'HOUR 67', 'WORLD BEST', 'DAY 1 / DAY 100'. The text stays at two or three words and sits in a corner, away from the main build."
+      },
+      {
+        "title": "Episode hearts and the big build",
+        "detail": "The Hardcore series marks episodes with a red pixel heart holding a number, the way Hardcore Minecraft shows health. The image is usually the finished base from above, such as a walled castle with pink cherry trees or a FNAF pizzeria built from blocks, with a diamond pickaxe poking into the frame."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "wFGiONLePDU",
+        "why": "An iron golem on the left turns into a blocky Freddy Fazbear on the right, linked by a straight red arrow, with nothing else in the frame. It puts the most famous character of a theme young gamers were searching for at full size. It is also three years old, so it has had far longer to gather its 5.3 million views (27.4 times the median) than the recent uploads."
+      },
+      {
+        "id": "8I1fFaXhbF4",
+        "why": "A split frame: 'DAY 1' over a one-tree sand island with a tiny player, 'DAY 100' over the same spot turned into a dense jungle town, joined by a curved red arrow. It carries the arrow idea from the mob videos over to a 100-days challenge. The size gap between the two halves may be what made 4.4 million people (22.7 times the median) want to see how it was done."
+      },
+      {
+        "id": "6Z3cmogdOho",
+        "why": "An enderman turns into a blue, furry Huggy Wuggy-style monster with a wide toothy grin. Both figures are tall and thin, so the change reads instantly. Poppy Playtime was a hot theme: this one reached 11.9 times the median, and the channel's follow-ups for chapters 3 and 4 (492K and 592K views) also beat the median."
+      }
+    ],
+    "lessons": [
+      "If your video is a transformation, show both ends and an arrow between them. halvetone's before-and-after pairs need no words at all.",
+      "Pick a theme your audience already searches for and show its best-known character large. The FNAF and Poppy Playtime remakes are the top remake videos in this sample.",
+      "Keep the background identical across a series, so the one new element is the only thing that changes.",
+      "When you switch formats, carry over the visual habit that worked: the red arrow moved from the mob remakes into 'DAY 1 / DAY 100'.",
+      "Limit text to two or three outlined words and keep it in a corner, off the subject."
+    ],
+    "experiment": "On your next before-and-after video, make two thumbnails: one with the before/after pair and a thick red arrow and no text, one with the same image plus a two-word label. Run them against each other with YouTube's Test & Compare and keep the one that wins on watch time.",
+    "faq": [
+      {
+        "q": "How many subscribers does halvetone have?",
+        "a": "As of 23 October 2026, halvetone has about 614K subscribers and 276 public videos. Among the latest 30 long uploads, the median video has about 193,500 views, while the most-viewed one, 'We remade every mob into FNAF in minecraft', has passed 5.3 million views."
+      },
+      {
+        "q": "What does halvetone make videos about?",
+        "a": "halvetone makes Minecraft videos. The older uploads remake every mob in the game into characters from other franchises, such as FNAF, Poppy Playtime, Sonic or Spider-Man. The recent uploads are Hardcore survival challenges: 100-day runs, big builds and a 1000-day movie."
+      },
+      {
+        "q": "What do halvetone's thumbnails look like?",
+        "a": "The mob-remake thumbnails show a normal Minecraft mob on the left, its remade version on the right and a big red arrow between them, on a plain grass field with no text. The newer Hardcore thumbnails show a finished build from above with short outlined text such as '1000 DAYS' or 'DAY 1 / DAY 100'."
+      },
+      {
+        "q": "What is halvetone's most viewed video?",
+        "a": "In the sample collected on 23 October 2026, 'We remade every mob into FNAF in minecraft' leads with about 5.3 million views, around 27 times the channel's median. Next come the deserted-island 100-days video with 4.4 million views and the Poppy Playtime remake with 2.3 million."
+      }
+    ],
+    "reviewedAt": "2026-10-23"
+  }
+}

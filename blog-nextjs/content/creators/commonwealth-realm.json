@@ -1,0 +1,471 @@
+{
+  "slug": "commonwealth-realm",
+  "status": "draft",
+  "channelId": "UCOkE7SxzwKUII9CxfggMSIw",
+  "name": "Commonwealth Realm",
+  "handle": "commonwealthrealm",
+  "url": "https://www.youtube.com/channel/UCOkE7SxzwKUII9CxfggMSIw",
+  "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_lnBdZIMhDXN8MDTSTtJ7b8zMLrC5RGqwsgCD9N3rtXozY=s900-c-k-c0x00ffffff-no-rj",
+  "game": "zelda-ocarina-of-time",
+  "subscribers": 321000,
+  "subscribersText": "321K subscribers",
+  "videoCount": 1300,
+  "description": "A Nintendo and Zelda Youtube-channel fully devoted to bring you the best of both! Some of our series include: Inside Zelda Breath of the Wild 2: In-depth series on all the important elements found in The Legend of Zelda: Breath of the Wild Sequel Nintendo Switch News: News updates and in-depth look and dissections on the Nintendo Switch and titles coming to the system. Timelines: In-depth look at ",
+  "collectedAt": "2026-10-23",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 43500,
+    "outliers": [
+      {
+        "id": "cZfO--RdTrg",
+        "multiple": 2.8
+      },
+      {
+        "id": "-likzJatNk4",
+        "multiple": 2.3
+      },
+      {
+        "id": "t7PGP-H70UI",
+        "multiple": 2.1
+      },
+      {
+        "id": "e06jNj6a96U",
+        "multiple": 1.7
+      },
+      {
+        "id": "gzZmA1_9hH8",
+        "multiple": 1.6
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "sogHYvgbSDI",
+      "title": "Ocarina of Time Remake - Nintendo is Hiding This!",
+      "views": 45000,
+      "viewsText": "45K views",
+      "membersOnly": false,
+      "duration": "10:13",
+      "durationSec": 613,
+      "published": "1 day ago",
+      "thumbnail": "https://i.ytimg.com/vi/sogHYvgbSDI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/sogHYvgbSDI/maxresdefault.jpg"
+    },
+    {
+      "id": "lTf1PVXDhvE",
+      "title": "All NEW Ocarina of Time Remake Adult Link Gameplay!",
+      "views": 45000,
+      "viewsText": "45K views",
+      "membersOnly": false,
+      "duration": "8:48",
+      "durationSec": 528,
+      "published": "4 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/lTf1PVXDhvE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/lTf1PVXDhvE/maxresdefault.jpg"
+    },
+    {
+      "id": "tMbBXAEAoRU",
+      "title": "Brand NEW Ocarina of Time Remake Footage and News!",
+      "views": 39000,
+      "viewsText": "39K views",
+      "membersOnly": false,
+      "duration": "10:20",
+      "durationSec": 620,
+      "published": "6 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/tMbBXAEAoRU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/tMbBXAEAoRU/maxresdefault.jpg"
+    },
+    {
+      "id": "Poh70GPeZnc",
+      "title": "NEW Ocarina of Time Remake Gameplay!",
+      "views": 34000,
+      "viewsText": "34K views",
+      "membersOnly": false,
+      "duration": "10:11",
+      "durationSec": 611,
+      "published": "8 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/Poh70GPeZnc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Poh70GPeZnc/maxresdefault.jpg"
+    },
+    {
+      "id": "vSbLVcIiXf8",
+      "title": "Ocarina of Time Remake's BIG Weapon Upgrades!",
+      "views": 47000,
+      "viewsText": "47K views",
+      "membersOnly": false,
+      "duration": "10:33",
+      "durationSec": 633,
+      "published": "11 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/vSbLVcIiXf8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/vSbLVcIiXf8/maxresdefault.jpg"
+    },
+    {
+      "id": "7wgcxpJeeMU",
+      "title": "Ocarina of Time Remake UPDATES! Previews Next Week?",
+      "views": 42000,
+      "viewsText": "42K views",
+      "membersOnly": false,
+      "duration": "10:15",
+      "durationSec": 615,
+      "published": "13 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/7wgcxpJeeMU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/7wgcxpJeeMU/maxresdefault.jpg"
+    },
+    {
+      "id": "i8jqHHAr9A4",
+      "title": "Ocarina of Time Remake's NEW Gameplay Upgrades!",
+      "views": 60000,
+      "viewsText": "60K views",
+      "membersOnly": false,
+      "duration": "10:39",
+      "durationSec": 639,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/i8jqHHAr9A4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/i8jqHHAr9A4/maxresdefault.jpg"
+    },
+    {
+      "id": "VG_GVQ-gin8",
+      "title": "NEW Ocarina of Time Remake and Zelda 40th Updates!",
+      "views": 65000,
+      "viewsText": "65K views",
+      "membersOnly": false,
+      "duration": "10:03",
+      "durationSec": 603,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/VG_GVQ-gin8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/VG_GVQ-gin8/maxresdefault.jpg"
+    },
+    {
+      "id": "SIKqjSGDNwk",
+      "title": "Ocarina of Time Remake's NEW Map - Everything We Know!",
+      "views": 54000,
+      "viewsText": "54K views",
+      "membersOnly": false,
+      "duration": "10:44",
+      "durationSec": 644,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/SIKqjSGDNwk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/SIKqjSGDNwk/maxresdefault.jpg"
+    },
+    {
+      "id": "cZfO--RdTrg",
+      "title": "NEW Ocarina of Time Remake Updates!",
+      "views": 122000,
+      "viewsText": "122K views",
+      "membersOnly": false,
+      "duration": "10:28",
+      "durationSec": 628,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/cZfO--RdTrg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/cZfO--RdTrg/maxresdefault.jpg"
+    },
+    {
+      "id": "qZIgdxHfomk",
+      "title": "NEW Ocarina of Time Remake Secret Town!",
+      "views": 57000,
+      "viewsText": "57K views",
+      "membersOnly": false,
+      "duration": "10:37",
+      "durationSec": 637,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/qZIgdxHfomk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/qZIgdxHfomk/maxresdefault.jpg"
+    },
+    {
+      "id": "gzZmA1_9hH8",
+      "title": "All Ocarina of Time Remake Gameplay So Far!",
+      "views": 70000,
+      "viewsText": "70K views",
+      "membersOnly": false,
+      "duration": "11:22",
+      "durationSec": 682,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/gzZmA1_9hH8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/gzZmA1_9hH8/maxresdefault.jpg"
+    },
+    {
+      "id": "t7PGP-H70UI",
+      "title": "NEW Ocarina of Time Remake Young Link Gameplay!",
+      "views": 93000,
+      "viewsText": "93K views",
+      "membersOnly": false,
+      "duration": "10:15",
+      "durationSec": 615,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/t7PGP-H70UI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/t7PGP-H70UI/maxresdefault.jpg"
+    },
+    {
+      "id": "-likzJatNk4",
+      "title": "NEW Ocarina of Time Remake Adult Link Gameplay!",
+      "views": 101000,
+      "viewsText": "101K views",
+      "membersOnly": false,
+      "duration": "10:38",
+      "durationSec": 638,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/-likzJatNk4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/-likzJatNk4/maxresdefault.jpg"
+    },
+    {
+      "id": "DE3CEPE2u7o",
+      "title": "Zelda Ocarina of Time Remake NEW Gameplay Changes!",
+      "views": 33000,
+      "viewsText": "33K views",
+      "membersOnly": false,
+      "duration": "10:44",
+      "durationSec": 644,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/DE3CEPE2u7o/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/DE3CEPE2u7o/maxresdefault.jpg"
+    },
+    {
+      "id": "oNqxZu1Vs1s",
+      "title": "Zelda Ocarina of Time Remake Release Date Trailer Reaction!",
+      "views": 30000,
+      "viewsText": "30K views",
+      "membersOnly": false,
+      "duration": "3:27",
+      "durationSec": 207,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/oNqxZu1Vs1s/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/oNqxZu1Vs1s/maxresdefault.jpg"
+    },
+    {
+      "id": "G-ok39mk6_s",
+      "title": "Zelda Ocarina of Time Remake Ending Changing?!",
+      "views": 32000,
+      "viewsText": "32K views",
+      "membersOnly": false,
+      "duration": "10:44",
+      "durationSec": 644,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/G-ok39mk6_s/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/G-ok39mk6_s/maxresdefault.jpg"
+    },
+    {
+      "id": "e06jNj6a96U",
+      "title": "Zelda 40th Anniversary Direct on Tuesday! Ocarina Gameplay!",
+      "views": 76000,
+      "viewsText": "76K views",
+      "membersOnly": false,
+      "duration": "10:44",
+      "durationSec": 644,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/e06jNj6a96U/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/e06jNj6a96U/maxresdefault.jpg"
+    },
+    {
+      "id": "pW9bySlEslw",
+      "title": "September Nintendo Direct Leak - Everything We Know!",
+      "views": 48000,
+      "viewsText": "48K views",
+      "membersOnly": false,
+      "duration": "10:18",
+      "durationSec": 618,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/pW9bySlEslw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/pW9bySlEslw/maxresdefault.jpg"
+    },
+    {
+      "id": "pIu-_HaEIgw",
+      "title": "New Zelda Ocarina of Time Remake Trailer Soon?!",
+      "views": 46000,
+      "viewsText": "46K views",
+      "membersOnly": false,
+      "duration": "10:40",
+      "durationSec": 640,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/pIu-_HaEIgw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/pIu-_HaEIgw/maxresdefault.jpg"
+    },
+    {
+      "id": "d1oGrolwQSA",
+      "title": "Zelda Ocarina of Time Remake Ganon's Castle Changes!",
+      "views": 15000,
+      "viewsText": "15K views",
+      "membersOnly": false,
+      "duration": "10:23",
+      "durationSec": 623,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/d1oGrolwQSA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/d1oGrolwQSA/maxresdefault.jpg"
+    },
+    {
+      "id": "H_0hiBp0-90",
+      "title": "Zelda 40th Anniversary Direct Incoming?!",
+      "views": 31000,
+      "viewsText": "31K views",
+      "membersOnly": false,
+      "duration": "10:21",
+      "durationSec": 621,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/H_0hiBp0-90/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/H_0hiBp0-90/maxresdefault.jpg"
+    },
+    {
+      "id": "W7y0taDNtrw",
+      "title": "Zelda Ocarina of Time Remake's NEW Dungeon?!",
+      "views": 33000,
+      "viewsText": "33K views",
+      "membersOnly": false,
+      "duration": "10:38",
+      "durationSec": 638,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/W7y0taDNtrw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/W7y0taDNtrw/maxresdefault.jpg"
+    },
+    {
+      "id": "rj9JQoMkH9w",
+      "title": "Zelda 40th Anniversary Leaked! Everything We Know!",
+      "views": 32000,
+      "viewsText": "32K views",
+      "membersOnly": false,
+      "duration": "10:17",
+      "durationSec": 617,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/rj9JQoMkH9w/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/rj9JQoMkH9w/maxresdefault.jpg"
+    },
+    {
+      "id": "RRRixwa3Qxk",
+      "title": "Zelda Ocarina of Time Remake Spirit Temple Changes!",
+      "views": 12000,
+      "viewsText": "12K views",
+      "membersOnly": false,
+      "duration": "10:34",
+      "durationSec": 634,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/RRRixwa3Qxk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/RRRixwa3Qxk/maxresdefault.jpg"
+    },
+    {
+      "id": "wkgd2sgiYIM",
+      "title": "Ocarina of Time Release Day Leaked by Nintendo?!",
+      "views": 25000,
+      "viewsText": "25K views",
+      "membersOnly": false,
+      "duration": "10:02",
+      "durationSec": 602,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/wkgd2sgiYIM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/wkgd2sgiYIM/maxresdefault.jpg"
+    },
+    {
+      "id": "ZXzKyeLXgAk",
+      "title": "Zelda Ocarina of Time Remake Gerudo Valley Changes!",
+      "views": 16000,
+      "viewsText": "16K views",
+      "membersOnly": false,
+      "duration": "11:05",
+      "durationSec": 665,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/ZXzKyeLXgAk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ZXzKyeLXgAk/maxresdefault.jpg"
+    },
+    {
+      "id": "07ywDtXXLIo",
+      "title": "Zelda Ocarina of Time Remake Age Rating Explained!",
+      "views": 17000,
+      "viewsText": "17K views",
+      "membersOnly": false,
+      "duration": "10:09",
+      "durationSec": 609,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/07ywDtXXLIo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/07ywDtXXLIo/maxresdefault.jpg"
+    },
+    {
+      "id": "eCg0ux45odg",
+      "title": "New Zelda 40th and Ocarina of Time Remake Updates!",
+      "views": 27000,
+      "viewsText": "27K views",
+      "membersOnly": false,
+      "duration": "10:22",
+      "durationSec": 622,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/eCg0ux45odg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/eCg0ux45odg/maxresdefault.jpg"
+    },
+    {
+      "id": "EGuYE3PV5jk",
+      "title": "Zelda Ocarina of Time Remake Shadow Temple Changes!",
+      "views": 52000,
+      "viewsText": "52K views",
+      "membersOnly": false,
+      "duration": "10:48",
+      "durationSec": 648,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/EGuYE3PV5jk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/EGuYE3PV5jk/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "Commonwealth Realm is a Zelda news channel that, in this sample, covers almost nothing but the Ocarina of Time remake for Switch 2. Its recent thumbnails are close to a fixed template: the gold Ocarina of Time logo, one gold word underneath, and a close-up of the remake's Link on a dark background.",
+    "niche": "Zelda news, currently the Ocarina of Time remake",
+    "styleTraits": [
+      {
+        "title": "The logo is the headline",
+        "detail": "The gold-and-blue Ocarina of Time logo, with the Master Sword and shield, appears in almost every thumbnail, usually large on the left half. For an audience waiting on one game, the logo alone says what the video is about."
+      },
+      {
+        "title": "One gold word",
+        "detail": "Under the logo sits a single word in the same gold serif: GAMEPLAY (6 times in 30), UPDATES (3), CHANGES, UPGRADES, FOOTAGE, SECRETS, NEW MAP, REBORN, UNKNOWN. There are no question marks or exclamation points in the image."
+      },
+      {
+        "title": "The remake's Link, close and serious",
+        "detail": "The 14 most recent thumbnails all use a close render of the remake's Link on the right: in profile, playing the ocarina with eyes closed, or staring at the camera. Older uploads used the classic artwork Link, the Switch 2 box art or a photo of Zelda producer Eiji Aonuma."
+      },
+      {
+        "title": "Dark, warm backgrounds",
+        "detail": "Backgrounds are dark green and brown, often a blurred scene from the game. The colour comes from the gold text and Link's green tunic, which gives the channel a calm, consistent look."
+      },
+      {
+        "title": "Titles do the shouting",
+        "detail": "Urgency lives in the titles ('NEW', 'All NEW', 'Everything We Know!', '?!'), while the thumbnail stays clean. Title and image split the work: the image says which game and which kind of news, the title adds the hype."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "cZfO--RdTrg",
+        "why": "'NEW Ocarina of Time Remake Updates!' reached 122K views, 2.8 times the 43.5K median. The thumbnail is the standard template: logo, the word UPDATES, and Link looking off to the side. It is nearly identical to two other UPDATES thumbnails that reached 42K and 65K, so the image alone probably does not explain the gap; the news it covered and its timing in the remake's news cycle likely mattered more."
+      },
+      {
+        "id": "-likzJatNk4",
+        "why": "'NEW Ocarina of Time Remake Adult Link Gameplay!' reached 101K views, 2.3 times the median. The thumbnail shows the logo, GAMEPLAY, and the remake's Link playing the ocarina with eyes closed. 'Adult Link' is a specific promise in the title. A newer video with an almost identical title, posted 4 days before this snapshot, has 45K so far, which suggests first-look timing counted for a lot."
+      },
+      {
+        "id": "t7PGP-H70UI",
+        "why": "'NEW Ocarina of Time Remake Young Link Gameplay!' reached 93K views, 2.1 times the median, with the same template: logo, GAMEPLAY, and Link in profile. Together with the Adult Link video, it suggests the audience most wanted first gameplay right after the reveal; the thumbnail's job was mainly to say 'gameplay' and show the new Link clearly."
+      }
+    ],
+    "lessons": [
+      "When your whole audience is waiting for one game, its logo is your strongest asset: make it big and keep it in the same place every time.",
+      "One word under the logo is enough to say what kind of video it is: GAMEPLAY, NEW MAP, SECRETS.",
+      "Switch to the newest official art as soon as it exists. After the remake's Link was shown, the channel moved its whole template to him.",
+      "A fixed template makes your numbers easier to read: when the image barely changes, the range from 12K to 122K points to topic and timing, not design.",
+      "Let the title carry the urgency (NEW, ?!) and keep the image clean."
+    ],
+    "experiment": "If you run a one-game news channel, replace the generic word (UPDATES, GAMEPLAY) with the one specific thing each video shows (a dungeon name, a new item, a character) on your next three uploads, keeping the rest of the template. Compare their 7-day views with your previous ten uploads.",
+    "faq": [
+      {
+        "q": "How many subscribers does Commonwealth Realm have?",
+        "a": "As of 23 October 2026, Commonwealth Realm has about 321K subscribers and roughly 1,300 videos on YouTube. The median of its 30 most recent long videos is about 43.5K views. The most-watched in that sample, an Ocarina of Time remake update, had about 122K views."
+      },
+      {
+        "q": "What does Commonwealth Realm make videos about?",
+        "a": "Commonwealth Realm makes Zelda and Nintendo news videos. Its 30 most recent uploads, covering about two months, are almost all about The Legend of Zelda: Ocarina of Time remake for Switch 2: new gameplay, changes to dungeons and towns, leaks, and the Zelda 40th Anniversary Direct. Nearly every video is about 10 minutes long."
+      },
+      {
+        "q": "What do Commonwealth Realm's thumbnails look like?",
+        "a": "Recent thumbnails follow one template: the gold Ocarina of Time logo on the left, a single gold word underneath such as GAMEPLAY, UPDATES or NEW MAP, and a close-up of the remake's Link on the right, all on a dark background. The thumbnails stay calm; the urgency is in the titles."
+      },
+      {
+        "q": "What game does Commonwealth Realm cover?",
+        "a": "Commonwealth Realm covers The Legend of Zelda series and Nintendo news. As of October 2026 nearly all of its recent videos focus on the Ocarina of Time remake for Nintendo Switch 2, with some coverage of the Zelda 40th anniversary and Nintendo Direct leaks."
+      }
+    ],
+    "reviewedAt": "2026-10-23"
+  }
+}

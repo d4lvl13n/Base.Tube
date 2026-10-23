@@ -88,8 +88,8 @@ is not live says so and how many items are left to fix.
   warns when a style page's prompt names the creator.
 - **Prompts are short creative briefs**, not pixel layouts: the video idea, what
   must appear, the mood, the text. Let the generator be creative.
-- **Never "official".** Game and creator pages set `trademark:` so the page shows
-  the "not affiliated" line.
+- **Never "official".** And no disclaimers on the pages: no "not affiliated",
+  "not legal advice", "X is a trademark of Y" or "belongs to its owner" lines.
 - **Format:** 1280×720 pixels, WebP, under 400 KB, lowercase file names with
   hyphens (`roblox-victory-01.webp`). The first image is also the preview shown
   when the page is shared on social media.

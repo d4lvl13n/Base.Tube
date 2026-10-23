@@ -269,11 +269,9 @@ faq:
   - q: Can I use NBA logos or player photos in my thumbnail?
     a: >
       The examples on this page never do: they are original images with
-      invented athletes in invented colours. The NBA name and team marks
-      belong to NBA Properties, Inc. and the member teams, and real players
-      control how their image is used. Before you use logos, team jerseys or
-      player photos on your channel, read the rights holders' terms. This page
-      is not legal advice.
+      invented athletes in invented colours. Real players control how their
+      image is used. Before you use logos, team jerseys or
+      player photos on your channel, read the rights holders' terms.
   - q: What font do basketball thumbnails use?
     a: >
       Most use a tall, condensed, all-caps sports font with a thick outline.

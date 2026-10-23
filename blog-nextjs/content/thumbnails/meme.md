@@ -420,7 +420,7 @@ faq:
       owns, and many show real people who never agreed to promote your video.
       Sharing a meme in a chat is not the same as using it to promote your
       channel. The safer route is to recreate the format with an original
-      image, as every example on this page does. This page is not legal advice.
+      image, as every example on this page does.
   - q: Do chess and basketball videos use thumbnail memes?
     a: >
       Yes. Chess channels use the red circle on a single piece to sell a

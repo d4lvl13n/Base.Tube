@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+import { CREATORS_PATH, creatorsHubIsLive } from './creators/links';
 import { linkablePages } from './thumbnail-pages/ThumbnailIdeasStrip';
 
 const socials = [
@@ -120,6 +121,8 @@ export default function Footer() {
               ))}
             <li><Link href="/thumbnails#style">Creator styles</Link></li>
             <li><Link href="/thumbnails#genre">Video genres</Link></li>
+            {/* Shown once the creators hub is indexed (enough live creator pages). */}
+            {creatorsHubIsLive() && <li><Link href={CREATORS_PATH}>Creators</Link></li>}
           </ul>
         </nav>
 

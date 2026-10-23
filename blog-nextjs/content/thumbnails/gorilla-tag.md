@@ -217,7 +217,7 @@ faq:
       allows videos of you playing on YouTube, but forbids suggesting an
       official link, for example by putting the game logo in the centre, and
       asks fan content to carry a not-affiliated notice. Read it before you
-      publish. This page is not legal advice.
+      publish.
 
 related:
   - roblox

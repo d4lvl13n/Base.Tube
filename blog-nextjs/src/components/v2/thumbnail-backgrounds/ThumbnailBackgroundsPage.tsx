@@ -143,11 +143,6 @@ export default function ThumbnailBackgroundsPage({ readyIds }: Props) {
               </div>
             ))}
 
-            <p className={s.disclaimer}>
-              Every background is an original image made for Base.Tube: no game art, screenshots, logos, brand names
-              or real people. Minecraft is a trademark of Microsoft Corporation and Fortnite is a trademark of Epic
-              Games, Inc. They are named only to describe a style. Base.Tube is not affiliated with either company.
-            </p>
           </div>
         </section>
 

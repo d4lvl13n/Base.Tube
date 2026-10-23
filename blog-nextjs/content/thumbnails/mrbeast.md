@@ -270,7 +270,7 @@ faq:
       person's face can raise likeness and copyright issues, and it suggests a
       collaboration that does not exist. YouTube's thumbnail policy also bans
       thumbnails that mislead viewers about what is in the video. Use your own
-      face or a synthetic one. This page is not legal advice.
+      face or a synthetic one.
   - q: What font is used in MrBeast-style thumbnails?
     a: >
       The look uses heavy, rounded or condensed capitals in white or yellow

@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import { getAllPosts } from '@/lib/wordpress'
 import { getThumbnailSitemapEntries } from '@/components/v2/thumbnail-pages/sitemap-entries'
+import { getCreatorSitemapEntries } from '@/components/v2/creators/links'
 import { BACKGROUNDS } from '@/components/v2/thumbnail-backgrounds/backgrounds'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -141,5 +142,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     console.error('Error loading /thumbnails pages for sitemap:', error)
   }
 
-  return [...staticPages, ...thumbnailPages, ...blogPosts]
+  // /creators/youtube pages: only live ones (status published + analysis written), read from
+  // creators-index.json; the hub once enough of them are live. Drafts are never listed.
+  let creatorPages: MetadataRoute.Sitemap = []
+  try {
+    creatorPages = getCreatorSitemapEntries(baseUrl)
+  } catch (error) {
+    console.error('Error loading /creators pages for sitemap:', error)
+  }
+
+  return [...staticPages, ...thumbnailPages, ...creatorPages, ...blogPosts]
 }

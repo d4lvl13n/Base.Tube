@@ -191,7 +191,7 @@ faq:
       For your own thumbnails, Rockstar publishes a policy on posting its
       copyrighted material on the Rockstar Games support site. Read the
       current version there before you use official art, screenshots or the
-      logo. This page is not legal advice.
+      logo.
   - q: Is there a free GTA 6 thumbnail maker?
     a: >
       You can make one by hand in any free image editor with the rules on this

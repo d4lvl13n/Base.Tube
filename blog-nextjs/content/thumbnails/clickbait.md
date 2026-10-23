@@ -253,7 +253,7 @@ faq:
       that's not in the video" as not allowed, and its spam policy covers
       maliciously misleading titles and thumbnails. YouTube can remove the
       thumbnail and may give a strike; first-time violations usually get a
-      warning. This page is not legal advice.
+      warning.
   - q: Does clickbait still work on YouTube?
     a: >
       A misleading thumbnail can win a click and lose the viewer. YouTube says

@@ -1,0 +1,471 @@
+{
+  "slug": "setty",
+  "status": "draft",
+  "channelId": "UCCtdfq_TJvLJSSOIQ2_37Rw",
+  "name": "Setty",
+  "handle": "setty2k",
+  "url": "https://www.youtube.com/channel/UCCtdfq_TJvLJSSOIQ2_37Rw",
+  "avatar": "https://yt3.googleusercontent.com/_rX6WuqfDo9oe6ECWyqQ1IbXdnDzODBxjFfoYbPUCA2Ze9sw4lViY9w3mvJ07iyeypT5ce_fZA=s900-c-k-c0x00ffffff-no-rj",
+  "game": "fortnite",
+  "subscribers": 408000,
+  "subscribersText": "408K subscribers",
+  "videoCount": 603,
+  "description": "Współprace biznesowe: setty@creative-minds.pl",
+  "collectedAt": "2026-10-23",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 105500,
+    "outliers": [
+      {
+        "id": "EZTtt86LcEE",
+        "multiple": 3.2
+      },
+      {
+        "id": "C16PGKaIZtw",
+        "multiple": 3.2
+      },
+      {
+        "id": "Vcll0UDHCoo",
+        "multiple": 2.2
+      },
+      {
+        "id": "K3k0SJ_fZaQ",
+        "multiple": 1.8
+      },
+      {
+        "id": "4ZzCdTnow-A",
+        "multiple": 1.7
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "QE9AWMVGxj8",
+      "title": "SETTY vs PRO MAPS in Fortnite",
+      "views": 98000,
+      "viewsText": "98K views",
+      "membersOnly": false,
+      "duration": "24:29",
+      "durationSec": 1469,
+      "published": "1 day ago",
+      "thumbnail": "https://i.ytimg.com/vi/QE9AWMVGxj8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/QE9AWMVGxj8/maxresdefault.jpg"
+    },
+    {
+      "id": "EZTtt86LcEE",
+      "title": "SETTY vs 99 VIEWERS... AND A SHAMAN?!",
+      "views": 333000,
+      "viewsText": "333K views",
+      "membersOnly": false,
+      "duration": "21:20",
+      "durationSec": 1280,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/EZTtt86LcEE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/EZTtt86LcEE/maxresdefault.jpg"
+    },
+    {
+      "id": "Vcll0UDHCoo",
+      "title": "SETTY vs NOOB MAPS in Fortnite",
+      "views": 227000,
+      "viewsText": "227K views",
+      "membersOnly": false,
+      "duration": "17:14",
+      "durationSec": 1034,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/Vcll0UDHCoo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Vcll0UDHCoo/maxresdefault.jpg"
+    },
+    {
+      "id": "C16PGKaIZtw",
+      "title": "I WON'T STOP PLAYING UNTIL I HIT UNREAL LEGEND!",
+      "views": 334000,
+      "viewsText": "334K views",
+      "membersOnly": false,
+      "duration": "24:33",
+      "durationSec": 1473,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/C16PGKaIZtw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/C16PGKaIZtw/maxresdefault.jpg"
+    },
+    {
+      "id": "NitNvKSTglU",
+      "title": "MY FIRST DAY OF THE NEW FORTNITE SEASON!",
+      "views": 136000,
+      "viewsText": "136K views",
+      "membersOnly": false,
+      "duration": "11:14",
+      "durationSec": 674,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/NitNvKSTglU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/NitNvKSTglU/maxresdefault.jpg"
+    },
+    {
+      "id": "K3k0SJ_fZaQ",
+      "title": "08/08 Setty Last Chance",
+      "views": 194000,
+      "viewsText": "194K views",
+      "membersOnly": false,
+      "duration": "13:15",
+      "durationSec": 795,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/K3k0SJ_fZaQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/K3k0SJ_fZaQ/maxresdefault.jpg"
+    },
+    {
+      "id": "2rOpDWC84dA",
+      "title": "I PLAYED 1v1 FOR 30 DAYS STRAIGHT in Fortnite!",
+      "views": 77000,
+      "viewsText": "77K views",
+      "membersOnly": false,
+      "duration": "26:51",
+      "durationSec": 1611,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/2rOpDWC84dA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/2rOpDWC84dA/maxresdefault.jpg"
+    },
+    {
+      "id": "4ZzCdTnow-A",
+      "title": "SETTY 2026",
+      "views": 183000,
+      "viewsText": "183K views",
+      "membersOnly": false,
+      "duration": "16:36",
+      "durationSec": 996,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/4ZzCdTnow-A/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/4ZzCdTnow-A/maxresdefault.jpg"
+    },
+    {
+      "id": "rmXWEsY_FGs",
+      "title": "THE GREATEST COMEBACK IN A Fortnite TOURNAMENT",
+      "views": 64000,
+      "viewsText": "64K views",
+      "membersOnly": false,
+      "duration": "13:52",
+      "durationSec": 832,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/rmXWEsY_FGs/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/rmXWEsY_FGs/maxresdefault.jpg"
+    },
+    {
+      "id": "K-a_Ymy_AAQ",
+      "title": "NEW SEASON = NEW SETUP",
+      "views": 134000,
+      "viewsText": "134K views",
+      "membersOnly": false,
+      "duration": "14:47",
+      "durationSec": 887,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/K-a_Ymy_AAQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/K-a_Ymy_AAQ/maxresdefault.jpg"
+    },
+    {
+      "id": "15Az881zcX4",
+      "title": "$$$ on the WEIRDEST WORLD CUP in Fortnite",
+      "views": 94000,
+      "viewsText": "94K views",
+      "membersOnly": false,
+      "duration": "28:08",
+      "durationSec": 1688,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/15Az881zcX4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/15Az881zcX4/maxresdefault.jpg"
+    },
+    {
+      "id": "snJZ7pxB5WY",
+      "title": "FNCS OVER...",
+      "views": 138000,
+      "viewsText": "138K views",
+      "membersOnly": false,
+      "duration": "22:55",
+      "durationSec": 1375,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/snJZ7pxB5WY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/snJZ7pxB5WY/maxresdefault.jpg"
+    },
+    {
+      "id": "LK2kDIBSNCg",
+      "title": "SETTY VS FNCS 2026",
+      "views": 62000,
+      "viewsText": "62K views",
+      "membersOnly": false,
+      "duration": "21:10",
+      "durationSec": 1270,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/LK2kDIBSNCg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/LK2kDIBSNCg/maxresdefault.jpg"
+    },
+    {
+      "id": "AUZL6vxOIOY",
+      "title": "WYGRANA = ??? PLN",
+      "views": 49000,
+      "viewsText": "49K views",
+      "membersOnly": false,
+      "duration": "14:53",
+      "durationSec": 893,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/AUZL6vxOIOY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/AUZL6vxOIOY/maxresdefault.jpg"
+    },
+    {
+      "id": "Rs-UeHaOCio",
+      "title": "I WON THE FIRST TOURNAMENT OF THE NEW SEASON in Fortnite",
+      "views": 54000,
+      "viewsText": "54K views",
+      "membersOnly": false,
+      "duration": "15:40",
+      "durationSec": 940,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/Rs-UeHaOCio/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Rs-UeHaOCio/maxresdefault.jpg"
+    },
+    {
+      "id": "O9opf_6xIxI",
+      "title": "WHAT RANK WILL I GET IN 1H IN THE NEW SEASON in Fortnite",
+      "views": 68000,
+      "viewsText": "68K views",
+      "membersOnly": false,
+      "duration": "12:41",
+      "durationSec": 761,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/O9opf_6xIxI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/O9opf_6xIxI/maxresdefault.jpg"
+    },
+    {
+      "id": "qXEimQck8ww",
+      "title": "FIRST HOUR in the NEW Fortnite SEASON",
+      "views": 64000,
+      "viewsText": "64K views",
+      "membersOnly": false,
+      "duration": "19:24",
+      "durationSec": 1164,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/qXEimQck8ww/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/qXEimQck8ww/maxresdefault.jpg"
+    },
+    {
+      "id": "pSbfGZLL2Gc",
+      "title": "FIRST TOURNAMENT IN THE NEW HOME!",
+      "views": 120000,
+      "viewsText": "120K views",
+      "membersOnly": false,
+      "duration": "15:11",
+      "durationSec": 911,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/pSbfGZLL2Gc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/pSbfGZLL2Gc/maxresdefault.jpg"
+    },
+    {
+      "id": "wFBZutO2khM",
+      "title": "YOU MAKE EARNY = YOU BECOME MY DUO 🏆",
+      "views": 78000,
+      "viewsText": "78K views",
+      "membersOnly": false,
+      "duration": "15:52",
+      "durationSec": 952,
+      "published": "9 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/wFBZutO2khM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/wFBZutO2khM/maxresdefault.jpg"
+    },
+    {
+      "id": "ncLWnISDE80",
+      "title": "TOP 1 NA SOLO CASH CUPIE w Fortnite",
+      "views": 81000,
+      "viewsText": "81K views",
+      "membersOnly": false,
+      "duration": "10:35",
+      "durationSec": 635,
+      "published": "9 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/ncLWnISDE80/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ncLWnISDE80/maxresdefault.jpg"
+    },
+    {
+      "id": "O0Yw88gHozk",
+      "title": "FIRST $$$ of the NEW YEAR in Fortnite",
+      "views": 85000,
+      "viewsText": "85K views",
+      "membersOnly": false,
+      "duration": "13:07",
+      "durationSec": 787,
+      "published": "9 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/O0Yw88gHozk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/O0Yw88gHozk/maxresdefault.jpg"
+    },
+    {
+      "id": "UBGu6STaStw",
+      "title": "I SCORED THE MOST POINTS IN FORTNITE HISTORY",
+      "views": 115000,
+      "viewsText": "115K views",
+      "membersOnly": false,
+      "duration": "12:48",
+      "durationSec": 768,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/UBGu6STaStw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/UBGu6STaStw/maxresdefault.jpg"
+    },
+    {
+      "id": "vGTVHc3nuOk",
+      "title": "Fortnite's NEW DUO TEST",
+      "views": 97000,
+      "viewsText": "97K views",
+      "membersOnly": false,
+      "duration": "18:11",
+      "durationSec": 1091,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/vGTVHc3nuOk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/vGTVHc3nuOk/maxresdefault.jpg"
+    },
+    {
+      "id": "w6nys4AaJI0",
+      "title": "EPIC RUINED RANKED IN FORTNITE",
+      "views": 156000,
+      "viewsText": "156K views",
+      "membersOnly": false,
+      "duration": "17:55",
+      "durationSec": 1075,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/w6nys4AaJI0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/w6nys4AaJI0/maxresdefault.jpg"
+    },
+    {
+      "id": "17cNteniKmQ",
+      "title": "I PLAY ON A SERVER FOR THE TOP 0.01% OF FORTNITE PLAYERS",
+      "views": 95000,
+      "viewsText": "95K views",
+      "membersOnly": false,
+      "duration": "10:14",
+      "durationSec": 614,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/17cNteniKmQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/17cNteniKmQ/maxresdefault.jpg"
+    },
+    {
+      "id": "15PfZ7y6Uj8",
+      "title": "FORTNITE WILL NEVER BE THE SAME AGAIN....",
+      "views": 151000,
+      "viewsText": "151K views",
+      "membersOnly": false,
+      "duration": "15:19",
+      "durationSec": 919,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/15PfZ7y6Uj8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/15PfZ7y6Uj8/maxresdefault.jpg"
+    },
+    {
+      "id": "nW_udn9h4Ns",
+      "title": "MY LAST FORTNITE TOURNAMENT",
+      "views": 144000,
+      "viewsText": "144K views",
+      "membersOnly": false,
+      "duration": "12:39",
+      "durationSec": 759,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/nW_udn9h4Ns/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/nW_udn9h4Ns/maxresdefault.jpg"
+    },
+    {
+      "id": "m9lhUoWjRkI",
+      "title": "WYGRAŁEM PIERWSZY SIMPSONOWY SOLO CASH CUP w Fortnite",
+      "views": 106000,
+      "viewsText": "106K views",
+      "membersOnly": false,
+      "duration": "13:06",
+      "durationSec": 786,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/m9lhUoWjRkI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/m9lhUoWjRkI/maxresdefault.jpg"
+    },
+    {
+      "id": "NN78xRfmzNQ",
+      "title": "I played a TOURNAMENT with MrSavage in Fortnite",
+      "views": 105000,
+      "viewsText": "105K views",
+      "membersOnly": false,
+      "duration": "11:17",
+      "durationSec": 677,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/NN78xRfmzNQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/NN78xRfmzNQ/maxresdefault.jpg"
+    },
+    {
+      "id": "GwGMIVI2rZ8",
+      "title": "I play NON-STOP until I HIT UNREAL in Fortnite",
+      "views": 159000,
+      "viewsText": "159K views",
+      "membersOnly": false,
+      "duration": "19:09",
+      "durationSec": 1149,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/GwGMIVI2rZ8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/GwGMIVI2rZ8/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "Setty runs a Polish-language Fortnite channel about tournaments, ranked grinds and viewer challenges. His thumbnails are built around his own face, big and calm, next to one bright object (a rank emblem, a trophy, a cheque) and a few Polish words.",
+    "niche": "Polish competitive Fortnite: tournaments, ranked and challenges",
+    "styleTraits": [
+      {
+        "title": "His face in every thumbnail",
+        "detail": "All 30 recent thumbnails show Setty's face, sharply cut out, often filling a third of the frame. He usually looks straight into the camera with a slight smile, in a plain black T-shirt, so the channel is recognisable at any size."
+      },
+      {
+        "title": "Face on one side, one object on the other",
+        "detail": "The usual layout is his face on the left or right and one large, glossy object on the other side: the Unreal rank emblem, a gold trophy, an Epic Games cheque, rank progress cards. There is rarely more than one main thing to look at."
+      },
+      {
+        "title": "Short Polish words and big numbers",
+        "detail": "Text is a few heavy capitals in white or yellow: 'UNREAL LEGENDA', 'NOWY SEZON' (new season), 'KONIEC ERY' (end of an era), 'SOLO CASH CUP'. Numbers often become the graphic: '467 REKORD!', '$1,000' cards, '20/20', '#1'."
+      },
+      {
+        "title": "Mystery devices",
+        "detail": "Unknown teammates appear as black silhouettes with a white question mark or a yellow '?' mask, prize amounts are blurred, and a finger-on-lips 'shh' pose appears more than once. Each one hides a single piece of information the video reveals."
+      },
+      {
+        "title": "Costume and staging for big challenges",
+        "detail": "The bigger the challenge, the more staged the photo: an orange prison jumpsuit with chains for 'play until Unreal', a suit and bow tie on a throne for a solo cash cup, boxing gloves for 30 days of 1v1, a crown for a tournament."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "C16PGKaIZtw",
+        "why": "About 334,000 views, 3.2 times the median. The simplest thumbnail in the sample: his face on a pale pastel background, a large Unreal rank emblem, and 'UNREAL LEGENDA' underlined in red. The goal is readable in a second, and the title ('I WON'T STOP PLAYING UNTIL...') adds the commitment."
+      },
+      {
+        "id": "EZTtt86LcEE",
+        "why": "About 333,000 views, 3.2 times the median. The only dark thumbnail in the set: Setty in a white T-shirt surrounded by black figures with glowing red eyes, '99X' in a red box, and a small 'Szaman' label with an arrow pointing at one skin. Among bright, smiling thumbnails it probably stood out, and the odd extra (a shaman) gives a second hook."
+      },
+      {
+        "id": "Vcll0UDHCoo",
+        "why": "About 227,000 views, 2.2 times the median. His face in the centre, surrounded by colourful cards of Fortnite map thumbnails labelled 'CASUAL' and 'PRO' on a rainbow background. It reads as a ranking of things players know. A follow-up on 'pro maps' used the same card grid one day before this snapshot, too early to compare."
+      }
+    ],
+    "lessons": [
+      "If your face is the brand, use it every time with the same framing and expression. Setty's views stay in a narrow band (about 49,000 to 334,000) instead of swinging wildly.",
+      "One goal, one object: a rank emblem next to a face says 'I am going to reach this rank' without a sentence.",
+      "Once in a while, break your own colour pattern. Setty's one dark thumbnail is tied for his best result in this sample.",
+      "Use a silhouette with a question mark when the video reveals a person, and blur a number when the video reveals an amount.",
+      "Turn numbers into the graphic itself ('467 REKORD!', '20/20') instead of hiding them in a sentence."
+    ],
+    "experiment": "Take your busiest thumbnail and remake it with only three elements: your face, one object that shows the goal, and two words. Test both versions with YouTube's Test & Compare on the same video.",
+    "faq": [
+      {
+        "q": "How many subscribers does Setty have?",
+        "a": "As of 23 October 2026, Setty (@setty2k) has about 408K subscribers and 603 videos. Across his latest 30 long videos, the median is about 105,500 views. The two biggest in that sample, the Unreal Legend grind and 'SETTY vs 99 VIEWERS... AND A SHAMAN?!', each have about 333,000 to 334,000 views."
+      },
+      {
+        "q": "What does Setty make videos about?",
+        "a": "Competitive Fortnite: FNCS and solo cash cup runs, ranked pushes to Unreal, 30-day 1v1 challenges, battles against groups of viewers, and reviews of popular Fortnite maps. He also films new-season first days and collaborations with other Polish Fortnite players."
+      },
+      {
+        "q": "Is Setty's channel in English or Polish?",
+        "a": "The channel is in Polish. The text on his thumbnails is Polish ('UNREAL LEGENDA', 'NOWY SEZON', 'KONIEC ERY'). In the public data we collected, most titles appear in English and a few in Polish, which may come from YouTube showing translated titles."
+      },
+      {
+        "q": "What do Setty's thumbnails look like?",
+        "a": "His own face, large and sharply cut out, on a bright colourful background, next to one big object: a rank emblem, a trophy, a cheque or game cards. Text is short Polish words in heavy white or yellow capitals, and mystery elements like question-mark silhouettes or blurred amounts are common."
+      }
+    ],
+    "reviewedAt": "2026-10-23"
+  }
+}

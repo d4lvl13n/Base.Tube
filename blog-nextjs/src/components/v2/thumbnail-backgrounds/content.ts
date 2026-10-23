@@ -31,15 +31,15 @@ export const FAQ: FaqItem[] = [
   },
   {
     q: 'Can I use these backgrounds on a monetised channel?',
-    a: `Here are the terms in full: ${USAGE_TERMS} Every background is an original image made for Base.Tube, with no game art, logos, brand names or real people in it.`,
+    a: `Here are the terms in full: ${USAGE_TERMS}`,
   },
   {
     q: 'Is there a Minecraft background for thumbnails?',
-    a: 'Yes. The blocky voxel landscape in Gaming worlds has cube hills, square trees and a bright sky, with open sky on the left for you and your title. It is an original image, not a screenshot or game art. Minecraft is a trademark of Microsoft Corporation. Base.Tube is not affiliated with Mojang or Microsoft.',
+    a: 'Yes. The blocky voxel landscape in Gaming worlds has cube hills, square trees and a bright sky, with open sky on the left for you and your title.',
   },
   {
     q: 'Is there a Fortnite background for thumbnails?',
-    a: 'Yes. The cartoon battle-royale island in Gaming worlds has a bright island, turquoise sea and a purple storm ring, with open sea and sky on the right for you and your title. It is an original image, not a screenshot or game art. Fortnite is a trademark of Epic Games, Inc. Base.Tube is not affiliated with Epic Games.',
+    a: 'Yes. The cartoon battle-royale island in Gaming worlds has a bright island, turquoise sea and a purple storm ring, with open sea and sky on the right for you and your title.',
   },
   {
     q: 'What size should a YouTube thumbnail background be?',

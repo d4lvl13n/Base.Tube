@@ -1,0 +1,471 @@
+{
+  "slug": "metaphor",
+  "status": "draft",
+  "channelId": "UCgm4Lm43bbQJukcQmY9hCBQ",
+  "name": "Metaphor",
+  "handle": "Metaphor",
+  "url": "https://www.youtube.com/channel/UCgm4Lm43bbQJukcQmY9hCBQ",
+  "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_mSCzDNzQRTJErKgJq0caJWZDeUfQwWqkNXoZsTgdxNAME=s900-c-k-c0x00ffffff-no-rj",
+  "game": "call-of-duty",
+  "subscribers": 456000,
+  "subscribersText": "456K subscribers",
+  "videoCount": 2700,
+  "description": "The best sniper in Warzone.",
+  "collectedAt": "2026-10-23",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 23000,
+    "outliers": [
+      {
+        "id": "qzShBl1hvso",
+        "multiple": 4.2
+      },
+      {
+        "id": "kJfwEeRbjWM",
+        "multiple": 2.3
+      },
+      {
+        "id": "4OSzmeNQuyc",
+        "multiple": 1.5
+      },
+      {
+        "id": "BMPoY3m5RgM",
+        "multiple": 1.4
+      },
+      {
+        "id": "TiSuXZPUw4w",
+        "multiple": 1.3
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "NULTutdR9mQ",
+      "title": "The Last Day of Warzone..",
+      "views": 28000,
+      "viewsText": "28K views",
+      "membersOnly": false,
+      "duration": "18:53",
+      "durationSec": 1133,
+      "published": "3 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/NULTutdR9mQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/NULTutdR9mQ/maxresdefault.jpg"
+    },
+    {
+      "id": "4z16QTtBgFM",
+      "title": "VMP vs Cheaters",
+      "views": 22000,
+      "viewsText": "22K views",
+      "membersOnly": false,
+      "duration": "21:52",
+      "durationSec": 1312,
+      "published": "4 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/4z16QTtBgFM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/4z16QTtBgFM/maxresdefault.jpg"
+    },
+    {
+      "id": "Dn_GqFT4AlQ",
+      "title": "how to be Metaphor",
+      "views": 23000,
+      "viewsText": "23K views",
+      "membersOnly": false,
+      "duration": "21:45",
+      "durationSec": 1305,
+      "published": "5 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/Dn_GqFT4AlQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Dn_GqFT4AlQ/maxresdefault.jpg"
+    },
+    {
+      "id": "kJfwEeRbjWM",
+      "title": "My best gameplay ever...",
+      "views": 54000,
+      "viewsText": "54K views",
+      "membersOnly": false,
+      "duration": "22:56",
+      "durationSec": 1376,
+      "published": "7 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/kJfwEeRbjWM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/kJfwEeRbjWM/maxresdefault.jpg"
+    },
+    {
+      "id": "XXSv4y3CwrI",
+      "title": "One final Kar98k game...",
+      "views": 25000,
+      "viewsText": "25K views",
+      "membersOnly": false,
+      "duration": "16:50",
+      "durationSec": 1010,
+      "published": "8 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/XXSv4y3CwrI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/XXSv4y3CwrI/maxresdefault.jpg"
+    },
+    {
+      "id": "Othv86JSoyk",
+      "title": "Wait.. why the Ryden kinda.. 😳",
+      "views": 18000,
+      "viewsText": "18K views",
+      "membersOnly": false,
+      "duration": "13:16",
+      "durationSec": 796,
+      "published": "9 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/Othv86JSoyk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Othv86JSoyk/maxresdefault.jpg"
+    },
+    {
+      "id": "ZZQi9KzOozw",
+      "title": "I became a Bounty Hunter in Warzone..",
+      "views": 27000,
+      "viewsText": "27K views",
+      "membersOnly": false,
+      "duration": "19:18",
+      "durationSec": 1158,
+      "published": "10 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/ZZQi9KzOozw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ZZQi9KzOozw/maxresdefault.jpg"
+    },
+    {
+      "id": "RIAZeoZKOGw",
+      "title": "yapping but i still drop 33",
+      "views": 21000,
+      "viewsText": "21K views",
+      "membersOnly": false,
+      "duration": "24:05",
+      "durationSec": 1445,
+      "published": "11 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/RIAZeoZKOGw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/RIAZeoZKOGw/maxresdefault.jpg"
+    },
+    {
+      "id": "qzShBl1hvso",
+      "title": "The $100,000 Swagg Invitational..",
+      "views": 97000,
+      "viewsText": "97K views",
+      "membersOnly": false,
+      "duration": "16:51",
+      "durationSec": 1011,
+      "published": "12 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/qzShBl1hvso/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/qzShBl1hvso/maxresdefault.jpg"
+    },
+    {
+      "id": "BMPoY3m5RgM",
+      "title": "WHY DOES EVERYONE CHEAT NOW??",
+      "views": 33000,
+      "viewsText": "33K views",
+      "membersOnly": false,
+      "duration": "16:38",
+      "durationSec": 998,
+      "published": "13 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/BMPoY3m5RgM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/BMPoY3m5RgM/maxresdefault.jpg"
+    },
+    {
+      "id": "UnqxeFyWqK4",
+      "title": "Yea, I’m getting banned.",
+      "views": 16000,
+      "viewsText": "16K views",
+      "membersOnly": false,
+      "duration": "13:31",
+      "durationSec": 811,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/UnqxeFyWqK4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/UnqxeFyWqK4/maxresdefault.jpg"
+    },
+    {
+      "id": "7ycNjc8SzvE",
+      "title": "The only sniper POV worth watching",
+      "views": 26000,
+      "viewsText": "26K views",
+      "membersOnly": false,
+      "duration": "17:37",
+      "durationSec": 1057,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/7ycNjc8SzvE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/7ycNjc8SzvE/maxresdefault.jpg"
+    },
+    {
+      "id": "LH1luPvnDT0",
+      "title": "dont bother using anything else.",
+      "views": 15000,
+      "viewsText": "15K views",
+      "membersOnly": false,
+      "duration": "12:25",
+      "durationSec": 745,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/LH1luPvnDT0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/LH1luPvnDT0/maxresdefault.jpg"
+    },
+    {
+      "id": "TiSuXZPUw4w",
+      "title": "Metaphor + Sniper = Heaven",
+      "views": 29000,
+      "viewsText": "29K views",
+      "membersOnly": false,
+      "duration": "17:46",
+      "durationSec": 1066,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/TiSuXZPUw4w/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/TiSuXZPUw4w/maxresdefault.jpg"
+    },
+    {
+      "id": "Eo9E3X5zxb0",
+      "title": "Rebirth Island, but I’m not 2 boxing. ",
+      "views": 14000,
+      "viewsText": "14K views",
+      "membersOnly": false,
+      "duration": "12:59",
+      "durationSec": 779,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/Eo9E3X5zxb0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Eo9E3X5zxb0/maxresdefault.jpg"
+    },
+    {
+      "id": "G5C2cIeqxzA",
+      "title": "The only way to stop cheaters in Warzone..",
+      "views": 23000,
+      "viewsText": "23K views",
+      "membersOnly": false,
+      "duration": "17:45",
+      "durationSec": 1065,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/G5C2cIeqxzA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/G5C2cIeqxzA/maxresdefault.jpg"
+    },
+    {
+      "id": "3FuylKxciMY",
+      "title": "i dropped a 40 kill game without trying",
+      "views": 19000,
+      "viewsText": "19K views",
+      "membersOnly": false,
+      "duration": "13:49",
+      "durationSec": 829,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/3FuylKxciMY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/3FuylKxciMY/maxresdefault.jpg"
+    },
+    {
+      "id": "IDwX3TqABjk",
+      "title": "“clickbait”",
+      "views": 17000,
+      "viewsText": "17K views",
+      "membersOnly": false,
+      "duration": "14:30",
+      "durationSec": 870,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/IDwX3TqABjk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/IDwX3TqABjk/maxresdefault.jpg"
+    },
+    {
+      "id": "GxqyaL0uvxE",
+      "title": "MPC ≥ VMP",
+      "views": 18000,
+      "viewsText": "18K views",
+      "membersOnly": false,
+      "duration": "14:28",
+      "durationSec": 868,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/GxqyaL0uvxE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/GxqyaL0uvxE/maxresdefault.jpg"
+    },
+    {
+      "id": "4OSzmeNQuyc",
+      "title": "3 Cheaters vs Metaphor",
+      "views": 35000,
+      "viewsText": "35K views",
+      "membersOnly": false,
+      "duration": "17:52",
+      "durationSec": 1072,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/4OSzmeNQuyc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/4OSzmeNQuyc/maxresdefault.jpg"
+    },
+    {
+      "id": "VzGqHUcmg_M",
+      "title": "Nobody is using this..",
+      "views": 26000,
+      "viewsText": "26K views",
+      "membersOnly": false,
+      "duration": "17:50",
+      "durationSec": 1070,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/VzGqHUcmg_M/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/VzGqHUcmg_M/maxresdefault.jpg"
+    },
+    {
+      "id": "9-15Wuu2qL4",
+      "title": "Why I'm the #1 Sniper in Warzone History.",
+      "views": 30000,
+      "viewsText": "30K views",
+      "membersOnly": false,
+      "duration": "18:07",
+      "durationSec": 1087,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/9-15Wuu2qL4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/9-15Wuu2qL4/maxresdefault.jpg"
+    },
+    {
+      "id": "HqeKcYV_KsU",
+      "title": "Why I’m the greatest Solo Player in Warzone History..",
+      "views": 21000,
+      "viewsText": "21K views",
+      "membersOnly": false,
+      "duration": "16:41",
+      "durationSec": 1001,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/HqeKcYV_KsU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/HqeKcYV_KsU/maxresdefault.jpg"
+    },
+    {
+      "id": "N9-otXI1JB4",
+      "title": "Yea, the VMP is broken 😹",
+      "views": 13000,
+      "viewsText": "13K views",
+      "membersOnly": false,
+      "duration": "12:06",
+      "durationSec": 726,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/N9-otXI1JB4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/N9-otXI1JB4/maxresdefault.jpg"
+    },
+    {
+      "id": "Luk1921e3b0",
+      "title": "the FAL is back.. and it’s INSANE.",
+      "views": 26000,
+      "viewsText": "26K views",
+      "membersOnly": false,
+      "duration": "19:29",
+      "durationSec": 1169,
+      "published": "4 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/Luk1921e3b0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Luk1921e3b0/maxresdefault.jpg"
+    },
+    {
+      "id": "6KLJSbc8kD4",
+      "title": "We need to talk about the Voyak KT-3..",
+      "views": 18000,
+      "viewsText": "18K views",
+      "membersOnly": false,
+      "duration": "11:49",
+      "durationSec": 709,
+      "published": "4 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/6KLJSbc8kD4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/6KLJSbc8kD4/maxresdefault.jpg"
+    },
+    {
+      "id": "RytrfRL2hGM",
+      "title": "the new best movement loadout in Warzone (Season 6)",
+      "views": 18000,
+      "viewsText": "18K views",
+      "membersOnly": false,
+      "duration": "17:21",
+      "durationSec": 1041,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/RytrfRL2hGM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/RytrfRL2hGM/maxresdefault.jpg"
+    },
+    {
+      "id": "9fGIETLkfcE",
+      "title": "The Impossible Warzone Solo Nuke.. ",
+      "views": 29000,
+      "viewsText": "29K views",
+      "membersOnly": false,
+      "duration": "20:29",
+      "durationSec": 1229,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/9fGIETLkfcE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/9fGIETLkfcE/maxresdefault.jpg"
+    },
+    {
+      "id": "8MbfLCWEHcs",
+      "title": "The FAL is OFFICIALLY BACK in WARZONE..",
+      "views": 27000,
+      "viewsText": "27K views",
+      "membersOnly": false,
+      "duration": "19:12",
+      "durationSec": 1152,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/8MbfLCWEHcs/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/8MbfLCWEHcs/maxresdefault.jpg"
+    },
+    {
+      "id": "6RoXCPPk-U0",
+      "title": "Wait.. the VMP is ACTUALLY BROKEN",
+      "views": 21000,
+      "viewsText": "21K views",
+      "membersOnly": false,
+      "duration": "16:36",
+      "durationSec": 996,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/6RoXCPPk-U0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/6RoXCPPk-U0/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "Metaphor posts near-daily Call of Duty: Warzone videos built around sniping and solo play. Almost every thumbnail follows one recipe: a first-person view of one brightly skinned weapon over a sunny map, one huge white word across the top, and a small charm or badge hanging from the gun.",
+    "niche": "Warzone sniper and solo gameplay",
+    "styleTraits": [
+      {
+        "title": "One giant white word",
+        "detail": "Every thumbnail in the sample leads with one or two words in heavy white capitals with a soft shadow, filling the top third: THE END, TURBO, GODLY, SLAYER, CHEATERS. The word is a mood or a verdict rather than the title repeated: 'My best gameplay ever...' becomes WORLD RECORD, 'dont bother using anything else.' becomes RIPPER."
+      },
+      {
+        "title": "The gun is the hero",
+        "detail": "29 of the last 30 thumbnails show a first-person view of a single weapon held in two hands, angled diagonally across the frame. The skins are loud (pink-and-purple galaxy, solid red, gold, neon blue) and there is no face in any of those 29 images."
+      },
+      {
+        "title": "A charm as a second message",
+        "detail": "A small object hangs from the gun or sits near the bottom and adds the specific detail: a round 'World Record Holder' seal, a trollface, an angel, a nuke symbol, or text such as '40', '35+', 'FAL' and 'BO III'. It often names the weapon or the kill count so the big word can stay short."
+      },
+      {
+        "title": "Bright, flat summer sky",
+        "detail": "Backgrounds are daytime Warzone streets and fields under a saturated cyan sky, pushed very bright. The palette barely changes from one upload to the next, so a row of these thumbnails reads as one channel at a glance."
+      },
+      {
+        "title": "Cartoon cutouts for cheater stories",
+        "detail": "Videos about cheaters bring in a cartoon character cutout. In the '3 Cheaters vs Metaphor' thumbnail it stands next to fake 'AIMBOT' and 'GODMODE' toggle switches turned on; in 'WHY DOES EVERYONE CHEAT NOW??' the same cartoon lies on the road beside a red no-sign over the word 'TEAMERS'."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "qzShBl1hvso",
+        "why": "'The $100,000 Swagg Invitational..' reached 97K views, 4.2 times the 23K median. It is the only thumbnail in the sample with no gun: five faces in a row, Metaphor in the centre in a black suit with a flat stare, the others bruised and bandaged, a horror clown on the left, dollar bills flying and KILLING STREAMERS across the top. Breaking the usual pattern probably helped it stand out, and an event with a prize and other creators may have drawn viewers from their audiences too."
+      },
+      {
+        "id": "kJfwEeRbjWM",
+        "why": "'My best gameplay ever...' reached 54K views, 2.3 times the median, with the standard template: a pink galaxy weapon, the word WORLD RECORD and a 'World Record Holder' seal on the gun, with confetti. The title promises a personal best and the thumbnail adds a record claim, so the two make different promises that point the same way. That extra stake may be part of why it was picked."
+      },
+      {
+        "id": "4OSzmeNQuyc",
+        "why": "'3 Cheaters vs Metaphor' reached 35K views, 1.5 times the median. CHEATERS runs across the top, a cartoon character with a blood stain stands next to 'AIMBOT' and 'GODMODE' toggles switched on, and a red gun carries a 'RICOCHET' label. The toggles show the enemy's unfair advantage in one glance. Cheating is a recurring subject: the four cheater videos in the sample land between 22K and 35K, around or above the median."
+      }
+    ],
+    "lessons": [
+      "Pick one strong template and repeat it: a layout regular viewers recognise lets them spot your new upload in a crowded feed before reading the title.",
+      "Make the thumbnail word add something the title does not say. 'My best gameplay ever...' plus WORLD RECORD is two claims, not one claim printed twice.",
+      "Put the specific detail (weapon name, kill count) on a small prop or badge so the main word can stay short and emotional.",
+      "Save the pattern break for the special video. Metaphor's one thumbnail with faces instead of a gun went with a tournament video, and it was the most-watched in the sample.",
+      "Show a conflict with visual proof: 'AIMBOT' and 'GODMODE' toggles explain a cheater story faster than any sentence."
+    ],
+    "experiment": "If your thumbnails all follow one template, take your next event or collaboration video and break the template on purpose (people instead of gameplay, a different background colour) while keeping your usual font. After 7 days, compare its views with the median of your last 30 uploads.",
+    "faq": [
+      {
+        "q": "How many subscribers does Metaphor have?",
+        "a": "As of 23 October 2026, Metaphor's YouTube channel has about 456K subscribers and roughly 2,700 videos. Across the 30 most recent long videos, the median is about 23K views. The most-watched video in that sample, about a $100,000 Warzone tournament, had about 97K views."
+      },
+      {
+        "q": "What does Metaphor make videos about?",
+        "a": "Metaphor makes Call of Duty: Warzone videos, mostly sniper and solo gameplay. Recent uploads cover weapons and loadouts such as the VMP, FAL and Kar98k, high-kill games, cheaters in public matches, and events such as the Swagg Invitational. Uploads come almost daily, and most videos run between 12 and 24 minutes."
+      },
+      {
+        "q": "What do Metaphor's thumbnails look like?",
+        "a": "Nearly all of them follow one recipe: a first-person view of one colourful weapon skin over a bright, sunny Warzone map, one or two huge white words across the top (TURBO, GODLY, CHEATERS), and a small charm or badge on the gun. Faces are rare: only 1 of the last 30 thumbnails shows people."
+      },
+      {
+        "q": "What game does Metaphor play?",
+        "a": "Metaphor plays Call of Duty: Warzone, the free battle royale mode of Call of Duty, including the smaller Rebirth Island map. As of October 2026 the recent videos focus on sniper rifles and fast weapons, solo matches against squads, and the cheating problem in public lobbies."
+      }
+    ],
+    "reviewedAt": "2026-10-23"
+  }
+}

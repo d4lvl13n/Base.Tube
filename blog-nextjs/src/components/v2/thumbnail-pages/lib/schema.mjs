@@ -508,8 +508,6 @@ export function normalizePage(data, body, ctx) {
     r.unknownKeys(['name', 'owner'], 'trademark', tmObj);
     const tmName = r.text(tmObj, 'name', 'trademark.name', { required: 'error' });
     trademark = tmName ? { name: tmName, owner: r.text(tmObj, 'owner', 'trademark.owner') } : null;
-  } else if (category === 'game') {
-    r.add('warning', 'trademark', 'game pages should name the trademark and its owner so the page shows the "not affiliated" line');
   }
   // Game pages show the real game, so their prompts name it. Creator-style pages still describe the look.
   if (trademark && category !== 'game') {

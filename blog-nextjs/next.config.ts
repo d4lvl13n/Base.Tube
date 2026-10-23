@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/wp-content/uploads/**',
       },
+      // Creator pages (/creators/youtube): video thumbnails and channel avatars from YouTube.
+      { protocol: 'https', hostname: 'i.ytimg.com', port: '', pathname: '/vi/**' },
+      { protocol: 'https', hostname: 'yt3.googleusercontent.com', port: '', pathname: '/**' },
     ],
   },
   async redirects() {
@@ -17,6 +20,8 @@ const nextConfig: NextConfig = {
       { source: '/tools/thumbnail-generator', destination: '/ai-thumbnails', permanent: true },
       // Modern Warfare 4 is covered on the Call of Duty page.
       { source: '/thumbnails/modern-warfare-4', destination: '/thumbnails/call-of-duty', permanent: true },
+      // The creator pages live under /creators/youtube (room for other platforms later).
+      { source: '/creators', destination: '/creators/youtube', permanent: true },
     ];
   },
 };
