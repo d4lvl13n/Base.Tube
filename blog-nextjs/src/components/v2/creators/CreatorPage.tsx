@@ -133,39 +133,66 @@ export default function CreatorPage({ creator }: { creator: Creator }) {
                     </p>
                   )}
                 </div>
-                <ul className={c.standouts}>
+                <ol className={c.standouts}>
                   {standouts.map((st, i) => {
                     const views = viewsLabel(st.video);
+                    // The written "why" often opens by repeating the numbers shown above it: drop that sentence.
+                    // (A sentence ends at a full stop followed by a capital letter, so "13.8 times" stays intact.)
+                    const why = st.why?.replace(/^About\s.*?views.*?\.\s+(?=[A-Z'‘"])/, '') ?? null;
+                    // Bar lengths: this video = 100%, a usual video = 1 / multiple (kept visible).
+                    const usualPct = st.multiple ? Math.max(3, Math.min(100, 100 / st.multiple)) : null;
                     return (
-                      <li key={st.video.id}>
-                        <article className={c.standout}>
-                          <a href={watchUrl(st.video.id)} className={c.standoutMedia} {...NEW_TAB} tabIndex={-1} aria-hidden>
-                            <YtThumb src={st.video.thumbnailHd || st.video.thumbnail} fallback={st.video.thumbnail} alt="" eager={i === 0} />
-                            {st.multiple != null && <span className={c.multiple}>{formatMultiple(st.multiple)}</span>}
+                      <li key={st.video.id} className={`${c.standout} ${i % 2 ? c.standoutFlip : ''}`}>
+                        <a href={watchUrl(st.video.id)} className={c.standoutMedia} {...NEW_TAB} tabIndex={-1} aria-hidden>
+                          <YtThumb src={st.video.thumbnailHd || st.video.thumbnail} fallback={st.video.thumbnail} alt="" eager={i === 0} />
+                          <span className={c.watchChip}>
+                            <span aria-hidden>▶</span> Watch
+                          </span>
+                        </a>
+                        <div className={c.standoutBody}>
+                          <span className={c.rank}>{String(i + 1).padStart(2, '0')}</span>
+                          {st.multiple != null && (
+                            <div className={c.bigStat}>
+                              <span className={c.bigNum}>
+                                {Number.isInteger(st.multiple) ? st.multiple : st.multiple.toFixed(1)}
+                                <span className={c.bigX}>×</span>
+                              </span>
+                              <span className={c.bigLabel}>the channel&apos;s usual views</span>
+                            </div>
+                          )}
+                          {usualPct != null && nums.medianViews != null && (
+                            <div className={c.bars} aria-hidden>
+                              <div className={c.barRow}>
+                                <span className={c.barName}>This video</span>
+                                <span className={c.barTrack}>
+                                  <span className={`${c.barFill} ${c.barHot}`} style={{ width: '100%' }} />
+                                </span>
+                                <span className={c.barValue}>{views ?? '—'}</span>
+                              </div>
+                              <div className={c.barRow}>
+                                <span className={c.barName}>Usual video</span>
+                                <span className={c.barTrack}>
+                                  <span className={c.barFill} style={{ width: `${usualPct}%` }} />
+                                </span>
+                                <span className={c.barValue}>{compactNumber(nums.medianViews)} views</span>
+                              </div>
+                            </div>
+                          )}
+                          <h3 className={c.standoutTitle}>
+                            <a href={watchUrl(st.video.id)} {...NEW_TAB}>
+                              {st.video.title}
+                              <span className={s.srOnly}> (watch on YouTube, new tab)</span>
+                            </a>
+                          </h3>
+                          {why && <p className={c.why}>{why}</p>}
+                          <a href={watchUrl(st.video.id)} className={c.watchLink} {...NEW_TAB}>
+                            Watch on YouTube <span aria-hidden>↗</span>
                           </a>
-                          <div className={c.standoutBody}>
-                            <h3 className={c.standoutTitle}>
-                              <a href={watchUrl(st.video.id)} {...NEW_TAB}>
-                                {st.video.title}
-                                <span className={s.srOnly}> (watch on YouTube, new tab)</span>
-                              </a>
-                            </h3>
-                            <p className={c.standoutStats}>
-                              {views ?? 'Views not available'}
-                              {st.multiple != null && (
-                                <>
-                                  {' · '}
-                                  <strong>{formatMultiple(st.multiple)} the channel&apos;s median</strong>
-                                </>
-                              )}
-                            </p>
-                            {st.why && <p className={c.why}>{st.why}</p>}
-                          </div>
-                        </article>
+                        </div>
                       </li>
                     );
                   })}
-                </ul>
+                </ol>
               </div>
             </section>
           </>

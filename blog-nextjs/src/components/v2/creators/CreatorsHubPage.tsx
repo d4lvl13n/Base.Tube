@@ -3,11 +3,12 @@ import Link from 'next/link';
 import Footer from '../Footer';
 import NavBar from '../NavBar';
 import ScrollReveal from '../ScrollReveal';
-import Marquee, { ShowcaseHead, splitRows, type MarqueeItem } from '../thumbnail-pages/Marquee';
+import { ShowcaseHead } from '../thumbnail-pages/Marquee';
 import { studioGenerateUrl } from '../thumbnail-pages/lib/schema.mjs';
 import s from '../thumbnail-pages/thumbnails.module.css';
-import { CreatorCard } from './CreatorCards';
-import { standoutsOf, type Creator } from './creators';
+import { Avatar } from './CreatorCards';
+import YtThumb from './YtThumb';
+import { channelNumbers, compactNumber, formatMultiple, standoutsOf, type Creator } from './creators';
 import c from './creators.module.css';
 import { CREATORS_HUB_MIN_LIVE, creatorPath, gamePage } from './links';
 
@@ -41,27 +42,67 @@ function groupByGame(creators: Creator[], hubIsLive: boolean): Group[] {
   return [...map.values()].sort((a, b) => b.creators.length - a.creators.length || a.name.localeCompare(b.name));
 }
 
-/** One standout thumbnail per creator, then a second one, so a row never repeats a creator back to back. */
-export function hubMarqueeItems(creators: Creator[], perCreator = 2): MarqueeItem[] {
-  const lists = creators.map((cr) =>
-    standoutsOf(cr)
-      .slice(0, perCreator)
-      .map((st) => ({
-        src: st.video.thumbnail,
-        alt: `${st.video.title}: thumbnail by ${cr.name}`,
-        href: creatorPath(cr.slug),
-        label: cr.name,
-      })),
+/**
+ * One creator, one editorial row: who they are and their numbers on one side, their three standout
+ * thumbnails on the other. Everything links to the creator's analysis page.
+ */
+function CreatorRow({ creator: cr, flip }: { creator: Creator; flip: boolean }) {
+  const href = creatorPath(cr.slug);
+  const nums = channelNumbers(cr);
+  const shots = standoutsOf(cr).slice(0, 3);
+  const handle = cr.handle ? `@${cr.handle.replace(/^@/, '')}` : null;
+  return (
+    <li className={`${c.row} ${flip ? c.rowFlip : ''}`}>
+      <Link href={href} className={c.mosaic} aria-hidden tabIndex={-1}>
+        {shots.map((st, k) => (
+          <span key={st.video.id} className={k === 0 ? c.mosaicMain : c.mosaicSide}>
+            <YtThumb src={st.video.thumbnailHd || st.video.thumbnail} fallback={st.video.thumbnail} alt="" />
+          </span>
+        ))}
+      </Link>
+      <div className={c.rowBody}>
+        <div className={c.rowIdentity}>
+          <Avatar src={cr.avatar} size={64} className={c.rowAvatar} />
+          <div>
+            <h3 className={c.rowName}>
+              <Link href={href}>{cr.name}</Link>
+            </h3>
+            <span className={c.rowHandle}>
+              {[handle, cr.subscribersText].filter(Boolean).join(' · ')}
+            </span>
+          </div>
+        </div>
+        {cr.analysis?.niche && <p className={c.rowNiche}>{cr.analysis.niche}</p>}
+        {cr.analysis?.summary && <p className={c.rowSummary}>{cr.analysis.summary}</p>}
+        <dl className={c.rowStats}>
+          {nums.medianViews != null && (
+            <div>
+              <dt>Usual video</dt>
+              <dd>{compactNumber(nums.medianViews)} views</dd>
+            </div>
+          )}
+          {nums.bestMultiple != null && (
+            <div>
+              <dt>Best video</dt>
+              <dd className={c.rowHot}>{formatMultiple(nums.bestMultiple)}</dd>
+            </div>
+          )}
+          <div>
+            <dt>Analysed</dt>
+            <dd>{nums.sample} videos</dd>
+          </div>
+        </dl>
+        <Link href={href} className={c.rowCta}>
+          Read the analysis <span aria-hidden>→</span>
+        </Link>
+      </div>
+    </li>
   );
-  const out: MarqueeItem[] = [];
-  for (let i = 0; i < perCreator; i++) for (const l of lists) if (l[i]) out.push(l[i]);
-  return out;
 }
 
 /** /creators/youtube: real channels to learn from, grouped by game. */
 export default function CreatorsHubPage({ creators, isLive }: { creators: Creator[]; isLive: boolean }) {
   const groups = groupByGame(creators, isLive);
-  const marquee = hubMarqueeItems(creators);
 
   return (
     <div className="v2-root">
@@ -99,7 +140,7 @@ export default function CreatorsHubPage({ creators, isLive }: { creators: Creato
             </h1>
             <p className={`v2-cp-sub ${s.heroSub}`}>
               Real channels, sorted by game. For each one: how the thumbnails look, which videos beat the channel&apos;s usual
-              views, and what you can borrow for your own videos. Built from public YouTube data, with the date on every page.
+              views, and what you can borrow for your own videos.
             </p>
             <div className={s.heroActions}>
               <Link className="v2-btn v2-btn-primary v2-btn-primary--lg" href="/youtube-channel-audit">
@@ -123,15 +164,30 @@ export default function CreatorsHubPage({ creators, isLive }: { creators: Creato
           </div>
         </section>
 
-        {/* ── SHOWCASE: standout thumbnails, drifting rows ─────── */}
-        {marquee.length >= 4 && (
-          <section className={`v2-cp-section ${s.showcase}`} aria-labelledby="showcase-h">
-            <ShowcaseHead
-              pill="Standout videos"
-              title="The thumbnails that beat their channel's median"
-              sub="One or two standout videos from each creator. Open one to see why it may have worked."
-            />
-            <Marquee rows={splitRows(marquee, 2)} />
+        {/* ── DIRECTORY: every creator at a glance ─────────────── */}
+        {creators.length > 0 && (
+          <section className="v2-cp-section" aria-labelledby="showcase-h">
+            <div className="v2-container">
+              <ShowcaseHead
+                pill="The creators"
+                title="Who you can learn from"
+                sub="Mid-sized gaming channels, from about 65K to 850K subscribers. Pick one to read how their thumbnails work."
+              />
+              <ul className={c.directory}>
+                {creators.map((cr) => (
+                  <li key={cr.slug}>
+                    <Link href={creatorPath(cr.slug)} className={c.dirItem}>
+                      <Avatar src={cr.avatar} size={64} className={c.dirAvatar} />
+                      <span className={c.dirName}>{cr.name}</span>
+                      <span className={c.dirMeta}>
+                        {gamePage(cr.game)?.name ?? cr.game}
+                        {cr.subscribersText ? ` · ${cr.subscribersText.replace(/ subscribers?/i, '')}` : ''}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </section>
         )}
 
@@ -154,23 +210,11 @@ export default function CreatorsHubPage({ creators, isLive }: { creators: Creato
                     </Link>
                   )}
                 </div>
-                <ul className={c.cards}>
-                  {grp.creators.map((cr) => {
-                    const top = standoutsOf(cr)[0]?.video;
-                    return (
-                      <li key={cr.slug}>
-                        <CreatorCard
-                          slug={cr.slug}
-                          name={cr.name}
-                          avatar={cr.avatar}
-                          subscribersText={cr.subscribersText}
-                          niche={cr.analysis?.niche}
-                          thumb={top ? { src: top.thumbnail, alt: `${top.title}: thumbnail by ${cr.name}` } : null}
-                        />
-                      </li>
-                    );
-                  })}
-                </ul>
+                <ol className={c.rows}>
+                  {grp.creators.map((cr, i) => (
+                    <CreatorRow key={cr.slug} creator={cr} flip={i % 2 === 1} />
+                  ))}
+                </ol>
               </div>
             ))}
           </div>
