@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useCallback } from 'react'
+import Link from 'next/link'
 import PostCard from '@/components/PostCard'
 import LazySection from '@/components/shared/LazySection'
 import SectionSkeleton from '@/components/shared/SectionSkeleton'
@@ -139,9 +140,9 @@ export default function BlogPageClient({ posts }: BlogPageClientProps) {
                 Join Base.Tube and monetize your audience with tradeable memberships
               </p>
               <div className="bottom-cta-buttons">
-                <a href="/landing" className="cta-btn-primary">
+                <Link href="/landing" className="cta-btn-primary">
                   Explore Platform
-                </a>
+                </Link>
                 <a href="#newsletter" className="cta-btn-secondary">
                   Get Updates
                 </a>
