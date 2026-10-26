@@ -570,48 +570,41 @@ body:has(.v2-root) {
 /* ============================================================
    FOOTER
    ============================================================ */
-.v2-footer { padding: 56px var(--v2-px) 40px; }
+.v2-footer {
+  padding: 44px var(--v2-px) 24px;
+  border-top: 1px solid rgba(214, 235, 253, 0.08);
+  background: linear-gradient(180deg, rgba(255, 128, 31, 0.035), transparent 160px);
+}
 
 .v2-footer-grid {
   max-width: var(--v2-max-w);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1.1fr 1fr 1fr;
-  gap: 48px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid var(--v2-frost);
+  grid-template-columns: minmax(140px, 1fr) auto auto minmax(212px, auto) auto;
+  justify-content: space-between;
+  gap: 28px;
+  padding-bottom: 28px;
 }
 
-.v2-footer-col-title a { color: inherit; }
+.v2-footer-col-title a { color: inherit; transition: color 0.15s var(--v2-ease); }
 .v2-footer-col-title a:hover { color: var(--v2-orange); }
 
 .v2-footer-tag {
-  margin-left: 6px;
-  padding: 1px 6px;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.3px;
+  margin-left: 4px;
+  font-size: 12.5px;
   color: var(--v2-muted);
-  border: 1px solid var(--v2-frost);
-  border-radius: var(--v2-r-pill);
-  vertical-align: 1px;
+  opacity: 0.7;
 }
 
-.v2-footer-brand-name {
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: -0.3px;
-  color: var(--v2-text);
-  margin-bottom: 10px;
-}
 
-.v2-footer-brand-name em { font-style: normal; color: var(--v2-orange); }
+.v2-footer-logo { display: inline-flex; margin-bottom: 14px; }
+.v2-footer-logo-img { height: 30px; width: auto; display: block; }
 
 .v2-footer-brand-tag {
-  font-size: 14px;
+  font-size: 13.5px;
   color: var(--v2-muted);
-  line-height: 1.55;
-  margin-bottom: 24px;
+  line-height: 1.5;
+  margin-bottom: 18px;
 }
 
 .v2-footer-socials { display: flex; gap: 8px; }
@@ -634,27 +627,69 @@ body:has(.v2-root) {
 }
 
 .v2-footer-col-title {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.3px;
+  font-size: 13px;
+  font-weight: 600;
   color: var(--v2-text);
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
-.v2-footer-links { list-style: none; display: flex; flex-direction: column; gap: 11px; }
+.v2-footer-links { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+
+.v2-footer-links--split {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: start;
+  column-gap: 28px;
+  row-gap: 9px;
+}
 
 .v2-footer-links a {
-  font-size: 14px;
+  font-size: 13.5px;
+  line-height: 1.35;
+  white-space: nowrap;
   color: var(--v2-muted);
   transition: color 0.15s var(--v2-ease);
 }
 
 .v2-footer-links a:hover { color: var(--v2-text); }
 
+.v2-footer a:focus-visible {
+  outline: 2px solid var(--v2-orange);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Popular games: one muted inline line under "Gaming thumbnails" */
+.v2-footer-games {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2px;
+  margin-top: -3px;
+}
+
+.v2-footer-games li:not(:last-child)::after {
+  content: "·";
+  margin: 0 7px;
+  color: var(--v2-dim);
+}
+
+.v2-footer-links .v2-footer-game {
+  font-size: 12.5px;
+  color: var(--v2-muted);
+  opacity: 0.8;
+}
+
+.v2-footer-links .v2-footer-game:hover { color: var(--v2-text); opacity: 1; }
+
+.v2-footer-links .v2-footer-more { color: var(--v2-orange); font-weight: 500; }
+.v2-footer-links .v2-footer-more:hover { color: var(--v2-text); }
+
 .v2-footer-bottom {
   max-width: var(--v2-max-w);
   margin: 0 auto;
-  padding-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(214, 235, 253, 0.08);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -662,16 +697,40 @@ body:has(.v2-root) {
   flex-wrap: wrap;
 }
 
-.v2-footer-copy { font-size: 13px; color: var(--v2-dim); }
+.v2-footer-copy { font-size: 12.5px; color: var(--v2-dim); }
 .v2-footer-legal { display: flex; gap: 20px; }
 
 .v2-footer-legal a {
-  font-size: 13px;
+  font-size: 12.5px;
   color: var(--v2-dim);
   transition: color 0.15s var(--v2-ease);
 }
 
 .v2-footer-legal a:hover { color: var(--v2-muted); }
+
+/* Below ~1160px: brand on one row, then tools + ideas, with product and company under the tools */
+@media (max-width: 1160px) {
+  .v2-footer-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-areas: "brand brand brand" "tools tools ideas" "product company ideas";
+    gap: 30px 28px;
+  }
+  .v2-footer-brand { grid-area: brand; }
+  .v2-footer-tools { grid-area: tools; }
+  .v2-footer-ideas { grid-area: ideas; }
+  .v2-footer-product { grid-area: product; }
+  .v2-footer-company { grid-area: company; }
+  .v2-footer-brand {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 14px 24px;
+    flex-wrap: wrap;
+  }
+  .v2-footer-brand .v2-footer-logo,
+  .v2-footer-brand .v2-footer-brand-tag { margin-bottom: 0; }
+  .v2-footer-brand .v2-footer-socials { margin-left: auto; }
+}
 
 /* ============================================================
    RESPONSIVE
@@ -709,9 +768,19 @@ body:has(.v2-root) {
   .v2-nav-panel a:hover { color: var(--v2-text); }
 
   .v2-thumb-row-visual { height: 320px; }
-  .v2-footer-grid { grid-template-columns: 1fr 1fr; gap: 36px 24px; }
-  .v2-footer-grid > :first-child { grid-column: 1 / -1; }
-  .v2-footer-bottom { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .v2-footer { padding-top: 36px; }
+  .v2-footer-grid { grid-template-columns: 1fr 1fr; gap: 28px 20px; padding-bottom: 24px; }
+  .v2-footer-brand .v2-footer-brand-tag br { display: none; }
+  .v2-footer-brand .v2-footer-socials { margin-left: 0; }
+  .v2-footer-grid { grid-template-areas: "brand brand" "tools tools" "ideas product" "ideas company"; }
+  .v2-footer-brand { grid-area: brand; }
+  .v2-footer-tools { grid-area: tools; }
+  .v2-footer-ideas { grid-area: ideas; }
+  .v2-footer-product { grid-area: product; }
+  .v2-footer-company { grid-area: company; }
+  .v2-footer-links a { white-space: normal; }
+  .v2-footer-links--split { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 16px; }
+  .v2-footer-bottom { gap: 12px; }
 
   .v2-thumb, .v2-cta { padding: 96px 20px; }
 }

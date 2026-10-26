@@ -74,6 +74,14 @@
   margin-top: 18px;
 }
 
+/* Hub totals: a quiet line of text above the title, not a badge. */
+.heroMeta {
+  margin: 28px 0 0;
+  font-size: 13.5px;
+  color: var(--v2-muted);
+  font-variant-numeric: tabular-nums;
+}
+
 .heroSub {
   margin-bottom: 32px;
 }
@@ -91,69 +99,96 @@
   padding-bottom: 13px;
 }
 
-.chips {
-  margin-top: 32px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px 14px;
+/* ── Gallery hero (style / game pages) ─────────────────────
+   One idea per side: the words and a single action on the left, the cover
+   example large on the right. Wider than the page container so the image
+   carries the hero. */
+/* On wide screens the image runs past the right edge of the text column. */
+@media (min-width: 1300px) {
+  .heroWide .heroFigure {
+    margin-right: -96px;
+  }
 }
 
-.chipsLabel {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 1.6px;
-  text-transform: uppercase;
+@media (min-width: 980px) {
+  .styleHero .heroGrid {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+    gap: 56px;
+  }
+}
+
+.styleHero .heroH1 {
+  font-size: clamp(32px, 3.1vw, 44px);
+  margin-top: 28px;
+  margin-bottom: 20px;
+}
+
+.styleHero .heroSub {
+  max-width: 60ch;
+  font-size: 15.5px;
+  line-height: 1.65;
+  margin-bottom: 30px;
+}
+
+.heroAside {
+  margin-top: 18px;
+  font-size: 14px;
+  line-height: 1.6;
   color: var(--v2-muted);
 }
 
-.chips ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  list-style: none;
-}
-
-.chip {
-  display: inline-flex;
-  align-items: center;
-  padding: 7px 14px;
-  font-size: 13px;
-  font-weight: 500;
+.heroAside a {
   color: var(--v2-text);
-  border: 1px solid var(--v2-frost);
-  border-radius: var(--v2-r-pill);
-  background: rgba(255, 255, 255, 0.02);
-  transition: border-color 0.18s var(--v2-ease), background 0.18s var(--v2-ease), color 0.18s var(--v2-ease);
+  text-decoration: underline;
+  text-decoration-color: var(--v2-dim);
+  text-underline-offset: 4px;
+  transition: text-decoration-color 0.18s var(--v2-ease);
 }
 
-.chip:hover {
-  border-color: var(--v2-orange-border);
-  background: var(--v2-orange-soft);
-  color: #fff;
+.heroAside a:hover {
+  text-decoration-color: var(--v2-orange);
+}
+
+.heroAside a:focus-visible,
+.indexList a:focus-visible,
+.jumpNav a:focus-visible {
+  outline: 2px solid var(--v2-orange);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 .heroFigure {
   position: relative;
+  margin: 0;
 }
 
+/* Soft warm light behind the frame, kept low so the image stays the colour. */
 .heroFigure::before {
   content: '';
   position: absolute;
-  inset: 12% 6% -14% 6%;
-  background: radial-gradient(closest-side, rgba(255, 128, 31, 0.16), transparent);
-  filter: blur(24px);
+  inset: 8% 4% -10% 4%;
+  background: radial-gradient(closest-side, rgba(255, 128, 31, 0.14), transparent 75%);
+  filter: blur(36px);
   pointer-events: none;
+}
+
+/* A thin bezel: the image sits inside a 1px lit edge, like a screen. */
+.heroFrame {
+  position: relative;
+  display: block;
+  padding: 8px;
+  border-radius: 20px;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.02) 40%, rgba(255, 128, 31, 0.06));
+  box-shadow: inset 0 0 0 1px rgba(214, 235, 253, 0.12), 0 40px 100px -20px rgba(0, 0, 0, 0.8);
 }
 
 .heroMedia {
   position: relative;
   display: block;
   aspect-ratio: 16 / 9;
-  border-radius: 14px;
+  border-radius: 13px;
   overflow: hidden;
   background: #0b0b0d;
-  box-shadow: 0 0 0 1px var(--v2-frost), 0 30px 80px rgba(0, 0, 0, 0.6);
 }
 
 .heroMedia img {
@@ -162,20 +197,86 @@
 
 .heroCaption {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
   margin-top: 14px;
+  padding: 0 8px;
   font-size: 13px;
   line-height: 1.5;
   color: var(--v2-muted);
 }
 
-.heroCaptionMeta {
-  flex-shrink: 0;
-  font-family: var(--font-geist-mono), ui-monospace, monospace;
+/* Small screens: the image comes right after the title, before the intro,
+   so it is on screen without scrolling. */
+@media (max-width: 979px) {
+  .styleHero .heroGrid {
+    gap: 0;
+  }
+  .styleHero .heroCopy {
+    display: contents;
+  }
+  .styleHero .heroFigure {
+    order: 2;
+    margin: 4px 0 28px;
+  }
+  .styleHero .heroSub,
+  .styleHero .heroActions,
+  .heroAside {
+    order: 3;
+  }
+  .heroFrame {
+    padding: 5px;
+    border-radius: 14px;
+  }
+  .heroMedia {
+    border-radius: 10px;
+  }
+}
+
+/* ── Anchor nav ("on this page") ──────────────────────────────
+   Plain text links on a hairline rule, with the count beside each name.
+   Used in hub heroes instead of rounded chips. */
+.jumpNav {
+  margin-top: 44px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(214, 235, 253, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 760px;
+}
+
+.jumpLabel {
+  font-size: 13px;
+  color: var(--v2-dim);
+}
+
+.jumpNav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 26px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jumpNav a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--v2-text);
+  transition: color 0.18s var(--v2-ease);
+}
+
+.jumpNav a:hover {
+  color: var(--v2-orange);
+}
+
+.jumpCount {
   font-size: 12px;
+  font-weight: 400;
   color: var(--v2-muted);
+  font-variant-numeric: tabular-nums;
 }
 
 /* ── Section heads ────────────────────────────────────────── */
@@ -1464,27 +1565,57 @@
 }
 
 .groupHead {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 20px 40px;
-  flex-wrap: wrap;
   margin-bottom: 28px;
 }
 
-.groupLinks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 0;
+/* A typographic index of every page in the group: name, then the number of
+   examples, on hairline rows. Four columns on wide screens. */
+.indexList {
+  margin: 0 0 48px;
   padding: 0;
   list-style: none;
-  max-width: 640px;
+  columns: 4 200px;
+  column-gap: 36px;
 }
 
-.chipAll {
+.indexList li {
+  break-inside: avoid;
+}
+
+.indexList a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid rgba(214, 235, 253, 0.08);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--v2-text);
+  transition: color 0.18s var(--v2-ease), border-color 0.18s var(--v2-ease);
+}
+
+.indexList a:hover {
   color: var(--v2-orange);
-  border-color: rgba(255, 122, 26, 0.45);
+  border-bottom-color: var(--v2-orange-border);
+}
+
+.indexList a:hover .jumpCount {
+  color: var(--v2-orange);
+}
+
+@media (max-width: 560px) {
+  .indexList {
+    columns: 2;
+    column-gap: 20px;
+  }
+  .indexList a {
+    font-size: 14px;
+  }
+}
+
+.indexAll {
+  color: var(--v2-orange) !important;
 }
 
 /* Showcase band under a hub's hero (full width, no side padding). */

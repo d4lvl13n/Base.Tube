@@ -1,0 +1,464 @@
+{
+  "slug": "eclipse-craft",
+  "status": "published",
+  "channelId": "UCvMI5QJgxhx5ZcqHBtUxkEA",
+  "name": "Eclipse Craft",
+  "handle": "EclipseCraft1",
+  "url": "https://www.youtube.com/channel/UCvMI5QJgxhx5ZcqHBtUxkEA",
+  "avatar": "https://yt3.googleusercontent.com/TdF4Qsc0uR3gQU3XG84TU-28fMZT1BeR8ZOfyBKoSAOYjOZT7bpUmnXT1qNpJaHrMOBRrwMJxQ=s900-c-k-c0x00ffffff-no-rj",
+  "game": "minecraft",
+  "spotlight": null,
+  "moonshotVideoId": null,
+  "subscribers": 27000,
+  "subscribersText": "27K subscribers",
+  "videoCount": 90,
+  "description": "I LOVE Ducks!",
+  "collectedAt": "2026-10-26",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 64500,
+    "outliers": [
+      {
+        "id": "ynXi3-NiY4g",
+        "multiple": 5.2
+      },
+      {
+        "id": "ys4wdqZI7ao",
+        "multiple": 2.7
+      },
+      {
+        "id": "1TVZjvMfwGo",
+        "multiple": 2.6
+      },
+      {
+        "id": "LCBxeQHDdgk",
+        "multiple": 2.6
+      },
+      {
+        "id": "6i38GKKoUEc",
+        "multiple": 2.1
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "n82_Hz4qVhM",
+      "title": "I Survived 100 Days In A Cave Only World Hardcore Minecraft",
+      "views": 44000,
+      "viewsText": "44K views",
+      "membersOnly": false,
+      "duration": "3:01:48",
+      "durationSec": 10908,
+      "published": "1 day ago",
+      "thumbnail": "https://i.ytimg.com/vi/n82_Hz4qVhM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/n82_Hz4qVhM/maxresdefault.jpg"
+    },
+    {
+      "id": "806kKXsk5QE",
+      "title": "I Survived 100 Days In Autumn Only hardcore Minecraft",
+      "views": 104000,
+      "viewsText": "104K views",
+      "membersOnly": false,
+      "duration": "3:06:00",
+      "durationSec": 11160,
+      "published": "8 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/806kKXsk5QE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/806kKXsk5QE/maxresdefault.jpg"
+    },
+    {
+      "id": "XnMKqZjx_WM",
+      "title": "I Survived 100 Days Building A RAVINE Base In Hardcore Minecraft",
+      "views": 65000,
+      "viewsText": "65K views",
+      "membersOnly": false,
+      "duration": "2:57:54",
+      "durationSec": 10674,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/XnMKqZjx_WM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/XnMKqZjx_WM/maxresdefault.jpg"
+    },
+    {
+      "id": "xaotlCKgDEQ",
+      "title": "I Survived 100 Days Building A Desert Base",
+      "views": 32000,
+      "viewsText": "32K views",
+      "membersOnly": false,
+      "duration": "3:11:01",
+      "durationSec": 11461,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/xaotlCKgDEQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/xaotlCKgDEQ/maxresdefault.jpg"
+    },
+    {
+      "id": "GVL2MUapvns",
+      "title": "I Survived 100 Days In A Plane Crash In Hardcore Minecraft",
+      "views": 40000,
+      "viewsText": "40K views",
+      "membersOnly": false,
+      "duration": "3:06:39",
+      "durationSec": 11199,
+      "published": "4 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/GVL2MUapvns/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/GVL2MUapvns/maxresdefault.jpg"
+    },
+    {
+      "id": "NnWUE45xncc",
+      "title": "I Survived 100 Days Pale Oak Garden In Hardcore Minecraft",
+      "views": 63000,
+      "viewsText": "63K views",
+      "membersOnly": false,
+      "duration": "3:10:03",
+      "durationSec": 11403,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/NnWUE45xncc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/NnWUE45xncc/maxresdefault.jpg"
+    },
+    {
+      "id": "B1GoUeLBJEw",
+      "title": "I Survived 100 Days In Realistic Wilderness In Minecraft",
+      "views": 70000,
+      "viewsText": "70K views",
+      "membersOnly": false,
+      "duration": "3:10:12",
+      "durationSec": 11412,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/B1GoUeLBJEw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/B1GoUeLBJEw/maxresdefault.jpg"
+    },
+    {
+      "id": "ys4wdqZI7ao",
+      "title": "I Survived 100 Days Building A Underwater Base In Hardcore Minecraft",
+      "views": 171000,
+      "viewsText": "171K views",
+      "membersOnly": false,
+      "duration": "3:12:16",
+      "durationSec": 11536,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/ys4wdqZI7ao/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ys4wdqZI7ao/maxresdefault.jpg"
+    },
+    {
+      "id": "gvmvuV7NpAg",
+      "title": "I Survived 100 Days On A Waterfall In Hardcore Minecraft",
+      "views": 92000,
+      "viewsText": "92K views",
+      "membersOnly": false,
+      "duration": "3:06:52",
+      "durationSec": 11212,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/gvmvuV7NpAg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/gvmvuV7NpAg/maxresdefault.jpg"
+    },
+    {
+      "id": "1TVZjvMfwGo",
+      "title": "Surviving 100 Days On One BLOCK In Minecraft",
+      "views": 167000,
+      "viewsText": "167K views",
+      "membersOnly": false,
+      "duration": "3:10:49",
+      "durationSec": 11449,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/1TVZjvMfwGo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/1TVZjvMfwGo/maxresdefault.jpg"
+    },
+    {
+      "id": "bvTwHGNUoCg",
+      "title": "I Survived 100 Days In SUPERFLAT Minecraft Hardcore",
+      "views": 35000,
+      "viewsText": "35K views",
+      "membersOnly": false,
+      "duration": "3:13:15",
+      "durationSec": 11595,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/bvTwHGNUoCg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/bvTwHGNUoCg/maxresdefault.jpg"
+    },
+    {
+      "id": "PTpJv53tlC4",
+      "title": "I Survived 100 Days In The Sky Hardcore Minecraft",
+      "views": 26000,
+      "viewsText": "26K views",
+      "membersOnly": false,
+      "duration": "3:10:22",
+      "durationSec": 11422,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/PTpJv53tlC4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/PTpJv53tlC4/maxresdefault.jpg"
+    },
+    {
+      "id": "AujZQxJ1M9w",
+      "title": "Surviving 100 Days In The Dark Oak Forest In Hardcore Minecraft",
+      "views": 127000,
+      "viewsText": "127K views",
+      "membersOnly": false,
+      "duration": "3:07:41",
+      "durationSec": 11261,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/AujZQxJ1M9w/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/AujZQxJ1M9w/maxresdefault.jpg"
+    },
+    {
+      "id": "zbVxzVm8ceQ",
+      "title": "I Survived 100 Days in a MOUNTAIN in Hardcore Minecraft",
+      "views": 119000,
+      "viewsText": "119K views",
+      "membersOnly": false,
+      "duration": "3:10:50",
+      "durationSec": 11450,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/zbVxzVm8ceQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/zbVxzVm8ceQ/maxresdefault.jpg"
+    },
+    {
+      "id": "agcefuMtxiI",
+      "title": "I Survived 100 Days In An Active Volcano In Minecraft",
+      "views": 31000,
+      "viewsText": "31K views",
+      "membersOnly": false,
+      "duration": "2:57:39",
+      "durationSec": 10659,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/agcefuMtxiI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/agcefuMtxiI/maxresdefault.jpg"
+    },
+    {
+      "id": "0kEbv_dsC1A",
+      "title": "Surviving 100 Days As A Fisherman In Minecraft",
+      "views": 52000,
+      "viewsText": "52K views",
+      "membersOnly": false,
+      "duration": "3:11:37",
+      "durationSec": 11497,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/0kEbv_dsC1A/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/0kEbv_dsC1A/maxresdefault.jpg"
+    },
+    {
+      "id": "RX5lFP0ERPI",
+      "title": "I Survived 100 Days Building The ULTIMATE Cozy Base",
+      "views": 51000,
+      "viewsText": "51K views",
+      "membersOnly": false,
+      "duration": "3:02:01",
+      "durationSec": 10921,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/RX5lFP0ERPI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/RX5lFP0ERPI/maxresdefault.jpg"
+    },
+    {
+      "id": "rp41Z6yPTFU",
+      "title": "Surviving 100 Days STRANDED In A Frozen World",
+      "views": 26000,
+      "viewsText": "26K views",
+      "membersOnly": false,
+      "duration": "2:53:44",
+      "durationSec": 10424,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/rp41Z6yPTFU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/rp41Z6yPTFU/maxresdefault.jpg"
+    },
+    {
+      "id": "FuY8d0U-wLs",
+      "title": "I Survived 100 Days On A Farm In Minecraft",
+      "views": 46000,
+      "viewsText": "46K views",
+      "membersOnly": false,
+      "duration": "3:06:20",
+      "durationSec": 11180,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/FuY8d0U-wLs/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/FuY8d0U-wLs/maxresdefault.jpg"
+    },
+    {
+      "id": "BLZFIFH75-8",
+      "title": "I Survived 100 Days On Minecraft's Largest Mountain | Amplified minecraft",
+      "views": 32000,
+      "viewsText": "32K views",
+      "membersOnly": false,
+      "duration": "3:03:49",
+      "durationSec": 11029,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/BLZFIFH75-8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/BLZFIFH75-8/maxresdefault.jpg"
+    },
+    {
+      "id": "lH2P0y-ZnTI",
+      "title": "I Survived 100 Days On A Lake In Minecraft",
+      "views": 87000,
+      "viewsText": "87K views",
+      "membersOnly": false,
+      "duration": "3:08:48",
+      "durationSec": 11328,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/lH2P0y-ZnTI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/lH2P0y-ZnTI/maxresdefault.jpg"
+    },
+    {
+      "id": "pUyAirHx9vk",
+      "title": "I Survived 100 Days In Minecrafts WORST Biome",
+      "views": 64000,
+      "viewsText": "64K views",
+      "membersOnly": false,
+      "duration": "3:10:28",
+      "durationSec": 11428,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/pUyAirHx9vk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/pUyAirHx9vk/maxresdefault.jpg"
+    },
+    {
+      "id": "td4cr2w6Yu8",
+      "title": "I Survived 100 Days Building A Cozy Underground Base In Minecraft",
+      "views": 53000,
+      "viewsText": "53K views",
+      "membersOnly": false,
+      "duration": "3:06:25",
+      "durationSec": 11185,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/td4cr2w6Yu8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/td4cr2w6Yu8/maxresdefault.jpg"
+    },
+    {
+      "id": "LCBxeQHDdgk",
+      "title": "100 Days Building A Cozy Treehouse Base In Minecraft",
+      "views": 168000,
+      "viewsText": "168K views",
+      "membersOnly": false,
+      "duration": "3:03:13",
+      "durationSec": 10993,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/LCBxeQHDdgk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/LCBxeQHDdgk/maxresdefault.jpg"
+    },
+    {
+      "id": "-4LXdfOvY6o",
+      "title": "Surviving 100 Days Lost At Sea In Minecraft",
+      "views": 77000,
+      "viewsText": "77K views",
+      "membersOnly": false,
+      "duration": "2:41:46",
+      "durationSec": 9706,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/-4LXdfOvY6o/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/-4LXdfOvY6o/maxresdefault.jpg"
+    },
+    {
+      "id": "6i38GKKoUEc",
+      "title": "I Survived 100 Days In The Jungle In Minecraft!",
+      "views": 136000,
+      "viewsText": "136K views",
+      "membersOnly": false,
+      "duration": "3:01:02",
+      "durationSec": 10862,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/6i38GKKoUEc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/6i38GKKoUEc/maxresdefault.jpg"
+    },
+    {
+      "id": "onfTVBQkXI8",
+      "title": "100 Days Building A Medieval Village / Minecraft Forever World",
+      "views": 37000,
+      "viewsText": "37K views",
+      "membersOnly": false,
+      "duration": "3:04:12",
+      "durationSec": 11052,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/onfTVBQkXI8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/onfTVBQkXI8/maxresdefault.jpg"
+    },
+    {
+      "id": "YPQ_ZPvq0j4",
+      "title": "Surviving 100 Days In A Cherry Blossom Forrest",
+      "views": 100000,
+      "viewsText": "100K views",
+      "membersOnly": false,
+      "duration": "3:14:19",
+      "durationSec": 11659,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/YPQ_ZPvq0j4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/YPQ_ZPvq0j4/maxresdefault.jpg"
+    },
+    {
+      "id": "XFMYlhvHieo",
+      "title": "I Spent 100 Days Building A Zoo In Minecraft",
+      "views": 106000,
+      "viewsText": "106K views",
+      "membersOnly": false,
+      "duration": "3:07:44",
+      "durationSec": 11264,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/XFMYlhvHieo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/XFMYlhvHieo/maxresdefault.jpg"
+    },
+    {
+      "id": "ynXi3-NiY4g",
+      "title": "I Survived 100 Days On An ISLAND In Minecraft",
+      "views": 336000,
+      "viewsText": "336K views",
+      "membersOnly": false,
+      "duration": "3:23:14",
+      "durationSec": 12194,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/ynXi3-NiY4g/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ynXi3-NiY4g/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "Eclipse Craft makes three-hour Minecraft '100 days' videos, most in Hardcore, each in one setting: an island, underwater, a ravine, autumn only, one block. The thumbnails show the finished base from above in strong colours, with a 'MINECRAFT HARDCORE 100 DAYS' stack in the top left and no player in sight.",
+    "niche": "Minecraft Hardcore 100-day survival builds",
+    "styleTraits": [
+      {
+        "title": "The finished base, from above",
+        "detail": "Every thumbnail is a wide, high view of the base at day 100: houses, farms, paths and docks, packed with detail. The build is the promise."
+      },
+      {
+        "title": "A fixed title stack",
+        "detail": "In the top left: 'MINECRAFT' in the game's stone letters, 'HARDCORE' in red with a heart in place of the O, then '100 DAYS' with 'DAYS' in red. It is the same on almost every upload."
+      },
+      {
+        "title": "The setting does the talking",
+        "detail": "Apart from the title stack there are no words. The setting is shown: a glass dome under the sea, treehouses in a jungle, red and orange autumn trees, a cave lit by lanterns."
+      },
+      {
+        "title": "Rich, saturated colour",
+        "detail": "Strong greens, deep blues and warm autumn reds, with soft lighting. The frames feel full and finished, which may suggest the long project inside."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "ynXi3-NiY4g",
+        "why": "About 336,000 views, 5.2 times the median. An island covered in houses, wheat fields and gold-roofed buildings, surrounded by blue sea, under the 'MINECRAFT 100 DAYS' stack. An island is easy to picture as a whole world to build, which may explain the reach."
+      },
+      {
+        "id": "ys4wdqZI7ao",
+        "why": "About 171,000 views, 2.7 times the median. A large glass dome on the sea floor with coral and paths of light. An underwater base is a classic dream build, and the dome reads clearly even at small size."
+      },
+      {
+        "id": "1TVZjvMfwGo",
+        "why": "About 167,000 views, 2.6 times the median. The only thumbnail in the sample with a 'DAY 1' and 'DAY 100' split: a player with a yellow duck head on a single block on the left, a large round island base on the right. Showing the start makes the growth visible."
+      }
+    ],
+    "lessons": [
+      "For long build videos, show the finished result from above; the hours of work are the selling point.",
+      "Keep one title stack in the same corner on every upload so your series is recognised.",
+      "Choose settings that are easy to picture (island, underwater, treehouses); here they pulled more than abstract ones like 'in the sky' or 'frozen world', which sat at about 0.4 times the median.",
+      "When the start point is extreme (one block), show it next to the result with 'DAY 1' and 'DAY 100'."
+    ],
+    "experiment": "On your next build video, test the finished build alone against a 'DAY 1' / 'DAY 100' split using the same final screenshot, so the only difference is the starting point.",
+    "faq": [
+      {
+        "q": "How many subscribers does Eclipse Craft have?",
+        "a": "As of 26 October 2026, Eclipse Craft has about 27K subscribers and 90 videos. The latest 30 long uploads have a median of about 64,500 views, more than twice the number of subscribers. The biggest in that sample, 'I Survived 100 Days On An ISLAND In Minecraft', has about 336,000 views."
+      },
+      {
+        "q": "What does Eclipse Craft make videos about?",
+        "a": "Minecraft 100-day survival videos, most in Hardcore mode, each set in one place or theme: an island, underwater, a ravine, a waterfall, a cave-only world, autumn only, one block. Nearly every video runs about three hours."
+      },
+      {
+        "q": "What do Eclipse Craft's thumbnails look like?",
+        "a": "A high, wide view of the finished base in bright colours, with 'MINECRAFT HARDCORE 100 DAYS' stacked in the top left in the game's lettering. There is usually no player and no other text."
+      }
+    ],
+    "reviewedAt": "2026-10-26"
+  }
+}

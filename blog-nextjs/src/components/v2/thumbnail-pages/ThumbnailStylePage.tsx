@@ -6,6 +6,7 @@ import CreatorsToStudy from '../creators/CreatorsToStudy';
 import { getMakerForGame, makerIsLive, makerPath } from '../maker-pages/makers';
 import { creatorsToLink } from '../creators/links';
 import Footer from '../Footer';
+import StudioCta from '../StudioCta';
 import NavBar from '../NavBar';
 import ScrollReveal from '../ScrollReveal';
 import { article, defaultHeadings, examplesNote, lookName } from './copy';
@@ -86,8 +87,8 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
 
       <main style={{ paddingTop: 56 }}>
         {/* ── HERO ─────────────────────────────────────────────── */}
-        <section className={`v2-tool-hero ${s.hero}`}>
-          <div className="v2-container">
+        <section className={`v2-tool-hero ${s.hero} ${s.styleHero}`}>
+          <div className={`v2-container ${s.heroWide}`}>
             <div className={s.heroGrid}>
               <div className={s.heroCopy}>
                 <nav aria-label="Breadcrumb" className={s.crumbs}>
@@ -106,9 +107,6 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
                     <li aria-current="page">{p.name}</li>
                   </ol>
                 </nav>
-                <span className={`v2-feature-tag orange ${s.heroTag}`}>
-                  Style guide · {count} examples
-                </span>
                 <h1 className={`v2-cp-h1 ${s.heroH1}`}>
                   {p.h1}
                   {p.h1Accent && (
@@ -126,48 +124,25 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
                     {p.cta.label} <span aria-hidden>→</span>
                     <span className={s.srOnly}> (opens the Base.Tube Studio in a new tab)</span>
                   </a>
-                  {makerHref ? (
-                    <Link className="v2-btn v2-btn-ghost" href={makerHref}>
-                      {p.name} thumbnail maker
-                    </Link>
-                  ) : (
-                    <a className="v2-btn v2-btn-ghost" href="#examples">
-                      See the examples
-                    </a>
-                  )}
                 </div>
-                {p.layouts.length > 0 && (
-                  <div className={s.chips}>
-                    <span className={s.chipsLabel} id="layout-chips-label">
-                      Start from a layout
-                    </span>
-                    <ul aria-labelledby="layout-chips-label">
-                      {p.layouts.map((l) => (
-                        <li key={l.name}>
-                          <a
-                            className={s.chip}
-                            href={studioGenerateUrl({ style: p.cta.style, prompt: l.prompt, ref: ref(`chip-${l.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`) })}
-                            {...NEW_TAB}
-                          >
-                            {l.name}
-                            <span className={s.srOnly}> layout, generate in the Base.Tube Studio (new tab)</span>
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+                <p className={s.heroAside}>
+                  <a href="#examples">See all {count} examples</a>
+                  {makerHref && (
+                    <>
+                      {' '}or open the <Link href={makerHref}>{p.name} thumbnail maker</Link>
+                    </>
+                  )}
+                </p>
               </div>
 
               {cover && (
                 <figure className={s.heroFigure}>
-                  <span className={s.heroMedia}>
-                    <Image src={cover.src} alt={cover.alt} fill priority sizes="(max-width: 980px) 100vw, 520px" />
+                  <span className={s.heroFrame}>
+                    <span className={s.heroMedia}>
+                      <Image src={cover.src} alt={cover.alt} fill priority sizes="(max-width: 980px) 100vw, 720px" />
+                    </span>
                   </span>
-                  <figcaption className={s.heroCaption}>
-                    <span>{cover.caption}</span>
-                    <span className={s.heroCaptionMeta}>Example 01</span>
-                  </figcaption>
+                  {cover.caption && <figcaption className={s.heroCaption}>{cover.caption}</figcaption>}
                 </figure>
               )}
             </div>
@@ -213,6 +188,19 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
             <Gallery items={galleryItems} initial={GALLERY_INITIAL} ctaLabel="Generate in this style" />
           </div>
         </section>
+
+        {/* ── MID-PAGE CTA ─────────────────────────────────────── */}
+        <StudioCta
+          title={
+            <>
+              Make {article(look)} {look} thumbnail <em>for your next video.</em>
+            </>
+          }
+          text={`Describe your video in one line. Base.Tube makes three ${p.name} thumbnails in your channel’s style, ready to download and test on YouTube.`}
+          href={studioGenerateUrl({ style: p.cta.style, ref: ref('mid') })}
+          button={p.cta.label}
+          images={realExamples(p).slice(1, 4).map((g) => ({ src: g.src, alt: g.alt }))}
+        />
 
         <Sep />
 

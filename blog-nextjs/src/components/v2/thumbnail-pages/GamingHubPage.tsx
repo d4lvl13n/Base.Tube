@@ -2,8 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import Footer from '../Footer';
+import { getMakerForGame, makerIsLive, makerPath } from '../maker-pages/makers';
 import NavBar from '../NavBar';
 import ScrollReveal from '../ScrollReveal';
+import StudioCta from '../StudioCta';
 import { realExamples } from './games';
 import Marquee, { marqueeItems, ShowcaseHead, splitRows } from './Marquee';
 import g from './games.module.css';
@@ -34,6 +36,12 @@ export const GAMING_FAQ = [
 ];
 
 /** /thumbnails/gaming: every game page with a strip of its examples. */
+/** The game's maker page, when it is live (an indexed hub links to indexed pages only). */
+const makerFor = (slug: string) => {
+  const m = getMakerForGame(slug);
+  return m && makerIsLive(m) ? m : null;
+};
+
 export default function GamingHubPage({ pages, isLive }: { pages: ThumbnailPage[]; isLive: boolean }) {
   const total = pages.reduce((n, p) => n + realExamples(p).length, 0);
 
@@ -65,9 +73,9 @@ export default function GamingHubPage({ pages, isLive }: { pages: ThumbnailPage[
               </ol>
             </nav>
             {pages.length > 0 && (
-              <span className={`v2-feature-tag orange ${s.heroTag}`}>
-                {pages.length} games · {total} examples
-              </span>
+              <p className={s.heroMeta}>
+                {pages.length} games, {total} examples
+              </p>
             )}
             <h1 className={`v2-cp-h1 ${s.hubH1}`}>
               Gaming thumbnail ideas
@@ -85,16 +93,23 @@ export default function GamingHubPage({ pages, isLive }: { pages: ThumbnailPage[
               </a>
             </div>
             {pages.length > 1 && (
-              <nav className={s.chips} aria-label="Jump to a game">
-                <span className={s.chipsLabel}>Jump to</span>
+              <nav className={s.jumpNav} aria-label="Jump to a game">
+                <span className={s.jumpLabel}>Jump to</span>
                 <ul>
-                  {pages.map((p) => (
-                    <li key={p.slug}>
-                      <a className={s.chip} href={`#${p.slug}`}>
-                        {p.name}
-                      </a>
-                    </li>
-                  ))}
+                  {pages.map((p) => {
+                    const n = realExamples(p).length;
+                    return (
+                      <li key={p.slug}>
+                        <a href={`#${p.slug}`}>
+                          {p.name}
+                          <span className={s.jumpCount}>
+                            {n}
+                            <span className={s.srOnly}> {n === 1 ? 'example' : 'examples'}</span>
+                          </span>
+                        </a>
+                      </li>
+                    );
+                  })}
                 </ul>
               </nav>
             )}
@@ -112,6 +127,23 @@ export default function GamingHubPage({ pages, isLive }: { pages: ThumbnailPage[
             <Marquee rows={splitRows(marqueeItems(pages, 6), 2)} />
           </section>
         )}
+
+        {/* ── MID-PAGE CTA ─────────────────────────────────────── */}
+        <StudioCta
+          title={
+            <>
+              Your game, your face, <em>your next thumbnail.</em>
+            </>
+          }
+          text="Say what happens in your video. Base.Tube gives you three thumbnail ideas in your channel's style, with your face in them. Change anything in plain words, then download them for YouTube Test & Compare."
+          href={studioGenerateUrl({ ref: 'thumbnails-gaming-mid' })}
+          button="Make my gaming thumbnail"
+          images={pages
+            .map((p) => realExamples(p)[0])
+            .filter(Boolean)
+            .slice(0, 3)
+            .map((img) => ({ src: img.src, alt: img.alt }))}
+        />
 
         {/* ── ONE THUMBNAIL PER GAME, STAGGERED LEFT / RIGHT ───── */}
         <div className="v2-sep" aria-hidden />
@@ -138,6 +170,11 @@ export default function GamingHubPage({ pages, isLive }: { pages: ThumbnailPage[
                         <Link href={href} className={g.seeAll}>
                           See all {examples.length} examples <span aria-hidden>→</span>
                         </Link>
+                        {makerFor(p.slug) && (
+                          <Link href={makerPath(p.slug)} className={g.makerLink}>
+                            {p.name} thumbnail maker <span aria-hidden>→</span>
+                          </Link>
+                        )}
                       </ScrollReveal>
                     </div>
                   </li>

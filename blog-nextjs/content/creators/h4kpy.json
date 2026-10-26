@@ -1,0 +1,465 @@
+{
+  "slug": "h4kpy",
+  "status": "published",
+  "channelId": "UCs1Gr9yQyEMbdFKyZCBLDcA",
+  "name": "h4kpy",
+  "handle": "h4kpy",
+  "url": "https://www.youtube.com/channel/UCs1Gr9yQyEMbdFKyZCBLDcA",
+  "avatar": "https://yt3.googleusercontent.com/D05C_0-YJ78zIHT6Au7NQL6utKzXKGKTOIfK47T8oXEWlbSn_tQr6_KGrs68P8Q8nf9KIQY7oCo=s900-c-k-c0x00ffffff-no-rj",
+  "game": "gorilla-tag",
+  "spotlight": null,
+  "moonshotVideoId": null,
+  "subscribers": 340000,
+  "subscribersText": "340K subscribers",
+  "videoCount": 236,
+  "description": "Gorilla Tag",
+  "collectedAt": "2026-10-26",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 48000,
+    "outliers": [
+      {
+        "id": "xOEioZ7mFSU",
+        "multiple": 10.9
+      },
+      {
+        "id": "0j6j3OOHcpA",
+        "multiple": 8.5
+      },
+      {
+        "id": "llh1RzbHSgA",
+        "multiple": 5.1
+      },
+      {
+        "id": "G-ntWioI5s4",
+        "multiple": 3.8
+      },
+      {
+        "id": "YdcQyP01i5A",
+        "multiple": 3.7
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "1wcY_pPJeoY",
+      "title": "Using GLITCHES to DESTROY TOXIC E-GIRL",
+      "views": 40000,
+      "viewsText": "40K views",
+      "membersOnly": false,
+      "duration": "15:57",
+      "durationSec": 957,
+      "published": "16 hours ago",
+      "thumbnail": "https://i.ytimg.com/vi/1wcY_pPJeoY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/1wcY_pPJeoY/maxresdefault.jpg"
+    },
+    {
+      "id": "DzMFi6uEARU",
+      "title": "Ranking Every Gorilla Tag Map By How Livable They Are..",
+      "views": 34000,
+      "viewsText": "34K views",
+      "membersOnly": false,
+      "duration": "22:20",
+      "durationSec": 1340,
+      "published": "3 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/DzMFi6uEARU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/DzMFi6uEARU/maxresdefault.jpg"
+    },
+    {
+      "id": "ZFQIcbQkR08",
+      "title": "I Hired a FAKE OWNER To 1v1 My Friend..",
+      "views": 10000,
+      "viewsText": "10K views",
+      "membersOnly": false,
+      "duration": "17:12",
+      "durationSec": 1032,
+      "published": "6 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/ZFQIcbQkR08/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ZFQIcbQkR08/maxresdefault.jpg"
+    },
+    {
+      "id": "g9eDAM9U_mo",
+      "title": "I 2v1’d Toxic E-COUPLE Until They BROKE UP",
+      "views": 38000,
+      "viewsText": "38K views",
+      "membersOnly": false,
+      "duration": "20:38",
+      "durationSec": 1238,
+      "published": "9 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/g9eDAM9U_mo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/g9eDAM9U_mo/maxresdefault.jpg"
+    },
+    {
+      "id": "Z8wyrbkAvzM",
+      "title": "I Broke Every Gorilla Tag Rule Until I Got BANNED…",
+      "views": 14000,
+      "viewsText": "14K views",
+      "membersOnly": false,
+      "duration": "17:49",
+      "durationSec": 1069,
+      "published": "12 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/Z8wyrbkAvzM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Z8wyrbkAvzM/maxresdefault.jpg"
+    },
+    {
+      "id": "UPnuNBAacaQ",
+      "title": "Gorilla Tag But Every Time I Get Tagged, I Install A RANDOM MOD..",
+      "views": 45000,
+      "viewsText": "45K views",
+      "membersOnly": false,
+      "duration": "11:09",
+      "durationSec": 669,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/UPnuNBAacaQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/UPnuNBAacaQ/maxresdefault.jpg"
+    },
+    {
+      "id": "Yw36Rle2APk",
+      "title": "I Hired An E-GIRL To Coach Me, Then DESTROYED Her..",
+      "views": 33000,
+      "viewsText": "33K views",
+      "membersOnly": false,
+      "duration": "15:38",
+      "durationSec": 938,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/Yw36Rle2APk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Yw36Rle2APk/maxresdefault.jpg"
+    },
+    {
+      "id": "YdcQyP01i5A",
+      "title": "I Talked To a Toxic Players DAD in Gorilla Tag..",
+      "views": 177000,
+      "viewsText": "177K views",
+      "membersOnly": false,
+      "duration": "12:46",
+      "durationSec": 766,
+      "published": "4 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/YdcQyP01i5A/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/YdcQyP01i5A/maxresdefault.jpg"
+    },
+    {
+      "id": "ge-wBH2k8WE",
+      "title": "She Was Losing, So Her WHOLE CLAN Joined..",
+      "views": 23000,
+      "viewsText": "23K views",
+      "membersOnly": false,
+      "duration": "15:33",
+      "durationSec": 933,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/ge-wBH2k8WE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ge-wBH2k8WE/maxresdefault.jpg"
+    },
+    {
+      "id": "FaFNPTiS4uU",
+      "title": "I Hosted A FAKE Pro Clan Tryout..",
+      "views": 16000,
+      "viewsText": "16K views",
+      "membersOnly": false,
+      "duration": "16:49",
+      "durationSec": 1009,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/FaFNPTiS4uU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/FaFNPTiS4uU/maxresdefault.jpg"
+    },
+    {
+      "id": "PRbdqdT1mjA",
+      "title": "I Tricked A Toxic PLAYER Into 1v1ing a PRO..",
+      "views": 8600,
+      "viewsText": "8.6K views",
+      "membersOnly": false,
+      "duration": "13:51",
+      "durationSec": 831,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/PRbdqdT1mjA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/PRbdqdT1mjA/maxresdefault.jpg"
+    },
+    {
+      "id": "J4QsBOw2EXM",
+      "title": "I Snuck Into a BEGINNERS ONLY TOURNAMENT in Gorilla Tag!",
+      "views": 72000,
+      "viewsText": "72K views",
+      "membersOnly": false,
+      "duration": "15:25",
+      "durationSec": 925,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/J4QsBOw2EXM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/J4QsBOw2EXM/maxresdefault.jpg"
+    },
+    {
+      "id": "xOEioZ7mFSU",
+      "title": "I Talked To a Toxic Players MOM in Gorilla Tag..",
+      "views": 523000,
+      "viewsText": "523K views",
+      "membersOnly": false,
+      "duration": "12:35",
+      "durationSec": 755,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/xOEioZ7mFSU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/xOEioZ7mFSU/maxresdefault.jpg"
+    },
+    {
+      "id": "hLEmgERPUPI",
+      "title": "I Humbled the Most TOXIC Fake Pro as a Real Pro..",
+      "views": 23000,
+      "viewsText": "23K views",
+      "membersOnly": false,
+      "duration": "13:49",
+      "durationSec": 829,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/hLEmgERPUPI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/hLEmgERPUPI/maxresdefault.jpg"
+    },
+    {
+      "id": "cowTtXAMYEM",
+      "title": "Secretly CHEATING In A Pro Clan Tryout",
+      "views": 47000,
+      "viewsText": "47K views",
+      "membersOnly": false,
+      "duration": "13:33",
+      "durationSec": 813,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/cowTtXAMYEM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/cowTtXAMYEM/maxresdefault.jpg"
+    },
+    {
+      "id": "rWRg4cM99-8",
+      "title": "I Exposed a Streamer Pretending to be ME..",
+      "views": 84000,
+      "viewsText": "84K views",
+      "membersOnly": false,
+      "duration": "14:17",
+      "durationSec": 857,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/rWRg4cM99-8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/rWRg4cM99-8/maxresdefault.jpg"
+    },
+    {
+      "id": "AAcWWgBQ6hk",
+      "title": "Making Competitive Lobby's Think I Cheat.. (AGAIN)",
+      "views": 36000,
+      "viewsText": "36K views",
+      "membersOnly": false,
+      "duration": "16:08",
+      "durationSec": 968,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/AAcWWgBQ6hk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/AAcWWgBQ6hk/maxresdefault.jpg"
+    },
+    {
+      "id": "1i6mTApFwk0",
+      "title": "1 Tag = +1 SPEED in Gorilla Tag!",
+      "views": 87000,
+      "viewsText": "87K views",
+      "membersOnly": false,
+      "duration": "14:17",
+      "durationSec": 857,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/1i6mTApFwk0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/1i6mTApFwk0/maxresdefault.jpg"
+    },
+    {
+      "id": "6DYnqcmCnhg",
+      "title": "I SNUCK Into Every Gorilla Tag Clan!",
+      "views": 114000,
+      "viewsText": "114K views",
+      "membersOnly": false,
+      "duration": "1:26:41",
+      "durationSec": 5201,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/6DYnqcmCnhg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/6DYnqcmCnhg/maxresdefault.jpg"
+    },
+    {
+      "id": "0j6j3OOHcpA",
+      "title": "I Snuck Into My OWN Gorilla Tag Clan..",
+      "views": 407000,
+      "viewsText": "407K views",
+      "membersOnly": false,
+      "duration": "16:04",
+      "durationSec": 964,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/0j6j3OOHcpA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/0j6j3OOHcpA/maxresdefault.jpg"
+    },
+    {
+      "id": "VgtXPk8PNmU",
+      "title": "He Was Losing, So His GIRLFRIEND Joined..",
+      "views": 52000,
+      "viewsText": "52K views",
+      "membersOnly": false,
+      "duration": "15:15",
+      "durationSec": 915,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/VgtXPk8PNmU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/VgtXPk8PNmU/maxresdefault.jpg"
+    },
+    {
+      "id": "JIKWD73VJy8",
+      "title": "1v1ing PROS But I’m Secretly Cheating..",
+      "views": 74000,
+      "viewsText": "74K views",
+      "membersOnly": false,
+      "duration": "22:51",
+      "durationSec": 1371,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/JIKWD73VJy8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/JIKWD73VJy8/maxresdefault.jpg"
+    },
+    {
+      "id": "9JUi2A1fPdU",
+      "title": "I Went UNDERCOVER As A NOOB AND 1v1'd Toxic Players",
+      "views": 16000,
+      "viewsText": "16K views",
+      "membersOnly": false,
+      "duration": "15:54",
+      "durationSec": 954,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/9JUi2A1fPdU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/9JUi2A1fPdU/maxresdefault.jpg"
+    },
+    {
+      "id": "G-ntWioI5s4",
+      "title": "I Made A TOXIC E-Girl's VR BREAK After Losing 1v1..",
+      "views": 181000,
+      "viewsText": "181K views",
+      "membersOnly": false,
+      "duration": "13:45",
+      "durationSec": 825,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/G-ntWioI5s4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/G-ntWioI5s4/maxresdefault.jpg"
+    },
+    {
+      "id": "llh1RzbHSgA",
+      "title": "1 Tag = +1 ARMS in Gorilla Tag!",
+      "views": 244000,
+      "viewsText": "244K views",
+      "membersOnly": false,
+      "duration": "14:24",
+      "durationSec": 864,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/llh1RzbHSgA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/llh1RzbHSgA/maxresdefault.jpg"
+    },
+    {
+      "id": "TIgjCXfkUUE",
+      "title": "I Hired a PRO Gorilla Tag Coach, Then DESTROYED Him...",
+      "views": 28000,
+      "viewsText": "28K views",
+      "membersOnly": false,
+      "duration": "17:17",
+      "durationSec": 1037,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/TIgjCXfkUUE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/TIgjCXfkUUE/maxresdefault.jpg"
+    },
+    {
+      "id": "9HJIGyAvuCI",
+      "title": "Toxic Players BULLIED My Fan, So I Got REVENGE..",
+      "views": 53000,
+      "viewsText": "53K views",
+      "membersOnly": false,
+      "duration": "14:19",
+      "durationSec": 859,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/9HJIGyAvuCI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/9HJIGyAvuCI/maxresdefault.jpg"
+    },
+    {
+      "id": "8poSmGMfHFw",
+      "title": "I DESTROYED 100 TOXIC Gorilla Tag Players",
+      "views": 49000,
+      "viewsText": "49K views",
+      "membersOnly": false,
+      "duration": "1:03:49",
+      "durationSec": 3829,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/8poSmGMfHFw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/8poSmGMfHFw/maxresdefault.jpg"
+    },
+    {
+      "id": "5MAhuq_eA8g",
+      "title": "Fake Jman Was Being TOXIC, So I 1v1'd Him",
+      "views": 57000,
+      "viewsText": "57K views",
+      "membersOnly": false,
+      "duration": "14:55",
+      "durationSec": 895,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/5MAhuq_eA8g/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/5MAhuq_eA8g/maxresdefault.jpg"
+    },
+    {
+      "id": "Y509OS2jQV4",
+      "title": "I Met The Nicest Kids In Gorilla Tag!",
+      "views": 123000,
+      "viewsText": "123K views",
+      "membersOnly": false,
+      "duration": "12:03",
+      "durationSec": 723,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/Y509OS2jQV4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Y509OS2jQV4/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "h4kpy makes Gorilla Tag story videos about toxic players, fake pros, clan tryouts and 1v1s, plus a few 'every tag adds something' challenges. The thumbnails are staged scenes with the channel's red gorilla (white wings, white face) facing one or two coloured gorillas, with a short speech bubble doing the talking.",
+    "niche": "Gorilla Tag toxic-player stories, 1v1s and clan pranks",
+    "styleTraits": [
+      {
+        "title": "A scene, not a screenshot",
+        "detail": "Almost every thumbnail is a posed scene: two or three gorillas on grass or rock, with clear roles. The red winged gorilla is h4kpy; a purple gorilla with a flower crown plays the 'e-girl', a blue one with a headband the rival. The viewer can read who is fighting whom before reading any word."
+      },
+      {
+        "title": "Speech bubbles instead of headlines",
+        "detail": "Text sits in white comic speech bubbles with a black outline and a tail pointing at the speaker: 'UR GROUNDED!', 'NO MOM!', 'FAKE NOOB?!!', 'HACKER?!', 'TOO EASY'. It reads like a line of dialogue from the video, not a title."
+      },
+      {
+        "title": "Exaggerated faces on simple models",
+        "detail": "The gorillas are simple game models, but the faces are edited: crying eyes with blue tears, angry red eyes, a sad droopy look. With very little detail on screen, the face carries the emotion."
+      },
+      {
+        "title": "Bright, flat colours",
+        "detail": "Saturated red, purple, blue and orange gorillas on green grass and light grey rock. Few backgrounds, no clutter, so the coloured characters stand out at small size."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "xOEioZ7mFSU",
+        "why": "About 523,000 views, 10.9 times the median. A crying red gorilla, a purple gorilla pointing and shouting 'UR GROUNDED!', and a small blue gorilla answering 'NO MOM!'. The family-argument setup is instantly clear and a bit absurd, which probably made it easy to click from Gorilla Tag fans' home pages."
+      },
+      {
+        "id": "0j6j3OOHcpA",
+        "why": "About 407,000 views, 8.5 times the median. The frame splits one face in two: half red gorilla, half blue gorilla behind a zip, with 'FAKE NOOB?!!' in a bubble next to the real red gorilla. The disguise idea is shown, not explained, which may suit 'I Snuck Into My OWN Gorilla Tag Clan'."
+      },
+      {
+        "id": "YdcQyP01i5A",
+        "why": "About 177,000 views, 3.7 times the median. It reuses the exact layout of the 'MOM' video, this time with an orange gorilla holding a belt and 'SORRY DAD' as the answer. A sequel that copies a winning frame did well again, though at about a third of the first one's views."
+      }
+    ],
+    "lessons": [
+      "Cast your characters with colours and props (flower crown, headband, wings) so roles read without words.",
+      "Put the text in a speech bubble pointing at a character: it turns a thumbnail into a moment of dialogue.",
+      "Exaggerate faces even on simple game models; tears, angry eyes and open mouths carry the story.",
+      "When a scene works, a sequel with the same layout and one changed detail is a reasonable bet. 'Toxic player's DAD' followed 'MOM' and still reached 3.7 times the median.",
+      "Keep the background plain so two or three characters fill the frame."
+    ],
+    "experiment": "Take your next video and make two thumbnails with the same characters: one with a big headline across the top, one with the same idea written as a short line in a speech bubble pointing at a character. Test them with YouTube's Test & Compare.",
+    "faq": [
+      {
+        "q": "How many subscribers does h4kpy have?",
+        "a": "As of 26 October 2026, h4kpy has about 340K subscribers and 236 videos. Across the latest 30 long uploads the median is about 48,000 views. The biggest in that sample is 'I Talked To a Toxic Players MOM in Gorilla Tag..', with about 523,000 views, nearly 11 times the median."
+      },
+      {
+        "q": "What does h4kpy make videos about?",
+        "a": "Gorilla Tag social videos: going undercover in clans, hosting fake tryouts, 1v1s against players who act toxic, pretending to cheat in competitive lobbies, and a few challenge formats such as '1 Tag = +1 ARMS' or installing a random mod each time he is tagged. Most run 12 to 22 minutes."
+      },
+      {
+        "q": "What do h4kpy's thumbnails look like?",
+        "a": "Bright staged scenes with two or three gorillas: h4kpy's red gorilla with white wings, plus rivals in purple, blue or orange. Short lines of dialogue sit in white speech bubbles ('UR GROUNDED!', 'FAKE NOOB?!!'), and the faces are edited to cry, glare or gloat."
+      }
+    ],
+    "reviewedAt": "2026-10-26"
+  }
+}

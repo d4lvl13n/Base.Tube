@@ -21,8 +21,6 @@ summary: "One athlete in mid-air, one word, team colours you invented: five layo
 primaryKeyword: nba thumbnail
 secondaryKeywords:
   - nba thumbnail meme
-  - basketball thumbnail meme
-  - basketball thumbnail
 
 intro: >
   A good NBA thumbnail freezes one moment at its peak: the dunk above the rim,

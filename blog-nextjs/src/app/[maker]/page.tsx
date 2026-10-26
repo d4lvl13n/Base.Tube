@@ -14,13 +14,14 @@ export const dynamicParams = false;
 type Params = { params: Promise<{ maker: string }> };
 
 export function generateStaticParams() {
-  return MAKERS.filter((m) => getLoadedPage(m.game)?.page).map((m) => ({ maker: makerSlug(m.game) }));
+  // Only games whose gallery is live (6 real images): the page is built from those images.
+  return MAKERS.filter((m) => getLoadedPage(m.game)?.live).map((m) => ({ maker: makerSlug(m.game) }));
 }
 
 function load(slug: string) {
   const maker = getMakerBySlug(slug);
   const gallery = maker ? getLoadedPage(maker.game) : undefined;
-  return maker && gallery?.page ? { maker, gallery } : null;
+  return maker && gallery?.page && gallery.live ? { maker, gallery } : null;
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {

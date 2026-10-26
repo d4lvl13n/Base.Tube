@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Footer from '../Footer';
 import NavBar from '../NavBar';
 import ScrollReveal from '../ScrollReveal';
+import StudioCta from '../StudioCta';
 import { studioGenerateUrl } from '../thumbnail-pages/lib/schema.mjs';
 import s from '../thumbnail-pages/thumbnails.module.css';
 import g from '../thumbnail-pages/games.module.css';
@@ -201,6 +202,17 @@ export default function CreatorPage({ creator }: { creator: Creator }) {
             </section>
           </>
         )}
+
+        {/* ── MID-PAGE CTA ─────────────────────────────────────── */}
+        <StudioCta
+          title={
+            <>
+              Give your channel <em>a style like this.</em>
+            </>
+          }
+          text="Say what your next video is about. Base.Tube gives you three thumbnail ideas with your face and your channel's own style. Change anything in plain words, then download them for YouTube Test & Compare."
+          href={studioGenerateUrl({ ref: `${ref}-mid` })}
+        />
 
         {/* ── THUMBNAIL STYLE ──────────────────────────────────── */}
         {a && a.styleTraits.length > 0 && (

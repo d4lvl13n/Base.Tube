@@ -3,7 +3,7 @@ import ThumbnailPreviewPage from '@/components/v2/thumbnail-preview/ThumbnailPre
 import { FAQ } from '@/components/v2/thumbnail-preview/faq';
 
 const PAGE_URL = 'https://base.tube/tools/youtube-thumbnail-preview';
-const TITLE = 'Free YouTube Thumbnail Preview: Feed, Search, Mobile';
+const TITLE = 'YouTube Thumbnail Preview: Feed, Search, Mobile';
 const DESCRIPTION =
   'Preview your YouTube thumbnail and title in the home feed, search, up-next list and mobile, light or dark, beside other videos. Free, runs in your browser.';
 

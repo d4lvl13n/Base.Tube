@@ -9,6 +9,21 @@ import { gta6 } from './content/gta-6';
 import { minecraft } from './content/minecraft';
 import { roblox } from './content/roblox';
 import { zeldaOcarinaOfTime } from './content/zelda-ocarina-of-time';
+import { stealABrainrot } from './content/steal-a-brainrot';
+import { arcRaiders } from './content/arc-raiders';
+import { valorant } from './content/valorant';
+import { rainbowSixSiege } from './content/rainbow-six-siege';
+import { geometryDash } from './content/geometry-dash';
+import { rocketLeague } from './content/rocket-league';
+import { amongUs } from './content/among-us';
+import { fnaf } from './content/fnaf';
+import { marvelRivals } from './content/marvel-rivals';
+import { pokemon } from './content/pokemon';
+import { battlefield6 } from './content/battlefield-6';
+import { clashRoyale } from './content/clash-royale';
+import { apexLegends } from './content/apex-legends';
+import { growAGarden } from './content/grow-a-garden';
+import { repo } from './content/repo';
 
 /**
  * "<game> thumbnail maker" pages (/fortnite-thumbnail-maker…): the tool-first twin of a game's
@@ -60,7 +75,9 @@ export interface MakerContent {
   faq: MakerFaq[];
 }
 
-export const MAKERS: MakerContent[] = [fortnite, minecraft, roblox, gorillaTag, callOfDuty, gta6, zeldaOcarinaOfTime];
+export const MAKERS: MakerContent[] = [fortnite, minecraft, roblox, gorillaTag, callOfDuty, gta6, zeldaOcarinaOfTime,
+  stealABrainrot, arcRaiders, valorant, rainbowSixSiege, geometryDash, rocketLeague, amongUs, fnaf, marvelRivals, pokemon, battlefield6, clashRoyale, apexLegends, growAGarden, repo,
+];
 
 export const makerSlug = (game: string) => `${game}-thumbnail-maker`;
 export const makerPath = (game: string) => `/${makerSlug(game)}`;

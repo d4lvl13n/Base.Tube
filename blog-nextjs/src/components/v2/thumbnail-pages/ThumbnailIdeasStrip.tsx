@@ -19,7 +19,7 @@ export function linkablePages(): PagesIndexEntry[] {
 
 /**
  * "Thumbnail ideas" block shown above the footer of the tools, blog and product pages:
- * four game covers, then a link to every game, creator style and video genre page.
+ * four game covers, then a compact index linking every other game, creator style and video genre page.
  * Plain JSON input (lib/pages-index.json), so it also works inside client components.
  */
 export default function ThumbnailIdeasStrip() {
@@ -63,12 +63,10 @@ export default function ThumbnailIdeasStrip() {
           </ul>
         )}
 
-        <ul className={st.chips}>
+        <ul className={st.index}>
           {[...games.slice(4), ...others].map((p) => (
             <li key={p.slug}>
-              <Link href={`/thumbnails/${p.slug}`} className={st.chip}>
-                {p.name}
-              </Link>
+              <Link href={`/thumbnails/${p.slug}`}>{p.name}</Link>
             </li>
           ))}
         </ul>

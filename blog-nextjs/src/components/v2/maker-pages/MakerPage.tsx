@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import Footer from '../Footer';
 import NavBar from '../NavBar';
+import StudioCta from '../StudioCta';
 import ScrollReveal from '../ScrollReveal';
 import { GAMING_HUB_SLUG, realExamples, siblingPages } from '../thumbnail-pages/games';
 import g from '../thumbnail-pages/games.module.css';
@@ -41,7 +42,15 @@ export default function MakerPage({ maker, gallery }: { maker: MakerContent; gal
   });
   // A live page links to live pages only; a draft preview links to everything.
   const galleryHref = gallery.live || !live ? `${BASE_PATH}/${p.slug}` : null;
-  const otherGames = siblingPages(gallery).slice(0, 8);
+  const siblings = siblingPages(gallery);
+  const otherGames = siblings.slice(0, 4);
+  // Every other game's maker page (or gallery), so each maker page is linked from all the others.
+  const allMakers = siblings
+    .map((og) => {
+      const other = getMakerForGame(og.slug);
+      return other && (makerIsLive(other) || !live) ? { name: og.name, href: makerPath(og.slug) } : null;
+    })
+    .filter((x): x is { name: string; href: string } => x !== null);
   const strip = realExamples(p).slice(0, 4);
 
   return (
@@ -159,6 +168,21 @@ export default function MakerPage({ maker, gallery }: { maker: MakerContent; gal
           </section>
         )}
 
+        {/* ── MID-PAGE CTA ─────────────────────────────────────── */}
+        <StudioCta
+          title={
+            <>
+              Your next {p.name} video,
+              <br />
+              <em>three thumbnails ready.</em>
+            </>
+          }
+          text={`Paste the video link or write one line about it. You get three ${p.name} thumbnails with real characters and places, in your channel’s style.`}
+          href={studio('mid')}
+          button={`Make my ${p.name} thumbnail`}
+          images={realExamples(p).slice(2, 5).map((g) => ({ src: g.src, alt: g.alt }))}
+        />
+
         {/* ── GALLERY LINK ──────────────────────────────────────── */}
         {galleryHref && (
           <>
@@ -248,6 +272,18 @@ export default function MakerPage({ maker, gallery }: { maker: MakerContent; gal
                     );
                   })}
                 </ul>
+                {allMakers.length > 0 && (
+                  <nav className={m.makerIndex} aria-label="Thumbnail makers for other games">
+                    <span className={s.toolsLabel}>Thumbnail makers for other games</span>
+                    <ul>
+                      {allMakers.map((mk) => (
+                        <li key={mk.href}>
+                          <Link href={mk.href}>{mk.name} thumbnail maker</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </nav>
+                )}
                 <div className={`${s.tools} ${m.tools}`}>
                   <span className={s.toolsLabel}>Check your thumbnail before you upload</span>
                   <ul>

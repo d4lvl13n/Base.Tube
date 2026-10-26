@@ -50,6 +50,24 @@ const TOOLS = [
     desc: 'Free 1280 × 720 backgrounds with one side left empty for your face and title. Download one or build a full thumbnail on it.',
     go: 'Get a background',
   },
+  {
+    href: '/tools/youtube-thumbnail-downloader',
+    name: 'Thumbnail downloader',
+    desc: 'Paste any YouTube link and save its thumbnail in every size, up to 1280×720.',
+    go: 'Get a thumbnail',
+  },
+  {
+    href: '/youtube-banner-size',
+    name: 'Banner size checker',
+    desc: 'The YouTube banner size and safe area, checked against YouTube Help. Drop your banner to see what shows on each screen.',
+    go: 'Check my banner',
+  },
+  {
+    href: '/tools/ctr-optimizer',
+    name: 'CTR predictor (in development)',
+    desc: 'Which of two thumbnails will get more clicks? The model we are building to answer it, and where it stands today.',
+    go: 'See where it stands',
+  },
 ];
 
 export default function ToolsDirectory() {

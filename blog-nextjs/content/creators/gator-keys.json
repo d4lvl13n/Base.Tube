@@ -1,0 +1,465 @@
+{
+  "slug": "gator-keys",
+  "status": "published",
+  "channelId": "UCt5DuP8_o7X9VDhgynxjxpg",
+  "name": "Gator Keys",
+  "handle": "Gatorkey",
+  "url": "https://www.youtube.com/channel/UCt5DuP8_o7X9VDhgynxjxpg",
+  "avatar": "https://yt3.googleusercontent.com/yu_zEGhXnPa4Ze4czIQCrevVqB_HFTEysCM2wqdexd8aMYc_WX3Mj7wDHDNpr2KBH56iFbDgNw=s900-c-k-c0x00ffffff-no-rj",
+  "game": "gta-6",
+  "spotlight": null,
+  "moonshotVideoId": null,
+  "subscribers": 149000,
+  "subscribersText": "149K subscribers",
+  "videoCount": 67,
+  "description": "Lore, theories and solving GTA mysteries.",
+  "collectedAt": "2026-10-26",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 159500,
+    "outliers": [
+      {
+        "id": "Q_01nCZZUQI",
+        "multiple": 6.2
+      },
+      {
+        "id": "O5ZvmCDsaC8",
+        "multiple": 4.9
+      },
+      {
+        "id": "ZAkbLXWAcZY",
+        "multiple": 3
+      },
+      {
+        "id": "7hc7msFu6Y0",
+        "multiple": 2.5
+      },
+      {
+        "id": "jElzQX7SI3Q",
+        "multiple": 2.5
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "tsf1BWthmT0",
+      "title": "Jason Duval will DIE at the End of GTA VI... (My Ending THEORY)",
+      "views": 57000,
+      "viewsText": "57K views",
+      "membersOnly": false,
+      "duration": "9:07",
+      "durationSec": 547,
+      "published": "7 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/tsf1BWthmT0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/tsf1BWthmT0/maxresdefault.jpg"
+    },
+    {
+      "id": "oo3Dt3usJ7w",
+      "title": "This Slasher in GTA Online has a BACKSTORY... (The Driver)",
+      "views": 160000,
+      "viewsText": "160K views",
+      "membersOnly": false,
+      "duration": "4:21",
+      "durationSec": 261,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/oo3Dt3usJ7w/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/oo3Dt3usJ7w/maxresdefault.jpg"
+    },
+    {
+      "id": "sSwMvhGoEPY",
+      "title": "The Submarine Wreck in GTA 5 FINALLY Makes Sense... (Beta Leaks)",
+      "views": 172000,
+      "viewsText": "172K views",
+      "membersOnly": false,
+      "duration": "4:15",
+      "durationSec": 255,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/sSwMvhGoEPY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/sSwMvhGoEPY/maxresdefault.jpg"
+    },
+    {
+      "id": "6LMLoBm8Z7I",
+      "title": "The Entire Mothman Mystery from GTA San Andreas to GTA 5… ",
+      "views": 106000,
+      "viewsText": "106K views",
+      "membersOnly": false,
+      "duration": "12:35",
+      "durationSec": 755,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/6LMLoBm8Z7I/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/6LMLoBm8Z7I/maxresdefault.jpg"
+    },
+    {
+      "id": "s_YW61WbAfk",
+      "title": "The First Ever GTA 6 Mystery has been FOUND…  (Missing People Posters)",
+      "views": 85000,
+      "viewsText": "85K views",
+      "membersOnly": false,
+      "duration": "4:46",
+      "durationSec": 286,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/s_YW61WbAfk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/s_YW61WbAfk/maxresdefault.jpg"
+    },
+    {
+      "id": "f5bpvoDtJbQ",
+      "title": "The \"Cry Cave\" Mystery Fully SOLVED in GTA 5... (after 13 years)",
+      "views": 159000,
+      "viewsText": "159K views",
+      "membersOnly": false,
+      "duration": "10:20",
+      "durationSec": 620,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/f5bpvoDtJbQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/f5bpvoDtJbQ/maxresdefault.jpg"
+    },
+    {
+      "id": "mNy8M8obQAE",
+      "title": "The Screaming Theatre Mystery Fully SOLVED in GTA 5... (old mystery)",
+      "views": 139000,
+      "viewsText": "139K views",
+      "membersOnly": false,
+      "duration": "8:08",
+      "durationSec": 488,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/mNy8M8obQAE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/mNy8M8obQAE/maxresdefault.jpg"
+    },
+    {
+      "id": "ZAkbLXWAcZY",
+      "title": "The \"Sewer Brain\" Mystery Fully SOLVED in GTA 5... (New Mystery)",
+      "views": 483000,
+      "viewsText": "483K views",
+      "membersOnly": false,
+      "duration": "7:01",
+      "durationSec": 421,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/ZAkbLXWAcZY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ZAkbLXWAcZY/maxresdefault.jpg"
+    },
+    {
+      "id": "O_ZU9QrakIU",
+      "title": "The TRUTH about the Mount Chiliad Mystery… (Everything Explained)",
+      "views": 248000,
+      "viewsText": "248K views",
+      "membersOnly": false,
+      "duration": "28:33",
+      "durationSec": 1713,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/O_ZU9QrakIU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/O_ZU9QrakIU/maxresdefault.jpg"
+    },
+    {
+      "id": "XIZq2JdX0G8",
+      "title": "This Building was a huge Easter Egg the entire time... (GTA 5)",
+      "views": 223000,
+      "viewsText": "223K views",
+      "membersOnly": false,
+      "duration": "6:16",
+      "durationSec": 376,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/XIZq2JdX0G8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/XIZq2JdX0G8/maxresdefault.jpg"
+    },
+    {
+      "id": "2G8bycD04j0",
+      "title": "I might have figured out this GTA 6 Mystery already... (The Forest Figure)",
+      "views": 90000,
+      "viewsText": "90K views",
+      "membersOnly": false,
+      "duration": "12:14",
+      "durationSec": 734,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/2G8bycD04j0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/2G8bycD04j0/maxresdefault.jpg"
+    },
+    {
+      "id": "7hc7msFu6Y0",
+      "title": "After 13 Years, The Tsunami Mystery Is SOLVED in GTA 5…",
+      "views": 391000,
+      "viewsText": "391K views",
+      "membersOnly": false,
+      "duration": "12:33",
+      "durationSec": 753,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/7hc7msFu6Y0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/7hc7msFu6Y0/maxresdefault.jpg"
+    },
+    {
+      "id": "WrfmyCqWdFw",
+      "title": "The Crying Baby Mystery Fully SOLVED in GTA 5… (O’Neil's Ranch Ghost)",
+      "views": 149000,
+      "viewsText": "149K views",
+      "membersOnly": false,
+      "duration": "10:57",
+      "durationSec": 657,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/WrfmyCqWdFw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/WrfmyCqWdFw/maxresdefault.jpg"
+    },
+    {
+      "id": "XfXcCxtlBwY",
+      "title": "I Found Something NEW about this GTA 5 Easter Egg… (2026) ",
+      "views": 60000,
+      "viewsText": "60K views",
+      "membersOnly": false,
+      "duration": "5:20",
+      "durationSec": 320,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/XfXcCxtlBwY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/XfXcCxtlBwY/maxresdefault.jpg"
+    },
+    {
+      "id": "jElzQX7SI3Q",
+      "title": "The DARK History of Cayo Perico in Real Life... ",
+      "views": 402000,
+      "viewsText": "402K views",
+      "membersOnly": false,
+      "duration": "10:00",
+      "durationSec": 600,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/jElzQX7SI3Q/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/jElzQX7SI3Q/maxresdefault.jpg"
+    },
+    {
+      "id": "Dp574iRtVGM",
+      "title": "Everything HIDDEN in the GTA Online ocean... (2026)",
+      "views": 115000,
+      "viewsText": "115K views",
+      "membersOnly": false,
+      "duration": "8:21",
+      "durationSec": 501,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/Dp574iRtVGM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Dp574iRtVGM/maxresdefault.jpg"
+    },
+    {
+      "id": "J3GQK9CUJWk",
+      "title": "The Tongva Hills Cave FINALLY Makes Sense in GTA 5… ",
+      "views": 151000,
+      "viewsText": "151K views",
+      "membersOnly": false,
+      "duration": "8:50",
+      "durationSec": 530,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/J3GQK9CUJWk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/J3GQK9CUJWk/maxresdefault.jpg"
+    },
+    {
+      "id": "JlU5v9gLknM",
+      "title": "The Baphomet Mystery is Finally SOLVED in GTA 5… (Faces on the Water)",
+      "views": 136000,
+      "viewsText": "136K views",
+      "membersOnly": false,
+      "duration": "9:36",
+      "durationSec": 576,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/JlU5v9gLknM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/JlU5v9gLknM/maxresdefault.jpg"
+    },
+    {
+      "id": "gkK2BkTzZ28",
+      "title": "The Entire GOATMAN Mystery Fully SOLVED in GTA 5... (2026)",
+      "views": 341000,
+      "viewsText": "341K views",
+      "membersOnly": false,
+      "duration": "13:42",
+      "durationSec": 822,
+      "published": "9 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/gkK2BkTzZ28/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/gkK2BkTzZ28/maxresdefault.jpg"
+    },
+    {
+      "id": "4u1IILb8BLs",
+      "title": "The Underwater Hatch might FINALLY Make Sense in GTA 5… (2026)",
+      "views": 219000,
+      "viewsText": "219K views",
+      "membersOnly": false,
+      "duration": "8:17",
+      "durationSec": 497,
+      "published": "9 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/4u1IILb8BLs/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/4u1IILb8BLs/maxresdefault.jpg"
+    },
+    {
+      "id": "F6ObzFpmGHI",
+      "title": "The Real Life Crimes BLAMED on GTA 4 after the game released… ",
+      "views": 58000,
+      "viewsText": "58K views",
+      "membersOnly": false,
+      "duration": "16:42",
+      "durationSec": 1002,
+      "published": "9 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/F6ObzFpmGHI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/F6ObzFpmGHI/maxresdefault.jpg"
+    },
+    {
+      "id": "yFHOiPh0M7k",
+      "title": "Where actually is The Bigfoot in GTA 4?",
+      "views": 82000,
+      "viewsText": "82K views",
+      "membersOnly": false,
+      "duration": "8:11",
+      "durationSec": 491,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/yFHOiPh0M7k/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/yFHOiPh0M7k/maxresdefault.jpg"
+    },
+    {
+      "id": "u7NeiDHLzIQ",
+      "title": "I Accidentally SOLVED an old Red Dead Redemption Mystery... (Tumbleweed Haunted)",
+      "views": 384000,
+      "viewsText": "384K views",
+      "membersOnly": false,
+      "duration": "11:52",
+      "durationSec": 712,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/u7NeiDHLzIQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/u7NeiDHLzIQ/maxresdefault.jpg"
+    },
+    {
+      "id": "O5ZvmCDsaC8",
+      "title": "These Towers in GTA 4 have a Very DARK History in Real Life… ",
+      "views": 778000,
+      "viewsText": "778K views",
+      "membersOnly": false,
+      "duration": "7:44",
+      "durationSec": 464,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/O5ZvmCDsaC8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/O5ZvmCDsaC8/maxresdefault.jpg"
+    },
+    {
+      "id": "w3xNLI05IcE",
+      "title": "This is WHY Bigfoot is just a MAN in a Costume in GTA 5…",
+      "views": 99000,
+      "viewsText": "99K views",
+      "membersOnly": false,
+      "duration": "8:33",
+      "durationSec": 513,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/w3xNLI05IcE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/w3xNLI05IcE/maxresdefault.jpg"
+    },
+    {
+      "id": "eBHpFD-qde4",
+      "title": "The Ghost Town in San Andreas is Finally SOLVED…  (Las Brujas) ",
+      "views": 288000,
+      "viewsText": "288K views",
+      "membersOnly": false,
+      "duration": "8:12",
+      "durationSec": 492,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/eBHpFD-qde4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/eBHpFD-qde4/maxresdefault.jpg"
+    },
+    {
+      "id": "X-co5zHLaYI",
+      "title": "The Abandoned Hospital in GTA 4 has a CREEPY History… ",
+      "views": 285000,
+      "viewsText": "285K views",
+      "membersOnly": false,
+      "duration": "7:42",
+      "durationSec": 462,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/X-co5zHLaYI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/X-co5zHLaYI/maxresdefault.jpg"
+    },
+    {
+      "id": "ceYxZbbzb-A",
+      "title": "The Docks Ghost Mystery is FINALLY Solved in GTA 4…",
+      "views": 147000,
+      "viewsText": "147K views",
+      "membersOnly": false,
+      "duration": "7:23",
+      "durationSec": 443,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/ceYxZbbzb-A/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ceYxZbbzb-A/maxresdefault.jpg"
+    },
+    {
+      "id": "RnDTWRBXAIM",
+      "title": "The Golden Tree Mystery FULLY Explained in GTA 5...",
+      "views": 175000,
+      "viewsText": "175K views",
+      "membersOnly": false,
+      "duration": "4:46",
+      "durationSec": 286,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/RnDTWRBXAIM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/RnDTWRBXAIM/maxresdefault.jpg"
+    },
+    {
+      "id": "Q_01nCZZUQI",
+      "title": "This Is Why There's a HEART Inside The Statue of Happiness...",
+      "views": 990000,
+      "viewsText": "990K views",
+      "membersOnly": false,
+      "duration": "7:50",
+      "durationSec": 470,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/Q_01nCZZUQI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Q_01nCZZUQI/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "Gator Keys makes short investigations into GTA mysteries and Easter eggs: ghosts, Bigfoot, Mount Chiliad, strange buildings and their real-life inspirations, plus a few GTA 6 theories. The thumbnails are one moody game scene with a short line in white handwriting-like bold text and a key word in red: 'SOLVED.', 'finally explained..', 'Welcome to HELL..'.",
+    "niche": "GTA mysteries, Easter eggs and real-life history",
+    "styleTraits": [
+      {
+        "title": "One scene, one mystery",
+        "detail": "Each thumbnail shows the object of the mystery, close and lit like a horror film: a brain-like lump in a sewer, the Statue of Happiness from below, a sunken wreck, a masked slasher on a dark road."
+      },
+      {
+        "title": "Short phrases with trailing dots",
+        "detail": "Text is a short white phrase in a heavy rounded font, often ending in two dots: 'finally explained..', 'This Wreck finally makes sense..', 'they have..'. The dots suggest an unfinished thought you want to complete."
+      },
+      {
+        "title": "One red word",
+        "detail": "Most thumbnails colour a single word red: 'SOLVED.', 'HELL..', 'Wreck', 'Slasher', 'Canon'. It is the word that carries the payoff."
+      },
+      {
+        "title": "Game and real life side by side",
+        "detail": "Videos about real places split the frame: the GTA IV towers next to the real buildings, or a game character next to a real location. The comparison itself is the hook."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "Q_01nCZZUQI",
+        "why": "About 990,000 views, 6.2 times the median. The Statue of Happiness seen from below, with a red glow inside, and 'finally explained..' in white. A landmark every GTA player knows plus the promise of an answer may explain the reach."
+      },
+      {
+        "id": "O5ZvmCDsaC8",
+        "why": "About 778,000 views, 4.9 times the median. The GTA IV logo, Niko in front of brick towers, the real towers on the right labelled 'real life', and a quote: 'Welcome to HELL..' with 'HELL' in red. Tying a game location to a dark real story probably widened the audience beyond GTA fans."
+      },
+      {
+        "id": "ZAkbLXWAcZY",
+        "why": "About 483,000 views, 3.0 times the median. A character with a flashlight finds a strange lump on a dark sewer wall, and 'Sewer brain SOLVED.' sits on the right. The image is weird enough to make people want the explanation."
+      }
+    ],
+    "lessons": [
+      "Show the mystery object itself, close and dramatically lit, rather than a wide view of the map.",
+      "Give your text one coloured word: the one that carries the answer or the fear.",
+      "A short phrase with trailing dots can feel like the start of a story.",
+      "Game-versus-real-life comparisons can reach people who do not play the game.",
+      "On this channel, GTA 6 theory videos sat between 0.4 and 0.6 times the median, while 'solved' mysteries of older games went far higher."
+    ],
+    "experiment": "On your next explainer, test a thumbnail where only one word of your text is coloured (the answer word) against one where all the text is the same colour.",
+    "faq": [
+      {
+        "q": "How many subscribers does Gator Keys have?",
+        "a": "As of 26 October 2026, Gator Keys has about 149K subscribers and only 67 videos. The latest 30 uploads have a median of about 159,500 views, more than the number of subscribers. The biggest in that sample, 'This Is Why There's a HEART Inside The Statue of Happiness...', has about 990,000 views."
+      },
+      {
+        "q": "What does Gator Keys make videos about?",
+        "a": "GTA lore and mysteries: Easter eggs, ghosts, Bigfoot, Mount Chiliad and hidden places in GTA 5, GTA 4 and San Andreas, the real-life history behind some locations, and a few theories about GTA 6. Most videos run between 4 and 13 minutes."
+      },
+      {
+        "q": "What do Gator Keys' thumbnails look like?",
+        "a": "One dark, moody game scene showing the mystery object, with a short white phrase in a heavy font, often ending in two dots, and one word in red, such as 'Sewer brain SOLVED.' Real-life videos split the frame between the game and the real place."
+      }
+    ],
+    "reviewedAt": "2026-10-26"
+  }
+}

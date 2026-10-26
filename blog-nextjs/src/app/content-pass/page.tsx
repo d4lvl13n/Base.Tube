@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   // No brand in the page title: the layout template appends " | Base.Tube".
   title: 'Content Pass — The Patreon Alternative You Own',
   description:
-    'Content Pass is a one-time pass that unlocks a creator\'s content for life — the Patreon alternative where creators keep 90% and fans truly own their access (buy once, transfer anytime). No subscriptions.',
+    'A one-time pass that unlocks a creator\'s content for life: the Patreon alternative where creators keep 90% and fans own their access. No subscriptions.',
   keywords:
     'content pass, patreon alternative, one-time creator pass, youtuber audience pass, creator monetization platform, 90% revenue share, fan ownership',
   authors: [{ name: 'Base.Tube' }],

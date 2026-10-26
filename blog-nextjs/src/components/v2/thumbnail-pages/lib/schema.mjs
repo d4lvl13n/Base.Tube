@@ -197,6 +197,13 @@ class Reader {
   }
 }
 
+// "Generate an Anime-style thumbnail", "Generate a Fortnite-style thumbnail" (same vowel rule as copy.ts article()).
+/** @param {string} name */
+function defaultCtaLabel(name) {
+  const look = /[-\s]style$/i.test(name) ? name : `${name}-style`;
+  return `Generate ${/^[aeiou]/i.test(look) ? 'an' : 'a'} ${look} thumbnail`;
+}
+
 /**
  * Does `text` contain `keyword`? Case-insensitive, ignores punctuation, accepts
  * plurals ("thumbnails"), joined words ("mrbeast" for "mr beast") and one extra
@@ -498,7 +505,7 @@ export function normalizePage(data, body, ctx) {
   if (!SLUG_RE.test(ctaStyle)) r.add('error', 'cta.style', 'must use lowercase letters, numbers and hyphens (it becomes ?style=... in the Studio link)');
   const cta = {
     style: ctaStyle,
-    label: r.text(ctaObj, 'label', 'cta.label', { max: 48 }) || `Generate a ${name || fileSlug}-style thumbnail`,
+    label: r.text(ctaObj, 'label', 'cta.label', { max: 48 }) || defaultCtaLabel(name || fileSlug),
   };
 
   // ── trademark & legal ────────────────────────────────────

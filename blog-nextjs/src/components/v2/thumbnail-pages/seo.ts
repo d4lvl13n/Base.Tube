@@ -8,6 +8,14 @@ import type { FaqItem, ThumbnailPage } from './lib/schema.mjs';
 const DEFAULT_OG = { url: `${SITE_URL}/images/og-card.webp`, width: 1200, height: 630, alt: 'Base.Tube' };
 const NOINDEX = { index: false, follow: true, googleBot: { index: false, follow: true } } as const;
 
+/**
+ * The <title>: the layout appends " | Base.Tube"; when that would push the title past 60 characters
+ * (Google cuts longer titles), the page title is used alone.
+ */
+export function seoTitle(title: string): Metadata['title'] {
+  return `${title} | Base.Tube`.length > 60 ? { absolute: title } : title;
+}
+
 export function pageUrl(slug?: string): string {
   return slug ? `${SITE_URL}${BASE_PATH}/${slug}` : `${SITE_URL}${BASE_PATH}`;
 }
@@ -29,7 +37,7 @@ export function buildPageMetadata(lp: LoadedPage): Metadata {
   const first = p.gallery[0];
   const og = first ? { url: absolute(first.src), width: 1280, height: 720, alt: first.alt } : DEFAULT_OG;
   return {
-    title: p.title,
+    title: seoTitle(p.title),
     description: p.description,
     keywords: [p.primaryKeyword, ...p.secondaryKeywords],
     alternates: { canonical: url },

@@ -192,3 +192,16 @@
     order: 0;
   }
 }
+
+.makerLink {
+  display: inline-block;
+  margin-left: 22px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--v2-text);
+  text-decoration: none;
+}
+
+.makerLink:hover {
+  color: var(--v2-orange);
+}

@@ -1,0 +1,465 @@
+{
+  "slug": "nahv",
+  "status": "published",
+  "channelId": "UCKDuW7soWZaN0VkxnRZX2Xw",
+  "name": "nahv",
+  "handle": "nahv",
+  "url": "https://www.youtube.com/channel/UCKDuW7soWZaN0VkxnRZX2Xw",
+  "avatar": "https://yt3.googleusercontent.com/9l-Y6nzNVj925TJN6w8-LjZhbx80kBzyJN0s5kBNtpeI_-UzTzqhIb9_8l5klKKCctUh1kp0pQ=s900-c-k-c0x00ffffff-no-rj",
+  "game": "call-of-duty",
+  "spotlight": null,
+  "moonshotVideoId": null,
+  "subscribers": 279000,
+  "subscribersText": "279K subscribers",
+  "videoCount": 1000,
+  "description": "",
+  "collectedAt": "2026-10-26",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 22000,
+    "outliers": [
+      {
+        "id": "yBX3nfG3Wm0",
+        "multiple": 3.6
+      },
+      {
+        "id": "JMEZma3RzH8",
+        "multiple": 2.7
+      },
+      {
+        "id": "30N-_-XBLfE",
+        "multiple": 2.4
+      },
+      {
+        "id": "m79SuujtoxQ",
+        "multiple": 2.3
+      },
+      {
+        "id": "ybVIvXGfUB0",
+        "multiple": 1.9
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "1urCjBSI-2Q",
+      "title": "BEST MW4 CLASS SETUPS You NEED to Be Using! (TRUST ME)",
+      "views": 11000,
+      "viewsText": "11K views",
+      "membersOnly": false,
+      "duration": "20:36",
+      "durationSec": 1236,
+      "published": "8 hours ago",
+      "thumbnail": "https://i.ytimg.com/vi/1urCjBSI-2Q/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/1urCjBSI-2Q/maxresdefault.jpg"
+    },
+    {
+      "id": "Y9MVJPl2v-A",
+      "title": "WE NEED TO TALK ABOUT MW4...",
+      "views": 29000,
+      "viewsText": "29K views",
+      "membersOnly": false,
+      "duration": "20:21",
+      "durationSec": 1221,
+      "published": "1 day ago",
+      "thumbnail": "https://i.ytimg.com/vi/Y9MVJPl2v-A/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Y9MVJPl2v-A/maxresdefault.jpg"
+    },
+    {
+      "id": "Qx0-wBv1aTg",
+      "title": "BEST MW4 SETTINGS You NEED To Use! (Best Controller, Graphics, and Gameplay Settings)",
+      "views": 31000,
+      "viewsText": "31K views",
+      "membersOnly": false,
+      "duration": "18:00",
+      "durationSec": 1080,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/Qx0-wBv1aTg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Qx0-wBv1aTg/maxresdefault.jpg"
+    },
+    {
+      "id": "JMEZma3RzH8",
+      "title": "MODERN WARFARE 4 MOVEMENT is AMAZING😍 (WE'RE SO BACK)",
+      "views": 60000,
+      "viewsText": "60K views",
+      "membersOnly": false,
+      "duration": "16:53",
+      "durationSec": 1013,
+      "published": "3 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/JMEZma3RzH8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/JMEZma3RzH8/maxresdefault.jpg"
+    },
+    {
+      "id": "uLunoVipgK8",
+      "title": "Meet the #1 DMZ Movement Player",
+      "views": 10000,
+      "viewsText": "10K views",
+      "membersOnly": false,
+      "duration": "29:14",
+      "durationSec": 1754,
+      "published": "4 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/uLunoVipgK8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/uLunoVipgK8/maxresdefault.jpg"
+    },
+    {
+      "id": "h22x1tf0_Ws",
+      "title": "DMZ is Finally Here and it's...",
+      "views": 9100,
+      "viewsText": "9.1K views",
+      "membersOnly": false,
+      "duration": "35:42",
+      "durationSec": 2142,
+      "published": "5 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/h22x1tf0_Ws/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/h22x1tf0_Ws/maxresdefault.jpg"
+    },
+    {
+      "id": "eJKp0uFkZaw",
+      "title": "Killing Twitch Streamers with Movement on Warzone (Both POVs)",
+      "views": 20000,
+      "viewsText": "20K views",
+      "membersOnly": false,
+      "duration": "16:32",
+      "durationSec": 992,
+      "published": "7 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/eJKp0uFkZaw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/eJKp0uFkZaw/maxresdefault.jpg"
+    },
+    {
+      "id": "uoWuRK1wJ4k",
+      "title": "I Returned to Warzone 3 in 2026… (it’s actually back)",
+      "views": 13000,
+      "viewsText": "13K views",
+      "membersOnly": false,
+      "duration": "25:08",
+      "durationSec": 1508,
+      "published": "10 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/uoWuRK1wJ4k/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/uoWuRK1wJ4k/maxresdefault.jpg"
+    },
+    {
+      "id": "m79SuujtoxQ",
+      "title": "I Completed the HARDEST Challenge in Warzone for a CAMO and it broke me.",
+      "views": 50000,
+      "viewsText": "50K views",
+      "membersOnly": false,
+      "duration": "52:40",
+      "durationSec": 3160,
+      "published": "13 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/m79SuujtoxQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/m79SuujtoxQ/maxresdefault.jpg"
+    },
+    {
+      "id": "K2nScCERDl0",
+      "title": "Warzone 1 is PLAYABLE in 2026… *Not Clickbait*",
+      "views": 33000,
+      "viewsText": "33K views",
+      "membersOnly": false,
+      "duration": "16:26",
+      "durationSec": 986,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/K2nScCERDl0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/K2nScCERDl0/maxresdefault.jpg"
+    },
+    {
+      "id": "30N-_-XBLfE",
+      "title": "Warzone 1 is BACK in 2026... *Not Clickbait*",
+      "views": 53000,
+      "viewsText": "53K views",
+      "membersOnly": false,
+      "duration": "29:35",
+      "durationSec": 1775,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/30N-_-XBLfE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/30N-_-XBLfE/maxresdefault.jpg"
+    },
+    {
+      "id": "cPU0CMbjASU",
+      "title": "the WARZONE HALLOWEEN UPDATE…",
+      "views": 18000,
+      "viewsText": "18K views",
+      "membersOnly": false,
+      "duration": "12:31",
+      "durationSec": 751,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/cPU0CMbjASU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/cPU0CMbjASU/maxresdefault.jpg"
+    },
+    {
+      "id": "aMrZoKmigZk",
+      "title": "NEW Best Settings for MOVEMENT + AIM on Warzone 👑 (126 Kills)",
+      "views": 16000,
+      "viewsText": "16K views",
+      "membersOnly": false,
+      "duration": "35:11",
+      "durationSec": 2111,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/aMrZoKmigZk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/aMrZoKmigZk/maxresdefault.jpg"
+    },
+    {
+      "id": "yBX3nfG3Wm0",
+      "title": "I Finally Played BloodStrike... the NEW Warzone 😍",
+      "views": 79000,
+      "viewsText": "79K views",
+      "membersOnly": false,
+      "duration": "10:42",
+      "durationSec": 642,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/yBX3nfG3Wm0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/yBX3nfG3Wm0/maxresdefault.jpg"
+    },
+    {
+      "id": "Rui-s9MhD1A",
+      "title": "This $70 CONTROLLER has built in \"cheats\"... Pros Want it BANNED",
+      "views": 38000,
+      "viewsText": "38K views",
+      "membersOnly": false,
+      "duration": "21:32",
+      "durationSec": 1292,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/Rui-s9MhD1A/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Rui-s9MhD1A/maxresdefault.jpg"
+    },
+    {
+      "id": "5ZaFNcPZdJ0",
+      "title": "MW4 Warzone is still F*CKING ASS and we need to talk…",
+      "views": 15000,
+      "viewsText": "15K views",
+      "membersOnly": false,
+      "duration": "25:29",
+      "durationSec": 1529,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/5ZaFNcPZdJ0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/5ZaFNcPZdJ0/maxresdefault.jpg"
+    },
+    {
+      "id": "tc7N9tt517Y",
+      "title": "They ACTUALLY FIXED MW4 Warzone... it's fun now",
+      "views": 28000,
+      "viewsText": "28K views",
+      "membersOnly": false,
+      "duration": "31:45",
+      "durationSec": 1905,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/tc7N9tt517Y/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/tc7N9tt517Y/maxresdefault.jpg"
+    },
+    {
+      "id": "ybVIvXGfUB0",
+      "title": "We Need to Talk about MW4 Warzone... it's f*cking ass",
+      "views": 42000,
+      "viewsText": "42K views",
+      "membersOnly": false,
+      "duration": "17:44",
+      "durationSec": 1064,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/ybVIvXGfUB0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ybVIvXGfUB0/maxresdefault.jpg"
+    },
+    {
+      "id": "YXxYWufgEhQ",
+      "title": "This is MW4 WARZONE and it’s…",
+      "views": 18000,
+      "viewsText": "18K views",
+      "membersOnly": false,
+      "duration": "36:39",
+      "durationSec": 2199,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/YXxYWufgEhQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/YXxYWufgEhQ/maxresdefault.jpg"
+    },
+    {
+      "id": "6KdnsIK6v8Y",
+      "title": "We Need to Talk about MW4... (Do NOT BUY MW4)",
+      "views": 23000,
+      "viewsText": "23K views",
+      "membersOnly": false,
+      "duration": "23:19",
+      "durationSec": 1399,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/6KdnsIK6v8Y/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/6KdnsIK6v8Y/maxresdefault.jpg"
+    },
+    {
+      "id": "DcMbdJHb2Ao",
+      "title": "Meet the #1 Movement Player in MW4 Beta",
+      "views": 23000,
+      "viewsText": "23K views",
+      "membersOnly": false,
+      "duration": "17:21",
+      "durationSec": 1041,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/DcMbdJHb2Ao/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/DcMbdJHb2Ao/maxresdefault.jpg"
+    },
+    {
+      "id": "lBFdGKKHfR4",
+      "title": "MODERN WARFARE 4 MOVEMENT is AMAZING😍 + Settings👑",
+      "views": 26000,
+      "viewsText": "26K views",
+      "membersOnly": false,
+      "duration": "14:18",
+      "durationSec": 858,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/lBFdGKKHfR4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/lBFdGKKHfR4/maxresdefault.jpg"
+    },
+    {
+      "id": "0y2Cnxzmyxg",
+      "title": "I Got Exposed for Cheating... The Truth",
+      "views": 6900,
+      "viewsText": "6.9K views",
+      "membersOnly": false,
+      "duration": "45:31",
+      "durationSec": 2731,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/0y2Cnxzmyxg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/0y2Cnxzmyxg/maxresdefault.jpg"
+    },
+    {
+      "id": "iKrEd6GzHbw",
+      "title": "using LEGACY Weapons ONLY on Warzone",
+      "views": 6700,
+      "viewsText": "6.7K views",
+      "membersOnly": false,
+      "duration": "49:30",
+      "durationSec": 2970,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/iKrEd6GzHbw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/iKrEd6GzHbw/maxresdefault.jpg"
+    },
+    {
+      "id": "TFcSegseckI",
+      "title": "I Unlocked The RAREST CAMO in Warzone History... (IMPOSSIBLE)",
+      "views": 29000,
+      "viewsText": "29K views",
+      "membersOnly": false,
+      "duration": "44:24",
+      "durationSec": 2664,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/TFcSegseckI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/TFcSegseckI/maxresdefault.jpg"
+    },
+    {
+      "id": "Wzs_1qOG7Y8",
+      "title": "Bronze to Iridescent SOLO on Warzone (PART 3)",
+      "views": 11000,
+      "viewsText": "11K views",
+      "membersOnly": false,
+      "duration": "44:06",
+      "durationSec": 2646,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/Wzs_1qOG7Y8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Wzs_1qOG7Y8/maxresdefault.jpg"
+    },
+    {
+      "id": "07dnG9YAW64",
+      "title": "NEW Best Settings for MOVEMENT + AIM on Warzone 👑 (132 Kills)",
+      "views": 24000,
+      "viewsText": "24K views",
+      "membersOnly": false,
+      "duration": "38:52",
+      "durationSec": 2332,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/07dnG9YAW64/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/07dnG9YAW64/maxresdefault.jpg"
+    },
+    {
+      "id": "cP3IoI_Og-E",
+      "title": "I Spectated 10KD DEMONS on Warzone at 3AM… (INSANE LOBBY)",
+      "views": 4900,
+      "viewsText": "4.9K views",
+      "membersOnly": false,
+      "duration": "54:45",
+      "durationSec": 3285,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/cP3IoI_Og-E/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/cP3IoI_Og-E/maxresdefault.jpg"
+    },
+    {
+      "id": "untm-vGOLzk",
+      "title": "I Became a YY TikToker for 24 Hours...",
+      "views": 21000,
+      "viewsText": "21K views",
+      "membersOnly": false,
+      "duration": "44:51",
+      "durationSec": 2691,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/untm-vGOLzk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/untm-vGOLzk/maxresdefault.jpg"
+    },
+    {
+      "id": "i_kdNzc7NHM",
+      "title": "Bronze to Iridescent SOLO on Warzone (PART 2)",
+      "views": 20000,
+      "viewsText": "20K views",
+      "membersOnly": false,
+      "duration": "1:11:08",
+      "durationSec": 4268,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/i_kdNzc7NHM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/i_kdNzc7NHM/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "nahv makes Call of Duty videos centred on Warzone movement: settings and loadouts, camo grinds, returns to older Warzone versions and opinion videos on the new Modern Warfare 4. The thumbnails are over-sharpened, very saturated first-person shots of a gun held up to the camera, sometimes with nahv's own face cut out on the left.",
+    "niche": "Warzone movement, settings and Call of Duty opinion",
+    "styleTraits": [
+      {
+        "title": "The gun as the subject",
+        "detail": "Most thumbnails are a first-person view with a weapon held close and tilted toward the lens: a gold rifle, a pink and purple drum gun, a glossy blue SMG. The skin of the weapon is the most colourful thing on screen."
+      },
+      {
+        "title": "Hyper-saturated, high-contrast",
+        "detail": "Skies are deep blue, grass is neon green and every edge is sharpened. The look is close to an HDR photo, which makes the frames pop next to the darker thumbnails of many Call of Duty channels."
+      },
+      {
+        "title": "A face for personal stories",
+        "detail": "When the video is about nahv himself (a new game he tried, being accused of cheating, spectating top players), his own face appears cut out on the left, looking calm or sceptical rather than shouting."
+      },
+      {
+        "title": "Logos and posts as labels",
+        "detail": "Instead of long headlines, the game's logo (the 'MW4' mark) or a screenshot of a social post ('WE F*CKED UP, WE'RE SORRY') tells the topic. Text, when there is some, is two to four white words in italic capitals."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "yBX3nfG3Wm0",
+        "why": "About 79,000 views, 3.6 times the median. nahv's face on the left, eyes to the side, and a neon blue and purple drum gun on the right, with no text. For a video about trying a different shooter, the face and the unfamiliar weapon may have been enough to spark curiosity."
+      },
+      {
+        "id": "JMEZma3RzH8",
+        "why": "About 60,000 views, 2.7 times the median. The 'MW4' logo in the top left and a gold rifle being inspected in first person on a bright map. The game had just launched, and the thumbnail simply says 'this is MW4 movement', which probably matched what players were searching for."
+      },
+      {
+        "id": "30N-_-XBLfE",
+        "why": "About 53,000 views, 2.4 times the median. 'WARZONE 1 IS BACK' across the top in white italic capitals over a sunny first-person shot. The nostalgia is in the words; the image shows the old map looking brighter than players remember."
+      }
+    ],
+    "lessons": [
+      "If your audience cares about weapon skins, make the weapon the subject: big, close to the lens, tilted.",
+      "Push saturation and contrast far enough that your frame stands out in a feed of dark shooters.",
+      "Use your face only when the video is about you; nahv keeps it for personal stories.",
+      "Let a logo or a screenshot of a post carry the topic instead of a sentence.",
+      "Long session videos (spectating lobbies at 3AM, legacy weapons only) sat at a fifth to a third of the median; short, timely topics pulled more."
+    ],
+    "experiment": "On your next gameplay video, test a first-person thumbnail with the weapon or item tilted toward the camera and no text against your usual version with a headline.",
+    "faq": [
+      {
+        "q": "How many subscribers does nahv have?",
+        "a": "As of 26 October 2026, nahv has about 279K subscribers and about 1K videos. The latest 30 long uploads have a median of about 22,000 views. The biggest in that sample is 'I Finally Played BloodStrike... the NEW Warzone', with about 79,000 views."
+      },
+      {
+        "q": "What does nahv make videos about?",
+        "a": "Call of Duty, mainly Warzone movement: best settings and class setups, camo challenges, ranked solo climbs, DMZ and returns to older Warzone versions. Since Modern Warfare 4 came out, many videos give his opinion on the new game."
+      },
+      {
+        "q": "What do nahv's thumbnails look like?",
+        "a": "Bright, sharpened first-person shots with a colourful weapon held close to the camera, on a sunny map. Some add the 'MW4' logo or two to four white italic words; personal videos show nahv's face cut out on the left."
+      }
+    ],
+    "reviewedAt": "2026-10-26"
+  }
+}

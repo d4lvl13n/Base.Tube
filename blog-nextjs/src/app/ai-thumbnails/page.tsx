@@ -9,7 +9,7 @@ import './ai-thumbnails.css';
 export const revalidate = 3600;
 
 const PAGE_URL = 'https://base.tube/ai-thumbnails';
-const TITLE = 'AI YouTube Thumbnails That Look Like Your Channel';
+const TITLE = 'AI YouTube Thumbnails in Your Channel Style';
 const OG_ALT = 'AI Thumbnails by Base.Tube: example thumbnails made with AI Thumbnails';
 
 function describe(catalog: SubscriptionCatalog | null): string {

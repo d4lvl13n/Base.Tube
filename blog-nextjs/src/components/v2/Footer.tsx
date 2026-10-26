@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 import { CREATORS_PATH, creatorsHubIsLive } from './creators/links';
@@ -43,21 +44,37 @@ const tools = [
   { href: '/tools/video-to-thumbnail', label: 'Video to thumbnail' },
   { href: '/youtube-thumbnail-fonts', label: 'Thumbnail fonts' },
   { href: '/youtube-thumbnail-backgrounds', label: 'Thumbnail backgrounds' },
+  { href: '/tools/youtube-thumbnail-downloader', label: 'Thumbnail downloader' },
+  { href: '/youtube-banner-size', label: 'Banner size' },
 ];
+
+/** The games shown in the footer, in this order, when their page is live. */
+const FOOTER_GAMES = ['fortnite', 'minecraft', 'roblox'];
 
 const external = { target: '_blank', rel: 'noopener noreferrer' } as const;
 
 export default function Footer() {
+  const liveGames = linkablePages().filter((p) => p.category === 'game');
+  const games = FOOTER_GAMES.map((slug) => liveGames.find((p) => p.slug === slug)).filter(
+    (p): p is NonNullable<typeof p> => Boolean(p),
+  );
+
   return (
     <footer className="v2-footer">
       <div className="v2-footer-grid">
         {/* Brand */}
-        <div>
-          <div className="v2-footer-brand-name">
-            Base<em>.</em>Tube
-          </div>
+        <div className="v2-footer-brand">
+          <Link href="/" className="v2-footer-logo">
+            <Image
+              src="/images/basetube-logo.png"
+              alt="Base.Tube home"
+              width={217}
+              height={70}
+              className="v2-footer-logo-img"
+            />
+          </Link>
           <p className="v2-footer-brand-tag">
-            Stop renting fans.
+            Stop renting fans.{' '}
             <br />
             Own your audience.
           </p>
@@ -78,25 +95,25 @@ export default function Footer() {
         </div>
 
         {/* Product */}
-        <nav aria-label="Product">
+        <nav aria-label="Product" className="v2-footer-product">
           <div className="v2-footer-col-title">Product</div>
           <ul className="v2-footer-links">
             <li><Link href="/ai-thumbnails">AI Thumbnails</Link></li>
             <li><Link href="/content-pass">Content Pass</Link></li>
             <li>
               <Link href="/youtube-channel-audit">
-                Channel Audit <span className="v2-footer-tag">free</span>
+                Channel Audit <span className="v2-footer-tag">(free)</span>
               </Link>
             </li>
           </ul>
         </nav>
 
-        {/* Free tools */}
-        <nav aria-label="Free tools">
+        {/* Free tools: two short columns on wide screens */}
+        <nav aria-label="Free tools" className="v2-footer-tools">
           <div className="v2-footer-col-title">
             <Link href="/tools">Free tools</Link>
           </div>
-          <ul className="v2-footer-links">
+          <ul className="v2-footer-links v2-footer-links--split">
             {tools.map((tool) => (
               <li key={tool.href}>
                 <Link href={tool.href}>{tool.label}</Link>
@@ -105,32 +122,36 @@ export default function Footer() {
           </ul>
         </nav>
 
-        {/* Thumbnail ideas: the hubs, then every game page (from lib/pages-index.json) */}
-        <nav aria-label="Thumbnail ideas">
+        {/* Thumbnail ideas: a curated handful; the full list lives on /thumbnails */}
+        <nav aria-label="Thumbnail ideas" className="v2-footer-ideas">
           <div className="v2-footer-col-title">
             <Link href="/thumbnails">Thumbnail ideas</Link>
           </div>
           <ul className="v2-footer-links">
             <li><Link href="/thumbnails/gaming">Gaming thumbnails</Link></li>
-            {linkablePages()
-              .filter((p) => p.category === 'game')
-              .map((p) => (
-                <li key={p.slug}>
-                  <Link href={`/thumbnails/${p.slug}`}>{p.name}</Link>
-                </li>
-              ))}
+            {games.map((p) => (
+              <li key={p.slug}>
+                <Link href={`/thumbnails/${p.slug}`}>{p.name} thumbnails</Link>
+              </li>
+            ))}
             <li><Link href="/thumbnails#style">Creator styles</Link></li>
             <li><Link href="/thumbnails#genre">Video genres</Link></li>
             {/* Shown once the creators hub is indexed (enough live creator pages). */}
             {creatorsHubIsLive() && <li><Link href={CREATORS_PATH}>Creators</Link></li>}
+            <li>
+              <Link href="/thumbnails" className="v2-footer-more">
+                All thumbnail ideas →
+              </Link>
+            </li>
           </ul>
         </nav>
 
         {/* Company */}
-        <nav aria-label="Company">
+        <nav aria-label="Company" className="v2-footer-company">
           <div className="v2-footer-col-title">Company</div>
           <ul className="v2-footer-links">
             <li><Link href="/blog">Blog</Link></li>
+            <li><Link href="/compare/canva-youtube-thumbnail">Canva vs AI thumbnails</Link></li>
             <li>
               <a href="https://base-tube.gitbook.io/base.tube-documentation" {...external}>
                 Docs

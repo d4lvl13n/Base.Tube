@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 import { SITE_URL } from '../thumbnail-pages/lib/config.mjs';
+import { seoTitle } from '../thumbnail-pages/seo';
 import type { ThumbnailPage } from '../thumbnail-pages/lib/schema.mjs';
 import { makerIsLive, makerPath, type MakerContent } from './makers';
 
@@ -29,7 +30,7 @@ export function buildMakerMetadata(m: MakerContent, p: ThumbnailPage): Metadata 
   const first = p.gallery.find((g) => !g.placeholder);
   const og = first ? { url: absolute(first.src), width: 1280, height: 720, alt: first.alt } : undefined;
   return {
-    title: m.title,
+    title: seoTitle(m.title),
     description: m.description,
     keywords: [m.primaryKeyword, `${p.name.toLowerCase()} thumbnail generator`, `ai ${p.name.toLowerCase()} thumbnail`],
     alternates: { canonical: url(m) },

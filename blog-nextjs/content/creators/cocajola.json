@@ -1,0 +1,465 @@
+{
+  "slug": "cocajola",
+  "status": "published",
+  "channelId": "UCSVKvSTp5zxXYJkH8vkdlOw",
+  "name": "Cocajola",
+  "handle": "cocajolaroblox",
+  "url": "https://www.youtube.com/channel/UCSVKvSTp5zxXYJkH8vkdlOw",
+  "avatar": "https://yt3.googleusercontent.com/PgLCfXUIUgnRrP-UxfuvZ9b6uHzc2HLvyTnhCK2tWfuD8D9G-er3c_fw5DVR98Q1OO6eNBn6Yg=s900-c-k-c0x00ffffff-no-rj",
+  "game": "roblox",
+  "spotlight": null,
+  "moonshotVideoId": null,
+  "subscribers": 368000,
+  "subscribersText": "368K subscribers",
+  "videoCount": 1500,
+  "description": "Simple, Informative, Roblox Content. Subscribe. 😉",
+  "collectedAt": "2026-10-26",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 11500,
+    "outliers": [
+      {
+        "id": "yeMa62oMB-I",
+        "multiple": 7
+      },
+      {
+        "id": "f0Ej2Fd5G-M",
+        "multiple": 5.4
+      },
+      {
+        "id": "90E9kH7oiD8",
+        "multiple": 4.7
+      },
+      {
+        "id": "-Zghp0YUjLk",
+        "multiple": 3.9
+      },
+      {
+        "id": "0gmVTPr7iMk",
+        "multiple": 3.4
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "T2t18tZt4ug",
+      "title": "The Hallow Roblox Event Day 1 - Day 4 How To Get ALL 25 Free UGC Items! (Roblox The Hallow Event)",
+      "views": 4800,
+      "viewsText": "4.8K views",
+      "membersOnly": false,
+      "duration": "40:23",
+      "durationSec": 2423,
+      "published": "10 hours ago",
+      "thumbnail": "https://i.ytimg.com/vi/T2t18tZt4ug/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/T2t18tZt4ug/maxresdefault.jpg"
+    },
+    {
+      "id": "lK7QwKcl5rA",
+      "title": "The Hallow Event - DO THIS NOW To Farm TICKETS FAST! (ALL METHODS) - EASIEST TICKET TO GET! (Roblox)",
+      "views": 12000,
+      "viewsText": "12K views",
+      "membersOnly": false,
+      "duration": "8:31",
+      "durationSec": 511,
+      "published": "15 hours ago",
+      "thumbnail": "https://i.ytimg.com/vi/lK7QwKcl5rA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/lK7QwKcl5rA/maxresdefault.jpg"
+    },
+    {
+      "id": "vUDg3jDD-Z4",
+      "title": "Roblox The Hallow Event - How To Get ALL DAY FOUR Items FAST! The Hallow Day 4 Items! (Roblox Event)",
+      "views": 19000,
+      "viewsText": "19K views",
+      "membersOnly": false,
+      "duration": "8:12",
+      "durationSec": 492,
+      "published": "17 hours ago",
+      "thumbnail": "https://i.ytimg.com/vi/vUDg3jDD-Z4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/vUDg3jDD-Z4/maxresdefault.jpg"
+    },
+    {
+      "id": "hY0tEOM4m50",
+      "title": "How To Get ANOMALY DETECTION RIG FREE in THE HOLLOW Roblox! (HOME ALONE ANOMALIES FULL GUIDE)",
+      "views": 13000,
+      "viewsText": "13K views",
+      "membersOnly": false,
+      "duration": "4:16",
+      "durationSec": 256,
+      "published": "17 hours ago",
+      "thumbnail": "https://i.ytimg.com/vi/hY0tEOM4m50/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/hY0tEOM4m50/maxresdefault.jpg"
+    },
+    {
+      "id": "5DFaMKfw1Yg",
+      "title": "How To Get BOO & BUB FREE in THE HOLLOW Roblox! (DAY 4 MAZE & PUZZLE FULL GUIDE)",
+      "views": 9800,
+      "viewsText": "9.8K views",
+      "membersOnly": false,
+      "duration": "1:43",
+      "durationSec": 103,
+      "published": "17 hours ago",
+      "thumbnail": "https://i.ytimg.com/vi/5DFaMKfw1Yg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/5DFaMKfw1Yg/maxresdefault.jpg"
+    },
+    {
+      "id": "AbZgvmjgTxI",
+      "title": "How To Get CHROME DEER SKULL CHAIN in THE HOLLOW Roblox! 99 NIGHTS THE HALLOW GUIDE",
+      "views": 11000,
+      "viewsText": "11K views",
+      "membersOnly": false,
+      "duration": "7:27",
+      "durationSec": 447,
+      "published": "18 hours ago",
+      "thumbnail": "https://i.ytimg.com/vi/AbZgvmjgTxI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/AbZgvmjgTxI/maxresdefault.jpg"
+    },
+    {
+      "id": "EPLIxoAoD5I",
+      "title": "Roblox The Hallow Event - How To Get ALL Day 3 ITEMS FAST Roblox! (Roblox The Hallow Day 3)",
+      "views": 27000,
+      "viewsText": "27K views",
+      "membersOnly": false,
+      "duration": "8:21",
+      "durationSec": 501,
+      "published": "1 day ago",
+      "thumbnail": "https://i.ytimg.com/vi/EPLIxoAoD5I/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/EPLIxoAoD5I/maxresdefault.jpg"
+    },
+    {
+      "id": "8Y9wbKUD5BE",
+      "title": "How To Get BITER FEDORA in THE HOLLOW Roblox! (NEW HALLOWEEN ITEM FULL GUIDE)",
+      "views": 7500,
+      "viewsText": "7.5K views",
+      "membersOnly": false,
+      "duration": "6:25",
+      "durationSec": 385,
+      "published": "1 day ago",
+      "thumbnail": "https://i.ytimg.com/vi/8Y9wbKUD5BE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/8Y9wbKUD5BE/maxresdefault.jpg"
+    },
+    {
+      "id": "dcgx5dQrSvU",
+      "title": "How To Get COWBOY HAT OF THE DEAD in THE HOLLOW Roblox! (NEW HALLOWEEN ITEM GUIDE)",
+      "views": 7400,
+      "viewsText": "7.4K views",
+      "membersOnly": false,
+      "duration": "3:58",
+      "durationSec": 238,
+      "published": "1 day ago",
+      "thumbnail": "https://i.ytimg.com/vi/dcgx5dQrSvU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/dcgx5dQrSvU/maxresdefault.jpg"
+    },
+    {
+      "id": "YJOQHqJHMwM",
+      "title": "How To Get FESTERING FELIX FREE in THE HOLLOW Roblox! (MAZE 3 & PUZZLE 3 FULL GUIDE)",
+      "views": 26000,
+      "viewsText": "26K views",
+      "membersOnly": false,
+      "duration": "2:32",
+      "durationSec": 152,
+      "published": "1 day ago",
+      "thumbnail": "https://i.ytimg.com/vi/YJOQHqJHMwM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/YJOQHqJHMwM/maxresdefault.jpg"
+    },
+    {
+      "id": "90E9kH7oiD8",
+      "title": "Roblox The Hallow Event - 10 EASIEST Game Badges TO FARM TICKETS In The Hallow! (The Hallow)",
+      "views": 54000,
+      "viewsText": "54K views",
+      "membersOnly": false,
+      "duration": "10:01",
+      "durationSec": 601,
+      "published": "1 day ago",
+      "thumbnail": "https://i.ytimg.com/vi/90E9kH7oiD8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/90E9kH7oiD8/maxresdefault.jpg"
+    },
+    {
+      "id": "4QryQhWnz7Q",
+      "title": "Roblox The Hallow - How To Get ALL NEW Hub Items! Roblox The Hallow Event Items! (Roblox)",
+      "views": 37000,
+      "viewsText": "37K views",
+      "membersOnly": false,
+      "duration": "5:58",
+      "durationSec": 358,
+      "published": "1 day ago",
+      "thumbnail": "https://i.ytimg.com/vi/4QryQhWnz7Q/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/4QryQhWnz7Q/maxresdefault.jpg"
+    },
+    {
+      "id": "yeMa62oMB-I",
+      "title": "How To Get ALL BADGES & TICKETS FAST in THE HOLLOW Roblox! (ALL SIDE QUESTS GUIDE)",
+      "views": 80000,
+      "viewsText": "80K views",
+      "membersOnly": false,
+      "duration": "45:30",
+      "durationSec": 2730,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/yeMa62oMB-I/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/yeMa62oMB-I/maxresdefault.jpg"
+    },
+    {
+      "id": "mzQ-V0bts-0",
+      "title": "Roblox The Hallow Event - How To Get Racket Rivals Badge And Ticket FAST! (Roblox The Hallow)",
+      "views": 11000,
+      "viewsText": "11K views",
+      "membersOnly": false,
+      "duration": "1:05",
+      "durationSec": 65,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/mzQ-V0bts-0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/mzQ-V0bts-0/maxresdefault.jpg"
+    },
+    {
+      "id": "gQT8CcdgqMk",
+      "title": "Roblox The Hallow Event - How To Get Hunted Badge & Tickets! (Roblox The Hallow Event)",
+      "views": 6700,
+      "viewsText": "6.7K views",
+      "membersOnly": false,
+      "duration": "2:02",
+      "durationSec": 122,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/gQT8CcdgqMk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/gQT8CcdgqMk/maxresdefault.jpg"
+    },
+    {
+      "id": "LZPLtlWhrqo",
+      "title": "How To Get CARVE WOOD BADGE & TICKETS FAST in THE HOLLOW Roblox! (FULL GUIDE)",
+      "views": 9900,
+      "viewsText": "9.9K views",
+      "membersOnly": false,
+      "duration": "3:44",
+      "durationSec": 224,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/LZPLtlWhrqo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/LZPLtlWhrqo/maxresdefault.jpg"
+    },
+    {
+      "id": "XpdOaZDerXo",
+      "title": "Roblox The Hallow - How To Get Prism Runway Badge & Tickets (Roblox Prism Runaway)",
+      "views": 5800,
+      "viewsText": "5.8K views",
+      "membersOnly": false,
+      "duration": "1:01",
+      "durationSec": 61,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/XpdOaZDerXo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/XpdOaZDerXo/maxresdefault.jpg"
+    },
+    {
+      "id": "GRNBdO1A84o",
+      "title": "Roblox The Hallow Event - How TO Get Basketball Legends Badge And TICKETS Roblox! (The Hallow)",
+      "views": 3000,
+      "viewsText": "3K views",
+      "membersOnly": false,
+      "duration": "1:03",
+      "durationSec": 63,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/GRNBdO1A84o/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/GRNBdO1A84o/maxresdefault.jpg"
+    },
+    {
+      "id": "bsvLDtdSjjA",
+      "title": "Roblox The Hallow Event - How To Get Sleep Paralysis Badge & Ticket FAST! (Roblox The Hallow)",
+      "views": 2700,
+      "viewsText": "2.7K views",
+      "membersOnly": false,
+      "duration": "1:55",
+      "durationSec": 115,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/bsvLDtdSjjA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/bsvLDtdSjjA/maxresdefault.jpg"
+    },
+    {
+      "id": "f0Ej2Fd5G-M",
+      "title": "How To Get ALL DAY 2 FREE ITEMS in THE HOLLOW Roblox! (FULL Halloween Event Guide)",
+      "views": 62000,
+      "viewsText": "62K views",
+      "membersOnly": false,
+      "duration": "5:53",
+      "durationSec": 353,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/f0Ej2Fd5G-M/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/f0Ej2Fd5G-M/maxresdefault.jpg"
+    },
+    {
+      "id": "kMc4WbSYg-s",
+      "title": "Roblox The Hallow Event -  How To COMPLETE Dandys World Badge & Reeling Petal Garland Item! (Roblox)",
+      "views": 11000,
+      "viewsText": "11K views",
+      "membersOnly": false,
+      "duration": "2:10",
+      "durationSec": 130,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/kMc4WbSYg-s/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/kMc4WbSYg-s/maxresdefault.jpg"
+    },
+    {
+      "id": "NjGcip5idE4",
+      "title": "How To Get FUWATTY SIDE SATCHEL FREE in THE HOLLOW Roblox! (DAY 2 ITEM FULL GUIDE)",
+      "views": 4000,
+      "viewsText": "4K views",
+      "membersOnly": false,
+      "duration": "1:29",
+      "durationSec": 89,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/NjGcip5idE4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/NjGcip5idE4/maxresdefault.jpg"
+    },
+    {
+      "id": "jebL8DOpOME",
+      "title": "How To Get WITCHES BREW-NADO FREE in THE HOLLOW Roblox! (DAY 2 ITEM MAZE FULL GUIDE)",
+      "views": 17000,
+      "viewsText": "17K views",
+      "membersOnly": false,
+      "duration": "2:23",
+      "durationSec": 143,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/jebL8DOpOME/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/jebL8DOpOME/maxresdefault.jpg"
+    },
+    {
+      "id": "HEwGONMCszo",
+      "title": "How To Get DUCK DUCK BADGE & TICKETS FAST in THE HOLLOW Roblox! (FULL GUIDE)",
+      "views": 15000,
+      "viewsText": "15K views",
+      "membersOnly": false,
+      "duration": "1:17",
+      "durationSec": 77,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/HEwGONMCszo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/HEwGONMCszo/maxresdefault.jpg"
+    },
+    {
+      "id": "zDfcUfdaupU",
+      "title": "Roblox The Hallow Event - How To Get ALL NEW HUB Items!  (Roblox The Hallow Event) NEW ITEMS!",
+      "views": 28000,
+      "viewsText": "28K views",
+      "membersOnly": false,
+      "duration": "3:27",
+      "durationSec": 207,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/zDfcUfdaupU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/zDfcUfdaupU/maxresdefault.jpg"
+    },
+    {
+      "id": "0gmVTPr7iMk",
+      "title": "How To Get GUTS & BLACKPOWDER BADGE & TICKETS FAST in THE HOLLOW Roblox! (FULL GUIDE)",
+      "views": 39000,
+      "viewsText": "39K views",
+      "membersOnly": false,
+      "duration": "3:46",
+      "durationSec": 226,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/0gmVTPr7iMk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/0gmVTPr7iMk/maxresdefault.jpg"
+    },
+    {
+      "id": "-Zghp0YUjLk",
+      "title": "How To Get MOO MOO MYSTERY BADGE & TICKETS FAST in THE HOLLOW Roblox! (FULL GUIDE)",
+      "views": 45000,
+      "viewsText": "45K views",
+      "membersOnly": false,
+      "duration": "1:47",
+      "durationSec": 107,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/-Zghp0YUjLk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/-Zghp0YUjLk/maxresdefault.jpg"
+    },
+    {
+      "id": "C96WqhbJBpM",
+      "title": "How To Get SURVIVE OVERNIGHT IN A MEGA STORE BADGE & TICKETS FAST in THE HOLLOW Roblox! (FULL GUIDE)",
+      "views": 9800,
+      "viewsText": "9.8K views",
+      "membersOnly": false,
+      "duration": "1:45",
+      "durationSec": 105,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/C96WqhbJBpM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/C96WqhbJBpM/maxresdefault.jpg"
+    },
+    {
+      "id": "hrpHoCA8x2I",
+      "title": "How To Get CLEAN CREW BADGE & TICKETS FAST in THE HOLLOW Roblox! (FULL GUIDE)",
+      "views": 3800,
+      "viewsText": "3.8K views",
+      "membersOnly": false,
+      "duration": "1:33",
+      "durationSec": 93,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/hrpHoCA8x2I/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/hrpHoCA8x2I/maxresdefault.jpg"
+    },
+    {
+      "id": "lJioDUvETKM",
+      "title": "How To Get TOWER DEFENSE SIMULATOR BADGE & TICKETS FAST in THE HOLLOW Roblox! (FULL GUIDE)",
+      "views": 16000,
+      "viewsText": "16K views",
+      "membersOnly": false,
+      "duration": "2:08",
+      "durationSec": 128,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/lJioDUvETKM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/lJioDUvETKM/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "Cocajola makes fast Roblox event guides: how to get each free item, badge and ticket, often several videos a day during an event like The Hollow. The thumbnails follow one strict template: 'HOW TO GET' in yellow at the top, the item or badge in the middle, the item name in red or green at the bottom, and a classic Roblox avatar pointing at it.",
+    "niche": "Roblox event guides: free items, badges and tickets",
+    "styleTraits": [
+      {
+        "title": "One template for everything",
+        "detail": "Yellow-to-orange 3D letters at the top ('HOW TO GET', 'DO THIS NOW', '10 EASIEST'), the reward in the centre, and its name in red or green 3D letters at the bottom. With dozens of uploads per event, viewers can spot a Cocajola guide instantly."
+      },
+      {
+        "title": "The reward is the hero",
+        "detail": "The badge or item takes the middle of the frame, large and cut out: a spiky red event badge, a glowing eye, a pumpkin badge, a gold suit. A curved red arrow often points right at it."
+      },
+      {
+        "title": "A classic avatar as the guide",
+        "detail": "A simple Roblox avatar with orange hair and a dark shirt stands on one side, pointing or looking at the reward. It is small and the same every time, like a presenter."
+      },
+      {
+        "title": "Event branding in the corner",
+        "detail": "The event logo ('The Hollow' in red horror letters) sits beside the reward, so the thumbnail is tied to what is trending on Roblox that week."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "yeMa62oMB-I",
+        "why": "About 80,000 views, 7.0 times the median. Eight event badges in a grid with red arrows and 'GET EVERY BADGE' at the bottom. A complete list promises to save time, which may be why this 45-minute guide beat the short single-badge videos."
+      },
+      {
+        "id": "f0Ej2Fd5G-M",
+        "why": "About 62,000 views, 5.4 times the median. Three items (a green tornado, a fiery eye, a black creature) under the event logo, with 'DAY TWO ITEMS'. Grouping a whole day's rewards in one video probably made it the one to watch that day."
+      },
+      {
+        "id": "90E9kH7oiD8",
+        "why": "About 54,000 views, 4.7 times the median. '10 EASIEST' on top, '20,000' tickets in white, a row of badges and 'TICKET BADGES' in green. The number promises a shortcut, and 'easiest' speaks to players who want the reward with little effort."
+      }
+    ],
+    "lessons": [
+      "For guides, put the reward itself in the middle of the thumbnail, big and cut out.",
+      "A strict template lets you publish fast during an event and still look like one channel.",
+      "Round-up videos ('every badge', 'all day two items') pulled more than single-item guides here.",
+      "Use one word that signals effort, like 'EASIEST' or 'FAST'; for reward hunters it is often the real promise.",
+      "Put the event's logo on the thumbnail so it matches what players are searching that week."
+    ],
+    "experiment": "Next time you cover an update, publish one round-up guide with all the rewards in a grid next to your single-item guides, and compare the views after a week.",
+    "faq": [
+      {
+        "q": "How many subscribers does Cocajola have?",
+        "a": "As of 26 October 2026, Cocajola has about 368K subscribers and about 1.5K videos. The latest 30 uploads, all from The Hollow event, have a median of about 11,500 views. The biggest is 'How To Get ALL BADGES & TICKETS FAST in THE HOLLOW Roblox!', with about 80,000 views."
+      },
+      {
+        "q": "What does Cocajola make videos about?",
+        "a": "Short Roblox guides on how to get free items, badges and event tickets, plus round-ups of a whole day's rewards. During big events such as The Hollow, the channel posts many videos a day, most between one and ten minutes long."
+      },
+      {
+        "q": "What do Cocajola's thumbnails look like?",
+        "a": "Always the same layout: 'HOW TO GET' in yellow 3D letters at the top, the item or badge large in the centre with a red arrow, its name in red or green at the bottom, the event logo, and a simple orange-haired Roblox avatar pointing at the reward."
+      }
+    ],
+    "reviewedAt": "2026-10-26"
+  }
+}

@@ -8,7 +8,7 @@ import { jsonLdString, pageUrl } from '@/components/v2/thumbnail-pages/seo';
 // /thumbnails/gaming: every game page with a strip of its examples. Indexed once
 // HUB_MIN_LIVE_PAGES game pages are live; a noindex preview of all game pages before that.
 
-const TITLE = 'Gaming Thumbnail Ideas: Real Examples for Every Game';
+const TITLE = 'Gaming Thumbnail Ideas: Real Game Examples';
 const DESCRIPTION =
   'Gaming thumbnail ideas sorted by game: real examples for launch day, challenges, fails and guides, and the layouts behind each look.';
 

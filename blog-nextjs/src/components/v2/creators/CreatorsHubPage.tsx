@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Footer from '../Footer';
 import NavBar from '../NavBar';
 import ScrollReveal from '../ScrollReveal';
+import StudioCta from '../StudioCta';
 import { ShowcaseHead } from '../thumbnail-pages/Marquee';
 import { studioGenerateUrl } from '../thumbnail-pages/lib/schema.mjs';
 import s from '../thumbnail-pages/thumbnails.module.css';
@@ -187,9 +188,9 @@ export default function CreatorsHubPage({ creators, isLive }: { creators: Creato
               </ol>
             </nav>
             {creators.length > 0 && (
-              <span className={`v2-feature-tag orange ${s.heroTag}`}>
-                {creators.length} channels · {groups.length} games
-              </span>
+              <p className={s.heroMeta}>
+                {creators.length} channels across {groups.length} games
+              </p>
             )}
             <h1 className={`v2-cp-h1 ${s.hubH1}`}>
               YouTube creators
@@ -206,13 +207,17 @@ export default function CreatorsHubPage({ creators, isLive }: { creators: Creato
               </Link>
             </div>
             {groups.length > 1 && (
-              <nav className={s.chips} aria-label="Jump to a game">
-                <span className={s.chipsLabel}>Jump to</span>
+              <nav className={s.jumpNav} aria-label="Jump to a game">
+                <span className={s.jumpLabel}>Jump to</span>
                 <ul>
                   {groups.map((grp) => (
                     <li key={grp.game}>
-                      <a className={s.chip} href={`#${grp.game}`}>
+                      <a href={`#${grp.game}`}>
                         {grp.name}
+                        <span className={s.jumpCount}>
+                          {grp.creators.length}
+                          <span className={s.srOnly}> {grp.creators.length === 1 ? 'channel' : 'channels'}</span>
+                        </span>
                       </a>
                     </li>
                   ))}
@@ -276,6 +281,17 @@ export default function CreatorsHubPage({ creators, isLive }: { creators: Creato
             </section>
           </>
         )}
+
+        {/* ── MID-PAGE CTA ─────────────────────────────────────── */}
+        <StudioCta
+          title={
+            <>
+              Your next upload could be <em>the one that breaks out.</em>
+            </>
+          }
+          text="Give it a thumbnail made for the click. Base.Tube makes three ideas for each video, with your face and your channel's style. Change anything in plain words, then download them for YouTube Test & Compare."
+          href={studioGenerateUrl({ ref: 'creators-hub-mid' })}
+        />
 
         {/* ── CREATORS BY GAME ─────────────────────────────────── */}
         <div className="v2-sep" aria-hidden />

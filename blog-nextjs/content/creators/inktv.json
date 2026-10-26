@@ -1,0 +1,464 @@
+{
+  "slug": "inktv",
+  "status": "published",
+  "channelId": "UCfB7vdi-hl4lvKUk0mkMzvg",
+  "name": "InkTV",
+  "handle": "inkslashertv",
+  "url": "https://www.youtube.com/channel/UCfB7vdi-hl4lvKUk0mkMzvg",
+  "avatar": "https://yt3.googleusercontent.com/l9eBNDWJxDc9fhPnfNBU7fhhq-_XbX9F31emG7-mPbRuRF04iotqh2gSiQfYnyOMefbxhC6Qlfo=s900-c-k-c0x00ffffff-no-rj",
+  "game": "gta-6",
+  "spotlight": null,
+  "moonshotVideoId": null,
+  "subscribers": 108000,
+  "subscribersText": "108K subscribers",
+  "videoCount": 2900,
+  "description": "Hey, I'm Corey, you may know me as Inkslasher or Ink. On this channel we talk everything video games from GTA 6 to Call of Duty. This includes reaction videos, live gameplay of the greatest games, or just chatting. Welcome to the channel and I hope you stick around! Business Inquiries: inkslashermanagement@gmail.com",
+  "collectedAt": "2026-10-26",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 59000,
+    "outliers": [
+      {
+        "id": "TeDZcAX0KDI",
+        "multiple": 2.7
+      },
+      {
+        "id": "axG8WudR8G4",
+        "multiple": 2.2
+      },
+      {
+        "id": "jsCaBTDjGVs",
+        "multiple": 2.1
+      },
+      {
+        "id": "PgicVKHmupc",
+        "multiple": 1.9
+      },
+      {
+        "id": "NA7HdLQAjOM",
+        "multiple": 1.4
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "NZx8fLu5YMY",
+      "title": "GTA 6 Is Breaking The Mold.",
+      "views": 42000,
+      "viewsText": "42K views",
+      "membersOnly": false,
+      "duration": "9:40",
+      "durationSec": 580,
+      "published": "12 hours ago",
+      "thumbnail": "https://i.ytimg.com/vi/NZx8fLu5YMY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/NZx8fLu5YMY/maxresdefault.jpg"
+    },
+    {
+      "id": "fSdn5QkY1rg",
+      "title": "Is November 2026 The Greatest Month Of Video Games Ever?",
+      "views": 9100,
+      "viewsText": "9.1K views",
+      "membersOnly": false,
+      "duration": "8:41",
+      "durationSec": 521,
+      "published": "16 hours ago",
+      "thumbnail": "https://i.ytimg.com/vi/fSdn5QkY1rg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/fSdn5QkY1rg/maxresdefault.jpg"
+    },
+    {
+      "id": "GBsXCyQUYKk",
+      "title": "A Look At All The Vehicles In GTA 6!",
+      "views": 72000,
+      "viewsText": "72K views",
+      "membersOnly": false,
+      "duration": "26:02",
+      "durationSec": 1562,
+      "published": "1 day ago",
+      "thumbnail": "https://i.ytimg.com/vi/GBsXCyQUYKk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/GBsXCyQUYKk/maxresdefault.jpg"
+    },
+    {
+      "id": "jsCaBTDjGVs",
+      "title": "We Need To Talk About Modern Warfare 4...",
+      "views": 126000,
+      "viewsText": "126K views",
+      "membersOnly": false,
+      "duration": "12:39",
+      "durationSec": 759,
+      "published": "1 day ago",
+      "thumbnail": "https://i.ytimg.com/vi/jsCaBTDjGVs/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/jsCaBTDjGVs/maxresdefault.jpg"
+    },
+    {
+      "id": "NA7HdLQAjOM",
+      "title": "GTA 6 May Be WAY Different Than We Thought...",
+      "views": 82000,
+      "viewsText": "82K views",
+      "membersOnly": false,
+      "duration": "21:40",
+      "durationSec": 1300,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/NA7HdLQAjOM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/NA7HdLQAjOM/maxresdefault.jpg"
+    },
+    {
+      "id": "gWyWdOfPsJQ",
+      "title": "The Solo DMZ Experience...",
+      "views": 24000,
+      "viewsText": "24K views",
+      "membersOnly": false,
+      "duration": "25:26",
+      "durationSec": 1526,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/gWyWdOfPsJQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/gWyWdOfPsJQ/maxresdefault.jpg"
+    },
+    {
+      "id": "J8IKbAYL4Mc",
+      "title": "We Learned Some New Things About GTA 6!",
+      "views": 69000,
+      "viewsText": "69K views",
+      "membersOnly": false,
+      "duration": "29:08",
+      "durationSec": 1748,
+      "published": "3 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/J8IKbAYL4Mc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/J8IKbAYL4Mc/maxresdefault.jpg"
+    },
+    {
+      "id": "CRYhYL-5dK8",
+      "title": "Soo... GTA 6 Early Copies Are A Thing...",
+      "views": 60000,
+      "viewsText": "60K views",
+      "membersOnly": false,
+      "duration": "13:19",
+      "durationSec": 799,
+      "published": "4 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/CRYhYL-5dK8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/CRYhYL-5dK8/maxresdefault.jpg"
+    },
+    {
+      "id": "FtWu_OOpm-M",
+      "title": "EA Just Changed EVERYTHING (Bioware Closed & Battlefront 3)",
+      "views": 12000,
+      "viewsText": "12K views",
+      "membersOnly": false,
+      "duration": "10:22",
+      "durationSec": 622,
+      "published": "4 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/FtWu_OOpm-M/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/FtWu_OOpm-M/maxresdefault.jpg"
+    },
+    {
+      "id": "axG8WudR8G4",
+      "title": "GTA 6 Is Taking Over The World!",
+      "views": 127000,
+      "viewsText": "127K views",
+      "membersOnly": false,
+      "duration": "20:10",
+      "durationSec": 1210,
+      "published": "5 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/axG8WudR8G4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/axG8WudR8G4/maxresdefault.jpg"
+    },
+    {
+      "id": "p4P8ZrVC1pg",
+      "title": "GTA 6 Marketing Has Gone Wild!",
+      "views": 52000,
+      "viewsText": "52K views",
+      "membersOnly": false,
+      "duration": "9:17",
+      "durationSec": 557,
+      "published": "6 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/p4P8ZrVC1pg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/p4P8ZrVC1pg/maxresdefault.jpg"
+    },
+    {
+      "id": "kcYwP0dqf6w",
+      "title": "Mr Beast Reveals First DMZ Gameplay?",
+      "views": 77000,
+      "viewsText": "77K views",
+      "membersOnly": false,
+      "duration": "33:59",
+      "durationSec": 2039,
+      "published": "6 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/kcYwP0dqf6w/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/kcYwP0dqf6w/maxresdefault.jpg"
+    },
+    {
+      "id": "DdgQ2jx5-tE",
+      "title": "Modern Warfare 4 Has Silenced The Haters...",
+      "views": 45000,
+      "viewsText": "45K views",
+      "membersOnly": false,
+      "duration": "20:01",
+      "durationSec": 1201,
+      "published": "7 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/DdgQ2jx5-tE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/DdgQ2jx5-tE/maxresdefault.jpg"
+    },
+    {
+      "id": "CTrWOT5-HuQ",
+      "title": "Things To Know Before The GTA 6 Launch!",
+      "views": 80000,
+      "viewsText": "80K views",
+      "membersOnly": false,
+      "duration": "21:31",
+      "durationSec": 1291,
+      "published": "7 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/CTrWOT5-HuQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/CTrWOT5-HuQ/maxresdefault.jpg"
+    },
+    {
+      "id": "TeDZcAX0KDI",
+      "title": "Ink Reacts To All The Biggest Modern Warfare 4 Moments!",
+      "views": 157000,
+      "viewsText": "157K views",
+      "membersOnly": false,
+      "duration": "35:58",
+      "durationSec": 2158,
+      "published": "8 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/TeDZcAX0KDI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/TeDZcAX0KDI/maxresdefault.jpg"
+    },
+    {
+      "id": "5UTpNdAeVls",
+      "title": "So What Is Coming Next For GTA 6!?",
+      "views": 78000,
+      "viewsText": "78K views",
+      "membersOnly": false,
+      "duration": "11:06",
+      "durationSec": 666,
+      "published": "8 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/5UTpNdAeVls/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/5UTpNdAeVls/maxresdefault.jpg"
+    },
+    {
+      "id": "jgq9B10bFGI",
+      "title": "Overanalyzing The GTA 6 Launch Trailer",
+      "views": 55000,
+      "viewsText": "55K views",
+      "membersOnly": false,
+      "duration": "16:51",
+      "durationSec": 1011,
+      "published": "9 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/jgq9B10bFGI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/jgq9B10bFGI/maxresdefault.jpg"
+    },
+    {
+      "id": "GpBn2GBG9jo",
+      "title": "Is Modern Warfare 4 Making A Mistake Here?",
+      "views": 26000,
+      "viewsText": "26K views",
+      "membersOnly": false,
+      "duration": "9:30",
+      "durationSec": 570,
+      "published": "10 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/GpBn2GBG9jo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/GpBn2GBG9jo/maxresdefault.jpg"
+    },
+    {
+      "id": "gm3aeUE2GfA",
+      "title": "Grand Theft Auto VI Launch Trailer (Ink Reacts)",
+      "views": 63000,
+      "viewsText": "63K views",
+      "membersOnly": false,
+      "duration": "11:41",
+      "durationSec": 701,
+      "published": "10 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/gm3aeUE2GfA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/gm3aeUE2GfA/maxresdefault.jpg"
+    },
+    {
+      "id": "LIIgBOyZo7U",
+      "title": "The Final GTA 6 Leak!?",
+      "views": 76000,
+      "viewsText": "76K views",
+      "membersOnly": false,
+      "duration": "12:14",
+      "durationSec": 734,
+      "published": "11 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/LIIgBOyZo7U/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/LIIgBOyZo7U/maxresdefault.jpg"
+    },
+    {
+      "id": "T7CUOiJlVyY",
+      "title": "The Secrets Behind The Making Of GTA 6!",
+      "views": 56000,
+      "viewsText": "56K views",
+      "membersOnly": false,
+      "duration": "36:49",
+      "durationSec": 2209,
+      "published": "11 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/T7CUOiJlVyY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/T7CUOiJlVyY/maxresdefault.jpg"
+    },
+    {
+      "id": "P2Q6lKGvXes",
+      "title": "Is Xbox Making A Comeback?",
+      "views": 19000,
+      "viewsText": "19K views",
+      "membersOnly": false,
+      "duration": "10:09",
+      "durationSec": 609,
+      "published": "12 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/P2Q6lKGvXes/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/P2Q6lKGvXes/maxresdefault.jpg"
+    },
+    {
+      "id": "w8xeTovkq3s",
+      "title": "GTA 6 PC Launch Details & Huge News!",
+      "views": 58000,
+      "viewsText": "58K views",
+      "membersOnly": false,
+      "duration": "11:59",
+      "durationSec": 719,
+      "published": "12 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/w8xeTovkq3s/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/w8xeTovkq3s/maxresdefault.jpg"
+    },
+    {
+      "id": "O81xSstDGGw",
+      "title": "We Need To Have A Chat...",
+      "views": 40000,
+      "viewsText": "40K views",
+      "membersOnly": false,
+      "duration": "10:26",
+      "durationSec": 626,
+      "published": "13 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/O81xSstDGGw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/O81xSstDGGw/maxresdefault.jpg"
+    },
+    {
+      "id": "5M3pdEhKozk",
+      "title": "GTA 6 Is Planning Something HUGE THIS WEEK!",
+      "views": 84000,
+      "viewsText": "84K views",
+      "membersOnly": false,
+      "duration": "10:20",
+      "durationSec": 620,
+      "published": "13 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/5M3pdEhKozk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/5M3pdEhKozk/maxresdefault.jpg"
+    },
+    {
+      "id": "PT3ZU2Tw4Ck",
+      "title": "Is PlayStation Backpeddling?",
+      "views": 52000,
+      "viewsText": "52K views",
+      "membersOnly": false,
+      "duration": "22:17",
+      "durationSec": 1337,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/PT3ZU2Tw4Ck/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/PT3ZU2Tw4Ck/maxresdefault.jpg"
+    },
+    {
+      "id": "PgicVKHmupc",
+      "title": "New GTA 6 Leaks Reveal Something Strange...",
+      "views": 112000,
+      "viewsText": "112K views",
+      "membersOnly": false,
+      "duration": "10:06",
+      "durationSec": 606,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/PgicVKHmupc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/PgicVKHmupc/maxresdefault.jpg"
+    },
+    {
+      "id": "p7C1tKUV6Ig",
+      "title": "The GTA 6 Leaks Are A BIG PROBLEM...",
+      "views": 80000,
+      "viewsText": "80K views",
+      "membersOnly": false,
+      "duration": "9:15",
+      "durationSec": 555,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/p7C1tKUV6Ig/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/p7C1tKUV6Ig/maxresdefault.jpg"
+    },
+    {
+      "id": "pMgc-QYY78g",
+      "title": "Why Do People Still Play Call of Duty?",
+      "views": 41000,
+      "viewsText": "41K views",
+      "membersOnly": false,
+      "duration": "20:30",
+      "durationSec": 1230,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/pMgc-QYY78g/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/pMgc-QYY78g/maxresdefault.jpg"
+    },
+    {
+      "id": "JS_aR0zrKOA",
+      "title": "GTA 6 Deep Dive: Intimacy, Gameplay & Encounters",
+      "views": 34000,
+      "viewsText": "34K views",
+      "membersOnly": false,
+      "duration": "16:05",
+      "durationSec": 965,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/JS_aR0zrKOA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/JS_aR0zrKOA/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "InkTV posts near-daily news and reaction videos, mostly about GTA 6 and Modern Warfare 4, plus wider gaming industry talk. Every thumbnail uses the same frame: the host on the right in a backwards cap and headphones, reacting, a game image on the left, and a short yellow-orange line at the bottom.",
+    "niche": "GTA 6 and Call of Duty news and reactions",
+    "styleTraits": [
+      {
+        "title": "The host as a fixed anchor",
+        "detail": "The host sits on the right in a black cap and headphones, in front of a red-lit studio, with a hand on his mouth or chin or a shocked face. It works like a news presenter: the same person, a new story each day."
+      },
+      {
+        "title": "Yellow-orange reaction lines",
+        "detail": "The text is one short reaction in bold condensed yellow-to-orange letters: 'NOBODY IS READY!', 'THIS IS STRANGE...', 'NEVER BEEN DONE!', 'I ALREADY QUIT...'. It gives the mood, not the facts."
+      },
+      {
+        "title": "Official art on the left",
+        "detail": "The left side uses official GTA 6 or Modern Warfare 4 images: Lucia, a Vice City blimp, the 'VI' logo over a globe, a masked soldier. The game is recognised at a glance."
+      },
+      {
+        "title": "Collages for list videos",
+        "detail": "List videos replace the art with a grid of images, like four vehicles around a GTA VI logo for 'ALL VEHICLES', so the scope of the video is visible."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "axG8WudR8G4",
+        "why": "About 127,000 views, 2.2 times the median. The Earth from space with a glowing 'VI' over it, the host covering his mouth, and 'NOBODY IS READY!'. The scale of the image matches the claim that the game is taking over the world."
+      },
+      {
+        "id": "PgicVKHmupc",
+        "why": "About 112,000 views, 1.9 times the median. Lucia hanging from a parachute on the left, the host with his hand on his chin, and 'THIS IS STRANGE...'. A vague, curious line next to a leak story probably invites viewers to find out what is strange."
+      },
+      {
+        "id": "TeDZcAX0KDI",
+        "why": "About 157,000 views, 2.7 times the median, the highest in the sample. Two characters from the Modern Warfare 4 campaign, the host with a hand over his mouth and 'BIGGEST MOMENTS'. Reaction compilations right after a launch may draw people who have not played yet."
+      }
+    ],
+    "lessons": [
+      "If you post often on the same topics, a fixed frame with you in the same spot makes every upload recognisable.",
+      "Let the text give the emotion ('THIS IS STRANGE...') and the title give the facts.",
+      "Use official art from the game when the news is about the game; it is recognised faster than gameplay.",
+      "Off-topic industry videos sat at 0.2 to 0.3 times the median here; viewers came mostly for GTA 6 and Call of Duty."
+    ],
+    "experiment": "For your next news video, try a thumbnail where your reaction line is vague and curious ('THIS IS STRANGE...') against one that states the news ('NEW MAP LEAK'). Keep the image identical.",
+    "faq": [
+      {
+        "q": "How many subscribers does InkTV have?",
+        "a": "As of 26 October 2026, InkTV has about 108K subscribers and about 2.9K videos. The latest 30 long uploads, all from the previous two weeks, have a median of about 59,000 views. The biggest in that sample is 'Ink Reacts To All The Biggest Modern Warfare 4 Moments!', with about 157,000 views."
+      },
+      {
+        "q": "What does InkTV make videos about?",
+        "a": "Gaming news and reactions, mostly GTA 6 (trailers, leaks, launch details, the map and vehicles) and Call of Duty Modern Warfare 4 and DMZ, plus broader talk about PlayStation, Xbox and the games industry. New videos come out almost every day."
+      },
+      {
+        "q": "What do InkTV's thumbnails look like?",
+        "a": "The host on the right in a black cap and headphones, reacting with a hand on his mouth or chin, official game art on the left, and a short yellow-orange line at the bottom such as 'NOBODY IS READY!' or 'THIS IS STRANGE...'."
+      }
+    ],
+    "reviewedAt": "2026-10-26"
+  }
+}

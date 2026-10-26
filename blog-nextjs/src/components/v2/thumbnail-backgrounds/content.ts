@@ -5,7 +5,7 @@ export const PAGE_PATH = '/youtube-thumbnail-backgrounds';
 export const PAGE_URL = `https://base.tube${PAGE_PATH}`;
 
 /** Search snippet: title at most 60 characters, description at most 155, both with the main keyword. */
-export const TITLE = `${BACKGROUNDS.length} Free YouTube Thumbnail Backgrounds to Download`;
+export const TITLE = `${BACKGROUNDS.length} Free YouTube Thumbnail Backgrounds`;
 export const DESCRIPTION =
   'Free YouTube thumbnail backgrounds with one side left empty for your face and title, readable on a phone. Download one or turn it into a full thumbnail.';
 

@@ -3,7 +3,7 @@ import ThumbnailResizerPage from '@/components/v2/thumbnail-resizer/ThumbnailRes
 import { faqs } from '@/components/v2/thumbnail-resizer/content';
 
 const URL = 'https://base.tube/tools/youtube-thumbnail-resizer';
-const TITLE = 'YouTube Thumbnail Resizer: Free 1280x720 Converter';
+const TITLE = 'YouTube Thumbnail Resizer: Free 1280x720 Tool';
 const DESCRIPTION =
   'Resize any image into a YouTube thumbnail in your browser. Crop or fit to 16:9, export a 1280x720 JPG or PNG under 2 MB. Free, no sign-up.';
 

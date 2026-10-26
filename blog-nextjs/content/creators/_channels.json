@@ -126,5 +126,77 @@
     "game": "fortnite",
     "spotlight": "moonshot",
     "moonshotVideoId": "yLRnoyA5Hlc"
+  },
+  {
+    "channel_id": "UCs1Gr9yQyEMbdFKyZCBLDcA",
+    "name": "h4kpy",
+    "game": "gorilla-tag",
+    "slug": "h4kpy"
+  },
+  {
+    "channel_id": "UCuLoL6WPvF1D1-qVZxjlO6g",
+    "name": "TooElite",
+    "game": "gorilla-tag",
+    "slug": "tooelite"
+  },
+  {
+    "channel_id": "UCSVKvSTp5zxXYJkH8vkdlOw",
+    "name": "Cocajola",
+    "game": "roblox",
+    "slug": "cocajola"
+  },
+  {
+    "channel_id": "UCdpOhdvqtY0kfKBwe9UVWmQ",
+    "name": "Riivv3r",
+    "game": "roblox",
+    "slug": "riivv3r"
+  },
+  {
+    "channel_id": "UCKDuW7soWZaN0VkxnRZX2Xw",
+    "name": "nahv",
+    "game": "call-of-duty",
+    "slug": "nahv"
+  },
+  {
+    "channel_id": "UCxx7Jc8K3YRtViasIX2M4jA",
+    "name": "evanf1997",
+    "game": "call-of-duty",
+    "slug": "evanf1997"
+  },
+  {
+    "channel_id": "UCt5DuP8_o7X9VDhgynxjxpg",
+    "name": "Gator Keys",
+    "game": "gta-6",
+    "slug": "gator-keys"
+  },
+  {
+    "channel_id": "UCfB7vdi-hl4lvKUk0mkMzvg",
+    "name": "InkTV",
+    "game": "gta-6",
+    "slug": "inktv"
+  },
+  {
+    "channel_id": "UCzL1aupiX0hxdbR2UgEL34w",
+    "name": "Mr A-Game",
+    "game": "zelda-ocarina-of-time",
+    "slug": "mr-a-game"
+  },
+  {
+    "channel_id": "UCdsA5BF8VVHtksOkR_8v6Sw",
+    "name": "EonAegis",
+    "game": "zelda-ocarina-of-time",
+    "slug": "eonaegis"
+  },
+  {
+    "channel_id": "UC_YojiRyyMAg9TqzuZr3BYQ",
+    "name": "Rezztro",
+    "game": "fortnite",
+    "slug": "rezztro"
+  },
+  {
+    "channel_id": "UCvMI5QJgxhx5ZcqHBtUxkEA",
+    "name": "Eclipse Craft",
+    "game": "minecraft",
+    "slug": "eclipse-craft"
   }
 ]

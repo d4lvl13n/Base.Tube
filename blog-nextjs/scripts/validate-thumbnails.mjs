@@ -81,13 +81,17 @@ const orphanFolders = fs.existsSync(publicDir)
 const report = pages.map((lp) => {
   const status = lp.page?.status ?? 'unknown';
   const blocking = lp.issues.filter((i) => i.level === 'error' || i.level === 'blocker');
+  // A published page whose only blockers are its gallery images is waiting for them (it goes live
+  // by itself once they are imported): not a failure.
+  const waitingForImages = blocking.length > 0 && blocking.every((i) => i.level === 'blocker' && /^gallery(\[|$)/.test(i.field));
   return {
     file: lp.file,
     slug: lp.slug,
     status,
     live: lp.live,
     readyToPublish: Boolean(lp.page) && blocking.length === 0,
-    fails: lp.issues.some((i) => i.level === 'error') || (status === 'published' && blocking.length > 0),
+    waitingForImages,
+    fails: lp.issues.some((i) => i.level === 'error') || (status === 'published' && blocking.length > 0 && !waitingForImages),
     stats: lp.page
       ? { images: lp.page.gallery.length, minImages: MIN_GALLERY_IMAGES, faq: lp.page.faq.length, words: lp.page.wordCount }
       : null,
@@ -135,11 +139,13 @@ console.log(bold('\nThumbnail pages — content check\n'));
 for (const r of report) {
   const head = r.live
     ? green('LIVE')
-    : r.status === 'published'
-      ? red('PUBLISHED BUT NOT INDEXABLE')
-      : r.status === 'draft'
-        ? yellow('DRAFT')
-        : red('BROKEN');
+    : r.status === 'published' && r.waitingForImages
+      ? yellow('WAITING FOR IMAGES')
+      : r.status === 'published'
+        ? red('PUBLISHED BUT NOT INDEXABLE')
+        : r.status === 'draft'
+          ? yellow('DRAFT')
+          : red('BROKEN');
   const stats = r.stats ? dim(`  ·  ${r.stats.images}/${r.stats.minImages} images · ${r.stats.faq} FAQ · ~${r.stats.words} words`) : '';
   console.log(`${bold(r.file)}  ${head}${stats}`);
   const errors = r.issues.filter((i) => i.level === 'error');
@@ -147,7 +153,7 @@ for (const r of report) {
   const warnings = r.issues.filter((i) => i.level === 'warning');
   for (const i of errors) console.log(`  ${red('✗ error   ')} ${where(i)}: ${i.message}`);
   for (const i of blockers) {
-    const label = r.status === 'published' ? red('✗ blocks  ') : yellow('• to fix  ');
+    const label = r.status === 'published' && !r.waitingForImages ? red('✗ blocks  ') : yellow('• to fix  ');
     console.log(`  ${label} ${where(i)}: ${i.message}`);
   }
   for (const i of warnings) console.log(`  ${dim('· warning ')} ${where(i)}: ${i.message}`);

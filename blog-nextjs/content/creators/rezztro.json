@@ -1,0 +1,464 @@
+{
+  "slug": "rezztro",
+  "status": "published",
+  "channelId": "UC_YojiRyyMAg9TqzuZr3BYQ",
+  "name": "Rezztro",
+  "handle": "Rezztro",
+  "url": "https://www.youtube.com/channel/UC_YojiRyyMAg9TqzuZr3BYQ",
+  "avatar": "https://yt3.googleusercontent.com/RJ0pK7BEOe0nYv_7OOCtQUDXdZGGnK8m-GMGvIyRNlj0Oiaha9MvMyMWBLF2JFQSrv2FdLHRBaA=s900-c-k-c0x00ffffff-no-rj",
+  "game": "fortnite",
+  "spotlight": null,
+  "moonshotVideoId": null,
+  "subscribers": 80000,
+  "subscribersText": "80K subscribers",
+  "videoCount": 190,
+  "description": "Fortnite Lore Master & #1 Geno Fan.",
+  "collectedAt": "2026-10-26",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 53000,
+    "outliers": [
+      {
+        "id": "wT4VqndNZ7I",
+        "multiple": 13
+      },
+      {
+        "id": "JDT7v4LZ5jM",
+        "multiple": 7
+      },
+      {
+        "id": "Rf2wrMd_uco",
+        "multiple": 4.2
+      },
+      {
+        "id": "iXezR1_c32E",
+        "multiple": 3.5
+      },
+      {
+        "id": "ycyAp6y2SJw",
+        "multiple": 3.3
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "iI-PQZDpemI",
+      "title": "Fortnite CHAPTER 7 Storyline EXPLAINED! (The Dark Voyager Saga)",
+      "views": 50000,
+      "viewsText": "50K views",
+      "membersOnly": false,
+      "duration": "1:18:52",
+      "durationSec": 4732,
+      "published": "4 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/iI-PQZDpemI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/iI-PQZDpemI/maxresdefault.jpg"
+    },
+    {
+      "id": "gc03V0-CL98",
+      "title": "Fortnite SHATTERED EVENT Lore Breakdown",
+      "views": 72000,
+      "viewsText": "72K views",
+      "membersOnly": false,
+      "duration": "28:14",
+      "durationSec": 1694,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/gc03V0-CL98/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/gc03V0-CL98/maxresdefault.jpg"
+    },
+    {
+      "id": "nwohVOIiTSA",
+      "title": "The Lore Of The Fortnite Showdown Cinematic Explained",
+      "views": 44000,
+      "viewsText": "44K views",
+      "membersOnly": false,
+      "duration": "10:19",
+      "durationSec": 619,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/nwohVOIiTSA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/nwohVOIiTSA/maxresdefault.jpg"
+    },
+    {
+      "id": "QQbUrHj3p1M",
+      "title": "The Ice King Is A VILLAIN In SEASON 2...",
+      "views": 22000,
+      "viewsText": "22K views",
+      "membersOnly": false,
+      "duration": "8:11",
+      "durationSec": 491,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/QQbUrHj3p1M/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/QQbUrHj3p1M/maxresdefault.jpg"
+    },
+    {
+      "id": "Wx92GgIsgpo",
+      "title": "Fortnite Has TEASED The Foundation's Return...",
+      "views": 17000,
+      "viewsText": "17K views",
+      "membersOnly": false,
+      "duration": "5:23",
+      "durationSec": 323,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/Wx92GgIsgpo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Wx92GgIsgpo/maxresdefault.jpg"
+    },
+    {
+      "id": "i14jWlES18Y",
+      "title": "The END of Fortnite PHASE 1... (Zero Hour Event Explained)",
+      "views": 38000,
+      "viewsText": "38K views",
+      "membersOnly": false,
+      "duration": "11:36",
+      "durationSec": 696,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/i14jWlES18Y/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/i14jWlES18Y/maxresdefault.jpg"
+    },
+    {
+      "id": "wGlJ3Ponfd8",
+      "title": "Fortnite OG SEASON 6 Storyline & The Butterfly Event EXPLAINED!",
+      "views": 12000,
+      "viewsText": "12K views",
+      "membersOnly": false,
+      "duration": "8:09",
+      "durationSec": 489,
+      "published": "9 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/wGlJ3Ponfd8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/wGlJ3Ponfd8/maxresdefault.jpg"
+    },
+    {
+      "id": "EuD_evoVu44",
+      "title": "Fortnite SIMPSONS Storyline EXPLAINED!",
+      "views": 43000,
+      "viewsText": "43K views",
+      "membersOnly": false,
+      "duration": "9:03",
+      "durationSec": 543,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/EuD_evoVu44/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/EuD_evoVu44/maxresdefault.jpg"
+    },
+    {
+      "id": "Npz1DQUacTg",
+      "title": "Fortnite CHAPTER 6 SEASON 4 Storyline EXPLAINED!",
+      "views": 53000,
+      "viewsText": "53K views",
+      "membersOnly": false,
+      "duration": "19:40",
+      "durationSec": 1180,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/Npz1DQUacTg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Npz1DQUacTg/maxresdefault.jpg"
+    },
+    {
+      "id": "3lDYgaun7Ws",
+      "title": "The ENDGAME Event Of Fortnite's Storyline...",
+      "views": 74000,
+      "viewsText": "74K views",
+      "membersOnly": false,
+      "duration": "8:29",
+      "durationSec": 509,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/3lDYgaun7Ws/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/3lDYgaun7Ws/maxresdefault.jpg"
+    },
+    {
+      "id": "Ngp6ibnkj-4",
+      "title": "Fortnite OG SEASON 5 Storyline & The RED CUBE EXPLAINED!",
+      "views": 29000,
+      "viewsText": "29K views",
+      "membersOnly": false,
+      "duration": "8:48",
+      "durationSec": 528,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/Ngp6ibnkj-4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Ngp6ibnkj-4/maxresdefault.jpg"
+    },
+    {
+      "id": "szRgRcEd-T4",
+      "title": "The Possible Identity Of THE DARK PRESENCE! (Fortnite Theory)",
+      "views": 62000,
+      "viewsText": "62K views",
+      "membersOnly": false,
+      "duration": "27:30",
+      "durationSec": 1650,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/szRgRcEd-T4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/szRgRcEd-T4/maxresdefault.jpg"
+    },
+    {
+      "id": "O5wtW-lKbjc",
+      "title": "Fortnite SUPER SHOWDOWN Live Event BREAKDOWN!",
+      "views": 25000,
+      "viewsText": "25K views",
+      "membersOnly": false,
+      "duration": "8:37",
+      "durationSec": 517,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/O5wtW-lKbjc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/O5wtW-lKbjc/maxresdefault.jpg"
+    },
+    {
+      "id": "JoS0aWTUd04",
+      "title": "Fortnite OG SEASON 4 Storyline & The RED RIFT EXPLAINED!",
+      "views": 81000,
+      "viewsText": "81K views",
+      "membersOnly": false,
+      "duration": "10:25",
+      "durationSec": 625,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/JoS0aWTUd04/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/JoS0aWTUd04/maxresdefault.jpg"
+    },
+    {
+      "id": "aSKkUEaLFKc",
+      "title": "Fortnite CHAPTER 6 SEASON 3 Storyline EXPLAINED!",
+      "views": 166000,
+      "viewsText": "166K views",
+      "membersOnly": false,
+      "duration": "23:46",
+      "durationSec": 1426,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/aSKkUEaLFKc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/aSKkUEaLFKc/maxresdefault.jpg"
+    },
+    {
+      "id": "AKrjJiPDHdA",
+      "title": "How Did The LOOP BUBBLE Return & Is There A FLIPSIDE?! (Fortnite Storyline)",
+      "views": 37000,
+      "viewsText": "37K views",
+      "membersOnly": false,
+      "duration": "5:40",
+      "durationSec": 340,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/AKrjJiPDHdA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/AKrjJiPDHdA/maxresdefault.jpg"
+    },
+    {
+      "id": "RY19vlmvfP0",
+      "title": "Fortnite GALACTIC BATTLE Storyline EXPLAINED!",
+      "views": 19000,
+      "viewsText": "19K views",
+      "membersOnly": false,
+      "duration": "10:28",
+      "durationSec": 628,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/RY19vlmvfP0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/RY19vlmvfP0/maxresdefault.jpg"
+    },
+    {
+      "id": "u9h94dO-Epo",
+      "title": "Who Is EMPEROR PALPATINE? & Palpatine's Storyline In Fortnite EXPLAINED!",
+      "views": 19000,
+      "viewsText": "19K views",
+      "membersOnly": false,
+      "duration": "17:00",
+      "durationSec": 1020,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/u9h94dO-Epo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/u9h94dO-Epo/maxresdefault.jpg"
+    },
+    {
+      "id": "JMBuo5qTWxQ",
+      "title": "Fortnite DAIGO'S FATE Cinematic BREAKDOWN & The Arrival Of THE DEATH STAR!",
+      "views": 97000,
+      "viewsText": "97K views",
+      "membersOnly": false,
+      "duration": "10:31",
+      "durationSec": 631,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/JMBuo5qTWxQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/JMBuo5qTWxQ/maxresdefault.jpg"
+    },
+    {
+      "id": "ycyAp6y2SJw",
+      "title": "Fortnite CHAPTER 6 SEASON 2 Storyline EXPLAINED & Fletcher Kane's Plan REVEALED!",
+      "views": 176000,
+      "viewsText": "176K views",
+      "membersOnly": false,
+      "duration": "21:35",
+      "durationSec": 1295,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/ycyAp6y2SJw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ycyAp6y2SJw/maxresdefault.jpg"
+    },
+    {
+      "id": "2owvpV1ea_4",
+      "title": "Fortnite Daigo Event BREAKDOWN & Chapter 6 STORYLINE RECAP!",
+      "views": 53000,
+      "viewsText": "53K views",
+      "membersOnly": false,
+      "duration": "12:01",
+      "durationSec": 721,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/2owvpV1ea_4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/2owvpV1ea_4/maxresdefault.jpg"
+    },
+    {
+      "id": "iXezR1_c32E",
+      "title": "Who Are THE FOX CLAN? (Fortnite Storyline)",
+      "views": 187000,
+      "viewsText": "187K views",
+      "membersOnly": false,
+      "duration": "14:06",
+      "durationSec": 846,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/iXezR1_c32E/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/iXezR1_c32E/maxresdefault.jpg"
+    },
+    {
+      "id": "JDT7v4LZ5jM",
+      "title": "Fortnite CHAPTER 6 Storyline EXPLAINED & The Mystery Of The ZERO SHARD!",
+      "views": 373000,
+      "viewsText": "373K views",
+      "membersOnly": false,
+      "duration": "23:54",
+      "durationSec": 1434,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/JDT7v4LZ5jM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/JDT7v4LZ5jM/maxresdefault.jpg"
+    },
+    {
+      "id": "Rf2wrMd_uco",
+      "title": "Fortnite CHAPTER 2 REMIX Storyline Explained & The Return Of DOCTOR SLONE!",
+      "views": 221000,
+      "viewsText": "221K views",
+      "membersOnly": false,
+      "duration": "17:34",
+      "durationSec": 1054,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/Rf2wrMd_uco/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Rf2wrMd_uco/maxresdefault.jpg"
+    },
+    {
+      "id": "SpEtWP88hVY",
+      "title": "Fortnite CHAPTER 5 SEASON 4 Storyline EXPLAINED!",
+      "views": 68000,
+      "viewsText": "68K views",
+      "membersOnly": false,
+      "duration": "38:17",
+      "durationSec": 2297,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/SpEtWP88hVY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/SpEtWP88hVY/maxresdefault.jpg"
+    },
+    {
+      "id": "lq2HNeYyqyg",
+      "title": "Fortnite DOOM VS. HOPE Event BREAKDOWN!",
+      "views": 28000,
+      "viewsText": "28K views",
+      "membersOnly": false,
+      "duration": "8:54",
+      "durationSec": 534,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/lq2HNeYyqyg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/lq2HNeYyqyg/maxresdefault.jpg"
+    },
+    {
+      "id": "PApZj7Hz4jU",
+      "title": "Who Is DOCTOR DOOM? & Doom's Storyline In Fortnite EXPLAINED!",
+      "views": 112000,
+      "viewsText": "112K views",
+      "membersOnly": false,
+      "duration": "25:04",
+      "durationSec": 1504,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/PApZj7Hz4jU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/PApZj7Hz4jU/maxresdefault.jpg"
+    },
+    {
+      "id": "fXmsnoE0Vj4",
+      "title": "Fortnite The Wanderer's Identity REVEALED & Doctor Doom's RETURN!",
+      "views": 46000,
+      "viewsText": "46K views",
+      "membersOnly": false,
+      "duration": "12:15",
+      "durationSec": 735,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/fXmsnoE0Vj4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/fXmsnoE0Vj4/maxresdefault.jpg"
+    },
+    {
+      "id": "EaZCYdgDMK0",
+      "title": "Fortnite Who Is THE WANDERER & What Is His PLAN?!",
+      "views": 95000,
+      "viewsText": "95K views",
+      "membersOnly": false,
+      "duration": "10:39",
+      "durationSec": 639,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/EaZCYdgDMK0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/EaZCYdgDMK0/maxresdefault.jpg"
+    },
+    {
+      "id": "wT4VqndNZ7I",
+      "title": "Fortnite CHAPTER 5 SEASON 3 Storyline EXPLAINED & The Arrival Of THE WANDERER!",
+      "views": 688000,
+      "viewsText": "688K views",
+      "membersOnly": false,
+      "duration": "26:16",
+      "durationSec": 1576,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/wT4VqndNZ7I/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/wT4VqndNZ7I/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "Rezztro explains the Fortnite storyline: each season's story, live events, cinematics and characters. The thumbnails look like official Fortnite key art: an ensemble of characters lit in neon, and the season name in huge 3D letters with 'STORYLINE EXPLAINED' in small spaced capitals underneath.",
+    "niche": "Fortnite lore and storyline explanations",
+    "styleTraits": [
+      {
+        "title": "Season key art",
+        "detail": "The thumbnails are built like a season poster: several characters arranged around a central figure, rim-lit in pink, blue or gold, with energy effects. It looks close to Fortnite's own promotional art."
+      },
+      {
+        "title": "A big 3D title and a small label",
+        "detail": "The main word is a large 3D title in the season's colours ('SEASON 3' in red and gold, 'CHAPTER 6' in white and blue, 'REMIX' in chrome), with 'STORYLINE EXPLAINED' in small, widely spaced capitals underneath. It reads like a logo."
+      },
+      {
+        "title": "Lore breakdowns get a second template",
+        "detail": "Single-topic videos use 'LORE BREAKDOWN' or 'LORE EXPLAINED' in tall chrome and orange letters next to one character, usually darker and more mysterious."
+      },
+      {
+        "title": "Characters, not players",
+        "detail": "There are no player skins in action and no faces of the creator. The cast of the story is the subject, which signals a story video rather than gameplay."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "wT4VqndNZ7I",
+        "why": "About 688,000 views, 13 times the median, but it is two years old. The 'SEASON 3' title in red and gold over a cloaked figure and two characters on each side. A complete season recap may be what players search for when a season starts or ends."
+      },
+      {
+        "id": "JDT7v4LZ5jM",
+        "why": "About 373,000 views, 7.0 times the median. A horned demon mask glows red above a team of characters, with 'CHAPTER 6' and 'STORYLINE EXPLAINED'. The start of a new chapter probably brought a wave of players wanting to catch up."
+      },
+      {
+        "id": "Rf2wrMd_uco",
+        "why": "About 221,000 views, 4.2 times the median. A bright winged character in the centre, villains on the sides and 'REMIX' in chrome letters. Familiar returning characters under a known event name may have helped."
+      }
+    ],
+    "lessons": [
+      "If you explain a story, make the thumbnail look like the story's poster: the cast, not the gameplay.",
+      "Turn the season or chapter name into a logo-like title; it is what viewers search for.",
+      "Keep a second, simpler template for single-topic videos so the two formats do not compete.",
+      "Main chapter and season recaps did best here (Chapter 5 and 6 recaps reached 3 to 13 times the median), while recaps of side modes such as OG Season 6 or Galactic Battle sat at 0.2 to 0.4 times."
+    ],
+    "experiment": "For your next recap, test a poster-style thumbnail (several characters, a big title, a small label) against a single-character close-up with a question.",
+    "faq": [
+      {
+        "q": "How many subscribers does Rezztro have?",
+        "a": "As of 26 October 2026, Rezztro has about 80K subscribers and 190 videos. The latest 30 long uploads, published over about two years, have a median of about 53,000 views. The biggest in that sample is the Chapter 5 Season 3 storyline explanation, with about 688,000 views."
+      },
+      {
+        "q": "What does Rezztro make videos about?",
+        "a": "The Fortnite storyline: season and chapter recaps, live event breakdowns, cinematic explanations, character backstories and theories. The latest, published in October 2026, explains the whole Chapter 7 story and runs about 79 minutes."
+      },
+      {
+        "q": "What do Rezztro's thumbnails look like?",
+        "a": "Like Fortnite season posters: a group of story characters lit in neon colours, with the season or chapter name in big 3D letters and 'STORYLINE EXPLAINED' in small capitals underneath. Single-topic videos use 'LORE BREAKDOWN' in chrome and orange next to one character."
+      }
+    ],
+    "reviewedAt": "2026-10-26"
+  }
+}

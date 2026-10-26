@@ -11,7 +11,7 @@
 # prompt. No trademark block: "podcast" is a generic topic.
 
 slug: podcast
-status: draft
+status: published
 category: genre
 name: Podcast
 updated: 2026-10-22
@@ -135,12 +135,11 @@ gallery:
       16:9 YouTube thumbnail, comedy video podcast. Extreme close-up of a synthetic co-host crying with laughter, eyes squeezed shut, a friend's shoulder at the frame edge. Pink and purple neon glow. Small text "WORST DATE" in yellow along the bottom-left edge. Bottom-right corner clear. original characters, no logos, no real people
     layout: Host and guest
   - file: 05-pull-quote.webp
-    alt: "Podcast pull quote thumbnail: a serious woman in her fifties dead centre in black and white, text I QUIT above her"
+    alt: "Podcast pull quote thumbnail: a serious woman in her fifties dead centre in black and white, big yellow quote marks, text I QUIT above her"
     caption: "Pull quote: two words and a steady stare"
     prompt: >
       16:9 YouTube thumbnail, podcast pull quote. A synthetic woman in her fifties with short grey hair, dead centre, cut at the shoulders, staring at the camera. Black and white on plain black, big yellow quote marks. Huge text "I QUIT" in white above her head. Bottom-right corner clear. original characters, no logos, no real people
     layout: Pull quote
-    placeholder: true
   - file: 11-guest-spotlight.webp
     alt: "Podcast guest spotlight thumbnail: extreme close-up of a smiling retired teacher with glasses on a chain, small label RETIRED TEACHER"
     caption: "Guest spotlight: warm face, soft colour, up close"
@@ -154,19 +153,17 @@ gallery:
       16:9 YouTube thumbnail, numbered podcast episode. Extreme close-up of a synthetic woman with big curly hair laughing, face filling the frame, flat show blue edges and a thin white frame. Small label "EP 48" in the top-left corner. Bottom-right corner clear. original characters, no logos, no real people
     layout: Numbered episode
   - file: 16-numbered-episode.webp
-    alt: "Podcast episode thumbnail: top-down view of two co-hosts in headphones lying head to head on a mustard floor, text SEASON 3"
+    alt: "Podcast episode thumbnail: top-down view of two smiling co-hosts in headphones lying head to head on a yellow floor among mics, text SEASON 3"
     caption: "Numbered episode: a new season, seen from above"
     prompt: >
       16:9 YouTube thumbnail, podcast season premiere. Top-down view of two synthetic co-hosts in headphones lying head to head on a mustard yellow floor, grinning, mics around them. Flat bright light. Text "SEASON 3" in huge black capitals at top left. Bottom-right corner clear. original characters, no logos, no real people
     layout: Numbered episode
-    placeholder: true
   - file: 19-clip-moment.webp
-    alt: "Podcast clip thumbnail: tilted low angle of a smirking guest pointing at the camera across the table, red CLIP tag, text CALLED OUT in a bubble"
-    caption: "Clip moment: the point across the table, on a tilt"
+    alt: "Podcast clip thumbnail: a smirking woman at a microphone pointing at the camera against a dark green wall, red CLIP tag, text CALLED OUT in a bubble"
+    caption: "Clip moment: the point straight at the camera"
     prompt: >
       16:9 YouTube thumbnail, podcast clip. Tilted low angle from table level: a synthetic woman guest smirking and pointing at the camera, a mic in front of her. Deep green studio. Red tag "CLIP" and "CALLED OUT" in a white speech bubble. Bottom-right corner clear. original characters, no logos, no real people
     layout: Clip moment
-    placeholder: true
 dos:
   - Put the guest's face first; the show name can be small or absent.
   - Take the words from what was really said in the episode.

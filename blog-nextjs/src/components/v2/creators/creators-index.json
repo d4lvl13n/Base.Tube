@@ -11,6 +11,15 @@
       "subscribersText": "11K subscribers"
     },
     {
+      "slug": "cocajola",
+      "name": "Cocajola",
+      "game": "roblox",
+      "live": true,
+      "collectedAt": "2026-10-26",
+      "avatar": "https://yt3.googleusercontent.com/PgLCfXUIUgnRrP-UxfuvZ9b6uHzc2HLvyTnhCK2tWfuD8D9G-er3c_fw5DVR98Q1OO6eNBn6Yg=s900-c-k-c0x00ffffff-no-rj",
+      "subscribersText": "368K subscribers"
+    },
+    {
       "slug": "commonwealth-realm",
       "name": "Commonwealth Realm",
       "game": "zelda-ocarina-of-time",
@@ -29,6 +38,15 @@
       "subscribersText": "31.2K subscribers"
     },
     {
+      "slug": "eclipse-craft",
+      "name": "Eclipse Craft",
+      "game": "minecraft",
+      "live": true,
+      "collectedAt": "2026-10-26",
+      "avatar": "https://yt3.googleusercontent.com/TdF4Qsc0uR3gQU3XG84TU-28fMZT1BeR8ZOfyBKoSAOYjOZT7bpUmnXT1qNpJaHrMOBRrwMJxQ=s900-c-k-c0x00ffffff-no-rj",
+      "subscribersText": "27K subscribers"
+    },
+    {
       "slug": "elli0t",
       "name": "elli0t",
       "game": "gorilla-tag",
@@ -36,6 +54,24 @@
       "collectedAt": "2026-10-23",
       "avatar": "https://yt3.googleusercontent.com/Xb49V6dt6DPe_GEuUhxzN-_jWCFYV8XuDSXMDCTO5KS6hu_hfgyEf-RL8o7d8Q4AkEiKWwpuM_g=s900-c-k-c0x00ffffff-no-rj",
       "subscribersText": "176K subscribers"
+    },
+    {
+      "slug": "eonaegis",
+      "name": "EonAegis",
+      "game": "zelda-ocarina-of-time",
+      "live": true,
+      "collectedAt": "2026-10-26",
+      "avatar": "https://yt3.googleusercontent.com/xb5eKeHsLJSV8Yk0qSf82gaRwpRis_u0oV9wkDMxRkFQ95QLHLC2L9lXeEPtDihD76TVXEt3jeE=s900-c-k-c0x00ffffff-no-rj",
+      "subscribersText": "38.8K subscribers"
+    },
+    {
+      "slug": "evanf1997",
+      "name": "evanf1997",
+      "game": "call-of-duty",
+      "live": true,
+      "collectedAt": "2026-10-26",
+      "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_n8uqhJ4E8-YCJSobN2kOzzpf6zrZrkjMCt9HSBHXPyB5Y=s900-c-k-c0x00ffffff-no-rj",
+      "subscribersText": "368K subscribers"
     },
     {
       "slug": "falco",
@@ -74,6 +110,24 @@
       "subscribersText": "11.1K subscribers"
     },
     {
+      "slug": "gator-keys",
+      "name": "Gator Keys",
+      "game": "gta-6",
+      "live": true,
+      "collectedAt": "2026-10-26",
+      "avatar": "https://yt3.googleusercontent.com/yu_zEGhXnPa4Ze4czIQCrevVqB_HFTEysCM2wqdexd8aMYc_WX3Mj7wDHDNpr2KBH56iFbDgNw=s900-c-k-c0x00ffffff-no-rj",
+      "subscribersText": "149K subscribers"
+    },
+    {
+      "slug": "h4kpy",
+      "name": "h4kpy",
+      "game": "gorilla-tag",
+      "live": true,
+      "collectedAt": "2026-10-26",
+      "avatar": "https://yt3.googleusercontent.com/D05C_0-YJ78zIHT6Au7NQL6utKzXKGKTOIfK47T8oXEWlbSn_tQr6_KGrs68P8Q8nf9KIQY7oCo=s900-c-k-c0x00ffffff-no-rj",
+      "subscribersText": "340K subscribers"
+    },
+    {
       "slug": "halvetone",
       "name": "halvetone",
       "game": "minecraft",
@@ -90,6 +144,15 @@
       "collectedAt": "2026-10-23",
       "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_k1-xdk0JwE4E9XSXIfRXMQnKIUfK_sKaoBr-HYK7_vHbY=s900-c-k-c0x00ffffff-no-rj",
       "subscribersText": "711K subscribers"
+    },
+    {
+      "slug": "inktv",
+      "name": "InkTV",
+      "game": "gta-6",
+      "live": true,
+      "collectedAt": "2026-10-26",
+      "avatar": "https://yt3.googleusercontent.com/l9eBNDWJxDc9fhPnfNBU7fhhq-_XbX9F31emG7-mPbRuRF04iotqh2gSiQfYnyOMefbxhC6Qlfo=s900-c-k-c0x00ffffff-no-rj",
+      "subscribersText": "108K subscribers"
     },
     {
       "slug": "kit-and-krysta",
@@ -128,6 +191,24 @@
       "subscribersText": "456K subscribers"
     },
     {
+      "slug": "mr-a-game",
+      "name": "Mr A-Game",
+      "game": "zelda-ocarina-of-time",
+      "live": true,
+      "collectedAt": "2026-10-26",
+      "avatar": "https://yt3.googleusercontent.com/8OOlxmi-1GpIpxBjSgQnIBlu2KDsDiHnjRPmcsMSRw0HnIW29bErkVL_JaFftE_LZC0nr3ldPw=s900-c-k-c0x00ffffff-no-rj",
+      "subscribersText": "370K subscribers"
+    },
+    {
+      "slug": "nahv",
+      "name": "nahv",
+      "game": "call-of-duty",
+      "live": true,
+      "collectedAt": "2026-10-26",
+      "avatar": "https://yt3.googleusercontent.com/9l-Y6nzNVj925TJN6w8-LjZhbx80kBzyJN0s5kBNtpeI_-UzTzqhIb9_8l5klKKCctUh1kp0pQ=s900-c-k-c0x00ffffff-no-rj",
+      "subscribersText": "279K subscribers"
+    },
+    {
       "slug": "otter-on-roblox",
       "name": "OTTER ON ROBLOX",
       "game": "roblox",
@@ -153,6 +234,24 @@
       "collectedAt": "2026-10-23",
       "avatar": "https://yt3.googleusercontent.com/GyopqpGBtkm0h03wCAYN3CUxSt7lSo3mS3si7exvg54f36iIPONFKz9gaeZtyooV-IWUIwFDF9U=s900-c-k-c0x00ffffff-no-rj",
       "subscribersText": "420K subscribers"
+    },
+    {
+      "slug": "rezztro",
+      "name": "Rezztro",
+      "game": "fortnite",
+      "live": true,
+      "collectedAt": "2026-10-26",
+      "avatar": "https://yt3.googleusercontent.com/RJ0pK7BEOe0nYv_7OOCtQUDXdZGGnK8m-GMGvIyRNlj0Oiaha9MvMyMWBLF2JFQSrv2FdLHRBaA=s900-c-k-c0x00ffffff-no-rj",
+      "subscribersText": "80K subscribers"
+    },
+    {
+      "slug": "riivv3r",
+      "name": "Riivv3r",
+      "game": "roblox",
+      "live": true,
+      "collectedAt": "2026-10-26",
+      "avatar": "https://yt3.googleusercontent.com/BEigmAoAsyLNOEvJAOLOPk8N-TNm2UQwtPFPNGQ3yWWew8ihJUQAL_xCwIXsX6yqcr67R4ZAuck=s900-c-k-c0x00ffffff-no-rj",
+      "subscribersText": "148K subscribers"
     },
     {
       "slug": "setty",
@@ -189,6 +288,15 @@
       "collectedAt": "2026-10-23",
       "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_mOpYGnKsrZHejqm_l3AfW_xjkCZ2Apvh2bgRSaHGUQJy0=s900-c-k-c0x00ffffff-no-rj",
       "subscribersText": "146K subscribers"
+    },
+    {
+      "slug": "tooelite",
+      "name": "TooElite",
+      "game": "gorilla-tag",
+      "live": true,
+      "collectedAt": "2026-10-26",
+      "avatar": "https://yt3.googleusercontent.com/I_gI_cjZG6X1ksRWUBq5WJJOaAuD0pZml-Wx6WktlUw77nVbBeptJAz2MZDDLcGK3_y3W8u01A=s900-c-k-c0x00ffffff-no-rj",
+      "subscribersText": "226K subscribers"
     },
     {
       "slug": "tootsie",

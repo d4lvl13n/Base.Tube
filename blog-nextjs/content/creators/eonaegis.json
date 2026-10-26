@@ -1,0 +1,465 @@
+{
+  "slug": "eonaegis",
+  "status": "published",
+  "channelId": "UCdsA5BF8VVHtksOkR_8v6Sw",
+  "name": "EonAegis",
+  "handle": "EonAegis",
+  "url": "https://www.youtube.com/channel/UCdsA5BF8VVHtksOkR_8v6Sw",
+  "avatar": "https://yt3.googleusercontent.com/xb5eKeHsLJSV8Yk0qSf82gaRwpRis_u0oV9wkDMxRkFQ95QLHLC2L9lXeEPtDihD76TVXEt3jeE=s900-c-k-c0x00ffffff-no-rj",
+  "game": "zelda-ocarina-of-time",
+  "spotlight": null,
+  "moonshotVideoId": null,
+  "subscribers": 38800,
+  "subscribersText": "38.8K subscribers",
+  "videoCount": 363,
+  "description": "Challenge Runs except They're Just Excuses for me to Crack (Bad) Jokes!",
+  "collectedAt": "2026-10-26",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 40000,
+    "outliers": [
+      {
+        "id": "4CB0BxzT4is",
+        "multiple": 27.5
+      },
+      {
+        "id": "fOmajqI-kmg",
+        "multiple": 10.4
+      },
+      {
+        "id": "epi_lNH8bto",
+        "multiple": 5.2
+      },
+      {
+        "id": "v-XUxZVYodI",
+        "multiple": 5.2
+      },
+      {
+        "id": "ru_5D_iwYDU",
+        "multiple": 5
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "nasEBMClqwU",
+      "title": "Can You Beat Majora's Mask In Reverse Dungeon Order?",
+      "views": 89000,
+      "viewsText": "89K views",
+      "membersOnly": false,
+      "duration": "40:27",
+      "durationSec": 2427,
+      "published": "2 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/nasEBMClqwU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/nasEBMClqwU/maxresdefault.jpg"
+    },
+    {
+      "id": "5BwCP7ua7sY",
+      "title": "Can You Beat Majora's Mask With NO Rupees",
+      "views": 74000,
+      "viewsText": "74K views",
+      "membersOnly": false,
+      "duration": "30:44",
+      "durationSec": 1844,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/5BwCP7ua7sY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/5BwCP7ua7sY/maxresdefault.jpg"
+    },
+    {
+      "id": "epi_lNH8bto",
+      "title": "Can You Beat Ocarina of Time In 72 Hours Like Majora's Mask?",
+      "views": 206000,
+      "viewsText": "206K views",
+      "membersOnly": false,
+      "duration": "41:50",
+      "durationSec": 2510,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/epi_lNH8bto/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/epi_lNH8bto/maxresdefault.jpg"
+    },
+    {
+      "id": "fOmajqI-kmg",
+      "title": "Can You Beat Ocarina of Time In Reverse Dungeon Order?",
+      "views": 414000,
+      "viewsText": "414K views",
+      "membersOnly": false,
+      "duration": "34:23",
+      "durationSec": 2063,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/fOmajqI-kmg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/fOmajqI-kmg/maxresdefault.jpg"
+    },
+    {
+      "id": "P4HTypbTsGM",
+      "title": "How The Remake Could Make Ocarina of Time EVEN BETTER",
+      "views": 4000,
+      "viewsText": "4K views",
+      "membersOnly": false,
+      "duration": "24:28",
+      "durationSec": 1468,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/P4HTypbTsGM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/P4HTypbTsGM/maxresdefault.jpg"
+    },
+    {
+      "id": "pTsRajQYhrc",
+      "title": "Can You Beat Ocarina of Time Without Getting Hit?",
+      "views": 93000,
+      "viewsText": "93K views",
+      "membersOnly": false,
+      "duration": "45:14",
+      "durationSec": 2714,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/pTsRajQYhrc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/pTsRajQYhrc/maxresdefault.jpg"
+    },
+    {
+      "id": "6tri55Kk-jw",
+      "title": "The Sonic Racing Game You Can't Complete - Sonic Racing CrossWorlds",
+      "views": 1000,
+      "viewsText": "1K views",
+      "membersOnly": false,
+      "duration": "32:08",
+      "durationSec": 1928,
+      "published": "9 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/6tri55Kk-jw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/6tri55Kk-jw/maxresdefault.jpg"
+    },
+    {
+      "id": "v_6Du231jO4",
+      "title": "The Unending Journey to Complete Every Sonic Racing Game (Before Crossworlds)",
+      "views": 1700,
+      "viewsText": "1.7K views",
+      "membersOnly": false,
+      "duration": "2:24:24",
+      "durationSec": 8664,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/v_6Du231jO4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/v_6Du231jO4/maxresdefault.jpg"
+    },
+    {
+      "id": "eP_nRT6Ylbw",
+      "title": "How Fast can You CUT GRASS in EVERY Zelda Game",
+      "views": 57000,
+      "viewsText": "57K views",
+      "membersOnly": false,
+      "duration": "18:07",
+      "durationSec": 1087,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/eP_nRT6Ylbw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/eP_nRT6Ylbw/maxresdefault.jpg"
+    },
+    {
+      "id": "MrKCjquy6oY",
+      "title": "Can You Beat Pokemon Firered/Leafgreen Without Catching Pokemon?",
+      "views": 22000,
+      "viewsText": "22K views",
+      "membersOnly": false,
+      "duration": "34:19",
+      "durationSec": 2059,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/MrKCjquy6oY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/MrKCjquy6oY/maxresdefault.jpg"
+    },
+    {
+      "id": "rXFHNs19JOs",
+      "title": "Can You Beat Ocarina of Time Without Swords?",
+      "views": 196000,
+      "viewsText": "196K views",
+      "membersOnly": false,
+      "duration": "39:35",
+      "durationSec": 2375,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/rXFHNs19JOs/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/rXFHNs19JOs/maxresdefault.jpg"
+    },
+    {
+      "id": "Uq6vgR5P06I",
+      "title": "Does the Zelda Timeline Really Matter?",
+      "views": 2500,
+      "viewsText": "2.5K views",
+      "membersOnly": false,
+      "duration": "12:50",
+      "durationSec": 770,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/Uq6vgR5P06I/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Uq6vgR5P06I/maxresdefault.jpg"
+    },
+    {
+      "id": "v-XUxZVYodI",
+      "title": "Can You Beat Ocarina of Time without Talking to a Woman?",
+      "views": 208000,
+      "viewsText": "208K views",
+      "membersOnly": false,
+      "duration": "24:08",
+      "durationSec": 1448,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/v-XUxZVYodI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/v-XUxZVYodI/maxresdefault.jpg"
+    },
+    {
+      "id": "VkrSPnLvy1U",
+      "title": "How Fast can You Smash a Pot in EVERY Zelda Game",
+      "views": 86000,
+      "viewsText": "86K views",
+      "membersOnly": false,
+      "duration": "19:41",
+      "durationSec": 1181,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/VkrSPnLvy1U/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/VkrSPnLvy1U/maxresdefault.jpg"
+    },
+    {
+      "id": "hWFux8rckow",
+      "title": "Can You Beat Ocarina of Time Without The Ocarina?",
+      "views": 78000,
+      "viewsText": "78K views",
+      "membersOnly": false,
+      "duration": "20:16",
+      "durationSec": 1216,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/hWFux8rckow/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/hWFux8rckow/maxresdefault.jpg"
+    },
+    {
+      "id": "4CB0BxzT4is",
+      "title": "Can You Beat Majora's Mask 3D In One 3 Day Cycle?",
+      "views": 1100000,
+      "viewsText": "1.1M views",
+      "membersOnly": false,
+      "duration": "25:18",
+      "durationSec": 1518,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/4CB0BxzT4is/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/4CB0BxzT4is/maxresdefault.jpg"
+    },
+    {
+      "id": "-Cr5wBC4ID8",
+      "title": "Can You Beat Majora's Mask in Only ONE Cycle?",
+      "views": 95000,
+      "viewsText": "95K views",
+      "membersOnly": false,
+      "duration": "17:53",
+      "durationSec": 1073,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/-Cr5wBC4ID8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/-Cr5wBC4ID8/maxresdefault.jpg"
+    },
+    {
+      "id": "ru_5D_iwYDU",
+      "title": "Can You Beat Ocarina of Time Without Collecting a Single Rupee",
+      "views": 201000,
+      "viewsText": "201K views",
+      "membersOnly": false,
+      "duration": "17:05",
+      "durationSec": 1025,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/ru_5D_iwYDU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ru_5D_iwYDU/maxresdefault.jpg"
+    },
+    {
+      "id": "38X1QlZvhC4",
+      "title": "The Problem with the Master Sword in Tears of the Kingdom",
+      "views": 38000,
+      "viewsText": "38K views",
+      "membersOnly": false,
+      "duration": "12:54",
+      "durationSec": 774,
+      "published": "1 year ago",
+      "thumbnail": "https://i.ytimg.com/vi/38X1QlZvhC4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/38X1QlZvhC4/maxresdefault.jpg"
+    },
+    {
+      "id": "FJlTQdyl9fw",
+      "title": "DUNGEONS ARE BACK! An Echoes of Wisdom Spoilerless Review",
+      "views": 1900,
+      "viewsText": "1.9K views",
+      "membersOnly": false,
+      "duration": "12:00",
+      "durationSec": 720,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/FJlTQdyl9fw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/FJlTQdyl9fw/maxresdefault.jpg"
+    },
+    {
+      "id": "YPdMz4rxPrA",
+      "title": "15 Facts about Zelda: Ocarina of Time You Might Not Already Know",
+      "views": 9500,
+      "viewsText": "9.5K views",
+      "membersOnly": false,
+      "duration": "8:37",
+      "durationSec": 517,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/YPdMz4rxPrA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/YPdMz4rxPrA/maxresdefault.jpg"
+    },
+    {
+      "id": "uuE-D0862B8",
+      "title": "The New Zelda Timeline Sucks, Actually",
+      "views": 4600,
+      "viewsText": "4.6K views",
+      "membersOnly": false,
+      "duration": "7:38",
+      "durationSec": 458,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/uuE-D0862B8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/uuE-D0862B8/maxresdefault.jpg"
+    },
+    {
+      "id": "N7lU8caVteE",
+      "title": "How Many Times do you NEED to Touch Hyrule Field to Beat Ocarina of Time",
+      "views": 18000,
+      "viewsText": "18K views",
+      "membersOnly": false,
+      "duration": "12:02",
+      "durationSec": 722,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/N7lU8caVteE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/N7lU8caVteE/maxresdefault.jpg"
+    },
+    {
+      "id": "DRw1gVu7ZRg",
+      "title": "Ranking EVERY Zelda Title Screen",
+      "views": 4500,
+      "viewsText": "4.5K views",
+      "membersOnly": false,
+      "duration": "24:54",
+      "durationSec": 1494,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/DRw1gVu7ZRg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/DRw1gVu7ZRg/maxresdefault.jpg"
+    },
+    {
+      "id": "OHZV8Xmj1N4",
+      "title": "What Made Twilight Princess One of the BEST Zelda Games",
+      "views": 8500,
+      "viewsText": "8.5K views",
+      "membersOnly": false,
+      "duration": "13:11",
+      "durationSec": 791,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/OHZV8Xmj1N4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/OHZV8Xmj1N4/maxresdefault.jpg"
+    },
+    {
+      "id": "UrwcPw7VX54",
+      "title": "The Bizarre World of the 1980s Zelda Cartoon",
+      "views": 5100,
+      "viewsText": "5.1K views",
+      "membersOnly": false,
+      "duration": "41:18",
+      "durationSec": 2478,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/UrwcPw7VX54/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/UrwcPw7VX54/maxresdefault.jpg"
+    },
+    {
+      "id": "E5S4PZT0Ygg",
+      "title": "Reviewing EVERY Zelda Game in 20 SECONDS or LESS",
+      "views": 8800,
+      "viewsText": "8.8K views",
+      "membersOnly": false,
+      "duration": "13:02",
+      "durationSec": 782,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/E5S4PZT0Ygg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/E5S4PZT0Ygg/maxresdefault.jpg"
+    },
+    {
+      "id": "l_dbFAWjhVc",
+      "title": "The Future of Zelda: What's Next, and When?",
+      "views": 5300,
+      "viewsText": "5.3K views",
+      "membersOnly": false,
+      "duration": "8:07",
+      "durationSec": 487,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/l_dbFAWjhVc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/l_dbFAWjhVc/maxresdefault.jpg"
+    },
+    {
+      "id": "vEcmkejuWwk",
+      "title": "Ultimate Tears of the Kingdom Item Duplication Guide (ALL VERSIONS)",
+      "views": 42000,
+      "viewsText": "42K views",
+      "membersOnly": false,
+      "duration": "24:51",
+      "durationSec": 1491,
+      "published": "2 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/vEcmkejuWwk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/vEcmkejuWwk/maxresdefault.jpg"
+    },
+    {
+      "id": "US-af2jfHhQ",
+      "title": "What Your Favorite Zelda Game Says About You (Scientifically Accurate)",
+      "views": 56000,
+      "viewsText": "56K views",
+      "membersOnly": false,
+      "duration": "8:02",
+      "durationSec": 482,
+      "published": "3 years ago",
+      "thumbnail": "https://i.ytimg.com/vi/US-af2jfHhQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/US-af2jfHhQ/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "EonAegis makes Zelda challenge runs, mostly Ocarina of Time and Majora's Mask played under one strange rule: no rupees, no swords, reverse dungeon order, one three-day cycle. The thumbnails are official-style Link artwork over a game screenshot, with the rule written in two or three huge white words at the top.",
+    "niche": "Zelda Ocarina of Time and Majora's Mask challenge runs",
+    "styleTraits": [
+      {
+        "title": "The rule is the headline",
+        "detail": "Each thumbnail states the challenge in two or three words in thick white capitals with a black outline, across the top: 'ONLY 3 DAYS', 'REVERSE ORDER', 'NO RUPEES', '72 HOURS', 'NO WOMEN'. No game name, no question."
+      },
+      {
+        "title": "Classic Link art",
+        "detail": "Link is drawn from the series' official artwork, cut out and large in the centre, often holding the object of the challenge: a rupee, the Ocarina, a mask. Fans of the N64 games know these images."
+      },
+      {
+        "title": "Symbols of the twist",
+        "detail": "Small additions show the rule: the moon from Majora's Mask in the background for time limits, a red 'no' sign over characters, Ganondorf facing Link for a boss twist."
+      },
+      {
+        "title": "A chibi avatar for the channel's own voice",
+        "detail": "Some thumbnails swap Link for the channel's chibi avatar with brown hair and odd-coloured eyes, often looking nervous. It appears more on essays and reviews, which mostly got far fewer views; the chibi 'NO RUPEES' thumbnail is the exception, at 5 times the median."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "4CB0BxzT4is",
+        "why": "About 1.1 million views, 27.5 times the median. Link holding a Majora's Mask item in front of the grinning moon, with 'ONLY 3 DAYS' at the top. Anyone who played Majora's Mask knows the three-day loop, so the rule is clear and sounds nearly impossible."
+      },
+      {
+        "id": "fOmajqI-kmg",
+        "why": "About 414,000 views, 10.3 times the median. Link playing the Ocarina in front of the Great Deku Tree and the Temple of Time, with 'REVERSE ORDER'. Two famous places at opposite ends of the game hint at the twist without explaining it."
+      },
+      {
+        "id": "epi_lNH8bto",
+        "why": "About 206,000 views, 5.2 times the median. Ganondorf faces Link with the Majora moon behind them and '72 HOURS' at the top. Mixing a rule from one game into another probably made Ocarina fans curious."
+      }
+    ],
+    "lessons": [
+      "Write the rule of your challenge in two or three words; that is the whole hook.",
+      "Use the iconic art your audience grew up with; it is recognised before the text is read.",
+      "Add one symbol that shows the twist (a moon for a time limit, a 'no' sign for a ban).",
+      "Know where your audience is: on this channel, Zelda challenge runs took about 2 to 27 times the median, while Sonic videos and Zelda essays mostly got 1,000 to 10,000 views.",
+      "A strong idea can be reused: 'REVERSE ORDER' worked on Ocarina of Time (10.3 times) and is now being applied to Majora's Mask."
+    ],
+    "experiment": "For your next challenge video, make a thumbnail with only the rule in two or three words over your main character, and test it against one that also names the game.",
+    "faq": [
+      {
+        "q": "How many subscribers does EonAegis have?",
+        "a": "As of 26 October 2026, EonAegis has about 38.8K subscribers and 363 videos. The latest 30 long uploads have a median of about 40,000 views. The biggest in that sample, 'Can You Beat Majora's Mask 3D In One 3 Day Cycle?', has about 1.1 million views, about 27 times the median."
+      },
+      {
+        "q": "What does EonAegis make videos about?",
+        "a": "Zelda challenge runs, mostly Ocarina of Time and Majora's Mask: beating the game without rupees, swords or the Ocarina, in reverse dungeon order or within a time limit. There are also Zelda essays and reviews, and a few Sonic racing and Pokemon videos."
+      },
+      {
+        "q": "What do EonAegis' thumbnails look like?",
+        "a": "Official-style Link artwork cut out over a game scene, with the challenge rule in two or three thick white words at the top, such as 'ONLY 3 DAYS' or 'NO RUPEES'. Some use the channel's chibi avatar instead of Link."
+      }
+    ],
+    "reviewedAt": "2026-10-26"
+  }
+}

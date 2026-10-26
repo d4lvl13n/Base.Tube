@@ -1,0 +1,465 @@
+{
+  "slug": "evanf1997",
+  "status": "published",
+  "channelId": "UCxx7Jc8K3YRtViasIX2M4jA",
+  "name": "evanf1997",
+  "handle": "evanf1997",
+  "url": "https://www.youtube.com/channel/UCxx7Jc8K3YRtViasIX2M4jA",
+  "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_n8uqhJ4E8-YCJSobN2kOzzpf6zrZrkjMCt9HSBHXPyB5Y=s900-c-k-c0x00ffffff-no-rj",
+  "game": "call-of-duty",
+  "spotlight": null,
+  "moonshotVideoId": null,
+  "subscribers": 368000,
+  "subscribersText": "368K subscribers",
+  "videoCount": 536,
+  "description": "Gaming, critiques, history, community, comedy, all of these still cannot out pizza the hut, but I can try!",
+  "collectedAt": "2026-10-26",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 156500,
+    "outliers": [
+      {
+        "id": "VBI3RNDGm_E",
+        "multiple": 7
+      },
+      {
+        "id": "7gjuQDd4lB8",
+        "multiple": 4.2
+      },
+      {
+        "id": "w_mzXBPteK0",
+        "multiple": 2.8
+      },
+      {
+        "id": "0o9ShJ5cbpY",
+        "multiple": 2.7
+      },
+      {
+        "id": "H1iz89hu_UA",
+        "multiple": 2.4
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "7Bk7hEHqz8w",
+      "title": "The 34 Hours That ENDED Black Ops 7 Zombies...",
+      "views": 187000,
+      "viewsText": "187K views",
+      "membersOnly": false,
+      "duration": "28:10",
+      "durationSec": 1690,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/7Bk7hEHqz8w/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/7Bk7hEHqz8w/maxresdefault.jpg"
+    },
+    {
+      "id": "owx5rp7ZnWo",
+      "title": "The DLC That Accidentally Killed Destiny... (Final Shape Retrospective)",
+      "views": 106000,
+      "viewsText": "106K views",
+      "membersOnly": false,
+      "duration": "39:54",
+      "durationSec": 2394,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/owx5rp7ZnWo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/owx5rp7ZnWo/maxresdefault.jpg"
+    },
+    {
+      "id": "tL9cLHGVzz4",
+      "title": "We Tried BLIND Solving Dead of the Night's Easter Egg!",
+      "views": 64000,
+      "viewsText": "64K views",
+      "membersOnly": false,
+      "duration": "1:18:56",
+      "durationSec": 4736,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/tL9cLHGVzz4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/tL9cLHGVzz4/maxresdefault.jpg"
+    },
+    {
+      "id": "se_R-DcIslE",
+      "title": "The Controversial End To Black Ops 7 Zombies...",
+      "views": 266000,
+      "viewsText": "266K views",
+      "membersOnly": false,
+      "duration": "39:56",
+      "durationSec": 2396,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/se_R-DcIslE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/se_R-DcIslE/maxresdefault.jpg"
+    },
+    {
+      "id": "Gn9Zvuxgvrc",
+      "title": "We Tried BLIND Solving The Voyage of Despair Easter Egg!",
+      "views": 46000,
+      "viewsText": "46K views",
+      "membersOnly": false,
+      "duration": "1:12:31",
+      "durationSec": 4351,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/Gn9Zvuxgvrc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Gn9Zvuxgvrc/maxresdefault.jpg"
+    },
+    {
+      "id": "PXTE5deYmDc",
+      "title": "Treyarch's Disturbing Black Ops 2 Prediction...",
+      "views": 99000,
+      "viewsText": "99K views",
+      "membersOnly": false,
+      "duration": "23:05",
+      "durationSec": 1385,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/PXTE5deYmDc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/PXTE5deYmDc/maxresdefault.jpg"
+    },
+    {
+      "id": "EJK1rZpMkcw",
+      "title": "The Story of the Kowakujo Cheating Controversy...",
+      "views": 297000,
+      "viewsText": "297K views",
+      "membersOnly": false,
+      "duration": "40:29",
+      "durationSec": 2429,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/EJK1rZpMkcw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/EJK1rZpMkcw/maxresdefault.jpg"
+    },
+    {
+      "id": "IfX0PVw8aIY",
+      "title": "The Sad Story Of Destiny's Cut Content...",
+      "views": 54000,
+      "viewsText": "54K views",
+      "membersOnly": false,
+      "duration": "17:57",
+      "durationSec": 1077,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/IfX0PVw8aIY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/IfX0PVw8aIY/maxresdefault.jpg"
+    },
+    {
+      "id": "dxZPln1Dc2k",
+      "title": "The Raid That Ended Destiny 2...",
+      "views": 160000,
+      "viewsText": "160K views",
+      "membersOnly": false,
+      "duration": "20:13",
+      "durationSec": 1213,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/dxZPln1Dc2k/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/dxZPln1Dc2k/maxresdefault.jpg"
+    },
+    {
+      "id": "JbI1xXFMpto",
+      "title": "The Zombies Map That Time Forgot...",
+      "views": 118000,
+      "viewsText": "118K views",
+      "membersOnly": false,
+      "duration": "27:44",
+      "durationSec": 1664,
+      "published": "4 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/JbI1xXFMpto/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/JbI1xXFMpto/maxresdefault.jpg"
+    },
+    {
+      "id": "BtA6u3Bs72c",
+      "title": "We Tried BLIND Solving The IX Easter Egg...",
+      "views": 173000,
+      "viewsText": "173K views",
+      "membersOnly": false,
+      "duration": "1:37:38",
+      "durationSec": 5858,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/BtA6u3Bs72c/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/BtA6u3Bs72c/maxresdefault.jpg"
+    },
+    {
+      "id": "CdZqQvkS62M",
+      "title": "The Zombies Map Ruined By Bugs...",
+      "views": 153000,
+      "viewsText": "153K views",
+      "membersOnly": false,
+      "duration": "31:21",
+      "durationSec": 1881,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/CdZqQvkS62M/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/CdZqQvkS62M/maxresdefault.jpg"
+    },
+    {
+      "id": "kGeUU4kWV7E",
+      "title": "The Zombies Map That Broke a 9-Year Curse...",
+      "views": 354000,
+      "viewsText": "354K views",
+      "membersOnly": false,
+      "duration": "31:46",
+      "durationSec": 1906,
+      "published": "5 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/kGeUU4kWV7E/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/kGeUU4kWV7E/maxresdefault.jpg"
+    },
+    {
+      "id": "ppVjAkx1N_c",
+      "title": "We Tried BLIND Solving The Gorod Korvi Easter Egg...",
+      "views": 87000,
+      "viewsText": "87K views",
+      "membersOnly": false,
+      "duration": "1:58:21",
+      "durationSec": 7101,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/ppVjAkx1N_c/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ppVjAkx1N_c/maxresdefault.jpg"
+    },
+    {
+      "id": "aRTVBpTW9mE",
+      "title": "Solving Zetsubou BLIND Was A Terrible Idea....",
+      "views": 116000,
+      "viewsText": "116K views",
+      "membersOnly": false,
+      "duration": "1:08:06",
+      "durationSec": 4086,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/aRTVBpTW9mE/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/aRTVBpTW9mE/maxresdefault.jpg"
+    },
+    {
+      "id": "DJPWR586hvk",
+      "title": "The Map That Punished The Entire Marathon Community...",
+      "views": 97000,
+      "viewsText": "97K views",
+      "membersOnly": false,
+      "duration": "37:23",
+      "durationSec": 2243,
+      "published": "6 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/DJPWR586hvk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/DJPWR586hvk/maxresdefault.jpg"
+    },
+    {
+      "id": "H1iz89hu_UA",
+      "title": "The Map That Fooled The Entire Zombies Community...",
+      "views": 375000,
+      "viewsText": "375K views",
+      "membersOnly": false,
+      "duration": "23:10",
+      "durationSec": 1390,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/H1iz89hu_UA/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/H1iz89hu_UA/maxresdefault.jpg"
+    },
+    {
+      "id": "DCVG8SSH8Fs",
+      "title": "Marathon SECRETS Every Player Should Know!",
+      "views": 4400,
+      "viewsText": "4.4K views",
+      "membersOnly": false,
+      "duration": "11:24",
+      "durationSec": 684,
+      "published": "7 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/DCVG8SSH8Fs/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/DCVG8SSH8Fs/maxresdefault.jpg"
+    },
+    {
+      "id": "htucRXOvjec",
+      "title": "The Tragedy Of Anthem Should Scare You...",
+      "views": 22000,
+      "viewsText": "22K views",
+      "membersOnly": false,
+      "duration": "31:55",
+      "durationSec": 1915,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/htucRXOvjec/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/htucRXOvjec/maxresdefault.jpg"
+    },
+    {
+      "id": "_c3IjrRLXCQ",
+      "title": "High On Life 2 Just Did The Impossible...",
+      "views": 4400,
+      "viewsText": "4.4K views",
+      "membersOnly": false,
+      "duration": "9:48",
+      "durationSec": 588,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/_c3IjrRLXCQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/_c3IjrRLXCQ/maxresdefault.jpg"
+    },
+    {
+      "id": "DqvoUF1_0mY",
+      "title": "Testing The Most CHAOTIC Game I've Played All Year!",
+      "views": 6600,
+      "viewsText": "6.6K views",
+      "membersOnly": false,
+      "duration": "10:15",
+      "durationSec": 615,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/DqvoUF1_0mY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/DqvoUF1_0mY/maxresdefault.jpg"
+    },
+    {
+      "id": "X4LAGl-1ZHw",
+      "title": "We Tried BLIND Solving The Hardest Zombies Easter Egg...",
+      "views": 137000,
+      "viewsText": "137K views",
+      "membersOnly": false,
+      "duration": "1:57:10",
+      "durationSec": 7030,
+      "published": "8 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/X4LAGl-1ZHw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/X4LAGl-1ZHw/maxresdefault.jpg"
+    },
+    {
+      "id": "7gjuQDd4lB8",
+      "title": "The Wildest 236 Hours In Zombies History...",
+      "views": 650000,
+      "viewsText": "650K views",
+      "membersOnly": false,
+      "duration": "38:38",
+      "durationSec": 2318,
+      "published": "9 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/7gjuQDd4lB8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/7gjuQDd4lB8/maxresdefault.jpg"
+    },
+    {
+      "id": "Kk3wb9nfPRI",
+      "title": "The Controversial Story of Black Ops 2 Zombies...",
+      "views": 356000,
+      "viewsText": "356K views",
+      "membersOnly": false,
+      "duration": "2:09:59",
+      "durationSec": 7799,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/Kk3wb9nfPRI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Kk3wb9nfPRI/maxresdefault.jpg"
+    },
+    {
+      "id": "d6-XxveRyTQ",
+      "title": "The Most Controversial Dungeon in Destiny History...",
+      "views": 337000,
+      "viewsText": "337K views",
+      "membersOnly": false,
+      "duration": "20:33",
+      "durationSec": 1233,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/d6-XxveRyTQ/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/d6-XxveRyTQ/maxresdefault.jpg"
+    },
+    {
+      "id": "w_mzXBPteK0",
+      "title": "The Zombies Map That Exposed Treyarch...",
+      "views": 440000,
+      "viewsText": "440K views",
+      "membersOnly": false,
+      "duration": "28:46",
+      "durationSec": 1726,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/w_mzXBPteK0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/w_mzXBPteK0/maxresdefault.jpg"
+    },
+    {
+      "id": "0o9ShJ5cbpY",
+      "title": "The Story of the Gorod Krovi Miracle....",
+      "views": 417000,
+      "viewsText": "417K views",
+      "membersOnly": false,
+      "duration": "28:15",
+      "durationSec": 1695,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/0o9ShJ5cbpY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/0o9ShJ5cbpY/maxresdefault.jpg"
+    },
+    {
+      "id": "U0VG-9AuXaU",
+      "title": "The Disaster of Zetsubo No Shima...",
+      "views": 199000,
+      "viewsText": "199K views",
+      "membersOnly": false,
+      "duration": "19:10",
+      "durationSec": 1150,
+      "published": "10 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/U0VG-9AuXaU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/U0VG-9AuXaU/maxresdefault.jpg"
+    },
+    {
+      "id": "VBI3RNDGm_E",
+      "title": "We've NEVER Seen Controversy Like This In Zombies...",
+      "views": 1100000,
+      "viewsText": "1.1M views",
+      "membersOnly": false,
+      "duration": "25:58",
+      "durationSec": 1558,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/VBI3RNDGm_E/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/VBI3RNDGm_E/maxresdefault.jpg"
+    },
+    {
+      "id": "aKzRlf62akw",
+      "title": "The Controversial Story of EVERY Black Ops 6 Map!",
+      "views": 257000,
+      "viewsText": "257K views",
+      "membersOnly": false,
+      "duration": "1:36:45",
+      "durationSec": 5805,
+      "published": "11 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/aKzRlf62akw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/aKzRlf62akw/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "evanf1997 makes long documentary-style videos about Call of Duty Zombies (Easter egg races, controversies, map histories), blind Easter egg attempts with friends, and some Destiny. The thumbnails are cinematic: one or more faces looking into the camera, a dark game scene behind, and two or three huge condensed words in white and red.",
+    "niche": "Call of Duty Zombies stories, Easter eggs and controversies",
+    "styleTraits": [
+      {
+        "title": "Faces of the people in the story",
+        "detail": "Many thumbnails show one to four faces in headsets, looking straight at the viewer, serious or tired. They are the players the video is about, which makes a story about a map feel like a story about people."
+      },
+      {
+        "title": "Tall, heavy headlines",
+        "detail": "Two or three words in very tall condensed capitals, white and red with a metallic edge: 'DISQUALIFIED', '236 HOUR EASTER EGG', 'TREYARCH EXPOSED', 'THE FINAL 34 HOURS'. The text fills almost half of the frame."
+      },
+      {
+        "title": "Dark scene, warm light",
+        "detail": "Backgrounds are dark Zombies scenes lit with red, orange or purple: a glowing diner sign, a burning skull, fire. The palette feels like a film poster rather than a gameplay screenshot."
+      },
+      {
+        "title": "Numbers as drama",
+        "detail": "Hours and timers appear often: '236 HOUR', '34 HOURS', a green '94:21:02' clock in the corner. Long durations suggest an ordeal worth hearing about."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "VBI3RNDGm_E",
+        "why": "About 1.1 million views, 7.0 times the median. One serious face in a headset in front of a lit diner at night, and one red word: 'DISQUALIFIED'. A single verdict word raises a question (who, and why?) that the title then hints at."
+      },
+      {
+        "id": "7gjuQDd4lB8",
+        "why": "About 650,000 views, 4.2 times the median. Two faces on the left, '236 HOUR' in red and 'EASTER EGG' in white on the right. The number is extreme and specific, which probably made the story feel unusual even to people outside the Zombies community."
+      },
+      {
+        "id": "w_mzXBPteK0",
+        "why": "About 440,000 views, 2.8 times the median. No face this time: a burning skull and 'TREYARCH EXPOSED' in white and red. Naming the studio and a strong verb may have pulled in players who follow the drama around the game."
+      }
+    ],
+    "lessons": [
+      "For story videos, show the people in the story looking at the camera; it promises a human angle.",
+      "One verdict word ('DISQUALIFIED', 'EXPOSED') can create more curiosity than a full sentence.",
+      "Use a precise, extreme number when you have one: '236 HOUR' is stronger than 'longest ever'.",
+      "Your audience may not follow you to other games: the four videos about other games in the sample (Marathon, Anthem, High on Life 2, Ascendant) got between about 4,400 and 22,000 views, against a median of about 156,500.",
+      "Keep the headline font and colours fixed; the channel is recognisable from the type alone."
+    ],
+    "experiment": "For your next story or recap video, try a thumbnail with one verdict word in huge letters next to one face, against a version with a longer headline. Use the same image in both.",
+    "faq": [
+      {
+        "q": "How many subscribers does evanf1997 have?",
+        "a": "As of 26 October 2026, evanf1997 has about 368K subscribers and 536 videos. The latest 30 long uploads have a median of about 156,500 views. The biggest in that sample is 'We've NEVER Seen Controversy Like This In Zombies...', with about 1.1 million views."
+      },
+      {
+        "q": "What does evanf1997 make videos about?",
+        "a": "Mostly Call of Duty Zombies: the history and controversies of maps, Easter egg races, cheating stories and long attempts to solve Easter eggs blind with friends. Some videos cover Destiny raids and dungeons, and a few try other new games."
+      },
+      {
+        "q": "What do evanf1997's thumbnails look like?",
+        "a": "Cinematic and dark: one or several faces in headsets looking at the viewer, a Zombies scene lit in red or orange, and two or three huge condensed words in white and red, such as 'DISQUALIFIED' or '236 HOUR EASTER EGG'."
+      }
+    ],
+    "reviewedAt": "2026-10-26"
+  }
+}

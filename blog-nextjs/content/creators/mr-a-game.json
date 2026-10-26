@@ -1,0 +1,464 @@
+{
+  "slug": "mr-a-game",
+  "status": "published",
+  "channelId": "UCzL1aupiX0hxdbR2UgEL34w",
+  "name": "Mr A-Game",
+  "handle": "MrAGame",
+  "url": "https://www.youtube.com/channel/UCzL1aupiX0hxdbR2UgEL34w",
+  "avatar": "https://yt3.googleusercontent.com/8OOlxmi-1GpIpxBjSgQnIBlu2KDsDiHnjRPmcsMSRw0HnIW29bErkVL_JaFftE_LZC0nr3ldPw=s900-c-k-c0x00ffffff-no-rj",
+  "game": "zelda-ocarina-of-time",
+  "spotlight": null,
+  "moonshotVideoId": null,
+  "subscribers": 370000,
+  "subscribersText": "370K subscribers",
+  "videoCount": 1800,
+  "description": "Chat, let's play Breath of the Wild.",
+  "collectedAt": "2026-10-26",
+  "source": "Public YouTube data (channel page and latest uploads), collected through TikHub. Counts are rounded by YouTube.",
+  "stats": {
+    "sample": 30,
+    "medianViews": 48500,
+    "outliers": [
+      {
+        "id": "bcgam3seN6o",
+        "multiple": 5.4
+      },
+      {
+        "id": "qYksGt-dFwc",
+        "multiple": 4.9
+      },
+      {
+        "id": "4MTIEdzBvSs",
+        "multiple": 2.3
+      },
+      {
+        "id": "--HOExHYRFY",
+        "multiple": 2.2
+      },
+      {
+        "id": "3rVBTgrn-Pk",
+        "multiple": 2.2
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "l5xqs1AIRlw",
+      "title": "CLEARING THE SKIES for Tears of the Kingdom 100%",
+      "views": 32000,
+      "viewsText": "32K views",
+      "membersOnly": false,
+      "duration": "27:12",
+      "durationSec": 1632,
+      "published": "1 day ago",
+      "thumbnail": "https://i.ytimg.com/vi/l5xqs1AIRlw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/l5xqs1AIRlw/maxresdefault.jpg"
+    },
+    {
+      "id": "Lrug5RpH6QI",
+      "title": "Our first MAJOR PROBLEM with the One Hit Obliterator run...",
+      "views": 64000,
+      "viewsText": "64K views",
+      "membersOnly": false,
+      "duration": "27:41",
+      "durationSec": 1661,
+      "published": "4 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/Lrug5RpH6QI/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/Lrug5RpH6QI/maxresdefault.jpg"
+    },
+    {
+      "id": "zAm4KvYjQo8",
+      "title": "Hyrule Warriors Age of Imprisonment: The Full Movie",
+      "views": 25000,
+      "viewsText": "25K views",
+      "membersOnly": false,
+      "duration": "7:25:07",
+      "durationSec": 26707,
+      "published": "8 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/zAm4KvYjQo8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/zAm4KvYjQo8/maxresdefault.jpg"
+    },
+    {
+      "id": "--HOExHYRFY",
+      "title": "What if we smacked Waterblight Ganon with the One Hit Obliterator?",
+      "views": 108000,
+      "viewsText": "108K views",
+      "membersOnly": false,
+      "duration": "28:29",
+      "durationSec": 1709,
+      "published": "11 days ago",
+      "thumbnail": "https://i.ytimg.com/vi/--HOExHYRFY/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/--HOExHYRFY/maxresdefault.jpg"
+    },
+    {
+      "id": "bcgam3seN6o",
+      "title": "What if we put the One Hit Obliterator in ALL of Breath of the Wild?",
+      "views": 263000,
+      "viewsText": "263K views",
+      "membersOnly": false,
+      "duration": "26:16",
+      "durationSec": 1576,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/bcgam3seN6o/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/bcgam3seN6o/maxresdefault.jpg"
+    },
+    {
+      "id": "iww0Mo1AVrw",
+      "title": "SCRATCHING THE SURFACE of Tears of the Kingdom 100%...",
+      "views": 50000,
+      "viewsText": "50K views",
+      "membersOnly": false,
+      "duration": "26:47",
+      "durationSec": 1607,
+      "published": "2 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/iww0Mo1AVrw/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/iww0Mo1AVrw/maxresdefault.jpg"
+    },
+    {
+      "id": "V-JzN8TSrWo",
+      "title": "BotW Randomizer's Final Boss is INSANITY",
+      "views": 56000,
+      "viewsText": "56K views",
+      "membersOnly": false,
+      "duration": "27:11",
+      "durationSec": 1631,
+      "published": "3 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/V-JzN8TSrWo/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/V-JzN8TSrWo/maxresdefault.jpg"
+    },
+    {
+      "id": "uMEaZ3xo544",
+      "title": "A Link Between Worlds: The Full Movie",
+      "views": 24000,
+      "viewsText": "24K views",
+      "membersOnly": false,
+      "duration": "5:12:40",
+      "durationSec": 18760,
+      "published": "4 weeks ago",
+      "thumbnail": "https://i.ytimg.com/vi/uMEaZ3xo544/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/uMEaZ3xo544/maxresdefault.jpg"
+    },
+    {
+      "id": "3rVBTgrn-Pk",
+      "title": "100% Tears of the Kingdom is no joke...",
+      "views": 109000,
+      "viewsText": "109K views",
+      "membersOnly": false,
+      "duration": "26:07",
+      "durationSec": 1567,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/3rVBTgrn-Pk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/3rVBTgrn-Pk/maxresdefault.jpg"
+    },
+    {
+      "id": "h2RzHj1r7zg",
+      "title": "MEGA TESTS OF STRENGTH in Breath of the Wild Randomizer",
+      "views": 79000,
+      "viewsText": "79K views",
+      "membersOnly": false,
+      "duration": "26:37",
+      "durationSec": 1597,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/h2RzHj1r7zg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/h2RzHj1r7zg/maxresdefault.jpg"
+    },
+    {
+      "id": "bFDib0TNeVU",
+      "title": "I OBLITERATED the Breath of the Wild Randomizer",
+      "views": 84000,
+      "viewsText": "84K views",
+      "membersOnly": false,
+      "duration": "27:41",
+      "durationSec": 1661,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/bFDib0TNeVU/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/bFDib0TNeVU/maxresdefault.jpg"
+    },
+    {
+      "id": "kCRWSkXLWr8",
+      "title": "Oh no... 100% Tears of the Kingdom is calling",
+      "views": 95000,
+      "viewsText": "95K views",
+      "membersOnly": false,
+      "duration": "22:22",
+      "durationSec": 1342,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/kCRWSkXLWr8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/kCRWSkXLWr8/maxresdefault.jpg"
+    },
+    {
+      "id": "4MTIEdzBvSs",
+      "title": "I UNDERESTIMATED the Breath of the Wild Randomizer...",
+      "views": 111000,
+      "viewsText": "111K views",
+      "membersOnly": false,
+      "duration": "27:29",
+      "durationSec": 1649,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/4MTIEdzBvSs/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/4MTIEdzBvSs/maxresdefault.jpg"
+    },
+    {
+      "id": "R_4PNX3S6T4",
+      "title": "Ocarina of Time Remake Looks INCREDIBLE [REACTION]",
+      "views": 60000,
+      "viewsText": "60K views",
+      "membersOnly": false,
+      "duration": "11:57",
+      "durationSec": 717,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/R_4PNX3S6T4/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/R_4PNX3S6T4/maxresdefault.jpg"
+    },
+    {
+      "id": "qYksGt-dFwc",
+      "title": "Here we go... Breath of the Wild Randomizer VERSION 4.0",
+      "views": 239000,
+      "viewsText": "239K views",
+      "membersOnly": false,
+      "duration": "25:23",
+      "durationSec": 1523,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/qYksGt-dFwc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/qYksGt-dFwc/maxresdefault.jpg"
+    },
+    {
+      "id": "ieW8-O5vdSk",
+      "title": "Super Mario Bros. Wonder: The Full Movie",
+      "views": 22000,
+      "viewsText": "22K views",
+      "membersOnly": false,
+      "duration": "6:19:06",
+      "durationSec": 22746,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/ieW8-O5vdSk/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/ieW8-O5vdSk/maxresdefault.jpg"
+    },
+    {
+      "id": "_9vWa4sXW5I",
+      "title": "BIRD WATCHING in Breath of the Wild",
+      "views": 48000,
+      "viewsText": "48K views",
+      "membersOnly": false,
+      "duration": "24:31",
+      "durationSec": 1471,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/_9vWa4sXW5I/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/_9vWa4sXW5I/maxresdefault.jpg"
+    },
+    {
+      "id": "jWgriiuw4p8",
+      "title": "Donkey Kong Bananza: The Full Movie",
+      "views": 33000,
+      "viewsText": "33K views",
+      "membersOnly": false,
+      "duration": "8:52:52",
+      "durationSec": 31972,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/jWgriiuw4p8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/jWgriiuw4p8/maxresdefault.jpg"
+    },
+    {
+      "id": "WuFoBXWbi1c",
+      "title": "Breath of the Wild Randomizer FOR CHARITY",
+      "views": 27000,
+      "viewsText": "27K views",
+      "membersOnly": false,
+      "duration": "2:33",
+      "durationSec": 153,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/WuFoBXWbi1c/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/WuFoBXWbi1c/maxresdefault.jpg"
+    },
+    {
+      "id": "8J8-44kQJL8",
+      "title": "This channel needs to change.",
+      "views": 49000,
+      "viewsText": "49K views",
+      "membersOnly": false,
+      "duration": "15:09",
+      "durationSec": 909,
+      "published": "1 month ago",
+      "thumbnail": "https://i.ytimg.com/vi/8J8-44kQJL8/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/8J8-44kQJL8/maxresdefault.jpg"
+    },
+    {
+      "id": "9uTtGuTa4yc",
+      "title": "The Breath of the Wild 3DS Demake is CRAZY",
+      "views": 55000,
+      "viewsText": "55K views",
+      "membersOnly": false,
+      "duration": "19:14",
+      "durationSec": 1154,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/9uTtGuTa4yc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/9uTtGuTa4yc/maxresdefault.jpg"
+    },
+    {
+      "id": "9u2D63GOH2I",
+      "title": "My Channel Has A Breath of the Wild Problem...",
+      "views": 61000,
+      "viewsText": "61K views",
+      "membersOnly": false,
+      "duration": "24:45",
+      "durationSec": 1485,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/9u2D63GOH2I/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/9u2D63GOH2I/maxresdefault.jpg"
+    },
+    {
+      "id": "jMQteuvTQSs",
+      "title": "Ranking EVERY MAINLINE MARIO from WORST TO BEST",
+      "views": 22000,
+      "viewsText": "22K views",
+      "membersOnly": false,
+      "duration": "25:22",
+      "durationSec": 1522,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/jMQteuvTQSs/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/jMQteuvTQSs/maxresdefault.jpg"
+    },
+    {
+      "id": "CTqTJGMuMn0",
+      "title": "Bottomless Buffet is INSANE [Splatoon Raiders]",
+      "views": 10000,
+      "viewsText": "10K views",
+      "membersOnly": false,
+      "duration": "18:39",
+      "durationSec": 1119,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/CTqTJGMuMn0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/CTqTJGMuMn0/maxresdefault.jpg"
+    },
+    {
+      "id": "i_ew2vC3VNg",
+      "title": "Splatoon Raiders but SUPER SPICY ONLY",
+      "views": 8600,
+      "viewsText": "8.6K views",
+      "membersOnly": false,
+      "duration": "18:01",
+      "durationSec": 1081,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/i_ew2vC3VNg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/i_ew2vC3VNg/maxresdefault.jpg"
+    },
+    {
+      "id": "D8qnM627xyg",
+      "title": "HELPING THE UNFORTUNATE in Splatoon Raiders",
+      "views": 13000,
+      "viewsText": "13K views",
+      "membersOnly": false,
+      "duration": "16:47",
+      "durationSec": 1007,
+      "published": "2 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/D8qnM627xyg/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/D8qnM627xyg/maxresdefault.jpg"
+    },
+    {
+      "id": "KdGgkrhv0_E",
+      "title": "Got some bad news...",
+      "views": 40000,
+      "viewsText": "40K views",
+      "membersOnly": false,
+      "duration": "6:26",
+      "durationSec": 386,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/KdGgkrhv0_E/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/KdGgkrhv0_E/maxresdefault.jpg"
+    },
+    {
+      "id": "q9pvggUkVS0",
+      "title": "BRO SAVES THE WORLD [Zelda: A Link Between Worlds FINAL BOSS]",
+      "views": 14000,
+      "viewsText": "14K views",
+      "membersOnly": false,
+      "duration": "35:33",
+      "durationSec": 2133,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/q9pvggUkVS0/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/q9pvggUkVS0/maxresdefault.jpg"
+    },
+    {
+      "id": "YZdq8ahlGtM",
+      "title": "BRO GETS THE TRIFORCE in Zelda: A Link Between Worlds [Turtle Rock]",
+      "views": 9100,
+      "viewsText": "9.1K views",
+      "membersOnly": false,
+      "duration": "22:36",
+      "durationSec": 1356,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/YZdq8ahlGtM/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/YZdq8ahlGtM/maxresdefault.jpg"
+    },
+    {
+      "id": "mvbQ5MUfbuc",
+      "title": "BRO BATTLES SAND in Zelda: A Link Between Worlds [Sand Palace]",
+      "views": 9700,
+      "viewsText": "9.7K views",
+      "membersOnly": false,
+      "duration": "22:27",
+      "durationSec": 1347,
+      "published": "3 months ago",
+      "thumbnail": "https://i.ytimg.com/vi/mvbQ5MUfbuc/hqdefault.jpg",
+      "thumbnailHd": "https://i.ytimg.com/vi/mvbQ5MUfbuc/maxresdefault.jpg"
+    }
+  ],
+  "analysis": {
+    "summary": "Mr A-Game makes Zelda let's plays and challenge series, mostly Breath of the Wild randomizers, a One Hit Obliterator run and a 100% Tears of the Kingdom playthrough, plus full-movie compilations of other Nintendo games. The thumbnails never show a face: a clean cut-out of Link with a white outline over a bright game scene, and at most one short caption.",
+    "niche": "Zelda Breath of the Wild randomizers, challenge runs and 100% playthroughs",
+    "styleTraits": [
+      {
+        "title": "Link as a sticker",
+        "detail": "Link is cut out from the game with a thick white outline, large and close to the camera, often looking worried or surprised. The outline separates him from the busy background and keeps him readable at small size."
+      },
+      {
+        "title": "Captions like game notifications",
+        "detail": "Randomizer videos use a small italic white caption with item icons, written like an in-game message: 'Lynels can now spawn everywhere', 'Hylian Shield was removed from your inventory'. It states the twist of the episode in plain words."
+      },
+      {
+        "title": "One big number for long series",
+        "detail": "The 100% Tears of the Kingdom series uses one huge white '100%' with a black outline next to Link, so every episode is recognised as part of the same run."
+      },
+      {
+        "title": "Bright Hyrule, few words",
+        "detail": "Backgrounds are the blue skies, green fields and lava reds of Breath of the Wild, kept bright. Many thumbnails have no text at all, like the glowing Link holding the One Hit Obliterator."
+      }
+    ],
+    "standouts": [
+      {
+        "id": "bcgam3seN6o",
+        "why": "About 263,000 views, 5.4 times the median. Link seen from behind on a cliff over Hyrule, wrapped in the blue glow of the One Hit Obliterator, with no text. Breath of the Wild players know that weapon, so the image alone may say 'every enemy dies in one hit'."
+      },
+      {
+        "id": "qYksGt-dFwc",
+        "why": "About 239,000 views, 4.9 times the median. Link in dark armour and a white helmet with a red plume, a caption 'Lynels can now spawn everywhere' and three item icons. The caption reads like a rule change from the game, which probably made the 'version 4.0' of the randomizer feel new."
+      },
+      {
+        "id": "4MTIEdzBvSs",
+        "why": "About 111,000 views, 2.3 times the median. A panicked Link over lava and the caption 'Hylian Shield was removed from your inventory'. The loss is specific and slightly funny, and Zelda fans know what losing that shield means."
+      }
+    ],
+    "lessons": [
+      "Cut out your main character with a thick white outline so it stays clear over a busy background.",
+      "Write a twist as a game notification: it feels like part of the game rather than an advert.",
+      "Give a long series one fixed mark, like Mr A-Game's '100%', so each episode is recognisable.",
+      "On this channel, Zelda challenge twists pulled the most; full-movie compilations sat around 0.5 to 0.7 times the median and Splatoon Raiders episodes around 0.2 to 0.3."
+    ],
+    "experiment": "For your next challenge video, test a thumbnail with a caption written like an in-game message ('Your shield was removed') against one with a classic all-caps headline.",
+    "faq": [
+      {
+        "q": "How many subscribers does Mr A-Game have?",
+        "a": "As of 26 October 2026, Mr A-Game has about 370K subscribers and about 1.8K videos. The latest 30 long uploads have a median of about 48,500 views. The biggest in that sample is 'What if we put the One Hit Obliterator in ALL of Breath of the Wild?', with about 263,000 views."
+      },
+      {
+        "q": "What does Mr A-Game make videos about?",
+        "a": "Mostly Zelda: Breath of the Wild randomizers, challenge runs like the One Hit Obliterator series, and a 100% playthrough of Tears of the Kingdom. He also posts full-movie compilations of Nintendo games and a few Mario and Splatoon videos."
+      },
+      {
+        "q": "What do Mr A-Game's thumbnails look like?",
+        "a": "Bright Hyrule scenes with Link cut out and outlined in white, close to the camera. Randomizer episodes add a small italic caption written like a game message; the 100% series shows a huge '100%'. There is no face cam and often no text at all."
+      }
+    ],
+    "reviewedAt": "2026-10-26"
+  }
+}

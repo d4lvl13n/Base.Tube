@@ -83,6 +83,26 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/tools/youtube-thumbnail-downloader`,
+      lastModified: new Date('2026-10-26'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/youtube-banner-size`,
+      lastModified: new Date('2026-10-26'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    // Comparisons (content/compare). Listed by hand: the sitemap is refreshed on the server, where
+    // the content/ folder is not available. Add each new file here.
+    ...['/compare/canva-youtube-thumbnail'].map((path) => ({
+      url: `${baseUrl}${path}`,
+      lastModified: new Date('2026-10-26'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
+    {
       url: `${baseUrl}/youtube-thumbnail-fonts`,
       lastModified: new Date('2026-10-22'),
       changeFrequency: 'monthly',
