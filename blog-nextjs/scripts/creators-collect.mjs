@@ -131,7 +131,7 @@ for (const ch of channels) {
 
   const data = {
     slug,
-    status: previous.status ?? 'draft',
+    status: previous.status ?? 'published',
     channelId: ch.channel_id,
     name: profile.title ?? list.channel?.name ?? ch.name,
     handle: profile.handle ?? null,

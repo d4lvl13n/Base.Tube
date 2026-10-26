@@ -87,4 +87,4 @@ Written by hand / agents (`analysis`, `null` until written):
 - Do not copy the channel's description text; summarise in your own words.
 - No disclaimers: no "not affiliated", "not legal advice", "belongs to its owner" or data-source
   boilerplate on the page.
-- `status`: `draft` (noindex, not in the sitemap) until the page is reviewed, then `published`.
+- `status`: `published` by default (new channels too). Use `draft` (noindex, not in the sitemap) only to hold a page back on purpose.

@@ -38,7 +38,7 @@
 slug: example-slug
 # "draft" = visible at its URL for review, but noindex and not in the sitemap.
 # "published" = indexed, but ONLY if every check passes (see README.md).
-status: draft
+status: published
 # game | style | genre   (decides the group on the /thumbnails hub)
 category: game
 # Short display name used in headings and buttons: "Roblox", "MrBeast-style", "Podcast".
