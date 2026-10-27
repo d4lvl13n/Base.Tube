@@ -22,6 +22,10 @@ const nextConfig: NextConfig = {
       { source: '/thumbnails/modern-warfare-4', destination: '/thumbnails/call-of-duty', permanent: true },
       // The creator pages live under /creators/youtube (room for other platforms later).
       { source: '/creators', destination: '/creators/youtube', permanent: true },
+      // Pages of the old static site that still get visits (links on Facebook and elsewhere).
+      { source: '/waiting.html', destination: '/ai-thumbnails', permanent: true },
+      { source: '/Blogpost/tik-tok-growth.html', destination: '/blog/youtube-vs-tiktok-vs-instagram-what-actually-paid', permanent: true },
+      { source: '/Blogpost/:path*', destination: '/blog', permanent: true },
     ];
   },
 };
