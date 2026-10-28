@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { PRICING_URL } from '@/components/ai-thumbnails/catalog';
+import { PRICING_URL, PRIVACY_URL, TERMS_URL } from '@/components/ai-thumbnails/catalog';
 import { LOGO_SRC } from '@/components/ai-thumbnails/content';
 import { CHANNEL_AUDIT_APP_URL, THUMBNAIL_REVIEW_URL } from './content';
 
@@ -69,12 +69,12 @@ export default function Footer() {
               <a href="#faq" className={footerLink}>
                 FAQ
               </a>
-              <Link href="/privacy-policy" className={footerLink}>
+              <a href={PRIVACY_URL} className={footerLink}>
                 Privacy Policy
-              </Link>
-              <Link href="/terms-and-conditions" className={footerLink}>
+              </a>
+              <a href={TERMS_URL} className={footerLink}>
                 Terms of Service
-              </Link>
+              </a>
             </div>
           </nav>
         </div>

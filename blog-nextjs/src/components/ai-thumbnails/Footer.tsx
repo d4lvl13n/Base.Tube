@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { AUDIT_URL, CREATOR_HUB_URL, PRICING_URL, REFUND_URL, STUDIO_URL } from './catalog';
+import { AUDIT_URL, CREATOR_HUB_URL, PRICING_URL, PRIVACY_URL, REFUND_URL, STUDIO_URL, TERMS_URL } from './catalog';
 import { LOGO_SRC } from './content';
 
 const footerLink = 'block text-sm text-zinc-400 transition-colors hover:text-white';
@@ -65,12 +65,12 @@ export default function Footer() {
               <a href="mailto:support@base.tube" className={footerLink}>
                 Help Center
               </a>
-              <Link href="/privacy-policy" className={footerLink}>
+              <a href={PRIVACY_URL} className={footerLink}>
                 Privacy Policy
-              </Link>
-              <Link href="/terms-and-conditions" className={footerLink}>
+              </a>
+              <a href={TERMS_URL} className={footerLink}>
                 Terms of Service
-              </Link>
+              </a>
               <a href={REFUND_URL} className={footerLink}>
                 Refund Policy
               </a>

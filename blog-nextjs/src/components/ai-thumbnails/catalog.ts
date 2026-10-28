@@ -65,6 +65,8 @@ export const SIGN_IN_URL = `${APP_ORIGIN}/ai-thumbnails/sign-in`;
 export const PRICING_URL = `${APP_ORIGIN}/ai-thumbnails/pricing`;
 export const STUDIO_URL = `${APP_ORIGIN}/ai-thumbnails/projects`;
 export const REFUND_URL = `${APP_ORIGIN}/refund`;
+export const PRIVACY_URL = `${APP_ORIGIN}/privacy`;
+export const TERMS_URL = `${APP_ORIGIN}/terms`;
 export const CREATOR_HUB_URL = `${APP_ORIGIN}/creator-hub`;
 
 /** The app's sign-up page, which goes on to checkout for this plan (with the free trial when `trial`). */
