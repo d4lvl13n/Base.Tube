@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { m } from 'framer-motion';
-import { PRODUCT_VIDEO_POSTER_SRC, PRODUCT_VIDEO_SRC } from './content';
+import { ENABLE_PRODUCT_VIDEO, PRODUCT_VIDEO_POSTER_SRC, PRODUCT_VIDEO_SRC } from './content';
 
 /**
  * The owner's product video under the hero. The section stays out of the page (zero height, then
@@ -13,7 +13,7 @@ export default function ProductVideo() {
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
   useEffect(() => setMounted(true), []);
-  if (!mounted || failed) return null;
+  if (!ENABLE_PRODUCT_VIDEO || !mounted || failed) return null;
 
   return (
     <section aria-label="AI Thumbnails in action" className={ready ? 'relative py-16 sm:py-24' : 'h-0 overflow-hidden'}>

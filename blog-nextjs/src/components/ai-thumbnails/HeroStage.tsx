@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { HERO_POSTER_SRC, HERO_VIDEO_SRC } from './content';
+import { ENABLE_HERO_VIDEO, HERO_POSTER_SRC, HERO_VIDEO_SRC } from './content';
 import { useReducedMotionSafe } from './motion';
 
 /**
@@ -31,7 +31,7 @@ export default function HeroStage({ children }: { children: React.ReactNode }) {
       aria-labelledby="landing-hero-title"
       className="relative isolate flex min-h-[100svh] items-center overflow-hidden pt-20"
     >
-      {mounted && !reduceMotion && !videoFailed && (
+      {ENABLE_HERO_VIDEO && mounted && !reduceMotion && !videoFailed && (
         <video
           aria-hidden="true"
           tabIndex={-1}

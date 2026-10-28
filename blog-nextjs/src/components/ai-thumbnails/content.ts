@@ -4,6 +4,11 @@
 
 const ASSETS = '/images/ai-thumbnails';
 
+// Enable only after the corresponding MP4 and poster are committed in public/.
+// The shipped collage and interactive demo already work without these optional videos.
+export const ENABLE_HERO_VIDEO = false;
+export const ENABLE_PRODUCT_VIDEO = false;
+
 /** The hero's background video and its still (dropped in by the owner; the page works without them). */
 export const HERO_VIDEO_SRC = `${ASSETS}/hero-background.mp4`;
 export const HERO_POSTER_SRC = `${ASSETS}/hero-poster.jpg`;
