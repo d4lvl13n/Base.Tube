@@ -19,6 +19,8 @@ export default function StudioCta({
   href,
   button = 'Make my thumbnail',
   images = [],
+  note,
+  newTab,
 }: {
   label?: string;
   title: ReactNode;
@@ -26,9 +28,13 @@ export default function StudioCta({
   href: string;
   button?: string;
   images?: { src: string; alt: string }[];
+  /** A line under the button (the free trial's terms). */
+  note?: string;
+  /** Default: a new tab for another site. The free-trial sign-up opens in the same tab. */
+  newTab?: boolean;
 }) {
   const shots = images.slice(0, 3);
-  const external = href.startsWith('http');
+  const external = newTab ?? href.startsWith('http');
   return (
     <section className={c.wrap} aria-label="Make your own thumbnail">
       <div className="v2-container">
@@ -48,6 +54,7 @@ export default function StudioCta({
               {button} <span aria-hidden>→</span>
               {external && <span className={c.srOnly}> (opens in a new tab)</span>}
             </a>
+            {note && <p className={c.note}>{note}</p>}
           </div>
           {shots.length > 0 && (
             <div className={c.fan} aria-hidden>

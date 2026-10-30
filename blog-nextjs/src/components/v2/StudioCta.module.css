@@ -156,3 +156,10 @@
     height: 220px;
   }
 }
+
+/* The free trial's terms under the button. */
+.note {
+  margin: 10px 0 0;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}

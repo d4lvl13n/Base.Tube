@@ -16,6 +16,8 @@ import g from './games.module.css';
 import { BASE_PATH, GALLERY_INITIAL, STUDIO_AUDIT_URL, TOOL_LINKS } from './lib/config.mjs';
 import { getLivePages, getLoadedPage, type LoadedPage } from './lib/content.mjs';
 import { studioGenerateUrl, type ThumbnailPage } from './lib/schema.mjs';
+import { studioTrialUrl } from './lib/studio-link.mjs';
+import { signUpUrl, trialButtonLabel, trialTermsText, type StartOffer } from '@/components/ai-thumbnails/catalog';
 import { inlineText, type Block } from './lib/markdown-lite.mjs';
 import { InlineText, MarkdownBlocks } from './Markdown';
 import PageCard from './PageCard';
@@ -43,13 +45,24 @@ function DraftBanner({ loaded }: { loaded: LoadedPage }) {
   );
 }
 
-export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
+export default function ThumbnailStylePage({ loaded, offer }: { loaded: LoadedPage; offer: StartOffer }) {
   const p = loaded.page as ThumbnailPage;
   const h = defaultHeadings(p);
   const look = lookName(p);
   const count = p.gallery.length;
   const ref = (where: string) => `thumbnails-${p.slug}-${where}`;
-  const heroHref = studioGenerateUrl({ style: p.cta.style, ref: ref('hero') });
+  // With a free trial, every button goes straight to its sign-up (same tab), with the example's
+  // idea kept for after the checkout. Without one (trials off, or the plans did not load), the
+  // buttons open the Studio as before.
+  const trial = offer.kind === 'trial' ? offer : null;
+  const studioHref = (where: string, prompt?: string) =>
+    trial
+      ? studioTrialUrl(signUpUrl(trial.plan.id, 'month', true), { prompt, ref: ref(where) })
+      : studioGenerateUrl({ style: p.cta.style, prompt, ref: ref(where) });
+  const ctaLabel = trial ? trialButtonLabel(trial.trial) : p.cta.label;
+  const ctaTarget = trial ? {} : NEW_TAB;
+  const ctaTerms = trial ? trialTermsText(trial.trial) : null;
+  const heroHref = studioHref('hero');
   const cover = p.gallery[0];
 
   // Every page links to the other pages of its category (games, styles, genres); "related" then keeps the other categories.
@@ -70,7 +83,7 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
     prompt: g.prompt,
     notes: g.notes,
     layout: g.layout,
-    studioHref: studioGenerateUrl({ style: p.cta.style, prompt: g.prompt, ref: ref(`example-${i + 1}`) }),
+    studioHref: studioHref(`example-${i + 1}`, g.prompt),
   }));
 
   // The game's "thumbnail maker" page, when it exists (a live gallery links to it once it is live too).
@@ -120,11 +133,12 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
                   <InlineText text={p.intro} />
                 </p>
                 <div className={s.heroActions}>
-                  <a className="v2-btn v2-btn-primary v2-btn-primary--lg" href={heroHref} {...NEW_TAB}>
-                    {p.cta.label} <span aria-hidden>→</span>
-                    <span className={s.srOnly}> (opens the Base.Tube Studio in a new tab)</span>
+                  <a className="v2-btn v2-btn-primary v2-btn-primary--lg" href={heroHref} {...ctaTarget}>
+                    {ctaLabel} <span aria-hidden>→</span>
+                    {!trial && <span className={s.srOnly}> (opens the Base.Tube Studio in a new tab)</span>}
                   </a>
                 </div>
+                {ctaTerms && <p className={s.ctaTerms}>{ctaTerms}</p>}
                 <p className={s.heroAside}>
                   <a href="#examples">See all {count} examples</a>
                   {makerHref && (
@@ -185,7 +199,7 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
               </ScrollReveal>
               <p className={s.sectionNote}>{examplesNote(p)}</p>
             </div>
-            <Gallery items={galleryItems} initial={GALLERY_INITIAL} ctaLabel="Generate in this style" />
+            <Gallery items={galleryItems} initial={GALLERY_INITIAL} ctaLabel="Generate in this style" sameTab={Boolean(trial)} />
           </div>
         </section>
 
@@ -197,8 +211,10 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
             </>
           }
           text={`Describe your video in one line. Base.Tube makes three ${p.name} thumbnails in your channel’s style, ready to download and test on YouTube.`}
-          href={studioGenerateUrl({ style: p.cta.style, ref: ref('mid') })}
-          button={p.cta.label}
+          href={studioHref('mid')}
+          button={ctaLabel}
+          note={ctaTerms ?? undefined}
+          newTab={!trial}
           images={realExamples(p).slice(1, 4).map((g) => ({ src: g.src, alt: g.alt }))}
         />
 
@@ -302,11 +318,11 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
                       </div>
                       <a
                         className={s.layoutCta}
-                        href={studioGenerateUrl({ style: p.cta.style, prompt: l.prompt, ref: ref(`layout-${i + 1}`) })}
-                        {...NEW_TAB}
+                        href={studioHref(`layout-${i + 1}`, l.prompt)}
+                        {...ctaTarget}
                       >
                         Generate <span aria-hidden>→</span>
-                        <span className={s.srOnly}> a {l.name} layout in the Base.Tube Studio (new tab)</span>
+                        <span className={s.srOnly}> a {l.name} layout in the Base.Tube Studio{trial ? '' : ' (new tab)'}</span>
                       </a>
                     </li>
                   ))}
@@ -530,17 +546,18 @@ export default function ThumbnailStylePage({ loaded }: { loaded: LoadedPage }) {
               <div className={s.ctaActions}>
                 <a
                   className="v2-btn v2-btn-primary v2-btn-primary--lg"
-                  href={studioGenerateUrl({ style: p.cta.style, ref: ref('footer') })}
-                  {...NEW_TAB}
+                  href={studioHref('footer')}
+                  {...ctaTarget}
                 >
-                  {p.cta.label} <span aria-hidden>→</span>
-                  <span className={s.srOnly}> (opens the Base.Tube Studio in a new tab)</span>
+                  {ctaLabel} <span aria-hidden>→</span>
+                  {!trial && <span className={s.srOnly}> (opens the Base.Tube Studio in a new tab)</span>}
                 </a>
                 <a className="v2-btn v2-btn-ghost" href={STUDIO_AUDIT_URL}>
                   Free channel audit
                   <span className={s.srOnly}> (opens the Base.Tube Studio in a new tab)</span>
                 </a>
               </div>
+              {ctaTerms && <p className={s.ctaTerms}>{ctaTerms}</p>}
             </div>
           </div>
         </section>

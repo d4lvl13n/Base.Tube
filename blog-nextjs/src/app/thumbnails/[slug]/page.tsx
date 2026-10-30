@@ -4,6 +4,11 @@ import { notFound } from 'next/navigation';
 import { assertLiveIndexFresh, getBuildablePages, getLoadedPage } from '@/components/v2/thumbnail-pages/lib/content.mjs';
 import { buildPageMetadata } from '@/components/v2/thumbnail-pages/seo';
 import ThumbnailStylePage from '@/components/v2/thumbnail-pages/ThumbnailStylePage';
+import { startOffer } from '@/components/ai-thumbnails/catalog';
+import { getCatalog } from '@/components/ai-thumbnails/data';
+
+// The buttons follow the app's plan catalog (the free trial, its length): read again every hour.
+export const revalidate = 3600;
 
 // One static page per file in content/thumbnails/ (drafts included, served with noindex).
 // Unknown slugs return 404.
@@ -29,5 +34,5 @@ export default async function ThumbnailNichePage({ params }: Params) {
   const { slug } = await params;
   const loaded = getLoadedPage(slug);
   if (!loaded?.page) notFound();
-  return <ThumbnailStylePage loaded={loaded} />;
+  return <ThumbnailStylePage loaded={loaded} offer={startOffer(await getCatalog())} />;
 }
