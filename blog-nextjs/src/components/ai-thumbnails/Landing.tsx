@@ -43,7 +43,8 @@ export default function Landing({ catalog, freeReviews }: { catalog: Subscriptio
           <Faq items={landingFaq(catalog)} />
           <FinalCTA offer={offer} />
         </main>
-        <ThumbnailIdeasStrip />
+        {/* Lined up with the footer below it. */}
+        <ThumbnailIdeasStrip containerClassName="mx-auto max-w-7xl px-5 sm:px-8" />
         <Footer />
       </MotionProvider>
     </div>

@@ -46,11 +46,13 @@ export function ideaText(prompt) {
   const s = prompt
     .replace(/\s+/g, ' ')
     .trim()
-    .replace(/^16:9 YouTube thumbnail for an? [^:]{1,60}:\s*/i, '')
+    .replace(/^16:9 YouTube thumbnail for an? [^:.]{1,60}[:.]\s*/i, '')
     // The other prompt shape: "16:9 YouTube thumbnail, <idea>. … Bottom-right corner clear. Original characters, no logos …"
     .replace(/^16:9 YouTube thumbnail,\s*/i, '')
     .replace(/[,.]?\s*keep the bottom-right corner clear\b.*$/i, '')
-    .replace(/[,.]?\s*bottom-right corner (?:clear|empty)\b.*$/i, '')
+    .replace(/[,.]?\s*bottom-right corner (?:kept )?(?:clear|empty)\b.*$/i, '')
+    .replace(/[,.]?\s*original characters?, no logos\b.*$/i, '')
+    .replace(/\s*\(not a real person\)/gi, '')
     .replace(/[,.]?\s*be creative with the composition\.?$/i, '')
     .trim();
   return s.charAt(0).toUpperCase() + s.slice(1);

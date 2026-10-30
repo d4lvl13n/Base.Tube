@@ -131,9 +131,9 @@ export const videosPerMonthText = (videos: number) => `${formatCount(videos)} vi
 /** "Start 7-day free trial". */
 export const trialButtonLabel = (trial: SubscriptionTrial) => `Start ${trial.days}-day free trial`;
 
-/** "2 videos free for 7 days · Cancel before day 8 and pay nothing". */
+/** "Thumbnails for 2 videos, free for 7 days · Cancel before day 8 and pay nothing". */
 export const trialTermsText = (trial: SubscriptionTrial) =>
-  `${formatCount(trial.videos)} video${trial.videos === 1 ? '' : 's'} free for ${trial.days} day${trial.days === 1 ? '' : 's'} · Cancel before day ${trial.days + 1} and pay nothing`;
+  `Thumbnails for ${formatCount(trial.videos)} video${trial.videos === 1 ? '' : 's'}, free for ${trial.days} day${trial.days === 1 ? '' : 's'} · Cancel before day ${trial.days + 1} and pay nothing`;
 
 /** The best yearly saving in the catalog, as the server computed it. */
 export const bestYearlySaving = (plans: SubscriptionPlan[]) => plans.reduce((best, plan) => Math.max(best, plan.prices.year.savingsPercent || 0), 0);

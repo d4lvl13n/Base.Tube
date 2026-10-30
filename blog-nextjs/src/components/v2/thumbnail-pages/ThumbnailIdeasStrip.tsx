@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { HUB_MIN_LIVE_PAGES } from './lib/config.mjs';
+import { CATEGORIES, CATEGORY_LABELS, HUB_MIN_LIVE_PAGES } from './lib/config.mjs';
 import type { PagesIndexEntry } from './lib/content.mjs';
 import pagesIndexJson from './lib/pages-index.json';
 import st from './strip.module.css';
@@ -19,21 +19,28 @@ export function linkablePages(): PagesIndexEntry[] {
 
 /**
  * "Thumbnail ideas" block shown above the footer of the tools, blog and product pages:
- * four game covers, then a compact index linking every other game, creator style and video genre page.
+ * four game covers, then every other page grouped by kind (games, creator styles, video genres).
  * Plain JSON input (lib/pages-index.json), so it also works inside client components.
+ * `containerClassName`: the page's own container, so the block lines up with its footer
+ * (the AI Thumbnails page has no v2 styles).
  */
-export default function ThumbnailIdeasStrip() {
+export default function ThumbnailIdeasStrip({ containerClassName = 'v2-container' }: { containerClassName?: string } = {}) {
   const pages = linkablePages();
   if (pages.length === 0) return null;
   const games = pages.filter((p) => p.category === 'game');
-  const others = pages.filter((p) => p.category !== 'game');
+  const covered = new Set(games.slice(0, 4).map((p) => p.slug));
+  const groups = CATEGORIES.map((category) => ({
+    category,
+    label: CATEGORY_LABELS[category],
+    pages: pages.filter((p) => p.category === category && !covered.has(p.slug)).sort((a, b) => a.name.localeCompare(b.name)),
+  })).filter((group) => group.pages.length > 0);
 
   return (
     <section className={st.strip} aria-labelledby="thumbnail-ideas-strip-h">
-      <div className="v2-container">
+      <div className={containerClassName}>
         <div className={st.head}>
           <div>
-            <span className="v2-label">Thumbnail ideas</span>
+            <span className={st.eyebrow}>Thumbnail ideas</span>
             <h2 id="thumbnail-ideas-strip-h" className={st.title}>
               Ideas for your next thumbnail, by game and style
             </h2>
@@ -63,13 +70,24 @@ export default function ThumbnailIdeasStrip() {
           </ul>
         )}
 
-        <ul className={st.index}>
-          {[...games.slice(4), ...others].map((p) => (
-            <li key={p.slug}>
-              <Link href={`/thumbnails/${p.slug}`}>{p.name}</Link>
-            </li>
+        <div className={st.groups}>
+          {groups.map((group) => (
+            <div key={group.category} className={st.group}>
+              <h3 id={`thumbnail-ideas-${group.category}`} className={st.groupLabel}>
+                {group.label}
+              </h3>
+              <ul className={st.chips} aria-labelledby={`thumbnail-ideas-${group.category}`}>
+                {group.pages.map((p) => (
+                  <li key={p.slug}>
+                    <Link href={`/thumbnails/${p.slug}`} className={st.chip}>
+                      {p.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );
