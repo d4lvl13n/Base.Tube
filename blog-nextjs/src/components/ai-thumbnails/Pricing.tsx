@@ -1,3 +1,4 @@
+import { creditUsageText } from './pricingCopy';
 import { ArrowRight } from 'lucide-react';
 import { PRICING_URL, type SubscriptionCatalog } from './catalog';
 import { RevealHeading } from './motion';
@@ -20,8 +21,7 @@ export default function Pricing({ catalog }: { catalog: SubscriptionCatalog | nu
           />
           {catalog && (
             <p className="mt-5 text-lg text-zinc-400">
-              Plans are counted in videos. Each video is {catalog.videoBreakdown.concepts} ideas, {catalog.videoBreakdown.edits} edits and{' '}
-              {catalog.videoBreakdown.audits === 1 ? 'a review' : `${catalog.videoBreakdown.audits} reviews`}.
+              {creditUsageText(catalog.videoBreakdown)}
             </p>
           )}
         </div>

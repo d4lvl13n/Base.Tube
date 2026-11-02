@@ -1,3 +1,4 @@
+import { thumbnailAllowanceText } from './pricingCopy';
 // The plan catalog of AI Thumbnails (GET https://beta.base.tube/api/v1/subscriptions/plans) and the
 // wording built from it, ported from the app (types/subscription.ts, hooks/useSubscription.ts,
 // billing/PlanChoices.tsx, billing/StartOffer.tsx). Visitor-only: this site has no sign-in, so every
@@ -131,9 +132,9 @@ export const videosPerMonthText = (videos: number) => `${formatCount(videos)} vi
 /** "Start 7-day free trial". */
 export const trialButtonLabel = (trial: SubscriptionTrial) => `Start ${trial.days}-day free trial`;
 
-/** "Thumbnails for 2 videos, free for 7 days · Cancel before day 8 and pay nothing". */
+/** Trial credits are shared by generation, edits and audits. */
 export const trialTermsText = (trial: SubscriptionTrial) =>
-  `Thumbnails for ${formatCount(trial.videos)} video${trial.videos === 1 ? '' : 's'}, free for ${trial.days} day${trial.days === 1 ? '' : 's'} · Cancel before day ${trial.days + 1} and pay nothing`;
+  `${formatCount(trial.credits)} credits shared across thumbnails, AI edits and audits, free for ${trial.days} day${trial.days === 1 ? '' : 's'} · Cancel before day ${trial.days + 1} and pay nothing`;
 
 /** The best yearly saving in the catalog, as the server computed it. */
 export const bestYearlySaving = (plans: SubscriptionPlan[]) => plans.reduce((best, plan) => Math.max(best, plan.prices.year.savingsPercent || 0), 0);
@@ -146,20 +147,20 @@ export type StartOffer =
   /** The plans did not load: the pricing page instead. */
   | { kind: 'unavailable' }
   | { kind: 'trial'; plan: SubscriptionPlan; trial: SubscriptionTrial }
-  | { kind: 'plan'; plan: SubscriptionPlan };
+  | { kind: 'plan'; plan: SubscriptionPlan; generationCredits: number };
 
 /** What the start button offers a visitor. */
 export function startOffer(catalog: SubscriptionCatalog | null): StartOffer {
   const plan = entryPlan(catalog);
   if (!plan) return { kind: 'unavailable' };
   const trial = catalogTrial(catalog);
-  return trial ? { kind: 'trial', plan, trial } : { kind: 'plan', plan };
+  return trial ? { kind: 'trial', plan, trial } : { kind: 'plan', plan, generationCredits: catalog!.videoBreakdown.conceptCredits };
 }
 
 /** The line under the start button: the trial's terms, or the plan's price. */
 export function startOfferTerms(offer: StartOffer): string | null {
   if (offer.kind === 'trial') return trialTermsText(offer.trial);
-  if (offer.kind === 'plan') return `${offer.plan.name}: ${videosPerMonthText(offer.plan.videosPerMonth)} for ${planPriceText(offer.plan, 'month')} · Cancel any time`;
+  if (offer.kind === 'plan') return `${offer.plan.name}: ${thumbnailAllowanceText(offer.plan.creditsPerMonth, offer.generationCredits)} for ${planPriceText(offer.plan, 'month')} · Cancel any time`;
   return null;
 }
 
@@ -174,13 +175,6 @@ export interface FaqItem {
 
 export function landingFaq(catalog: SubscriptionCatalog | null): FaqItem[] {
   const trial = catalogTrial(catalog);
-  const video = catalog
-    ? (() => {
-        const { concepts, edits, audits } = catalog.videoBreakdown;
-        const reviews = audits === 1 ? 'a review' : `${audits} reviews`;
-        return `One video is ${concepts} ideas, ${edits} edits and ${reviews}: about ${catalog.videoCredits} credits. `;
-      })()
-    : '';
   const planCredits =
     catalog?.rolloverMonths === 0
       ? 'Plan credits stay usable until the end of the month they are for.'
@@ -200,13 +194,13 @@ export function landingFaq(catalog: SubscriptionCatalog | null): FaqItem[] {
       answer: 'Yes. Add a photo to your channel profile once; it’s used in every idea you ask for.',
     },
     {
-      question: 'What’s a video, what’s a credit?',
-      answer: `${video}Plans are sold in videos; credits are how we count.`,
+      question: 'How many thumbnails can I generate?',
+      answer: catalog ? `Each new Studio thumbnail uses ${catalog.videoBreakdown.conceptCredits} credits. The maximum shown on each plan assumes all monthly credits go to new thumbnails. AI edits, thumbnail reviews and channel audits use the same balance, leaving fewer credits for generation.` : 'Monthly credits are shared across new thumbnails, AI edits and audits. See the pricing page for current allowances.',
     },
     trial
       ? {
           question: 'How does the free trial work?',
-          answer: `${trial.days} days, ${trial.videos} video${trial.videos === 1 ? '' : 's'} included. Your card is charged on day ${trial.days + 1} unless you cancel, in one click from Settings.`,
+          answer: `${trial.days} days, ${trial.credits} credits shared across thumbnails, AI edits and audits included. Your card is charged on day ${trial.days + 1} unless you cancel, in one click from Settings.`,
         }
       : null,
     {

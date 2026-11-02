@@ -1,10 +1,11 @@
 'use client';
 
-// The monthly plans, shown in videos per month with a monthly / yearly switch (the app's PlanChoices,
+// The monthly plans, shown as maximum new thumbnails per month with a monthly / yearly switch (the app's PlanChoices,
 // "page" variant, visitor branch only): every plan button goes to the app's sign-up page for that
 // plan and billing period, with the free trial when the catalog offers one.
 import { useState } from 'react';
 import { Check } from 'lucide-react';
+import { thumbnailAllowanceText, SHARED_CREDIT_EXPLANATION } from './pricingCopy';
 import {
   bestYearlySaving,
   catalogTrial,
@@ -14,7 +15,6 @@ import {
   signUpUrl,
   startPlanLabel,
   trialButtonLabel,
-  videosPerMonthText,
   type BillingInterval,
   type SubscriptionCatalog,
   type SubscriptionPlan,
@@ -101,7 +101,7 @@ export default function PlanChoices({ catalog }: { catalog: SubscriptionCatalog 
         {catalog.plans.map((plan) => (
           <article key={plan.id} aria-label={plan.name} className="flex flex-col rounded-2xl border border-white/10 bg-white/[0.02] p-5">
             <h3 className="text-lg font-semibold text-white">{plan.name}</h3>
-            <p className="mt-1 text-sm text-zinc-300">{videosPerMonthText(plan.videosPerMonth)}</p>
+            <p className="mt-1 text-sm text-zinc-300">{thumbnailAllowanceText(plan.creditsPerMonth, catalog.videoBreakdown.conceptCredits)}</p>
             <PriceLines plan={plan} interval={interval} />
             <p className="mt-1 text-xs text-zinc-500">{formatCount(plan.creditsPerMonth)} credits a month</p>
             <ul className="mt-4 flex-1 space-y-2">
@@ -116,6 +116,7 @@ export default function PlanChoices({ catalog }: { catalog: SubscriptionCatalog 
           </article>
         ))}
       </div>
+      <p className="text-sm text-zinc-400">{SHARED_CREDIT_EXPLANATION}</p>
     </div>
   );
 }
