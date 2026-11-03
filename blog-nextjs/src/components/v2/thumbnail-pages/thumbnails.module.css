@@ -219,6 +219,7 @@
   }
   .styleHero .heroSub,
   .styleHero .heroActions,
+  .styleHero .ctaTerms,
   .heroAside {
     order: 3;
   }
@@ -525,6 +526,16 @@
   border-top: 1px solid var(--v2-frost);
 }
 
+.lbAction {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+}
+
+.lbAction .ctaTerms {
+  font-size: 0.8rem;
+}
+
 .lbCaption {
   font-size: 16px;
   font-weight: 600;
@@ -617,6 +628,9 @@
   }
   .lbMeta :global(.v2-btn) {
     justify-content: center;
+  }
+  .lbAction {
+    max-width: none;
   }
 }
 
@@ -1628,4 +1642,13 @@
   margin: 12px 0 0;
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.62);
+}
+
+.ctaTerms a {
+  color: var(--v2-orange);
+  font-weight: 500;
+}
+
+.ctaTerms a:hover {
+  text-decoration: underline;
 }

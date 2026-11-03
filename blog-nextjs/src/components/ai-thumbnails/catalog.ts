@@ -6,6 +6,9 @@ import { thumbnailAllowanceText } from './pricingCopy';
 
 export type BillingInterval = 'month' | 'year';
 
+/** The billing period the start buttons and the plan cards offer first. Monthly stays one click away. */
+export const DEFAULT_INTERVAL: BillingInterval = 'year';
+
 export interface PlanMonthPrice {
   amountCents: number;
   currency: string;
@@ -132,9 +135,19 @@ export const videosPerMonthText = (videos: number) => `${formatCount(videos)} vi
 /** "Start 7-day free trial". */
 export const trialButtonLabel = (trial: SubscriptionTrial) => `Start ${trial.days}-day free trial`;
 
-/** Trial credits are shared by generation, edits and audits. */
-export const trialTermsText = (trial: SubscriptionTrial) =>
-  `${formatCount(trial.credits)} credits shared across thumbnails, AI edits and audits, free for ${trial.days} day${trial.days === 1 ? '' : 's'} · Cancel before day ${trial.days + 1} and pay nothing`;
+/** "$199 billed yearly", "$24 billed monthly". */
+export function billedText(plan: SubscriptionPlan, interval: BillingInterval): string {
+  const price = plan.prices[interval];
+  return `${formatPlanMoney(price.amountCents, price.currency)} billed ${interval === 'year' ? 'yearly' : 'monthly'}`;
+}
+
+/** "7-day free trial (2 videos), then $199 billed yearly · Cancel before day 8 and pay nothing". */
+export const trialTermsText = (trial: SubscriptionTrial, plan: SubscriptionPlan, interval: BillingInterval = DEFAULT_INTERVAL) =>
+  `${trial.days}-day free trial (${formatCount(trial.credits)} shared credits), then ${billedText(plan, interval)} · Cancel before day ${trial.days + 1} and pay nothing`;
+
+/** The way to the monthly price next to a yearly button: "Prefer monthly? $24/month, same free trial". */
+export const monthlyChoiceLabel = (plan: SubscriptionPlan, trial: boolean) =>
+  `Prefer monthly? ${planPriceText(plan, 'month')}${trial ? ', same free trial' : ''}`;
 
 /** The best yearly saving in the catalog, as the server computed it. */
 export const bestYearlySaving = (plans: SubscriptionPlan[]) => plans.reduce((best, plan) => Math.max(best, plan.prices.year.savingsPercent || 0), 0);
@@ -159,8 +172,8 @@ export function startOffer(catalog: SubscriptionCatalog | null): StartOffer {
 
 /** The line under the start button: the trial's terms, or the plan's price. */
 export function startOfferTerms(offer: StartOffer): string | null {
-  if (offer.kind === 'trial') return trialTermsText(offer.trial);
-  if (offer.kind === 'plan') return `${offer.plan.name}: ${thumbnailAllowanceText(offer.plan.creditsPerMonth, offer.generationCredits)} for ${planPriceText(offer.plan, 'month')} · Cancel any time`;
+  if (offer.kind === 'trial') return trialTermsText(offer.trial, offer.plan);
+  if (offer.kind === 'plan') return `${offer.plan.name}: ${thumbnailAllowanceText(offer.plan.creditsPerMonth, offer.generationCredits)}, ${billedText(offer.plan, DEFAULT_INTERVAL)} · Cancel any time`;
   return null;
 }
 
@@ -175,6 +188,7 @@ export interface FaqItem {
 
 export function landingFaq(catalog: SubscriptionCatalog | null): FaqItem[] {
   const trial = catalogTrial(catalog);
+  const plan = entryPlan(catalog);
   const planCredits =
     catalog?.rolloverMonths === 0
       ? 'Plan credits stay usable until the end of the month they are for.'
@@ -200,7 +214,11 @@ export function landingFaq(catalog: SubscriptionCatalog | null): FaqItem[] {
     trial
       ? {
           question: 'How does the free trial work?',
-          answer: `${trial.days} days, ${trial.credits} credits shared across thumbnails, AI edits and audits included. Your card is charged on day ${trial.days + 1} unless you cancel, in one click from Settings.`,
+          answer: `${trial.days} days, ${trial.credits} credits shared across thumbnails, AI edits and audits included. Your card is charged on day ${trial.days + 1} unless you cancel, in one click from Settings${
+            plan
+              ? `: ${formatPlanMoney(plan.prices.year.amountCents, plan.prices.year.currency)} for the year on ${plan.name}, or ${formatPlanMoney(plan.prices.month.amountCents, plan.prices.month.currency)} if you chose to pay monthly`
+              : ''
+          }.`,
         }
       : null,
     {

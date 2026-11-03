@@ -163,3 +163,12 @@
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.6);
 }
+
+.note a {
+  color: var(--v2-orange);
+  font-weight: 500;
+}
+
+.note a:hover {
+  text-decoration: underline;
+}

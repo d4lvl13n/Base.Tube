@@ -1,20 +1,21 @@
 'use client';
 
-// The monthly plans, shown as maximum new thumbnails per month with a monthly / yearly switch (the app's PlanChoices,
-// "page" variant, visitor branch only): every plan button goes to the app's sign-up page for that
-// plan and billing period, with the free trial when the catalog offers one.
+// The plans, shown as maximum new thumbnails per month with a yearly / monthly switch that opens on yearly (the app's
+// PlanChoices, "page" variant, visitor branch only): every plan button goes to the app's sign-up page
+// for that plan and billing period, with the free trial when the catalog offers one.
 import { useState } from 'react';
 import { Check } from 'lucide-react';
 import { thumbnailAllowanceText, SHARED_CREDIT_EXPLANATION } from './pricingCopy';
 import {
   bestYearlySaving,
   catalogTrial,
+  DEFAULT_INTERVAL,
   formatCount,
   formatPlanMoney,
-  planPriceText,
   signUpUrl,
   startPlanLabel,
   trialButtonLabel,
+  trialTermsText,
   type BillingInterval,
   type SubscriptionCatalog,
   type SubscriptionPlan,
@@ -37,8 +38,8 @@ function IntervalToggle({ value, onChange, plans }: { value: BillingInterval; on
   );
   return (
     <div role="group" aria-label="Billing period" className="inline-flex rounded-xl border border-white/10 bg-white/[0.03] p-1">
-      {option('month', 'Monthly')}
       {option('year', saving > 0 ? `Yearly · save ${savings.size > 1 ? 'up to ' : ''}${saving}%` : 'Yearly')}
+      {option('month', 'Monthly')}
     </div>
   );
 }
@@ -68,7 +69,7 @@ const primary =
   'inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#fa7517] px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-[#fa7517]/20 transition-colors hover:bg-[#fb8a3c]';
 
 export default function PlanChoices({ catalog }: { catalog: SubscriptionCatalog }) {
-  const [interval, setBillingInterval] = useState<BillingInterval>('month');
+  const [interval, setBillingInterval] = useState<BillingInterval>(DEFAULT_INTERVAL);
   // A visitor: checkout adds the free trial when the catalog has one (the server decides).
   const trial = catalogTrial(catalog);
   const startLabel = (plan: SubscriptionPlan) => (trial ? trialButtonLabel(trial) : startPlanLabel(plan, interval));
@@ -81,11 +82,11 @@ export default function PlanChoices({ catalog }: { catalog: SubscriptionCatalog 
         {startLabel(plan)}
       </a>
     );
-    // A trial button says what follows it: "then $24/month".
+    // A trial button says what follows it: what is charged, when, and how to pay nothing.
     return trial ? (
       <span className="block space-y-1.5">
         {button}
-        <span className="block text-center text-xs text-zinc-400">then {planPriceText(plan, interval)}</span>
+        <span className="block text-center text-xs text-zinc-400">{trialTermsText(trial, plan, interval)}</span>
       </span>
     ) : (
       button

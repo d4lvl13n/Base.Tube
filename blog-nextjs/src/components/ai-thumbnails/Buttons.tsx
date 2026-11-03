@@ -1,6 +1,9 @@
 import { ArrowRight, ScanSearch } from 'lucide-react';
 import {
   AUDIT_URL,
+  DEFAULT_INTERVAL,
+  monthlyChoiceLabel,
+  planPriceText,
   PRICING_URL,
   signUpUrl,
   startPlanLabel,
@@ -14,9 +17,10 @@ export const primaryButton =
 
 /**
  * The start button for a visitor (the app's StartOfferButton, visitor branches only):
- * "Start 7-day free trial" (the header's short form: "Start free trial") goes to the app's sign-up
- * page with the entry plan; the plan with its price when there is no trial; "See plans" when the
- * catalog did not load (and in the header when there is no trial).
+ * "Start 7-day free trial" (the header's short form: "Start free trial", with the price under it)
+ * goes to the app's sign-up page with the entry plan, billed yearly; the plan with its price when
+ * there is no trial; "See plans" when the catalog did not load (and in the header when there is no
+ * trial).
  */
 export function StartOfferButton({ offer, short = false, className }: { offer: StartOffer; short?: boolean; className: string }) {
   if (offer.kind === 'unavailable' || (short && offer.kind === 'plan'))
@@ -26,11 +30,25 @@ export function StartOfferButton({ offer, short = false, className }: { offer: S
       </a>
     );
   const trial = offer.kind === 'trial' ? offer.trial : null;
-  const label = trial ? (short ? 'Start free trial' : trialButtonLabel(trial)) : startPlanLabel(offer.plan, 'month');
+  const label = trial ? (short ? 'Start free trial' : trialButtonLabel(trial)) : startPlanLabel(offer.plan, DEFAULT_INTERVAL);
   return (
-    <a href={signUpUrl(offer.plan.id, 'month', Boolean(trial))} className={className}>
+    <a href={signUpUrl(offer.plan.id, DEFAULT_INTERVAL, Boolean(trial))} className={className}>
       {label}
+      {short && <span className="text-[11px] font-medium text-black/60">then {planPriceText(offer.plan, DEFAULT_INTERVAL)}</span>}
     </a>
+  );
+}
+
+/** The link to the monthly price, under a start button that offers the yearly one. */
+export function MonthlyChoice({ offer, className = '' }: { offer: StartOffer; className?: string }) {
+  if (offer.kind === 'unavailable') return null;
+  const trial = offer.kind === 'trial';
+  return (
+    <p className={`text-sm ${className}`}>
+      <a href={signUpUrl(offer.plan.id, 'month', trial)} className="font-medium text-[#fb923c] underline-offset-2 hover:text-orange-300 hover:underline">
+        {monthlyChoiceLabel(offer.plan, trial)}
+      </a>
+    </p>
   );
 }
 

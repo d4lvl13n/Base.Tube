@@ -14,6 +14,12 @@ const nextConfig: NextConfig = {
       { protocol: 'https', hostname: 'yt3.googleusercontent.com', port: '', pathname: '/**' },
     ],
   },
+  async headers() {
+    return [
+      // The private /for/<channel> pages and their images: never in a search engine.
+      { source: '/for/:path*', headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }] },
+    ];
+  },
   async redirects() {
     return [
       // The old thumbnail tool page: AI Thumbnails now has its landing page here.

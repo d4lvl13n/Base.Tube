@@ -1,0 +1,41 @@
+{
+  "channel": "shieldsmedia",
+  "channelName": "ShieldsMedia",
+  "handle": "@ShieldsMedia1",
+  "channelUrl": "https://www.youtube.com/@ShieldsMedia1",
+  "subscribersLabel": "23K subscribers",
+  "avatar": "/for/shieldsmedia/avatar.jpg",
+  "styleIdea": "Your car-selfie framing kept, with a fixed black bar along the bottom and a short hook in tall yellow capitals under a thin money-green line.",
+  "videos": [
+    {
+      "title": "Who You Surround Yourself With Decides If You Get Rich or Stay Broke",
+      "before": "/for/shieldsmedia/before-1.jpg",
+      "after": "/for/shieldsmedia/after-1.png"
+    },
+    {
+      "title": "Not everyone wants to see you SUCCEED! (Watch out for fake love)",
+      "before": "/for/shieldsmedia/before-2.jpg",
+      "after": "/for/shieldsmedia/after-2.png"
+    },
+    {
+      "title": "I talk about MONEY all the time because society is COOKED financially!",
+      "before": "/for/shieldsmedia/before-3.jpg",
+      "after": "/for/shieldsmedia/after-3.png"
+    },
+    {
+      "title": "Automated Savings is a Financial CHEAT CODE(Start NOW)",
+      "before": "/for/shieldsmedia/before-4.jpg",
+      "after": "/for/shieldsmedia/after-4.png"
+    },
+    {
+      "title": "THIS mindset is why folks NEVER get rich! (Rant)",
+      "before": "/for/shieldsmedia/before-5.jpg",
+      "after": "/for/shieldsmedia/after-5.png"
+    },
+    {
+      "title": "Don't Let Your Job Define Your Sense Of Self-Worth (This is Dangerous!)",
+      "before": "/for/shieldsmedia/before-6.jpg",
+      "after": "/for/shieldsmedia/after-6.png"
+    }
+  ]
+}

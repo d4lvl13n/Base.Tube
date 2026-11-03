@@ -17,7 +17,7 @@ import { BASE_PATH, GALLERY_INITIAL, STUDIO_AUDIT_URL, TOOL_LINKS } from './lib/
 import { getLivePages, getLoadedPage, type LoadedPage } from './lib/content.mjs';
 import { studioGenerateUrl, type ThumbnailPage } from './lib/schema.mjs';
 import { studioTrialUrl } from './lib/studio-link.mjs';
-import { signUpUrl, trialButtonLabel, trialTermsText, type StartOffer } from '@/components/ai-thumbnails/catalog';
+import { DEFAULT_INTERVAL, monthlyChoiceLabel, signUpUrl, trialButtonLabel, trialTermsText, type StartOffer } from '@/components/ai-thumbnails/catalog';
 import { inlineText, type Block } from './lib/markdown-lite.mjs';
 import { InlineText, MarkdownBlocks } from './Markdown';
 import PageCard from './PageCard';
@@ -51,17 +51,25 @@ export default function ThumbnailStylePage({ loaded, offer }: { loaded: LoadedPa
   const look = lookName(p);
   const count = p.gallery.length;
   const ref = (where: string) => `thumbnails-${p.slug}-${where}`;
-  // With a free trial, every button goes straight to its sign-up (same tab), with the example's
-  // idea kept for after the checkout. Without one (trials off, or the plans did not load), the
+  // With a free trial, every button goes straight to its sign-up on the yearly price (same tab), with
+  // the example's idea kept for after the checkout. Without one (trials off, or the plans did not load), the
   // buttons open the Studio as before.
   const trial = offer.kind === 'trial' ? offer : null;
   const studioHref = (where: string, prompt?: string) =>
     trial
-      ? studioTrialUrl(signUpUrl(trial.plan.id, 'month', true), { prompt, ref: ref(where) })
+      ? studioTrialUrl(signUpUrl(trial.plan.id, DEFAULT_INTERVAL, true), { prompt, ref: ref(where) })
       : studioGenerateUrl({ style: p.cta.style, prompt, ref: ref(where) });
   const ctaLabel = trial ? trialButtonLabel(trial.trial) : p.cta.label;
   const ctaTarget = trial ? {} : NEW_TAB;
-  const ctaTerms = trial ? trialTermsText(trial.trial) : null;
+  const termsText = trial ? trialTermsText(trial.trial, trial.plan) : undefined;
+  // What the button starts, and the way to the monthly price instead.
+  const ctaTerms = (where: string) =>
+    trial && (
+      <>
+        {termsText}.{' '}
+        <a href={studioTrialUrl(signUpUrl(trial.plan.id, 'month', true), { ref: ref(`${where}-monthly`) })}>{monthlyChoiceLabel(trial.plan, true)}</a>
+      </>
+    );
   const heroHref = studioHref('hero');
   const cover = p.gallery[0];
 
@@ -138,7 +146,7 @@ export default function ThumbnailStylePage({ loaded, offer }: { loaded: LoadedPa
                     {!trial && <span className={s.srOnly}> (opens the Base.Tube Studio in a new tab)</span>}
                   </a>
                 </div>
-                {ctaTerms && <p className={s.ctaTerms}>{ctaTerms}</p>}
+                {trial && <p className={s.ctaTerms}>{ctaTerms('hero')}</p>}
                 <p className={s.heroAside}>
                   <a href="#examples">See all {count} examples</a>
                   {makerHref && (
@@ -199,7 +207,7 @@ export default function ThumbnailStylePage({ loaded, offer }: { loaded: LoadedPa
               </ScrollReveal>
               <p className={s.sectionNote}>{examplesNote(p)}</p>
             </div>
-            <Gallery items={galleryItems} initial={GALLERY_INITIAL} ctaLabel="Generate in this style" sameTab={Boolean(trial)} />
+            <Gallery items={galleryItems} initial={GALLERY_INITIAL} ctaLabel="Generate in this style" sameTab={Boolean(trial)} terms={termsText} />
           </div>
         </section>
 
@@ -213,7 +221,7 @@ export default function ThumbnailStylePage({ loaded, offer }: { loaded: LoadedPa
           text={`Describe your video in one line. Base.Tube makes three ${p.name} thumbnails in your channel’s style, ready to download and test on YouTube.`}
           href={studioHref('mid')}
           button={ctaLabel}
-          note={ctaTerms ?? undefined}
+          note={ctaTerms('mid') || undefined}
           newTab={!trial}
           images={realExamples(p).slice(1, 4).map((g) => ({ src: g.src, alt: g.alt }))}
         />
@@ -327,6 +335,7 @@ export default function ThumbnailStylePage({ loaded, offer }: { loaded: LoadedPa
                     </li>
                   ))}
                 </ol>
+                {trial && <p className={s.ctaTerms}>“Generate” starts your free trial. {ctaTerms('layouts')}</p>}
               </div>
             </section>
           </>
@@ -557,7 +566,7 @@ export default function ThumbnailStylePage({ loaded, offer }: { loaded: LoadedPa
                   <span className={s.srOnly}> (opens the Base.Tube Studio in a new tab)</span>
                 </a>
               </div>
-              {ctaTerms && <p className={s.ctaTerms}>{ctaTerms}</p>}
+              {trial && <p className={s.ctaTerms}>{ctaTerms('footer')}</p>}
             </div>
           </div>
         </section>

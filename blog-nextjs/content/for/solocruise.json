@@ -1,0 +1,41 @@
+{
+  "channel": "solocruise",
+  "channelName": "Solo Cruise & Travel",
+  "handle": "@SoloCruiseTravel",
+  "channelUrl": "https://www.youtube.com/@SoloCruiseTravel",
+  "subscribersLabel": "32.2K subscribers",
+  "avatar": "/for/solocruise/avatar.jpg",
+  "styleIdea": "Teal sea and sunset gold, one solo traveller seen from behind, a short white hook with a gold brush underline, and your Solo logo in the same corner.",
+  "videos": [
+    {
+      "title": "The Cruise Schedule Trap: What Solo Cruisers Need to Know",
+      "before": "/for/solocruise/before-1.jpg",
+      "after": "/for/solocruise/after-1.png"
+    },
+    {
+      "title": "Is Specialty Dining Worth It on a Solo Cruise?",
+      "before": "/for/solocruise/before-2.jpg",
+      "after": "/for/solocruise/after-2.png"
+    },
+    {
+      "title": "5 Things I Wish I Knew Before My First Solo Cruise",
+      "before": "/for/solocruise/before-3.jpg",
+      "after": "/for/solocruise/after-3.png"
+    },
+    {
+      "title": "Virgin Voyages Sea Terrace Review: Is This Balcony Worth It?",
+      "before": "/for/solocruise/before-4.jpg",
+      "after": "/for/solocruise/after-4.png"
+    },
+    {
+      "title": "Do Solo Travelers Get Lonely? The Truth About Cruising Alone",
+      "before": "/for/solocruise/before-5.jpg",
+      "after": "/for/solocruise/after-5.png"
+    },
+    {
+      "title": "My Emerald Princess Escapes as a Solo Cruiser | Princess Cruises",
+      "before": "/for/solocruise/before-6.jpg",
+      "after": "/for/solocruise/after-6.png"
+    }
+  ]
+}

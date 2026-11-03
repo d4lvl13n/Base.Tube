@@ -10,7 +10,7 @@ const absolute = (src: string) => (src.startsWith('http') ? src : `${SITE_URL}${
 export const compareUrl = (slug: string) => `${SITE_URL}${comparePath(slug)}`;
 
 function ogImage(p: ComparePage) {
-  const first = p.demo?.images[0];
+  const first = p.shootout?.rounds[0].images.find((img) => img.tool.us) ?? p.demo?.images[0];
   return first
     ? { url: absolute(first.src), width: 1280, height: 720, alt: first.alt }
     : { url: `${SITE_URL}/images/og-card.webp`, width: 1200, height: 630, alt: 'Base.Tube' };
@@ -51,10 +51,17 @@ export function buildCompareJsonLd(p: ComparePage) {
         keywords: [p.primaryKeyword, ...p.secondaryKeywords].join(', '),
         author: publisher,
         publisher,
-        about: [
-          { '@type': 'SoftwareApplication', name: p.them, applicationCategory: 'DesignApplication' },
-          { '@type': 'SoftwareApplication', name: p.us, applicationCategory: 'DesignApplication', url: SITE_URL },
-        ],
+        about: p.shootout
+          ? p.shootout.tools.map((t) => ({
+              '@type': 'SoftwareApplication',
+              name: t.name,
+              applicationCategory: 'DesignApplication',
+              ...(t.us ? { url: SITE_URL } : {}),
+            }))
+          : [
+              { '@type': 'SoftwareApplication', name: p.them, applicationCategory: 'DesignApplication' },
+              { '@type': 'SoftwareApplication', name: p.us, applicationCategory: 'DesignApplication', url: SITE_URL },
+            ],
       },
       {
         '@type': 'FAQPage',
@@ -71,7 +78,7 @@ export function buildCompareJsonLd(p: ComparePage) {
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
           { '@type': 'ListItem', position: 2, name: 'AI thumbnails', item: `${SITE_URL}/ai-thumbnails` },
-          { '@type': 'ListItem', position: 3, name: `${p.them} vs ${p.us}`, item: url },
+          { '@type': 'ListItem', position: 3, name: p.crumb, item: url },
         ],
       },
     ],

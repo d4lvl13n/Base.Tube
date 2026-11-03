@@ -29,7 +29,7 @@ export default function StudioCta({
   button?: string;
   images?: { src: string; alt: string }[];
   /** A line under the button (the free trial's terms). */
-  note?: string;
+  note?: ReactNode;
   /** Default: a new tab for another site. The free-trial sign-up opens in the same tab. */
   newTab?: boolean;
 }) {

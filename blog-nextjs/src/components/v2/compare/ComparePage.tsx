@@ -15,6 +15,7 @@ import ThumbnailIdeasStrip from '../thumbnail-pages/ThumbnailIdeasStrip';
 import c from './compare.module.css';
 import type { ComparePage as ComparePageData } from './content';
 import { buildCompareJsonLd } from './seo';
+import ShootoutPage from './ShootoutPage';
 
 const NEW_TAB = { target: '_blank', rel: 'noopener noreferrer' } as const;
 
@@ -40,12 +41,14 @@ function WinMark() {
 }
 
 export default function ComparePage({ page: p }: { page: ComparePageData }) {
+  if (p.shootout) return <ShootoutPage page={p} shootout={p.shootout} />;
   const ref = (where: string) => `compare-${p.slug}-${where}`;
   const studio = (where: string, prompt?: string) => studioGenerateUrl({ prompt, ref: ref(where) });
   const demo = p.demo;
   const heroIdeas = demo?.images.slice(0, 3) ?? [];
   const winsThem = p.table.filter((r) => r.edge === 'them').length;
   const winsUs = p.table.filter((r) => r.edge === 'us').length;
+  const { whenThem, whenUs, steps } = p;
 
   return (
     <div className="v2-root">
@@ -73,9 +76,7 @@ export default function ComparePage({ page: p }: { page: ComparePageData }) {
                     <li>
                       <Link href="/ai-thumbnails">AI thumbnails</Link>
                     </li>
-                    <li aria-current="page">
-                      {p.them} vs {p.us}
-                    </li>
+                    <li aria-current="page">{p.crumb}</li>
                   </ol>
                 </nav>
                 {p.eyebrow && <span className={`v2-feature-tag orange ${s.heroTag}`}>{p.eyebrow}</span>}
@@ -246,6 +247,8 @@ export default function ComparePage({ page: p }: { page: ComparePageData }) {
 
         <Sep />
 
+        {whenThem && whenUs && (
+          <>
         {/* ── WHEN TO USE WHICH ────────────────────────────────── */}
         <section className="v2-cp-section" aria-labelledby="which-h">
           <div className="v2-container">
@@ -257,8 +260,8 @@ export default function ComparePage({ page: p }: { page: ComparePageData }) {
             </ScrollReveal>
             <div className={c.which}>
               {[
-                { who: p.them, data: p.whenThem, us: false },
-                { who: p.us, data: p.whenUs, us: true },
+                { who: p.them, data: whenThem, us: false },
+                { who: p.us, data: whenUs, us: true },
               ].map((w) => (
                 <div key={w.who} className={`${c.whichCard} ${w.us ? c.whichUs : ''}`}>
                   <span className={c.whichWho}>{w.who}</span>
@@ -277,23 +280,27 @@ export default function ComparePage({ page: p }: { page: ComparePageData }) {
         </section>
 
         <Sep />
+          </>
+        )}
 
+        {steps && (
+          <>
         {/* ── HOW TO (the other tool) ──────────────────────────── */}
         <section className="v2-cp-section" id="how-to" aria-labelledby="howto-h">
           <div className="v2-container">
             <ScrollReveal>
               <span className="v2-label">Step by step</span>
               <h2 id="howto-h" className="v2-cp-section-h2">
-                {p.steps.title}
+                {steps.title}
               </h2>
-              {p.steps.intro && (
+              {steps.intro && (
                 <p className={c.sectionIntro}>
-                  <InlineText text={p.steps.intro} />
+                  <InlineText text={steps.intro} />
                 </p>
               )}
             </ScrollReveal>
             <ol className={c.steps}>
-              {p.steps.items.map((st, i) => (
+              {steps.items.map((st, i) => (
                 <li key={st.name} className={c.step}>
                   <span className={c.stepNum} aria-hidden>
                     {String(i + 1).padStart(2, '0')}
@@ -309,6 +316,8 @@ export default function ComparePage({ page: p }: { page: ComparePageData }) {
             </ol>
           </div>
         </section>
+          </>
+        )}
 
         {/* ── DEMO STRIP ───────────────────────────────────────── */}
         {demo && demo.images.length > 0 && (

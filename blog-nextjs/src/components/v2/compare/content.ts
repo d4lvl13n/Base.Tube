@@ -40,6 +40,45 @@ export interface DemoImage {
   label: string;
 }
 
+/** One tool in a shootout: the same prompts run in several AI thumbnail makers. */
+export interface ShootoutTool {
+  name: string;
+  /** Used in image file names: <imageDir>/<round slug>-<tool slug>.webp */
+  slug: string;
+  us: boolean;
+  /** The plan the test ran on, e.g. "Creator, monthly". */
+  plan: string;
+  start: string;
+  face: string;
+  price: string;
+  free: string;
+}
+
+export interface ShootoutImage {
+  tool: ShootoutTool;
+  src: string;
+  alt: string;
+}
+
+export interface ShootoutRound {
+  slug: string;
+  niche: string;
+  video: string;
+  /** The exact prompt pasted into every tool. */
+  prompt: string;
+  images: ShootoutImage[];
+}
+
+export interface Shootout {
+  title: string;
+  text: string;
+  /** The day the images were made (YYYY-MM-DD). */
+  tested: string;
+  method: string[];
+  tools: ShootoutTool[];
+  rounds: ShootoutRound[];
+}
+
 export interface FaqItem {
   q: string;
   a: string;
@@ -56,18 +95,23 @@ export interface ComparePage {
   description: string;
   primaryKeyword: string;
   secondaryKeywords: string[];
+  /** Breadcrumb label; defaults to "<them> vs <us>". */
+  crumb: string;
   eyebrow: string;
   h1: string;
   h1Accent: string;
   intro: string;
   verdict: string;
+  /** Empty on a shootout page, which shows the tools table instead. */
   table: CompareRow[];
   /** One line each, shown under the comparison: "Pick Canva if …" / "Pick Base.Tube if …". */
   pickThem: string;
   pickUs: string;
-  whenThem: { title: string; points: string[] };
-  whenUs: { title: string; points: string[] };
-  steps: { title: string; intro: string; items: CompareStep[] };
+  whenThem: { title: string; points: string[] } | null;
+  whenUs: { title: string; points: string[] } | null;
+  steps: { title: string; intro: string; items: CompareStep[] } | null;
+  /** Same prompts in several tools, side by side. A page with a shootout needs no table, when or steps. */
+  shootout: Shootout | null;
   demo: { title: string; video: string; text: string; images: DemoImage[] } | null;
   faq: FaqItem[];
   related: { href: string; label: string }[];
@@ -115,10 +159,76 @@ function strings(v: unknown[], field: string, file: string): string[] {
 }
 
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+
+/** A file in public/, given as a site path ("/compare/x.webp"). */
+function publicFileExists(src: string) {
+  return fs.existsSync(path.join(process.cwd(), 'public', src));
+}
+
+/**
+ * The shootout block. Image paths are not written in the file: each one is
+ * <imageDir>/<round slug>-<tool slug>.webp, and every one of them must exist.
+ */
+function normalizeShootout(raw: Raw, file: string): Shootout {
+  const tested = str(raw, 'tested', file);
+  if (!DATE_RE.test(tested)) fail(file, 'shootout.tested', 'must be the test date, like 2026-11-03');
+  const imageDir = str(raw, 'imageDir', file).replace(/\/$/, '');
+  if (!imageDir.startsWith('/')) fail(file, 'shootout.imageDir', 'must start with /, like /compare/ai-thumbnail-makers');
+
+  const tools = list(raw, 'tools', file).map((x, i) => {
+    const t = obj(x, `shootout.tools[${i + 1}]`, file);
+    const slug = str(t, 'slug', file);
+    if (!SLUG_RE.test(slug)) fail(file, `shootout.tools[${i + 1}].slug`, 'must be lowercase words joined by hyphens');
+    return {
+      name: str(t, 'name', file),
+      slug,
+      us: t.us === true,
+      plan: str(t, 'plan', file),
+      start: str(t, 'start', file),
+      face: str(t, 'face', file),
+      price: str(t, 'price', file),
+      free: str(t, 'free', file),
+    };
+  });
+  tools.forEach((t, i) => {
+    for (const key of ['plan', 'start', 'face', 'price', 'free'] as const) {
+      if (/TODO/.test(t[key])) fail(file, `shootout.tools[${i + 1}].${key}`, `still says TODO (${t.name}): fill it in on the test day`);
+    }
+  });
+  if (tools.length < 2) fail(file, 'shootout.tools', 'needs at least 2 tools');
+  if (tools.filter((t) => t.us).length !== 1) fail(file, 'shootout.tools', 'needs exactly one tool with "us: true"');
+  if (new Set(tools.map((t) => t.slug)).size !== tools.length) fail(file, 'shootout.tools', 'has two tools with the same slug');
+
+  const rounds = list(raw, 'rounds', file).map((x, i) => {
+    const r = obj(x, `shootout.rounds[${i + 1}]`, file);
+    const slug = str(r, 'slug', file);
+    if (!SLUG_RE.test(slug)) fail(file, `shootout.rounds[${i + 1}].slug`, 'must be lowercase words joined by hyphens');
+    const video = str(r, 'video', file);
+    const alts = r.alts ? obj(r.alts, `shootout.rounds[${i + 1}].alts`, file) : {};
+    const images = tools.map((tool) => {
+      const src = `${imageDir}/${slug}-${tool.slug}.webp`;
+      if (!publicFileExists(src)) fail(file, `shootout.rounds[${i + 1}]`, `needs the image public${src} (${tool.name})`);
+      const alt = typeof alts[tool.slug] === 'string' ? String(alts[tool.slug]).trim() : `${tool.name} thumbnail for the video "${video}"`;
+      return { tool, src, alt };
+    });
+    return { slug, niche: str(r, 'niche', file), video, prompt: str(r, 'prompt', file), images };
+  });
+  if (rounds.length < 1) fail(file, 'shootout.rounds', 'needs at least 1 round');
+
+  return {
+    title: str(raw, 'title', file),
+    text: str(raw, 'text', file),
+    tested,
+    method: strings(list(raw, 'method', file), 'shootout.method', file),
+    tools,
+    rounds,
+  };
+}
 
 function normalize(raw: Raw, body: string, bodyStartLine: number, file: string): ComparePage {
   const slug = file.replace(/\.md$/, '');
-  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) fail(file, 'file name', 'must be lowercase words joined by hyphens');
+  if (!SLUG_RE.test(slug)) fail(file, 'file name', 'must be lowercase words joined by hyphens');
 
   const status = str(raw, 'status', file);
   if (status !== 'published' && status !== 'draft') fail(file, 'status', 'must be "published" or "draft"');
@@ -135,28 +245,35 @@ function normalize(raw: Raw, body: string, bodyStartLine: number, file: string):
     fail(file, 'description', `is ${description.length} characters; keep it between ${DESCRIPTION_MIN} and ${DESCRIPTION_MAX}`);
   }
 
-  const table = list(raw, 'table', file).map((r, i) => {
+  const shootout = raw.shootout ? normalizeShootout(obj(raw.shootout, 'shootout', file), file) : null;
+  const tableOpts = { optional: shootout !== null };
+
+  const table = list(raw, 'table', file, tableOpts).map((r, i) => {
     const row = obj(r, `table[${i + 1}]`, file);
     const edge = (str(row, 'edge', file, { optional: true }) || 'tie') as Edge;
     if (!['them', 'us', 'tie'].includes(edge)) fail(file, `table[${i + 1}].edge`, 'must be them, us or tie');
     return { criterion: str(row, 'criterion', file), them: str(row, 'them', file), us: str(row, 'us', file), edge };
   });
-  if (table.length < 3) fail(file, 'table', 'needs at least 3 rows');
+  if (!shootout && table.length < 3) fail(file, 'table', 'needs at least 3 rows');
 
   const when = (key: 'whenThem' | 'whenUs') => {
+    if (shootout && !raw[key]) return null;
     const w = obj(raw[key], key, file);
     return { title: str(w, 'title', file), points: strings(list(w, 'points', file), `${key}.points`, file) };
   };
 
-  const stepsRaw = obj(raw.steps, 'steps', file);
-  const steps = {
-    title: str(stepsRaw, 'title', file),
-    intro: str(stepsRaw, 'intro', file, { optional: true }),
-    items: list(stepsRaw, 'items', file).map((s, i) => {
-      const st = obj(s, `steps.items[${i + 1}]`, file);
-      return { name: str(st, 'name', file), text: str(st, 'text', file) };
-    }),
-  };
+  let steps: ComparePage['steps'] = null;
+  if (!shootout || raw.steps) {
+    const stepsRaw = obj(raw.steps, 'steps', file);
+    steps = {
+      title: str(stepsRaw, 'title', file),
+      intro: str(stepsRaw, 'intro', file, { optional: true }),
+      items: list(stepsRaw, 'items', file).map((s, i) => {
+        const st = obj(s, `steps.items[${i + 1}]`, file);
+        return { name: str(st, 'name', file), text: str(st, 'text', file) };
+      }),
+    };
+  }
 
   let demo: ComparePage['demo'] = null;
   if (raw.demo) {
@@ -164,7 +281,7 @@ function normalize(raw: Raw, body: string, bodyStartLine: number, file: string):
     const images = list(d, 'images', file).map((x, i) => {
       const img = obj(x, `demo.images[${i + 1}]`, file);
       const src = str(img, 'src', file);
-      if (!src.startsWith('/') || !fs.existsSync(path.join(process.cwd(), 'public', src))) {
+      if (!src.startsWith('/') || !publicFileExists(src)) {
         fail(file, `demo.images[${i + 1}].src`, `points to ${src}, which is not a file in public/`);
       }
       return { src, alt: str(img, 'alt', file), label: str(img, 'label', file) };
@@ -200,6 +317,7 @@ function normalize(raw: Raw, body: string, bodyStartLine: number, file: string):
     description,
     primaryKeyword: str(raw, 'primaryKeyword', file),
     secondaryKeywords: strings(list(raw, 'secondaryKeywords', file, { optional: true }), 'secondaryKeywords', file),
+    crumb: str(raw, 'crumb', file, { optional: true }) || `${str(raw, 'them', file)} vs ${str(raw, 'us', file)}`,
     eyebrow: str(raw, 'eyebrow', file, { optional: true }),
     h1: str(raw, 'h1', file),
     h1Accent: str(raw, 'h1Accent', file, { optional: true }),
@@ -211,6 +329,7 @@ function normalize(raw: Raw, body: string, bodyStartLine: number, file: string):
     whenThem: when('whenThem'),
     whenUs: when('whenUs'),
     steps,
+    shootout,
     demo,
     faq,
     related,

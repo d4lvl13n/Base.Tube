@@ -24,6 +24,8 @@ interface GalleryProps {
   ctaLabel: string;
   /** The links go to the free-trial sign-up: same tab. */
   sameTab?: boolean;
+  /** The free trial's terms, shown under the link when it starts one. */
+  terms?: string;
 }
 
 /**
@@ -31,7 +33,7 @@ interface GalleryProps {
  * All images are in the server-rendered HTML (good for image search); the
  * extra ones of a long gallery are hidden until "Show all" is pressed.
  */
-export default function Gallery({ items, initial, ctaLabel, sameTab = false }: GalleryProps) {
+export default function Gallery({ items, initial, ctaLabel, sameTab = false, terms }: GalleryProps) {
   const collapsible = items.length > initial + 6;
   const [expanded, setExpanded] = useState(!collapsible);
   const [open, setOpen] = useState<number | null>(null);
@@ -221,10 +223,13 @@ export default function Gallery({ items, initial, ctaLabel, sameTab = false }: G
                 </button>
                 <p className={s.lbPromptText}>{current.prompt}</p>
               </div>
-              <a className="v2-btn v2-btn-primary" href={current.studioHref} {...(sameTab ? {} : { target: '_blank', rel: 'noopener noreferrer' })}>
-                {ctaLabel} <span aria-hidden>→</span>
-                {!sameTab && <span className={s.srOnly}> (opens the Base.Tube Studio in a new tab)</span>}
-              </a>
+              <div className={s.lbAction}>
+                <a className="v2-btn v2-btn-primary" href={current.studioHref} {...(sameTab ? {} : { target: '_blank', rel: 'noopener noreferrer' })}>
+                  {ctaLabel} <span aria-hidden>→</span>
+                  {!sameTab && <span className={s.srOnly}> (opens the Base.Tube Studio in a new tab)</span>}
+                </a>
+                {terms && <p className={s.ctaTerms}>{terms}</p>}
+              </div>
             </div>
           </div>
         )}

@@ -8,7 +8,7 @@ import HeaderShell from './HeaderShell';
 /**
  * The landing page's header: Features, Pricing (the plans further down this page), the free review,
  * "Log in" (AI Thumbnails' own sign-in page in the app) and the short start button
- * ("Start free trial": the app's sign-up page, then Stripe Checkout).
+ * ("Start free trial", with the yearly price under it: the app's sign-up page, then Stripe Checkout).
  */
 export default function Header({ offer }: { offer: StartOffer }) {
   const link = 'text-sm text-white/75 transition-colors hover:text-white';
@@ -39,7 +39,7 @@ export default function Header({ offer }: { offer: StartOffer }) {
           <StartOfferButton
             offer={offer}
             short
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-black transition-colors hover:bg-zinc-200"
+            className="inline-flex flex-col items-center justify-center rounded-full bg-white px-4 py-1.5 text-sm font-semibold leading-tight text-black transition-colors hover:bg-zinc-200"
           />
         </nav>
       </div>

@@ -1,0 +1,41 @@
+{
+  "channel": "techbrothers",
+  "channelName": "Tech Brothers",
+  "handle": "@TechBrothersReviews",
+  "channelUrl": "https://www.youtube.com/@TechBrothersReviews",
+  "subscribersLabel": "133K subscribers",
+  "avatar": "/for/techbrothers/avatar.jpg",
+  "styleIdea": "Your actual product on a dark navy backdrop with a soft blue glow, one short verdict in heavy yellow capitals on the left, and the same small TB badge in the corner.",
+  "videos": [
+    {
+      "title": "EarFun Wave Pro X REVIEW: Are They Worth the Hype?!",
+      "before": "/for/techbrothers/before-1.jpg",
+      "after": "/for/techbrothers/after-1.png"
+    },
+    {
+      "title": "PUTRIMS P66 REVIEW: A Budget Projector I'd REALLY Recommend!",
+      "before": "/for/techbrothers/before-2.jpg",
+      "after": "/for/techbrothers/after-2.png"
+    },
+    {
+      "title": "WAVLINK USB-C Dual 5K DisplayLink Dock REVIEW: All the Ports You Need?",
+      "before": "/for/techbrothers/before-3.jpg",
+      "after": "/for/techbrothers/after-3.png"
+    },
+    {
+      "title": "AUN U001 Pro REVIEW: 2050 ANSI Lumens?! Is It Really That Bright?",
+      "before": "/for/techbrothers/before-4.jpg",
+      "after": "/for/techbrothers/after-4.png"
+    },
+    {
+      "title": "IIFACTOR M08E REVIEW: My First AI Smart Glasses - Any Good?",
+      "before": "/for/techbrothers/before-5.jpg",
+      "after": "/for/techbrothers/after-5.png"
+    },
+    {
+      "title": "ARZOPA Z1FC REVIEW: 144Hz Gaming on a Portable Monitor?!",
+      "before": "/for/techbrothers/before-6.jpg",
+      "after": "/for/techbrothers/after-6.png"
+    }
+  ]
+}

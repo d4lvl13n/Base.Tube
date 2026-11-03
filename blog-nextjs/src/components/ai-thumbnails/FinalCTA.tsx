@@ -1,5 +1,5 @@
 import { startOfferTerms, type StartOffer } from './catalog';
-import { primaryButton, ReviewButton, StartOfferButton } from './Buttons';
+import { MonthlyChoice, primaryButton, ReviewButton, StartOfferButton } from './Buttons';
 import { Reveal, RevealHeading } from './motion';
 import ThumbnailWall from './ThumbnailWall';
 
@@ -29,6 +29,7 @@ export default function FinalCTA({ offer }: { offer: StartOffer }) {
             <ReviewButton />
           </div>
           {terms && <p className="mt-5 text-sm text-zinc-400">{terms}</p>}
+          <MonthlyChoice offer={offer} className="mt-1.5" />
         </Reveal>
       </div>
     </section>

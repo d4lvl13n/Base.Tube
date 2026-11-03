@@ -1,5 +1,5 @@
 import { startOfferTerms, type StartOffer } from './catalog';
-import { primaryButton, ReviewButton, StartOfferButton } from './Buttons';
+import { MonthlyChoice, primaryButton, ReviewButton, StartOfferButton } from './Buttons';
 import HeroStage from './HeroStage';
 import { RevealHeading } from './motion';
 import ThumbnailFeed from './ThumbnailFeed';
@@ -43,6 +43,7 @@ export default function Hero({ offer }: { offer: StartOffer }) {
             <ReviewButton />
           </div>
           <p className="mt-5 min-h-[1.25rem] text-sm text-zinc-400">{terms}</p>
+          <MonthlyChoice offer={offer} className="mt-1.5" />
         </div>
       </div>
     </HeroStage>
