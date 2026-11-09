@@ -17,7 +17,8 @@ function load(filename) {
 }
 const copy = load('pricingCopy.ts');
 const { default: PlanChoices } = load('PlanChoices.tsx');
-const { landingFaq, trialTermsText } = load('catalog.ts');
+const { landingFaq, trialTermsText, signUpUrl, startOffer, startOfferTerms } = load('catalog.ts');
+const { StartOfferButton } = load('Buttons.tsx');
 const plans = [ ['creator', 'Creator', 540, 2400, 19900], ['pro', 'Pro', 1800, 4900, 39900], ['agency', 'Agency', 4500, 9900, 79900] ].map(([id,name,creditsPerMonth,month,year],rank) => ({id,name,rank,creditsPerMonth,videosPerMonth:[6,20,50][rank],channelProfiles:1,highlights:[], prices:{ month:{amountCents:month,currency:'usd'},year:{amountCents:year,currency:'usd',monthlyEquivalentCents:Math.round(year/12),savingsPercent:31}}}));
 const catalog = { plans, trial:{days:7,videos:2,credits:180}, videoCredits:90, videoBreakdown:{concepts:3,conceptCredits:15,edits:2,editCredits:18,audits:1,auditCredits:2}, rolloverMonths:1,free:{channelProfiles:1}};
 test('plan cards show all three maximum allowances, shared usage, and unchanged checkout intents', () => {
@@ -26,7 +27,7 @@ test('plan cards show all three maximum allowances, shared usage, and unchanged 
   assert.ok(html.includes(copy.SHARED_CREDIT_EXPLANATION));
   assert.ok(!html.includes('videos a month'));
   assert.ok(html.includes('plan=creator')); assert.ok(html.includes('interval=month'));
-  assert.ok(trialTermsText(catalog.trial).includes('180 credits shared across thumbnails, AI edits and audits'));
+  assert.ok(trialTermsText(catalog.trial, plans[0]).includes('180 shared credits'));
 });
 test('allowances follow changed generation costs and round down', () => {
   assert.equal(copy.thumbnailAllowanceText(540,20),'Up to 27 AI thumbnails per month');
@@ -38,4 +39,19 @@ test('FAQ describes the maximum and shared credits instead of a video quota', ()
   assert.ok(text.includes('How many thumbnails can I generate?'));
   assert.ok(text.includes('AI edits, thumbnail reviews and channel audits use the same balance'));
   assert.ok(!text.includes('Plans are sold in videos'));
+});
+
+test('all trial entry points renew monthly, including old annual trial requests', () => {
+  const offer = startOffer(catalog);
+  const html = renderToStaticMarkup(React.createElement(StartOfferButton, {offer, className:'test'}));
+  assert.ok(html.includes('interval=month'));
+  assert.ok(!html.includes('interval=year'));
+  assert.ok(startOfferTerms(offer).includes('$24 billed monthly'));
+  assert.ok(signUpUrl('creator', 'year', true).includes('interval=month'));
+  assert.ok(signUpUrl('creator', 'year', false).includes('interval=year'));
+  assert.ok(trialTermsText(catalog.trial, plans[0]).includes('$24 billed monthly'));
+  const cards = renderToStaticMarkup(React.createElement(PlanChoices,{catalog}));
+  assert.ok(!cards.includes('interval=year'));
+  assert.ok(!cards.includes('then $199'));
+  assert.ok(JSON.stringify(landingFaq(catalog)).includes('$24 per month on Creator'));
 });

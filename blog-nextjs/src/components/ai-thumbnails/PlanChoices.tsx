@@ -1,6 +1,6 @@
 'use client';
 
-// The plans, shown as maximum new thumbnails per month with a yearly / monthly switch that opens on yearly (the app's
+// The plans, shown as maximum new thumbnails per month with a monthly / yearly switch that opens on monthly (the app's
 // PlanChoices, "page" variant, visitor branch only): every plan button goes to the app's sign-up page
 // for that plan and billing period, with the free trial when the catalog offers one.
 import { useState } from 'react';
@@ -72,13 +72,14 @@ export default function PlanChoices({ catalog }: { catalog: SubscriptionCatalog 
   const [interval, setBillingInterval] = useState<BillingInterval>(DEFAULT_INTERVAL);
   // A visitor: checkout adds the free trial when the catalog has one (the server decides).
   const trial = catalogTrial(catalog);
+  const checkoutInterval = trial ? 'month' : interval;
   const startLabel = (plan: SubscriptionPlan) => (trial ? trialButtonLabel(trial) : startPlanLabel(plan, interval));
   // The trial buttons read the same on every plan: their accessible name says which plan.
   const startName = (plan: SubscriptionPlan) => (trial ? `${trialButtonLabel(trial)} · ${plan.name}` : undefined);
 
   const action = (plan: SubscriptionPlan) => {
     const button = (
-      <a href={signUpUrl(plan.id, interval, Boolean(trial))} aria-label={startName(plan)} className={primary}>
+      <a href={signUpUrl(plan.id, checkoutInterval, Boolean(trial))} aria-label={startName(plan)} className={primary}>
         {startLabel(plan)}
       </a>
     );
@@ -86,7 +87,7 @@ export default function PlanChoices({ catalog }: { catalog: SubscriptionCatalog 
     return trial ? (
       <span className="block space-y-1.5">
         {button}
-        <span className="block text-center text-xs text-zinc-400">{trialTermsText(trial, plan, interval)}</span>
+        <span className="block text-center text-xs text-zinc-400">{trialTermsText(trial, plan)}</span>
       </span>
     ) : (
       button
@@ -96,14 +97,14 @@ export default function PlanChoices({ catalog }: { catalog: SubscriptionCatalog 
   return (
     <div className="space-y-4">
       <div className="flex justify-center">
-        <IntervalToggle value={interval} onChange={setBillingInterval} plans={catalog.plans} />
+        {trial ? <p className="text-sm text-zinc-400">Monthly billing after your free trial. Cancel anytime.</p> : <IntervalToggle value={interval} onChange={setBillingInterval} plans={catalog.plans} />}
       </div>
       <div className="grid gap-4 md:grid-cols-3">
         {catalog.plans.map((plan) => (
           <article key={plan.id} aria-label={plan.name} className="flex flex-col rounded-2xl border border-white/10 bg-white/[0.02] p-5">
             <h3 className="text-lg font-semibold text-white">{plan.name}</h3>
             <p className="mt-1 text-sm text-zinc-300">{thumbnailAllowanceText(plan.creditsPerMonth, catalog.videoBreakdown.conceptCredits)}</p>
-            <PriceLines plan={plan} interval={interval} />
+            <PriceLines plan={plan} interval={checkoutInterval} />
             <p className="mt-1 text-xs text-zinc-500">{formatCount(plan.creditsPerMonth)} credits a month</p>
             <ul className="mt-4 flex-1 space-y-2">
               {plan.highlights.map((line) => (

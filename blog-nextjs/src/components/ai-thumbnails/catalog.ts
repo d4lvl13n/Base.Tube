@@ -7,7 +7,7 @@ import { thumbnailAllowanceText } from './pricingCopy';
 export type BillingInterval = 'month' | 'year';
 
 /** The billing period the start buttons and the plan cards offer first. Monthly stays one click away. */
-export const DEFAULT_INTERVAL: BillingInterval = 'year';
+export const DEFAULT_INTERVAL: BillingInterval = 'month';
 
 export interface PlanMonthPrice {
   amountCents: number;
@@ -75,7 +75,7 @@ export const CREATOR_HUB_URL = `${APP_ORIGIN}/creator-hub`;
 
 /** The app's sign-up page, which goes on to checkout for this plan (with the free trial when `trial`). */
 export function signUpUrl(planId: string, interval: BillingInterval, trial: boolean): string {
-  const query = new URLSearchParams({ plan: planId, interval });
+  const query = new URLSearchParams({ plan: planId, interval: trial ? 'month' : interval });
   if (trial) query.set('trial', '1');
   return `${APP_ORIGIN}/ai-thumbnails/sign-up?${query.toString()}`;
 }
@@ -141,9 +141,9 @@ export function billedText(plan: SubscriptionPlan, interval: BillingInterval): s
   return `${formatPlanMoney(price.amountCents, price.currency)} billed ${interval === 'year' ? 'yearly' : 'monthly'}`;
 }
 
-/** "7-day free trial (2 videos), then $199 billed yearly · Cancel before day 8 and pay nothing". */
-export const trialTermsText = (trial: SubscriptionTrial, plan: SubscriptionPlan, interval: BillingInterval = DEFAULT_INTERVAL) =>
-  `${trial.days}-day free trial (${formatCount(trial.credits)} shared credits), then ${billedText(plan, interval)} · Cancel before day ${trial.days + 1} and pay nothing`;
+/** "7-day free trial (180 shared credits), then $24 billed monthly · Cancel before day 8 and pay nothing". */
+export const trialTermsText = (trial: SubscriptionTrial, plan: SubscriptionPlan) =>
+  `${trial.days}-day free trial (${formatCount(trial.credits)} shared credits), then ${billedText(plan, 'month')} · Cancel before day ${trial.days + 1} and pay nothing`;
 
 /** The way to the monthly price next to a yearly button: "Prefer monthly? $24/month, same free trial". */
 export const monthlyChoiceLabel = (plan: SubscriptionPlan, trial: boolean) =>
@@ -216,7 +216,7 @@ export function landingFaq(catalog: SubscriptionCatalog | null): FaqItem[] {
           question: 'How does the free trial work?',
           answer: `${trial.days} days, ${trial.credits} credits shared across thumbnails, AI edits and audits included. Your card is charged on day ${trial.days + 1} unless you cancel, in one click from Settings${
             plan
-              ? `: ${formatPlanMoney(plan.prices.year.amountCents, plan.prices.year.currency)} for the year on ${plan.name}, or ${formatPlanMoney(plan.prices.month.amountCents, plan.prices.month.currency)} if you chose to pay monthly`
+              ? `: ${formatPlanMoney(plan.prices.month.amountCents, plan.prices.month.currency)} per month on ${plan.name}`
               : ''
           }.`,
         }

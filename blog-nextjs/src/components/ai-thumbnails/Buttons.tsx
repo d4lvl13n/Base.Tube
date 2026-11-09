@@ -2,7 +2,6 @@ import { ArrowRight, ScanSearch } from 'lucide-react';
 import {
   AUDIT_URL,
   DEFAULT_INTERVAL,
-  monthlyChoiceLabel,
   planPriceText,
   PRICING_URL,
   signUpUrl,
@@ -18,7 +17,7 @@ export const primaryButton =
 /**
  * The start button for a visitor (the app's StartOfferButton, visitor branches only):
  * "Start 7-day free trial" (the header's short form: "Start free trial", with the price under it)
- * goes to the app's sign-up page with the entry plan, billed yearly; the plan with its price when
+ * goes to the app's sign-up page with the entry plan, billed monthly; the plan with its price when
  * there is no trial; "See plans" when the catalog did not load (and in the header when there is no
  * trial).
  */
@@ -39,17 +38,10 @@ export function StartOfferButton({ offer, short = false, className }: { offer: S
   );
 }
 
-/** The link to the monthly price, under a start button that offers the yearly one. */
+/** Trials always continue on monthly billing. */
 export function MonthlyChoice({ offer, className = '' }: { offer: StartOffer; className?: string }) {
-  if (offer.kind === 'unavailable') return null;
-  const trial = offer.kind === 'trial';
-  return (
-    <p className={`text-sm ${className}`}>
-      <a href={signUpUrl(offer.plan.id, 'month', trial)} className="font-medium text-[#fb923c] underline-offset-2 hover:text-orange-300 hover:underline">
-        {monthlyChoiceLabel(offer.plan, trial)}
-      </a>
-    </p>
-  );
+  if (offer.kind !== 'trial') return null;
+  return <p className={`text-sm text-zinc-400 ${className}`}>Monthly billing after your free trial. Cancel anytime.</p>;
 }
 
 /**
