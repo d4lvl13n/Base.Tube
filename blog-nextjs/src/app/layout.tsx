@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { OrganizationStructuredData, WebSiteStructuredData } from "@/components/seo/StructuredData";
+import { MetaPixelPageView } from "@/components/analytics/MetaPixelPageView";
 import { dmSerifDisplay, geistMono, inter } from "@/lib/fonts";
 import "./globals.css";
 import "./v2.css";
@@ -109,6 +110,32 @@ export default function RootLayout({
         <Script id="ga4-init" strategy="afterInteractive">
           {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-DQELH44BE4');`}
         </Script>
+        {/* X conversion tracking base code. The pixel keeps the ad click id (twclid) in the _twclid
+            cookie on .base.tube; checkout passes it to Stripe and the backend reports the trial or
+            payment to X's Conversion API (base-be, services/analytics/xConversions.ts). */}
+        <Script id="x-pixel" strategy="afterInteractive">
+          {`!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+twq('config','pmr62');`}
+        </Script>
+        {/* Meta pixel "Base.tube" (Codolie labs portfolio). It keeps the ad click (_fbc) and browser (_fbp) ids in cookies
+            on .base.tube; checkout passes them to Stripe and the backend reports the trial or payment to
+            Meta's Conversions API (base-be, services/analytics/metaConversions.ts). */}
+        <Script id="meta-pixel" strategy="afterInteractive">
+          {`!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1690314265834751');
+fbq('track','PageView');`}
+        </Script>
+        <noscript>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img height="1" width="1" style={{ display: 'none' }} alt="" src="https://www.facebook.com/tr?id=1690314265834751&ev=PageView&noscript=1" />
+        </noscript>
+        <MetaPixelPageView />
       </body>
     </html>
   );
